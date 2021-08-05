@@ -11,6 +11,7 @@ import {
   TextArea,
   CommonButton,
   Image,
+  CommonSubTitle,
 } from "../../../Components/CommonComponents";
 import styled from "styled-components";
 import { withResizeDetector } from "react-resize-detector";
@@ -48,6 +49,8 @@ const Link = styled(Text)`
 const MM14Presenter = ({
   width,
   //
+  point,
+  //
   inputType,
   inputTypeDesc,
   inputGoal,
@@ -61,14 +64,64 @@ const MM14Presenter = ({
   inputDesc,
   inputCheck1,
   inputCheck2,
+  ableIcon,
+  setAbleIcon,
   //
   createContactHandler,
 }) => {
   useTitle(`Contact us | ${process.env["HOMEPAGE_NAME"]}`);
 
   return (
-    <WholeWrapper bgColor={Theme.black_C} color={Theme.white_C}>
-      <RsWrapper
+    <WholeWrapper
+      bgColor={Theme.black_C}
+      color={Theme.white_C}
+      height={`100vh`}
+    >
+      <CommonSubTitle margin={`100px 0 0 0`}>Contact us</CommonSubTitle>
+      <Text>Find a SMARTKEEPER distributor near your region</Text>
+
+      <Wrapper isRelative={true}>
+        <Image
+          width={`100%`}
+          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2F%E1%84%8C%E1%85%B5%E1%84%83%E1%85%A9.png?alt=media&token=37261bad-6bd3-4223-9db4-ee54b98cc834`}
+        />
+        {point.map((data, idx) => {
+          return (
+            <Wrapper
+              isAbsolute={true}
+              width={`50px`}
+              height={`50px`}
+              top={data.top}
+              left={data.left}
+            >
+              {ableIcon !== idx ? (
+                <Wrapper
+                  width={`15px`}
+                  height={`15px`}
+                  radius={`50%`}
+                  bgColor={`#fff`}
+                  onClick={() => setAbleIcon(idx)}
+                ></Wrapper>
+              ) : (
+                <Wrapper
+                  isAbsolute={true}
+                  width={`370px`}
+                  top={`0px`}
+                  left={`0px`}
+                  dr={`row`}
+                  ju={`space-between`}
+                  al={`flex-start`}
+                >
+                  <Image src={data.src} width={`50px`} height={`50px`} />
+                  <Image src={data.info} width={`300px`} />
+                </Wrapper>
+              )}
+            </Wrapper>
+          );
+        })}
+      </Wrapper>
+
+      {/* <RsWrapper
         margin={width < 900 ? `115px 0 60px` : `196px 0 100px`}
         paddingLeft={width < 900 && `0`}
         paddingRight={width < 900 && `0`}
@@ -78,7 +131,7 @@ const MM14Presenter = ({
           borderBottom={`1px solid ${Theme.greyTheme7_C}`}
           padding={width < 900 ? `0 0 35px` : `0 0 100px`}
         >
-          {/* <Wrapper
+          <Wrapper
           al={`flex-start`}
           fontSize={`70px`}
           isGotham={true}
@@ -87,7 +140,7 @@ const MM14Presenter = ({
           fontWeight={`bold`}
         >
           Contact us
-        </Wrapper> */}
+        </Wrapper> 
           <Wrapper al={`flex-start`} padding={width < 900 && `0 0 0 36px`}>
             <Image
               alt="contact"
@@ -482,7 +535,7 @@ const MM14Presenter = ({
         onClick={createContactHandler}
       >
         문의접수
-      </CommonButton>
+      </CommonButton> */}
     </WholeWrapper>
   );
 };
