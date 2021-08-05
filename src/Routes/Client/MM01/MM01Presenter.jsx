@@ -26,7 +26,7 @@ const Title = styled.h1`
   display: ${(props) => props.display};
 
   @media (max-width: 900px) {
-    font-size: 30px;
+    font-size: 25px;
   }
 `;
 
@@ -38,7 +38,7 @@ const SubTitle = styled.h2`
   line-height: 1.3;
 
   @media (max-width: 900px) {
-    font-size: 24px;
+    font-size: 18px;
   }
 `;
 
@@ -228,8 +228,8 @@ const MM01Presenter = ({
                 al={`flex-start`}
                 ju={width < 900 && `flex-end`}
               >
-                <Title>보안의 틈,</Title>
-                <Title>당신의 위태로운 이야기.</Title>
+                <Title>Security gap,</Title>
+                <Title>your precarious story</Title>
                 <Wrapper
                   width={`20px`}
                   height={`2px`}
@@ -242,7 +242,7 @@ const MM01Presenter = ({
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                 >
-                  악성코드는 감기와 같습니다.
+                  Malware is like the flu. Even with consistent monitoring
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -250,7 +250,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `none` : `flex`}
                 >
-                  실시간 감시와 예방 주사에도 늘 새로운 바이러스로
+                  and vaccination, it always infiltrates our bodies with
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -259,7 +259,7 @@ const MM01Presenter = ({
                   display={width < 900 ? `none` : `flex`}
                   margin={`0 0 40px`}
                 >
-                  우리몸에 침투하죠.
+                  new viruses.
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -267,7 +267,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  실시간 감시와 예방 주사에도 늘 새로운
+                  and vaccination, it always infiltrates our bodies with
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -276,7 +276,7 @@ const MM01Presenter = ({
                   display={width < 900 ? `flex` : `none`}
                   margin={`0 0 40px`}
                 >
-                  바이러스로 우리몸에 침투하죠.
+                  new viruses.
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -284,7 +284,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `none` : `flex`}
                 >
-                  바이러스로부터 완벽하게 지키는 방법은 침투경로를
+                  The perfect way to protect against viruses is to block the
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -292,7 +292,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `none` : `flex`}
                 >
-                  직접적으로 막는 것 입니다. 침투경로를 열어두는 것.
+                  intrusion route directly. Leaving the intrusion route
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -300,7 +300,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  바이러스로부터 완벽하게 지키는 방법은
+                  The perfect way to protect against viruses is to block the
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -308,7 +308,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  침투경로를 직접적으로 막는 것 입니다.
+                  intrusion route directly.
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -316,14 +316,14 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  침투경로를 열어두는 것.
+                  Leaving the intrusion route
                 </Text>
                 <Text
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                 >
-                  보안의 틈을 방치해 두었다는 것.
+                  unattended means that there is a lapse in security.
                 </Text>
               </Wrapper>
               {/*  */}
@@ -333,15 +333,13 @@ const MM01Presenter = ({
                 ref={tab2Ref}
                 al={`flex-start`}
               >
-                <Title>가장 좋은 보안은</Title>
+                <Title>The best security is</Title>
                 <Title display={width < 900 ? `none` : `block`}>
-                  물리적으로 차단하는 보안.
+                  physical security.
                 </Title>
+                <Title display={width < 900 ? `block` : `none`}>physical</Title>
                 <Title display={width < 900 ? `block` : `none`}>
-                  물리적으로
-                </Title>
-                <Title display={width < 900 ? `block` : `none`}>
-                  차단하는 보안.
+                  security.
                 </Title>
 
                 <Wrapper
@@ -356,15 +354,16 @@ const MM01Presenter = ({
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                 >
-                  악성코드가 심어진 스팸 메일을 받았을 때
+                  We all know what to do when we receive a spam mail
                 </Text>
                 <Text
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `none` : `flex`}
+                  margin={`0 0 40px`}
                 >
-                  대처 방법은 무엇이죠? 우린 모두 알고 있습니다.
+                  with malware. “Do NOT click to open.”
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -372,23 +371,32 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  대처 방법은 무엇이죠?
+                  We all know what to do when we receive a spam mail
                 </Text>
                 <Text
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
+                  margin={`0 0 40px`}
                 >
-                  우린 모두 알고 있습니다.
+                  with malware. “Do NOT click to open.”
                 </Text>
-                <Text
+                {/* <Text
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                   margin={`0 0 40px`}
                 >
                   ‘클릭 해서 열어보지 말 것.’
+                </Text> */}
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
+                >
+                  Will you continue to allow connecting personal devices
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -396,7 +404,8 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `none` : `flex`}
                 >
-                  감염되었을지 모르는 개인용 기기를 자유롭게 사용하고,
+                  that may be infected to industrial equipment full of
+                  confidential
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -404,7 +413,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `none` : `flex`}
                 >
-                  중요 자료가 담긴 이동식 저장장치를 방치하고
+                  data? Will you continue to neglect removable storage devices
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -412,24 +421,16 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `none` : `flex`}
                 >
-                  산업장비 및 기밀자료가 가득한 산업 시설 기기들에
+                  with important data?
                 </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  수많은 이동식 저장장치와 스마트폰을 연결하도록
-                </Text>
-                <Text
+                {/* <Text
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `none` : `flex`}
                 >
                   두실건가요?
-                </Text>
+                </Text> */}
 
                 <Text
                   fontSize={`18px`}
@@ -437,7 +438,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  감염되었을지 모르는 개인용 기기를 자유
+                  Will you continue to allow connecting personal devices
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -445,7 +446,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  롭게 사용하고, 중요 자료가 담긴 이동식
+                  that may be infected to industrial equipment
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -453,7 +454,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  저장장치를 방치하고 산업장비 및 기밀자
+                  full of confidential data?
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -461,7 +462,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  료가 가득한 산업 시설 기기들에 수많은
+                  Will you continue to neglect
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -469,7 +470,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  이동식 저장장치와 스마트폰을 연결하도
+                  removable storage devices
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -477,7 +478,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  록 두실건가요?
+                  with important data?
                 </Text>
               </Wrapper>
               {/*  */}
@@ -487,8 +488,8 @@ const MM01Presenter = ({
                 ref={tab3Ref}
                 al={`flex-start`}
               >
-                <Title>단언컨데,</Title>
-                <Title>가장 완벽한 보안</Title>
+                <Title>Arguably</Title>
+                <Title>the Best Security</Title>
 
                 <Wrapper
                   width={`20px`}
@@ -502,23 +503,33 @@ const MM01Presenter = ({
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                 >
-                  악성코드의 유입을 차단하고,
+                  The best way to prevent malware infection &#38; data breach is
+                  to
                 </Text>
                 <Text
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `none` : `flex`}
+                  margin={`0 0 40px`}
                 >
-                  데이터 유출을 막는 가장 확실한 방법은 실체가 있는
+                  physically block open ports.
                 </Text>
-                <Text
+                {/* <Text
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `none` : `flex`}
                 >
                   잠금 장치를 통해 직접적인 통로를 차단하는것.
+                </Text> */}
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  The best way to prevent malware
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -526,45 +537,38 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  데이터 유출을 막는 가장 확실한 방법은
+                  infection &#38; data breach is to
                 </Text>
                 <Text
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
+                  margin={`0 0 40px`}
                 >
-                  실체가 있는 잠금 장치를 통해 직접적인
+                  physically block open ports.
                 </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  통로를 차단하는것.
-                </Text>
-                <Text
+                {/* <Text
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                   margin={`0 0 40px`}
                 >
                   즉, 물리적 행동을 못하게 제재하는 것.
+                </Text> */}
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                >
+                  The solution is to physically secure your open ports with
                 </Text>
                 <Text
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                 >
-                  가장 완벽한 보안은 스마트키퍼로
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                >
-                  시스템 물리보안을 구축하는 것 입니다.
+                  SMARTKEEPER.
                 </Text>
                 <Link to="/malware">
                   <Wrapper
@@ -575,7 +579,7 @@ const MM01Presenter = ({
                     display={width < 900 ? `none` : `flex`}
                   >
                     <Text fontWeight={`700`}>
-                      악성코드 유입과 데이터 유출 사례 보러가기
+                      Learn more about malware infection and data breach cases
                     </Text>
                     <RiArrowRightSLine size={20} />
                   </Wrapper>
@@ -588,8 +592,8 @@ const MM01Presenter = ({
                 ref={tab4Ref}
                 al={`flex-start`}
               >
-                <Title>물리보안,</Title>
-                <Title>이젠 선택이 아닌 필수.</Title>
+                <Title>Physical Cybersecurity,</Title>
+                <Title>Now a must, not a choice.</Title>
 
                 <Wrapper
                   width={`20px`}
@@ -604,7 +608,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `none` : `flex`}
                 >
-                  제4차 산업혁명, 무형의 데이터가 자산이 된 시대.
+                  The 4th Industrial Revolution, the era where intangible data
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -612,7 +616,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  제4차 산업혁명, 무형의 데이터가
+                  The 4th Industrial Revolution,
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -621,15 +625,23 @@ const MM01Presenter = ({
                   display={width < 900 ? `flex` : `none`}
                   margin={`0 0 15px`}
                 >
-                  자산이 된 시대.
+                  the era where intangible data
                 </Text>
-                <Text
+                {/* <Text
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `none` : `flex`}
                 >
                   2중, 3중으로 된 보안 시스템과 실시간 감시를 통한
+                </Text> */}
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
+                >
+                  is now an asset… Physically block open ports with SMARTKEEPER
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -637,7 +649,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `none` : `flex`}
                 >
-                  예방에도 나날이 발전하는 악성코드와 산업스파이로
+                  to protect your valuable assets from industry espionage and
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -645,15 +657,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `none` : `flex`}
                 >
-                  바부터 소중한 자산을 지키는 방법은 스마트키퍼를 통해
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  유출 경로를 물리적으로 차단 하는 것 입니다.
+                  ever-evolving malware.
                 </Text>
 
                 <Text
@@ -662,7 +666,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  2중, 3중으로 된 보안 시스템과 실시간
+                  is now an asset…
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -670,7 +674,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  감시를 통한 예방에도 나날이 발전하는
+                  Physically block open ports with SMARTKEEPER
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -678,7 +682,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  악성코드와 산업스파이로 부터 소중한
+                  to protect your valuable assets
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -686,7 +690,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  자산을 지키는 방법은 스마트키퍼를
+                  from industry espionage and
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -694,16 +698,16 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  통해 유출 경로를 물리적으로 차단 하는
+                  ever-evolving malware.
                 </Text>
-                <Text
+                {/* <Text
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
                   것 입니다.
-                </Text>
+                </Text> */}
               </Wrapper>
               {/*  */}
               {/* <Wrapper height={`100vh`}padding={width < 900 ? `0 36px` : `0 0 0 50px`} ref={tab5Ref}>
@@ -801,27 +805,27 @@ const MM01Presenter = ({
                   />
                   <Wrapper
                     width={`auto`}
-                    fontSize={width < 900 ? `32px` : `45px`}
+                    fontSize={width < 900 ? `23px` : `45px`}
                     fontWeight={`bold`}
                     lineHeight={`1.3`}
                   >
-                    한번의 도입으로
+                    Sustainable cybersecurity
                   </Wrapper>
                   <Wrapper
                     width={`auto`}
-                    fontSize={width < 900 ? `32px` : `45px`}
+                    fontSize={width < 900 ? `23px` : `45px`}
                     fontWeight={`bold`}
                     lineHeight={`1.3`}
                   >
-                    지속가능한
+                    system with one physical
                   </Wrapper>
                   <Wrapper
                     width={`auto`}
-                    fontSize={width < 900 ? `32px` : `45px`}
+                    fontSize={width < 900 ? `23px` : `45px`}
                     fontWeight={`bold`}
                     lineHeight={`1.3`}
                   >
-                    물리보안 시스템 구축.
+                    application
                   </Wrapper>
                   <Wrapper
                     width={`auto`}
@@ -831,7 +835,7 @@ const MM01Presenter = ({
                     fontWeight={`300`}
                     display={width < 900 ? `none` : `flex`}
                   >
-                    스마트키퍼는 USB, SD 카드, RJ45 포트 등 컴퓨터나
+                    SMARTKEEPER physically blocks the input/output
                   </Wrapper>
                   <Wrapper
                     width={`auto`}
@@ -841,7 +845,7 @@ const MM01Presenter = ({
                     lineHeight={`1.5`}
                     display={width < 900 ? `none` : `flex`}
                   >
-                    네트워크 장비의 입출력 포트와 기기를 물리적으로
+                    ports of computers and network devices to prevent
                   </Wrapper>
                   <Wrapper
                     width={`auto`}
@@ -851,7 +855,18 @@ const MM01Presenter = ({
                     lineHeight={`1.5`}
                     display={width < 900 ? `none` : `flex`}
                   >
-                    잠금하여, 인가되지 않은 장비의 접근을 차단하는
+                    unauthorized use.
+                  </Wrapper>
+                  <Wrapper
+                    width={`auto`}
+                    dr={`row`}
+                    fontSize={width < 900 ? `18px` : `22px`}
+                    fontWeight={`300`}
+                    lineHeight={`1.5`}
+                    margin={`20px 0 0`}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    Secure USB, SD Card, RJ45 Ports and more with
                   </Wrapper>
                   <Wrapper
                     width={`auto`}
@@ -861,7 +876,7 @@ const MM01Presenter = ({
                     lineHeight={`1.5`}
                     display={width < 900 ? `none` : `flex`}
                   >
-                    세계최초 물리보안 제품군입니다.
+                    SMARTKEEPER.
                   </Wrapper>
                 </Wrapper>
                 <Wrapper
@@ -874,7 +889,7 @@ const MM01Presenter = ({
                     fontSize={`30px`}
                     fontWeight={`bold`}
                   >
-                    물리보안,
+                    Physical Cybersecurity,
                   </Wrapper>
                   <Wrapper
                     width={`auto`}
@@ -882,7 +897,7 @@ const MM01Presenter = ({
                     fontSize={`30px`}
                     fontWeight={`bold`}
                   >
-                    적은 비용으로 큰 효과를 경험해보세요.
+                    Simple but effective economical solution!
                   </Wrapper>
                 </Wrapper>
               </Wrapper>
@@ -909,46 +924,46 @@ const MM01Presenter = ({
               <Wrapper
                 width={`auto`}
                 dr={`row`}
-                fontSize={`18px`}
+                fontSize={`15px`}
                 fontWeight={`500`}
               >
-                <Text>스마트키퍼</Text>는 USB, SD 카드, RJ45 포트
+                SMARTKEEPER physically blocks the
               </Wrapper>
               <Wrapper
                 width={`auto`}
                 dr={`row`}
-                fontSize={`18px`}
+                fontSize={`15px`}
                 fontWeight={`500`}
                 lineHeight={`1.5`}
               >
-                등 컴퓨터나 네트워크 장비의 입출력
+                input/output ports of computers and
               </Wrapper>
               <Wrapper
                 width={`auto`}
                 dr={`row`}
-                fontSize={`18px`}
+                fontSize={`15px`}
                 fontWeight={`500`}
                 lineHeight={`1.5`}
               >
-                포트와 기기를 물리적으로 잠금하여,
+                network devices to prevent unauthorized
               </Wrapper>
               <Wrapper
                 width={`auto`}
                 dr={`row`}
-                fontSize={`18px`}
+                fontSize={`15px`}
                 fontWeight={`500`}
                 lineHeight={`1.5`}
               >
-                인가되지 않은 장비의 접근을 차단하는
+                use. Secure USB, SD Card, RJ45 Ports
               </Wrapper>
               <Wrapper
                 width={`auto`}
                 dr={`row`}
-                fontSize={`18px`}
+                fontSize={`15px`}
                 fontWeight={`500`}
                 lineHeight={`1.5`}
               >
-                세계최초 물리보안 제품군입니다.
+                and more with SMARTKEEPER.
               </Wrapper>
             </Wrapper>
           </RsWrapper>
@@ -969,7 +984,7 @@ const MM01Presenter = ({
               fontSize={`20px`}
               fontWeight={`bold`}
             >
-              물리보안,
+              Physical Cybersecurity,
             </Wrapper>
             <Wrapper
               width={`auto`}
@@ -977,7 +992,7 @@ const MM01Presenter = ({
               fontSize={`20px`}
               fontWeight={`bold`}
             >
-              적은 비용으로
+              Simple but effective
             </Wrapper>
             <Wrapper
               width={`auto`}
@@ -985,7 +1000,7 @@ const MM01Presenter = ({
               fontSize={`20px`}
               fontWeight={`bold`}
             >
-              큰 효과를 경험해보세요.
+              economical solution!
             </Wrapper>
           </Wrapper>
           <RsWrapper>
@@ -1013,11 +1028,11 @@ const MM01Presenter = ({
                     fontWeight={`300`}
                     color={Theme.white_C}
                   >
-                    USB 포트의 보안
+                    USB Port Security
                   </Text>
                   <Wrapper al={`flex-start`}>
-                    <SubTitle>포트보안의 시작점,</SubTitle>
-                    <SubTitle>물리보안으로 종결.</SubTitle>
+                    <SubTitle>Starting point of Port Security,</SubTitle>
+                    <SubTitle>End it with Physical Security.</SubTitle>
                   </Wrapper>
                   <Link to="/security">
                     <Button
@@ -1028,7 +1043,7 @@ const MM01Presenter = ({
                         fontWeight={width < 700 ? `700` : `500`}
                         color={Theme.white_C}
                       >
-                        더 알아보기
+                        Learn more
                       </Text>
                       <RiArrowRightSLine
                         fontSize={`20px`}
@@ -1062,11 +1077,11 @@ const MM01Presenter = ({
                     fontWeight={`300`}
                     color={Theme.white_C}
                   >
-                    네트워크 보안의 필수 조합
+                    The essential combination of network security
                   </Text>
                   <Wrapper al={`flex-start`}>
-                    <SubTitle>네트워크와 인트라넷,</SubTitle>
-                    <SubTitle>사내 모든 자산으로의 통로.</SubTitle>
+                    <SubTitle>Network &#38; Intranet :</SubTitle>
+                    <SubTitle>Pathway to all assets within</SubTitle>
                   </Wrapper>
                   <Link to="/network">
                     <Button
@@ -1077,7 +1092,7 @@ const MM01Presenter = ({
                         fontWeight={width < 700 ? `700` : `500`}
                         color={Theme.white_C}
                       >
-                        더 알아보기
+                        Learn more
                       </Text>
                       <RiArrowRightSLine
                         fontSize={`20px`}
@@ -1127,7 +1142,7 @@ const MM01Presenter = ({
                     margin={`5px 0`}
                     color={Theme.white_C}
                   >
-                    유통형 제품 스마트키퍼 에센셜
+                    Ready for Distribution
                   </Wrapper>
                   <Wrapper al={width < 900 ? `flex-start` : `flex-end`}>
                     <ATag
@@ -1143,7 +1158,7 @@ const MM01Presenter = ({
                           fontWeight={width < 700 ? `700` : `500`}
                           color={Theme.white_C}
                         >
-                          바로가기
+                          Go
                         </Text>
                         <RiArrowRightSLine
                           fontSize={`20px`}
@@ -1189,7 +1204,7 @@ const MM01Presenter = ({
                     margin={`5px 0`}
                     color={Theme.white_C}
                   >
-                    기업 전용 제품 스마트키퍼 프로
+                    For Corporate Use
                   </Wrapper>
                   <Wrapper al={width < 900 ? `flex-start` : `flex-end`}>
                     <Link to="/usb">
@@ -1201,7 +1216,7 @@ const MM01Presenter = ({
                           fontWeight={width < 700 ? `700` : `500`}
                           color={Theme.white_C}
                         >
-                          바로가기
+                          Go
                         </Text>
                         <RiArrowRightSLine
                           fontSize={`20px`}
@@ -1225,24 +1240,35 @@ const MM01Presenter = ({
                     al={`flex-start`}
                     margin={width < 900 ? `0 0 20px` : `0 0 10px`}
                   >
-                    <SubTitle fontSize={`40px`}>악성코드의 침입,</SubTitle>
                     <SubTitle
                       fontSize={`40px`}
                       display={width < 900 ? `none` : `flex`}
                     >
-                      아무도 믿을 수 없는 데이터 유출
+                      Malware intrusion, data breach,
+                    </SubTitle>
+                    <SubTitle
+                      fontSize={`40px`}
+                      display={width < 900 ? `none` : `flex`}
+                    >
+                      no one can be trusted…
                     </SubTitle>
                     <SubTitle
                       fontSize={`40px`}
                       display={width < 900 ? `flex` : `none`}
                     >
-                      아무도 믿을 수 없는
+                      Malware intrusion,
                     </SubTitle>
                     <SubTitle
                       fontSize={`40px`}
                       display={width < 900 ? `flex` : `none`}
                     >
-                      데이터 유출
+                      data breach,
+                    </SubTitle>
+                    <SubTitle
+                      fontSize={`40px`}
+                      display={width < 900 ? `flex` : `none`}
+                    >
+                      no one can be trusted…
                     </SubTitle>
                   </Wrapper>
                   <Wrapper
@@ -1253,7 +1279,8 @@ const MM01Presenter = ({
                     color={Theme.white_C}
                     display={width < 900 ? `none` : `flex`}
                   >
-                    5G, IOT 사물인터넷을 통해 모든 사물이 연결되는 초 연결시대.
+                    We live in a hyperconnected age, where everyone and
+                    everything is connected. With big data, the
                   </Wrapper>
                   <Wrapper
                     al={`flex-start`}
@@ -1263,8 +1290,8 @@ const MM01Presenter = ({
                     color={Theme.white_C}
                     display={width < 900 ? `none` : `flex`}
                   >
-                    빅데이터로 인해 기업이 관리해야 하는 데이터와 서로 연결된
-                    기기들은 기하급수적으로 늘어나고 있으며,
+                    number of data and interconnected devices that companies
+                    need to manage is growing
                   </Wrapper>
                   <Wrapper
                     al={`flex-start`}
@@ -1274,8 +1301,19 @@ const MM01Presenter = ({
                     color={Theme.white_C}
                     display={width < 900 ? `none` : `flex`}
                   >
-                    이에 따른 보안 취약성은 점점 증대되고 있습니다. 단 한대의
-                    기기만 접근해도 연결된 모든 시스템으로
+                    exponentially. As a result, security vulnerabilities are
+                    always on the rise. This is because access to
+                  </Wrapper>
+                  <Wrapper
+                    al={`flex-start`}
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    lineHeight={`1.5`}
+                    color={Theme.white_C}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    all connected systems can be gained even if only one device
+                    is accessed. If one PC is infected with
                   </Wrapper>
                   <Wrapper
                     al={`flex-start`}
@@ -1286,8 +1324,8 @@ const MM01Presenter = ({
                     display={width < 900 ? `none` : `flex`}
                     margin={`0 0 50px`}
                   >
-                    접속이 가능하기 때문이죠. 하나의 PC에 바이러스가 감염되면
-                    사내에 퍼지는 것은 시간문제인 것처럼요.
+                    malware, it is only a matter of time before it spreads
+                    throughout the network.
                   </Wrapper>
                   <Link to="/malware">
                     <Button dr={`row`}>
@@ -1295,7 +1333,7 @@ const MM01Presenter = ({
                         fontWeight={width < 700 ? `700` : `500`}
                         color={Theme.white_C}
                       >
-                        더 알아보기
+                        Learn more
                       </Text>
                       <RiArrowRightSLine
                         fontSize={`18px`}

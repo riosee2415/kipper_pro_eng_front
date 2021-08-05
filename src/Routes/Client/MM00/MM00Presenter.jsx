@@ -216,7 +216,7 @@ const MM00Presenter = ({
                 color={Theme.white_C}
                 display={width < 700 ? `none` : `flex`}
               >
-                하나의 키로 모든 범용적인 포트 잠금장치.
+                The ability to manage everything with ONE key.
               </Text>
 
               <Text
@@ -225,7 +225,8 @@ const MM00Presenter = ({
                 fontSize={`18px`}
                 fontWeight={`700`}
               >
-                암호화된 수백여 키 패턴으로 보안성을 확보한 전용 키.
+                A cyber security system that can be used safely on numerous
+                devices
               </Text>
               <Text
                 color={Theme.greyTheme6_C}
@@ -233,7 +234,25 @@ const MM00Presenter = ({
                 fontSize={`18px`}
                 fontWeight={`700`}
               >
-                전 세계 3,000여 프로들의 선택
+                with confidential key patterns. SMARTKEEPER is the physical
+                cybersecurity
+              </Text>
+              <Text
+                color={Theme.greyTheme6_C}
+                display={width < 700 ? `none` : `flex`}
+                fontSize={`18px`}
+                fontWeight={`700`}
+              >
+                system chosen by leaders and professionals of 3,000+ sites
+                worldwide from
+              </Text>
+              <Text
+                color={Theme.greyTheme6_C}
+                display={width < 700 ? `none` : `flex`}
+                fontSize={`18px`}
+                fontWeight={`700`}
+              >
+                a wide range of industries.
               </Text>
 
               <Wrapper
@@ -252,14 +271,14 @@ const MM00Presenter = ({
                     fontWeight={`bold`}
                     margin={`0 10px 0 0`}
                   >
-                    유니버셜 락키
+                    Universal Lock Key
                   </Wrapper>
                   <Text
                     fontSize={`16px`}
                     fontWeight={`700`}
                     color={Theme.white_C}
                   >
-                    더 알아보기
+                    Learn more
                   </Text>
                   <RiArrowRightSLine fontSize={`25px`} color={Theme.white_C} />
                 </Button>
@@ -271,7 +290,7 @@ const MM00Presenter = ({
                 fontSize={`18px`}
                 fontWeight={`700`}
               >
-                하나의 키로 모든 범용적인
+                The ability to manage everything
               </Text>
 
               <Text
@@ -280,40 +299,41 @@ const MM00Presenter = ({
                 fontWeight={`700`}
                 fontSize={`18px`}
               >
-                포트 잠금장치를.
+                with ONE key.
               </Text>
 
               <Text
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.greyTheme6_C}
-                fontSize={`18px`}
+                fontSize={`17px`}
                 fontWeight={`700`}
               >
-                압호화된 수백여 키 패턴으로
+                A cyber security system that can be used safely on numerous
+                devices
               </Text>
               <Text
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.greyTheme6_C}
-                fontSize={`18px`}
+                fontSize={`17px`}
                 fontWeight={`700`}
               >
-                보안성을 확보한 전용 키.
+                with confidential key patterns. SMARTKEEPER is the physical
               </Text>
               <Text
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.greyTheme6_C}
-                fontSize={`18px`}
+                fontSize={`17px`}
                 fontWeight={`700`}
               >
-                전 세계 3,000여
+                cybersecuri system chosen by leaders and professionals of 3,000+
               </Text>
               <Text
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.greyTheme6_C}
-                fontSize={`18px`}
+                fontSize={`17px`}
                 fontWeight={`700`}
               >
-                프로들의 선택.
+                sites worldwide fro a wide range of industries.
               </Text>
 
               <Wrapper
@@ -339,7 +359,7 @@ const MM00Presenter = ({
                     fontWeight={`700`}
                     color={Theme.white_C}
                   >
-                    더 알아보기
+                    Learn more
                   </Text>
                   <RiArrowRightSLine fontSize={`14px`} color={Theme.white_C} />
                 </Button>
@@ -347,7 +367,7 @@ const MM00Presenter = ({
             </Wrapper>
             {/*  */}
             <Wrapper
-              margin={width < 700 ? `400px 0 0` : `150px 0 0`}
+              margin={width < 700 ? `300px 0 0` : `150px 0 0`}
               al={`flex-end`}
             >
               <Image
@@ -403,14 +423,14 @@ const MM00Presenter = ({
                     fontWeight={`bold`}
                     margin={`0 10px 0 0`}
                   >
-                    미니용키
+                    Lock Key Mini
                   </Wrapper>
                   <Text
                     fontSize={`16px`}
                     fontWeight={`700`}
                     color={Theme.white_C}
                   >
-                    더 알아보기
+                    Learn more
                   </Text>
                   <RiArrowRightSLine fontSize={`25px`} color={Theme.white_C} />
                 </Button>
@@ -457,7 +477,7 @@ const MM00Presenter = ({
                     fontWeight={`700`}
                     color={Theme.white_C}
                   >
-                    더 알아보기
+                    Learn more
                   </Text>
                   <RiArrowRightSLine fontSize={`14px`} color={Theme.white_C} />
                 </Button>
@@ -493,7 +513,7 @@ const MM00Presenter = ({
               fontSize={width < 700 ? `18px` : `25px`}
               color={Theme.white_C}
             >
-              USB포트의 보안
+              USB Port Security
             </Text>
             <Wrapper
               al={`flex-start`}
@@ -504,14 +524,14 @@ const MM00Presenter = ({
                 margin={`0`}
                 fontSize={width < 700 ? `30px` : `40px`}
               >
-                포트보안의 시작점,
+                Starting point of Port Security,
               </CommonSubTitle>
               <CommonSubTitle
                 lineHeight={`1.2`}
                 margin={`0`}
                 fontSize={width < 700 ? `30px` : `40px`}
               >
-                물리보안으로 종결.
+                End it with Physical Security.
               </CommonSubTitle>
             </Wrapper>
             <Button dr={`row`}>
@@ -521,7 +541,7 @@ const MM00Presenter = ({
                 color={Theme.white_C}
                 onClick={() => moveLinkHandler(`/security`)}
               >
-                더 알아보기
+                Learn more
               </Text>
               <RiArrowRightSLine
                 fontSize={width < 700 ? `14px` : `25px`}
@@ -548,7 +568,7 @@ const MM00Presenter = ({
               fontSize={width < 700 ? `18px` : `25px`}
               color={Theme.white_C}
             >
-              네트워크 보안의 필수 조합
+              The essential combination of network security
             </Text>
 
             <Wrapper
@@ -557,10 +577,10 @@ const MM00Presenter = ({
               display={width < 700 ? `none` : `flex`}
             >
               <CommonSubTitle lineHeight={`1.2`} margin={`0`} fontSize={`40px`}>
-                네트워크와 인트라넷,
+                Network &#38; Intranet :
               </CommonSubTitle>
               <CommonSubTitle lineHeight={`1.2`} margin={`0`} fontSize={`40px`}>
-                사내 모든 자산으로의 통로.
+                Pathway to all assets within
               </CommonSubTitle>
             </Wrapper>
             <Wrapper
@@ -569,13 +589,13 @@ const MM00Presenter = ({
               display={width < 700 ? `flex` : `none`}
             >
               <CommonSubTitle lineHeight={`1.2`} margin={`0`} fontSize={`30px`}>
-                네트워크와 인트라넷,
+                Network &#38; Intranet :
               </CommonSubTitle>
               <CommonSubTitle lineHeight={`1.2`} margin={`0`} fontSize={`30px`}>
-                사내 모든 자산으로의
+                Pathway to all
               </CommonSubTitle>
               <CommonSubTitle lineHeight={`1.2`} margin={`0`} fontSize={`30px`}>
-                통로.
+                assets within
               </CommonSubTitle>
             </Wrapper>
 
@@ -586,7 +606,7 @@ const MM00Presenter = ({
                 color={Theme.white_C}
                 onClick={() => moveLinkHandler(`/network`)}
               >
-                더 알아보기
+                Learn more
               </Text>
               <RiArrowRightSLine
                 fontSize={width < 700 ? `14px` : `25px`}
@@ -616,14 +636,14 @@ const MM00Presenter = ({
         <RsWrapper>
           <Wrapper al={`flex-start`}>
             <Text fontSize={`25px`} color={Theme.white_C}>
-              스마트키퍼 프로 적용 사례
+              Examples of SMARTKEEPER PRO Application
             </Text>
             <Wrapper al={`flex-start`} margin={`20px 0`}>
               <CommonSubTitle lineHeight={`1.2`} margin={`0`} fontSize={`40px`}>
-                물리보안을 가장 완벽하게,
+                Making the most of
               </CommonSubTitle>
               <CommonSubTitle lineHeight={`1.2`} margin={`0`} fontSize={`40px`}>
-                활용하는 모든 곳.
+                physical cybersecurity
               </CommonSubTitle>
             </Wrapper>
             <Button dr={`row`}>
@@ -633,7 +653,7 @@ const MM00Presenter = ({
                 color={Theme.white_C}
                 onClick={() => moveLinkHandler(`/example`)}
               >
-                더 알아보기
+                Learn more
               </Text>
               <RiArrowRightSLine fontSize={`25px`} color={Theme.white_C} />
             </Button>
@@ -673,7 +693,7 @@ const MM00Presenter = ({
               fontSize={width < 700 ? `18px` : `25px`}
               color={Theme.white_C}
             >
-              스마트키퍼 프로의 장점
+              Advantages of SMARTKEEPER PRO
             </Text>
 
             <Wrapper

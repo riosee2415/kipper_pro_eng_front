@@ -20,7 +20,7 @@ const Title = styled.h1`
   color: ${(props) => props.theme.white_C};
 
   @media (max-width: 700px) {
-    font-size: 30px;
+    font-size: 21px;
     margin: 0 0 15px;
   }
 `;
@@ -32,7 +32,7 @@ const Desc = styled.h2`
   display: ${(props) => props.display};
 
   @media (max-width: 700px) {
-    font-size: 18px;
+    font-size: 15px;
     margin: 0 0 10px;
     color: rgb(226, 226, 226);
   }
@@ -73,29 +73,37 @@ const MM03Presenter = ({
         <Text
           fontSize={width < 700 ? `18px` : `24px`}
           lineHeight={width < 700 ? `30px` : `40px`}
+          display={width < 700 ? `none` : `block`}
         >
-          3천여 개 국내외 주요사이트
+          Making the most of physical cyber security in
         </Text>
         <Text
           fontSize={width < 700 ? `18px` : `24px`}
           lineHeight={width < 700 ? `30px` : `40px`}
           display={width < 700 ? `none` : `block`}
         >
-          물리보안을 가장 완벽하게, 활용하는 모든 곳.
+          3,000+ sites worldwide.
         </Text>
         <Text
           fontSize={width < 700 ? `18px` : `24px`}
           lineHeight={width < 700 ? `30px` : `40px`}
           display={width < 700 ? `block` : `none`}
         >
-          물리보안을 가장 완벽하게,
+          Making the most of physical
         </Text>
         <Text
           fontSize={width < 700 ? `18px` : `24px`}
           lineHeight={width < 700 ? `30px` : `40px`}
           display={width < 700 ? `block` : `none`}
         >
-          활용하는 모든 곳.
+          cyber security in
+        </Text>
+        <Text
+          fontSize={width < 700 ? `18px` : `24px`}
+          lineHeight={width < 700 ? `30px` : `40px`}
+          display={width < 700 ? `block` : `none`}
+        >
+          3,000+ sites worldwide.
         </Text>
       </Wrapper>
       <Wrapper isRelative={true} margin={width < 700 ? `15px 0 0` : `10px 0 0`}>
@@ -110,22 +118,22 @@ const MM03Presenter = ({
         <Wrapper isAbsolute={true} height={`100%`} top={`0`} left={`0`}>
           <RsWrapper>
             <Wrapper width={width < 700 ? `100%` : `90%`}>
-              <Title>전력 및 에너지 발전</Title>
+              <Title>Power Generating Plants</Title>
               <Desc display={width < 700 ? `none` : `block`}>
-                원자력, 화력, 수력 등 발전기발시설 150여 사이트
+                Nuclear, Thermal, and Hydroelectric Power Plants 150+ sites
               </Desc>
               <Desc display={width < 700 ? `block` : `none`}>
-                원자력, 화력, 수력 등
+                Nuclear, Thermal, and Hydroelectric
               </Desc>
               <Desc display={width < 700 ? `block` : `none`}>
-                발전기발시설 150여 사이트
+                Power Plants 150+ sites
               </Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
                 color={`#9D9D9D`}
                 fontWeight={`300`}
               >
-                * 대상포트를 클릭하면 해당 제품으로 이동합니다.
+                * Click the target port to go to the product.
               </Text>
 
               <Wrapper margin={`15px 0 0`} dr={`row`} al={`flex-start`}>
@@ -347,20 +355,20 @@ const MM03Presenter = ({
         <Wrapper isAbsolute={true} height={`100%`} top={`0`} left={`0`}>
           <RsWrapper>
             <Wrapper width={width < 700 ? `100%` : `90%`}>
-              <Title>상하수도</Title>
+              <Title>Water &#38; Sewage</Title>
               <Desc display={width < 700 ? `none` : `block`}>
-                수자원 등 국가기반시설 60여 사이트
+                Water Resource 60+ sites
               </Desc>
               <Desc display={width < 700 ? `block` : `none`}>
-                수자원 등 국가기반시설
+                Water Resource
               </Desc>
-              <Desc display={width < 700 ? `block` : `none`}>60여 사이트</Desc>
+              <Desc display={width < 700 ? `block` : `none`}> 60+ sites</Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
                 color={`#9D9D9D`}
                 fontWeight={`300`}
               >
-                * 대상포트를 클릭하면 해당 제품으로 이동합니다.
+                * Click the target port to go to the product.
               </Text>
 
               <Wrapper margin={`15px 0 0`} dr={`row`} al={`flex-start`}>
@@ -576,20 +584,20 @@ const MM03Presenter = ({
         <Wrapper isAbsolute={true} height={`100%`} top={`0`} left={`0`}>
           <RsWrapper>
             <Wrapper width={width < 700 ? `100%` : `90%`}>
-              <Title>철도, 도로</Title>
+              <Title>Railroads &#38; Highways</Title>
               <Desc display={width < 700 ? `none` : `block`}>
-                교통망 기반시설 70개 사이트
+                Transportation Infrastructure 70+ sites
               </Desc>
               <Desc display={width < 700 ? `block` : `none`}>
-                교통망 기반시설
+                Transportation Infrastructure
               </Desc>
-              <Desc display={width < 700 ? `block` : `none`}>70개 사이트</Desc>
+              <Desc display={width < 700 ? `block` : `none`}>70+ sites</Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
                 color={`#9D9D9D`}
                 fontWeight={`300`}
               >
-                * 대상포트를 클릭하면 해당 제품으로 이동합니다.
+                * Click the target port to go to the product.
               </Text>
 
               <Wrapper margin={`15px 0 0`} dr={`row`} al={`flex-start`}>
@@ -805,20 +813,23 @@ const MM03Presenter = ({
         <Wrapper isAbsolute={true} height={`100%`} top={`0`} left={`0`}>
           <RsWrapper>
             <Wrapper width={width < 700 ? `100%` : `90%`}>
-              <Title>공항, 항만 등 운송</Title>
+              <Title>Transit: Airports &#38; Shipping</Title>
               <Desc display={width < 700 ? `none` : `block`}>
-                교통망 기반시설 70개 사이트
+                Global shipping companies using maritime or ground based
+                transportation 70+ sites
               </Desc>
               <Desc display={width < 700 ? `block` : `none`}>
-                교통망 기반시설
+                Global shipping companies using maritime
               </Desc>
-              <Desc display={width < 700 ? `block` : `none`}>70개 사이트</Desc>
+              <Desc display={width < 700 ? `block` : `none`}>
+                or ground based transportation 70+ sites
+              </Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
                 color={`#9D9D9D`}
                 fontWeight={`300`}
               >
-                * 대상포트를 클릭하면 해당 제품으로 이동합니다.
+                * Click the target port to go to the product.
               </Text>
 
               <Wrapper margin={`15px 0 0`} dr={`row`} al={`flex-start`}>
@@ -1038,22 +1049,22 @@ const MM03Presenter = ({
         <Wrapper isAbsolute={true} height={`100%`} top={`0`} left={`0`}>
           <RsWrapper>
             <Wrapper>
-              <Title>공공기관</Title>
+              <Title>Public Institutions</Title>
               <Desc display={width < 700 ? `none` : `block`}>
-                청와대, 중앙부처를 비롯한 지자체 200여 사이트
+                Federal Government, The Blue House &#38; 200+ other sites
               </Desc>
               <Desc display={width < 700 ? `block` : `none`}>
-                청와대, 중앙부처를 비롯한
+                Federal Government,
               </Desc>
               <Desc display={width < 700 ? `block` : `none`}>
-                지자체 200여 사이트
+                The Blue House &#38; 200+ other sites
               </Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
                 color={`#9D9D9D`}
                 fontWeight={`300`}
               >
-                * 대상포트를 클릭하면 해당 제품으로 이동합니다.
+                * Click the target port to go to the product.
               </Text>
 
               <Wrapper margin={`15px 0 0`} dr={`row`} al={`flex-start`}>
@@ -1332,23 +1343,23 @@ const MM03Presenter = ({
         <Wrapper isAbsolute={true} height={`100%`} top={`0`} left={`0`}>
           <RsWrapper>
             <Wrapper>
-              <Title>군</Title>
+              <Title>Military</Title>
               <Desc display={width < 700 ? `none` : `block`}>
-                육, 해, 공군 관련 시설 및 방산업체 80여개 사이트
+                Army, Navy, Air Force &#38; 80+ other national defense sites
               </Desc>
 
               <Desc display={width < 700 ? `block` : `none`}>
-                육, 해, 공군 관련 시설 및
+                Army, Navy, Air Force &#38; 80+
               </Desc>
               <Desc display={width < 700 ? `block` : `none`}>
-                방산업체 80여개 사이트
+                other national defense sites
               </Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
                 color={`rgb(157, 157, 157)`}
                 fontWeight={`300`}
               >
-                * 대상포트를 클릭하면 해당 제품으로 이동합니다.
+                * Click the target port to go to the product.
               </Text>
 
               <Wrapper margin={`15px 0 0`} dr={`row`} al={`flex-start`}>
@@ -1619,22 +1630,23 @@ const MM03Presenter = ({
         <Wrapper isAbsolute={true} height={`100%`} top={`0`} left={`0`}>
           <RsWrapper>
             <Wrapper width={width < 700 ? `100%` : `90%`}>
-              <Title>금융</Title>
+              <Title>Financial Institutions</Title>
               <Desc display={width < 700 ? `none` : `block`}>
-                주요 은행, 증권, 생보사 등 금융권 150여 사이트
+                Banking, Investment Brokerage, Insurance companies &#38; 150+
+                other sites
               </Desc>
               <Desc display={width < 700 ? `block` : `none`}>
-                주요 은행, 증권, 생보사 등
+                Banking, Investment Brokerage,
               </Desc>
               <Desc display={width < 700 ? `block` : `none`}>
-                금융권 150여 사이트
+                Insurance companies &#38; 150+ other sites
               </Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
                 color={`#9D9D9D`}
                 fontWeight={`300`}
               >
-                * 대상포트를 클릭하면 해당 제품으로 이동합니다.
+                * Click the target port to go to the product.
               </Text>
 
               <Wrapper margin={`15px 0 0`} dr={`row`} al={`flex-start`}>
@@ -1827,20 +1839,23 @@ const MM03Presenter = ({
         <Wrapper isAbsolute={true} height={`100%`} top={`0`} left={`0`}>
           <RsWrapper>
             <Wrapper width={width < 700 ? `100%` : `90%`}>
-              <Title>기술 및 제조</Title>
+              <Title>Technology &#38; Manufacturing</Title>
               <Desc display={width < 700 ? `none` : `block`}>
-                조선, 디스플레이, 반도체 등 200여 사이트
+                Ship building, display, semiconductors &#38; 200+ other
+                manufacturing sites
               </Desc>
               <Desc display={width < 700 ? `block` : `none`}>
-                조선, 디스플레이, 반도체 등
+                Ship building, display, semiconductors &#38;
               </Desc>
-              <Desc display={width < 700 ? `block` : `none`}>200여 사이트</Desc>
+              <Desc display={width < 700 ? `block` : `none`}>
+                200+ other manufacturing sites
+              </Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
                 color={`#9D9D9D`}
                 fontWeight={`300`}
               >
-                * 대상포트를 클릭하면 해당 제품으로 이동합니다.
+                * Click the target port to go to the product.
               </Text>
 
               <Wrapper margin={`15px 0 0`} dr={`row`} al={`flex-start`}>
@@ -2079,20 +2094,22 @@ const MM03Presenter = ({
         <Wrapper isAbsolute={true} height={`100%`} top={`0`} left={`0`}>
           <RsWrapper>
             <Wrapper width={width < 700 ? `100%` : `90%`}>
-              <Title>통신 네트워크</Title>
+              <Title>Telecommunications &#38; Networking</Title>
               <Desc display={width < 700 ? `none` : `block`}>
-                IDC, 네트워크 서비스 공급자 등 200여 사이트
+                IDC, Network Service Providers and 200+ other sites
               </Desc>
               <Desc display={width < 700 ? `block` : `none`}>
-                IDC, 네트워크 서비스 공급자 등
+                IDC, Network Service Providers and
               </Desc>
-              <Desc display={width < 700 ? `block` : `none`}>200여 사이트</Desc>
+              <Desc display={width < 700 ? `block` : `none`}>
+                200+ other sites
+              </Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
                 color={`rgb(157, 157, 157)`}
                 fontWeight={`300`}
               >
-                * 대상포트를 클릭하면 해당 제품으로 이동합니다.
+                * Click the target port to go to the product.
               </Text>
 
               <Wrapper margin={`15px 0 0`} dr={`row`} al={`flex-start`}>

@@ -274,17 +274,20 @@ const MMinitPresenter = ({ width, moveLinkHandler }) => {
                   textAlign={`center`}
                   margin={`15px 0 0`}
                 >
-                  For the Professionals
+                  For Professionals Only
                 </Text>
                 <Wrapper margin={`100px 0 0`}>
                   <Text fontSize={`18px`}>
-                    더 나은 보안을 위해. 확인된 기업 외에는 판매하지 않습니다.
+                    For better security, sold exclusively to verified companies.
+                    Proven choice of
                   </Text>
                   <Text fontSize={`18px`}>
-                    정부, 공공기관, 기반시설, 교통, 항만, 지자체, 발전소, 군,
+                    3,000+ installation sites worldwide from a wide range of
+                    industries
                   </Text>
                   <Text fontSize={`18px`}>
-                    군수업체, 대기업 제조사, 금융 등 글로벌 3천여 사이트의 선택
+                    including, government, military and public & private
+                    institutions.
                   </Text>
                 </Wrapper>
               </ProText>
@@ -388,15 +391,16 @@ const MMinitPresenter = ({ width, moveLinkHandler }) => {
                 </Text>
 
                 <Wrapper margin={`90px 0 0`}>
-                  <Text fontSize={`18px`}>당신의 노력이 담긴 결과물,</Text>
                   <Text fontSize={`18px`}>
-                    이제 더 안전하게 관리하세요. 온라인 유통모델 출시!
+                    Manage the results of your hard work with better security.
                   </Text>
                   <Text fontSize={`18px`}>
-                    USB 포트부터 각종 입출력 포트의 잠금장치를
+                    ESSENTIAL Series available online with economical prices!
+                    Secure open USB
                   </Text>
                   <Text fontSize={`18px`}>
-                    더 경제적인 가격으로 온라인에서 만나보세요.
+                    Ports and other input/output ports with locks from our
+                    ESSENTIAL Series.
                   </Text>
                 </Wrapper>
               </EssText>
@@ -420,28 +424,28 @@ const MMinitPresenter = ({ width, moveLinkHandler }) => {
           padding={width < 900 ? `100px 30px 60px` : `180px 0`}
         >
           <Text fontSize={width < 900 ? `26px` : `40px`} fontWeight={`bold`}>
-            단언컨데,
+            Arguably,
           </Text>
           <Text
             display={width > 900 ? `flex` : `none`}
             fontSize={`40px`}
             fontWeight={`bold`}
           >
-            가장 완벽한 보안은 직접 막는 것 입니다.
+            the most effective defense is physical defense.
           </Text>
           <Text
             display={width < 900 ? `flex` : `none`}
             fontSize={`26px`}
             fontWeight={`bold`}
           >
-            가장 완벽한 보안은
+            the most effective defense is
           </Text>
           <Text
             display={width < 900 ? `flex` : `none`}
             fontSize={`26px`}
             fontWeight={`bold`}
           >
-            직접 막는 것 입니다.
+            physical defense.
           </Text>
           <Wrapper
             display={width > 900 ? `flex` : `none`}
@@ -449,17 +453,20 @@ const MMinitPresenter = ({ width, moveLinkHandler }) => {
             padding={`30px 0`}
           >
             <Text fontSize={`20px`} fontWeight={`300`}>
-              물리보안, 생소한 단어같지만
+              “Physical Cybersecurity” may sound foreign, however, like armor
+              and shields,
             </Text>
             <Text fontSize={`20px`} fontWeight={`300`}>
-              갑옷과 방패, 그리고 울타리와 성벽 처럼 우린 오랫동안 물리적으로
-              지켜왔습니다.
+              and fences and walls, we have been “physically” protected for a
+              long time.
             </Text>
             <Text fontSize={`20px`} fontWeight={`300`}>
-              물리적인 것은 실체가 있고, 실체가 있는 것은 언제나 완벽했습니다.
+              What is physical is real, and what is real has always been
+              perfect.
             </Text>
             <Text fontSize={`20px`} fontWeight={`300`}>
-              스마트키퍼는 물리보안의 표준을 위해 정진해 나가고 있습니다.
+              SMARTKEEPER is committed to setting the standard in physical
+              cybersecurity.
             </Text>
           </Wrapper>
 
@@ -468,31 +475,32 @@ const MMinitPresenter = ({ width, moveLinkHandler }) => {
             al={`flex-start`}
             padding={width < 900 ? `30px 0 18px` : `30px 0`}
           >
-            <Text fontSize={`18px`} fontWeight={`300`}>
-              물리보안, 생소한 단어같지만
+            <Text fontSize={`17px`} fontWeight={`300`}>
+              “Physical Cybersecurity” may sound
             </Text>
-            <Text fontSize={`18px`} fontWeight={`300`}>
-              갑옷과 방패, 그리고 울타리와 성벽 처럼
+            <Text fontSize={`17px`} fontWeight={`300`}>
+              foreign, however, like armor and shields,
             </Text>
-            <Text fontSize={`18px`} fontWeight={`300`}>
-              우린 오랫동안 물리적으로 지켜왔습니다.
+            <Text fontSize={`17px`} fontWeight={`300`}>
+              and fences and walls, we have been
             </Text>
-            <Text fontSize={`18px`} fontWeight={`300`}>
-              물리적인 것은 실체가 있고,
+            <Text fontSize={`17px`} fontWeight={`300`}>
+              “physically” protected for a long time.
             </Text>
-            <Text fontSize={`18px`} fontWeight={`300`}>
-              실체가 있는 것은 언제나 완벽했습니다.
+            <Text fontSize={`17px`} fontWeight={`300`}>
+              What is physical is real, and what is real has always been
+              perfect.
             </Text>
-            <Text fontSize={`18px`} fontWeight={`300`}>
-              스마트키퍼는 물리보안의 표준을 위해
+            <Text fontSize={`17px`} fontWeight={`300`}>
+              SMARTKEEPER is committed to setting
             </Text>
-            <Text fontSize={`18px`} fontWeight={`300`}>
-              정진해 나가고 있습니다.
+            <Text fontSize={`17px`} fontWeight={`300`}>
+              the standard in physical cybersecurity.
             </Text>
           </Wrapper>
           <Link to="/about">
             <ArrowIcon>
-              더 알아보기
+              Learn more
               <FaChevronRight />
             </ArrowIcon>
           </Link>
@@ -510,10 +518,10 @@ const MMinitPresenter = ({ width, moveLinkHandler }) => {
           padding={width < 900 ? `100px 30px 60px` : `180px 0`}
         >
           <Text fontSize={width < 900 ? `26px` : `40px`} fontWeight={`bold`}>
-            우리는
+            We
           </Text>
           <Text fontSize={width < 900 ? `26px` : `40px`} fontWeight={`bold`}>
-            고객의 목소리를 중시합니다.
+            value the voice of our customers.
           </Text>
           <Wrapper
             display={width > 900 ? `flex` : `none`}
@@ -521,23 +529,23 @@ const MMinitPresenter = ({ width, moveLinkHandler }) => {
             padding={`30px 0`}
           >
             <Text fontSize={`20px`} fontWeight={`300`}>
-              스마트키퍼는 실제 보안 담당자와의 끊임없는 소통을 합니다.
+              SmartKeeper is in constant communications with cybersecurity
+              teams.
             </Text>
             <Text fontSize={`20px`} fontWeight={`300`}>
-              사용에 있어 보다 효율적이며 편의성과 보안성, 안전성에 대해
-              논의하고 연구합니다.
+              We discuss and examine ways to enhance security, safety and
+              convenience of use.
             </Text>
             <Text fontSize={`20px`} fontWeight={`300`}>
-              사무실 같은 간단한 환경부터 서버실과 산업현장 같은 복잡한
-              환경까지.
+              From office use to server rooms and industrial sites, we research
+              and analyze port specifications and
             </Text>
             <Text fontSize={`20px`} fontWeight={`300`}>
-              필드의 목소리를 통해 다양한 사용 환경 내 포트의 규격과 특징을
-              분석하여
+              characteristics to present the best products.
             </Text>
-            <Text fontSize={`20px`} fontWeight={`300`}>
+            {/* <Text fontSize={`20px`} fontWeight={`300`}>
               연구하며 최고의 제품을 여러분께 선보입니다.
-            </Text>
+            </Text> */}
           </Wrapper>
 
           <Wrapper
@@ -545,37 +553,37 @@ const MMinitPresenter = ({ width, moveLinkHandler }) => {
             al={`flex-start`}
             padding={width < 900 ? `30px 0 18px` : `30px 0`}
           >
-            <Text fontSize={`18px`} fontWeight={`300`}>
-              스마트키퍼는 실제 보안 담당자와의
+            <Text fontSize={`17px`} fontWeight={`300`}>
+              SmartKeeper is in constant
             </Text>
-            <Text fontSize={`18px`} fontWeight={`300`}>
-              끊임없는 소통을 합니다. 사용에 있어
+            <Text fontSize={`17px`} fontWeight={`300`}>
+              communications with cybersecurity
             </Text>
-            <Text fontSize={`18px`} fontWeight={`300`}>
-              보다 효율적이며 편의성과 보안성, 안전성
+            <Text fontSize={`17px`} fontWeight={`300`}>
+              teams. We discuss and examine ways to
             </Text>
-            <Text fontSize={`18px`} fontWeight={`300`}>
-              에 대해 논의하고 연구합니다. 사무실
+            <Text fontSize={`17px`} fontWeight={`300`}>
+              enhance security, safety and convenience of use.
             </Text>
-            <Text fontSize={`18px`} fontWeight={`300`}>
-              같은 간단한 환경부터 서버실과 산업현장
+            <Text fontSize={`17px`} fontWeight={`300`}>
+              From office use to server rooms and
             </Text>
-            <Text fontSize={`18px`} fontWeight={`300`}>
-              같은 복잡한 환경까지. 필드의 목소리를
+            <Text fontSize={`17px`} fontWeight={`300`}>
+              industrial sites, we research
             </Text>
-            <Text fontSize={`18px`} fontWeight={`300`}>
-              통해 다양한 사용 환경 내 포트의 규격과
+            <Text fontSize={`17px`} fontWeight={`300`}>
+              and analyze port specifications
             </Text>
-            <Text fontSize={`18px`} fontWeight={`300`}>
-              특징을 분석하여 연구하며 최고의 제품을
+            <Text fontSize={`17px`} fontWeight={`300`}>
+              and characteristics to present
             </Text>
-            <Text fontSize={`18px`} fontWeight={`300`}>
-              여러분께 선보입니다.
+            <Text fontSize={`17px`} fontWeight={`300`}>
+              the best products.
             </Text>
           </Wrapper>
           <ArrowIcon>
             <Link to="/contact">
-              더 알아보기
+              Learn more
               <FaChevronRight />
             </Link>
           </ArrowIcon>
