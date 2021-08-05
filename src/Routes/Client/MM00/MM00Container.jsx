@@ -9,8 +9,13 @@ import {
   GET_MOBILEBANNER_ALL,
 } from "./MM00Queries";
 import { animateScroll as scroll } from "react-scroll";
+import { useRef } from "react";
 
 const MM00Container = ({ history }) => {
+  ////////////// - USE REF- ///////////////
+
+  const documentRef = useRef(document);
+
   ////////////// - USE STATE- ///////////////
   const [ip, setIP] = useState();
 
@@ -74,6 +79,10 @@ const MM00Container = ({ history }) => {
   }
 
   ///////////// - EVENT HANDLER- ////////////
+  const moveLinkHandler = (link) => {
+    history.push(link);
+  };
+
   const getIpHandler = () => {
     var head = document.getElementsByTagName("head")[0];
     var script = document.createElement("script");
@@ -134,6 +143,9 @@ const MM00Container = ({ history }) => {
 
   return (
     <MM00Presenter
+      documentRef={documentRef}
+      //
+      moveLinkHandler={moveLinkHandler}
       mainBannerData={mainBannerData && mainBannerData.getMainBannerAll}
       mobileBannerData={
         mobileBannerData && mobileBannerData.getMobileMainBannerAll

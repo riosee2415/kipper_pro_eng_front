@@ -46,13 +46,16 @@ const editorCss = css`
   .editor__form {
     width: 100%;
     transition: 0.5s;
-    margin-bottom: 50px;
   }
   .editor__form:focus {
     box-shadow: 2px 2px 10px 2px rgba(220, 220, 220, 1);
   }
   .editor__form.h-100 {
     height: calc(100px + 42px);
+  }
+  .editor__form.h-150 {
+    width: 50%;
+    height: calc(10px + 42px);
   }
   .editor__form.h-100 .ql-container {
     height: 100px;
@@ -90,6 +93,13 @@ const editorCss = css`
   .ql-editor img {
     max-width: 100%;
   }
+  .ql-size-large {
+    font-size: 40px !important;
+  }
+  .ql-size-huge {
+    font-size: 48px !important;
+  }
+
   /* Slick */
   .slick-list {
     outline: none !important;
@@ -107,6 +117,13 @@ const editorCss = css`
     .editor__form.h-500 {
       height: calc(500px + 66px);
     }
+
+    .ql-size-large {
+      font-size: 24px !important;
+    }
+    .ql-size-huge {
+      font-size: 30px !important;
+    }
   }
 `;
 
@@ -117,12 +134,13 @@ export default createGlobalStyle`
     ${editorCss};
     * {
         box-sizing : border-box;
-        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
     }
     body {
         background-color: ${(props) => props.theme.bgColor};
         color : ${(props) => props.theme.blackColor};
-        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        .hidden {height:100%; min-height:100%; overflow:hidden !important; touch-action:none;}
     }
     a {
         color : inherit;
@@ -139,6 +157,12 @@ export default createGlobalStyle`
     }
     button, select {
         cursor: pointer;
+    }
+    strong {
+      font-weight: 900;
+    }
+    em {
+      font-style: italic;
     }
 
     /* Dialog */

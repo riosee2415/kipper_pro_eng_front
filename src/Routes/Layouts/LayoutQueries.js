@@ -15,6 +15,7 @@ export const GET_ALL_SNS = gql`
     getAllSns {
       _id
       url
+      platform
     }
   }
 `;

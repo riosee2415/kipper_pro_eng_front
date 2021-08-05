@@ -14,15 +14,9 @@ import {
   TabWrapper,
   TabBtn,
 } from "../CommonComponents";
-import { IoMdRemove, IoMdAdd } from "react-icons/io";
 import CircularIndeterminate from "../loading/CircularIndeterminate";
 import { withResizeDetector } from "react-resize-detector";
-import {
-  AiOutlineSearch,
-  AiOutlineDoubleLeft,
-  AiOutlineDoubleRight,
-} from "react-icons/ai";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
 import Theme from "../../Styles/Theme";
 
 const Board = ({
@@ -44,7 +38,7 @@ const Board = ({
 }) => {
   return (
     <WholeWrapper>
-      <SearchWrapper width={`auto`} dr={`row`} isRelative={true}>
+      {/* <SearchWrapper width={`auto`} dr={`row`} isRelative={true}>
         <TextInput
           type="text"
           width={`190px`}
@@ -83,7 +77,7 @@ const Board = ({
               </TabBtn>
             );
           })}
-      </TabWrapper>
+      </TabWrapper> */}
 
       <Wrapper>
         {faqDatum ? (
@@ -95,57 +89,58 @@ const Board = ({
                 <Wrapper className="faqBoard" key={data._id}>
                   <Wrapper
                     display={`flex`}
-                    padding={`15px`}
+                    padding={width < 900 ? `10px 0 10px 36px` : `15px 0`}
                     al={`center`}
                     ju={`flex-start`}
                     dr={`row`}
                     cursor={`pointer`}
-                    bgColor={
-                      actionFaqView && actionFaqView[idx]
-                        ? `rgb(250, 216, 109)`
-                        : `#e0e0e0`
-                    }
-                    color={`#999`}
-                    isBgHover={true}
-                    margin={`15px 0`}
+                    color={Theme.white_C}
+                    borderBottom={`1px solid ${Theme.greyTheme7_C}`}
                     onClick={() => toggleFaqAnswer(idx, data.answer)}
                   >
                     <Wrapper
-                      width={`calc(100% - 50px)`}
+                      width={
+                        width < 900 ? `calc(100% - 65px)` : `calc(100% - 50px)`
+                      }
                       ju={`space-between`}
                       dr={`row`}
+                      al={width < 900 && `flex-start`}
                     >
                       <Wrapper
-                        height={`50px`}
                         width={`50px`}
                         minWidth={`50px`}
                         radius={`5px`}
+                        al={`flex-start`}
                       >
                         <Text
-                          fontSize={width < 700 ? `16px` : `24px`}
-                          fontWeight={`700`}
+                          fontSize={width < 700 ? `15px` : `18px`}
+                          fontWeight={
+                            actionFaqView && actionFaqView[idx] ? `500` : `500`
+                          }
                         >
-                          Q.
+                          Q{idx + 1}.
                         </Text>
                       </Wrapper>
                       <Wrapper width={`calc(100% - 50px)`} al={`flex-start`}>
                         <Text
-                          padding={`10px`}
-                          fontSize={width < 700 ? `16px` : `24px`}
+                          fontSize={width < 700 ? `15px` : `18px`}
+                          fontWeight={
+                            actionFaqView && actionFaqView[idx] ? `500` : `500`
+                          }
                         >
                           {data.question}
                         </Text>
                       </Wrapper>
                     </Wrapper>
                     <Wrapper
-                      width={`50px`}
-                      color={`#fff`}
-                      fontSize={width < 700 ? `30px` : `50px`}
+                      width={width < 900 ? `65px` : `50px`}
+                      color={Theme.white_C}
+                      fontSize={width < 700 ? `16px` : `20px`}
                     >
                       {actionFaqView && actionFaqView[idx] ? (
-                        <IoMdRemove />
+                        <AiOutlineUp />
                       ) : (
-                        <IoMdAdd />
+                        <AiOutlineDown />
                       )}
                     </Wrapper>
                   </Wrapper>
@@ -154,36 +149,33 @@ const Board = ({
                     display={
                       actionFaqView && actionFaqView[idx] ? `flex` : `none`
                     }
-                    padding={`20px`}
+                    margin={width < 900 ? `22px 0` : `50px 0`}
                     al={`center`}
-                    bgColor={`#fff`}
-                    color={`#999`}
+                    color={Theme.greyTheme7_C}
                     ju={`flex-start`}
                     dr={`row`}
                     wrap={`initial`}
                   >
                     <Wrapper
                       height={`50px`}
-                      width={`50px`}
-                      minWidth={`50px`}
+                      width={width < 900 ? `36px` : `50px`}
+                      minWidth={width < 900 ? `36px` : `50px`}
                       radius={`5px`}
+                    ></Wrapper>
+                    <Wrapper
+                      width={
+                        width < 900
+                          ? `calc(100% - 36px - 36px)`
+                          : `calc(100% - 50px)`
+                      }
                     >
-                      <Text
-                        fontSize={width < 700 ? `16px` : `24px`}
-                        fontWeight={`700`}
-                      >
-                        A.
-                      </Text>
-                    </Wrapper>
-                    <Wrapper width={`calc(100% - 50px)`}>
                       <Wrapper
                         className={`ql-editor`}
                         id={`faq-answer-${idx}`}
-                        padding={`10px`}
+                        padding={width < 900 ? `0` : `10px`}
                         width={`100%`}
-                        fontSize={width < 700 ? `16px` : `24px`}
                         al={`flex-start`}
-                        lineHeight={`1.2`}
+                        lineHeight={`1.6`}
                       ></Wrapper>
                     </Wrapper>
                   </Wrapper>
@@ -196,7 +188,7 @@ const Board = ({
         )}
       </Wrapper>
 
-      {pages && pages.length > 0 && (
+      {/* {pages && pages.length > 0 && (
         <PagenationWrapper width={`auto`}>
           <PagenationBtn
             onClick={() => prevAndNextPageChangeHandler(currentPage - 1)}
@@ -220,7 +212,7 @@ const Board = ({
             <IoIosArrowForward />
           </PagenationBtn>
         </PagenationWrapper>
-      )}
+      )} */}
     </WholeWrapper>
   );
 };

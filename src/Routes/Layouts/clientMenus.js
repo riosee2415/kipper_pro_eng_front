@@ -1,19 +1,213 @@
 export const menus = [
   {
-    menuName: "브랜드소개",
-    menuLink: "/brand",
+    menuName: "SMARTKEEPER",
+    menuLink: "/about",
+    subMenus: [
+      {
+        subMenuName: "SMARTKEEPER?",
+        subMenuLink: "/about",
+      },
+      {
+        subMenuName: "SMARTKEEPER PRO",
+        subMenuLink: "/insightpro",
+      },
+      {
+        subMenuName: "REFERENCE",
+        subMenuLink: "/example",
+      },
+    ],
   },
   {
-    menuName: "창업안내",
-    menuLink: "/founded",
+    menuName: "PRODUCT",
+    menuLink: "/usb",
+    subMenus: [
+      {
+        subMenuName: "USB Physical Security",
+        subMenuLink: "/usb",
+      },
+      {
+        subMenuName: "Network Physical Security",
+        subMenuLink: "/p_network",
+      },
+      {
+        subMenuName: "Computer Physical Security",
+        subMenuLink: "/computer",
+      },
+      {
+        subMenuName: "Other Port Physical Security",
+        subMenuLink: "/port",
+      },
+      {
+        subMenuName: "Lock Key PRO",
+        subMenuLink: "/lock",
+      },
+    ],
   },
   {
-    menuName: "메뉴소개",
-    menuLink: "/menu",
+    menuName: "BUSINESS",
+    menuLink: "/info?type=about",
+    subMenus: [
+      {
+        subMenuName: "Partnership",
+        subMenuLink: "/info?type=about",
+      },
+      {
+        subMenuName: "How to Business",
+        subMenuLink: "/info?type=sign",
+      },
+      {
+        subMenuName: "Where our Partners",
+        subMenuLink: "/info?type=history",
+      },
+    ],
   },
+  {
+    menuName: "INQUIRY",
+    menuLink: "/faq",
+    subMenus: [
+      {
+        subMenuName: "FAQ",
+        subMenuLink: "/faq",
+      },
+      {
+        subMenuName: "Contact us",
+        subMenuLink: "/contact",
+      },
+      {
+        subMenuName: "Download",
+        subMenuLink: "/reference",
+      },
+    ],
+  },
+];
 
+export const footerMenus = [
   {
-    menuName: "지점안내",
-    menuLink: "/store",
+    menuName: "SMARTKEEPER",
+    menuLink: "/about",
+    subMenus: [
+      {
+        subMenuName: "SMARTKEEPER?",
+        subMenuLink: "/about",
+      },
+      {
+        subMenuName: "VIRUS INTRUSION",
+        subMenuLink: "/malware",
+      },
+      {
+        subMenuName: "SMARTKEEPER PRO",
+        subMenuLink: "/insightpro",
+      },
+      {
+        subMenuName: "SMARTKEEPER ESSENTIAL",
+        subMenuLink: "https://schoolhealing2.co.kr/#/main",
+        isEx: true,
+      },
+      {
+        subMenuName: "REFERENCE(PRO)",
+        subMenuLink: "/example",
+      },
+      {
+        subMenuName: "REFERENCE(ESSENTIAL)",
+        subMenuLink: "/example",
+      },
+      {
+        subMenuName: "Completion of USB Security",
+        subMenuLink: "/security",
+      },
+      {
+        subMenuName: "Combination of Network Security",
+        subMenuLink: "/network",
+      },
+    ],
+  },
+  {
+    menuName: "PRO",
+    menuLink: "/usb",
+    subMenus: [
+      {
+        subMenuName: "USB Physical Security",
+        subMenuLink: "/usb",
+      },
+      {
+        subMenuName: "Network Physical Security",
+        subMenuLink: "/p_network",
+      },
+      {
+        subMenuName: "Computer Physical Security",
+        subMenuLink: "/computer",
+      },
+      {
+        subMenuName: "Other Port Physical Security",
+        subMenuLink: "/port",
+      },
+      {
+        subMenuName: "Lock Key PRO",
+        subMenuLink: "/lock",
+      },
+    ],
+  },
+  {
+    menuName: "ESSENTIAL",
+    menuLink: "https://schoolhealing2.co.kr/#/basic",
+    isEx: true,
+    subMenus: [
+      {
+        subMenuName: "Basic Series",
+        subMenuLink: "https://schoolhealing2.co.kr/#/basic",
+        isEx: true,
+      },
+      {
+        subMenuName: "Mini Series",
+        subMenuLink: "https://schoolhealing2.co.kr/#/mini",
+        isEx: true,
+      },
+      {
+        subMenuName: "No Key Required",
+        subMenuLink: "https://schoolhealing2.co.kr/#/product",
+        isEx: true,
+      },
+      {
+        subMenuName: "Lock Key ESSENTIAL",
+        subMenuLink: "https://schoolhealing2.co.kr/#/lock",
+        isEx: true,
+      },
+    ],
+  },
+  {
+    menuName: "BUSINESS",
+    menuLink: "/info?type=about",
+    subMenus: [
+      {
+        subMenuName: "Partnership",
+        subMenuLink: "/info?type=about",
+      },
+      {
+        subMenuName: "How to Business",
+        subMenuLink: "/info?type=sign",
+      },
+      {
+        subMenuName: "Where our Partners",
+        subMenuLink: "/info?type=history",
+      },
+    ],
+  },
+  {
+    menuName: "IMQUIRY",
+    menuLink: "/faq",
+    subMenus: [
+      {
+        subMenuName: "FAQ",
+        subMenuLink: "/faq",
+      },
+      {
+        subMenuName: "Contact us",
+        subMenuLink: "/contact",
+      },
+      {
+        subMenuName: "Download",
+        subMenuLink: "/reference",
+      },
+    ],
   },
 ];

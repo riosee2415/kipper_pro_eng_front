@@ -19,9 +19,17 @@ export const fullWidth = keyframes`
 
 export const header = keyframes`
   0%{
-    width : 0%;
+    height : 0;
   }100%{
-    width : 20px;
+    height : 180px;
+  }
+`;
+
+export const header2 = keyframes`
+  0%{
+    height : 180px;
+  }100%{
+    height : 0px;
   }
 `;
 
