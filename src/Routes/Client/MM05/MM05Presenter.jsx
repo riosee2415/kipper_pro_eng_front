@@ -49,7 +49,7 @@ const ArrowIcon = styled(Text)`
   }
 
   @media (max-width: 700px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 `;
 
@@ -150,20 +150,20 @@ const MM05Presenter = ({
             al={`flex-start`}
             margin={width < 700 ? `0 0 0 35px` : `0 0 0 50px`}
           >
-            <Text>네트워크 물리보안</Text>
+            <Text color={Theme.greyTheme7_C}>Physical Network Security</Text>
             <Text
               fontSize={width < 700 ? `30px` : `40px`}
               fontWeight={`bold`}
               lineHeight={`1.3`}
             >
-              네트워크 물리보안을 위한
+              Ideal combination for
             </Text>
             <Text
               fontSize={width < 700 ? `30px` : `40px`}
               fontWeight={`bold`}
               lineHeight={`1.3`}
             >
-              가장 이상적인 조합
+              physical network security.
             </Text>
           </Wrapper>
         </RsWrapper>
@@ -179,13 +179,11 @@ const MM05Presenter = ({
           <Text fontSize={width < 700 ? `18px` : `24px`}>
             Network Port Lock Plus
           </Text>
-          <Text fontSize={width < 700 ? `12px` : `16px`}>
-            네트워크 포트락 플러스(CSK-NL11)
-          </Text>
+          <Text fontSize={width < 700 ? `12px` : `16px`}>(CSK-NL11)</Text>
 
           <Link to="/p_network/6107f36abdf08f065ce6cd53">
             <ArrowIcon>
-              더 알아보기
+              Learn more
               <FaChevronRight />
             </ArrowIcon>
           </Link>
@@ -202,13 +200,11 @@ const MM05Presenter = ({
           <Text fontSize={width < 700 ? `18px` : `24px`}>
             LAN Cable Lock Plus
           </Text>
-          <Text fontSize={width < 700 ? `12px` : `16px`}>
-            랜케이블락 플러스(CSK-NC11)
-          </Text>
+          <Text fontSize={width < 700 ? `12px` : `16px`}>(CSK-NC11)</Text>
 
           <Link to="/p_network/6107f6c7bdf08f065ce6cd5f">
             <ArrowIcon>
-              더 알아보기
+              Learn more
               <FaChevronRight />
             </ArrowIcon>
           </Link>
@@ -238,13 +234,7 @@ const MM05Presenter = ({
               Port Lock Plus-font"
               src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2FNetwork%20Port%20Lock%20Plus.svg?alt=media&token=295ca128-394e-4791-b89c-e31aa9af2297`}
             />
-            <Text
-              fontSize={width < 700 ? `20px` : `34px`}
-              fontWeight={`bold`}
-              margin={`10px 0 0`}
-            >
-              네트워크 포트락 플러스
-            </Text>
+
             <Text
               fontSize={width < 700 ? `12px` : `25px`}
               color={Theme.greyTheme7_C}
@@ -258,13 +248,13 @@ const MM05Presenter = ({
               padding={`40px 0 0`}
             >
               <Text fontSize={`30px`} fontWeight={`bold`} margin={`0 0 5px`}>
-                사용하지 않는 RJ45 포트의 철통보안.
+                Physically secure open RJ45 Port
               </Text>
               <Text fontSize={`24px`} color={Theme.greyTheme7_C}>
-                모든 시스템으로의 접속 통로,
+                Entryway to all network systems
               </Text>
               <Text fontSize={`24px`} color={Theme.greyTheme7_C}>
-                네트워크의 포트는 열려있다면 누구든 접근할 수 있습니다.
+                If a network port is open, anyone can have access.
               </Text>
             </Wrapper>
 
@@ -274,19 +264,19 @@ const MM05Presenter = ({
               padding={`80px 0 0`}
             >
               <Text fontSize={`20px`} fontWeight={`bold`}>
-                사용하지 않는
+                Physically secure
               </Text>
               <Text fontSize={`20px`} fontWeight={`bold`} margin={`0 0 10px`}>
-                RJ45 포트의 철통보안.
+                open RJ45 Port
               </Text>
               <Text fontSize={`18`} color={Theme.greyTheme7_C}>
-                모든 시스템으로의 접속 통로,
+                Entryway to all network systems
               </Text>
               <Text fontSize={`18`} color={Theme.greyTheme7_C}>
-                네트워크의 포트는 열려있다면
+                If a network port is open,
               </Text>
               <Text fontSize={`18`} color={Theme.greyTheme7_C}>
-                누구든 접근할 수 있습니다.
+                anyone can have access.
               </Text>
             </Wrapper>
           </Wrapper>
@@ -314,17 +304,16 @@ const MM05Presenter = ({
         />
         <Wrapper isAbsolute={true} top={`0`} left={`0`} height={`100%`}>
           <RsWrapper al={`flex-start`} padding={width < 700 && `90px 35px 0`}>
-            <Wrapper width={width < 700 ? `100%` : `50%`}>
+            <Wrapper width={width < 700 ? `100%` : `60%`}>
               <Wrapper width={width < 700 ? `100%` : `80%`} al={`flex-start`}>
                 <Text
-                  display={width < 900 ? `none` : `flex`}
-                  fontSize={`34px`}
+                  fontSize={width < 900 ? `20px` : `34px`}
                   fontWeight={`bold`}
                   margin={`0 0 10px`}
                 >
-                  세계최초 동작구조 포트락.
+                  Market’s First
                 </Text>
-                <Text
+                {/* <Text
                   display={width < 900 ? `flex` : `none`}
                   fontSize={`20px`}
                   fontWeight={`bold`}
@@ -338,24 +327,24 @@ const MM05Presenter = ({
                   margin={`0 0 10px`}
                 >
                   포트락.
+                </Text> */}
+                <Text
+                  fontSize={width < 900 ? `18px` : `28px`}
+                  color={Theme.darkGrey_C}
+                >
+                  Fully locks into network port.
                 </Text>
                 <Text
                   fontSize={width < 900 ? `18px` : `28px`}
                   color={Theme.darkGrey_C}
                 >
-                  포트안에 완전히 매립되고,
+                  Enhanced security with exceptionally
                 </Text>
                 <Text
                   fontSize={width < 900 ? `18px` : `28px`}
                   color={Theme.darkGrey_C}
                 >
-                  키 홀(Key Hole)은 아주 작아
-                </Text>
-                <Text
-                  fontSize={width < 900 ? `18px` : `28px`}
-                  color={Theme.darkGrey_C}
-                >
-                  높은 보안성을 제공합니다.
+                  thin key hole that prevents tampering.
                 </Text>
                 <Image
                   width={width < 700 ? `50%` : `50%`}
@@ -396,17 +385,13 @@ const MM05Presenter = ({
             al={`flex-start`}
           >
             <Text fontSize={`28px`} color={`rgb(69,69,69)`}>
-              포트에 열려있는&nbsp;
-              <SpanText fontWeight={`700`}>포트락을 삽입</SpanText>하고&nbsp;
-              <SpanText fontWeight={`700`}>잠금버튼</SpanText>을 누르면,
+              Insert Network Port Lock Plus in the disengaged
             </Text>
             <Text fontSize={`28px`} color={`rgb(69,69,69)`}>
-              포트락 내부의&nbsp;
-              <SpanText fontWeight={`700`}>숨겨진 돌기</SpanText>가 튀어나와
-              포트 내부에
+              position and press into the network port fully to
             </Text>
             <Text fontSize={`28px`} color={`rgb(69,69,69)`}>
-              <SpanText fontWeight={`700`}>강하게 결착</SpanText>됩니다.
+              engage the locking mechanism.
             </Text>
           </Wrapper>
 
@@ -422,19 +407,16 @@ const MM05Presenter = ({
             lineHeight={`1.4`}
           >
             <Text fontSize={`18px`} lineHeight={`1.4`} color={`rgb(69,69,69)`}>
-              포트에 열려있는&nbsp;
-              <SpanText fontWeight={`bold`}>포트락을 삽입</SpanText>하고
+              Insert Network Port Lock Plus
             </Text>
             <Text fontSize={`18px`} lineHeight={`1.4`} color={`rgb(69,69,69)`}>
-              <SpanText fontWeight={`bold`}>잠금버튼</SpanText>을 누르면, 포트락
-              내부의
+              in the disengaged position and
             </Text>
             <Text fontSize={`18px`} lineHeight={`1.4`} color={`rgb(69,69,69)`}>
-              <SpanText fontWeight={`bold`}>숨겨진 돌기</SpanText>가 튀어나와
-              포트 내부에
+              press into the network port fully to
             </Text>
             <Text fontSize={`18px`} lineHeight={`1.4`} color={`rgb(69,69,69)`}>
-              <SpanText fontWeight={`bold`}>강하게 결착</SpanText>됩니다.
+              engage the locking mechanism.
             </Text>
           </Wrapper>
         </RsWrapper>
@@ -458,7 +440,7 @@ const MM05Presenter = ({
             <Image
               // margin={`0 0 ${marginImg}px 0`}
               ait="image"
-              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2Fnet-image-3.png?alt=media&token=aa49a4b0-60db-4b61-8de6-7a1f67f759d8`}
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM05%2FMM05.png?alt=media&token=d31823f2-0b23-4c65-bbc6-c5f090f8c462`}
             />
           </Wrapper>
 
@@ -493,46 +475,57 @@ const MM05Presenter = ({
             margin={`300px 0 0`}
           >
             <Text fontSize={`30px`} fontWeight={`700`}>
-              비어있는 네트워크 포트는 확실히.
+              Block access to open Network Ports
             </Text>
             <Text fontSize={`24px`} color={Theme.greyTheme4_C}>
-              아주 작은 비용으로, 큰 리스크를 없앨 수 있다면.
+              Simple but effective economical solution
             </Text>
             <Text fontSize={`24px`} color={Theme.greyTheme4_C}>
-              물리 보안은 선택이 아닌 필수입니다.
+              Physical cyber security is now a must, not a choice.
             </Text>
+            <Link to="/usb/6107dd1dbdf08f065ce6cd1e">
+              <ArrowIcon fontWeight={`bold`} margin={`30px 0 0`}>
+                Learn more about Network Port Lock Plus
+                <FaChevronRight />
+              </ArrowIcon>
+            </Link>
           </Wrapper>
-
           <Wrapper
             display={width < 700 ? `flex` : `none`}
             al={`flex-start`}
             margin={`40px 0 0`}
             padding={`0 35px`}
           >
-            <Text fontWeight={`bold`} margin={`0 0 10px`} fontSize={`18px`}>
-              비어있는 네트워크 포트는 확실히.
+            <Text fontWeight={`bold`} margin={`0 0 10px`} fontSize={`17px`}>
+              Block access to open Network Ports
             </Text>
             <Text
               fontSize={`16px`}
               color={Theme.greyTheme4_C}
               lineHeight={`1.4`}
             >
-              아주 작은 비용으로,
+              Simple but effective
             </Text>
             <Text
               fontSize={`16px`}
               color={Theme.greyTheme4_C}
               lineHeight={`1.4`}
             >
-              큰 리스크를 없앨 수 있다면.
+              economical solution Physical cyber
             </Text>
             <Text
               fontSize={`16px`}
               color={Theme.greyTheme4_C}
               lineHeight={`1.4`}
             >
-              물리 보안은 선택이 아닌 필수입니다.
+              security is now a must, not a choice.
             </Text>
+            <Link to="/usb/6107dd1dbdf08f065ce6cd1e">
+              <ArrowIcon fontWeight={`bold`} margin={`30px 0 0`}>
+                Learn more about Network Port Lock Plus
+                <FaChevronRight />
+              </ArrowIcon>
+            </Link>
           </Wrapper>
         </RsWrapper>
       </Wrapper>
@@ -574,9 +567,7 @@ const MM05Presenter = ({
             >
               LAN Cable Lock Plus
             </Wrapper>
-            <Text fontSize={width < 900 ? `20px` : `34px`} fontWeight={`bold`}>
-              랜케이블락 플러스
-            </Text>
+
             <Text
               fontSize={width < 900 ? `14px` : `25px`}
               fontWeight={`bold`}
@@ -590,10 +581,10 @@ const MM05Presenter = ({
               padding={`50px 0 0`}
             >
               <Text fontSize={`24px`} color={Theme.greyTheme7_C}>
-                워킹장비에서 사용 중인 케이블에도 장착가능.
+                Install LAN Cable Lock Plus without removing
               </Text>
               <Text fontSize={`24px`} color={Theme.greyTheme7_C}>
-                더 나은 물리 보안 환경을 위한 노력.
+                the network cables in use. Striving for better security.
               </Text>
             </Wrapper>
 
@@ -604,13 +595,13 @@ const MM05Presenter = ({
               padding={width < 900 ? `250px 0 0` : `50px 0 0`}
             >
               <Text fontSize={`18px`} color={Theme.greyTheme7_C}>
-                워킹장비에서
+                Install LAN Cable Lock Plus without removing
               </Text>
               <Text fontSize={`18px`} color={Theme.greyTheme7_C}>
-                사용 중인 케이블에도 장착가능.
+                the network cables in use.
               </Text>
               <Text fontSize={`18px`} color={Theme.greyTheme7_C}>
-                더 나은 물리 보안 환경을 위한 노력.
+                Striving for better security.
               </Text>
             </Wrapper>
           </RsWrapper>
@@ -632,7 +623,7 @@ const MM05Presenter = ({
           bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2F%E1%84%82%E1%85%A6%E1%84%90%E1%85%B3%E1%84%8B%E1%85%AF%E1%84%8F%E1%85%B3-background-4.png?alt=media&token=c02d41a1-dd3b-4a4c-bbf7-57c8b5e624bf")`}
         >
           <RsWrapper al={`flex-start`}>
-            <Text fontSize={`34px`} color={Theme.white_C} fontWeight={`700`}>
+            {/* <Text fontSize={`34px`} color={Theme.white_C} fontWeight={`700`}>
               포트가 많은 스위치 장비에서 나란히,
             </Text>
             <Text
@@ -642,16 +633,16 @@ const MM05Presenter = ({
               margin={`0 0 30px`}
             >
               위아래로 연속하여 장착도 가능합니다.
-            </Text>
+            </Text> */}
 
             <Text fontSize={`20px`} color={Theme.white_C} lineHeight={`1.8`}>
-              서버나 네트워크 스위치와 같이,
+              Easy to install on devices with multiple ports, such as a
             </Text>
             <Text fontSize={`20px`} color={Theme.white_C} lineHeight={`1.8`}>
-              이미 사용중인 장비의 케이블의 탈착없이 설치가 가능하여
+              server or Network Switch, without removing the cables in
             </Text>
             <Text fontSize={`20px`} color={Theme.white_C} lineHeight={`1.8`}>
-              고객분들의 만족도가 매우 높습니다.
+              use. Install vertically and/or horizontally.
             </Text>
           </RsWrapper>
         </Wrapper>
@@ -664,33 +655,27 @@ const MM05Presenter = ({
           src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2Fmobile-image.png?alt=media&token=24e460ca-79a7-4ee0-8fc0-012c58f7ed8c`}
         />
         <Wrapper al={`flex-start`} padding={`0 35px`}>
-          <Text fontSize={`19px`} fontWeight={`bold`} margin={`40px 0 0`}>
-            포트가 많은 스위치 장비에서 나란히,
-          </Text>
-          <Text fontSize={`19px`} fontWeight={`bold`}>
-            위아래로 연속하여 장착도 가능합니다.
-          </Text>
           <Text
-            fontSize={`18px`}
+            fontSize={`15px`}
             lineHeight={`1.4`}
             color={Theme.darkGrey_C}
             margin={`20px 0 0`}
           >
-            서버나 네트워크 스위치와 같이, 이미
+            Easy to install on devices with multiple
           </Text>
-          <Text fontSize={`18px`} lineHeight={`1.4`} color={Theme.darkGrey_C}>
-            사용중인 장비의 케이블의 탈착없이
+          <Text fontSize={`15px`} lineHeight={`1.4`} color={Theme.darkGrey_C}>
+            ports, such as a server or Network Switch,
           </Text>
-          <Text fontSize={`18px`} lineHeight={`1.4`} color={Theme.darkGrey_C}>
-            설치가 가능하여 고객분들의 만족도가
+          <Text fontSize={`15px`} lineHeight={`1.4`} color={Theme.darkGrey_C}>
+            without removing the cables in use. Install
           </Text>
           <Text
-            fontSize={`18px`}
+            fontSize={`15px`}
             lineHeight={`1.4`}
             color={Theme.darkGrey_C}
             margin={`0 0 110px`}
           >
-            매우 높습니다.
+            vertically and/or horizontally.
           </Text>
         </Wrapper>
       </Wrapper>
@@ -713,7 +698,7 @@ const MM05Presenter = ({
             <Image
               // margin={`0 0 ${marginImg2}px 0`}
               ait="image"
-              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%205591.png?alt=media&token=a35b852e-a4e9-43bf-9531-e98444502d59`}
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM05%2FMM05-1.png?alt=media&token=f3cb5447-46d9-4989-8b94-9976422e9fda`}
             />
           </Wrapper>
 
@@ -749,22 +734,22 @@ const MM05Presenter = ({
             padding={`0 35px`}
           >
             <Text
-              fontSize={width < 700 ? `20px` : `24px`}
+              fontSize={width < 700 ? `18px` : `24px`}
               color={Theme.greyTheme4_C}
             >
-              네트워크 케이블의 강력한 물리 보안.
+              Possible only with SMARTKEEPER
             </Text>
             <Text
-              fontSize={width < 700 ? `20px` : `24px`}
+              fontSize={width < 700 ? `18px` : `24px`}
               color={Theme.greyTheme4_C}
               margin={`0 0 10px`}
             >
-              스마트키퍼에서만 가능합니다.
+              Physical cyber security for Network Cables
             </Text>
 
             <Link to="/p_network/6107f6c7bdf08f065ce6cd5f">
               <ArrowIcon color={Theme.blackTheme2_C}>
-                랜케이블락 플러스 자세히 보러가기
+                Learn more about LAN Cable Lock Plus
                 <FaChevronRight />
               </ArrowIcon>
             </Link>
@@ -801,22 +786,22 @@ const MM05Presenter = ({
           </Wrapper>
           <Wrapper color={Theme.white_C} margin={`300px 0 0`}>
             <Text fontSize={`20px`}>
-              이름에 걸맞게 Universal (만능) 키이죠.
+              As the name suggests, the key is universal.
             </Text>
             <Text fontSize={`20px`}>
-              하나의 키로 30여 스마트키퍼 제품을 해제할 수 있어, 사용자의
-              편의성을 극대화 하였습니다.
+              ONE key can manage 30+ SMARTKEEPER products to
             </Text>
+            <Text fontSize={`20px`}>enhance user efficiency.</Text>
             <Text fontSize={`20px`} margin={`15px 0 0`}>
-              또한 패턴(내부구조)을 다양하게 설계하여,
+              Numerous confidential key patterns are only compatible
             </Text>
             <Text fontSize={`20px`} margin={`0 0 90px`}>
-              패턴이 다르면 잠금장치가 해제되지 않아 보안성도 뛰어나죠.
+              with products of matching pattern.
             </Text>
 
             <Link to="/lock/6106a4c1284536707ffa20d9">
               <ArrowIcon fontWeight={`bold`}>
-                유니버셜 락키 자세히 보러가기
+                Learn more about Universal Lock Key
                 <FaChevronRight />
               </ArrowIcon>
             </Link>
@@ -859,24 +844,22 @@ const MM05Presenter = ({
             fontSize={`18px`}
           >
             <Text fontWeight={`400`}>
-              이름에 걸맞게 Universal (만능) 키이죠.
+              As the name suggests, the key is universal.
             </Text>
-            <Text fontWeight={`400`}>하나의 키로 30여 스마트키퍼 제품을</Text>
-            <Text fontWeight={`400`}>해제할 수 있어, 사용자의 편의성을</Text>
+            <Text fontWeight={`400`}>ONE key can manage 30+</Text>
+            <Text fontWeight={`400`}>SMARTKEEPER products to</Text>
             <Text fontWeight={`400`} margin={`0 0 30px`}>
-              극대화 하였습니다.
+              enhance user efficiency.
             </Text>
 
-            <Text fontWeight={`400`}>
-              또한 패턴(내부구조)을 다양하게 설계하여,
-            </Text>
-            <Text fontWeight={`400`}>패턴이 다르면 잠금장치가 해제되지</Text>
+            <Text fontWeight={`400`}>Numerous confidential key patterns</Text>
+            <Text fontWeight={`400`}>are only compatible</Text>
             <Text fontWeight={`400`} margin={`0 0 30px`}>
-              않아 보안성도 뛰어나죠.
+              with products of matching pattern.
             </Text>
             <Link to="/lock/6106a4c1284536707ffa20d9">
               <ArrowIcon fontWeight={`bold`}>
-                유니버셜 락키 자세히 보러가기
+                Learn more about Universal Lock Key
                 <FaChevronRight />
               </ArrowIcon>
             </Link>

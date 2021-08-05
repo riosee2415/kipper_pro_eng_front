@@ -48,7 +48,7 @@ const ArrowIcon = styled(Text)`
   }
 
   @media (max-width: 700px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 `;
 
@@ -246,13 +246,13 @@ const MM17Presenter = ({
                 fontWeight={`bold`}
                 color={Theme.greyTheme3_C}
               >
-                USB 물리보안
+                USB Physical Security
               </Text>
               <Text fontSize={`48px`} fontWeight={`bold`} lineHeight={`1.3`}>
-                USB 포트 물리보안의
+                Ideal combination to perfect
               </Text>
               <Text fontSize={`48px`} fontWeight={`bold`} lineHeight={`1.3`}>
-                완성도를 높이는 가장 강력한 조합
+                the physical security of USB Ports.
               </Text>
             </Wrapper>
 
@@ -262,16 +262,16 @@ const MM17Presenter = ({
                 fontWeight={`bold`}
                 color={Theme.greyTheme3_C}
               >
-                USB 물리보안
+                USB Physical Security
               </Text>
-              <Text fontSize={`30px`} fontWeight={`bold`}>
-                USB 포트 물리보안의
+              <Text fontSize={`25px`} fontWeight={`bold`}>
+                Ideal combination to
               </Text>
-              <Text fontSize={`30px`} fontWeight={`bold`}>
-                완성도를 높이는
+              <Text fontSize={`25px`} fontWeight={`bold`}>
+                perfect the physical
               </Text>
-              <Text fontSize={`30px`} fontWeight={`bold`}>
-                가장 강력한 조합
+              <Text fontSize={`25px`} fontWeight={`bold`}>
+                security of USB Ports.
               </Text>
             </Wrapper>
 
@@ -300,11 +300,11 @@ const MM17Presenter = ({
                     fontSize={width < 700 ? `12px` : `18px`}
                     fontWeight={`bold`}
                   >
-                    USB 포트락 (CSK-UL10)
+                    (CSK-UL10)
                   </Text>
                   <Link to="/usb/6107dd1dbdf08f065ce6cd1e">
                     <ArrowIcon>
-                      더 알아보기
+                      Learn more
                       <FaChevronRight />
                     </ArrowIcon>
                   </Link>
@@ -368,11 +368,11 @@ const MM17Presenter = ({
                     fontSize={width < 900 ? `12px` : `18px`}
                     margin={`5px 0 0`}
                   >
-                    링크락 (CSK-LK11)
+                    (CSK-LK11)
                   </Text>
                   <Link to="/usb/6107e4e0bdf08f065ce6cd25">
                     <ArrowIcon>
-                      더 알아보기
+                      Learn more
                       <FaChevronRight />
                     </ArrowIcon>
                   </Link>
@@ -410,13 +410,13 @@ const MM17Presenter = ({
               alt="usb port lock-font"
               src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2FUSB%20Port%20Lock.svg?alt=media&token=664fa82c-56e0-4155-91e0-70beaefdea79`}
             />
-            <Text
+            {/* <Text
               fontSize={width < 900 ? `20px` : `34px`}
               fontWeight={`bold`}
               lineHeight={`1.3`}
             >
               USB 포트락
-            </Text>
+            </Text> */}
             <Text
               fontSize={width < 900 ? `12px` : `25px`}
               fontWeight={`500`}
@@ -431,16 +431,19 @@ const MM17Presenter = ({
               padding={`40px 0 300px`}
             >
               <Text fontSize={`30px`} fontWeight={`bold`}>
-                사용하지 않는 포트는 USB 포트락으로 차단.
+                Block unused USB ports with USB Port Locks
               </Text>
               <Text fontSize={`24px`} color={Theme.greyTheme7_C}>
-                우리 집에 쓸 자물쇠, 열쇠를 아무거나 사용할 수 없듯이,
+                You would not use any lock or any key
               </Text>
               <Text fontSize={`24px`} color={Theme.greyTheme7_C}>
-                USB 포트 차단 제품을 값이 싸다고, 쉽게 살 수 있다고,
+                for your home’s front door.
               </Text>
               <Text fontSize={`24px`} color={Theme.greyTheme7_C}>
-                아무거나 쓸 순 없겠죠.
+                Why would you use locking devices for your USB ports
+              </Text>
+              <Text fontSize={`24px`} color={Theme.greyTheme7_C}>
+                because they are “cheaper” or “easy” to purchase?
               </Text>
             </Wrapper>
             <Wrapper
@@ -449,22 +452,22 @@ const MM17Presenter = ({
               padding={`70px 0 100px`}
             >
               <Text fontSize={`20px`} fontWeight={`bold`}>
-                사용하지 않는 포트는
+                Block unused USB ports
               </Text>
               <Text fontSize={`20px`} fontWeight={`bold`}>
-                USB 포트락으로 차단.
+                with USB Port Locks
               </Text>
               <Text fontSize={`18px`} color={Theme.greyTheme7_C}>
-                우리 집에 쓸 자물쇠,
+                You would not use any lock or any
               </Text>
               <Text fontSize={`18px`} color={Theme.greyTheme7_C}>
-                열쇠를 아무거나 사용할 수 없듯이,
+                key for your home’s front door.
               </Text>
               <Text fontSize={`18px`} color={Theme.greyTheme7_C}>
-                USB 포트 차단 제품을 값이 싸다고,
+                Why would you use locking devices for your USB ports
               </Text>
               <Text fontSize={`18px`} color={Theme.greyTheme7_C}>
-                쉽게 살 수 있다고, 아무거나 쓸 순 없겠죠.
+                because they are “cheaper” or “easy” to purchase?
               </Text>
             </Wrapper>
           </RsWrapper>
@@ -498,21 +501,21 @@ const MM17Presenter = ({
               left={`0`}
             >
               <Text fontSize={width < 700 ? `20px` : `29px`} opacity={isView}>
-                보안성의 강화.
+                Enhanced Security.
               </Text>
               <Text
                 fontSize={width < 700 ? `20px` : `29px`}
                 margin={`0 0 20px`}
                 opacity={isView}
               >
-                매우 얇은 키 홀 (Key Hole)
+                Exceptionally thin Key Hole.
               </Text>
 
               <Text fontSize={width < 700 ? `18px` : `21px`} opacity={isView}>
-                이물질을 이용한 해제 시도가
+                Tamper-proof key hole, designed to
               </Text>
               <Text fontSize={width < 700 ? `18px` : `21px`} opacity={isView}>
-                매우 어려워졌습니다.
+                prevent removal with foreign objects.
               </Text>
             </Wrapper>
 
@@ -523,20 +526,20 @@ const MM17Presenter = ({
               left={`0`}
             >
               <Text fontSize={width < 700 ? `20px` : `29px`}>
-                보안성의 강화.
+                Enhanced Security.
               </Text>
               <Text
                 fontSize={width < 700 ? `20px` : `29px`}
                 margin={`0 0 10px`}
               >
-                매우 얇은 키 홀 (Key Hole)
+                Exceptionally thin Key Hole.
               </Text>
 
               <Text fontSize={width < 700 ? `18px` : `21px`} fontWeight={`200`}>
-                이물질을 이용한 해제 시도가
+                Tamper-proof key hole, designed to
               </Text>
               <Text fontSize={width < 700 ? `18px` : `21px`} fontWeight={`200`}>
-                매우 어려워졌습니다.
+                prevent removal with foreign objects.
               </Text>
             </Wrapper>
           </Wrapper>
@@ -595,31 +598,40 @@ const MM17Presenter = ({
           fontWeight={`bold`}
           padding={width < 900 && `0 35px`}
         >
-          <Text fontSize={width < 700 ? `24px` : `34px`}>
-            <SpanText
-              fontSize={width < 700 ? `50px` : `80px`}
-              fontWeight={`bold`}
-            >
-              {!isFirst ? (
-                `0`
-              ) : (
-                <AnimatedNumber
-                  className="50"
-                  value={50}
-                  formatValue={(value) => value.toFixed(0)}
-                  duration={2000}
-                />
-              )}
-            </SpanText>
-            만
-          </Text>
+          <Wrapper
+            isGotham={true}
+            margin={`0 0 15px`}
+            width={`auto`}
+            dr={`row`}
+            al={`flex-end`}
+            fontSize={width < 700 ? `24px` : `34px`}
+          >
+            <Wrapper width={`auto`}>
+              <SpanText
+                fontSize={width < 700 ? `50px` : `80px`}
+                fontWeight={`bold`}
+              >
+                {!isFirst ? (
+                  `0`
+                ) : (
+                  <AnimatedNumber
+                    className="500"
+                    value={500}
+                    formatValue={(value) => value.toFixed(0)}
+                    duration={2000}
+                  />
+                )}
+              </SpanText>
+            </Wrapper>
+            K
+          </Wrapper>
           <Text
             fontSize={width < 700 ? `14px` : `20px`}
             color={Theme.darkGrey_C}
           >
-            매년 평균 50만 개 이상
+            500K units sold annually to various sectors
           </Text>
-          <Text
+          {/* <Text
             fontSize={width < 700 ? `14px` : `20px`}
             color={Theme.darkGrey_C}
           >
@@ -630,44 +642,53 @@ const MM17Presenter = ({
             color={Theme.darkGrey_C}
           >
             등에 적용되고 있습니다.
-          </Text>
+          </Text> */}
 
-          <Text fontSize={width < 700 ? `24px` : `34px`}>
-            <SpanText
-              fontSize={width < 700 ? `50px` : `80px`}
-              fontWeight={`bold`}
-            >
-              {!isFirst ? (
-                `0`
-              ) : (
-                <AnimatedNumber
-                  f
-                  className="10"
-                  value={10}
-                  formatValue={(value) => value.toFixed(0)}
-                  duration={2000}
-                />
-              )}
-            </SpanText>
-            년
+          <Wrapper
+            isGotham={true}
+            margin={`80px 0 15px`}
+            width={`auto`}
+            dr={`row`}
+            al={`flex-end`}
+            fontSize={width < 700 ? `24px` : `34px`}
+          >
+            <Wrapper width={`auto`}>
+              <SpanText
+                fontSize={width < 700 ? `50px` : `80px`}
+                fontWeight={`bold`}
+              >
+                {!isFirst ? (
+                  `0`
+                ) : (
+                  <AnimatedNumber
+                    f
+                    className="10"
+                    value={10}
+                    formatValue={(value) => value.toFixed(0)}
+                    duration={2000}
+                  />
+                )}
+              </SpanText>
+            </Wrapper>
+            Years
+          </Wrapper>
+          <Text
+            fontSize={width < 700 ? `14px` : `20px`}
+            color={Theme.darkGrey_C}
+          >
+            SMARTKEEPER’s best selling item for
           </Text>
           <Text
             fontSize={width < 700 ? `14px` : `20px`}
             color={Theme.darkGrey_C}
           >
-            10여년간 꾸준히 사랑을 받고있는 제품이죠.
+            10+ years. Proven solution by satisfied
           </Text>
           <Text
             fontSize={width < 700 ? `14px` : `20px`}
             color={Theme.darkGrey_C}
           >
-            중요장비에 적용하여도 문제가 발생하지 않는,
-          </Text>
-          <Text
-            fontSize={width < 700 ? `14px` : `20px`}
-            color={Theme.darkGrey_C}
-          >
-            기존 고객들로부터 안정성이 검증된 제품입니다.
+            customers.
           </Text>
         </RsWrapper>
       </Wrapper>
@@ -688,7 +709,7 @@ const MM17Presenter = ({
             <Image
               width={`100%`}
               ait="image"
-              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20467.png?alt=media&token=3b9cb6c3-5750-4e47-bc13-b7a3419fae64`}
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM17%2Fmm17.png?alt=media&token=23669857-a973-477e-b823-d2189f87e8ef`}
             />
           </Wrapper>
         </RsWrapper>
@@ -725,20 +746,21 @@ const MM17Presenter = ({
           padding={`0 0 50px`}
         >
           <Text fontSize={`30px`} fontWeight={`bold`}>
-            표준규격 USB 포트(A타입)라면 어디라도
+            For any standard USB Port (Type A)
           </Text>
           <Text fontSize={`24px`} color={Theme.greyTheme4_C}>
-            데스크탑 전/후면, 노트북, 네트워크 장비, 산업시스템장비 등,
-            USB포트가 있는 장비라면
+            Desktop PC (front &#38; rear), Laptop computers, network devices,
+            industrial equipment, etc.
           </Text>
 
           <Text fontSize={`24px`} color={Theme.greyTheme4_C}>
-            누구나 손쉽게 장착이 가능하고, S/W나 전기가 전혀 필요하지 않습니다.
+            Easily installed by hand and does not require software or
+            electricity.
           </Text>
 
           <Link to="/usb/6107dd1dbdf08f065ce6cd1e">
             <ArrowIcon fontWeight={`bold`} margin={`30px 0 0`}>
-              USB 포트락 자세히 보러가기
+              Learn more about USB Port Lock
               <FaChevronRight />
             </ArrowIcon>
           </Link>
@@ -748,33 +770,33 @@ const MM17Presenter = ({
           al={`flex-start`}
           padding={`0 35px`}
         >
-          <Text fontSize={`20px`} margin={`50px 0 0`}>
-            표준규격 USB 포트(A타입)라면
+          <Text fontSize={`18px`} margin={`50px 0 0`}>
+            Learn more about USB Port Lock
           </Text>
-          <Text fontSize={`20px`}>어디라도</Text>
+          {/* <Text fontSize={`20px`}>어디라도</Text> */}
           <Text
-            fontSize={`17px`}
+            fontSize={`15px`}
             color={Theme.greyTheme4_C}
             margin={`20px 0 0`}
           >
-            데스크탑 전/후면, 노트북, 네트워크 장비,
+            Desktop PC (front &#38; rear), Laptop computers, network devices,
           </Text>
-          <Text fontSize={`17px`} color={Theme.greyTheme4_C}>
-            산업시스템장비 등, USB포트가 있는 장비
+          <Text fontSize={`15px`} color={Theme.greyTheme4_C}>
+            industrial equipment, etc.
           </Text>
-          <Text fontSize={`17px`} color={Theme.greyTheme4_C}>
-            라면 누구나 손쉽게 장착이 가능하고,
+          <Text fontSize={`15px`} color={Theme.greyTheme4_C}>
+            Easily installed by hand and
           </Text>
           <Text
-            fontSize={`17px`}
+            fontSize={`15px`}
             color={Theme.greyTheme4_C}
             margin={`0 0 30px`}
           >
-            S/W나 전기가 전혀 필요하지 않습니다.
+            does not require software or electricity.
           </Text>
 
           <ArrowIcon fontWeight={`bold`}>
-            USB 포트락 자세히 보러가기
+            Learn more about USB Port Lock
             <FaChevronRight />
           </ArrowIcon>
         </RsWrapper>
@@ -801,7 +823,12 @@ const MM17Presenter = ({
           }
         />
         <Wrapper isAbsolute={true} top={`0`} left={`0`} height={`100%`}>
-          <RsWrapper al={`flex-start`} color={Theme.white_C}>
+          <RsWrapper
+            al={`flex-start`}
+            ju={width < 800 && `flex-start`}
+            color={Theme.white_C}
+            padding={width < 800 && `50px 35px 0`}
+          >
             <Wrapper width={`auto`} al={`flex-start`}>
               <Image
                 width={width < 900 ? `145px` : `338px`}
@@ -809,12 +836,12 @@ const MM17Presenter = ({
                 alt="link lock-font"
                 src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2FLink%20Lock.svg?alt=media&token=89f30c83-4d6c-4ebe-9a08-a51db3378520`}
               />
-              <Text
+              {/* <Text
                 fontSize={width < 900 ? `20px` : `34px`}
                 fontWeight={`bold`}
               >
                 링크락
-              </Text>
+              </Text> */}
               <Text
                 fontSize={width < 900 ? `14px` : `25px`}
                 fontWeight={`500`}
@@ -830,41 +857,35 @@ const MM17Presenter = ({
                   fontSize={width < 900 ? `20px` : `30px`}
                   fontWeight={`bold`}
                 >
-                  USB 기기 보안의 마무리
+                  Securing USB Devices
                 </Text>
                 <Text
-                  fontSize={width < 900 ? `18px` : `24px`}
+                  fontSize={width < 900 ? `15px` : `24px`}
                   color={Theme.greyTheme7_C}
                 >
-                  빈 USB 포트는 막았는데,
-                </Text>
-                <Text
-                  display={width < 700 ? `none` : `flex`}
-                  fontSize={width < 900 ? `18px` : `24px`}
-                  color={Theme.greyTheme7_C}
-                >
-                  그럼 사용하는 키보드, 마우스 같은
+                  Now that open USB ports are secured,
                 </Text>
                 <Text
                   display={width < 700 ? `none` : `flex`}
-                  fontSize={width < 900 ? `18px` : `24px`}
+                  fontSize={width < 900 ? `15px` : `24px`}
                   color={Theme.greyTheme7_C}
                 >
-                  USB 기기의 보안은?
+                  what about USB devices that are in use?
+                </Text>
+
+                <Text
+                  display={width < 700 ? `flex` : `none`}
+                  fontSize={width < 900 ? `15px` : `24px`}
+                  color={Theme.greyTheme7_C}
+                >
+                  Now that open USB ports are secured,
                 </Text>
                 <Text
                   display={width < 700 ? `flex` : `none`}
-                  fontSize={width < 900 ? `18px` : `24px`}
+                  fontSize={width < 900 ? `15px` : `24px`}
                   color={Theme.greyTheme7_C}
                 >
-                  그럼 사용하는 키보드, 마우스 같은
-                </Text>
-                <Text
-                  display={width < 700 ? `flex` : `none`}
-                  fontSize={width < 900 ? `18px` : `24px`}
-                  color={Theme.greyTheme7_C}
-                >
-                  USB 기기의 보안은?
+                  what about USB devices that are in use?
                 </Text>
               </Wrapper>
             </Wrapper>
@@ -901,39 +922,38 @@ const MM17Presenter = ({
             display={width < 900 ? `none` : `flex`}
           >
             <Text fontSize={`30px`} fontWeight={`bold`}>
-              아무리 포트가 막혀있어도 사용 중인 기기를
+              If you can’t secure it,
             </Text>
             <Text fontSize={`30px`} fontWeight={`bold`} margin={`0 0 20px`}>
-              통제할 수 없다면, 여전히 보안의 구멍이겠죠.
+              there is still a lapse in security.
             </Text>
           </Wrapper>
 
           <Text fontSize={`20px`} color={Theme.darkGrey_C}>
-            링크락은 USB 기기들이 연결된 채로 포트에
+            Link Lock is designed to physically prevent unauthorized
           </Text>
           <Text fontSize={`20px`} color={Theme.darkGrey_C}>
-            물리적으로 잠금 시킬 수 있고, 동일한 패턴의
+            removal of attached USB devices.
           </Text>
           <Text fontSize={`20px`} color={Theme.darkGrey_C}>
-            키로만 해제가 되도록 설계하였습니다.
-          </Text>
-          <Text fontSize={`20px`} color={Theme.darkGrey_C} margin={`0 0 30px`}>
-            말 그대로 <SpanText fontWeight={`bold`}>LINK</SpanText> 하면서
-            <SpanText fontWeight={`bold`}>LOCK</SpanText>&nbsp; 하는 거죠!
+            It can be released only by using the Universal Lock Key of
           </Text>
           <Text fontSize={`20px`} color={Theme.darkGrey_C}>
-            키보드, 마우스나 USB 허브 등, 보안담당자가
+            the matching pattern.
           </Text>
-          <Text fontSize={`20px`} color={Theme.darkGrey_C}>
+          <Text fontSize={`20px`} color={Theme.darkGrey_C} fontWeight={`700`}>
+            Link and Lock it down!
+          </Text>
+          {/* <Text fontSize={`20px`} color={Theme.darkGrey_C}>
             사전에 인가한 장치만 사용할 수 있도록 설치하여
           </Text>
           <Text fontSize={`20px`} color={Theme.darkGrey_C} margin={`0 0 20px`}>
             내부의 보안규정을 준수할 수 있도록 도와드립니다.
-          </Text>
+          </Text> */}
 
           <Link to="/usb/6107e4e0bdf08f065ce6cd25">
             <ArrowIcon>
-              링크락 자세히 보러가기
+              Learn more about Link Lock
               <FaChevronRight />
             </ArrowIcon>
           </Link>
@@ -953,14 +973,13 @@ const MM17Presenter = ({
             />
             <Wrapper width={`auto`} padding={`0 0 0 15px`} al={`flex-start`}>
               <Text fontSize={`20px`}>
-                <SpanText fontWeight={`bold`}>USB 포트락</SpanText>과 함께
-                사용하면
+                Use with <SpanText fontWeight={`bold`}>USB Port Lock</SpanText>
               </Text>
-              <Text fontSize={`20px`}>물리 보안의 완성도를</Text>
-              <Text fontSize={`20px`}>더욱 높일 수 있습니다.</Text>
+              <Text fontSize={`20px`}>to enhance physical</Text>
+              <Text fontSize={`20px`}>cybersecurity. </Text>
               <Link to="/usb/6107dd1dbdf08f065ce6cd1e">
                 <ArrowIcon margin={`22px 0 0`}>
-                  USB 포트락 자세히 보러가기
+                  Learn more bout USB Port Lock
                   <FaChevronRight />
                 </ArrowIcon>
               </Link>
@@ -978,16 +997,16 @@ const MM17Presenter = ({
       >
         <Wrapper al={`flex-start`}>
           <Text fontSize={`20px`} fontWeight={`bold`}>
-            아무리 포트가 막혀있어도
+            If you can’t
           </Text>
           <Text fontSize={`20px`} fontWeight={`bold`}>
-            사용 중인 기기를
+            secure it,
           </Text>
           <Text fontSize={`20px`} fontWeight={`bold`}>
-            통제할 수 없다면,
+            there is still
           </Text>
           <Text fontSize={`20px`} fontWeight={`bold`} margin={`0 0 50px`}>
-            여전히 보안의 구멍이겠죠.
+            a lapse in security.
           </Text>
         </Wrapper>
       </Wrapper>
@@ -998,16 +1017,16 @@ const MM17Presenter = ({
         al={`flex-start`}
       >
         <Text fontSize={`18px`} color={Theme.darkGrey_C}>
-          링크락은 USB 기기들이 연결된 채로
+          Link Lock is designed to physically prevent unauthorized
         </Text>
         <Text fontSize={`18px`} color={Theme.darkGrey_C}>
-          포트에 물리적으로 잠금 시킬 수 있고,
+          removal of attached USB devices.
         </Text>
         <Text fontSize={`18px`} color={Theme.darkGrey_C}>
-          동일한 패턴의 키로만 해제가 되도록
+          It can be released only by using the Universal Lock Key of
         </Text>
         <Text fontSize={`18px`} color={Theme.darkGrey_C}>
-          설계하였습니다.
+          the matching pattern.
         </Text>
         <Text
           fontSize={`18px`}
@@ -1015,17 +1034,12 @@ const MM17Presenter = ({
           fontWeight={`bold`}
           margin={`0 0 10px`}
         >
-          말 그대로 LINK 하면서 LOCK 하는 거죠!
+          Link and Lock it down!
         </Text>
-        <Text fontSize={`18px`}>키보드, 마우스나 USB 허브 등,</Text>
-        <Text fontSize={`18px`}>보안담당자가 사전에 인가한 장치만 사용</Text>
-        <Text fontSize={`18px`}>할 수 있도록 설치하여 내부의 보안규정을</Text>
-        <Text fontSize={`18px`} margin={`0 0 20px`}>
-          준수할 수 있도록 도와드립니다.
-        </Text>
+
         <Link to="/usb/6107e4e0bdf08f065ce6cd25">
           <ArrowIcon>
-            링크락 자세히 보러가기
+            Learn more about Link Lock
             <FaChevronRight />
           </ArrowIcon>
         </Link>
@@ -1046,18 +1060,17 @@ const MM17Presenter = ({
           </Wrapper>
           <Wrapper width={`70%`} al={`flex-start`}>
             <Text fontSize={`16px`} lineHeight={`1.4`} fontWeight={`400`}>
-              <SpanText fontWeight={`bold`}>USB 포트락</SpanText>과 함께
-              사용하면
+              Use with <SpanText fontWeight={`bold`}>USB Port Lock</SpanText>
             </Text>
             <Text fontSize={`16px`} lineHeight={`1.4`} fontWeight={`400`}>
-              물리 보안의 완성도를
+              to enhance physical
             </Text>
             <Text fontSize={`16px`} lineHeight={`1.4`} fontWeight={`400`}>
-              더욱 높일 수 있습니다.
+              cybersecurity.
             </Text>
             <Link to="/usb/6107dd1dbdf08f065ce6cd1e">
               <ArrowIcon color={Theme.greyTheme4_C} margin={`18px 0 0`}>
-                USB 포트락 자세히 보러가기
+                Learn more bout USB Port Lock
                 <FaChevronRight />
               </ArrowIcon>
             </Link>
@@ -1094,22 +1107,22 @@ const MM17Presenter = ({
           </Wrapper>
           <Wrapper color={Theme.white_C} margin={`300px 0 0`}>
             <Text fontSize={`20px`}>
-              이름에 걸맞게 Universal (만능) 키이죠.
+              As the name suggests, the key is universal.
             </Text>
             <Text fontSize={`20px`} margin={`0 0 50px`}>
-              하나의 키로 30여 스마트키퍼 제품을 해제할 수 있어, 사용자의
-              편의성을 극대화 하였습니다.
+              ONE key can manage 30+ SMARTKEEPER products to enhance user
+              efficiency.
             </Text>
             <Text fontSize={`20px`}>
-              또한 패턴(내부구조)을 다양하게 설계하여,
+              Numerous confidential key patterns are only compatible
             </Text>
             <Text fontSize={`20px`} margin={`0 0 90px`}>
-              패턴이 다르면 잠금장치가 해제되지 않아 보안성도 뛰어나죠.
+              with products of matching pattern.
             </Text>
 
             <Link to="/lock/6106a4c1284536707ffa20d9">
               <ArrowIcon fontWeight={`bold`}>
-                유니버셜 락키 자세히 보러가기
+                Learn more about Universal Lock Key
                 <FaChevronRight />
               </ArrowIcon>
             </Link>
@@ -1139,24 +1152,22 @@ const MM17Presenter = ({
             fontSize={`18px`}
           >
             <Text fontWeight={`400`}>
-              이름에 걸맞게 Universal (만능) 키이죠.
+              As the name suggests, the key is universal.
             </Text>
-            <Text fontWeight={`400`}>하나의 키로 30여 스마트키퍼 제품을</Text>
-            <Text fontWeight={`400`}>해제할 수 있어, 사용자의 편의성을</Text>
+            <Text fontWeight={`400`}>ONE key can manage </Text>
+            <Text fontWeight={`400`}>30+ SMARTKEEPER products </Text>
             <Text fontWeight={`400`} margin={`0 0 30px`}>
-              극대화 하였습니다.
+              to enhance user efficiency.
             </Text>
 
-            <Text fontWeight={`400`}>
-              또한 패턴(내부구조)을 다양하게 설계하여,
-            </Text>
-            <Text fontWeight={`400`}>패턴이 다르면 잠금장치가 해제되지</Text>
+            <Text fontWeight={`400`}>Numerous confidential key patterns</Text>
+            <Text fontWeight={`400`}>are only compatible with products</Text>
             <Text fontWeight={`400`} margin={`0 0 30px`}>
-              않아 보안성도 뛰어나죠.
+              of matching pattern.
             </Text>
             <Link to="/lock/6106a4c1284536707ffa20d9">
               <ArrowIcon fontWeight={`bold`}>
-                유니버셜 락키 자세히 보러가기
+                Learn more about Universal Lock Key
                 <FaChevronRight />
               </ArrowIcon>
             </Link>
