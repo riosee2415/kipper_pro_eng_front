@@ -44,6 +44,7 @@ const AD28 = withSplitting(() => import("../Admin/AD28"));
 const AD29 = withSplitting(() => import("../Admin/AD29"));
 const AD30 = withSplitting(() => import("../Admin/AD30"));
 const AD31 = withSplitting(() => import("../Admin/AD31"));
+const AD90 = withSplitting(() => import("../Admin/AD90"));
 
 import { GET_USER_LOGIN_RESULT_FOR_ADMIN } from "./A_LayoutQueries";
 import useInput from "../../Components/Hooks/useInput";
@@ -234,6 +235,7 @@ const A_Content = ({ location }) => {
             <Route exact path="/admin/popupManagement" component={AD29} />
             <Route exact path="/admin/snsLinkManagement" component={AD30} />
             <Route exact path="/admin/graphManagement" component={AD31} />
+            <Route exact path="/admin/createManagement" component={AD90} />
           </Wrapper>
         </>
       ) : (
