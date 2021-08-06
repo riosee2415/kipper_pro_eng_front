@@ -22,8 +22,8 @@ const A_Side = () => {
     <WholeWrapper padding={`20px 0`}>
       <Image
         alt="logo"
-        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/4LEAFWEB%2Fimages%2FLOGO%2Flogo2.png?alt=media&token=5f700f73-92ac-480d-8a29-3ca9b1adfbbf`}
-        width={`150px`}
+        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Flogo%2Fpro-logo.png?alt=media&token=1d7babc2-4c9d-4923-b9e2-b46f8967ca07`}
+        width={`80px`}
         margin={`0 0 20px`}
       />
       {allMenus.map((menu, idx) => {

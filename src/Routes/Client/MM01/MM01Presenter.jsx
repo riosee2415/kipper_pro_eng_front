@@ -1,0 +1,1354 @@
+import React, { useEffect, useState } from "react";
+import withSplitting from "../../../Lib/withSplitting";
+import {
+  RsWrapper,
+  WholeWrapper,
+  Wrapper,
+  Image,
+  Text,
+  ATag,
+} from "../../../Components/CommonComponents";
+import styled from "styled-components";
+import { withResizeDetector } from "react-resize-detector";
+import useTitle from "@4leaf.ysh/use-title";
+import Theme from "../../../Styles/Theme";
+import { RiArrowRightSLine } from "react-icons/ri";
+import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax";
+import { animateScroll as scroll } from "react-scroll";
+import { Link } from "react-router-dom";
+import { useRef } from "react";
+
+const Title = styled.h1`
+  font-size: 40px;
+  font-weight: bold;
+  color: ${(props) => props.theme.white_C};
+  line-height: 1.3;
+  display: ${(props) => props.display};
+
+  @media (max-width: 900px) {
+    font-size: 25px;
+  }
+`;
+
+const SubTitle = styled.h2`
+  font-size: 28px;
+  font-weight: bold;
+  color: ${(props) => props.theme.white_C};
+  display: ${(props) => props.display};
+  line-height: 1.3;
+
+  @media (max-width: 900px) {
+    font-size: 18px;
+  }
+`;
+
+const Button = styled(Wrapper)`
+  width: auto;
+  padding: 0 0 5px;
+  color: ${Theme.white_C};
+  position: relative;
+  cursor: pointer;
+  font-weight: 300;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: ${Theme.white_C};
+    transition: 0.5s;
+  }
+
+  &:hover:before {
+    width: 100%;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 14px;
+  }
+`;
+
+const TempImage = styled(Image)`
+  position: ${(props) => (props) => props.position};
+
+  z-index: ${(props) => props.zIndex};
+  opacity: ${(props) => props.opacity};
+
+  transform: ${(props) => props.transform};
+  ${(props) => props.top};
+
+  transition: all 0s;
+
+  @media (max-width: 900px) {
+    top: 95px;
+    transform: translateY(0);
+    position: fixed;
+  }
+`;
+
+const MM01Presenter = ({
+  width,
+  //
+  tab1Ref,
+  tab2Ref,
+  tab3Ref,
+  tab4Ref,
+  tab5Ref,
+  documentRef,
+}) => {
+  useTitle(`스마트키퍼란? | ${process.env["HOMEPAGE_NAME"]}`);
+
+  const value = [
+    "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2Fimage-1.png?alt=media&token=d8746dbb-dbc5-4b2f-b00e-42ea76ceb0c0",
+    "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2Fimage-2.png?alt=media&token=1356cc8e-9667-4c1e-b3b2-18656e19cab4",
+    "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2Fimage-3.png?alt=media&token=25d90f96-712b-40a8-b82a-6ea87dc81149",
+    "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2Fimage-4.png?alt=media&token=20961643-5f65-4d11-8f4f-e132d31fb1f3",
+    "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2Fimage-5.png?alt=media&token=529b1a87-7997-4840-9f2e-06583579442c",
+  ];
+
+  const heightRef = useRef();
+
+  const [pageY, setPageY] = useState(0);
+  const [currentImage, setCurrentImage] = useState(0);
+  const [fade, setFade] = useState(1);
+  const [isEnd, setIsEnd] = useState(true);
+  const [height, setHeight] = useState(0);
+
+  const handleScroll = () => {
+    const { pageYOffset } = window;
+
+    if (tab1Ref.current.offsetHeight * 3 >= pageYOffset) {
+      setIsEnd(true);
+
+      let currentOffset;
+
+      let tempOffset = tab1Ref.current.offsetHeight * 4;
+
+      if (currentImage === 0) {
+        currentOffset = (tempOffset / 5) * 1;
+      }
+      if (currentImage === 1) {
+        currentOffset = (tempOffset / 5) * 2;
+      }
+      if (currentImage === 2) {
+        currentOffset = (tempOffset / 5) * 3;
+      }
+      if (currentImage === 3) {
+        currentOffset = (tempOffset / 5) * 4;
+      }
+      if (currentImage === 4) {
+        currentOffset = (tempOffset / 5) * 5;
+      }
+
+      // console.log(
+      //   (tempOffset / 5) * 1,
+      //   (tempOffset / 5) * 2,
+      //   (tempOffset / 5) * 3,
+      //   (tempOffset / 5) * 4,
+      //   (tempOffset / 5) * 5
+      // );
+
+      let tempFade = (currentOffset - pageYOffset) / (tempOffset / 5);
+
+      if (currentOffset - pageYOffset <= 0 && currentImage !== 4) {
+        setCurrentImage(currentImage + 1);
+        // tempFade = 1;
+      }
+
+      if (pageYOffset <= (tempOffset / 5) * currentImage - 1) {
+        setCurrentImage(currentImage - 1);
+        // tempFade = 0;
+      }
+
+      setPageY(pageYOffset);
+      setFade(tempFade);
+    } else {
+      setIsEnd(false);
+    }
+  };
+
+  useEffect(() => {
+    documentRef.current.addEventListener("scroll", handleScroll);
+    return () =>
+      documentRef.current.removeEventListener("scroll", handleScroll);
+  }, [pageY]);
+
+  useEffect(() => {
+    scroll.scrollTo(0);
+
+    setHeight(heightRef.current.offsetHeight);
+  }, []);
+
+  return (
+    <ParallaxProvider>
+      <WholeWrapper bgColor={Theme.black_C}>
+        <RsWrapper isRelative={true}>
+          <Wrapper dr={`row`}>
+            <Wrapper
+              height={width < 700 ? `auto` : `${height}px`}
+              width={width < 900 ? `100%` : `50%`}
+              ju={width < 900 && `flex-start`}
+              isRelative={true}
+            >
+              <TempImage
+                width={width < 900 ? `302px` : `615px`}
+                height={width < 900 ? `302px` : `615px`}
+                zIndex={10}
+                opacity={fade}
+                // top={pageY + 120}
+                src={value[currentImage]}
+                position={isEnd ? `fixed` : `absolute`}
+                top={isEnd ? `top: 50%` : `bottom: 150px`}
+                transform={isEnd ? `translateY(-50%)` : `translateY(0)`}
+              />
+
+              <TempImage
+                width={width < 900 ? `302px` : `615px`}
+                height={width < 900 ? `302px` : `615px`}
+                zIndex={1}
+                opacity={1 - fade}
+                position={isEnd ? `fixed` : `absolute`}
+                top={isEnd ? `top: 50%` : `bottom: 150px`}
+                transform={isEnd ? `translateY(-50%)` : `translateY(0)`}
+                src={value[currentImage === 4 ? 4 : currentImage + 1]}
+              />
+            </Wrapper>
+            <Wrapper
+              ref={heightRef}
+              width={width < 900 ? `100%` : `50%`}
+              al={`flex-start`}
+              ju={`flex-start`}
+            >
+              <Wrapper
+                height={`100vh`}
+                padding={width < 900 ? `0 36px` : `0 0 0 65px`}
+                ref={tab1Ref}
+                al={`flex-start`}
+                ju={width < 900 && `flex-end`}
+              >
+                <Title>Security gap,</Title>
+                <Title>your precarious story</Title>
+                <Wrapper
+                  width={`20px`}
+                  height={`2px`}
+                  bgColor={width < 900 ? `transparent` : Theme.white_C}
+                  margin={width < 900 ? `40px 0 0` : `50px 0`}
+                ></Wrapper>
+
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                >
+                  Malware is like the flu. Even with consistent monitoring
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
+                >
+                  and vaccination, it always infiltrates our bodies with
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
+                  margin={`0 0 40px`}
+                >
+                  new viruses.
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  and vaccination, it always infiltrates our bodies with
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                  margin={`0 0 40px`}
+                >
+                  new viruses.
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
+                >
+                  The perfect way to protect against viruses is to block the
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
+                >
+                  intrusion route directly. Leaving the intrusion route
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  The perfect way to protect against viruses is to block the
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  intrusion route directly.
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  Leaving the intrusion route
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                >
+                  unattended means that there is a lapse in security.
+                </Text>
+              </Wrapper>
+              {/*  */}
+              <Wrapper
+                height={`100vh`}
+                padding={width < 900 ? `0 36px` : `0 0 0 50px`}
+                ref={tab2Ref}
+                al={`flex-start`}
+              >
+                <Title>The best security is</Title>
+                <Title display={width < 900 ? `none` : `block`}>
+                  physical security.
+                </Title>
+                <Title display={width < 900 ? `block` : `none`}>physical</Title>
+                <Title display={width < 900 ? `block` : `none`}>
+                  security.
+                </Title>
+
+                <Wrapper
+                  width={`20px`}
+                  height={`2px`}
+                  bgColor={width < 900 ? `transparent` : Theme.white_C}
+                  margin={width < 900 ? `40px 0 0` : `50px 0`}
+                ></Wrapper>
+
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                >
+                  We all know what to do when we receive a spam mail
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
+                  margin={`0 0 40px`}
+                >
+                  with malware. “Do NOT click to open.”
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  We all know what to do when we receive a spam mail
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                  margin={`0 0 40px`}
+                >
+                  with malware. “Do NOT click to open.”
+                </Text>
+                {/* <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  margin={`0 0 40px`}
+                >
+                  ‘클릭 해서 열어보지 말 것.’
+                </Text> */}
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
+                >
+                  Will you continue to allow connecting personal devices
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
+                >
+                  that may be infected to industrial equipment full of
+                  confidential
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
+                >
+                  data? Will you continue to neglect removable storage devices
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
+                >
+                  with important data?
+                </Text>
+                {/* <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
+                >
+                  두실건가요?
+                </Text> */}
+
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  Will you continue to allow connecting personal devices
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  that may be infected to industrial equipment
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  full of confidential data?
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  Will you continue to neglect
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  removable storage devices
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  with important data?
+                </Text>
+              </Wrapper>
+              {/*  */}
+              <Wrapper
+                height={`100vh`}
+                padding={width < 900 ? `0 36px` : `0 0 0 50px`}
+                ref={tab3Ref}
+                al={`flex-start`}
+              >
+                <Title>Arguably</Title>
+                <Title>the Best Security</Title>
+
+                <Wrapper
+                  width={`20px`}
+                  height={`2px`}
+                  bgColor={width < 900 ? `transparent` : Theme.white_C}
+                  margin={width < 900 ? `40px 0 0` : `50px 0`}
+                ></Wrapper>
+
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                >
+                  The best way to prevent malware infection &#38; data breach is
+                  to
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
+                  margin={`0 0 40px`}
+                >
+                  physically block open ports.
+                </Text>
+                {/* <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
+                >
+                  잠금 장치를 통해 직접적인 통로를 차단하는것.
+                </Text> */}
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  The best way to prevent malware
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  infection &#38; data breach is to
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                  margin={`0 0 40px`}
+                >
+                  physically block open ports.
+                </Text>
+                {/* <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  margin={`0 0 40px`}
+                >
+                  즉, 물리적 행동을 못하게 제재하는 것.
+                </Text> */}
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                >
+                  The solution is to physically secure your open ports with
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                >
+                  SMARTKEEPER.
+                </Text>
+                <Link to="/malware">
+                  <Wrapper
+                    dr={`row`}
+                    ju={`flex-start`}
+                    margin={`15px 0 0`}
+                    color={Theme.white_C}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    <Text fontWeight={`700`}>
+                      Learn more about malware infection and data breach cases
+                    </Text>
+                    <RiArrowRightSLine size={20} />
+                  </Wrapper>
+                </Link>
+              </Wrapper>
+              {/*  */}
+              <Wrapper
+                height={`100vh`}
+                padding={width < 900 ? `0 36px` : `0 0 0 50px`}
+                ref={tab4Ref}
+                al={`flex-start`}
+              >
+                <Title>Physical Cybersecurity,</Title>
+                <Title>Now a must, not a choice.</Title>
+
+                <Wrapper
+                  width={`20px`}
+                  height={`2px`}
+                  bgColor={width < 900 ? `transparent` : Theme.white_C}
+                  margin={width < 900 ? `40px 0 0` : `50px 0`}
+                ></Wrapper>
+
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
+                >
+                  The 4th Industrial Revolution, the era where intangible data
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  The 4th Industrial Revolution,
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                  margin={`0 0 15px`}
+                >
+                  the era where intangible data
+                </Text>
+                {/* <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
+                >
+                  2중, 3중으로 된 보안 시스템과 실시간 감시를 통한
+                </Text> */}
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
+                >
+                  is now an asset… Physically block open ports with SMARTKEEPER
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
+                >
+                  to protect your valuable assets from industry espionage and
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
+                >
+                  ever-evolving malware.
+                </Text>
+
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  is now an asset…
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  Physically block open ports with SMARTKEEPER
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  to protect your valuable assets
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  from industry espionage and
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  ever-evolving malware.
+                </Text>
+                {/* <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  것 입니다.
+                </Text> */}
+              </Wrapper>
+              {/*  */}
+              {/* <Wrapper height={`100vh`}padding={width < 900 ? `0 36px` : `0 0 0 50px`} ref={tab5Ref}>
+                <Title>보안의 틈,</Title>
+                <Title>당신의 위태로운 이야기.</Title>
+
+                <Wrapper
+                  width={`20px`}
+                  height={`2px`}
+                  bgColor={Theme.white_C}
+                  margin={`35px 0`}display={width < 900 ? `none`:`flex`}
+                ></Wrapper>
+
+                <Text
+                  fontSize={width < 900 ? `18px`:`25px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                >
+                  123123
+                </Text>
+                <Text
+                  fontSize={width < 900 ? `18px`:`25px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                >
+                  실시간 감시와 예방 주사에도 늘 새로운 바이러스로
+                </Text>
+                <Text
+                  fontSize={width < 900 ? `18px`:`25px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  margin={`0 0 40px`}
+                >
+                  우리몸에 침투하죠.
+                </Text>
+                <Text
+                  fontSize={width < 900 ? `18px`:`25px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                >
+                  바이러스로부터 완벽하게 지키는 방법은 침투경로를
+                </Text>
+                <Text
+                  fontSize={width < 900 ? `18px`:`25px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                >
+                  직접적으로 막는 것 입니다.침투경로를 열어두는 것.
+                </Text>
+                <Text
+                  fontSize={width < 900 ? `18px`:`25px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                >
+                  보안의 틈을 방치해 두었다는 것.
+                </Text>
+              </Wrapper> */}
+            </Wrapper>
+          </Wrapper>
+        </RsWrapper>
+
+        <Wrapper
+          bgColor={Theme.white_C}
+          isRelative={true}
+          // padding={width < 900 ? `0` : `150px 0 0`}
+          height={width < 800 ? `auto` : `100vh`}
+        >
+          <RsWrapper dr={`row`} height={`100%`}>
+            <Wrapper
+              // isAbsolute={width < 900 ? false : true}
+              // top={width < 900 ? `100px` : `150px`}
+              // left={width < 900 ? `36px` : `0`}
+              width={width < 800 ? `100%` : `50%`}
+              height={`100%`}
+            >
+              <Wrapper
+                height={`100%`}
+                ju={`space-around`}
+                padding={width < 900 && `100px 36px 50px`}
+              >
+                <Wrapper al={`flex-start`}>
+                  {/* <Wrapper
+                    width={`auto`}
+                    fontSize={width < 900 ? `21px` : `40px`}
+                    isGotham={true}
+                    fontWeight={`bold`}
+                  >
+                    SMARTKEEPER
+                  </Wrapper> */}
+                  <Image
+                    alt="smartkeeper"
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2FSMARTKEEPER.svg?alt=media&token=414a9ee8-c0b1-4299-aec0-2fa5276d8193`}
+                    width={width < 800 ? `164px` : `235px`}
+                    margin={width < 800 && `0 0 20px`}
+                  />
+                  <Wrapper
+                    width={`auto`}
+                    fontSize={width < 900 ? `23px` : `45px`}
+                    fontWeight={`bold`}
+                    lineHeight={`1.3`}
+                  >
+                    Sustainable cybersecurity
+                  </Wrapper>
+                  <Wrapper
+                    width={`auto`}
+                    fontSize={width < 900 ? `23px` : `45px`}
+                    fontWeight={`bold`}
+                    lineHeight={`1.3`}
+                  >
+                    system with one physical
+                  </Wrapper>
+                  <Wrapper
+                    width={`auto`}
+                    fontSize={width < 900 ? `23px` : `45px`}
+                    fontWeight={`bold`}
+                    lineHeight={`1.3`}
+                  >
+                    application
+                  </Wrapper>
+                  <Wrapper
+                    width={`auto`}
+                    dr={`row`}
+                    fontSize={width < 900 ? `18px` : `22px`}
+                    margin={`20px 0 0`}
+                    fontWeight={`300`}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    SMARTKEEPER physically blocks the input/output
+                  </Wrapper>
+                  <Wrapper
+                    width={`auto`}
+                    dr={`row`}
+                    fontSize={width < 900 ? `18px` : `22px`}
+                    fontWeight={`300`}
+                    lineHeight={`1.5`}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    ports of computers and network devices to prevent
+                  </Wrapper>
+                  <Wrapper
+                    width={`auto`}
+                    dr={`row`}
+                    fontSize={width < 900 ? `18px` : `22px`}
+                    fontWeight={`300`}
+                    lineHeight={`1.5`}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    unauthorized use.
+                  </Wrapper>
+                  <Wrapper
+                    width={`auto`}
+                    dr={`row`}
+                    fontSize={width < 900 ? `18px` : `22px`}
+                    fontWeight={`300`}
+                    lineHeight={`1.5`}
+                    margin={`20px 0 0`}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    Secure USB, SD Card, RJ45 Ports and more with
+                  </Wrapper>
+                  <Wrapper
+                    width={`auto`}
+                    dr={`row`}
+                    fontSize={width < 900 ? `18px` : `22px`}
+                    fontWeight={`300`}
+                    lineHeight={`1.5`}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    SMARTKEEPER.
+                  </Wrapper>
+                </Wrapper>
+                <Wrapper
+                  al={`flex-start`}
+                  display={width < 900 ? `none` : `flex`}
+                >
+                  <Wrapper
+                    width={`auto`}
+                    lineHeight={`1.3`}
+                    fontSize={`30px`}
+                    fontWeight={`bold`}
+                  >
+                    Physical Cybersecurity,
+                  </Wrapper>
+                  <Wrapper
+                    width={`auto`}
+                    lineHeight={`1.3`}
+                    fontSize={`30px`}
+                    fontWeight={`bold`}
+                  >
+                    Simple but effective economical solution!
+                  </Wrapper>
+                </Wrapper>
+              </Wrapper>
+            </Wrapper>
+
+            <Image
+              width={width < 900 ? `100%` : `50%`}
+              isAbsolute={width < 900 && `true`}
+              top={width < 900 && `218px`}
+              right={width < 900 && `0px`}
+              zIndex={width < 900 && `-1`}
+              height={width < 900 ? `auto` : `100vh`}
+              alt="computer"
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2Fbackground-image-1.png?alt=media&token=7af3f0fd-4dab-47f6-aaf2-3fdf14acc6c6`}
+            />
+
+            <Wrapper
+              bgColor={`linear-gradient(to top, rgb(255, 255, 255), ${Theme.lightGrey_C})`}
+              al={`flex-start`}
+              display={width < 900 ? `flex` : `none`}
+              padding={width < 900 && `40px 36px`}
+              margin={`480px 0 0`}
+            >
+              <Wrapper
+                width={`auto`}
+                dr={`row`}
+                fontSize={`15px`}
+                fontWeight={`500`}
+              >
+                SMARTKEEPER physically blocks the
+              </Wrapper>
+              <Wrapper
+                width={`auto`}
+                dr={`row`}
+                fontSize={`15px`}
+                fontWeight={`500`}
+                lineHeight={`1.5`}
+              >
+                input/output ports of computers and
+              </Wrapper>
+              <Wrapper
+                width={`auto`}
+                dr={`row`}
+                fontSize={`15px`}
+                fontWeight={`500`}
+                lineHeight={`1.5`}
+              >
+                network devices to prevent unauthorized
+              </Wrapper>
+              <Wrapper
+                width={`auto`}
+                dr={`row`}
+                fontSize={`15px`}
+                fontWeight={`500`}
+                lineHeight={`1.5`}
+              >
+                use. Secure USB, SD Card, RJ45 Ports
+              </Wrapper>
+              <Wrapper
+                width={`auto`}
+                dr={`row`}
+                fontSize={`15px`}
+                fontWeight={`500`}
+                lineHeight={`1.5`}
+              >
+                and more with SMARTKEEPER.
+              </Wrapper>
+            </Wrapper>
+          </RsWrapper>
+        </Wrapper>
+
+        <Wrapper
+          bgColor={Theme.lightGrey_C}
+          padding={width < 900 ? `30px 36px` : `30px 0 160px`}
+        >
+          <Wrapper
+            al={`flex-start`}
+            display={width < 900 ? `flex` : `none`}
+            margin={`0 0 50px`}
+          >
+            <Wrapper
+              width={`auto`}
+              lineHeight={`1.3`}
+              fontSize={`20px`}
+              fontWeight={`bold`}
+            >
+              Physical Cybersecurity,
+            </Wrapper>
+            <Wrapper
+              width={`auto`}
+              lineHeight={`1.3`}
+              fontSize={`20px`}
+              fontWeight={`bold`}
+            >
+              Simple but effective
+            </Wrapper>
+            <Wrapper
+              width={`auto`}
+              lineHeight={`1.3`}
+              fontSize={`20px`}
+              fontWeight={`bold`}
+            >
+              economical solution!
+            </Wrapper>
+          </Wrapper>
+          <RsWrapper>
+            <Wrapper dr={`row`} ju={`space-between`}>
+              <Wrapper
+                width={width < 900 ? `302px` : `calc(100% / 2 - 5px)`}
+                height={`auto`}
+                padding={width < 900 ? `35px 0px 35px 20px` : `30px 50px`}
+                margin={`0 0 10px`}
+                isRelative={true}
+                attachment={`initial`}
+                bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2F%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5_USB%20%E1%84%91%E1%85%A9%E1%84%90%E1%85%B3%E1%84%8B%E1%85%B4%20%E1%84%87%E1%85%A9%E1%84%8B%E1%85%A1%E1%86%AB-1.jpg?alt=media&token=8a5d48dc-6496-46f4-9ada-0762f57e8966")`}
+              >
+                {/* <Wrapper
+                  bgColor={`rgba(0,0,0,0.7)`}
+                  isAbsolute={true}
+                  height={`100%`}
+                  top={`0`}
+                  left={`0`}
+                ></Wrapper> */}
+
+                <Wrapper al={`flex-start`} height={`100%`} ju={`flex-start`}>
+                  <Text
+                    fontSize={width < 900 ? `12px` : `18px`}
+                    fontWeight={`300`}
+                    color={Theme.white_C}
+                  >
+                    USB Port Security
+                  </Text>
+                  <Wrapper al={`flex-start`}>
+                    <SubTitle>Starting point of Port Security,</SubTitle>
+                    <SubTitle>End it with Physical Security.</SubTitle>
+                  </Wrapper>
+                  <Link to="/security">
+                    <Button
+                      dr={`row`}
+                      margin={width < 700 ? `10px 0 0` : `20px 0 0`}
+                    >
+                      <Text
+                        fontWeight={width < 700 ? `700` : `500`}
+                        color={Theme.white_C}
+                      >
+                        Learn more
+                      </Text>
+                      <RiArrowRightSLine
+                        fontSize={`20px`}
+                        color={Theme.white_C}
+                      />
+                    </Button>
+                  </Link>
+                </Wrapper>
+              </Wrapper>
+
+              <Wrapper
+                width={width < 900 ? `302px` : `calc(100% / 2 - 5px)`}
+                height={`auto`}
+                padding={width < 900 ? `35px 0px 35px 20px` : `30px 50px`}
+                margin={`0 0 10px`}
+                isRelative={true}
+                attachment={`initial`}
+                bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2F%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5_%E1%84%82%E1%85%A6%E1%84%90%E1%85%B3%E1%84%8B%E1%85%AF%E1%84%8F%E1%85%B3%20%E1%84%87%E1%85%A9%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%20%E1%84%91%E1%85%B5%E1%86%AF%E1%84%89%E1%85%AE%20%E1%84%8C%E1%85%A9%E1%84%92%E1%85%A1%E1%86%B8-1.jpg?alt=media&token=f36f0f3e-da0f-4b74-98e1-3b3dec193f90")`}
+              >
+                {/* <Wrapper
+                  bgColor={`linear-gradient(rgba(0,0,0,0.6), rgba(84, 84, 84, 0.67))`}
+                  isAbsolute={true}
+                  height={`100%`}
+                  top={`0`}
+                  left={`0`}
+                ></Wrapper> */}
+
+                <Wrapper al={`flex-start`} height={`100%`} ju={`flex-start`}>
+                  <Text
+                    fontSize={width < 900 ? `12px` : `18px`}
+                    fontWeight={`300`}
+                    color={Theme.white_C}
+                  >
+                    The essential combination of network security
+                  </Text>
+                  <Wrapper al={`flex-start`}>
+                    <SubTitle>Network &#38; Intranet :</SubTitle>
+                    <SubTitle>Pathway to all assets within</SubTitle>
+                  </Wrapper>
+                  <Link to="/network">
+                    <Button
+                      dr={`row`}
+                      margin={width < 700 ? `10px 0 0` : `20px 0 0`}
+                    >
+                      <Text
+                        fontWeight={width < 700 ? `700` : `500`}
+                        color={Theme.white_C}
+                      >
+                        Learn more
+                      </Text>
+                      <RiArrowRightSLine
+                        fontSize={`20px`}
+                        color={Theme.white_C}
+                      />
+                    </Button>
+                  </Link>
+                </Wrapper>
+              </Wrapper>
+
+              <Wrapper
+                width={width < 900 ? `302px` : `calc(100% / 2 - 5px)`}
+                height={width < 900 ? `auto` : `164px`}
+                padding={width < 900 ? `20px 0px 20px 20px` : `0 50px`}
+                margin={`0 0 10px`}
+                isRelative={true}
+                attachment={`initial`}
+                bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2F%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5_ESS.jpg?alt=media&token=675f4a59-3f93-4510-84d5-7aca832e3265")`}
+              >
+                {/* <Wrapper
+                  bgColor={`rgba(0, 98, 176, 0.7)`}
+                  isAbsolute={true}
+                  height={`100%`}
+                  top={`0`}
+                  left={`0`}
+                ></Wrapper> */}
+
+                <Wrapper al={`flex-start`} height={`100%`}>
+                  {/* <Wrapper
+                    al={`flex-start`}
+                    fontSize={width < 900 ? `26px` : `30px`}
+                    fontWeight={`500`}
+                    color={Theme.white_C}
+                    isGotham={true}
+                  >
+                    ESSENTIAL
+                  </Wrapper> */}
+                  <Image
+                    alt="ess"
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2FESSENTIAL.svg?alt=media&token=affba8f4-fa4c-4aab-a372-0f971daffe41`}
+                    width={`174px`}
+                  />
+                  <Wrapper
+                    al={`flex-start`}
+                    fontSize={`14px`}
+                    fontWeight={`500`}
+                    margin={`5px 0`}
+                    color={Theme.white_C}
+                  >
+                    Ready for Distribution
+                  </Wrapper>
+                  <Wrapper al={width < 900 ? `flex-start` : `flex-end`}>
+                    <ATag
+                      width={`auto`}
+                      href={`https://schoolhealing2.co.kr/#/basic`}
+                      target={`_blank`}
+                    >
+                      <Button
+                        dr={`row`}
+                        margin={width < 700 ? `10px 0 0` : `0`}
+                      >
+                        <Text
+                          fontWeight={width < 700 ? `700` : `500`}
+                          color={Theme.white_C}
+                        >
+                          Go
+                        </Text>
+                        <RiArrowRightSLine
+                          fontSize={`20px`}
+                          color={Theme.white_C}
+                        />
+                      </Button>
+                    </ATag>
+                  </Wrapper>
+                </Wrapper>
+              </Wrapper>
+
+              <Wrapper
+                width={width < 900 ? `302px` : `calc(100% / 2 - 5px)`}
+                height={width < 900 ? `auto` : `164px`}
+                padding={width < 900 ? `20px 0px 20px 20px` : `0 50px`}
+                margin={`0 0 10px`}
+                isRelative={true}
+                attachment={`initial`}
+                bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2F%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5_PRO.jpg?alt=media&token=3af4fa39-39b6-40f1-ab4c-9b5aa06723f9")`}
+              >
+                {/* <Wrapper
+                  bgColor={`rgba(16, 16, 16, 0.45)`}
+                  isAbsolute={true}
+                  height={`100%`}
+                  top={`0`}
+                  left={`0`}
+                ></Wrapper> */}
+
+                <Wrapper al={`flex-start`} height={`100%`}>
+                  <Wrapper
+                    al={`flex-start`}
+                    fontSize={width < 900 ? `26px` : `30px`}
+                    fontWeight={`500`}
+                    color={Theme.white_C}
+                    isGotham={true}
+                  >
+                    PRO
+                  </Wrapper>
+                  <Wrapper
+                    al={`flex-start`}
+                    fontSize={`14px`}
+                    fontWeight={`500`}
+                    margin={`5px 0`}
+                    color={Theme.white_C}
+                  >
+                    For Corporate Use
+                  </Wrapper>
+                  <Wrapper al={width < 900 ? `flex-start` : `flex-end`}>
+                    <Link to="/usb">
+                      <Button
+                        dr={`row`}
+                        margin={width < 700 ? `10px 0 0` : `0`}
+                      >
+                        <Text
+                          fontWeight={width < 700 ? `700` : `500`}
+                          color={Theme.white_C}
+                        >
+                          Go
+                        </Text>
+                        <RiArrowRightSLine
+                          fontSize={`20px`}
+                          color={Theme.white_C}
+                        />
+                      </Button>
+                    </Link>
+                  </Wrapper>
+                </Wrapper>
+              </Wrapper>
+
+              <Wrapper
+                height={width < 900 ? `auto` : `555px`}
+                padding={width < 900 ? `35px 0px 35px 20px` : `80px 50px`}
+                isRelative={true}
+                attachment={`initial`}
+                bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2F%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5_%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3.jpg?alt=media&token=d4533b5d-e70f-456c-9886-164ddb70f0e4")`}
+              >
+                <Wrapper al={`flex-start`} height={`100%`} ju={`flex-start`}>
+                  <Wrapper
+                    al={`flex-start`}
+                    margin={width < 900 ? `0 0 20px` : `0 0 10px`}
+                  >
+                    <SubTitle
+                      fontSize={`40px`}
+                      display={width < 900 ? `none` : `flex`}
+                    >
+                      Malware intrusion, data breach,
+                    </SubTitle>
+                    <SubTitle
+                      fontSize={`40px`}
+                      display={width < 900 ? `none` : `flex`}
+                    >
+                      no one can be trusted…
+                    </SubTitle>
+                    <SubTitle
+                      fontSize={`40px`}
+                      display={width < 900 ? `flex` : `none`}
+                    >
+                      Malware intrusion,
+                    </SubTitle>
+                    <SubTitle
+                      fontSize={`40px`}
+                      display={width < 900 ? `flex` : `none`}
+                    >
+                      data breach,
+                    </SubTitle>
+                    <SubTitle
+                      fontSize={`40px`}
+                      display={width < 900 ? `flex` : `none`}
+                    >
+                      no one can be trusted…
+                    </SubTitle>
+                  </Wrapper>
+                  <Wrapper
+                    al={`flex-start`}
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    lineHeight={`1.5`}
+                    color={Theme.white_C}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    We live in a hyperconnected age, where everyone and
+                    everything is connected. With big data, the
+                  </Wrapper>
+                  <Wrapper
+                    al={`flex-start`}
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    lineHeight={`1.5`}
+                    color={Theme.white_C}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    number of data and interconnected devices that companies
+                    need to manage is growing
+                  </Wrapper>
+                  <Wrapper
+                    al={`flex-start`}
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    lineHeight={`1.5`}
+                    color={Theme.white_C}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    exponentially. As a result, security vulnerabilities are
+                    always on the rise. This is because access to
+                  </Wrapper>
+                  <Wrapper
+                    al={`flex-start`}
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    lineHeight={`1.5`}
+                    color={Theme.white_C}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    all connected systems can be gained even if only one device
+                    is accessed. If one PC is infected with
+                  </Wrapper>
+                  <Wrapper
+                    al={`flex-start`}
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    lineHeight={`1.5`}
+                    color={Theme.white_C}
+                    display={width < 900 ? `none` : `flex`}
+                    margin={`0 0 50px`}
+                  >
+                    malware, it is only a matter of time before it spreads
+                    throughout the network.
+                  </Wrapper>
+                  <Link to="/malware">
+                    <Button dr={`row`}>
+                      <Text
+                        fontWeight={width < 700 ? `700` : `500`}
+                        color={Theme.white_C}
+                      >
+                        Learn more
+                      </Text>
+                      <RiArrowRightSLine
+                        fontSize={`18px`}
+                        color={Theme.white_C}
+                      />
+                    </Button>
+                  </Link>
+                </Wrapper>
+              </Wrapper>
+            </Wrapper>
+          </RsWrapper>
+        </Wrapper>
+      </WholeWrapper>
+    </ParallaxProvider>
+  );
+};
+
+export default withResizeDetector(MM01Presenter);

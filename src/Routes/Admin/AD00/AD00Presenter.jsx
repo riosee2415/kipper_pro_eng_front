@@ -294,9 +294,9 @@ export default () => {
   return (
     <WholeWrapper minWidth={`1000px`} radius={`30px`}>
       <Image
-        width={`300px`}
+        width={`200px`}
         alt="로고"
-        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/E-BOOK3%2Fassets%2Fimages%2Flogo%2Flogo.png?alt=media&token=3956abaf-6158-4c4a-9726-cc181313c757`}
+        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Flogo%2Fpro-logo-b.png?alt=media&token=446d0daf-0039-4044-a88b-6915e3c93b38`}
       />
       <Wrapper dr={`row`} height={`100vh`}>
         {/* ////////접속자통계///////// */}
