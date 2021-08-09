@@ -194,4 +194,12 @@ export default createGlobalStyle`
       height : 15px  !important;
       border-radius: 3px !important;
     }
+
+    .ant-modal-confirm .ant-modal-body{
+      padding: 20px !important;
+    }
+
+    .ant-modal-confirm-body > .anticon + .ant-modal-confirm-title + .ant-modal-confirm-content{
+      margin-left:0 !important;
+    }
 `;

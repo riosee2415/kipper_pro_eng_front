@@ -19,6 +19,8 @@ import styled from "styled-components";
 import { footerMenus } from "./clientMenus";
 import { Fragment } from "react";
 import { saveAs } from "file-saver";
+import { Modal } from "4leaf-antd";
+import { GiSandsOfTime } from "react-icons/gi";
 
 const Footer = ({ width, location }) => {
   const files = [
@@ -57,6 +59,7 @@ const Footer = ({ width, location }) => {
   ////////////// - USE STATE - ///////////////
   const [mobileSubMenuOpen, setMobileSubMenuOpen] = useState(false);
   const [subToggle, setSubToggle] = useState([]);
+  const [isModal, setIsModal] = useState(false);
 
   ////////////// - USE QUERY - ///////////////
 
@@ -69,6 +72,22 @@ const Footer = ({ width, location }) => {
   }, []);
 
   ////////////// - USE HANDLER - ///////////////
+  const viewInfoHandler = () => {
+    Modal.info({
+      title: "알림",
+      width: "360px",
+      content: (
+        <Wrapper margin={`20px 0 0`}>
+          <GiSandsOfTime size={30} />
+          <Text margin={`20px 0 0`} fontSize={`17px`}>
+            준비중입니다.
+          </Text>
+        </Wrapper>
+      ),
+      onOk() {},
+    });
+  };
+
   const mobileSubMenuToggle = () => {
     setMobileSubMenuOpen(!mobileSubMenuOpen);
   };
@@ -248,7 +267,7 @@ const Footer = ({ width, location }) => {
               margin={`30px 0 20px`}
               color={Theme.basicTheme_C}
             >
-              주요제품
+              Major Products
             </Wrapper>
 
             <ATag
@@ -318,6 +337,65 @@ const Footer = ({ width, location }) => {
                 {sDatum && sDatum.getAllSns[3].platform}
               </Wrapper>
             </ATag>
+
+            <Wrapper
+              borderTop={`1px solid ${Theme.greyTheme9_C}`}
+              padding={`3px 0 0`}
+              margin={`10px 0 0`}
+              dr={`row`}
+              ju={`space-between`}
+            >
+              <ATag
+                width={`auto`}
+                href={`http://comxi-partners.musign.co.kr/user/login.php`}
+                target={`_blank`}
+              >
+                <Wrapper width={`auto`} dr={`row`}>
+                  <Image
+                    alt="icon"
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206378.svg?alt=media&token=cffa0d51-f356-4e22-8043-3a9b06d49ac4`}
+                    width={`11px`}
+                    height={`11px`}
+                    margin={`0 5px 0 0`}
+                  />
+                  <Text fontSize={`12px`}>PARTNERS</Text>
+                </Wrapper>
+              </ATag>
+              <Wrapper width={`auto`} dr={`row`}>
+                <ATag
+                  width={`auto`}
+                  href={`https://www.facebook.com/smartkeeperworld/`}
+                  target={`_blank`}
+                >
+                  <Image
+                    alt="icon"
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206383.svg?alt=media&token=1afe73c4-8184-44a6-8973-3c81e13a79b6`}
+                    width={`4px`}
+                  />
+                </ATag>
+                <Image
+                  alt="icon"
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206382.svg?alt=media&token=05c46c5e-9cb8-43e7-bcf6-e2ce5fcc3c53`}
+                  width={`9px`}
+                  margin={`0 10px`}
+                  cursor={`pointer`}
+                  onClick={() => {
+                    viewInfoHandler();
+                  }}
+                />
+                <ATag
+                  width={`auto`}
+                  href={`https://www.youtube.com/channel/UC10KyXQWAUmyzgJUX_lk0Og`}
+                  target={`_blank`}
+                >
+                  <Image
+                    alt="icon"
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206381.svg?alt=media&token=74d4a9c5-924e-446a-8003-9ef724f531d3`}
+                    width={`14px`}
+                  />
+                </ATag>
+              </Wrapper>
+            </Wrapper>
           </Wrapper>
         </Wrapper>
 
@@ -429,13 +507,71 @@ const Footer = ({ width, location }) => {
               fontWeight={`500`}
               color={Theme.basicTheme_C}
             >
-              주요제품
+              Major Products
             </Wrapper>
             {subToggle[5] ? (
               <RiArrowUpSLine size={18} />
             ) : (
               <RiArrowDownSLine size={18} />
             )}
+          </Wrapper>
+
+          <Wrapper
+            borderBottom={`1px solid ${Theme.greyTheme9_C}`}
+            padding={`15px 0`}
+            dr={`row`}
+            ju={`space-between`}
+          >
+            <ATag
+              width={`auto`}
+              href={`http://comxi-partners.musign.co.kr/user/login.php`}
+              target={`_blank`}
+            >
+              <Wrapper width={`auto`} dr={`row`}>
+                <Image
+                  alt="icon"
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206378.svg?alt=media&token=cffa0d51-f356-4e22-8043-3a9b06d49ac4`}
+                  width={`11px`}
+                  height={`11px`}
+                  margin={`0 5px 0 0`}
+                />
+                <Text fontSize={`12px`}>PARTNERS</Text>
+              </Wrapper>
+            </ATag>
+            <Wrapper width={`auto`} dr={`row`}>
+              <ATag
+                width={`auto`}
+                href={`https://www.facebook.com/smartkeeperworld/`}
+                target={`_blank`}
+              >
+                <Image
+                  alt="icon"
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206383.svg?alt=media&token=1afe73c4-8184-44a6-8973-3c81e13a79b6`}
+                  width={`4px`}
+                />
+              </ATag>
+              <Image
+                alt="icon"
+                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206382.svg?alt=media&token=05c46c5e-9cb8-43e7-bcf6-e2ce5fcc3c53`}
+                width={`9px`}
+                margin={`0 10px`}
+                cursor={`pointer`}
+                onClick={() => {
+                  viewInfoHandler();
+                }}
+              />
+              <ATag
+                width={`auto`}
+                href={`https://www.youtube.com/channel/UC10KyXQWAUmyzgJUX_lk0Og`}
+                target={`_blank`}
+              >
+                <Image
+                  alt="icon"
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206381.svg?alt=media&token=74d4a9c5-924e-446a-8003-9ef724f531d3`}
+                  width={`14px`}
+                />
+              </ATag>
+            </Wrapper>
           </Wrapper>
 
           {subToggle[5] && (
@@ -758,6 +894,16 @@ const Footer = ({ width, location }) => {
           </Text>
         </Wrapper>
       </RsWrapper>
+
+      <Modal
+        title="알림"
+        width={`200px`}
+        visible={isModal}
+        type={`info`}
+        onOk={() => setIsModal(false)}
+      >
+        asd
+      </Modal>
     </WholeWrapper>
   );
 };

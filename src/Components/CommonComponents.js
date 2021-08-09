@@ -1112,6 +1112,7 @@ export const Image = styled.img`
   width: ${(props) => props.width || `100%`};
   min-width: ${(props) => props.minWidth};
   height: ${(props) => props.height || `auto`};
+  cursor: ${(props) => props.cursor};
   margin: ${(props) => props.margin};
   transform: ${(props) => props.transform};
   object-fit: ${(props) => props.objectFit || `cover`};
