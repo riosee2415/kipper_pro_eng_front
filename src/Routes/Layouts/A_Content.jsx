@@ -45,6 +45,18 @@ const AD29 = withSplitting(() => import("../Admin/AD29"));
 const AD30 = withSplitting(() => import("../Admin/AD30"));
 const AD31 = withSplitting(() => import("../Admin/AD31"));
 const AD90 = withSplitting(() => import("../Admin/AD90"));
+const AD200 = withSplitting(() => import("../Admin/AD200"));
+const AD201 = withSplitting(() => import("../Admin/AD201"));
+const AD202 = withSplitting(() => import("../Admin/AD202"));
+const AD203 = withSplitting(() => import("../Admin/AD203"));
+const AD204 = withSplitting(() => import("../Admin/AD204"));
+const AD205 = withSplitting(() => import("../Admin/AD205"));
+const AD206 = withSplitting(() => import("../Admin/AD206"));
+const AD207 = withSplitting(() => import("../Admin/AD207"));
+const AD208 = withSplitting(() => import("../Admin/AD208"));
+const AD209 = withSplitting(() => import("../Admin/AD209"));
+const AD210 = withSplitting(() => import("../Admin/AD210"));
+const AD211 = withSplitting(() => import("../Admin/AD211"));
 
 import { GET_USER_LOGIN_RESULT_FOR_ADMIN } from "./A_LayoutQueries";
 import useInput from "../../Components/Hooks/useInput";
@@ -236,6 +248,42 @@ const A_Content = ({ location }) => {
             <Route exact path="/admin/snsLinkManagement" component={AD30} />
             <Route exact path="/admin/graphManagement" component={AD31} />
             <Route exact path="/admin/createManagement" component={AD90} />
+            <Route exact path="/admin/awardManagement" component={AD200} />
+            <Route exact path="/admin/awardListManagement" component={AD201} />
+            <Route exact path="/admin/referenceManagement" component={AD202} />
+            <Route
+              exact
+              path="/admin/referenceUpdateManagement/:id"
+              component={AD203}
+            />
+            <Route
+              exact
+              path="/admin/referenceCreateManagement"
+              component={AD204}
+            />
+            <Route exact path="/admin/catalogueManagement" component={AD205} />
+            <Route exact path="/admin/exhibitionManagement" component={AD206} />
+            <Route
+              exact
+              path="/admin/exhibitionUpdateManagement/:id"
+              component={AD207}
+            />
+            <Route
+              exact
+              path="/admin/exhibitionCreateManagement"
+              component={AD208}
+            />
+            <Route
+              exact
+              path="/admin/productCreateManagement"
+              component={AD209}
+            />
+            <Route exact path="/admin/productManagement" component={AD210} />
+            <Route
+              exact
+              path="/admin/productUpdateManagement/:id"
+              component={AD211}
+            />
           </Wrapper>
         </>
       ) : (
