@@ -90,6 +90,10 @@ export default ({ history, match }) => {
   const inputFileName1 = useInput("");
   const inputFilePath2 = useInput("");
   const inputFileName2 = useInput("");
+  //
+  const priceInput = useInput("");
+  const vipPrice1Input = useInput("");
+  const vipPrice2Input = useInput("");
 
   const fileUploadProgress = useInput(null);
 
@@ -620,6 +624,9 @@ export default ({ history, match }) => {
         fileOriginName1: inputFileName1.value,
         filePath2: inputFilePath2.value,
         fileOriginName2: inputFileName2.value,
+        price: priceInput.value,
+        vipPrice1: vipPrice1Input.value,
+        vipPrice2: vipPrice2Input.value,
       },
     });
 
@@ -739,6 +746,9 @@ export default ({ history, match }) => {
       inputFileName1.setValue(nData.getProductOne.fileOriginName1);
       inputFilePath2.setValue(nData.getProductOne.filePath2);
       inputFileName2.setValue(nData.getProductOne.fileOriginName2);
+      priceInput.setValue(nData.getProductOne.price);
+      vipPrice1Input.setValue(nData.getProductOne.vipPrice1);
+      vipPrice2Input.setValue(nData.getProductOne.vipPrice2);
     }
   }, [nData]);
 
@@ -862,6 +872,10 @@ export default ({ history, match }) => {
       deleteColorImages={deleteColorImages}
       productSaveHandler={productSaveHandler}
       moveListProductPage={moveListProductPage}
+      //
+      priceInput={priceInput}
+      vipPrice1Input={vipPrice1Input}
+      vipPrice2Input={vipPrice2Input}
     />
   );
 };

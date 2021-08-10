@@ -203,6 +203,10 @@ export default ({
   setSpecDetailTitle2Input,
   setSpecDetailTitle3Input,
   //
+  priceInput,
+  vipPrice1Input,
+  vipPrice2Input,
+  //
   nData,
   productSaveHandler,
 }) => {
@@ -409,6 +413,24 @@ export default ({
         <DataGuideWrapper>중량 *</DataGuideWrapper>
         <DataWrapper>
           <TextInput width={`750px`} height={`25px`} {...weightInput} />
+        </DataWrapper>
+      </Wrapper>
+      <Wrapper dr={`row`} ju={`flex-start`}>
+        <DataGuideWrapper>가격 *</DataGuideWrapper>
+        <DataWrapper>
+          <TextInput width={`750px`} height={`25px`} {...priceInput} />
+        </DataWrapper>
+      </Wrapper>
+      <Wrapper dr={`row`} ju={`flex-start`}>
+        <DataGuideWrapper>LEVEL3 가격 *</DataGuideWrapper>
+        <DataWrapper>
+          <TextInput width={`750px`} height={`25px`} {...vipPrice1Input} />
+        </DataWrapper>
+      </Wrapper>
+      <Wrapper dr={`row`} ju={`flex-start`}>
+        <DataGuideWrapper>LEVEL4 가격 *</DataGuideWrapper>
+        <DataWrapper>
+          <TextInput width={`750px`} height={`25px`} {...vipPrice2Input} />
         </DataWrapper>
       </Wrapper>
 

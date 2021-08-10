@@ -63,6 +63,9 @@ export const REGISTER_PRODUCT = gql`
     $fileOriginName1: String!
     $filePath2: String!
     $fileOriginName2: String!
+    $price: String!
+    $vipPrice1: String!
+    $vipPrice2: String!
   ) {
     registerProduct(
       thumbnailPath: $thumbnailPath
@@ -126,6 +129,9 @@ export const REGISTER_PRODUCT = gql`
       fileOriginName1: $fileOriginName1
       filePath2: $filePath2
       fileOriginName2: $fileOriginName2
+      price: $price
+      vipPrice1: $vipPrice1
+      vipPrice2: $vipPrice2
     )
   }
 `;

@@ -84,6 +84,10 @@ export default ({ history }) => {
   const inputFileName1 = useInput("");
   const inputFilePath2 = useInput("");
   const inputFileName2 = useInput("");
+  //
+  const priceInput = useInput("");
+  const vipPrice1Input = useInput("");
+  const vipPrice2Input = useInput("");
   // const [innerImageList, setInnerImageList] = useState([]);
 
   const fileUploadProgress = useInput(null);
@@ -564,6 +568,9 @@ export default ({ history }) => {
         fileOriginName1: inputFileName1.value,
         filePath2: inputFilePath2.value,
         fileOriginName2: inputFileName2.value,
+        price: priceInput.value,
+        vipPrice1: vipPrice1Input.value,
+        vipPrice2: vipPrice2Input.value,
       },
     });
 
@@ -749,6 +756,10 @@ export default ({ history }) => {
       setSpecDetailTitle1Input={setSpecDetailTitle1Input}
       setSpecDetailTitle2Input={setSpecDetailTitle2Input}
       setSpecDetailTitle3Input={setSpecDetailTitle3Input}
+      //
+      priceInput={priceInput}
+      vipPrice1Input={vipPrice1Input}
+      vipPrice2Input={vipPrice2Input}
     />
   );
 };
