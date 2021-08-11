@@ -57,6 +57,7 @@ const AD208 = withSplitting(() => import("../Admin/AD208"));
 const AD209 = withSplitting(() => import("../Admin/AD209"));
 const AD210 = withSplitting(() => import("../Admin/AD210"));
 const AD211 = withSplitting(() => import("../Admin/AD211"));
+const AD212 = withSplitting(() => import("../Admin/AD212"));
 
 import { GET_USER_LOGIN_RESULT_FOR_ADMIN } from "./A_LayoutQueries";
 import useInput from "../../Components/Hooks/useInput";
@@ -284,6 +285,7 @@ const A_Content = ({ location }) => {
               path="/admin/productUpdateManagement/:id"
               component={AD211}
             />
+            <Route exact path="/admin/tokenManagement" component={AD212} />
           </Wrapper>
         </>
       ) : (
