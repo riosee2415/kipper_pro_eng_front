@@ -21,11 +21,36 @@ import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import EditorViewer from "../../../Components/editor/EditorViewer";
 import ProductImageSlider from "../../../Components/slider/ProductImageSlider";
+import Magnifier from "react-magnifier";
+
+const BuyButton = styled.button`
+  width: 100%;
+  height: 60px;
+  background: rgb(184, 0, 9);
+  color: ${Theme.white_C};
+  font-size: 18px;
+  font-weight: 800;
+  border: 3px solid transparent;
+  transition: 0.5s;
+  margin: 23px 0 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(184, 0, 9);
+    border: 3px solid rgb(184, 0, 9);
+  }
+`;
 
 const Gotham = styled(Wrapper)`
   font-family: "Gotham", sans-serif;
   font-weight: 800;
   width: auto;
+  letter-spacing: ${(props) => props.letterSpacing};
 `;
 
 const ColorList = styled(Wrapper)`
@@ -1036,7 +1061,7 @@ const MM09Presenter = ({
         </RsWrapper>
       </Wrapper>
 
-      <Wrapper bgColor={`rgb(70, 70, 70)`}>
+      <Wrapper bgColor={`rgb(0, 0, 0)`}>
         <RsWrapper
           dr={`row`}
           padding={
@@ -1051,7 +1076,7 @@ const MM09Presenter = ({
         >
           {/* mobile */}
           <Wrapper display={width < 900 ? `flex` : `none`} ju={`flex-start`}>
-            <Image
+            <Magnifier
               height={width < 700 ? `230px` : `468px`}
               alt="image"
               src={currentColorImage && currentColorImage.imagePath}
@@ -1066,6 +1091,8 @@ const MM09Presenter = ({
                 currentColorImages={currentColorImages}
               />
             </Wrapper>
+
+            <BuyButton color={Theme.white_C}>Buy now</BuyButton>
           </Wrapper>
 
           <Wrapper
@@ -1083,6 +1110,8 @@ const MM09Presenter = ({
                     : `50px 0 30px`
                   : `0`
               }
+              letterSpacing={`-0.05em`}
+              lineHeight={`1.66`}
             >
               {/* 메인 타이틀 위 type */}
               {pData && pData.keyType}
@@ -1090,6 +1119,8 @@ const MM09Presenter = ({
             <Gotham
               fontSize={width < 900 ? (width < 700 ? `26px` : `50px`) : `55px`}
               lineHeight={`1`}
+              letterSpacing={`-0.065em`}
+              lineHeight={`1.18`}
             >
               {/* 메인 타이틀 */}
               {pData &&
@@ -1103,20 +1134,25 @@ const MM09Presenter = ({
                 })}
             </Gotham>
             <Text
+              letterSpacing={`-0.04em`}
               fontSize={width < 900 ? (width < 700 ? `18px` : `22px`) : `25px`}
               color={Theme.greyTheme7_C}
               fontWeight={`500`}
               margin={
                 width < 900 ? (width < 700 ? `10px 0 0` : `20px 0 0`) : `0`
               }
+              lineHeight={`1.4`}
             >
               {/* 제품명 입력 필드 */}
               {pData && pData.productName}
             </Text>
             <Text
-              fontSize={width < 900 ? (width < 700 ? `14px` : `20px`) : `25px`}
-              color={Theme.lightGrey_C}
+              letterSpacing={`-0.03em`}
+              fontSize={width < 900 ? (width < 700 ? `14px` : `16px`) : `18px`}
+              color={Theme.greyTheme7_C}
               fontWeight={`400`}
+              lineHeight={`1.5`}
+              margin={`1px 0 0`}
             >
               {/* 모델명 입력 필드 */}
               {pData && pData.modelName}
@@ -1133,15 +1169,53 @@ const MM09Presenter = ({
             >
               ＄64.00
             </Text> */}
-            <Wrapper al={`flex-start`} margin={`20px 0 0`}>
+            <Wrapper al={`flex-start`} margin={`35px 0 0`}>
+              <Wrapper dr={`row`} width={`auto`} margin={`0 0 13px`}>
+                <Wrapper width={`auto`} al={`flex-start`} margin={`0 30px 0 0`}>
+                  <Text
+                    fontSize={`14px`}
+                    fontWeight={`400`}
+                    letterSpacing={`-0.02em`}
+                    lineHeight={`2.14`}
+                  >
+                    MMP
+                  </Text>
+                  <Text
+                    fontSize={`22px`}
+                    fontWeight={`800`}
+                    letterSpacing={`-0.02em`}
+                  >
+                    UNIT PRICE
+                  </Text>
+                </Wrapper>
+                <Wrapper width={`auto`} al={`flex-start`}>
+                  <Text
+                    fontSize={`14px`}
+                    fontWeight={`400`}
+                    letterSpacing={`-0.02em`}
+                    lineHeight={`2.14`}
+                  >
+                    $ 80.00 USD
+                  </Text>
+                  <Text
+                    fontSize={`22px`}
+                    fontWeight={`800`}
+                    letterSpacing={`-0.02em`}
+                  >
+                    $40.00 USD
+                  </Text>
+                </Wrapper>
+              </Wrapper>
               <Text
+                letterSpacing={`-0.03em`}
                 fontSize={
                   width < 900 ? (width < 700 ? `14px` : `20px`) : `16px`
                 }
+                lineHeight={`1.87`}
               >
-                색상 - {currentColor && currentColor.color}
+                Color - {currentColor && currentColor.color}
               </Text>
-              <Wrapper dr={`row`} ju={`flex-start`} padding={`10px 0`}>
+              <Wrapper dr={`row`} ju={`flex-start`} padding={`7px 0`}>
                 {colorList.map((data) => {
                   return (
                     <ColorList
@@ -1154,6 +1228,7 @@ const MM09Presenter = ({
                 })}
               </Wrapper>
               <Text
+                letterSpacing={`-0.03em`}
                 fontSize={
                   width < 900 ? (width < 700 ? `14px` : `20px`) : `16px`
                 }
@@ -1162,20 +1237,25 @@ const MM09Presenter = ({
                     ? width < 700
                       ? `19px 0 0`
                       : `30px 0 0`
-                    : `16px 0 0`
+                    : `17px 0 0`
                 }
+                lineHeight={`1.87`}
               >
-                규격
+                Dimensions
               </Text>
               <Text
+                letterSpacing={`0`}
                 fontSize={
                   width < 900 ? (width < 700 ? `14px` : `20px`) : `16px`
                 }
                 fontWeight={`300`}
+                lineHeight={`1.25`}
+                color={Theme.greyTheme7_C}
               >
                 {pData && pData.size}
               </Text>
               <Text
+                letterSpacing={`-0.03em`}
                 fontSize={
                   width < 900 ? (width < 700 ? `14px` : `20px`) : `16px`
                 }
@@ -1184,20 +1264,26 @@ const MM09Presenter = ({
                     ? width < 700
                       ? `19px 0 0`
                       : `30px 0 0`
-                    : `16px 0 0`
+                    : `18px 0 0`
                 }
+                lineHeight={`1.87`}
               >
-                중량
+                Weight
               </Text>
               <Text
+                letterSpacing={`0`}
                 fontSize={
                   width < 900 ? (width < 700 ? `14px` : `20px`) : `16px`
                 }
                 fontWeight={`300`}
+                lineHeight={`1.25`}
+                color={Theme.greyTheme7_C}
               >
                 {pData && pData.weight}
               </Text>
               <Text
+                letterSpacing={`-0.03em`}
+                lineHeight={`1.87`}
                 fontSize={
                   width < 900 ? (width < 700 ? `14px` : `20px`) : `16px`
                 }
@@ -1206,10 +1292,10 @@ const MM09Presenter = ({
                     ? width < 700
                       ? `19px 0 0`
                       : `30px 0 0`
-                    : `16px 0 0`
+                    : `21px 0 0`
                 }
               >
-                적용 대상
+                Application port
               </Text>
 
               {/* 적용 대상 아이콘 */}
@@ -1218,13 +1304,15 @@ const MM09Presenter = ({
                   width={`70px`}
                   src={pData.productIcon}
                   filter={`brightness(10)`}
-                  margin={`30px 0 10px`}
+                  margin={`10px 0`}
                 />
               )}
               <Text
+                letterSpacing={`-0.02em`}
                 fontSize={width < 700 ? `14px` : `16px`}
                 fontWeight={`300`}
-                lineHeight={`1.4`}
+                lineHeight={`1.25`}
+                color={Theme.greyTheme7_C}
               >
                 {pData && pData.iconContent1}
               </Text>
@@ -1239,11 +1327,13 @@ const MM09Presenter = ({
 
             {/* 제품 설명 */}
             <Wrapper
-              margin={width < 700 ? `30px 0 15px` : `38px 0 0`}
+              margin={width < 700 ? `30px 0 15px` : `50px 0 0`}
               al={`flex-start`}
             >
               {pData && (
                 <EditorViewer
+                  letterSpacing={`-0.04em`}
+                  lineHeight={`1.38`}
                   value={pData.productContent}
                   fontSize={width < 700 ? `16px` : `18px`}
                   fontWeight={`400`}
@@ -1267,7 +1357,7 @@ const MM09Presenter = ({
                 })} */}
             </Wrapper>
 
-            <Wrapper dr={`row`} ju={`flex-start`} margin={`5px 0 40px`}>
+            <Wrapper dr={`row`} ju={`flex-start`} margin={`10px 0 30px`}>
               <Image
                 width={`30px`}
                 margin={`0 10px 0 0`}
@@ -1278,6 +1368,8 @@ const MM09Presenter = ({
               {/* 주의 사항 */}
               {pData && (
                 <EditorViewer
+                  lineHeight={`1.36`}
+                  letterSpacing={`-0.03em`}
                   value={pData.warningContent}
                   width={`calc(100% - 60px)`}
                   fontSize={width < 390 ? `10px !important` : `16px`}
@@ -1294,26 +1386,36 @@ const MM09Presenter = ({
                 src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM02%2Ficon-02.png?alt=media&token=b106f41c-32b7-48f5-aafa-6cfd8b3f7427`}
               />
               <Wrapper width={`calc(100% - 40px)`} al={`flex-start`}>
-                <Text fontSize={`11px`} color={Theme.white_C}>
-                  제품 구입에 필요한 도움을 받아보세요.
+                <Text
+                  fontSize={`11px`}
+                  color={Theme.greyTheme7_C}
+                  letterSpacing={`-0.03em`}
+                  lineHeight={`1.36`}
+                >
+                  <SpanText fontWeight={`700`}>SMARTKEEPER PRO</SpanText> is a
+                  product for B2B business. Please leave your required item/qty/
                 </Text>
-                <Text fontSize={`11px`} color={Theme.white_C}>
-                  <SpanText
-                    color={`rgb(15, 152, 255)`}
-                    cursor={`pointer`}
-                    onClick={() => moveLinkHandler(`/contact`)}
-                  >
-                    고객센터↗
-                  </SpanText>
-                  를 이용하거나&nbsp;
-                  <ATag
+                <Text
+                  fontSize={`11px`}
+                  color={Theme.greyTheme7_C}
+                  letterSpacing={`-0.03em`}
+                  lineHeight={`1.36`}
+                >
+                  {/* <ATag
                     display={`inline-block`}
                     width={`auto`}
                     href={`mailto:sales@comxi.com`}
                   >
                     sales@comxi.com
-                  </ATag>
-                  으로 메일을 보내주세요.
+                  </ATag> */}
+                  contact so that we can get back to you immediately. Click
+                  <SpanText
+                    color={`rgb(15, 152, 255)`}
+                    cursor={`pointer`}
+                    onClick={() => moveLinkHandler(`/contact`)}
+                  >
+                    &nbsp;CONTACT US↗
+                  </SpanText>
                 </Text>
               </Wrapper>
             </Wrapper>
@@ -1325,7 +1427,7 @@ const MM09Presenter = ({
             width={`50%`}
             ju={`flex-start`}
           >
-            <Image
+            <Magnifier
               height={width < 1100 ? `468px` : `640px`}
               alt="image"
               src={currentColorImage && currentColorImage.imagePath}
@@ -1340,6 +1442,7 @@ const MM09Presenter = ({
                 currentColorImages={currentColorImages}
               />
             </Wrapper>
+            <BuyButton color={Theme.white_C}>Buy now</BuyButton>
           </Wrapper>
         </RsWrapper>
       </Wrapper>
@@ -1360,6 +1463,8 @@ const MM09Presenter = ({
             {/* 사용 환경 및 주의사항 타이틀 */}
             {pData && (
               <EditorViewer
+                letterSpacing={`-0.02em`}
+                lineHeight={`1.47`}
                 value={pData.settingTitle}
                 fontSize={width < 700 ? `26px` : `34px`}
                 fontWeight={`900`}
@@ -1382,6 +1487,8 @@ const MM09Presenter = ({
             >
               {pData && (
                 <EditorViewer
+                  letterSpacing={`-0.03em`}
+                  lineHeight={`1.5`}
                   value={pData.settingContent}
                   fontSize={`22px`}
                   fontWeight={`400`}
@@ -1432,6 +1539,8 @@ const MM09Presenter = ({
             {/* 핵심 특징 타이틀 */}
             {pData && (
               <EditorViewer
+                letterSpacing={`-0.02em`}
+                lineHeight={`1.47`}
                 value={pData.pointTitle}
                 fontSize={width < 700 ? `26px` : `34px`}
                 fontWeight={`900`}
@@ -1451,16 +1560,32 @@ const MM09Presenter = ({
             <Wrapper dr={`row`} ju={`space-around`} al={`flex-start`}>
               {pData && pData.pointContent1 && (
                 <Wrapper width={width < 700 ? `100%` : `31%`}>
-                  <Text
+                  {pData && (
+                    <EditorViewer
+                      value={pData.pointNumber1}
+                      letterSpacing={`-0.02em`}
+                      lineHeight={`1.47`}
+                      fontSize={width < 700 ? `20px` : `34px`}
+                      fontWeight={`900`}
+                      margin={width < 700 ? `0 0 20px` : `0 0 30px`}
+                      textAlign={`center`}
+                    />
+                  )}
+
+                  {/* <Text
+                    letterSpacing={`-0.02em`}
+                    lineHeight={`1.47`}
                     fontSize={width < 700 ? `20px` : `34px`}
                     fontWeight={`900`}
                     margin={width < 700 ? `0 0 20px` : `0 0 30px`}
                   >
                     01.
-                  </Text>
+                  </Text> */}
 
                   {pData && (
                     <EditorViewer
+                      letterSpacing={`-0.03em`}
+                      lineHeight={`1.5`}
                       value={pData.pointContent1}
                       fontSize={width < 700 ? `16px` : `22px`}
                       fontWeight={`400`}
@@ -1489,16 +1614,22 @@ const MM09Presenter = ({
                   width={width < 700 ? `100%` : `31%`}
                   margin={width < 700 ? `0 50px` : `0`}
                 >
-                  <Text
-                    fontSize={width < 700 ? `20px` : `34px`}
-                    fontWeight={`900`}
-                    margin={width < 700 ? `50px 0 20px` : `0 0 30px`}
-                  >
-                    02.
-                  </Text>
+                  {pData && (
+                    <EditorViewer
+                      value={pData.pointNumber2}
+                      letterSpacing={`-0.02em`}
+                      lineHeight={`1.47`}
+                      fontSize={width < 700 ? `20px` : `34px`}
+                      fontWeight={`900`}
+                      margin={width < 700 ? `50px 0 20px` : `0 0 30px`}
+                      textAlign={`center`}
+                    />
+                  )}
 
                   {pData && (
                     <EditorViewer
+                      letterSpacing={`-0.03em`}
+                      lineHeight={`1.5`}
                       value={pData.pointContent2}
                       fontSize={width < 700 ? `16px` : `22px`}
                       fontWeight={`400`}
@@ -1524,23 +1655,38 @@ const MM09Presenter = ({
               {/* 핵심 특징 입력 필드 3 */}
               {pData && pData.pointContent3 && (
                 <Wrapper width={width < 700 ? `100%` : `31%`}>
-                  <Text
+                  {pData && (
+                    <EditorViewer
+                      value={pData.pointNumber2}
+                      letterSpacing={`-0.02em`}
+                      lineHeight={`1.47`}
+                      fontSize={width < 700 ? `20px` : `34px`}
+                      fontWeight={`900`}
+                      margin={width < 700 ? `50px 0 20px` : `0 0 30px`}
+                      textAlign={`center`}
+                    />
+                  )}
+
+                  {/* <Text
+                    letterSpacing={`-0.02em`}
+                    lineHeight={`1.47`}
                     fontSize={width < 700 ? `20px` : `34px`}
                     fontWeight={`900`}
                     margin={width < 700 ? `50px 0 20px` : `0 0 30px`}
                   >
                     03.
-                  </Text>
+                  </Text> */}
 
                   {pData && (
                     <EditorViewer
+                      letterSpacing={`-0.03em`}
+                      lineHeight={`1.5`}
                       value={pData.pointContent3}
                       fontSize={width < 700 ? `16px` : `22px`}
                       fontWeight={`400`}
                       textAlign={`center`}
                     />
                   )}
-
                   {/* {pData.pointContent3.split(`\n`).map((data, idx) => {
                     return (
                       <Text
@@ -1575,6 +1721,8 @@ const MM09Presenter = ({
         >
           {pData && (
             <EditorViewer
+              letterSpacing={`-0.03em`}
+              lineHeight={`1.5`}
               value={pData.featureSubTitle1}
               fontSize={width < 700 ? `12px` : `20px`}
               textAlign={`center`}
@@ -1587,6 +1735,8 @@ const MM09Presenter = ({
           {/* 제품 특징 메인타이틀 */}
           {pData && (
             <EditorViewer
+              letterSpacing={`-0.03em`}
+              lineHeight={`1.47`}
               value={pData.featureTitle1}
               fontSize={width < 700 ? `30px` : `48px`}
               fontWeight={`700`}
@@ -1608,6 +1758,8 @@ const MM09Presenter = ({
           {/* 특징 설명 글 */}
           {pData && (
             <EditorViewer
+              letterSpacing={`-0.03em`}
+              lineHeight={`1.53`}
               value={pData.featureContent1}
               fontSize={width < 700 ? `16px` : `28px`}
               textAlign={`center`}
@@ -1650,6 +1802,8 @@ const MM09Presenter = ({
           {/* 제품 특징2 서브타이틀 */}
           {pData && (
             <EditorViewer
+              letterSpacing={`-0.03em`}
+              lineHeight={`1.5`}
               value={pData.featureSubTitle2}
               fontSize={width < 700 ? `12px` : `20px`}
               textAlign={`center`}
@@ -1662,6 +1816,8 @@ const MM09Presenter = ({
           {/* 제품 특징2 메인타이틀 */}
           {pData && (
             <EditorViewer
+              letterSpacing={`-0.03em`}
+              lineHeight={`1.47`}
               value={pData.featureTitle2}
               fontSize={width < 700 ? `30px` : `48px`}
               fontWeight={`700`}
@@ -1683,6 +1839,8 @@ const MM09Presenter = ({
           {/* 특징2 설명 글 */}
           {pData && (
             <EditorViewer
+              letterSpacing={`-0.03em`}
+              lineHeight={`1.53`}
               value={pData.featureContent2}
               fontSize={width < 700 ? `16px` : `28px`}
               textAlign={`center`}
@@ -1717,12 +1875,19 @@ const MM09Presenter = ({
           color={Theme.white_C}
         >
           <Wrapper al={`flex-start`}>
-            <Text fontSize={width < 700 ? `30px` : `34px`} fontWeight={`900`}>
+            <Text
+              lineHeight={`1.47`}
+              fontSize={width < 700 ? `30px` : `34px`}
+              fontWeight={`900`}
+              letterSpacing={`-0.03em`}
+            >
               Specifications
             </Text>
             {/* 국문 제품명 입력필드 */}
             {pData && (
               <EditorViewer
+                letterSpacing={`-0.05em`}
+                lineHeight={`1.5`}
                 value={pData.specName}
                 fontSize={width < 700 ? `14px` : `20px`}
                 fontWeight={`400`}
@@ -1785,6 +1950,8 @@ const MM09Presenter = ({
                   <TitleBox>
                     {pData && (
                       <EditorViewer
+                        letterSpacing={`-0.03em`}
+                        lineHeight={`1.42`}
                         value={pData.specDetailTitle1}
                         textAlign={`center`}
                         fontSize={`16px`}
@@ -1801,6 +1968,8 @@ const MM09Presenter = ({
 
                   {pData && (
                     <EditorViewer
+                      letterSpacing={`-0.05em`}
+                      lineHeight={`1.46`}
                       value={pData.specDetailContent1}
                       fontSize={width < 700 ? `18px` : `15px`}
                       fontWeight={`400`}
@@ -1836,6 +2005,8 @@ const MM09Presenter = ({
                   <TitleBox>
                     {pData && (
                       <EditorViewer
+                        letterSpacing={`-0.03em`}
+                        lineHeight={`1.42`}
                         value={pData.specDetailTitle2}
                         textAlign={`center`}
                         fontSize={`16px`}
@@ -1852,6 +2023,8 @@ const MM09Presenter = ({
 
                   {pData && (
                     <EditorViewer
+                      letterSpacing={`-0.05em`}
+                      lineHeight={`1.46`}
                       value={pData.specDetailContent2}
                       fontSize={width < 700 ? `18px` : `15px`}
                       fontWeight={`400`}
@@ -1887,6 +2060,8 @@ const MM09Presenter = ({
                   <TitleBox>
                     {pData && (
                       <EditorViewer
+                        letterSpacing={`-0.03em`}
+                        lineHeight={`1.42`}
                         value={pData.specDetailTitle3}
                         textAlign={`center`}
                         fontSize={`16px`}
@@ -1903,6 +2078,8 @@ const MM09Presenter = ({
 
                   {pData && (
                     <EditorViewer
+                      letterSpacing={`-0.05em`}
+                      lineHeight={`1.46`}
                       value={pData.specDetailContent3}
                       fontSize={width < 700 ? `18px` : `15px`}
                       fontWeight={`400`}
@@ -1935,12 +2112,19 @@ const MM09Presenter = ({
           padding={`35px 36px`}
         >
           <Wrapper al={`flex-start`}>
-            <Text fontSize={width < 700 ? `30px` : `34px`} fontWeight={`900`}>
+            <Text
+              fontSize={width < 700 ? `30px` : `34px`}
+              fontWeight={`900`}
+              letterSpacing={`-0.03em`}
+              lineHeight={`1.47`}
+            >
               Specifications
             </Text>
             {/* 국문 제품명 입력필드 */}
             {pData && (
               <EditorViewer
+                lineHeight={`1.5`}
+                letterSpacing={`-0.03em`}
                 value={pData.specName}
                 fontSize={width < 700 ? `14px` : `20px`}
                 fontWeight={`400`}
@@ -1991,6 +2175,8 @@ const MM09Presenter = ({
                 <TitleBox>
                   {pData && (
                     <EditorViewer
+                      letterSpacing={`-0.03em`}
+                      lineHeight={`1.42`}
                       value={pData.specDetailTitle1}
                       textAlign={`center`}
                       fontSize={`16px`}
@@ -2007,6 +2193,8 @@ const MM09Presenter = ({
 
                 {pData && (
                   <EditorViewer
+                    letterSpacing={`-0.05em`}
+                    lineHeight={`1.46`}
                     value={pData.specDetailContent1}
                     padding={`0 36px 0`}
                     fontSize={`18px`}
@@ -2041,6 +2229,8 @@ const MM09Presenter = ({
                 <TitleBox>
                   {pData && (
                     <EditorViewer
+                      letterSpacing={`-0.03em`}
+                      lineHeight={`1.42`}
                       value={pData.specDetailTitle2}
                       textAlign={`center`}
                       fontSize={`16px`}
@@ -2057,6 +2247,8 @@ const MM09Presenter = ({
 
                 {pData && (
                   <EditorViewer
+                    letterSpacing={`-0.05em`}
+                    lineHeight={`1.46`}
                     value={pData.specDetailContent2}
                     padding={`0 36px 0`}
                     fontSize={`18px`}
@@ -2091,6 +2283,8 @@ const MM09Presenter = ({
                 <TitleBox>
                   {pData && (
                     <EditorViewer
+                      lineHeight={`1.42`}
+                      letterSpacing={`-0.03em`}
                       value={pData.specDetailTitle3}
                       textAlign={`center`}
                       fontSize={`16px`}
@@ -2107,6 +2301,8 @@ const MM09Presenter = ({
 
                 {pData && (
                   <EditorViewer
+                    letterSpacing={`-0.05em`}
+                    lineHeight={`1.46`}
                     value={pData.specDetailContent3}
                     padding={`0 36px 0`}
                     fontSize={`18px`}
@@ -2147,11 +2343,18 @@ const MM09Presenter = ({
           padding={width < 700 && `0 36px`}
         >
           {pData && (
-            <EditorViewer value={pData.finalTitle} margin={`30px 0 0`} />
+            <EditorViewer
+              letterSpacing={`-0.03em`}
+              lineHeight={`1.3`}
+              value={pData.finalTitle}
+              margin={`30px 0 0`}
+            />
           )}
 
           {pData && (
             <EditorViewer
+              letterSpacing={`-0.04em`}
+              lineHeight={`2.1`}
               value={pData.finalContent}
               margin={`20px 0 0`}
               fontSize={width < 700 ? `18px` : `20px`}
@@ -2172,7 +2375,13 @@ const MM09Presenter = ({
             USB포트락 2EA , USB허브 1EA , 링크락 허브 1EA
           </Text> */}
 
-          <Text margin={`100px 0 0`} fontSize={`34px`} fontWeight={`900`}>
+          <Text
+            margin={`100px 0 0`}
+            fontSize={`34px`}
+            fontWeight={`900`}
+            letterSpacing={`0`}
+            lineHeight={`1.47`}
+          >
             제조 &amp; 인증
           </Text>
           <Wrapper
