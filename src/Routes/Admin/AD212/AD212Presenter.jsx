@@ -34,7 +34,6 @@ import { withStyles, makeStyles } from "@material-ui/core/styles";
 
 const DataWrapper = styled(Wrapper)`
   height: ${(props) => props.height || `30px`};
-  border-bottom: 1px solid ${(props) => props.theme.lightGrey_C};
   align-items: flex-start;
   padding: 0px 20px;
 `;
@@ -192,108 +191,130 @@ export default ({
                 바랍니다.
               </GuideContent>
             </GuideBox>
-            <Wrapper dr={`row`} ju={`flex-start`}>
-              <DataGuideWrapper>ENTRYCODE</DataGuideWrapper>
-              <DataWrapper>
-                <TextInput {...currentUserId} width={`750px`} height={`25px`} />
-              </DataWrapper>
-            </Wrapper>
 
-            <Wrapper dr={`row`} ju={`flex-start`}>
-              <DataGuideWrapper>PASSWORD</DataGuideWrapper>
-              <DataWrapper>
-                <TextInput
-                  type={`password`}
-                  {...currentPassWord}
-                  width={`750px`}
-                  height={`25px`}
-                />
-              </DataWrapper>
-            </Wrapper>
-
-            <Wrapper dr={`row`} ju={`flex-start`}>
-              <DataGuideWrapper>PASSWORD_RE</DataGuideWrapper>
-              <DataWrapper>
-                <TextInput
-                  type={`password`}
-                  {...currentPassWordRe}
-                  width={`750px`}
-                  height={`25px`}
-                />
-              </DataWrapper>
-            </Wrapper>
-            <Wrapper dr={`row`} ju={`flex-start`}>
-              <DataGuideWrapper>COUNTRY</DataGuideWrapper>
-              <DataWrapper>
-                <TextInput {...currentContry} width={`750px`} height={`25px`} />
-              </DataWrapper>
-            </Wrapper>
-
-            <Wrapper dr={`row`} ju={`flex-start`}>
-              <DataGuideWrapper>LEVEL</DataGuideWrapper>
-              <DataWrapper>
-                <RadioGroup
-                  row
-                  aria-label="gender"
-                  name="gender1"
-                  {...currentLevel}
-                >
-                  <FormControlLabel
-                    className={classes.radio}
-                    value="LEVEL3"
-                    control={<Radio />}
-                    label="LEVEL3"
+            <Wrapper margin={`100px 0px 0px 0px`} width={`1000px`}>
+              <Wrapper dr={`row`} ju={`flex-start`}>
+                <DataGuideWrapper>ENTRYCODE</DataGuideWrapper>
+                <DataWrapper>
+                  <TextInput
+                    {...currentUserId}
+                    width={`750px`}
+                    height={`25px`}
                   />
-                  <FormControlLabel
-                    className={classes.radio}
-                    value="LEVEL4"
-                    control={<Radio />}
-                    label="LEVEL4"
+                </DataWrapper>
+              </Wrapper>
+
+              <Wrapper dr={`row`} ju={`flex-start`}>
+                <DataGuideWrapper>PASSWORD</DataGuideWrapper>
+                <DataWrapper>
+                  <TextInput
+                    type={`password`}
+                    {...currentPassWord}
+                    width={`750px`}
+                    height={`25px`}
                   />
-                </RadioGroup>
-              </DataWrapper>
-            </Wrapper>
+                </DataWrapper>
+              </Wrapper>
 
-            <Wrapper dr={`row`} ju={`flex-start`}>
-              <DataGuideWrapper>COMPANY NAME</DataGuideWrapper>
-              <DataWrapper>
-                <TextInput
-                  {...currentCompanyName}
-                  width={`750px`}
-                  height={`25px`}
-                />
-              </DataWrapper>
-            </Wrapper>
+              <Wrapper dr={`row`} ju={`flex-start`}>
+                <DataGuideWrapper>PASSWORD_RE</DataGuideWrapper>
+                <DataWrapper>
+                  <TextInput
+                    type={`password`}
+                    {...currentPassWordRe}
+                    width={`750px`}
+                    height={`25px`}
+                  />
+                </DataWrapper>
+              </Wrapper>
+              <Wrapper dr={`row`} ju={`flex-start`}>
+                <DataGuideWrapper>COUNTRY</DataGuideWrapper>
+                <DataWrapper>
+                  <TextInput
+                    {...currentContry}
+                    width={`750px`}
+                    height={`25px`}
+                  />
+                </DataWrapper>
+              </Wrapper>
 
-            <Wrapper dr={`row`} ju={`flex-start`}>
-              <DataGuideWrapper>PERSON IN CHARGE</DataGuideWrapper>
-              <DataWrapper>
-                <TextInput {...currentCharge} width={`750px`} height={`25px`} />
-              </DataWrapper>
-            </Wrapper>
+              <Wrapper dr={`row`} ju={`flex-start`}>
+                <DataGuideWrapper>LEVEL</DataGuideWrapper>
+                <DataWrapper>
+                  <RadioGroup
+                    row
+                    aria-label="gender"
+                    name="gender1"
+                    {...currentLevel}
+                  >
+                    <FormControlLabel
+                      className={classes.radio}
+                      value="LEVEL3"
+                      control={<Radio />}
+                      label="LEVEL3"
+                    />
+                    <FormControlLabel
+                      className={classes.radio}
+                      value="LEVEL4"
+                      control={<Radio />}
+                      label="LEVEL4"
+                    />
+                  </RadioGroup>
+                </DataWrapper>
+              </Wrapper>
 
-            <Wrapper dr={`row`} ju={`flex-start`}>
-              <DataGuideWrapper>EMAIL</DataGuideWrapper>
-              <DataWrapper>
-                <TextInput {...currentEmail} width={`750px`} height={`25px`} />
-              </DataWrapper>
-            </Wrapper>
+              <Wrapper dr={`row`} ju={`flex-start`}>
+                <DataGuideWrapper>COMPANY NAME</DataGuideWrapper>
+                <DataWrapper>
+                  <TextInput
+                    {...currentCompanyName}
+                    width={`750px`}
+                    height={`25px`}
+                  />
+                </DataWrapper>
+              </Wrapper>
 
-            <Wrapper dr={`row`} ju={`flex-start`}>
-              <DataGuideWrapper>TEL</DataGuideWrapper>
-              <DataWrapper>
-                <TextInput {...currentTel} width={`750px`} height={`25px`} />
-              </DataWrapper>
-            </Wrapper>
+              <Wrapper dr={`row`} ju={`flex-start`}>
+                <DataGuideWrapper>PERSON IN CHARGE</DataGuideWrapper>
+                <DataWrapper>
+                  <TextInput
+                    {...currentCharge}
+                    width={`750px`}
+                    height={`25px`}
+                  />
+                </DataWrapper>
+              </Wrapper>
 
-            <Wrapper ju={`flex-end`} al={`flex-end`} margin={`20px 0px`}>
-              {!isLoading ? (
-                <CommonButton onClick={createTokenHandler}>
-                  회원생성
-                </CommonButton>
-              ) : (
-                <Wrapper>회원을 생성 중 입니다.</Wrapper>
-              )}
+              <Wrapper dr={`row`} ju={`flex-start`}>
+                <DataGuideWrapper>EMAIL</DataGuideWrapper>
+                <DataWrapper>
+                  <TextInput
+                    {...currentEmail}
+                    width={`750px`}
+                    height={`25px`}
+                  />
+                </DataWrapper>
+              </Wrapper>
+
+              <Wrapper dr={`row`} ju={`flex-start`}>
+                <DataGuideWrapper>TEL</DataGuideWrapper>
+                <DataWrapper>
+                  <TextInput {...currentTel} width={`750px`} height={`25px`} />
+                </DataWrapper>
+              </Wrapper>
+              <Wrapper
+                ju={`flex-end`}
+                al={`flex-end`}
+                margin={`20px 63px 20px 0px`}
+              >
+                {!isLoading ? (
+                  <CommonButton onClick={createTokenHandler}>
+                    회원생성
+                  </CommonButton>
+                ) : (
+                  <Wrapper>회원을 생성 중 입니다.</Wrapper>
+                )}
+              </Wrapper>
             </Wrapper>
           </Wrapper>
         </Fade>

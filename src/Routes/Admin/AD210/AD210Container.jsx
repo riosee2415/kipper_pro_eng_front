@@ -136,7 +136,6 @@ export default ({ history }) => {
 
     if (data.deleteProduct) {
       toast.info("데이터가 삭제되었습니다.");
-      setSelectData(null);
       nRefetch();
     } else {
       toast.error("처리 중 문제가 발생했습니다. 개발사에게 문의해주세요.");
