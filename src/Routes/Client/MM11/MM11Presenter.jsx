@@ -16,7 +16,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Box = styled(Wrapper)`
   cursor: pointer;
-  width: 187px;
+  width: ${(props) => props.width || `192px`};
   height: 30px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 30px;
@@ -28,11 +28,16 @@ const Box = styled(Wrapper)`
   transition: 0.5s;
   margin: ${(props) => props.margin || `0 17px 0 0`};
 
+  &:last-child {
+    margin: 0;
+  }
+
   &:hover {
     border: 1px solid ${Theme.white_C};
   }
 
   @media (max-width: 700px) {
+    width: 240px;
     margin: ${(props) => props.margin || `15px 0 0 26px`};
   }
 `;
@@ -114,7 +119,7 @@ const MM11Presenter = ({
               display={width < 700 ? `none` : `flex`}
             />
             <Wrapper
-              width={`calc(100% - 92px - 45px)`}
+              width={`calc(100% - 92px)`}
               padding={`0 0 0 45px`}
               al={`flex-start`}
             >
@@ -132,16 +137,16 @@ const MM11Presenter = ({
                     beBottom={`-121px`}
                     marginBottom={`116px`}
                   />
-                  <Title>스마트키퍼</Title>
+                  <Title>SMARTKEEPER</Title>
                 </Wrapper>
                 <Wrapper width={`calc(100% - 226px)`}>
-                  <Wrapper dr={`row`}>
+                  <Wrapper dr={`row`} ju={`flex-start`}>
                     <Box
                       onClick={() => {
                         moveLinkHandler("/about");
                       }}
                     >
-                      <Text fontSize={`12px`}>스마트키퍼란?</Text>
+                      <Text fontSize={`11px`}>SMARTKEEPER?</Text>
                       <IoIosArrowForward />
                     </Box>
                     <Box
@@ -149,52 +154,55 @@ const MM11Presenter = ({
                         moveLinkHandler("/malware");
                       }}
                     >
-                      <Text fontSize={`11px`}>
-                        악성코드의 침입과 데이터 유출
-                      </Text>
+                      <Text fontSize={`11px`}>VIRUS INTRUSION</Text>
                       <IoIosArrowForward />
                     </Box>
                     <Box
                       onClick={() => {
                         moveLinkHandler("/insightpro");
                       }}
+                      width={`205px`}
                     >
-                      <Text fontSize={`12px`}>스마트키퍼 프로</Text>
+                      <Text fontSize={`11px`}>SMARTKEEPER PRO</Text>
                       <IoIosArrowForward />
                     </Box>
                     <Box>
-                      <Text fontSize={`12px`}>스마트키퍼 에센셜</Text>
+                      <Text fontSize={`11px`}>SMARTKEEPER ESSENTIAL</Text>
                       <IoIosArrowForward />
                     </Box>
                   </Wrapper>
 
-                  <Wrapper dr={`row`} margin={`20px 0 0`}>
+                  <Wrapper dr={`row`} margin={`20px 0 0`} ju={`flex-start`}>
                     <Box
                       onClick={() => {
                         moveLinkHandler("/example");
                       }}
                     >
-                      <Text fontSize={`12px`}>적용사례(프로)</Text>
+                      <Text fontSize={`11px`}>REFERENCE(PRO)</Text>
                       <IoIosArrowForward />
                     </Box>
                     <Box>
-                      <Text fontSize={`11px`}>적용 사례(에센셜)</Text>
+                      <Text fontSize={`11px`}>REFERENCE(ESSENTIAL)</Text>
                       <IoIosArrowForward />
                     </Box>
                     <Box
                       onClick={() => {
                         moveLinkHandler("/security");
                       }}
+                      width={`205px`}
                     >
-                      <Text fontSize={`12px`}>USB보안의 완성</Text>
+                      <Text fontSize={`11px`}>Completion of USB Security</Text>
                       <IoIosArrowForward />
                     </Box>
                     <Box
                       onClick={() => {
                         moveLinkHandler("/network");
                       }}
+                      width={`225px`}
                     >
-                      <Text fontSize={`12px`}>네트워크 보안의 이상적 조합</Text>
+                      <Text fontSize={`11px`}>
+                        Combination of Network Security
+                      </Text>
                       <IoIosArrowForward />
                     </Box>
                   </Wrapper>
@@ -216,13 +224,13 @@ const MM11Presenter = ({
                   <Title>PRO</Title>
                 </Wrapper>
                 <Wrapper width={`calc(100% - 226px)`}>
-                  <Wrapper dr={`row`}>
+                  <Wrapper dr={`row`} ju={`flex-start`}>
                     <Box
                       onClick={() => {
                         moveLinkHandler("/usb");
                       }}
                     >
-                      <Text fontSize={`12px`}>USB 물리보안</Text>
+                      <Text fontSize={`12px`}>USB Physical Security</Text>
                       <IoIosArrowForward />
                     </Box>
                     <Box
@@ -230,23 +238,27 @@ const MM11Presenter = ({
                         moveLinkHandler("/p_network");
                       }}
                     >
-                      <Text fontSize={`11px`}>네트워크 물리보안</Text>
+                      <Text fontSize={`11px`}>Network Physical Security</Text>
                       <IoIosArrowForward />
                     </Box>
                     <Box
                       onClick={() => {
                         moveLinkHandler("/computer");
                       }}
+                      width={`210px`}
                     >
-                      <Text fontSize={`12px`}>컴퓨터 물리보안</Text>
+                      <Text fontSize={`12px`}>Computer Physical Security</Text>
                       <IoIosArrowForward />
                     </Box>
                     <Box
                       onClick={() => {
                         moveLinkHandler("/port");
                       }}
+                      width={`210px`}
                     >
-                      <Text fontSize={`12px`}>기타포트 물리보안</Text>
+                      <Text fontSize={`12px`}>
+                        Other Port Physical Security
+                      </Text>
                       <IoIosArrowForward />
                     </Box>
                   </Wrapper>
@@ -257,7 +269,7 @@ const MM11Presenter = ({
                         moveLinkHandler("/lock");
                       }}
                     >
-                      <Text fontSize={`12px`}>락키 PRO</Text>
+                      <Text fontSize={`12px`}>Lock Key PRO</Text>
                       <IoIosArrowForward />
                     </Box>
                   </Wrapper>
@@ -279,21 +291,21 @@ const MM11Presenter = ({
                   <Title>ESSENTIAL</Title>
                 </Wrapper>
                 <Wrapper width={`calc(100% - 226px)`}>
-                  <Wrapper dr={`row`}>
+                  <Wrapper dr={`row`} ju={`flex-start`}>
                     <Box>
-                      <Text fontSize={`12px`}>베이직 시리즈</Text>
+                      <Text fontSize={`12px`}>Basic Series</Text>
                       <IoIosArrowForward />
                     </Box>
                     <Box>
-                      <Text fontSize={`11px`}>미니 시리즈</Text>
+                      <Text fontSize={`11px`}>Mini Series</Text>
                       <IoIosArrowForward />
                     </Box>
                     <Box>
-                      <Text fontSize={`12px`}>키 불필요 제품</Text>
+                      <Text fontSize={`12px`}>No Key Required</Text>
                       <IoIosArrowForward />
                     </Box>
                     <Box>
-                      <Text fontSize={`12px`}>락키 ESSENTIAL</Text>
+                      <Text fontSize={`12px`}>Lock Key ESSENTIAL</Text>
                       <IoIosArrowForward />
                     </Box>
                   </Wrapper>
@@ -312,7 +324,7 @@ const MM11Presenter = ({
                     beBottom={`-121px`}
                     marginBottom={`116px`}
                   />
-                  <Title>회사소개</Title>
+                  <Title>BUSINESS</Title>
                 </Wrapper>
                 <Wrapper width={`calc(100% - 226px)`}>
                   <Wrapper dr={`row`} ju={`flex-start`}>
@@ -321,7 +333,7 @@ const MM11Presenter = ({
                         moveLinkHandler("/info");
                       }}
                     >
-                      <Text fontSize={`12px`}>회사소개</Text>
+                      <Text fontSize={`12px`}>Partnership</Text>
                       <IoIosArrowForward />
                     </Box>
                     <Box
@@ -329,7 +341,7 @@ const MM11Presenter = ({
                         moveLinkHandler("/info?type=history");
                       }}
                     >
-                      <Text fontSize={`11px`}>연혁</Text>
+                      <Text fontSize={`11px`}>How to Business</Text>
                       <IoIosArrowForward />
                     </Box>
                     <Box
@@ -337,7 +349,7 @@ const MM11Presenter = ({
                         moveLinkHandler("/info?type=sign");
                       }}
                     >
-                      <Text fontSize={`12px`}>수상 및 인증</Text>
+                      <Text fontSize={`12px`}>Where our Partners</Text>
                       <IoIosArrowForward />
                     </Box>
                   </Wrapper>
@@ -352,7 +364,7 @@ const MM11Presenter = ({
               >
                 <Wrapper width={`226px`} ju={`flex-start`} dr={`row`}>
                   <Dot beHeight={`0`} marginBottom={`0`} />
-                  <Title>고객센터</Title>
+                  <Title>INQUIRY</Title>
                 </Wrapper>
                 <Wrapper width={`calc(100% - 226px)`}>
                   <Wrapper dr={`row`} ju={`flex-start`}>
@@ -369,7 +381,7 @@ const MM11Presenter = ({
                         moveLinkHandler("/contact");
                       }}
                     >
-                      <Text fontSize={`11px`}>문의하기</Text>
+                      <Text fontSize={`11px`}>Contact us</Text>
                       <IoIosArrowForward />
                     </Box>
                     <Box
@@ -377,7 +389,7 @@ const MM11Presenter = ({
                         moveLinkHandler("/reference");
                       }}
                     >
-                      <Text fontSize={`12px`}>자료실</Text>
+                      <Text fontSize={`12px`}>Download</Text>
                       <IoIosArrowForward />
                     </Box>
                   </Wrapper>
@@ -427,14 +439,14 @@ const MM11Presenter = ({
               al={`flex-start`}
               margin={`40.5px 0 0`}
             >
-              <Title>스마트키퍼</Title>
+              <Title>SMARTKEEPER</Title>
               <Box
                 margin={`20px 0 0 26px`}
                 onClick={() => {
                   moveLinkHandler("/about");
                 }}
               >
-                <Text fontSize={`12px`}>스마트키퍼란?</Text>
+                <Text fontSize={`12px`}>SMARTKEEPER?</Text>
                 <IoIosArrowForward />
               </Box>
               <Box
@@ -442,7 +454,7 @@ const MM11Presenter = ({
                   moveLinkHandler("/malware");
                 }}
               >
-                <Text fontSize={`11px`}>악성코드의 침입과 데이터 유출</Text>
+                <Text fontSize={`11px`}>VIRUS INTRUSION</Text>
                 <IoIosArrowForward />
               </Box>
               <Box
@@ -450,11 +462,11 @@ const MM11Presenter = ({
                   moveLinkHandler("/insightpro");
                 }}
               >
-                <Text fontSize={`12px`}>스마트키퍼 프로</Text>
+                <Text fontSize={`12px`}>SMARTKEEPER PRO</Text>
                 <IoIosArrowForward />
               </Box>
               <Box>
-                <Text fontSize={`12px`}>스마트키퍼 에센셜</Text>
+                <Text fontSize={`12px`}>SMARTKEEPER ESSENTIAL</Text>
                 <IoIosArrowForward />
               </Box>
               <Box
@@ -462,11 +474,11 @@ const MM11Presenter = ({
                   moveLinkHandler("/example");
                 }}
               >
-                <Text fontSize={`12px`}>적용사례(프로)</Text>
+                <Text fontSize={`12px`}>REFERENCE(PRO)</Text>
                 <IoIosArrowForward />
               </Box>
               <Box>
-                <Text fontSize={`11px`}>적용 사례(에센셜)</Text>
+                <Text fontSize={`11px`}>REFERENCE(ESSENTIAL)</Text>
                 <IoIosArrowForward />
               </Box>
               <Box
@@ -474,7 +486,7 @@ const MM11Presenter = ({
                   moveLinkHandler("/security");
                 }}
               >
-                <Text fontSize={`12px`}>USB보안의 완성</Text>
+                <Text fontSize={`12px`}>Completion of USB Security</Text>
                 <IoIosArrowForward />
               </Box>
               <Box
@@ -482,7 +494,7 @@ const MM11Presenter = ({
                   moveLinkHandler("/network");
                 }}
               >
-                <Text fontSize={`12px`}>네트워크 보안의 이상적 조합</Text>
+                <Text fontSize={`12px`}>Combination of Network Security</Text>
                 <IoIosArrowForward />
               </Box>
               <Title margin={`35px 0 0 26px`}>PRO</Title>
@@ -491,7 +503,7 @@ const MM11Presenter = ({
                   moveLinkHandler("/usb");
                 }}
               >
-                <Text fontSize={`12px`}>USB 물리보안</Text>
+                <Text fontSize={`12px`}>USB Physical Security</Text>
                 <IoIosArrowForward />
               </Box>
               <Box
@@ -499,7 +511,7 @@ const MM11Presenter = ({
                   moveLinkHandler("/p_network");
                 }}
               >
-                <Text fontSize={`11px`}>네트워크 물리보안</Text>
+                <Text fontSize={`11px`}>Network Physical Security</Text>
                 <IoIosArrowForward />
               </Box>
               <Box
@@ -507,7 +519,7 @@ const MM11Presenter = ({
                   moveLinkHandler("/computer");
                 }}
               >
-                <Text fontSize={`12px`}>컴퓨터 물리보안</Text>
+                <Text fontSize={`12px`}>Computer Physical Security</Text>
                 <IoIosArrowForward />
               </Box>
               <Box
@@ -515,7 +527,7 @@ const MM11Presenter = ({
                   moveLinkHandler("/port");
                 }}
               >
-                <Text fontSize={`12px`}>기타포트 물리보안</Text>
+                <Text fontSize={`12px`}>Other Port Physical Security</Text>
                 <IoIosArrowForward />
               </Box>
               <Box
@@ -523,33 +535,33 @@ const MM11Presenter = ({
                   moveLinkHandler("/lock");
                 }}
               >
-                <Text fontSize={`12px`}>락키 PRO</Text>
+                <Text fontSize={`12px`}>Lock Key PRO</Text>
                 <IoIosArrowForward />
               </Box>
               <Title margin={`35px 0 0 26px`}>ESSENTIAL</Title>
               <Box>
-                <Text fontSize={`12px`}>베이직 시리즈</Text>
+                <Text fontSize={`12px`}>Basic Series</Text>
                 <IoIosArrowForward />
               </Box>
               <Box>
-                <Text fontSize={`11px`}>미니 시리즈</Text>
+                <Text fontSize={`11px`}>Mini Series</Text>
                 <IoIosArrowForward />
               </Box>
               <Box>
-                <Text fontSize={`12px`}>키 불필요 제품</Text>
+                <Text fontSize={`12px`}>No Key Required</Text>
                 <IoIosArrowForward />
               </Box>
               <Box>
-                <Text fontSize={`12px`}>락키 ESSENTIAL</Text>
+                <Text fontSize={`12px`}>Lock Key ESSENTIAL</Text>
                 <IoIosArrowForward />
               </Box>
-              <Title margin={`35px 0 0 26px`}>회사소개</Title>
+              <Title margin={`35px 0 0 26px`}>BUSINESS</Title>
               <Box
                 onClick={() => {
                   moveLinkHandler("/info");
                 }}
               >
-                <Text fontSize={`12px`}>회사소개</Text>
+                <Text fontSize={`12px`}>Partnership</Text>
                 <IoIosArrowForward />
               </Box>
               <Box
@@ -557,7 +569,7 @@ const MM11Presenter = ({
                   moveLinkHandler("/info?type=history");
                 }}
               >
-                <Text fontSize={`11px`}>연혁</Text>
+                <Text fontSize={`11px`}>How to Business</Text>
                 <IoIosArrowForward />
               </Box>
               <Box
@@ -565,10 +577,10 @@ const MM11Presenter = ({
                   moveLinkHandler("/info?type=sign");
                 }}
               >
-                <Text fontSize={`12px`}>수상 및 인증</Text>
+                <Text fontSize={`12px`}>Where our Partners</Text>
                 <IoIosArrowForward />
               </Box>
-              <Title margin={`35px 0 0 26px`}>고객센터</Title>
+              <Title margin={`35px 0 0 26px`}>INQUIRY</Title>
               <Box
                 onClick={() => {
                   moveLinkHandler("/faq");
@@ -582,15 +594,16 @@ const MM11Presenter = ({
                   moveLinkHandler("/contact");
                 }}
               >
-                <Text fontSize={`11px`}>문의하기</Text>
+                <Text fontSize={`11px`}>Contact us</Text>
                 <IoIosArrowForward />
               </Box>
               <Box
                 onClick={() => {
                   moveLinkHandler("/reference");
                 }}
+                margin={`15px 0 0 26px !important`}
               >
-                <Text fontSize={`12px`}>자료실</Text>
+                <Text fontSize={`12px`}>Download</Text>
                 <IoIosArrowForward />
               </Box>
             </Wrapper>
