@@ -38,8 +38,8 @@ const SearchInput = styled(TextInput)`
 const BoxImage = styled(Wrapper)`
   width: calc(100% / 4);
   height: 300px;
-  border-left: 1px solid rgb(216, 216, 216);
   border-bottom: 1px solid rgb(216, 216, 216);
+  border-right: 1px solid rgb(216, 216, 216);
   align-items: flex-start;
   justify-content: space-between;
   padding: 10px 15px;
@@ -50,11 +50,14 @@ const BoxImage = styled(Wrapper)`
     border-top: 1px solid rgb(216, 216, 216);
   }
 
-  &:nth-child(4n) {
-    border-right: 1px solid rgb(216, 216, 216);
+  &:nth-child(4n + 1) {
+    border-left: 1px solid rgb(216, 216, 216);
   }
-  &:last-child {
-    border-right: 1px solid rgb(216, 216, 216);
+  &:first-child {
+    border-left: 1px solid rgb(216, 216, 216);
+  }
+  &:hover {
+    background-image: ${(props) => props.bgImg2};
   }
 
   @media (max-width: 900px) {
@@ -67,16 +70,16 @@ const BoxImage = styled(Wrapper)`
       border-top: none;
     }
 
-    &:nth-child(4n) {
-      border-right: none;
+    &:nth-child(4n + 1) {
+      border-left: none;
     }
 
     &:nth-child(-n + 2) {
       border-top: 1px solid rgb(216, 216, 216);
     }
 
-    &:nth-child(2n) {
-      border-right: 1px solid rgb(216, 216, 216);
+    &:nth-child(2n + 1) {
+      border-left: 1px solid rgb(216, 216, 216);
     }
   }
 `;

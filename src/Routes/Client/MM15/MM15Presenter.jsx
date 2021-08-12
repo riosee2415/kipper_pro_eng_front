@@ -313,7 +313,7 @@ const MM15Presenter = ({
                                   );
                                 }}
                               >
-                                사용설명서
+                                User Guide
                               </Text>
                             </Wrapper>
                             <Wrapper dr={`row`} width={`auto`}>
@@ -329,7 +329,7 @@ const MM15Presenter = ({
                                   changeLinkHandler(data);
                                 }}
                               >
-                                동영상보기
+                                Video
                               </Text>
                             </Wrapper>
                           </Wrapper>
@@ -385,7 +385,7 @@ const MM15Presenter = ({
                               )
                             }
                           >
-                            다운로드
+                            Download
                           </Text>
                         </Wrapper>
                       </Box2>
