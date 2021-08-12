@@ -244,7 +244,7 @@ const MM15Presenter = ({
             <Wrapper dr={`row`} ju={`flex-start`}>
               {rDatum ? (
                 rDatum.length === 0 ? (
-                  <EmptyList>제품 사용설명서가 없습니다.</EmptyList>
+                  <EmptyList>User guide does not exist.</EmptyList>
                 ) : (
                   rDatum.map((data) => {
                     return (
@@ -349,7 +349,7 @@ const MM15Presenter = ({
             <Wrapper margin={`0 0 33px`}>
               {CatDatum ? (
                 CatDatum.length === 0 ? (
-                  <EmptyList>카탈로그가 없습니다.</EmptyList>
+                  <EmptyList>Catalog does not exist.</EmptyList>
                 ) : (
                   CatDatum.map((data, idx) => {
                     return (

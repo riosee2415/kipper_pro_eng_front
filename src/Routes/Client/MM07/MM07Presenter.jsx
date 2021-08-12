@@ -587,7 +587,7 @@ const MM07Presenter = ({
         <Wrapper dr={`row`} ju={`flex-start`}>
           {pDatum ? (
             pDatum.length === 0 ? (
-              <EmptyList>조회된 제품이 없습니다.</EmptyList>
+              <EmptyList>Search result does not exist.</EmptyList>
             ) : (
               pDatum.map((data) => {
                 return (
@@ -628,7 +628,7 @@ const MM07Presenter = ({
               <Wrapper margin={`0 0 20px`}>
                 <CircularIndeterminate />
               </Wrapper>
-              데이터를 조회하고 있습니다.
+              We're searching the data you requested.
             </EmptyList>
           )}
         </Wrapper>
