@@ -176,7 +176,7 @@ export const Wrapper = styled.div`
  *
  *  */
 export const RsWrapper = styled.div`
-  width: 1230px;
+  width: ${(props) => props.width || `1230px`};
   height: ${(props) => props.height || `100%`};
   ${(props) => props.minHeight && `min-height: ${props.minHeight};`}
   color: ${(props) => props.color};

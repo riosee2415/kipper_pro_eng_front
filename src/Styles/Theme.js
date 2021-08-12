@@ -12,6 +12,7 @@ export default {
   subTheme_C: "#1483C7",
   subTheme2_C: "#0F98FF",
   subTheme3_C: "#B80009",
+  subTheme4_C: "#D00059",
 
   greyTheme1_C: "#A1A1A6",
   greyTheme2_C: "#6E6E73",
