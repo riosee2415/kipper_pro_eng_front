@@ -352,7 +352,7 @@ export const TextInput = styled.input`
   background-color: ${(props) => props.bgColor || `transparent`};
   font-size: 14px;
   border-radius: ${(props) => props.radius};
-  color: ${(props) => props.color};
+  color: ${(props) => props.color || props.theme.white_C};
 
   &:focus {
     border: ${(props) =>
