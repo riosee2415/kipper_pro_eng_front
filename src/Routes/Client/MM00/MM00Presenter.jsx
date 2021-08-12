@@ -150,7 +150,7 @@ const MM00Presenter = ({
               margin={
                 width < 700
                   ? `${lockpinMargin}px 0 -300px 0`
-                  : `${lockpinMargin}px 0 -300px -100px`
+                  : `${lockpinMargin}px 0 -300px 0px`
               }
               src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM00%2FMAIN_IMAGE_1.png?alt=media&token=9bcfe0b7-65d5-4890-a94a-8849f14d5424`}
             />

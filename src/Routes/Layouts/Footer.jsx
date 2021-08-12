@@ -74,13 +74,13 @@ const Footer = ({ width, location }) => {
   ////////////// - USE HANDLER - ///////////////
   const viewInfoHandler = () => {
     Modal.info({
-      title: "알림",
+      title: "Notice",
       width: "360px",
       content: (
         <Wrapper margin={`20px 0 0`}>
           <GiSandsOfTime size={30} />
           <Text margin={`20px 0 0`} fontSize={`17px`}>
-            준비중입니다.
+            Coming soon
           </Text>
         </Wrapper>
       ),
