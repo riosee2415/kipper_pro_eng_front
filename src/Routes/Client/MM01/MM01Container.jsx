@@ -18,6 +18,10 @@ const MM01Container = ({ history }) => {
   const tab5Ref = useRef();
   const documentRef = useRef(document);
 
+  const check1Ref = useRef();
+  const check2Ref = useRef();
+  const check3Ref = useRef();
+
   ////////////// - USE STATE- ///////////////
 
   ////////////// - USE QUERY- ///////////////
@@ -40,6 +44,9 @@ const MM01Container = ({ history }) => {
       tab4Ref={tab4Ref}
       tab5Ref={tab5Ref}
       documentRef={documentRef}
+      check1Ref={check1Ref}
+      check2Ref={check2Ref}
+      check3Ref={check3Ref}
       //
     />
   );

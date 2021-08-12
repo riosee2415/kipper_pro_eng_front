@@ -97,6 +97,9 @@ const MM01Presenter = ({
   tab4Ref,
   tab5Ref,
   documentRef,
+  check1Ref,
+  check2Ref,
+  check3Ref,
 }) => {
   useTitle(`스마트키퍼란? | ${process.env["HOMEPAGE_NAME"]}`);
 
@@ -116,6 +119,10 @@ const MM01Presenter = ({
   const [isEnd, setIsEnd] = useState(true);
   const [height, setHeight] = useState(0);
 
+  const [isCheck1, setIsCheck1] = useState(false);
+  const [isCheck2, setIsCheck2] = useState(false);
+  const [isCheck3, setIsCheck3] = useState(false);
+
   const handleScroll = () => {
     const { pageYOffset } = window;
 
@@ -125,6 +132,13 @@ const MM01Presenter = ({
       let currentOffset;
 
       let tempOffset = tab1Ref.current.offsetHeight * 4;
+      let tempOffset1 = tab1Ref.current.offsetHeight * 1;
+      let tempOffset2 = tab1Ref.current.offsetHeight * 2;
+      let tempOffset3 = tab1Ref.current.offsetHeight * 3;
+
+      let check1Top = check1Ref.current.offsetTop;
+      let check2Top = check2Ref.current.offsetTop;
+      let check3Top = check3Ref.current.offsetTop;
 
       if (currentImage === 0) {
         currentOffset = (tempOffset / 5) * 1;
@@ -149,6 +163,53 @@ const MM01Presenter = ({
       //   (tempOffset / 5) * 4,
       //   (tempOffset / 5) * 5
       // );
+
+      let scrollingElement = document.scrollingElement || document.body;
+
+      if (!isCheck1 && tempOffset1 < pageYOffset) {
+        $("#app").on("scroll touchmove mousewheel", function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+
+          return false;
+        });
+
+        scrollingElement.scrollTop = check1Top - 200;
+
+        setTimeout(() => {
+          $("#app").off("scroll touchmove mousewheel");
+          setIsCheck1(true);
+        }, 1000);
+      }
+      if (!isCheck2 && tempOffset2 < pageYOffset) {
+        $("#app").on("scroll touchmove mousewheel", function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+
+          return false;
+        });
+
+        scrollingElement.scrollTop = check2Top - 200;
+
+        setTimeout(() => {
+          $("#app").off("scroll touchmove mousewheel");
+          setIsCheck2(true);
+        }, 1000);
+      }
+      if (!isCheck3 && tempOffset3 < pageYOffset) {
+        $("#app").on("scroll touchmove mousewheel", function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+
+          return false;
+        });
+        scrollingElement.scrollTop = check3Top - 200;
+
+        setTimeout(() => {
+          $("#app").off("scroll touchmove mousewheel");
+          setIsCheck3(true);
+        }, 1000);
+      }
 
       let tempFade = (currentOffset - pageYOffset) / (tempOffset / 5);
 
@@ -333,7 +394,7 @@ const MM01Presenter = ({
                 ref={tab2Ref}
                 al={`flex-start`}
               >
-                <Title>The best security is</Title>
+                <Title ref={check1Ref}>The best security is</Title>
                 <Title display={width < 900 ? `none` : `block`}>
                   physical security.
                 </Title>
@@ -488,7 +549,7 @@ const MM01Presenter = ({
                 ref={tab3Ref}
                 al={`flex-start`}
               >
-                <Title>Arguably</Title>
+                <Title ref={check2Ref}>Arguably</Title>
                 <Title>the Best Security</Title>
 
                 <Wrapper
@@ -592,7 +653,7 @@ const MM01Presenter = ({
                 ref={tab4Ref}
                 al={`flex-start`}
               >
-                <Title>Physical Cybersecurity,</Title>
+                <Title ref={check3Ref}>Physical Cybersecurity,</Title>
                 <Title>Now a must, not a choice.</Title>
 
                 <Wrapper

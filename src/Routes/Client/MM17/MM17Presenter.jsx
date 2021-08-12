@@ -95,16 +95,12 @@ const MM17Presenter = ({
       pageYOffset > tempHeight &&
       pageYOffset < tempHeight + temp2Height + 200
     ) {
-      if (testTop - 15 < 8 && pageY < pageYOffset) {
-        setTestTop(10);
-        setScale1(1);
-      } else if (pageY > pageYOffset && testTop + 15 <= 90) {
-        setTestTop(testTop + 15);
-        setScale1(scale1 + 0.1);
-      } else {
-        setTestTop(testTop - 15);
-        setScale1(scale1 - 0.1);
-      }
+      setTimeout(() => {
+        setTestTop(0);
+        setIsView(1);
+      }, 500);
+
+      setScale1(1.2);
     }
 
     if (pageYOffset >= temp6Height) {
@@ -113,7 +109,7 @@ const MM17Presenter = ({
 
     if (pageYOffset > temp3Height && pageYOffset < temp4Height) {
       if (image1Margin + 50 > 200 && pageY < pageYOffset) {
-        setImage1Margin(200);
+        setImage1Margin(260);
       } else if (pageY > pageYOffset && image1Margin - 50 > -50) {
         setImage1Margin(image1Margin - 50);
       } else if (pageY > pageYOffset && image1Margin - 50 <= -50) {
@@ -173,9 +169,13 @@ const MM17Presenter = ({
             if (value.length !== 2) {
               value = "0" + value;
             }
+            if (value === "13") {
+              $("#app").off("scroll touchmove mousewheel");
+            }
+
             return value === "13" ? "12" : value;
           });
-        }, [500]);
+        }, [350]);
       }
 
       if (isStart2 && temp8Height < pageYOffset) {
@@ -183,22 +183,19 @@ const MM17Presenter = ({
 
         scrollingElement.scrollTop = temp8Height;
 
-        setIsStart2(false);
+        $("#app").on("scroll touchmove mousewheel", function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+          return false;
+        });
       }
       setIsStart(false);
     }
 
-    if (testTop < 55) {
-      setIsView(1);
-    } else {
-      setIsView(0);
-    }
-
     if (pageYOffset > temp5Height - 500 && pageYOffset < temp3Height) {
-      if (image2Margin - 50 < -250 && pageY < pageYOffset) {
-        setImage2Margin(-250);
+      if (image2Margin - 50 < -200 && pageY < pageYOffset) {
+        setImage2Margin(-200);
       } else if (pageY > pageYOffset && image2Margin + 30 < 50) {
-        console.log(image2Margin + 30);
         setImage2Margin(image2Margin + 30);
       } else if (pageY > pageYOffset && image2Margin + 30 >= 50) {
         setImage2Margin(50);

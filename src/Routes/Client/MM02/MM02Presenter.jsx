@@ -96,10 +96,12 @@ const MM02Presenter = ({
     if (noteHeight > pageYOffset) {
       if (noteImg < 100 && pageYOffset > pageY) {
         setNoteImg(noteImg + 10);
-        setNoteText(noteText + 10);
+        if (noteText + 50 < 250) setNoteText(noteText + 50);
+        else setNoteText(250);
       } else if (noteImg > 0) {
         setNoteImg(noteImg - 10);
-        setNoteText(noteText - 10);
+        if (noteText - 50 > 0) setNoteText(noteText - 50);
+        else setNoteText(0);
       }
     }
 
