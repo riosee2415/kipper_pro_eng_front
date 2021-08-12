@@ -1118,6 +1118,7 @@ export const Image = styled.img`
   object-fit: ${(props) => props.objectFit || `cover`};
   position: ${(props) => (props.isAbsolute ? `absolute` : ``)};
   position: ${(props) => (props.isRelative ? `relative` : ``)};
+  position: ${(props) => (props.isFixed ? `fixed` : ``)};
   box-shadow: ${(props) => props.shadow};
   border-radius: ${(props) => props.radius};
   z-index: ${(props) => props.zIndex};
@@ -1129,6 +1130,9 @@ export const Image = styled.img`
   filter: ${(props) => (props.isFilter ? `brightness(80%) opacity(0.8)` : ` `)};
   filter: ${(props) => props.filter};
   mix-blend-mode: ${(props) => (props.isBlendMode ? `luminosity` : ``)};
+
+  transform: ${(props) => props.transform};
+
 
   &:hover {
     filter: ${(props) => (props.isHover ? `brightness(100%) opacity(1)` : ` `)};

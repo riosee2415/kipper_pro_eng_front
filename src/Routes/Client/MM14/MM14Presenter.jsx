@@ -104,9 +104,17 @@ const MM14Presenter = ({
                     dr={`row`}
                     ju={`space-between`}
                     al={`flex-start`}
+                    onClick={() => setAbleIcon(null)}
                   >
                     <Image src={data.src} width={`50px`} height={`50px`} />
-                    <Image src={data.info} width={`300px`} />
+                    <Image
+                      src={data.info}
+                      width={`300px`}
+                      isFixed={width < 900 ? true : false}
+                      top={`60%`}
+                      transform={`translateX(-50%)`}
+                      left={`50%`}
+                    />
                   </Wrapper>
                 )}
               </Wrapper>
