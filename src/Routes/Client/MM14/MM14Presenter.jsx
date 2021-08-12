@@ -5,11 +5,6 @@ import {
   RsWrapper,
   Wrapper,
   Text,
-  TextInput,
-  Combo,
-  ComboOption,
-  TextArea,
-  CommonButton,
   Image,
   CommonSubTitle,
 } from "../../../Components/CommonComponents";
@@ -17,32 +12,24 @@ import styled from "styled-components";
 import { withResizeDetector } from "react-resize-detector";
 import useTitle from "@4leaf.ysh/use-title";
 import Theme from "../../../Styles/Theme";
-import Radio from "@material-ui/core/Radio";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import FormControl from "@material-ui/core/FormControl";
-import FormLabel from "@material-ui/core/FormLabel";
-import ReCAPTCHA from "react-google-recaptcha";
+import { dotAni } from "../../../Components/AnimationCommon";
 
-const ComboBox = styled(Combo)`
-  width: ${(props) => props.width};
-  height: ${(props) => props.height || `40px`};
-  border: ${(props) => props.border || `1px solid ${props.theme.greyTheme7_C}`};
-  color: ${(props) => props.theme.white_C};
-  margin: ${(props) => props.margin || `0`};
-  background-color: ${(props) => props.bgColor || `transparent`};
-  font-size: 14px;
-`;
-
-const Link = styled(Text)`
-  color: ${(props) => props.theme.subTheme_C};
-  text-decoration: underline;
-  font-size: 14px;
-  font-weight: 300;
+const Dot = styled(Wrapper)`
+  position: relative;
   cursor: pointer;
 
-  @media (max-width: 900px) {
-    font-size: 13px;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -25.5px;
+    margin-left: -25.5px;
+    width: 51px;
+    height: 51px;
+    background: rgba(255, 255, 255, 0.5);
+    animation: ${dotAni} 1.5s infinite;
+    border-radius: 100%;
   }
 `;
 
@@ -51,23 +38,8 @@ const MM14Presenter = ({
   //
   point,
   //
-  inputType,
-  inputTypeDesc,
-  inputGoal,
-  inputName,
-  inputEmail,
-  inputMobile,
-  inputCompany,
-  inputDepartment,
-  inputChargeNum,
-  inputFaxNum,
-  inputDesc,
-  inputCheck1,
-  inputCheck2,
   ableIcon,
   setAbleIcon,
-  //
-  createContactHandler,
 }) => {
   useTitle(`Contact us | ${process.env["HOMEPAGE_NAME"]}`);
 
@@ -104,13 +76,13 @@ const MM14Presenter = ({
                 left={data.left}
               >
                 {ableIcon !== idx ? (
-                  <Wrapper
+                  <Dot
                     width={`15px`}
                     height={`15px`}
                     radius={`50%`}
                     bgColor={`#fff`}
                     onClick={() => setAbleIcon(idx)}
-                  ></Wrapper>
+                  ></Dot>
                 ) : (
                   <Wrapper
                     isAbsolute={true}

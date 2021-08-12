@@ -82,3 +82,16 @@ export const translateX = keyframes`
   transform:translateX(0px);
 }
 `;
+
+export const dotAni = keyframes`
+  0%{
+   transform: scale(0.5);
+    opacity: 0;
+  }50%{
+    transform: scale(1);
+    opacity: 1;
+  }100%{
+    transform: scale(0.5);
+    opacity: 0;
+  }
+`;
