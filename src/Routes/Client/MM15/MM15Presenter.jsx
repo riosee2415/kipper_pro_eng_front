@@ -167,7 +167,7 @@ const MM15Presenter = ({
             fontWeight={`bold`}
             margin={width < 700 ? `100px 0 20px` : `160px 0 20px`}
           >
-            자료실
+            Download
           </Wrapper>
 
           <Wrapper dr={`row`} margin={`21px 0 18px`}>
@@ -185,7 +185,7 @@ const MM15Presenter = ({
               fontWeight={currentTab === 0 ? `700` : `400`}
               onClick={() => changeTabHandler(0)}
             >
-              제품 사용설명서
+              User Guide
             </Tab>
             <Tab
               color={
@@ -201,7 +201,7 @@ const MM15Presenter = ({
               fontWeight={currentTab === 0 ? `700` : `400`}
               onClick={() => changeTabHandler(1)}
             >
-              카탈로그/표준제안서
+              Catalog / Product Introduction
             </Tab>
           </Wrapper>
 
@@ -217,7 +217,7 @@ const MM15Presenter = ({
                 bgColor={Theme.greyTheme7_C}
                 radius={`10px`}
                 padding={`0 50px 0 20px`}
-                placeholder={`'제품명'을 검색하세요`}
+                placeholder={`Search for the product you are looking for.`}
                 placeholderColor={Theme.black_C}
                 focusBorder={`1px solid ${Theme.greyTheme7_C}`}
                 {...inputSearch}

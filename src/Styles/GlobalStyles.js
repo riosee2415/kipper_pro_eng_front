@@ -146,6 +146,11 @@ export default createGlobalStyle`
         color : inherit;
         text-decoration : none;
     }
+
+    a:hover {
+        color : inherit;
+    }
+
     input, textarea, button {
         outline : none;
         border : none;

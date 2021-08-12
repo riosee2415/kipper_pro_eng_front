@@ -96,7 +96,7 @@ const MM06Presenter = ({
   changeSubTypeHandler,
   searchDataHandler,
 }) => {
-  useTitle(`컴퓨터 물리보안 | ${process.env["HOMEPAGE_NAME"]}`);
+  useTitle(`Anti-Theft for Computer | ${process.env["HOMEPAGE_NAME"]}`);
 
   return (
     <WholeWrapper>
@@ -123,7 +123,7 @@ const MM06Presenter = ({
                 margin={`0 0 5px`}
               />
             </Wrapper>
-            <Text fontSize={`12px`}>USB 물리보안</Text>
+            <Text fontSize={`12px`}>USB Security</Text>
           </Wrapper>
           <Wrapper
             width={`auto`}
@@ -141,7 +141,7 @@ const MM06Presenter = ({
                 margin={`0 0 5px`}
               />
             </Wrapper>
-            <Text fontSize={`12px`}>네트워크 물리보안</Text>
+            <Text fontSize={`12px`}>Network Security</Text>
           </Wrapper>
           <Wrapper
             width={`auto`}
@@ -159,7 +159,7 @@ const MM06Presenter = ({
                 margin={`0 0 5px`}
               />
             </Wrapper>
-            <Text fontSize={`12px`}>기타포트 물리보안</Text>
+            <Text fontSize={`12px`}>Other Port Security</Text>
           </Wrapper>
           <Wrapper
             width={`auto`}
@@ -178,7 +178,7 @@ const MM06Presenter = ({
               />
             </Wrapper>
             <Text fontSize={`12px`} fontWeight={`700`} color={`rgb(209, 0, 0)`}>
-              컴퓨터 물리보안
+              Anti-Theft for Computer
             </Text>
           </Wrapper>
           <Wrapper
@@ -197,7 +197,7 @@ const MM06Presenter = ({
                 margin={`0 0 5px`}
               />
             </Wrapper>
-            <Text fontSize={`12px`}>락키 PRO</Text>
+            <Text fontSize={`12px`}>Lock Key PRO</Text>
           </Wrapper>
         </Wrapper>
 
@@ -235,7 +235,7 @@ const MM06Presenter = ({
                   fontWeight={`700`}
                   color={`rgb(209, 0, 0)`}
                 >
-                  컴퓨터 물리보안
+                  Anti-Theft for Computer
                 </Text>
               </Wrapper>
               <Wrapper
@@ -253,7 +253,7 @@ const MM06Presenter = ({
                     margin={`0 0 5px`}
                   />
                 </Wrapper>
-                <Text fontSize={`10px`}>락키 PRO</Text>
+                <Text fontSize={`10px`}>Lock Key PRO</Text>
               </Wrapper>
             </>
           ) : (
@@ -273,7 +273,7 @@ const MM06Presenter = ({
                     margin={`0 0 5px`}
                   />
                 </Wrapper>
-                <Text fontSize={`10px`}>USB 물리보안</Text>
+                <Text fontSize={`10px`}>USB Security</Text>
               </Wrapper>
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 3)`}
@@ -290,7 +290,7 @@ const MM06Presenter = ({
                     margin={`0 0 5px`}
                   />
                 </Wrapper>
-                <Text fontSize={`10px`}>네트워크 물리보안</Text>
+                <Text fontSize={`10px`}>Network Security</Text>
               </Wrapper>
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 3)`}
@@ -307,7 +307,7 @@ const MM06Presenter = ({
                     margin={`0 0 5px`}
                   />
                 </Wrapper>
-                <Text fontSize={`10px`}>기타포트 물리보안</Text>
+                <Text fontSize={`10px`}>Other Port Security</Text>
               </Wrapper>
             </>
           )}

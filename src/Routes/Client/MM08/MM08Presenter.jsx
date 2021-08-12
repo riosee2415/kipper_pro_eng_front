@@ -96,7 +96,7 @@ const MM08Presenter = ({
   changeSubTypeHandler,
   searchDataHandler,
 }) => {
-  useTitle(`락키 PRO | ${process.env["HOMEPAGE_NAME"]}`);
+  useTitle(`Lock Key PRO | ${process.env["HOMEPAGE_NAME"]}`);
 
   return (
     <WholeWrapper>
@@ -123,7 +123,7 @@ const MM08Presenter = ({
                 margin={`0 0 5px`}
               />
             </Wrapper>
-            <Text fontSize={`12px`}>USB 물리보안</Text>
+            <Text fontSize={`12px`}>USB Security</Text>
           </Wrapper>
           <Wrapper
             width={`auto`}
@@ -141,7 +141,7 @@ const MM08Presenter = ({
                 margin={`0 0 5px`}
               />
             </Wrapper>
-            <Text fontSize={`12px`}>네트워크 물리보안</Text>
+            <Text fontSize={`12px`}>Network Security</Text>
           </Wrapper>
           <Wrapper
             width={`auto`}
@@ -159,7 +159,7 @@ const MM08Presenter = ({
                 margin={`0 0 5px`}
               />
             </Wrapper>
-            <Text fontSize={`12px`}>기타포트 물리보안</Text>
+            <Text fontSize={`12px`}>Other Port Security</Text>
           </Wrapper>
           <Wrapper
             width={`auto`}
@@ -177,7 +177,7 @@ const MM08Presenter = ({
                 margin={`0 0 5px`}
               />
             </Wrapper>
-            <Text fontSize={`12px`}>컴퓨터 물리보안</Text>
+            <Text fontSize={`12px`}>Anti-Theft for Computer</Text>
           </Wrapper>
           <Wrapper
             width={`auto`}
@@ -196,7 +196,7 @@ const MM08Presenter = ({
               />
             </Wrapper>
             <Text fontSize={`12px`} fontWeight={`700`} color={`rgb(209, 0, 0)`}>
-              락키 PRO
+              Lock Key PRO
             </Text>
           </Wrapper>
         </Wrapper>
@@ -230,7 +230,7 @@ const MM08Presenter = ({
                     margin={`0 0 5px`}
                   />
                 </Wrapper>
-                <Text fontSize={`10px`}>컴퓨터 물리보안</Text>
+                <Text fontSize={`10px`}>Anti-Theft for Computer</Text>
               </Wrapper>
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 2)`}
@@ -252,7 +252,7 @@ const MM08Presenter = ({
                   fontWeight={`700`}
                   color={`rgb(209, 0, 0)`}
                 >
-                  락키 PRO
+                  Lock Key PRO
                 </Text>
               </Wrapper>
             </>
@@ -273,7 +273,7 @@ const MM08Presenter = ({
                     margin={`0 0 5px`}
                   />
                 </Wrapper>
-                <Text fontSize={`10px`}>USB 물리보안</Text>
+                <Text fontSize={`10px`}>USB Security</Text>
               </Wrapper>
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 3)`}
@@ -290,7 +290,7 @@ const MM08Presenter = ({
                     margin={`0 0 5px`}
                   />
                 </Wrapper>
-                <Text fontSize={`10px`}>네트워크 물리보안</Text>
+                <Text fontSize={`10px`}>Network Security</Text>
               </Wrapper>
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 3)`}
@@ -307,7 +307,7 @@ const MM08Presenter = ({
                     margin={`0 0 5px`}
                   />
                 </Wrapper>
-                <Text fontSize={`10px`}>기타포트 물리보안</Text>
+                <Text fontSize={`10px`}>Other Port Security</Text>
               </Wrapper>
             </>
           )}
