@@ -111,9 +111,9 @@ const MM14Presenter = ({
                       src={data.info}
                       width={`300px`}
                       isFixed={width < 900 ? true : false}
-                      top={`60%`}
-                      transform={`translateX(-50%)`}
-                      left={`50%`}
+                      top={width < 900 ? `52%` : ``}
+                      transform={width < 900 ? `translateX(-50%)` : ``}
+                      left={width < 900 ? `50%` : ``}
                     />
                   </Wrapper>
                 )}
