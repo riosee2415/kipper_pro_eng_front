@@ -24,6 +24,7 @@ const MM15 = withSplitting(() => import("../Routes/Client/MM15"));
 const MM16 = withSplitting(() => import("../Routes/Client/MM16"));
 const MM17 = withSplitting(() => import("../Routes/Client/MM17"));
 const MM18 = withSplitting(() => import("../Routes/Client/MM18"));
+const MM90 = withSplitting(() => import("../Routes/Client/MM90"));
 const MM = withSplitting(() => import("../Routes/Client/MM_Notice"));
 const MMinit = withSplitting(() => import("../Routes/Client/MMinit"));
 
@@ -67,6 +68,7 @@ const AppRouter = ({ width }) => {
       <Route exact path="/security" component={Header} />
       <Route exact path="/p_network" component={Header} />
       <Route exact path="/p_network/:key" component={Header} />
+      <Route exact path="/login" component={Header} />
 
       {/* FixedNav  */}
       {/* <Route exact path="/" component={FixedNav} />
@@ -103,6 +105,7 @@ const AppRouter = ({ width }) => {
       <Route exact path="/pro" component={ScrollTopBtn} />
       <Route exact path="/p_network" component={ScrollTopBtn} />
       <Route exact path="/p_network/:key" component={ScrollTopBtn} />
+      <Route exact path="/login" component={ScrollTopBtn} />
 
       {/* CONTENT */}
       <Route exact path="/" component={MMinit} />
@@ -130,6 +133,7 @@ const AppRouter = ({ width }) => {
       <Route exact path="/pro" component={MM00} />
       <Route exact path="/p_network" component={MM18} />
       <Route exact path="/p_network/:key" component={MM09} />
+      <Route exact path="/login" component={MM90} />
 
       <Route exact path="/notice" component={MM} />
       <Route exact path="/notice/:key" component={Notice_D} />
@@ -162,6 +166,7 @@ const AppRouter = ({ width }) => {
       <Route exact path="/pro" component={Footer} />
       <Route exact path="/p_network" component={Footer} />
       <Route exact path="/p_network/:key" component={Footer} />
+      <Route exact path="/login" component={Footer} />
       {/* </ScrollToTop> */}
     </Router>
   );

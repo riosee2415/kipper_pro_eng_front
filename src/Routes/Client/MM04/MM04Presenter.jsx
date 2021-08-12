@@ -38,8 +38,8 @@ const SearchInput = styled(TextInput)`
 const BoxImage = styled(Wrapper)`
   width: calc(100% / 4);
   height: 300px;
-  border-left: 1px solid rgb(216, 216, 216);
   border-bottom: 1px solid rgb(216, 216, 216);
+  border-right: 1px solid rgb(216, 216, 216);
   align-items: flex-start;
   justify-content: space-between;
   padding: 10px 15px;
@@ -50,11 +50,14 @@ const BoxImage = styled(Wrapper)`
     border-top: 1px solid rgb(216, 216, 216);
   }
 
-  &:nth-child(4n) {
-    border-right: 1px solid rgb(216, 216, 216);
+  &:nth-child(4n + 1) {
+    border-left: 1px solid rgb(216, 216, 216);
   }
-  &:last-child {
-    border-right: 1px solid rgb(216, 216, 216);
+  &:first-child {
+    border-left: 1px solid rgb(216, 216, 216);
+  }
+  &:hover {
+    background-image: ${(props) => props.bgImg2};
   }
 
   @media (max-width: 900px) {
@@ -67,16 +70,16 @@ const BoxImage = styled(Wrapper)`
       border-top: none;
     }
 
-    &:nth-child(4n) {
-      border-right: none;
+    &:nth-child(4n + 1) {
+      border-left: none;
     }
 
     &:nth-child(-n + 2) {
       border-top: 1px solid rgb(216, 216, 216);
     }
 
-    &:nth-child(2n) {
-      border-right: 1px solid rgb(216, 216, 216);
+    &:nth-child(2n + 1) {
+      border-left: 1px solid rgb(216, 216, 216);
     }
   }
 `;
@@ -129,7 +132,7 @@ const MM04Presenter = ({
               color={`rgb(209, 0, 0)`}
               color={`rgb(209, 0, 0)`}
             >
-              USB 물리보안
+              USB Security
             </Text>
           </Wrapper>
           <Wrapper
@@ -148,7 +151,7 @@ const MM04Presenter = ({
                 margin={`0 0 5px`}
               />
             </Wrapper>
-            <Text fontSize={`12px`}>네트워크 물리보안</Text>
+            <Text fontSize={`12px`}>Network Security</Text>
           </Wrapper>
           <Wrapper
             width={`auto`}
@@ -166,7 +169,7 @@ const MM04Presenter = ({
                 margin={`0 0 5px`}
               />
             </Wrapper>
-            <Text fontSize={`12px`}>기타포트 물리보안</Text>
+            <Text fontSize={`12px`}>Other Port Security</Text>
           </Wrapper>
           <Wrapper
             width={`auto`}
@@ -184,7 +187,7 @@ const MM04Presenter = ({
                 margin={`0 0 5px`}
               />
             </Wrapper>
-            <Text fontSize={`12px`}>컴퓨터 물리보안</Text>
+            <Text fontSize={`12px`}>Anti-Theft for Computer</Text>
           </Wrapper>
           <Wrapper
             width={`auto`}
@@ -202,7 +205,7 @@ const MM04Presenter = ({
                 margin={`0 0 5px`}
               />
             </Wrapper>
-            <Text fontSize={`12px`}>락키 PRO</Text>
+            <Text fontSize={`12px`}>Lock Key PRO</Text>
           </Wrapper>
         </Wrapper>
 
@@ -235,7 +238,7 @@ const MM04Presenter = ({
                     margin={`0 0 5px`}
                   />
                 </Wrapper>
-                <Text fontSize={`10px`}>컴퓨터 물리보안</Text>
+                <Text fontSize={`10px`}>Anti-Theft for Computer</Text>
               </Wrapper>
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 2)`}
@@ -252,7 +255,7 @@ const MM04Presenter = ({
                     margin={`0 0 5px`}
                   />
                 </Wrapper>
-                <Text fontSize={`10px`}>락키 PRO</Text>
+                <Text fontSize={`10px`}>Lock Key PRO</Text>
               </Wrapper>
             </>
           ) : (
@@ -277,7 +280,7 @@ const MM04Presenter = ({
                   fontWeight={`700`}
                   color={`rgb(209, 0, 0)`}
                 >
-                  USB 물리보안
+                  USB Security
                 </Text>
               </Wrapper>
               <Wrapper
@@ -295,7 +298,7 @@ const MM04Presenter = ({
                     margin={`0 0 5px`}
                   />
                 </Wrapper>
-                <Text fontSize={`10px`}>네트워크 물리보안</Text>
+                <Text fontSize={`10px`}>Network Security</Text>
               </Wrapper>
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 3)`}
@@ -312,7 +315,7 @@ const MM04Presenter = ({
                     margin={`0 0 5px`}
                   />
                 </Wrapper>
-                <Text fontSize={`10px`}>기타포트 물리보안</Text>
+                <Text fontSize={`10px`}>Other Port Security</Text>
               </Wrapper>
             </>
           )}
@@ -563,6 +566,7 @@ const MM04Presenter = ({
                   <BoxImage
                     key={data._id}
                     bgImg={`url("${data.thumbnailPath}")`}
+                    bgImg2={`url("${data.thumbnailPath2}")`}
                     onClick={() => moveLinkHandler(`/usb/${data._id}`)}
                   >
                     <Text
@@ -571,7 +575,22 @@ const MM04Presenter = ({
                     >
                       {data.mainTitle}
                     </Text>
-                    <Text fontSize={`10px`}>{data.keyType}</Text>
+                    <Wrapper dr={`row`} ju={`space-between`} al={`flex-end`}>
+                      <Text fontSize={`10px`}>{data.keyType}</Text>
+                      <Wrapper width={`auto`} al={`flex-end`}>
+                        <Text
+                          fontSize={`15px`}
+                          color={`#C50000`}
+                          lineHeight={`1`}
+                          fontWeight={`bold`}
+                        >
+                          40.00USD
+                        </Text>
+                        <Text fontSize={`10px`} color={`#a5a5a5`}>
+                          MMP 80.00USD
+                        </Text>
+                      </Wrapper>
+                    </Wrapper>
                   </BoxImage>
                 );
               })

@@ -67,7 +67,9 @@ const MM17Presenter = ({
   temp9Ref,
   temp10Ref,
 }) => {
-  useTitle(`USB보안의 완성 | ${process.env["HOMEPAGE_NAME"]}`);
+  useTitle(
+    `PRO_Global_Completion of USB Security | ${process.env["HOMEPAGE_NAME"]}`
+  );
 
   const [pageY, setPageY] = useState(0);
   const [testTop, setTestTop] = useState(90);
@@ -473,45 +475,69 @@ const MM17Presenter = ({
 
       <Wrapper
         bgColor={width < 700 ? `none` : Theme.greyTheme3_C}
-        height={width < 700 ? `auto` : `380px`}
+        height={width < 700 ? `auto` : `300px`}
       >
         <RsWrapper>
           <Wrapper
-            transform={width < 700 ? `` : `scale(${scale1})`}
-            height={width < 700 ? `280px` : `150%`}
+            // transform={width < 700 ? `` : `scale(${scale1})`}
+            height={width < 700 ? `280px` : `100%`}
             color={Theme.white_C}
-            bgSize={width < 700 ? `cover` : `1300px`}
-            bgImg={
-              width < 700
-                ? `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2FbgImg.png?alt=media&token=6710cec1-200d-45e0-a720-951ae2f5b83d")`
-                : `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2FPRO_Local_USB%20%E1%84%87%E1%85%A9%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%20%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%89%E1%85%A5%E1%86%BC_0.3mm.png?alt=media&token=3c950a31-c661-4814-b490-1aa95c1c37fd")`
-            }
-            attachment={`initial`}
-            margin={width < 700 ? `-55px 0 0` : `-150px 0 0`}
+            // bgSize={width < 700 ? `cover` : `1300px`}
+            // bgImg={
+            //   width < 700
+            //     ? `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2FbgImg.png?alt=media&token=6710cec1-200d-45e0-a720-951ae2f5b83d")`
+            //     : `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2FPRO_Local_USB%20%E1%84%87%E1%85%A9%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%20%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%89%E1%85%A5%E1%86%BC_0.3mm.png?alt=media&token=3c950a31-c661-4814-b490-1aa95c1c37fd")`
+            // }
+            // attachment={`initial`}
+            // bgPosition={`center 43%`}
+            margin={width < 700 ? `-55px 0 0` : `-100px 0 0`}
             isRelative={true}
             ref={temp2Ref}
+            transition={`all 1.5s`}
           >
+            <Image
+              isAbsolute={true}
+              top={`0`}
+              left={`27%`}
+              transform={width < 700 ? `` : `scale(${scale1})`}
+              width={`46%`}
+              alt="usb"
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2Fusb.svg?alt=media&token=659fa47e-d6f3-4683-915f-83e50b33f8e3`}
+            />
             <Wrapper
               display={width < 700 ? `none` : `flex`}
               isAbsolute={true}
               top={`${testTop}%`}
               left={`0`}
             >
-              <Text fontSize={width < 700 ? `20px` : `29px`} opacity={isView}>
+              <Text
+                fontSize={width < 700 ? `20px` : `29px`}
+                lineHeight={`1`}
+                opacity={isView}
+              >
                 Enhanced Security.
               </Text>
               <Text
                 fontSize={width < 700 ? `20px` : `29px`}
-                margin={`0 0 20px`}
+                margin={`0 0 10px`}
                 opacity={isView}
               >
                 Exceptionally thin Key Hole.
               </Text>
 
-              <Text fontSize={width < 700 ? `18px` : `21px`} opacity={isView}>
+              <Text
+                fontSize={width < 700 ? `18px` : `21px`}
+                fontWeight={`400`}
+                opacity={isView}
+                lineHeight={`1`}
+              >
                 Tamper-proof key hole, designed to
               </Text>
-              <Text fontSize={width < 700 ? `18px` : `21px`} opacity={isView}>
+              <Text
+                fontSize={width < 700 ? `18px` : `21px`}
+                fontWeight={`400`}
+                opacity={isView}
+              >
                 prevent removal with foreign objects.
               </Text>
             </Wrapper>
@@ -573,8 +599,8 @@ const MM17Presenter = ({
       <Wrapper
         isRelative={true}
         ref={temp8Ref}
-        height={width < 700 ? `600px` : `110vh`}
-        padding={width < 700 ? `0 0 130px` : `100px 0 200px`}
+        height={width < 700 ? `600px` : `auto`}
+        padding={width < 700 ? `0 0 130px` : `100px 0 150px`}
       >
         <Wrapper
           isAbsolute={true}
@@ -1077,7 +1103,7 @@ const MM17Presenter = ({
 
       <Wrapper
         display={width < 900 ? `none` : `flex`}
-        padding={`140px 0 55px`}
+        padding={`140px 0`}
         attachment={`initial`}
         bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2Fbg.png?alt=media&token=9316bd80-325b-44b3-8477-4e7990a8e44d")`}
         ref={temp6Ref}
@@ -1097,7 +1123,7 @@ const MM17Presenter = ({
         <RsWrapper ju={`space-between`}>
           <Wrapper>
             <Image
-              width={width < 900 ? `290px` : `486px`}
+              width={width < 900 ? `290px` : `585px`}
               alt="svg"
               src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2FUniversal%20Lock%20Key.svg?alt=media&token=f531658c-f34f-42b1-838b-2cc78e0e14a3`}
             />

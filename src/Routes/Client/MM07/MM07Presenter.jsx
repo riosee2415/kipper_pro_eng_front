@@ -8,6 +8,7 @@ import {
   Text,
   Image,
   EmptyList,
+  Image2,
 } from "../../../Components/CommonComponents";
 import styled from "styled-components";
 import { withResizeDetector } from "react-resize-detector";
@@ -38,8 +39,8 @@ const SearchInput = styled(TextInput)`
 const BoxImage = styled(Wrapper)`
   width: calc(100% / 4);
   height: 300px;
-  border-left: 1px solid rgb(216, 216, 216);
   border-bottom: 1px solid rgb(216, 216, 216);
+  border-right: 1px solid rgb(216, 216, 216);
   align-items: flex-start;
   justify-content: space-between;
   padding: 10px 15px;
@@ -50,11 +51,14 @@ const BoxImage = styled(Wrapper)`
     border-top: 1px solid rgb(216, 216, 216);
   }
 
-  &:nth-child(4n) {
-    border-right: 1px solid rgb(216, 216, 216);
+  &:nth-child(4n + 1) {
+    border-left: 1px solid rgb(216, 216, 216);
   }
-  &:last-child {
-    border-right: 1px solid rgb(216, 216, 216);
+  &:first-child {
+    border-left: 1px solid rgb(216, 216, 216);
+  }
+  &:hover {
+    background-image: ${(props) => props.bgImg2};
   }
 
   @media (max-width: 900px) {
@@ -67,16 +71,16 @@ const BoxImage = styled(Wrapper)`
       border-top: none;
     }
 
-    &:nth-child(4n) {
-      border-right: none;
+    &:nth-child(4n + 1) {
+      border-left: none;
     }
 
     &:nth-child(-n + 2) {
       border-top: 1px solid rgb(216, 216, 216);
     }
 
-    &:nth-child(2n) {
-      border-right: 1px solid rgb(216, 216, 216);
+    &:nth-child(2n + 1) {
+      border-left: 1px solid rgb(216, 216, 216);
     }
   }
 `;
@@ -96,7 +100,7 @@ const MM07Presenter = ({
   changeSubTypeHandler,
   searchDataHandler,
 }) => {
-  useTitle(`기타포트 물리보안 | ${process.env["HOMEPAGE_NAME"]}`);
+  useTitle(`Other Port Security | ${process.env["HOMEPAGE_NAME"]}`);
 
   return (
     <WholeWrapper>
@@ -123,7 +127,7 @@ const MM07Presenter = ({
                 margin={`0 0 5px`}
               />
             </Wrapper>
-            <Text fontSize={`12px`}>USB 물리보안</Text>
+            <Text fontSize={`12px`}>USB Security</Text>
           </Wrapper>
           <Wrapper
             width={`auto`}
@@ -141,7 +145,7 @@ const MM07Presenter = ({
                 margin={`0 0 5px`}
               />
             </Wrapper>
-            <Text fontSize={`12px`}>네트워크 물리보안</Text>
+            <Text fontSize={`12px`}>Network Security</Text>
           </Wrapper>
           <Wrapper
             width={`auto`}
@@ -160,7 +164,7 @@ const MM07Presenter = ({
               />
             </Wrapper>
             <Text fontSize={`12px`} fontWeight={`700`} color={`rgb(209, 0, 0)`}>
-              기타포트 물리보안
+              Other Port Security
             </Text>
           </Wrapper>
           <Wrapper
@@ -179,7 +183,7 @@ const MM07Presenter = ({
                 margin={`0 0 5px`}
               />
             </Wrapper>
-            <Text fontSize={`12px`}>컴퓨터 물리보안</Text>
+            <Text fontSize={`12px`}>Anti-Theft for Computer</Text>
           </Wrapper>
           <Wrapper
             width={`auto`}
@@ -197,7 +201,7 @@ const MM07Presenter = ({
                 margin={`0 0 5px`}
               />
             </Wrapper>
-            <Text fontSize={`12px`}>락키 PRO</Text>
+            <Text fontSize={`12px`}>Lock Key PRO</Text>
           </Wrapper>
         </Wrapper>
 
@@ -230,7 +234,7 @@ const MM07Presenter = ({
                     margin={`0 0 5px`}
                   />
                 </Wrapper>
-                <Text fontSize={`10px`}>컴퓨터 물리보안</Text>
+                <Text fontSize={`10px`}>Anti-Theft for Computer</Text>
               </Wrapper>
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 2)`}
@@ -247,7 +251,7 @@ const MM07Presenter = ({
                     margin={`0 0 5px`}
                   />
                 </Wrapper>
-                <Text fontSize={`10px`}>락키 PRO</Text>
+                <Text fontSize={`10px`}>Lock Key PRO</Text>
               </Wrapper>
             </>
           ) : (
@@ -267,7 +271,7 @@ const MM07Presenter = ({
                     margin={`0 0 5px`}
                   />
                 </Wrapper>
-                <Text fontSize={`10px`}>USB 물리보안</Text>
+                <Text fontSize={`10px`}>USB Security</Text>
               </Wrapper>
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 3)`}
@@ -284,7 +288,7 @@ const MM07Presenter = ({
                     margin={`0 0 5px`}
                   />
                 </Wrapper>
-                <Text fontSize={`10px`}>네트워크 물리보안</Text>
+                <Text fontSize={`10px`}>Network Security</Text>
               </Wrapper>
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 3)`}
@@ -306,7 +310,7 @@ const MM07Presenter = ({
                   fontWeight={`700`}
                   color={`rgb(209, 0, 0)`}
                 >
-                  기타포트 물리보안
+                  Other Port Security
                 </Text>
               </Wrapper>
             </>
@@ -388,10 +392,10 @@ const MM07Presenter = ({
                 <Wrapper width={width < 900 ? `35px` : `215px`}></Wrapper>
                 <Wrapper
                   width={
-                    width < 900 ? `calc(100% - 70px)` : `calc(100% - 430px)`
+                    width < 900 ? `calc(100% - 80px)` : `calc(100% - 430px)`
                   }
                   dr={`row`}
-                  ju={`space-between`}
+                  ju={width < 900 ? `center` : `space-between`}
                 >
                   {/* <ProductTypeSlider /> */}
                   <Wrapper
@@ -417,7 +421,7 @@ const MM07Presenter = ({
                     width={`auto`}
                     cursor={`pointer`}
                     onClick={() => changeSubTypeHandler(`Input/Output`)}
-                    margin={width < 900 ? `0 0 0 40px` : `0 0 0 110px`}
+                    margin={width < 900 ? `0 0 0 5px` : `0 0 0 110px`}
                   >
                     <Image
                       alt="icon"
@@ -427,7 +431,7 @@ const MM07Presenter = ({
                       isFilter={
                         productSubType.value === `Input/Output` ? false : true
                       }
-                      src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20398.png?alt=media&token=145c178d-a351-496e-9f34-2d00f16679bb`}
+                      src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2Fdrive-03.svg?alt=media&token=8d680327-ac7d-4291-bd43-dbd43c14327f`}
                     />
                     <Text
                       fontSize={`9px`}
@@ -446,7 +450,7 @@ const MM07Presenter = ({
 
                   <Wrapper
                     width={`auto`}
-                    margin={width < 900 ? ` 0 30px` : `0 130px`}
+                    margin={width < 900 ? ` 0 10px` : `0 80px`}
                     cursor={`pointer`}
                     onClick={() => changeSubTypeHandler(`Drive/Memory`)}
                   >
@@ -458,7 +462,7 @@ const MM07Presenter = ({
                       isFilter={
                         productSubType.value === `Drive/Memory` ? false : true
                       }
-                      src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20396.png?alt=media&token=73465992-9401-4cd4-b7d3-20faf3c1efb9`}
+                      src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2Fdrive-04.svg?alt=media&token=0c4ce1d6-1a46-4c84-b3cf-82d2af34c2e1`}
                     />
                     <Text
                       fontSize={`9px`}
@@ -478,8 +482,8 @@ const MM07Presenter = ({
                   <Wrapper
                     width={`auto`}
                     cursor={`pointer`}
+                    margin={width < 900 ? ` 0 5px 0 0` : `0 80px 0 0`}
                     onClick={() => changeSubTypeHandler(`Display`)}
-                    margin={width < 900 ? `0 40px 0 0px` : `0 110px 0 0`}
                   >
                     <Image
                       alt="icon"
@@ -505,6 +509,38 @@ const MM07Presenter = ({
                       Display
                     </Text>
                   </Wrapper>
+
+                  <Wrapper
+                    width={`auto`}
+                    cursor={`pointer`}
+                    onClick={() => changeSubTypeHandler(`Network`)}
+                    margin={width < 900 ? ` 0 10px 0 0` : `0 110px 0 0`}
+                  >
+                    <Image2
+                      alt="icon"
+                      width={`26px`}
+                      height={`14px`}
+                      objectFit={`contain`}
+                      isFilter={
+                        productSubType.value === `Network` ? false : true
+                      }
+                      src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2Fdrive-05.svg?alt=media&token=4b8e496b-ef62-427f-b780-30fe2a849a70`}
+                    />
+                    <Text
+                      fontSize={`9px`}
+                      fontWeight={
+                        productSubType.value === `Network` ? `700` : `300`
+                      }
+                      color={
+                        productSubType.value === `Network`
+                          ? Theme.white_C
+                          : `rgb(199, 199, 199)`
+                      }
+                    >
+                      Network
+                    </Text>
+                  </Wrapper>
+
                   <Wrapper
                     display={width < 900 ? `none` : `flex`}
                     width={`auto`}
@@ -558,7 +594,8 @@ const MM07Presenter = ({
                   <BoxImage
                     key={data._id}
                     bgImg={`url("${data.thumbnailPath}")`}
-                    onClick={() => moveLinkHandler(`/port/${data._id}`)}
+                    bgImg2={`url("${data.thumbnailPath2}")`}
+                    onClick={() => moveLinkHandler(`/usb/${data._id}`)}
                   >
                     <Text
                       fontSize={width < 700 ? `10px` : `19px`}
@@ -566,7 +603,22 @@ const MM07Presenter = ({
                     >
                       {data.mainTitle}
                     </Text>
-                    <Text fontSize={`10px`}>{data.keyType}</Text>
+                    <Wrapper dr={`row`} ju={`space-between`} al={`flex-end`}>
+                      <Text fontSize={`10px`}>{data.keyType}</Text>
+                      <Wrapper width={`auto`} al={`flex-end`}>
+                        <Text
+                          fontSize={`15px`}
+                          color={`#C50000`}
+                          lineHeight={`1`}
+                          fontWeight={`bold`}
+                        >
+                          40.00USD
+                        </Text>
+                        <Text fontSize={`10px`} color={`#a5a5a5`}>
+                          MMP 80.00USD
+                        </Text>
+                      </Wrapper>
+                    </Wrapper>
                   </BoxImage>
                 );
               })

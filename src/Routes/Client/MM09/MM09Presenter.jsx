@@ -160,7 +160,7 @@ const MM09Presenter = ({
               fontWeight={location.pathname.includes("/usb") && `700`}
               color={location.pathname.includes("/usb") && `rgb(209, 0, 0)`}
             >
-              USB 물리보안
+              USB Security
             </Text>
           </Wrapper>
           <Wrapper
@@ -190,7 +190,7 @@ const MM09Presenter = ({
                 location.pathname.includes("/p_network") && `rgb(209, 0, 0)`
               }
             >
-              네트워크 물리보안
+              Network Security
             </Text>
           </Wrapper>
           <Wrapper
@@ -218,7 +218,7 @@ const MM09Presenter = ({
               fontWeight={location.pathname.includes("/port") && `700`}
               color={location.pathname.includes("/port") && `rgb(209, 0, 0)`}
             >
-              기타포트 물리보안
+              Other Port Security
             </Text>
           </Wrapper>
           <Wrapper
@@ -248,7 +248,7 @@ const MM09Presenter = ({
                 location.pathname.includes("/computer") && `rgb(209, 0, 0)`
               }
             >
-              컴퓨터 물리보안
+              Anti-Theft for Computer
             </Text>
           </Wrapper>
           <Wrapper
@@ -276,7 +276,7 @@ const MM09Presenter = ({
               fontWeight={location.pathname.includes("/lock") && `700`}
               color={location.pathname.includes("/lock") && `rgb(209, 0, 0)`}
             >
-              락키 PRO
+              Lock Key PRO
             </Text>
           </Wrapper>
         </Wrapper>
@@ -321,7 +321,7 @@ const MM09Presenter = ({
                     location.pathname.includes("/computer") && `rgb(209, 0, 0)`
                   }
                 >
-                  컴퓨터 물리보안
+                  Anti-Theft for Computer
                 </Text>
               </Wrapper>
               <Wrapper
@@ -350,7 +350,7 @@ const MM09Presenter = ({
                     location.pathname.includes("/lock") && `rgb(209, 0, 0)`
                   }
                 >
-                  락키 PRO
+                  Lock Key PRO
                 </Text>
               </Wrapper>
             </>
@@ -380,7 +380,7 @@ const MM09Presenter = ({
                   fontWeight={location.pathname.includes("/usb") && `700`}
                   color={location.pathname.includes("/usb") && `rgb(209, 0, 0)`}
                 >
-                  USB 물리보안
+                  USB Security
                 </Text>
               </Wrapper>
               <Wrapper
@@ -409,7 +409,7 @@ const MM09Presenter = ({
                     location.pathname.includes("/p_network") && `rgb(209, 0, 0)`
                   }
                 >
-                  네트워크 물리보안
+                  Network Security
                 </Text>
               </Wrapper>
               <Wrapper
@@ -438,7 +438,7 @@ const MM09Presenter = ({
                     location.pathname.includes("/port") && `rgb(209, 0, 0)`
                   }
                 >
-                  기타포트 물리보안
+                  Other Port Security
                 </Text>
               </Wrapper>
             </>
@@ -1098,7 +1098,7 @@ const MM09Presenter = ({
           <Wrapper
             width={width < 900 ? `100%` : `50%`}
             al={`flex-start`}
-            padding={width < 700 ? `0` : `0 10px 0 50px`}
+            padding={width < 700 ? `0` : `0 50px`}
           >
             <Text
               fontSize={`18px`}
