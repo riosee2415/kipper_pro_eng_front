@@ -26,7 +26,7 @@
 | 14   | FAQ          | FAQ                         | MM13     | "/faq"       |
 | 15   | CONTACT      | 문의하기                    | MM14     | "/contact"   |
 | 16   | REFERENCE    | 자료실                      | MM15     | "/reference" |
-| 17   | MALWARE      | 악성코드                    | MM16     | "/malware"   |
+| 17   | MALWARE      | 악성코드                     | MM16     | "/malware"   |
 | 18   | SECURITY     | USB 보안의 완성             | MM17     | "/security"  |
 | 19   | MAIN         | 랜딩페이지                  | MMinit   | "/main"      |
 | 20   | NETWORK      | 네트워크 물리보안           | MM18     | "/p_network" |
