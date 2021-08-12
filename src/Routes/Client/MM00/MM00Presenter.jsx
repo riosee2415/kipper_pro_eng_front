@@ -705,34 +705,33 @@ const MM00Presenter = ({
                 margin={`0`}
                 fontSize={width < 700 ? `30px` : `48px`}
               >
-                보안성과 편의성
+                Secure but convenient.
               </CommonSubTitle>
-              <CommonSubTitle
+              {/* <CommonSubTitle
                 lineHeight={`1.2`}
                 margin={`0`}
                 fontSize={width < 700 ? `30px` : `48px`}
               >
                 두마리 토끼 모두.
-              </CommonSubTitle>
+              </CommonSubTitle> */}
             </Wrapper>
             {/* web */}
             <Wrapper al={`flex-start`} display={width < 700 ? `none` : `flex`}>
               <Text
-                fontSize={`22px`}
+                fontSize={`24px`}
                 lineHeight={`34px`}
                 color={Theme.white_C}
                 fontWeight={`300`}
               >
-                약 30여가지 잠금장치를 하나의 키로 관리할 수 있는 편의성은
+                The convenience of managing more than 40 locks with
               </Text>
               <Text
-                fontSize={`22px`}
+                fontSize={`24px`}
                 lineHeight={`34px`}
                 color={Theme.white_C}
                 fontWeight={`300`}
               >
-                오직 <SpanText fontWeight={`700`}>스마트키퍼 프로</SpanText>
-                에서만 가능합니다.
+                single key is only possible with SMARTKEEPER PRO.
               </Text>
             </Wrapper>
 
@@ -742,42 +741,56 @@ const MM00Presenter = ({
               display={width < 700 ? `none` : `flex`}
             >
               <Text
-                fontSize={`22px`}
+                fontSize={`24px`}
                 lineHeight={`34px`}
                 color={Theme.white_C}
                 fontWeight={`300`}
               >
-                동일한 ‘패턴’의 락키가 아니면 열리지 않으니 보안성은 뛰어나고!
+                In addition,
               </Text>
               <Text
-                fontSize={`22px`}
+                fontSize={`24px`}
                 lineHeight={`34px`}
                 color={Theme.white_C}
                 fontWeight={`300`}
               >
-                다른사람이 키를 쉽게 구매할수 없도록 철저한 B2B 판매절차로
-                엄격하게!
+                with hundreds of patterns of the key, superior security and
+                strict
               </Text>
               <Text
-                fontSize={`22px`}
+                fontSize={`24px`}
                 lineHeight={`34px`}
                 color={Theme.white_C}
                 fontWeight={`300`}
               >
-                물리보안의 새로운 시작, 지금 스마트키퍼로 경험해 보세요.
+                sales policy of the key through B2B non-distribution sales and
+                end-user
+              </Text>
+              <Text
+                fontSize={`24px`}
+                lineHeight={`34px`}
+                color={Theme.white_C}
+                fontWeight={`300`}
+              >
+                verification process ensures the security.
+              </Text>
+              <Text
+                fontSize={`24px`}
+                lineHeight={`34px`}
+                color={Theme.white_C}
+                fontWeight={`300`}
+                margin={`21px 0 0`}
+              >
+                Now experience a new Physical Cybersecurity Solution.
               </Text>
             </Wrapper>
             {/* mobile */}
             <Wrapper display={width < 700 ? `flex` : `none`} al={`flex-start`}>
               <Text fontSize={`18px`} fontWeight={`300`} color={Theme.white_C}>
-                약 30여가지 장금장치를 하나의 키로
+                The convenience of managing more than 40 locks with
               </Text>
               <Text fontSize={`18px`} fontWeight={`300`} color={Theme.white_C}>
-                관리할 수 있는 편의성은 오직
-              </Text>
-              <Text fontSize={`18px`} fontWeight={`300`} color={Theme.white_C}>
-                <SpanText fontWeight={`700`}>스파트키퍼 프로</SpanText>에서만
-                가능합니다.
+                single key is only possible with SMARTKEEPER PRO.
               </Text>
             </Wrapper>
 
@@ -787,22 +800,26 @@ const MM00Presenter = ({
               margin={`10px 0 0`}
             >
               <Text fontSize={`18px`} fontWeight={`300`} color={Theme.white_C}>
-                동일한 '패턴'의 락키가 아니면 열리지
+                In addition,
               </Text>
               <Text fontSize={`18px`} fontWeight={`300`} color={Theme.white_C}>
-                않으니 보안성은 뛰어나고!
+                with hundreds of patterns of the key, superior security and
+                strict
               </Text>
               <Text fontSize={`18px`} fontWeight={`300`} color={Theme.white_C}>
-                다른사람이 키를 쉽게 구매할수 없도록
+                sales policy of the key through B2B non-distribution sales and
+                end-user
               </Text>
               <Text fontSize={`18px`} fontWeight={`300`} color={Theme.white_C}>
-                철저한 B2B 판매절차로 엄격하게!
+                verification process ensures the security.
               </Text>
-              <Text fontSize={`18px`} fontWeight={`300`} color={Theme.white_C}>
-                물리보안의 새로운 시작,
-              </Text>
-              <Text fontSize={`18px`} fontWeight={`300`} color={Theme.white_C}>
-                지금 스마트키퍼로 경험해 보세요.
+              <Text
+                fontSize={`18px`}
+                fontWeight={`300`}
+                color={Theme.white_C}
+                margin={`21px 0 0`}
+              >
+                Now experience a new Physical Cybersecurity Solution.
               </Text>
             </Wrapper>
           </Wrapper>
