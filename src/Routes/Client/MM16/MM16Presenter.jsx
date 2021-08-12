@@ -146,7 +146,7 @@ const MM16Presenter = ({
               margin={`10px 0`}
             >
               <SpanText color={Theme.subTheme3_C}>
-                Malicious or criminal attack
+                Malicious or criminal attack&nbsp;
               </SpanText>
               is highest reason
             </CommonSubTitle>
@@ -159,7 +159,12 @@ const MM16Presenter = ({
               (외/내부 유포자)
             </Text> */}
 
-            <Text fontSize={`20px`} fontWeight={`700`} color={Theme.white_C}>
+            <Text
+              fontSize={`20px`}
+              fontWeight={`700`}
+              color={Theme.white_C}
+              margin={`45px 0 0`}
+            >
               Major Causes of Data Breach
             </Text>
           </Wrapper>
@@ -299,8 +304,8 @@ const MM16Presenter = ({
                 Malware Intrusion and Data Leak
               </Text>
               <CommonSubTitle fontWeight={`700`} fontSize={`35px`}>
-                <SpanText color={Theme.subTheme3_C}>Types and Means</SpanText>의
-                of Technology Leakage
+                <SpanText color={Theme.subTheme3_C}>Types and Means</SpanText>
+                &nbsp; of Technology Leakage
               </CommonSubTitle>
               <Image
                 margin={`55px 0 0`}
@@ -327,7 +332,7 @@ const MM16Presenter = ({
               color={Theme.white_C}
             >
               <SpanText color={Theme.subTheme3_C}>
-                Removable data storage
+                Removable data storage&nbsp;
               </SpanText>
               is still a major threat to security
             </CommonSubTitle>
@@ -481,7 +486,7 @@ const MM16Presenter = ({
             <Wrapper margin={`10px 0 0`} dr={`row`} ju={`space-between`}>
               <Wrapper width={`50%`} bgColor={Theme.white_C}>
                 <Image
-                  height={`460px`}
+                  height={`465px`}
                   isBlendMode={true}
                   src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2Fgraph-image-4.png?alt=media&token=bd25000d-522f-428d-af3e-69b54c2e6726`}
                 />
@@ -491,7 +496,7 @@ const MM16Presenter = ({
                 width={`45%`}
                 al={`flex-start`}
                 ju={`space-between`}
-                height={`460px`}
+                height={`465px`}
               >
                 <Wrapper al={`flex-start`}>
                   <Image
@@ -504,7 +509,7 @@ const MM16Presenter = ({
                     fontSize={`16px`}
                     margin={`20px 0`}
                     lineHeight={`1.9`}
-                    letterSpacing={`1px`}
+                    letterSpacing={`0.5px`}
                   >
                     Two US power plant networks were infected with malware that
                     was spread by a USB drive plugged in by a subcontractor, who
@@ -515,7 +520,7 @@ const MM16Presenter = ({
                     color={Theme.white_C}
                     fontSize={`16px`}
                     lineHeight={`1.9`}
-                    letterSpacing={`1px`}
+                    letterSpacing={`0.4px`}
                   >
                     The malware affected 10 PCs in the turbine management system
                     and system downtime, which caused a 3-week delay in system
@@ -539,7 +544,10 @@ const MM16Presenter = ({
                     margin={`10px 0 0`}
                     fontWeight={`600`}
                   >
-                    See articles <RiArrowRightSLine size={`20`} />
+                    See articles
+                    <Wrapper width={`auto`} padding={`5px 0 0`}>
+                      <RiArrowRightSLine size={`20`} />
+                    </Wrapper>
                   </Wrapper>
                 </ATag>
               </Wrapper>
@@ -556,7 +564,9 @@ const MM16Presenter = ({
               fontSize={`35px`}
               lineHeight={`1.5`}
             >
-              <SpanText color={Theme.subTheme3_C}>One Small Act of</SpanText>
+              <SpanText color={Theme.subTheme3_C}>
+                One Small Act of&nbsp;
+              </SpanText>
               Thoughtlessness
             </CommonSubTitle>
 
@@ -571,7 +581,7 @@ const MM16Presenter = ({
                   color={Theme.white_C}
                   fontSize={`16px`}
                   margin={`20px 0 40px`}
-                  letterSpacing={`1px`}
+                  letterSpacing={`0.4px`}
                 >
                   An example of a cyber attack designed to destroy nuclear
                   centrifuges is the Stuxnet worm attack, which infected the
@@ -585,7 +595,7 @@ const MM16Presenter = ({
                   fontWeight={`300`}
                   color={Theme.white_C}
                   fontSize={`16px`}
-                  letterSpacing={`1px`}
+                  letterSpacing={`0.4px`}
                 >
                   Many companies, including power plants, the military and
                   others, have already taken measures to prohibit the use of
@@ -632,6 +642,7 @@ const MM16Presenter = ({
                   fontSize={`16px`}
                   color={Theme.greyTheme3_C}
                   margin={`30px 0 0`}
+                  fontWeight={`300`}
                   lineHeight={`1.6`}
                 >
                   This easily accessible product is designed to rapidly collect
@@ -646,13 +657,15 @@ const MM16Presenter = ({
                 >
                   <Wrapper al={`flex-start`} margin={`10px 0 0`}>
                     <Button dr={`row`} hoverBgColor={Theme.subTheme2_C}>
-                      <Text fontWeight={`300`} color={Theme.subTheme2_C}>
+                      <Text fontWeight={`700`} color={Theme.subTheme2_C}>
                         Read More
                       </Text>
-                      <RiArrowRightSLine
-                        fontSize={`20px`}
-                        color={Theme.subTheme2_C}
-                      />
+                      <Wrapper width={`auto`} margin={`5px 0 0`}>
+                        <RiArrowRightSLine
+                          fontSize={`20px`}
+                          color={Theme.subTheme2_C}
+                        />
+                      </Wrapper>
                     </Button>
                   </Wrapper>
                 </ATag>
@@ -667,6 +680,7 @@ const MM16Presenter = ({
                   color={Theme.greyTheme3_C}
                   margin={`30px 0 0`}
                   lineHeight={`1.6`}
+                  fontWeight={`300`}
                 >
                   In one case, the owner of a local PC Cafe intentionally
                   damaged approximately 40 PCs of a competitor using the USB
@@ -683,6 +697,7 @@ const MM16Presenter = ({
                   color={Theme.greyTheme3_C}
                   margin={`30px 0 0`}
                   lineHeight={`1.6`}
+                  fontWeight={`300`}
                 >
                   Recently, in April 2019, a college student in the U.S. used a
                   USB Killer on his school system, causing $58,000 in damage.
@@ -693,15 +708,17 @@ const MM16Presenter = ({
                   href="https://www.theverge.com/2019/4/17/18412427/college-saint-rose-student-guilty-usb-killerdestroyed-computers"
                   target="_blank"
                 >
-                  <Wrapper al={`flex-start`} margin={`90px 0 0`}>
+                  <Wrapper al={`flex-start`} margin={`38px 0 0`}>
                     <Button dr={`row`} hoverBgColor={Theme.subTheme2_C}>
-                      <Text fontWeight={`300`} color={Theme.subTheme2_C}>
+                      <Text fontWeight={`700`} color={Theme.subTheme2_C}>
                         Read More
                       </Text>
-                      <RiArrowRightSLine
-                        fontSize={`20px`}
-                        color={Theme.subTheme2_C}
-                      />
+                      <Wrapper width={`auto`} margin={`5px 0 0`}>
+                        <RiArrowRightSLine
+                          fontSize={`20px`}
+                          color={Theme.subTheme2_C}
+                        />
+                      </Wrapper>
                     </Button>
                   </Wrapper>
                 </ATag>
@@ -753,14 +770,11 @@ const MM16Presenter = ({
                 </Text>
               </Wrapper>
               <Wrapper al={`flex-start`}>
-                <Button dr={`row`} hoverBgColor={Theme.subTheme2_C}>
-                  <Text fontWeight={`700`} color={Theme.subTheme2_C}>
-                    Learn more
-                  </Text>
-                  <RiArrowRightSLine
-                    fontSize={`20px`}
-                    color={Theme.subTheme2_C}
-                  />
+                <Button dr={`row`}>
+                  Learn more
+                  <Wrapper width={`auto`} margin={`5px 0 0`}>
+                    <RiArrowRightSLine fontSize={`20px`} />
+                  </Wrapper>
                 </Button>
               </Wrapper>
             </Wrapper>
@@ -798,10 +812,12 @@ const MM16Presenter = ({
                     >
                       Learn more
                     </Text>
-                    <RiArrowRightSLine
-                      fontSize={`20px`}
-                      color={Theme.white_C}
-                    />
+                    <Wrapper width={`auto`} margin={`5px 0 0`}>
+                      <RiArrowRightSLine
+                        fontSize={`20px`}
+                        color={Theme.white_C}
+                      />
+                    </Wrapper>
                   </Button>
                 </Link>
               </Wrapper>
@@ -838,10 +854,12 @@ const MM16Presenter = ({
                     >
                       Learn more
                     </Text>
-                    <RiArrowRightSLine
-                      fontSize={`20px`}
-                      color={Theme.white_C}
-                    />
+                    <Wrapper width={`auto`} margin={`5px 0 0`}>
+                      <RiArrowRightSLine
+                        fontSize={`20px`}
+                        color={Theme.white_C}
+                      />
+                    </Wrapper>
                   </Button>
                 </Link>
               </Wrapper>
@@ -1259,6 +1277,7 @@ const MM16Presenter = ({
               <Text fontSize={width < 700 ? `14px !important` : `30px`}>
                 기사보기
               </Text>
+
               <RiArrowRightSLine size={width < 700 ? `20` : `30`} />
             </Wrapper>
           </Wrapper>
