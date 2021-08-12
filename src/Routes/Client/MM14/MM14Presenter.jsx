@@ -30,6 +30,18 @@ const Dot = styled(Wrapper)`
     background: rgba(255, 255, 255, 0.5);
     animation: ${dotAni} 1.5s infinite;
     border-radius: 100%;
+
+    @media (max-width: 700px) {
+      margin-top: -10px;
+      margin-left: -10px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    width: 5px;
+    height: 5px;
   }
 `;
 
