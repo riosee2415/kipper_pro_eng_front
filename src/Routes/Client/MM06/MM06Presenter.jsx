@@ -553,7 +553,8 @@ const MM06Presenter = ({
                   <BoxImage
                     key={data._id}
                     bgImg={`url("${data.thumbnailPath}")`}
-                    onClick={() => moveLinkHandler(`/computer/${data._id}`)}
+                    bgImg2={`url("${data.thumbnailPath2}")`}
+                    onClick={() => moveLinkHandler(`/usb/${data._id}`)}
                   >
                     <Text
                       fontSize={width < 700 ? `10px` : `19px`}
@@ -561,7 +562,22 @@ const MM06Presenter = ({
                     >
                       {data.mainTitle}
                     </Text>
-                    <Text fontSize={`10px`}>{data.keyType}</Text>
+                    <Wrapper dr={`row`} ju={`space-between`} al={`flex-end`}>
+                      <Text fontSize={`10px`}>{data.keyType}</Text>
+                      <Wrapper width={`auto`} al={`flex-end`}>
+                        <Text
+                          fontSize={`15px`}
+                          color={`#C50000`}
+                          lineHeight={`1`}
+                          fontWeight={`bold`}
+                        >
+                          40.00USD
+                        </Text>
+                        <Text fontSize={`10px`} color={`#a5a5a5`}>
+                          MMP 80.00USD
+                        </Text>
+                      </Wrapper>
+                    </Wrapper>
                   </BoxImage>
                 );
               })
