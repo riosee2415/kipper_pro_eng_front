@@ -93,7 +93,7 @@ const MM16Presenter = ({
   graphValue2,
   setGraphValue2,
 }) => {
-  useTitle(`악성코드의 침입과 데이터 유출 | ${process.env["HOMEPAGE_NAME"]}`);
+  useTitle(`VIRUS INTRUSION | ${process.env["HOMEPAGE_NAME"]}`);
 
   const [isFirst, setIsFirst] = useState(false);
   const [pageY, setPageY] = useState(0);

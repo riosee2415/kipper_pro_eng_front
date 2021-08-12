@@ -48,7 +48,7 @@ const Desc = styled.p`
 `;
 
 const MM12Presenter = ({ width }) => {
-  useTitle(`스마트키퍼 웹 사이트 이용 약관 | ${process.env["HOMEPAGE_NAME"]}`);
+  useTitle(`Terms of Use | ${process.env["HOMEPAGE_NAME"]}`);
 
   return (
     <WholeWrapper bgColor={Theme.black_C} color={Theme.white_C}>

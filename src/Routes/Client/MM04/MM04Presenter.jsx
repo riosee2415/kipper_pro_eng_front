@@ -99,7 +99,7 @@ const MM04Presenter = ({
   changeSubTypeHandler,
   searchDataHandler,
 }) => {
-  useTitle(`USB 물리보안 | ${process.env["HOMEPAGE_NAME"]}`);
+  useTitle(`Completion of USB Security | ${process.env["HOMEPAGE_NAME"]}`);
 
   return (
     <WholeWrapper>

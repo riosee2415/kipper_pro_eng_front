@@ -64,7 +64,7 @@ const MM05Presenter = ({
   temp5Ref,
   temp6Ref,
 }) => {
-  useTitle(`네트워크 물리보안의 이상적 조합 | ${process.env["HOMEPAGE_NAME"]}`);
+  useTitle(`Combination of Network Security | ${process.env["HOMEPAGE_NAME"]}`);
 
   const [image, setImage] = useState(1);
   const [pageY, setPageY] = useState(0);

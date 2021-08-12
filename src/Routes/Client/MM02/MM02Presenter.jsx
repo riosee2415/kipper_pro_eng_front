@@ -77,7 +77,7 @@ const MM02Presenter = ({
   //
   moveLinkHandler,
 }) => {
-  useTitle(`스마트키퍼 프로 | ${process.env["HOMEPAGE_NAME"]}`);
+  useTitle(`SMARTKEEPER PRO | ${process.env["HOMEPAGE_NAME"]}`);
 
   const [pageY, setPageY] = useState(0);
   const [noteImg, setNoteImg] = useState(50);

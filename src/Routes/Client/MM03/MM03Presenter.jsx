@@ -43,7 +43,7 @@ const MM03Presenter = ({
   //
   moveLinkHandler,
 }) => {
-  useTitle(`적용사례 | ${process.env["HOMEPAGE_NAME"]}`);
+  useTitle(`REFERENCE(PRO) | ${process.env["HOMEPAGE_NAME"]}`);
 
   return (
     <WholeWrapper bgColor={`rgb(16, 16, 16)`} color={Theme.white_C}>

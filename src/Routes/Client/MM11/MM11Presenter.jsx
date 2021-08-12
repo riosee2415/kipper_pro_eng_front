@@ -84,7 +84,7 @@ const MM11Presenter = ({
   //
   moveLinkHandler,
 }) => {
-  useTitle(`사이트맵 | ${process.env["HOMEPAGE_NAME"]}`);
+  useTitle(`SITE MAP | ${process.env["HOMEPAGE_NAME"]}`);
 
   return (
     <WholeWrapper bgColor={`rgb(36, 36, 36)`}>

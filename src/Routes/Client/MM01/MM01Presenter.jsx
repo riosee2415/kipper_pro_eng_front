@@ -101,7 +101,7 @@ const MM01Presenter = ({
   check2Ref,
   check3Ref,
 }) => {
-  useTitle(`스마트키퍼란? | ${process.env["HOMEPAGE_NAME"]}`);
+  useTitle(`SMARTKEEPER? | ${process.env["HOMEPAGE_NAME"]}`);
 
   const value = [
     "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2Fimage-1.png?alt=media&token=d8746dbb-dbc5-4b2f-b00e-42ea76ceb0c0",

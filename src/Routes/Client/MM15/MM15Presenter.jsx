@@ -153,7 +153,7 @@ const MM15Presenter = ({
   downloadHandler,
   changeLinkHandler,
 }) => {
-  useTitle(`자료실 | ${process.env["HOMEPAGE_NAME"]}`);
+  useTitle(`Download | ${process.env["HOMEPAGE_NAME"]}`);
 
   return (
     <>
