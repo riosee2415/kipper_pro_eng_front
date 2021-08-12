@@ -137,7 +137,7 @@ const MM16Presenter = ({
               lineHeight={`1.2`}
               fontWeight={`300`}
             >
-              회사의 소중한 자산과 데이터,
+              valuable assets and data of the company,
             </Text>
             <CommonSubTitle
               fontSize={`35px`}
@@ -146,21 +146,21 @@ const MM16Presenter = ({
               margin={`10px 0`}
             >
               <SpanText color={Theme.subTheme3_C}>
-                의도 있는 유출 및 반출
+                Malicious or criminal attack
               </SpanText>
-              이 가장 높습니다.
+              is highest reason
             </CommonSubTitle>
-            <Text
+            {/* <Text
               fontSize={`14px`}
               color={Theme.white_C}
               fontWeight={`300`}
               margin={`0 0 25px`}
             >
               (외/내부 유포자)
-            </Text>
+            </Text> */}
 
             <Text fontSize={`20px`} fontWeight={`700`} color={Theme.white_C}>
-              데이터 유출 주요 원인
+              Major Causes of Data Breach
             </Text>
           </Wrapper>
           <Wrapper
@@ -198,10 +198,10 @@ const MM16Presenter = ({
           {/*  */}
           <Wrapper margin={`100px 0 200px`}>
             <Text color={Theme.white_C} fontSize={`20px`}>
-              데이터유출 피해액
+              Data Leak Damage
             </Text>
             <Text color={Theme.white_C} fontSize={`14px`} margin={`0 0 15px`}>
-              (단위: $억)
+              (in 100 million dollars)
             </Text>
 
             <Wrapper al={`flex-start`}>
@@ -221,7 +221,7 @@ const MM16Presenter = ({
                   textAlign={`right`}
                   fontWeight={`700`}
                 >
-                  유출비용
+                  Leakage Cost
                 </Text>
                 <GraphWrapper
                   width={graphValue}
@@ -255,7 +255,7 @@ const MM16Presenter = ({
                   textAlign={`right`}
                   fontWeight={`700`}
                 >
-                  후속처리비용
+                  Follow-up Processign Cost
                 </Text>
                 <GraphWrapper
                   width={graphValue2}
@@ -286,7 +286,7 @@ const MM16Presenter = ({
                 fontSize={`12px`}
                 al={`flex-end`}
               >
-                출처 : Ponemon 2018 Cost of a Data breach Study
+                Source : Ponemon 2018 Cost of a Data Breach Study
               </Wrapper>
             </Wrapper>
           </Wrapper>
@@ -296,15 +296,15 @@ const MM16Presenter = ({
           <RsWrapper>
             <Wrapper margin={`100px 0`}>
               <Text fontSize={`20px`} color={Theme.white_C} fontWeight={`400`}>
-                악성코드 유입과 데이터 유출
+                Malware Intrusion and Data Leak
               </Text>
               <CommonSubTitle fontWeight={`700`} fontSize={`35px`}>
-                <SpanText color={Theme.subTheme3_C}>기술 유출</SpanText>의
-                유형과 수단
+                <SpanText color={Theme.subTheme3_C}>Types and Means</SpanText>의
+                of Technology Leakage
               </CommonSubTitle>
               <Image
                 margin={`55px 0 0`}
-                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2Fgraph-image-1.png?alt=media&token=9af4718d-385e-4745-8a9a-892a33bbbeb4`}
+                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-1.png?alt=media&token=4edebda6-b895-4dad-88a1-2b6109fc8fb7`}
               />
             </Wrapper>
           </RsWrapper>
@@ -318,7 +318,7 @@ const MM16Presenter = ({
               fontWeight={`400`}
               margin={`0 0 10px`}
             >
-              우리가 간과하고 있는 그것
+              Major Cause of Industrial System Malware
             </Text>
             <CommonSubTitle
               fontWeight={`700`}
@@ -326,13 +326,13 @@ const MM16Presenter = ({
               fontSize={`35px`}
               color={Theme.white_C}
             >
-              <SpanText color={Theme.subTheme3_C}>이동식디스크</SpanText>는
-              여전히&nbsp;
-              <SpanText color={Theme.subTheme3_C}>보안의 위협</SpanText>적
-              요소입니다.
+              <SpanText color={Theme.subTheme3_C}>
+                Removable data storage
+              </SpanText>
+              is still a major threat to security
             </CommonSubTitle>
             <Image
-              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%A2%E1%84%91%E1%85%B3-image-2.png?alt=media&token=e6f4ef15-f855-48ee-b2f9-af84fb3bf1b2`}
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-2.png?alt=media&token=f7d115e6-1868-4e2f-8d8f-2ac165a26015`}
             />
           </Wrapper>
           {/*  */}
@@ -343,14 +343,18 @@ const MM16Presenter = ({
               fontWeight={`400`}
               margin={`0 0 10px`}
             >
-              철통같은 보안을 통과하는 손쉬운 방법
+              Malware Intrusion and Data Leak
             </Text>
+
             <CommonSubTitle
               fontWeight={`700`}
               fontSize={`35px`}
-              color={Theme.subTheme3_C}
+              color={Theme.white_C}
             >
-              길에서 주운 USB,
+              <SpanText color={Theme.subTheme3_C}>
+                How many people&nbsp;
+              </SpanText>
+              would plug in a USB drive that they
             </CommonSubTitle>
             <CommonSubTitle
               fontWeight={`700`}
@@ -359,7 +363,7 @@ const MM16Presenter = ({
               color={Theme.white_C}
               lineHeight={`0.4`}
             >
-              과연 몇 명 이 꽂아볼까요?
+              picked up on the street?
             </CommonSubTitle>
             <Text
               fontSize={`20px`}
@@ -367,17 +371,18 @@ const MM16Presenter = ({
               color={Theme.white_C}
               margin={`0 0 5px`}
             >
-              길에서 주운 USB를 직원이 사내 PC에 사용한 경우
+              USB drive picked up on the street is used by an employee on an
+              in-house PC
             </Text>
             <Wrapper margin={`10px 0 0`} dr={`row`} ju={`space-between`}>
               <Image
                 width={`50%`}
-                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2Fgraph-image-3.png?alt=media&token=b6c74fb4-172f-441f-91ff-4d7791225ff2`}
+                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-3.png?alt=media&token=de0e4a82-53f7-40d1-9a71-a8384b4a0397`}
               />
               <Wrapper
                 width={`48%`}
                 bgColor={Theme.greyTheme10_C}
-                padding={`55px`}
+                padding={`48px 55px`}
                 height={`464px`}
                 al={`flex-start`}
                 ju={`space-between`}
@@ -388,12 +393,22 @@ const MM16Presenter = ({
                     fontSize={`16px`}
                     lineHeight={`1.8`}
                     fontWeight={`300`}
+                    letterSpacing={`0.7px`}
                   >
-                    2011년, 미 국토보안부(U.S. Department of Homeland Security)
-                    US-CERT (U.S. Computer Emergency Readiness Team) 에서 보안부
-                    직원들을 대상으로 한 가지 실험을 했습니다.
+                    In 2011, the US Department of Homeland Security US-CERT
+                    (United States Computer Emergency Readiness Team) conducted
+                    an experiment on security staff. ‘How easily hackers can
+                    access the system through employees’. The experiment was to
+                    drop a USB drive into the parking lot of the security
+                    department and see if the employees were using it on the
+                    in-house PC. What was the result? About 60% of them used a
+                    USB drive which fell to the ground, and 90% used a USB drive
+                    or CD with official logo of DHS. “I forgot all the risks
+                    that there might be malware in the USB and used it on my
+                    PC.” The biggest security vulnerability is the employee’s
+                    “idiocy”.
                   </Text>
-                  <Text
+                  {/* <Text
                     color={Theme.white_C}
                     fontSize={`16px`}
                     lineHeight={`1.8`}
@@ -421,7 +436,7 @@ const MM16Presenter = ({
                     fontWeight={`300`}
                   >
                     ‘멍청함’(Idiocy) 이라고 이야기 하더군요.
-                  </Text>
+                  </Text> */}
                 </Wrapper>
                 <ATag
                   width={`auto`}
@@ -432,7 +447,7 @@ const MM16Presenter = ({
                     color={Theme.subTheme2_C}
                     borderBottom={`1px solid ${Theme.subTheme2_C}`}
                   >
-                    출처 : Bloomberg
+                    Source : Bloomberg
                   </Text>
                 </ATag>
               </Wrapper>
@@ -441,7 +456,7 @@ const MM16Presenter = ({
           {/*  */}
           <Wrapper margin={`100px 0`}>
             <Text fontSize={`20px`} color={Theme.white_C}>
-              누가, 언제, 어디서 감염된 기기를 꽂을지 모르는 두려움
+              Malware Intrusion and Data Leak
             </Text>
             <CommonSubTitle
               fontWeight={`700`}
@@ -449,22 +464,24 @@ const MM16Presenter = ({
               color={Theme.white_C}
               lineHeight={`1.4`}
             >
-              단 한 번이
+              A Single Malware Infection
             </CommonSubTitle>
             <CommonSubTitle
               fontWeight={`700`}
               margin={`0 0 50px`}
               fontSize={`35px`}
-              color={Theme.subTheme3_C}
+              color={Theme.white_C}
               lineHeight={`0.2`}
             >
-              재앙과도 같은 피해로
+              Can Cause&nbsp;
+              <SpanText color={Theme.subTheme3_C}>Catastrophic</SpanText>
+              &nbsp;Damage
             </CommonSubTitle>
 
             <Wrapper margin={`10px 0 0`} dr={`row`} ju={`space-between`}>
               <Wrapper width={`50%`} bgColor={Theme.white_C}>
                 <Image
-                  height={`450px`}
+                  height={`460px`}
                   isBlendMode={true}
                   src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2Fgraph-image-4.png?alt=media&token=bd25000d-522f-428d-af3e-69b54c2e6726`}
                 />
@@ -474,7 +491,7 @@ const MM16Presenter = ({
                 width={`45%`}
                 al={`flex-start`}
                 ju={`space-between`}
-                height={`450px`}
+                height={`460px`}
               >
                 <Wrapper al={`flex-start`}>
                   <Image
@@ -489,11 +506,9 @@ const MM16Presenter = ({
                     lineHeight={`1.9`}
                     letterSpacing={`1px`}
                   >
-                    생산설비 점검을 위해 외주 직원이 꽂은 USB 드라이브 하나로
-                    인해 미국 2개의 전력 공장 네트워크에 Malware가 감염된 사례가
-                    있죠. 이 감염때문에 터빈 관리 시스템의 10개 PC와 시스템
-                    다운타임에 영향이 와서, 시스템 재시동만 정확히 3주 지연되는
-                    사건이 있었죠.
+                    Two US power plant networks were infected with malware that
+                    was spread by a USB drive plugged in by a subcontractor, who
+                    wanted to check on production facilities.
                   </Text>
                   <Text
                     fontWeight={`300`}
@@ -502,11 +517,14 @@ const MM16Presenter = ({
                     lineHeight={`1.9`}
                     letterSpacing={`1px`}
                   >
-                    <SpanText fontWeight={`700`}>SCADA</SpanText>(Supervisory
-                    Control and Data Acquisition) 나 ICS(Industrial Control
-                    System), 즉, 산업제어시스템에 Malware가 감염되면 즉시 장비의
-                    중단이나 원격 공격의 위험에 무방비로 노출되게 됩니다. 이
-                    경로가 이번엔 USB였지만 다른 포트로 공격해 올 수도 있죠.
+                    The malware affected 10 PCs in the turbine management system
+                    and system downtime, which caused a 3-week delay in system
+                    restart. Supervisory Control and Data Acquisition (SCADA) or
+                    Industrial Control System (ICS), that is, industrial control
+                    systems are especially vulnerable to immediate threats of
+                    machine interruption or remote attack. Malware infection
+                    path was a USB port this time, but all other open data ports
+                    were equally vulnerable.
                   </Text>
                 </Wrapper>
                 <ATag
@@ -521,7 +539,7 @@ const MM16Presenter = ({
                     margin={`10px 0 0`}
                     fontWeight={`600`}
                   >
-                    기사보기 <RiArrowRightSLine size={`20`} />
+                    See articles <RiArrowRightSLine size={`20`} />
                   </Wrapper>
                 </ATag>
               </Wrapper>
@@ -530,7 +548,7 @@ const MM16Presenter = ({
           {/*  */}
           <Wrapper margin={`100px 0`}>
             <Text color={Theme.white_C} fontSize={`20px`} fontWeight={`400`}>
-              악성코드 유입과 데이터 유출
+              Malware Intrusion and Data Leak
             </Text>
             <CommonSubTitle
               fontWeight={`700`}
@@ -538,7 +556,8 @@ const MM16Presenter = ({
               fontSize={`35px`}
               lineHeight={`1.5`}
             >
-              무심코 한 작은 행동 하나
+              <SpanText color={Theme.subTheme3_C}>One Small Act of</SpanText>
+              Thoughtlessness
             </CommonSubTitle>
 
             <Wrapper margin={`10px 0 0`} dr={`row`} ju={`space-between`}>
@@ -554,10 +573,13 @@ const MM16Presenter = ({
                   margin={`20px 0 40px`}
                   letterSpacing={`1px`}
                 >
-                  원자력시설의 원심분리기를 파괴할 목적으로 설계된 사이버 공격의
-                  대표적인 예로, 이란의 부셰르 원자력 발전소 SCADA(Supervisory
-                  Control and Data Acquisition) 시스템에 감염되었던 Stuxnet
-                  worm을 들 수 있죠.
+                  An example of a cyber attack designed to destroy nuclear
+                  centrifuges is the Stuxnet worm attack, which infected the
+                  Supervisory Control and Data Acquisition (SCADA) system at
+                  Iran’s Bushehr nuclear power plant. Through a USB drive,
+                  malicious codes spread throughout the internal network,
+                  infecting more than 60,000 PCs and halting the plant’s
+                  operation for two years.
                 </Text>
                 <Text
                   fontWeight={`300`}
@@ -565,11 +587,10 @@ const MM16Presenter = ({
                   fontSize={`16px`}
                   letterSpacing={`1px`}
                 >
-                  감염 경로는 USB 드라이브 이를 통해 악성코드는 내부망을 타고
-                  확산되어 6만대 이상의 PC를 감염시키고 2년 동안 원전 가동이
-                  중단되는 막대한 피해가 발생했어요. 발전소, 군등을 비롯한 많은
-                  조직들은 이미 보안의 해결책으로 설비와 사내에 일체의 DISK와 CD
-                  등 이동식디스크에 대한 사용금지 조치를 취하고 있습니다.
+                  Many companies, including power plants, the military and
+                  others, have already taken measures to prohibit the use of
+                  removable data storage devices such as DISK and CDs for
+                  increased cyber security.
                 </Text>
               </Wrapper>
 
@@ -585,7 +606,7 @@ const MM16Presenter = ({
           {/*  */}
           <Wrapper margin={`100px 0`}>
             <Text fontSize={`20px`} color={Theme.white_C}>
-              USB KILLER를 아시나요?
+              Do you know the USB KILLER?
             </Text>
             <CommonSubTitle
               margin={`0 0 50px`}
@@ -593,8 +614,8 @@ const MM16Presenter = ({
               fontWeight={`700`}
               lineHeight={`1.5`}
             >
-              더 보급화 되고 쉽게 구할 수 있는&nbsp;
-              <SpanText color={Theme.subTheme3_C}>공격도구</SpanText>
+              More popular and closer&nbsp;
+              <SpanText color={Theme.subTheme3_C}>attack methods</SpanText>
             </CommonSubTitle>
 
             <Wrapper
@@ -613,11 +634,10 @@ const MM16Presenter = ({
                   margin={`30px 0 0`}
                   lineHeight={`1.6`}
                 >
-                  인터넷검색만 해도 누구나 쉽게 구매할 수 있는 이 제품은, 컴퓨터
-                  내부에 DC/DC 컨버터와 컨덴서를 이용하여 전류를 모은 뒤, 110v
-                  (2.0에서는 220v)까지 승압하여 고전압을 되돌려 보내는 구조로
-                  설계되었습니다. 고전압 방어 회로가 없다면 순식간에 과유입되며,
-                  관련 회로와 부품이 전부 타버리는 동작 원리이죠.
+                  This easily accessible product is designed to rapidly collect
+                  current from the USB power source. Once fully charged, it
+                  releases the high voltage and burns all of the circuits,
+                  effectively “killing” the computer.
                 </Text>
                 <ATag
                   width={`auto`}
@@ -627,7 +647,7 @@ const MM16Presenter = ({
                   <Wrapper al={`flex-start`} margin={`10px 0 0`}>
                     <Button dr={`row`} hoverBgColor={Theme.subTheme2_C}>
                       <Text fontWeight={`300`} color={Theme.subTheme2_C}>
-                        원문보기
+                        Read More
                       </Text>
                       <RiArrowRightSLine
                         fontSize={`20px`}
@@ -648,9 +668,9 @@ const MM16Presenter = ({
                   margin={`30px 0 0`}
                   lineHeight={`1.6`}
                 >
-                  국내의 한 PC방 사장은, 경쟁 PC방의 영업방해를 목적으로
-                  40여대의 PC에 USB Killer를 삽입하여 해당 PC들의 CPU와
-                  메인보드를 의도적으로 손상시킨 사례도 있었습니다.
+                  In one case, the owner of a local PC Cafe intentionally
+                  damaged approximately 40 PCs of a competitor using the USB
+                  Killer.
                 </Text>
               </Wrapper>
 
@@ -664,9 +684,8 @@ const MM16Presenter = ({
                   margin={`30px 0 0`}
                   lineHeight={`1.6`}
                 >
-                  최근에는(2019년 4월), 미국의 한 대학생이 자신이 다니는 학교
-                  시스템에 USB Killer를 사용해 $58,000 (약 6천5백만원)의 피해를
-                  입히기도 했죠.
+                  Recently, in April 2019, a college student in the U.S. used a
+                  USB Killer on his school system, causing $58,000 in damage.
                 </Text>
 
                 <ATag
@@ -677,7 +696,7 @@ const MM16Presenter = ({
                   <Wrapper al={`flex-start`} margin={`90px 0 0`}>
                     <Button dr={`row`} hoverBgColor={Theme.subTheme2_C}>
                       <Text fontWeight={`300`} color={Theme.subTheme2_C}>
-                        원문보기
+                        Read More
                       </Text>
                       <RiArrowRightSLine
                         fontSize={`20px`}
@@ -702,10 +721,10 @@ const MM16Presenter = ({
             ></Wrapper>
             <Wrapper al={`flex-start`} padding={`0 50px`}>
               <CommonSubTitle margin={`0`} fontSize={`35px`} lineHeight={`1.2`}>
-                물리보안,
+                Physical Cyber Security,
               </CommonSubTitle>
               <CommonSubTitle margin={`0`} fontSize={`35px`} lineHeight={`1.2`}>
-                이제 선택이 아닌 필수
+                Now a must, not a choice.
               </CommonSubTitle>
               <Wrapper margin={`20px 0`} al={`flex-start`}>
                 <Text
@@ -714,7 +733,7 @@ const MM16Presenter = ({
                   lineHeight={`1.4`}
                   fontWeight={`400`}
                 >
-                  사례는 점점 늘어날 것이고, 기업의 피해액은 더 커지겠죠.
+                  There will be more and more cases similar to these,
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -722,7 +741,7 @@ const MM16Presenter = ({
                   lineHeight={`1.4`}
                   fontWeight={`400`}
                 >
-                  보안문제는 소프트웨어나 단순 교육만으로 해결되지 않습니다.
+                  and the damage to companies will increase.
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -730,13 +749,13 @@ const MM16Presenter = ({
                   lineHeight={`1.4`}
                   fontWeight={`400`}
                 >
-                  이제 물리적 보안은 선택이 아니라 필수가 되었습니다.
+                  Do you still think cyber security is just about software?
                 </Text>
               </Wrapper>
               <Wrapper al={`flex-start`}>
                 <Button dr={`row`} hoverBgColor={Theme.subTheme2_C}>
                   <Text fontWeight={`700`} color={Theme.subTheme2_C}>
-                    더 알아보기
+                    Learn more
                   </Text>
                   <RiArrowRightSLine
                     fontSize={`20px`}
@@ -762,11 +781,11 @@ const MM16Presenter = ({
                   fontWeight={`300`}
                   color={Theme.white_C}
                 >
-                  USB 포트의 보안
+                  USB Port Security
                 </Text>
                 <Wrapper al={`flex-start`}>
-                  <SubTitle>포트보안의 시작점,</SubTitle>
-                  <SubTitle>물리보안으로 종결.</SubTitle>
+                  <SubTitle>Starting point of Port Security,</SubTitle>
+                  <SubTitle>End it with Physical Security.</SubTitle>
                 </Wrapper>
                 <Link to="/security">
                   <Button
@@ -777,7 +796,7 @@ const MM16Presenter = ({
                       fontWeight={width < 700 ? `700` : `500`}
                       color={Theme.white_C}
                     >
-                      더 알아보기
+                      Learn more
                     </Text>
                     <RiArrowRightSLine
                       fontSize={`20px`}
@@ -802,11 +821,11 @@ const MM16Presenter = ({
                   fontWeight={`300`}
                   color={Theme.white_C}
                 >
-                  네트워크 보안의 필수 조합
+                  The essential combination of network security
                 </Text>
                 <Wrapper al={`flex-start`}>
-                  <SubTitle>네트워크와 인트라넷,</SubTitle>
-                  <SubTitle>사내 모든 자산으로의 통로.</SubTitle>
+                  <SubTitle>Network &#38; Intranet :</SubTitle>
+                  <SubTitle>Pathway to all assets within</SubTitle>
                 </Wrapper>
                 <Link to="/network">
                   <Button
@@ -817,7 +836,7 @@ const MM16Presenter = ({
                       fontWeight={width < 700 ? `700` : `500`}
                       color={Theme.white_C}
                     >
-                      더 알아보기
+                      Learn more
                     </Text>
                     <RiArrowRightSLine
                       fontSize={`20px`}
@@ -839,7 +858,7 @@ const MM16Presenter = ({
               fontSize={width < 700 ? `14px !important` : `22px`}
               color={Theme.white_C}
             >
-              회사의 소중한 자산과 데이터,
+              valuable assets and data of the company,
             </Text>
             <CommonSubTitle
               margin={`10px 0 0`}
@@ -848,8 +867,8 @@ const MM16Presenter = ({
               color={Theme.subTheme3_C}
               lineHeight={`1.4`}
             >
-              의도 있는 유출 및 반출
-              <SpanText color={Theme.white_C}>이</SpanText>
+              Malicious or criminal attack
+              {/* <SpanText color={Theme.white_C}>이</SpanText> */}
             </CommonSubTitle>
             <CommonSubTitle
               margin={`0 0 5px`}
@@ -857,16 +876,16 @@ const MM16Presenter = ({
               fontWeight={`700`}
               color={Theme.white_C}
             >
-              가장 높습니다.
+              is highest reason
             </CommonSubTitle>
 
-            <Text
+            {/* <Text
               color={Theme.greyTheme7_C}
               fontSize={width < 700 ? `12px !important` : `20px`}
               margin={`0 0 50px`}
             >
               (외/내부 유포자)
-            </Text>
+            </Text> */}
 
             <Text
               fontSize={width < 700 ? `20px !important` : `40px`}
@@ -874,7 +893,8 @@ const MM16Presenter = ({
               margin={`6px 0 44px`}
               fontWeight={`300`}
             >
-              <SpanText fontWeight={`700`}>데이터 유출</SpanText> 주요 원인
+              Major Causes of Data Breach
+              {/* <SpanText fontWeight={`700`}>데이터 유출</SpanText> 주요 원인 */}
             </Text>
 
             <Wrapper isRelative={true}>
@@ -913,9 +933,9 @@ const MM16Presenter = ({
               color={Theme.white_C}
               margin={width < 700 ? `100px 0 27px` : `150px 0 40px`}
             >
-              데이터유출 피해액
+              Data Leak Damage
               <SpanText fontSize={width < 700 ? `12px !important` : `20px`}>
-                &nbsp;(단위: $억)
+                &nbsp;(in 100 million dollars)
               </SpanText>
             </Text>
 
@@ -941,7 +961,7 @@ const MM16Presenter = ({
                   width={width < 700 ? `67px` : `100px`}
                   textAlign={`right`}
                 >
-                  유출비용
+                  Leakage Cost
                 </Text>
                 <GraphWrapper
                   width={graphValue}
@@ -979,7 +999,7 @@ const MM16Presenter = ({
                   width={width < 700 ? `67px` : `100px`}
                   textAlign={`right`}
                 >
-                  후속처리비용
+                  Follow-up Processign Cost
                 </Text>
                 <GraphWrapper
                   width={graphValue2}
@@ -1018,7 +1038,7 @@ const MM16Presenter = ({
                 fontSize={width < 700 ? `12px !important` : `20px`}
                 fontWeight={`300`}
               >
-                출처 : Ponemon 2018 Cost of a Data breach Study
+                Source : Ponemon 2018 Cost of a Data Breach Study
               </Text>
             </Wrapper>
           </Wrapper>
@@ -1031,7 +1051,7 @@ const MM16Presenter = ({
             fontWeight={`400`}
             margin={`50px 0 5px`}
           >
-            악성코드 유입과 데이터 유출
+            Malware Intrusion and Data Leak
           </Text>
           <CommonSubTitle
             fontWeight={`700`}
@@ -1462,7 +1482,7 @@ const MM16Presenter = ({
                   fontSize={width < 700 ? `14px !important` : `30px`}
                   fontWeight={`700`}
                 >
-                  더 알아보기
+                  Learn more
                 </Text>
                 <RiArrowRightSLine size={width < 700 ? `20` : `30`} />
               </Wrapper>
