@@ -670,6 +670,30 @@ export const CommonSubTitle = styled.h2`
       : `'Noto Sans KR', sans-serif`};
 `;
 
+export const CommonSubTitle2 = styled.h2`
+  width: ${(props) => props.width};
+  font-size: ${(props) => props.fontSize || `60px`};
+  font-weight: ${(props) => props.fontWeight || `900`};
+  color: ${(props) => props.color};
+  position: relative;
+  margin: ${(props) => props.margin || `0 0 25px`};
+  display: ${(props) => props.display || `flex`};
+  align-items: center;
+  color: ${(props) => props.color || `${props.theme.blackTheme2_C}`};
+  line-height: ${(props) => props.lineHeight};
+  text-shadow: ${(props) => props.shadow};
+
+  font-family: ${(props) =>
+    props.isGotham
+      ? `'Gotham Black', sans-serif`
+      : `'Noto Sans KR', sans-serif`};
+
+  @media (max-width: 700px) {
+    font-size: 30px;
+    margin: 0 0 15px;
+  }
+`;
+
 export const SubjectTitle = styled.h3`
   width: ${(props) => props.width};
   display: ${(props) => props.display};

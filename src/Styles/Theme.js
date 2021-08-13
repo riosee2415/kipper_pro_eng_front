@@ -25,6 +25,10 @@ export default {
   greyTheme9_C: "#707070",
   greyTheme10_C: "#1A1A1A",
 
+  essGrey_C: "#F8F8F8",
+  essGrey2_C: "#C6C6C6",
+  essGrey3_C: "#0062B0",
+
   blackTheme1_C: "#1E1E20",
   blackTheme2_C: "#101010",
 

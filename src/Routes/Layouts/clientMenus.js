@@ -81,6 +81,25 @@ export const menus = [
   },
 ];
 
+export const essmMenus = [
+  {
+    menuName: "Basic Series",
+    menuLink: "/basic",
+  },
+  {
+    menuName: "Mini Series",
+    menuLink: "/mini",
+  },
+  {
+    menuName: "Keyless Devices",
+    menuLink: "/product",
+  },
+  {
+    menuName: "Lock Key ESS",
+    menuLink: "/lock",
+  },
+];
+
 export const footerMenus = [
   {
     menuName: "SMARTKEEPER",
