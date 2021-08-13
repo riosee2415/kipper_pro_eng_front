@@ -229,10 +229,18 @@ const MM05Presenter = ({
         >
           <Wrapper width={width < 700 ? `auto` : `60%`} al={`flex-start`}>
             <Image
+              display={width < 700 ? `none` : `flex`}
               width={`70%`}
               alt="Network
               Port Lock Plus-font"
-              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2FNetwork%20Port%20Lock%20Plus.svg?alt=media&token=295ca128-394e-4791-b89c-e31aa9af2297`}
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2FNetwork%20Port%20Lock%20Plus_%E1%84%82%E1%85%A6%E1%84%90%E1%85%B3%E1%84%8B%E1%85%AF%E1%84%8F%E1%85%B3%E1%84%86%E1%85%AE%E1%86%AF%E1%84%85%E1%85%B5%E1%84%87%E1%85%A9%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A1%E1%86%BC%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%8C%E1%85%A9%E1%84%92%E1%85%A1%E1%86%B8.svg?alt=media&token=2cd6024a-fcb9-4380-9fa9-e1f5e6cd3669`}
+            />
+            <Image
+              display={width < 700 ? `flex` : `none`}
+              width={`70%`}
+              alt="Network
+              Port Lock Plus-font"
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2FNetwork%20Port%20Lock%20Plus_M_%E1%84%82%E1%85%A6%E1%84%90%E1%85%B3%E1%84%8B%E1%85%AF%E1%84%8F%E1%85%B3%E1%84%86%E1%85%AE%E1%86%AF%E1%84%85%E1%85%B5%E1%84%87%E1%85%A9%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A1%E1%86%BC%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%8C%E1%85%A9%E1%84%92%E1%85%A1%E1%86%B8.svg?alt=media&token=9013366c-7609-4076-8f79-023bcbe5f93f`}
             />
 
             <Text
@@ -556,7 +564,7 @@ const MM05Presenter = ({
               width={width < 900 ? `304px` : `600px`}
               margin={width < 900 ? `60px 0 10px` : `0 0 30px`}
               alt="link lock-font"
-              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2FLAN%20Cable%20Lock%20Plus.svg?alt=media&token=0eb01f04-41a6-402c-954d-a8a1032437c0`}
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2FLAN%20Cable%20Lock%20Plus_%E1%84%82%E1%85%A6%E1%84%90%E1%85%B3%E1%84%8B%E1%85%AF%E1%84%8F%E1%85%B3%E1%84%86%E1%85%AE%E1%86%AF%E1%84%85%E1%85%B5%E1%84%87%E1%85%A9%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A1%E1%86%BC%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%8C%E1%85%A9%E1%84%92%E1%85%A1%E1%86%B8.svg?alt=media&token=d80fc395-8b9e-4a52-9ed9-fe315c71737b`}
             />
             <Wrapper
               al={`flex-start`}
@@ -799,7 +807,7 @@ const MM05Presenter = ({
               with products of matching pattern.
             </Text>
 
-            <Link to="/lock/6106a4c1284536707ffa20d9">
+            <Link to="/lock/6114b080e48e2e29f6cd570b">
               <ArrowIcon fontWeight={`bold`}>
                 Learn more about Universal Lock Key
                 <FaChevronRight />
@@ -857,7 +865,7 @@ const MM05Presenter = ({
             <Text fontWeight={`400`} margin={`0 0 30px`}>
               with products of matching pattern.
             </Text>
-            <Link to="/lock/6106a4c1284536707ffa20d9">
+            <Link to="/lock/6114b080e48e2e29f6cd570b">
               <ArrowIcon fontWeight={`bold`}>
                 Learn more about Universal Lock Key
                 <FaChevronRight />
