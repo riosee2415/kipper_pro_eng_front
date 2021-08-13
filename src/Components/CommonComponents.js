@@ -1133,7 +1133,6 @@ export const Image = styled.img`
 
   transform: ${(props) => props.transform};
 
-
   &:hover {
     filter: ${(props) => (props.isHover ? `brightness(100%) opacity(1)` : ` `)};
 
@@ -1152,6 +1151,29 @@ export const Image = styled.img`
         ? `-15px -20px ${props.theme.lightBasicTheme_c};`
         : ``};
   }
+`;
+
+export const Image2 = styled.img`
+  display: ${(props) => props.display};
+  width: ${(props) => props.width || `100%`};
+  min-width: ${(props) => props.minWidth};
+  height: ${(props) => props.height || `auto`};
+  margin: ${(props) => props.margin};
+  cursor: ${(props) => props.cursor};
+  transform: ${(props) => props.transform};
+  object-fit: ${(props) => props.objectFit || `cover`};
+  position: ${(props) => (props.isAbsolute ? `absolute` : ``)};
+  position: ${(props) => (props.isRelative ? `relative` : ``)};
+  box-shadow: ${(props) => props.shadow};
+  border-radius: ${(props) => props.radius};
+  z-index: ${(props) => props.zIndex};
+  top: ${(props) => props.top};
+  left: ${(props) => props.left};
+  bottom: ${(props) => props.bottom};
+  right: ${(props) => props.right};
+  transition: ${(props) => props.delay || `0.3s`};
+  filter: ${(props) =>
+    props.isFilter ? `brightness(600) opacity(0.5)` : `brightness(600)`};
 `;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
