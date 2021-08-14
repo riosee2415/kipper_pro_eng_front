@@ -84,19 +84,19 @@ export const menus = [
 export const essmMenus = [
   {
     menuName: "Basic Series",
-    menuLink: "/basic",
+    menuLink: "https://schoolhealing2.co.kr/#/basic",
   },
   {
     menuName: "Mini Series",
-    menuLink: "/mini",
+    menuLink: "https://schoolhealing2.co.kr/#/mini",
   },
   {
     menuName: "Keyless Devices",
-    menuLink: "/product",
+    menuLink: "https://schoolhealing2.co.kr/#/product",
   },
   {
     menuName: "Lock Key ESS",
-    menuLink: "/lock",
+    menuLink: "https://schoolhealing2.co.kr/#/lock",
   },
 ];
 

@@ -236,19 +236,19 @@ const Footer = ({ width, location }) => {
                 onChange={(e) => fileDownloadHandler(e.target.value)}
               >
                 <ComboOption value={null}>Choose a Catalogue</ComboOption>
-                <ComboOption value={0}>스마트키퍼 표준제안서 국문</ComboOption>
-                <ComboOption value={1}>스마트키퍼 표준제안서 영문</ComboOption>
-                <ComboOption value={2}>
-                  스마트키퍼 프로 카탈로그 국문
+                <ComboOption value={0}>
+                  SmartKeeper Product Introduction_KR_R1
                 </ComboOption>
-                <ComboOption value={3}>
-                  스마트키퍼 프로 카탈로그 영문
+                <ComboOption value={1}>
+                  SmartKeeper Product Introduction_EN_R1
                 </ComboOption>
+                <ComboOption value={2}>SMARTKEEPR_PRO_Catalogue_KR</ComboOption>
+                <ComboOption value={3}>SMARTKEEPR_PRO_Catalogue_EN</ComboOption>
                 <ComboOption value={4}>
-                  스마트키퍼 에센셜 카탈로그 국문
+                  SMARTKEEPR_ESSENTIAL_Catalogue_KR
                 </ComboOption>
                 <ComboOption value={5}>
-                  스마트키퍼 에센셜 카탈로그 영문
+                  SMARTKEEPR_ESSENTIAL_Catalogue_EN
                 </ComboOption>
               </Combo>
               {/* <Wrapper width={`18px`} height={`18px`} bgColor={Theme.white_C}>
@@ -464,19 +464,19 @@ const Footer = ({ width, location }) => {
                 onChange={(e) => fileDownloadHandler(e.target.value)}
               >
                 <ComboOption value={null}>Choose a Catalogue</ComboOption>
-                <ComboOption value={0}>스마트키퍼 표준제안서 국문</ComboOption>
-                <ComboOption value={1}>스마트키퍼 표준제안서 영문</ComboOption>
-                <ComboOption value={2}>
-                  스마트키퍼 프로 카탈로그 국문
+                <ComboOption value={0}>
+                  SmartKeeper Product Introduction_KR_R1
                 </ComboOption>
-                <ComboOption value={3}>
-                  스마트키퍼 프로 카탈로그 영문
+                <ComboOption value={1}>
+                  SmartKeeper Product Introduction_EN_R1
                 </ComboOption>
+                <ComboOption value={2}>SMARTKEEPR_PRO_Catalogue_KR</ComboOption>
+                <ComboOption value={3}>SMARTKEEPR_PRO_Catalogue_EN</ComboOption>
                 <ComboOption value={4}>
-                  스마트키퍼 에센셜 카탈로그 국문
+                  SMARTKEEPR_ESSENTIAL_Catalogue_KR
                 </ComboOption>
                 <ComboOption value={5}>
-                  스마트키퍼 에센셜 카탈로그 영문
+                  SMARTKEEPR_ESSENTIAL_Catalogue_EN
                 </ComboOption>
               </Combo>
               {/* <Wrapper

@@ -162,6 +162,9 @@ export const Wrapper = styled.div`
 
   & .react-reveal {
     width: 100%;
+  }
+
+  &.mm19 .react-reveal {
     display: flex;
     flex-direction: center;
     justify-content: center;
