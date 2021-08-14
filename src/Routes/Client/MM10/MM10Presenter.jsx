@@ -23,6 +23,14 @@ const Gotham = styled(Wrapper)`
   line-height: ${(props) => props.lineHeight};
 `;
 
+const Gotham2 = styled(SpanText)`
+  font-family: "Gotham", sans-serif;
+  font-weight: ${(props) => props.fontWeight || `800`};
+  width: auto;
+  letter-spacing: ${(props) => props.letterSpacing};
+  line-height: ${(props) => props.lineHeight};
+`;
+
 const MM10Presenter = ({ width }) => {
   useTitle(`BUSINESS | ${process.env["HOMEPAGE_NAME"]}`);
 
@@ -37,9 +45,14 @@ const MM10Presenter = ({ width }) => {
           <Text color={Theme.white_C} fontSize={`70px`}>
             Partnership at
           </Text>
-          <Gotham color={Theme.white_C} fontSize={`70px`}>
+
+          <Image
+            width={`547px`}
+            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Fmodify%2FSMARTKEEPER_Landing.svg?alt=media&token=7cb2d12f-0f34-4dc0-a15f-6c43fbdbcdf4`}
+          />
+          {/* <Gotham color={Theme.white_C} fontSize={`70px`}>
             SMARTKEEPER
-          </Gotham>
+          </Gotham> */}
         </RsWrapper>
       </Wrapper>
       {/* 1 */}
@@ -62,62 +75,69 @@ const MM10Presenter = ({ width }) => {
           </Text>
         </Wrapper>
         <RsWrapper width={`1126px`} al={`flex-start`}>
-          <Text fontSize={`45px`} color={Theme.white_C} fontWeight={`800`}>
-            Advantages of Having
+          <Text
+            fontSize={`45px`}
+            color={Theme.white_C}
+            fontWeight={`800`}
+            lineHeight={`1.4`}
+          >
+            Benefits of becoming a
           </Text>
-          <Text fontSize={`45px`} color={Theme.white_C} fontWeight={`800`}>
-            a Partnership
+          <Text
+            fontSize={`45px`}
+            color={Theme.white_C}
+            fontWeight={`800`}
+            lineHeight={`1.4`}
+          >
+            Partner
           </Text>
 
           <Wrapper al={`flex-start`} margin={`6px 0 37px`}>
             <Text color={Theme.white_C} fontSize={`20px`} fontWeight={`700`}>
-              System Physical Cybersecurity SMARTKEEPER recognized
+              <Gotham2>SMARTKEEPER</Gotham2> is a Physical Cybersecurity System
+              that is the proven choice of 3,000
             </Text>
             <Text color={Theme.white_C} fontSize={`20px`} fontWeight={`700`}>
-              by experts in various fields at more than 3,000 sites worldwide.
+              installation sites worldwide from a wide range of industries.
             </Text>
             <Text color={Theme.white_C} fontSize={`20px`} fontWeight={`700`}>
-              Make a partnership with a SMARTKEEPER to preempt distribution
-              rights in your country.
+              Become a partner with <Gotham2>SMARTKEEPER</Gotham2> to secure
+              distribution rights in your country.
             </Text>
           </Wrapper>
 
           <Wrapper al={`flex-start`}>
             <Text color={Theme.greyTheme7_C}>
-              SMARTKEEPER is the world's first physical security product that
-              started in Korea and is sold to more than 3,000 locations.
+              <Gotham2>SMARTKEEPER</Gotham2> is the world’s first complete
+              line-up of physical security products from Korea.
             </Text>
             <Text color={Theme.greyTheme7_C}>
-              From military, government, and public institutions to IT,
-              manufacturing, telecommunications, finance, medical care,
+              Deployed to more than 3,000 sites globally, SMARTKEEPER is used in
+              various industries including the military, government, IT,
             </Text>
             <Text color={Theme.greyTheme7_C}>
-              and education, companies that know the importance of information
-              all feel the need for physical security and are using SMARTKEEPER.
+              manufacturing, telecommunications, finance, medical care and
+              education. Companies that understand the need for physical
+              cybersecurity
+            </Text>
+            <Text color={Theme.greyTheme7_C}>
+              rely on SMARTKEEPER to keep their information safe.
             </Text>
           </Wrapper>
 
           <Wrapper al={`flex-start`} margin={`35px 0 40px`}>
             <Text color={Theme.greyTheme7_C}>
-              We are looking for our partners who are valued associates to
-              pioneer the global physical security market.
-            </Text>
-            <Text color={Theme.greyTheme7_C}>
-              We work with our partners, who represent our products. That's why
-              we share more revenue with our partners.
+              We are looking to partner with distributors that will enlarge
+              SMARTKEEPER’s presence in the global physical cybersecurity
+              market.
             </Text>
           </Wrapper>
 
-          <Wrapper al={`flex-start`}>
+          <Wrapper al={`flex-start`} margin={`0 0 133px`}>
             <Text color={Theme.white_C}>
-              We share our 10 years of product design and sales know-how, share
-              success stories for reference and our vision, and suggest
-              directions
+              We share with our distributors 10 years of product design &#38;
+              sales know-how, company vision and success stories from customers.
             </Text>
-            <Text color={Theme.white_C}>for moving forward together.</Text>
-          </Wrapper>
-
-          <Wrapper al={`flex-start`} margin={`35px 0  133px`}>
             <Wrapper
               dr={`row`}
               ju={`flex-start`}
@@ -129,13 +149,25 @@ const MM10Presenter = ({ width }) => {
               </Text>
               <Wrapper width={`calc(100% - 10px)`} al={`flex-start`}>
                 <Text>
-                  We help you sell more efficiently by providing original
-                  sources of various marketing materials (catalogs, websites,
-                  high-resolution images,
+                  We provide various marketing materials (catalogs, websites,
+                  high-resolution images, videos, advertisements, banners and
+                  manuals)
                 </Text>
+                <Text>for the eCommerce market.</Text>
+              </Wrapper>
+            </Wrapper>
+            <Wrapper
+              dr={`row`}
+              ju={`flex-start`}
+              color={Theme.white_C}
+              al={`flex-start`}
+            >
+              <Text color={Theme.white_C} width={`10px`}>
+                -
+              </Text>
+              <Wrapper width={`calc(100% - 10px)`} al={`flex-start`}>
                 <Text>
-                  videos, advertisements, banners, manuals) for the eCommerce
-                  market.
+                  We support localization of specific markets, if necessary.
                 </Text>
               </Wrapper>
             </Wrapper>
@@ -150,21 +182,8 @@ const MM10Presenter = ({ width }) => {
               </Text>
               <Wrapper width={`calc(100% - 10px)`} al={`flex-start`}>
                 <Text>
-                  If localization is required, we will support the work.
+                  We provide free samples of our products for testing.
                 </Text>
-              </Wrapper>
-            </Wrapper>
-            <Wrapper
-              dr={`row`}
-              ju={`flex-start`}
-              color={Theme.white_C}
-              al={`flex-start`}
-            >
-              <Text color={Theme.white_C} width={`10px`}>
-                -
-              </Text>
-              <Wrapper width={`calc(100% - 10px)`} al={`flex-start`}>
-                <Text>We provide free samples for you to touch and test.</Text>
               </Wrapper>
             </Wrapper>
           </Wrapper>
@@ -214,14 +233,14 @@ const MM10Presenter = ({ width }) => {
                   fontWeight={`700`}
                   color={Theme.white_C}
                 >
-                  SMARTKEEPER provides superior security
+                  <Gotham2>SMARTKEEPER</Gotham2> provides superior security
                 </Text>
                 <Text
                   fontSize={`20px`}
                   fontWeight={`700`}
                   color={Theme.white_C}
                 >
-                  in comparison to their competition．
+                  in comparison to their competition
                 </Text>
                 <Text
                   fontSize={`20px`}
@@ -278,13 +297,15 @@ const MM10Presenter = ({ width }) => {
         </Wrapper>
         <RsWrapper al={`flex-start`} width={`1126px`}>
           <Text fontSize={`45px`} fontWeight={`700`} color={Theme.white_C}>
-            How to Business
+            How to become a Partner
           </Text>
           <Text fontSize={`20px`} color={Theme.white_C} fontWeight={`700`}>
-            Aiming to grow together with our partners, we provide more benefits.
+            We aim to grow together with our partners by providing exceptional
+            incentives and benefits.
           </Text>
           <Text fontSize={`20px`} color={Theme.white_C} fontWeight={`700`}>
-            We look forward to contacting people who would like to work with us.
+            We look forward to hearing from people who would like to partner
+            with us.
           </Text>
           <Text fontSize={`20px`} color={Theme.white_C} fontWeight={`700`}>
             Please contact us at global_sales@comxi.com.
@@ -317,7 +338,7 @@ const MM10Presenter = ({ width }) => {
             color={Theme.white_C}
             margin={`0 0 50px`}
           >
-            Where our Partners
+            Our Partner Locations
           </Text>
           <Wrapper dr={`row`} ju={`flex-start`}>
             <Wrapper
@@ -325,18 +346,18 @@ const MM10Presenter = ({ width }) => {
               width={`250px`}
               al={`flex-start`}
               fontSize={`20px`}
-              fontWeight={`700`}
+              fontWeight={`500`}
             >
               USA
             </Wrapper>
           </Wrapper>
-          <Wrapper dr={`row`} ju={`flex-start`} margin={`50px 0`}>
+          <Wrapper dr={`row`} ju={`flex-start`} margin={`72px 0 50px`}>
             <Wrapper
               color={Theme.white_C}
               width={`250px`}
               al={`flex-start`}
               fontSize={`20px`}
-              fontWeight={`700`}
+              fontWeight={`500`}
             >
               GERMANY
             </Wrapper>
@@ -346,7 +367,7 @@ const MM10Presenter = ({ width }) => {
               width={`250px`}
               al={`flex-start`}
               fontSize={`20px`}
-              fontWeight={`700`}
+              fontWeight={`500`}
             >
               POLAND
             </Wrapper>
@@ -356,7 +377,7 @@ const MM10Presenter = ({ width }) => {
               width={`250px`}
               al={`flex-start`}
               fontSize={`20px`}
-              fontWeight={`700`}
+              fontWeight={`500`}
             >
               CZECH REPUBLIC
             </Wrapper>
@@ -366,7 +387,7 @@ const MM10Presenter = ({ width }) => {
               width={`250px`}
               al={`flex-start`}
               fontSize={`20px`}
-              fontWeight={`700`}
+              fontWeight={`500`}
             >
               SLOVAKIA
             </Wrapper>
@@ -377,7 +398,7 @@ const MM10Presenter = ({ width }) => {
               width={`250px`}
               al={`flex-start`}
               fontSize={`20px`}
-              fontWeight={`700`}
+              fontWeight={`500`}
             >
               SWEDEN
             </Wrapper>
@@ -387,45 +408,55 @@ const MM10Presenter = ({ width }) => {
               width={`250px`}
               al={`flex-start`}
               fontSize={`20px`}
-              fontWeight={`700`}
+              fontWeight={`500`}
             >
               HUNGARY
             </Wrapper>
+
+            <Wrapper
+              color={Theme.white_C}
+              width={`250px`}
+              al={`flex-start`}
+              fontSize={`20px`}
+              fontWeight={`500`}
+            >
+              NORWAY
+            </Wrapper>
           </Wrapper>
-          <Wrapper dr={`row`} ju={`flex-start`} margin={`50px 0`}>
+          <Wrapper dr={`row`} ju={`flex-start`} margin={`72px 0 50px`}>
             <Wrapper
               color={Theme.white_C}
               width={`250px`}
               al={`flex-start`}
               fontSize={`20px`}
-              fontWeight={`700`}
+              fontWeight={`500`}
             >
-              UAE
+              CHINA
             </Wrapper>
             <Wrapper
               color={Theme.white_C}
               width={`250px`}
               al={`flex-start`}
               fontSize={`20px`}
-              fontWeight={`700`}
+              fontWeight={`500`}
             >
-              KAZAKHSTAN
+              JAPAN
             </Wrapper>
             <Wrapper
               color={Theme.white_C}
               width={`250px`}
               al={`flex-start`}
               fontSize={`20px`}
-              fontWeight={`700`}
+              fontWeight={`500`}
             >
-              KYRGIZ REPUBLIC
+              SINGAPORE
             </Wrapper>
             <Wrapper
               color={Theme.white_C}
               width={`250px`}
               al={`flex-start`}
               fontSize={`20px`}
-              fontWeight={`700`}
+              fontWeight={`500`}
             >
               INDIA
             </Wrapper>
@@ -436,25 +467,7 @@ const MM10Presenter = ({ width }) => {
               width={`250px`}
               al={`flex-start`}
               fontSize={`20px`}
-              fontWeight={`700`}
-            >
-              SINGAPORE
-            </Wrapper>
-            <Wrapper
-              color={Theme.white_C}
-              width={`250px`}
-              al={`flex-start`}
-              fontSize={`20px`}
-              fontWeight={`700`}
-            >
-              THAILAND
-            </Wrapper>
-            <Wrapper
-              color={Theme.white_C}
-              width={`250px`}
-              al={`flex-start`}
-              fontSize={`20px`}
-              fontWeight={`700`}
+              fontWeight={`500`}
             >
               VIETNAM
             </Wrapper>
@@ -463,12 +476,30 @@ const MM10Presenter = ({ width }) => {
               width={`250px`}
               al={`flex-start`}
               fontSize={`20px`}
-              fontWeight={`700`}
+              fontWeight={`500`}
             >
-              INDONESIA
+              PHILIPPINES
+            </Wrapper>
+            <Wrapper
+              color={Theme.white_C}
+              width={`250px`}
+              al={`flex-start`}
+              fontSize={`20px`}
+              fontWeight={`500`}
+            >
+              MALAYSIA
+            </Wrapper>
+            <Wrapper
+              color={Theme.white_C}
+              width={`250px`}
+              al={`flex-start`}
+              fontSize={`20px`}
+              fontWeight={`500`}
+            >
+              THAILAND
             </Wrapper>
           </Wrapper>
-          <Wrapper dr={`row`} ju={`flex-start`} margin={`50px 0 0`}>
+          {/* <Wrapper dr={`row`} ju={`flex-start`} margin={`50px 0 0`}>
             <Wrapper
               color={Theme.white_C}
               width={`250px`}
@@ -496,7 +527,7 @@ const MM10Presenter = ({ width }) => {
             >
               BRUNEI
             </Wrapper>
-          </Wrapper>
+          </Wrapper> */}
         </RsWrapper>
       </Wrapper>
     </WholeWrapper>

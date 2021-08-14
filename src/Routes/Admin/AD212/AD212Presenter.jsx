@@ -108,9 +108,9 @@ export default ({
             <TableHeadColumn width={`5%`}>번호</TableHeadColumn>
             <TableHeadColumn width={`20%`}>COMPANY NAME</TableHeadColumn>
             <TableHeadColumn width={`10%`}>LEVEL</TableHeadColumn>
-            <TableHeadColumn width={`20%`}>CHARGE</TableHeadColumn>
-            <TableHeadColumn width={`20%`}>EMAIL</TableHeadColumn>
-            <TableHeadColumn width={`15%`}>TEL</TableHeadColumn>
+            <TableHeadColumn width={`20%`}>ENTRYCODE</TableHeadColumn>
+            <TableHeadColumn width={`20%`}>PASSWORD</TableHeadColumn>
+            <TableHeadColumn width={`15%`}>EMAIL</TableHeadColumn>
             <TableHeadColumn width={`10%`}>삭제</TableHeadColumn>
           </TableWrapper>
 
@@ -143,13 +143,13 @@ export default ({
                           {data.level}
                         </TableHeadColumn>
                         <TableHeadColumn isData={true} width={`20%`}>
-                          {data.charge}
+                          {data.userId}
                         </TableHeadColumn>
                         <TableHeadColumn isData={true} width={`20%`}>
-                          {data.email}
+                          {data.passWord}
                         </TableHeadColumn>
                         <TableHeadColumn isData={true} width={`15%`}>
-                          {data.tel}
+                          {data.email}
                         </TableHeadColumn>
                         <TableHeadColumn isData={true} width={`10%`}>
                           <CommonButton

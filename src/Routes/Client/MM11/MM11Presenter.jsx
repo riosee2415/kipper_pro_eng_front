@@ -83,6 +83,7 @@ const MM11Presenter = ({
   width,
   //
   moveLinkHandler,
+  moveUrlHandler,
 }) => {
   useTitle(`SITE MAP | ${process.env["HOMEPAGE_NAME"]}`);
 
@@ -96,7 +97,7 @@ const MM11Presenter = ({
         <Wrapper al={`flex-start`}>
           <Image
             alt="site Map"
-            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM11%2FSITE%20MAP.svg?alt=media&token=b721bb18-c94a-40a9-af33-56cd32ddfbb6`}
+            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Fmodify%2FSITE%20MAP.svg?alt=media&token=4909a331-7ba8-485a-bdc9-09b77d740527`}
             width={width < 700 ? `148px` : `344px`}
             margin={`0 0 80px`}
           />
@@ -166,7 +167,11 @@ const MM11Presenter = ({
                       <Text fontSize={`11px`}>SMARTKEEPER PRO</Text>
                       <IoIosArrowForward />
                     </Box>
-                    <Box>
+                    <Box
+                      onClick={() => {
+                        moveUrlHandler("https://www.schoolhealing2.co.kr/#/");
+                      }}
+                    >
                       <Text fontSize={`11px`}>SMARTKEEPER ESSENTIAL</Text>
                       <IoIosArrowForward />
                     </Box>
@@ -181,7 +186,13 @@ const MM11Presenter = ({
                       <Text fontSize={`11px`}>REFERENCE(PRO)</Text>
                       <IoIosArrowForward />
                     </Box>
-                    <Box>
+                    <Box
+                      onClick={() => {
+                        moveUrlHandler(
+                          "https://www.schoolhealing2.co.kr/#/?type=reference"
+                        );
+                      }}
+                    >
                       <Text fontSize={`11px`}>REFERENCE(ESSENTIAL)</Text>
                       <IoIosArrowForward />
                     </Box>
@@ -292,19 +303,43 @@ const MM11Presenter = ({
                 </Wrapper>
                 <Wrapper width={`calc(100% - 226px)`}>
                   <Wrapper dr={`row`} ju={`flex-start`}>
-                    <Box>
+                    <Box
+                      onClick={() => {
+                        moveUrlHandler(
+                          "https://www.schoolhealing2.co.kr/#/basic"
+                        );
+                      }}
+                    >
                       <Text fontSize={`12px`}>Basic Series</Text>
                       <IoIosArrowForward />
                     </Box>
-                    <Box>
+                    <Box
+                      onClick={() => {
+                        moveUrlHandler(
+                          "https://www.schoolhealing2.co.kr/#/mini"
+                        );
+                      }}
+                    >
                       <Text fontSize={`11px`}>Mini Series</Text>
                       <IoIosArrowForward />
                     </Box>
-                    <Box>
+                    <Box
+                      onClick={() => {
+                        moveUrlHandler(
+                          "https://www.schoolhealing2.co.kr/#/product"
+                        );
+                      }}
+                    >
                       <Text fontSize={`12px`}>No Key Required</Text>
                       <IoIosArrowForward />
                     </Box>
-                    <Box>
+                    <Box
+                      onClick={() => {
+                        moveUrlHandler(
+                          "https://www.schoolhealing2.co.kr/#/lock"
+                        );
+                      }}
+                    >
                       <Text fontSize={`12px`}>Lock Key ESSENTIAL</Text>
                       <IoIosArrowForward />
                     </Box>
@@ -465,7 +500,11 @@ const MM11Presenter = ({
                 <Text fontSize={`12px`}>SMARTKEEPER PRO</Text>
                 <IoIosArrowForward />
               </Box>
-              <Box>
+              <Box
+                onClick={() => {
+                  moveUrlHandler("https://www.schoolhealing2.co.kr/#/");
+                }}
+              >
                 <Text fontSize={`12px`}>SMARTKEEPER ESSENTIAL</Text>
                 <IoIosArrowForward />
               </Box>
@@ -477,7 +516,11 @@ const MM11Presenter = ({
                 <Text fontSize={`12px`}>REFERENCE(PRO)</Text>
                 <IoIosArrowForward />
               </Box>
-              <Box>
+              <Box
+                onClick={() => {
+                  moveUrlHandler("https://www.schoolhealing2.co.kr/#/example");
+                }}
+              >
                 <Text fontSize={`11px`}>REFERENCE(ESSENTIAL)</Text>
                 <IoIosArrowForward />
               </Box>
@@ -539,19 +582,35 @@ const MM11Presenter = ({
                 <IoIosArrowForward />
               </Box>
               <Title margin={`35px 0 0 26px`}>ESSENTIAL</Title>
-              <Box>
+              <Box
+                onClick={() => {
+                  moveUrlHandler("https://www.schoolhealing2.co.kr/#/basic");
+                }}
+              >
                 <Text fontSize={`12px`}>Basic Series</Text>
                 <IoIosArrowForward />
               </Box>
-              <Box>
+              <Box
+                onClick={() => {
+                  moveUrlHandler("https://www.schoolhealing2.co.kr/#/mini");
+                }}
+              >
                 <Text fontSize={`11px`}>Mini Series</Text>
                 <IoIosArrowForward />
               </Box>
-              <Box>
+              <Box
+                onClick={() => {
+                  moveUrlHandler("https://www.schoolhealing2.co.kr/#/product");
+                }}
+              >
                 <Text fontSize={`12px`}>No Key Required</Text>
                 <IoIosArrowForward />
               </Box>
-              <Box>
+              <Box
+                onClick={() => {
+                  moveUrlHandler("https://www.schoolhealing2.co.kr/#/lock");
+                }}
+              >
                 <Text fontSize={`12px`}>Lock Key ESSENTIAL</Text>
                 <IoIosArrowForward />
               </Box>

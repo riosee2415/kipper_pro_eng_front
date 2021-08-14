@@ -254,7 +254,7 @@ const MM02Presenter = ({
         >
           <Image
             width={width < 700 ? `100%` : `80%`}
-            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2FSMARTKEEPER-PRO.png?alt=media&token=d7fe25de-1899-41a8-80ac-df533ea60b30`}
+            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Fmodify%2FSMARTKEEPER%20PRO_%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8F%E1%85%B5%E1%84%91%E1%85%A5%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9_1.svg?alt=media&token=a51b4955-3235-4e54-9a3b-153641d73eb7`}
           />
           <Wrapper
             al={`flex-start`}

@@ -24,13 +24,22 @@ const MM11Container = ({ history }) => {
     history.push(link);
   };
 
+  const moveUrlHandler = (url) => {
+    history.push(url, "_blank");
+  };
+
   ////////////// - USE EFFECT- //////////////
 
   useEffect(() => {
     scroll.scrollTo(0);
   }, []);
 
-  return <MM11Presenter moveLinkHandler={moveLinkHandler} />;
+  return (
+    <MM11Presenter
+      moveUrlHandler={moveUrlHandler}
+      moveLinkHandler={moveLinkHandler}
+    />
+  );
 };
 
 export default MM11Container;
