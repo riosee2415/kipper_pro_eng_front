@@ -1453,7 +1453,12 @@ const MM09Presenter = ({
                 currentColorImages={currentColorImages}
               />
             </Wrapper>
-            <BuyButton color={Theme.white_C}>Buy now</BuyButton>
+            <BuyButton
+              color={Theme.white_C}
+              onClick={() => moveLinkHandler(`/info?type=history`)}
+            >
+              Buy now
+            </BuyButton>
           </Wrapper>
         </RsWrapper>
       </Wrapper>
