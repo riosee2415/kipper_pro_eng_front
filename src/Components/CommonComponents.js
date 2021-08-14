@@ -162,6 +162,9 @@ export const Wrapper = styled.div`
 
   & .react-reveal {
     width: 100%;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
   }
 `;
 
@@ -689,7 +692,7 @@ export const CommonSubTitle2 = styled.h2`
       : `'Noto Sans KR', sans-serif`};
 
   @media (max-width: 700px) {
-    font-size: 30px;
+    font-size: ${(props) => props.fontSize || `30px`};
     margin: 0 0 15px;
   }
 `;

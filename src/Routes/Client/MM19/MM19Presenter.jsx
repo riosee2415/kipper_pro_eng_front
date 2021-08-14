@@ -210,44 +210,28 @@ const MM19Presenter = ({
                   display={width < 700 ? `flex` : `none`}
                   shadow={`0 1px ${Theme.blackTheme2_C}`}
                 >
-                  Now, it
+                  Now,
                 </CommonSubTitle2>
                 <CommonSubTitle2
                   display={width < 700 ? `flex` : `none`}
                   shadow={`0 1px ${Theme.blackTheme2_C}`}
                 >
-                  should be blocked
+                  it should be blocked
                 </CommonSubTitle2>
                 <Wrapper al={`flex-start`}>
                   <Text
                     color={Theme.blackTheme2_C}
-                    fontSize={width < 700 ? `19px` : `20px`}
+                    fontSize={width < 700 ? `15px` : `20px`}
                     fontWeight={`700`}
-                    display={width < 700 ? `none` : `flex`}
                   >
                     Physical layer of security for data ports
                   </Text>
-                  <Text
-                    color={Theme.blackTheme2_C}
-                    fontSize={width < 700 ? `19px` : `18px`}
-                    fontWeight={`700`}
-                    display={width < 700 ? `flex` : `none`}
-                  >
-                    Physical layer of security
-                  </Text>
-                  <Text
-                    color={Theme.blackTheme2_C}
-                    fontSize={width < 700 ? `19px` : `18px`}
-                    fontWeight={`700`}
-                    display={width < 700 ? `flex` : `none`}
-                  >
-                    for data ports
-                  </Text>
+
                   <Text
                     display={width < 700 ? `none` : `flex`}
                     color={Theme.greyTheme6_C}
                     fontSize={`18px`}
-                    fontWeight={`500`}
+                    fontWeight={`400`}
                   >
                     SMARTKEEPER ESSENTIAL provides the cost-effective &#38;
                     practical experiences to you.
@@ -256,7 +240,7 @@ const MM19Presenter = ({
                     display={width < 700 ? `none` : `flex`}
                     color={Theme.greyTheme6_C}
                     fontSize={`18px`}
-                    fontWeight={`500`}
+                    fontWeight={`400`}
                   >
                     Once you block it, you will recognize how much it was
                     dangerous before.
@@ -265,7 +249,7 @@ const MM19Presenter = ({
                     display={width < 700 ? `none` : `flex`}
                     color={Theme.greyTheme6_C}
                     fontSize={`18px`}
-                    fontWeight={`500`}
+                    fontWeight={`400`}
                   >
                     Starting from the USB ports, improve the security level of
                     your organization.
@@ -275,7 +259,7 @@ const MM19Presenter = ({
                     display={width < 700 ? `flex` : `none`}
                     color={Theme.greyTheme6_C}
                     fontSize={`14px`}
-                    fontWeight={`500`}
+                    fontWeight={`400`}
                   >
                     SMARTKEEPER ESSENTIAL provides the
                   </Text>
@@ -283,7 +267,7 @@ const MM19Presenter = ({
                     display={width < 700 ? `flex` : `none`}
                     color={Theme.greyTheme6_C}
                     fontSize={`14px`}
-                    fontWeight={`500`}
+                    fontWeight={`400`}
                   >
                     cost-effective &#38; practical experiences to you.
                   </Text>
@@ -291,23 +275,23 @@ const MM19Presenter = ({
                     display={width < 700 ? `flex` : `none`}
                     color={Theme.greyTheme6_C}
                     fontSize={`14px`}
-                    fontWeight={`500`}
+                    fontWeight={`400`}
                   >
-                    Once you block it, you will recognize
+                    Once you block it, you will recognize how
                   </Text>
                   <Text
                     display={width < 700 ? `flex` : `none`}
                     color={Theme.greyTheme6_C}
                     fontSize={`14px`}
-                    fontWeight={`500`}
+                    fontWeight={`400`}
                   >
-                    how much it was dangerous before.
+                    much it was dangerous before.
                   </Text>
                   <Text
                     display={width < 700 ? `flex` : `none`}
                     color={Theme.greyTheme6_C}
                     fontSize={`14px`}
-                    fontWeight={`500`}
+                    fontWeight={`400`}
                   >
                     Starting from the USB ports, improve the security level of
                     your organization.
@@ -334,17 +318,17 @@ const MM19Presenter = ({
         {/*  */}
         <Wrapper
           width={`100%`}
-          height={width < 700 ? `390px` : `800px`}
+          height={width < 700 ? `430px` : `800px`}
           bgSize={width < 700 && `105%`}
           attachment={`initial`}
-          bgPosition={width < 700 ? `-10px 250px` : `0 100px`}
+          bgPosition={width < 700 ? `-10px 280px` : `0 100px`}
           bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM00%2FHOME_bgImg_2.png?alt=media&token=f5ec2fb4-f779-4a5e-a860-73fb3a91f6d9")`}
         >
           <RsWrapper>
             <Wrapper
               al={`flex-start`}
               ju={`flex-start`}
-              padding={width < 700 ? `80px 35px 0` : `100px 0 0`}
+              padding={width < 700 ? `50px 35px 0` : `100px 0 0`}
               height={`100%`}
             >
               <CommonSubTitle2 shadow={`0 1px ${Theme.blackTheme2_C}`}>
@@ -352,39 +336,25 @@ const MM19Presenter = ({
               </CommonSubTitle2>
               <Text
                 color={Theme.blackTheme2_C}
-                fontSize={width < 700 ? `19px` : `20px`}
+                fontSize={width < 700 ? `16px` : `20px`}
                 fontWeight={`700`}
-                display={width < 700 ? `none` : `flex`}
               >
                 Also vulnerable from the attack
               </Text>
-              <Text
-                color={Theme.blackTheme2_C}
-                fontSize={width < 700 ? `19px` : `18px`}
-                fontWeight={`700`}
-                display={width < 700 ? `flex` : `none`}
-              >
-                Also vulnerable
-              </Text>
-              <Text
-                color={Theme.blackTheme2_C}
-                fontSize={width < 700 ? `19px` : `18px`}
-                fontWeight={`700`}
-                display={width < 700 ? `flex` : `none`}
-              >
-                from the attack
-              </Text>
+
               <Text
                 fontSize={`18px`}
-                fontWieght={`500`}
+                fontWieght={`400`}
                 color={Theme.greyTheme6_C}
+                display={width < 700 ? `none` : `flex`}
               >
                 Because all the informations connected to the cloud via network,
               </Text>
               <Text
                 fontSize={`18px`}
-                fontWieght={`500`}
+                fontWieght={`400`}
                 color={Theme.greyTheme6_C}
+                display={width < 700 ? `none` : `flex`}
               >
                 we need to focus more on the security. Not enough for the
                 blockers,
@@ -392,7 +362,7 @@ const MM19Presenter = ({
               <Text
                 display={width < 700 ? `none` : `flex`}
                 fontSize={`18px`}
-                fontWieght={`500`}
+                fontWieght={`400`}
                 color={Theme.greyTheme6_C}
               >
                 it is necessary to lock the using cables. We have a better
@@ -401,23 +371,58 @@ const MM19Presenter = ({
 
               <Text
                 display={width < 700 ? `flex` : `none`}
-                fontSize={`18px`}
-                fontWieght={`500`}
+                fontSize={`15px`}
+                fontWieght={`400`}
                 color={Theme.greyTheme6_C}
               >
-                it is necessary to lock the using cables.
+                Because all the informations connected
               </Text>
               <Text
                 display={width < 700 ? `flex` : `none`}
-                fontSize={`18px`}
-                fontWieght={`500`}
+                fontSize={`15px`}
+                fontWieght={`400`}
                 color={Theme.greyTheme6_C}
               >
-                We have a better security, SMARTKEEPER.
+                to the cloud via network, we need to
+              </Text>
+              <Text
+                display={width < 700 ? `flex` : `none`}
+                fontSize={`15px`}
+                fontWieght={`400`}
+                color={Theme.greyTheme6_C}
+              >
+                focus more on the security. Not enough
+              </Text>
+              <Text
+                display={width < 700 ? `flex` : `none`}
+                fontSize={`15px`}
+                fontWieght={`400`}
+                color={Theme.greyTheme6_C}
+              >
+                for the blockers,it is necessary to lock the
+              </Text>
+              <Text
+                display={width < 700 ? `flex` : `none`}
+                fontSize={`15px`}
+                fontWieght={`400`}
+                color={Theme.greyTheme6_C}
+              >
+                using cables. We have a better security,
+              </Text>
+              <Text
+                display={width < 700 ? `flex` : `none`}
+                fontSize={`15px`}
+                fontWieght={`400`}
+                color={Theme.greyTheme6_C}
+              >
+                SMARTKEEPER.
               </Text>
               <Link to="/basic/6114d0a2b3595147440ae6a0">
                 <Button dr={`row`} margin={`20px 0 0`}>
-                  <Text fontSize={`16px`} fontWeight={`600`}>
+                  <Text
+                    fontSize={width < 7800 ? `14px` : `16px`}
+                    fontWeight={`600`}
+                  >
                     See more about LAN CABLE LOCK
                   </Text>
                   <RiArrowRightSLine fontSize={`27px`} />
@@ -434,66 +439,102 @@ const MM19Presenter = ({
           overflow={`hidden`}
           // ref={tempRef}
         >
-          <RsWrapper isRelative={true} height={`100%`}>
+          <RsWrapper
+            isRelative={true}
+            height={`100%`}
+            padding={width < 700 && `50px 0`}
+          >
             <Fade bottom>
               <Wrapper
-                // isAbsolute={true}
-                // top={
-                //   width < 700
-                //     ? `30px`
-                //     : `${isFirst ? `0` : width < 700 ? `200` : `400`}px`
-                // }
                 margin={width < 700 ? `0 0 20px` : `100px 0`}
+                bgColor={Theme.white_C}
                 radius={`30px`}
                 width={width < 700 ? `90%` : `100%`}
-                height={width < 700 ? `400px` : `600px`}
-                attachment={`initial`}
-                bgImg={
-                  width < 700
-                    ? `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM00%2Fmobile-02.png?alt=media&token=ef2bb6a1-a190-4b63-a541-1ab1166ef4ec")`
-                    : `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM00%2FHOME_bgImg_3.png?alt=media&token=25d06e43-ea7f-4ea1-b8ee-7016c1acd8ca")`
-                }
+                height={width < 700 ? `520px` : `600px`}
               >
                 <Wrapper
-                  al={`flex-start`}
-                  ju={width < 700 && `flex-start`}
-                  padding={width < 700 ? `40px 20px 0` : `0 50px`}
+                  // isAbsolute={true}
+                  // top={
+                  //   width < 700
+                  //     ? `30px`
+                  //     : `${isFirst ? `0` : width < 700 ? `200` : `400`}px`
+                  // }
+
+                  attachment={`initial`}
+                  bgSize={width < 700 && `350px`}
+                  bgPosition={width < 700 && `center bottom`}
                   height={`100%`}
+                  bgImg={
+                    width < 700
+                      ? `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM00%2Fmobile-02.png?alt=media&token=ef2bb6a1-a190-4b63-a541-1ab1166ef4ec")`
+                      : `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM00%2FHOME_bgImg_3.png?alt=media&token=25d06e43-ea7f-4ea1-b8ee-7016c1acd8ca")`
+                  }
                 >
-                  {/* <Text
-                    color={Theme.essGrey3_C}
-                    fontSize={width < 700 ? `16px` : `20px`}
-                    fontWeight={`500`}
-                  >
-                    RJ45 Port Lock
-                  </Text> */}
                   <Wrapper
-                    dr={`row`}
-                    width={`auto`}
-                    margin={`0 0 25px`}
+                    al={`flex-start`}
                     ju={width < 700 && `flex-start`}
+                    padding={width < 700 ? `40px 20px 0` : `0 50px`}
+                    height={`100%`}
                   >
-                    <CommonSubTitle2
-                      fontSize={width < 700 ? `30px` : `40px`}
-                      margin={`0`}
+                    <Text
+                      color={Theme.essGrey3_C}
+                      fontSize={width < 700 ? `16px` : `20px`}
+                      fontWeight={`500`}
                     >
-                      COLOR-CODED PATTERN
-                    </CommonSubTitle2>
-                    <Image
-                      width={`38px`}
-                      margin={`0 0 0 15px`}
-                      src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM00%2FHOME_ICON.png?alt=media&token=deba963a-50f3-41b0-8597-6f60d21c8f4b`}
-                    />
-                  </Wrapper>
-                  <Text
-                    color={Theme.blackTheme2_C}
-                    fontSize={width < 700 ? `19px` : `20px`}
-                    fontWeight={`700`}
-                    display={width < 700 ? `none` : `flex`}
-                  >
-                    More convenient by various patterns
-                  </Text>
-                  {/* <Text
+                      RJ45 Port Lock
+                    </Text>
+                    <Wrapper
+                      dr={`row`}
+                      width={`auto`}
+                      margin={width < 700 ? `0 0 15px` : `0 0 25px`}
+                      ju={width < 700 && `flex-start`}
+                      al={width < 700 && `flex-start`}
+                    >
+                      <Wrapper
+                        width={`auto`}
+                        display={width < 700 ? `none` : `flex`}
+                      >
+                        <CommonSubTitle2
+                          fontSize={width < 700 ? `30px` : `40px`}
+                          margin={`0`}
+                        >
+                          COLOR-CODED PATTERN
+                        </CommonSubTitle2>
+                      </Wrapper>
+                      <Wrapper
+                        width={`auto`}
+                        display={width < 700 ? `flex` : `none`}
+                        al={`flex-start`}
+                      >
+                        <CommonSubTitle2
+                          color={`#454545`}
+                          fontSize={width < 700 ? `30px` : `40px`}
+                          margin={`0`}
+                        >
+                          COLOR-CODED
+                        </CommonSubTitle2>
+                        <CommonSubTitle2
+                          color={`#454545`}
+                          fontSize={width < 700 ? `30px` : `40px`}
+                          margin={`0`}
+                        >
+                          PATTERN
+                        </CommonSubTitle2>
+                      </Wrapper>
+                      <Image
+                        width={`38px`}
+                        margin={`0 0 0 15px`}
+                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM00%2FHOME_ICON.png?alt=media&token=deba963a-50f3-41b0-8597-6f60d21c8f4b`}
+                      />
+                    </Wrapper>
+                    <Text
+                      color={Theme.blackTheme2_C}
+                      fontSize={width < 700 ? `15px` : `20px`}
+                      fontWeight={`700`}
+                    >
+                      More convenient by various patterns
+                    </Text>
+                    {/* <Text
                 color={Theme.blackTheme2_C}
                 fontSize={width < 700 ? `19px` : `18px`}
                 fontWeight={`700`}
@@ -509,108 +550,106 @@ const MM19Presenter = ({
               >
                 by various patterns
               </Text> */}
-                  <Text
-                    display={width < 700 ? `none` : `flex`}
-                    fontSize={`20px`}
-                    fontWieght={`500`}
-                    color={Theme.greyTheme6_C}
-                  >
-                    Locks of SMARTKEEPER only unlockable with
-                  </Text>
-                  <Text
-                    display={width < 700 ? `none` : `flex`}
-                    fontSize={`20px`}
-                    fontWieght={`500`}
-                    color={Theme.greyTheme6_C}
-                  >
-                    same color-coded patterned key.
-                  </Text>
-                  <Text
-                    display={width < 700 ? `none` : `flex`}
-                    fontSize={`20px`}
-                    fontWieght={`500`}
-                    color={Theme.greyTheme6_C}
-                  >
-                    By purpose or department, establish security
-                  </Text>
-                  <Text
-                    display={width < 700 ? `none` : `flex`}
-                    fontSize={`20px`}
-                    fontWieght={`500`}
-                    color={Theme.greyTheme6_C}
-                  >
-                    environment with different color(pattern).
-                  </Text>
-                  <Text
-                    display={width < 700 ? `flex` : `none`}
-                    fontSize={`18px`}
-                    fontWieght={`500`}
-                    color={Theme.greyTheme6_C}
-                  >
-                    Locks of SMARTKEEPER
-                  </Text>
-                  <Text
-                    display={width < 700 ? `flex` : `none`}
-                    fontSize={`18px`}
-                    fontWieght={`500`}
-                    color={Theme.greyTheme6_C}
-                  >
-                    only unlockable with
-                  </Text>
-                  <Text
-                    display={width < 700 ? `flex` : `none`}
-                    fontSize={`18px`}
-                    fontWieght={`500`}
-                    color={Theme.greyTheme6_C}
-                  >
-                    same color-coded patterned key.
-                  </Text>
-                  <Text
-                    display={width < 700 ? `flex` : `none`}
-                    fontSize={`18px`}
-                    fontWieght={`500`}
-                    color={Theme.greyTheme6_C}
-                  >
-                    By purpose or department,
-                  </Text>
-                  <Text
-                    display={width < 700 ? `flex` : `none`}
-                    fontSize={`18px`}
-                    fontWieght={`500`}
-                    color={Theme.greyTheme6_C}
-                  >
-                    establish security environment
-                  </Text>
-                  <Text
-                    display={width < 700 ? `flex` : `none`}
-                    fontSize={`18px`}
-                    fontWieght={`500`}
-                    color={Theme.greyTheme6_C}
-                  >
-                    with different color(pattern).
-                  </Text>
+                    <Text
+                      display={width < 700 ? `none` : `flex`}
+                      fontSize={`20px`}
+                      fontWieght={`400`}
+                      color={Theme.greyTheme6_C}
+                    >
+                      Locks of SMARTKEEPER only unlockable with
+                    </Text>
+                    <Text
+                      display={width < 700 ? `none` : `flex`}
+                      fontSize={`20px`}
+                      fontWieght={`400`}
+                      color={Theme.greyTheme6_C}
+                    >
+                      same color-coded patterned key.
+                    </Text>
+                    <Text
+                      display={width < 700 ? `none` : `flex`}
+                      fontSize={`20px`}
+                      fontWieght={`400`}
+                      color={Theme.greyTheme6_C}
+                    >
+                      By purpose or department, establish security
+                    </Text>
+                    <Text
+                      display={width < 700 ? `none` : `flex`}
+                      fontSize={`20px`}
+                      fontWieght={`400`}
+                      color={Theme.greyTheme6_C}
+                    >
+                      environment with different color(pattern).
+                    </Text>
+                    <Text
+                      display={width < 700 ? `flex` : `none`}
+                      fontSize={`15px`}
+                      fontWieght={`400`}
+                      color={Theme.greyTheme6_C}
+                    >
+                      Locks of SMARTKEEPER only unlockable
+                    </Text>
+                    <Text
+                      display={width < 700 ? `flex` : `none`}
+                      fontSize={`15px`}
+                      fontWieght={`400`}
+                      color={Theme.greyTheme6_C}
+                    >
+                      with same color-coded patterned key.
+                    </Text>
 
-                  <Link to="/basic/6114d0a2b3595147440ae69f">
-                    <Button dr={`row`} margin={`20px 0 0`}>
-                      <Text fontSize={`16px`} fontWeight={`500`}>
-                        See more about RJ45 Port Lock
-                      </Text>
-                      <RiArrowRightSLine fontSize={`17px`} />
-                    </Button>
-                  </Link>
+                    <Text
+                      display={width < 700 ? `flex` : `none`}
+                      fontSize={`15px`}
+                      fontWieght={`400`}
+                      color={Theme.greyTheme6_C}
+                    >
+                      By purpose or department, establish
+                    </Text>
+                    <Text
+                      display={width < 700 ? `flex` : `none`}
+                      fontSize={`15px`}
+                      fontWieght={`400`}
+                      color={Theme.greyTheme6_C}
+                    >
+                      security environment with different
+                    </Text>
+                    <Text
+                      display={width < 700 ? `flex` : `none`}
+                      fontSize={`15px`}
+                      fontWieght={`400`}
+                      color={Theme.greyTheme6_C}
+                    >
+                      color(pattern).
+                    </Text>
+
+                    <Link to="/basic/6114d0a2b3595147440ae69f">
+                      <Button dr={`row`} margin={`20px 0 0`}>
+                        <Text
+                          fontSize={width < 700 ? `14px` : `16px`}
+                          fontWeight={`500`}
+                        >
+                          See more about RJ45 Port Lock
+                        </Text>
+                        <RiArrowRightSLine fontSize={`17px`} />
+                      </Button>
+                    </Link>
+                  </Wrapper>
                 </Wrapper>
               </Wrapper>
             </Fade>
             <Fade bottom>
               <Wrapper
                 width={width < 700 ? `90%` : `100%`}
-                height={width < 700 ? `400px` : `600px`}
+                height={width < 700 ? `525px` : `600px`}
                 radius={`30px`}
-                margin={`0 0 100px`}
+                margin={width < 700 ? `0` : `0 0 100px`}
                 isRelative={true}
+                bgColor={Theme.white_C}
               >
                 <Image
-                  height={width < 700 ? `400px` : `600px`}
+                  height={width < 700 ? `450px` : `600px`}
                   radius={`30px`}
                   alt="image"
                   src={
@@ -630,31 +669,35 @@ const MM19Presenter = ({
                     bottom={width < 700 ? `-20%` : `0`}
                     left={`0`}
                     al={`flex-end`}
-                    padding={width < 700 ? `0 20px` : `0 50px`}
+                    padding={width < 700 ? `0 20px 0 0` : `0 50px`}
                     height={`100%`}
                   >
-                    {/* <Text
+                    <Text
                       color={Theme.essGrey3_C}
                       fontSize={width < 700 ? `16px` : `20px`}
                       fontWeight={`500`}
                     >
                       Lock Key Basic
-                    </Text> */}
+                    </Text>
 
                     <CommonSubTitle2
                       margin={`0`}
-                      fontSize={width < 700 ? `30px` : `40px`}
+                      fontSize={width < 700 ? `27px !important` : `40px`}
+                      color={`#454545`}
                     >
                       SINGLE KEY
                     </CommonSubTitle2>
-                    <CommonSubTitle2 fontSize={width < 700 ? `30px` : `40px`}>
+                    <CommonSubTitle2
+                      fontSize={width < 700 ? `27px !important` : `40px`}
+                      color={`#454545`}
+                    >
                       FOR MULTIPLE DEVICE
                     </CommonSubTitle2>
 
                     <Text
                       display={width < 700 ? `none` : `flex`}
                       fontSize={`20px`}
-                      fontWieght={`500`}
+                      fontWieght={`400`}
                       color={Theme.greyTheme6_C}
                     >
                       Still manage all the ports with each keys?
@@ -662,7 +705,7 @@ const MM19Presenter = ({
                     <Text
                       display={width < 700 ? `none` : `flex`}
                       fontSize={`20px`}
-                      fontWieght={`500`}
+                      fontWieght={`400`}
                       color={Theme.greyTheme6_C}
                     >
                       One of our client shows us a bunch of key
@@ -670,7 +713,7 @@ const MM19Presenter = ({
                     <Text
                       display={width < 700 ? `none` : `flex`}
                       fontSize={`20px`}
-                      fontWieght={`500`}
+                      fontWieght={`400`}
                       color={Theme.greyTheme6_C}
                     >
                       to open a single port. Lock Key Basic of
@@ -678,7 +721,7 @@ const MM19Presenter = ({
                     <Text
                       display={width < 700 ? `none` : `flex`}
                       fontSize={`20px`}
-                      fontWieght={`500`}
+                      fontWieght={`400`}
                       color={Theme.greyTheme6_C}
                     >
                       SMARTKEEPER ESSENTIAL compatible with
@@ -686,39 +729,39 @@ const MM19Presenter = ({
                     <Text
                       display={width < 700 ? `none` : `flex`}
                       fontSize={`20px`}
-                      fontWieght={`500`}
+                      fontWieght={`400`}
                       color={Theme.greyTheme6_C}
                     >
                       13 type of locks!
                     </Text>
                     <Text
                       display={width < 700 ? `flex` : `none`}
-                      fontSize={`18px`}
-                      fontWieght={`500`}
+                      fontSize={`14px`}
+                      fontWieght={`400`}
                       color={Theme.greyTheme6_C}
                     >
                       Still manage all the ports with each keys?
                     </Text>
                     <Text
                       display={width < 700 ? `flex` : `none`}
-                      fontSize={`18px`}
-                      fontWieght={`500`}
+                      fontSize={`14px`}
+                      fontWieght={`400`}
                       color={Theme.greyTheme6_C}
                     >
                       One of our client shows us a bunch of key
                     </Text>
                     <Text
                       display={width < 700 ? `flex` : `none`}
-                      fontSize={`18px`}
-                      fontWieght={`500`}
+                      fontSize={`14px`}
+                      fontWieght={`400`}
                       color={Theme.greyTheme6_C}
                     >
                       to open a single port. Lock Key Basic of
                     </Text>
                     <Text
                       display={width < 700 ? `flex` : `none`}
-                      fontSize={`18px`}
-                      fontWieght={`500`}
+                      fontSize={`14px`}
+                      fontWieght={`400`}
                       color={Theme.greyTheme6_C}
                     >
                       SMARTKEEPER ESSENTIAL compatible with
@@ -726,8 +769,8 @@ const MM19Presenter = ({
 
                     <Text
                       display={width < 700 ? `flex` : `none`}
-                      fontSize={`18px`}
-                      fontWieght={`500`}
+                      fontSize={`14px`}
+                      fontWieght={`400`}
                       color={Theme.greyTheme6_C}
                     >
                       13 type of locks!
@@ -738,7 +781,10 @@ const MM19Presenter = ({
                         dr={`row`}
                         margin={width < 700 ? `10px 0 0` : `20px 0 0`}
                       >
-                        <Text fontSize={`16px`} fontWeight={`500`}>
+                        <Text
+                          fontSize={width < 700 ? `14px` : `16px`}
+                          fontWeight={`500`}
+                        >
                           See more about Lock Key Basic
                         </Text>
                         <RiArrowRightSLine fontSize={`27px`} />
@@ -824,14 +870,30 @@ const MM19Presenter = ({
                 <Text
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
+                  display={width < 700 ? `none` : `flex`}
                 >
                   Data, Anti-Theft for Laptop,
                 </Text>
                 <Text
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
+                  display={width < 700 ? `none` : `flex`}
                 >
                   Desktop
+                </Text>
+                <Text
+                  color={Theme.essGrey2_C}
+                  fontSize={width < 700 ? `10px` : `16px`}
+                  display={width < 700 ? `flex` : `none`}
+                >
+                  Data, Anti-Theft
+                </Text>
+                <Text
+                  color={Theme.essGrey2_C}
+                  fontSize={width < 700 ? `10px` : `16px`}
+                  display={width < 700 ? `flex` : `none`}
+                >
+                  for Laptop, Desktop
                 </Text>
                 {/* 1 */}
                 <Wrapper
@@ -1310,14 +1372,21 @@ const MM19Presenter = ({
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
                 >
-                  PC, Server which storing
+                  PC, Server which
                 </Text>
                 <Text
-                  display={width < 700 ? `flex` : `noe`}
+                  display={width < 700 ? `flex` : `none`}
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
                 >
-                  personal information
+                  storing personal information
+                </Text>
+                <Text
+                  display={width < 700 ? `flex` : `none`}
+                  color={Theme.essGrey2_C}
+                  fontSize={width < 700 ? `10px` : `16px`}
+                >
+                  information
                 </Text>
                 {/* 3 */}
                 <Wrapper
@@ -1548,14 +1617,44 @@ const MM19Presenter = ({
                 <Text
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
+                  display={width < 700 ? `none` : `flex`}
                 >
                   Computers of Elementary
                 </Text>
                 <Text
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
+                  display={width < 700 ? `none` : `flex`}
                 >
                   /Middle/High-school, University
+                </Text>
+                <Text
+                  color={Theme.essGrey2_C}
+                  fontSize={width < 700 ? `10px` : `16px`}
+                  display={width < 700 ? `flex` : `none`}
+                >
+                  Computers of
+                </Text>
+                <Text
+                  color={Theme.essGrey2_C}
+                  fontSize={width < 700 ? `10px` : `16px`}
+                  display={width < 700 ? `flex` : `none`}
+                >
+                  Elementary
+                </Text>
+                <Text
+                  color={Theme.essGrey2_C}
+                  fontSize={width < 700 ? `10px` : `16px`}
+                  display={width < 700 ? `flex` : `none`}
+                >
+                  /Middle/High-school,
+                </Text>
+                <Text
+                  color={Theme.essGrey2_C}
+                  fontSize={width < 700 ? `10px` : `16px`}
+                  display={width < 700 ? `flex` : `none`}
+                >
+                  University
                 </Text>
                 {/* 4 */}
                 <Wrapper
@@ -1782,14 +1881,21 @@ const MM19Presenter = ({
                   color={Theme.essGrey2_C}
                   fontSize={`10px`}
                 >
-                  Medical equipment, computers
+                  Medical equipment,
                 </Text>
                 <Text
                   display={width < 700 ? `flex` : `none`}
                   color={Theme.essGrey2_C}
                   fontSize={`10px`}
                 >
-                  for research/study information
+                  computers for research
+                </Text>
+                <Text
+                  display={width < 700 ? `flex` : `none`}
+                  color={Theme.essGrey2_C}
+                  fontSize={`10px`}
+                >
+                  /study information
                 </Text>
                 {/* 5 */}
                 <Wrapper
@@ -2240,6 +2346,20 @@ const MM19Presenter = ({
                 >
                   Transportation infrastructures
                 </Text>
+                <Text
+                  display={width < 700 ? `flex` : `none`}
+                  color={Theme.essGrey2_C}
+                  fontSize={width < 700 ? `10px` : `16px`}
+                >
+                  Transportation
+                </Text>
+                <Text
+                  display={width < 700 ? `flex` : `none`}
+                  color={Theme.essGrey2_C}
+                  fontSize={width < 700 ? `10px` : `16px`}
+                >
+                  infrastructures
+                </Text>
 
                 {/* 7 */}
                 <Wrapper
@@ -2476,43 +2596,56 @@ const MM19Presenter = ({
                 bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM00%2FHOME_boxImg_8.png?alt=media&token=343d2cb0-0e59-4aa9-99d7-5955ac098a07")`}
               >
                 <Text
-                  display={width < 700 ? `none` : `flex`}
                   color={Theme.white_C}
-                  fontSize={`30px`}
+                  fontSize={width < 700 ? `12px` : `30px`}
                   fontWeight={`700`}
                 >
                   Airport &#38;
                 </Text>
                 <Text
-                  display={width < 700 ? `none` : `flex`}
                   color={Theme.white_C}
-                  fontSize={`30px`}
+                  fontSize={width < 700 ? `12px` : `30px`}
                   fontWeight={`700`}
                   margin={`0 0 5px`}
                   lineHeight={`1`}
                 >
                   Shipping
                 </Text>
-                <Text
-                  display={width < 700 ? `flex` : `none`}
-                  color={Theme.white_C}
-                  fontSize={`12px`}
-                  fontWeight={`700`}
-                  margin={`0 0 5px`}
-                >
-                  Airport &#38; Shipping
-                </Text>
+
                 <Text
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
+                  display={width < 700 ? `none` : `flex`}
                 >
                   Ships by regulation of IMO,
                 </Text>
                 <Text
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
+                  display={width < 700 ? `none` : `flex`}
                 >
                   Airplanes, Head offices
+                </Text>
+                <Text
+                  color={Theme.essGrey2_C}
+                  fontSize={width < 700 ? `10px` : `16px`}
+                  display={width < 700 ? `flex` : `none`}
+                >
+                  Ships by regulation of
+                </Text>
+                <Text
+                  color={Theme.essGrey2_C}
+                  fontSize={width < 700 ? `10px` : `16px`}
+                  display={width < 700 ? `flex` : `none`}
+                >
+                  IMO, Airplanes,
+                </Text>
+                <Text
+                  color={Theme.essGrey2_C}
+                  fontSize={width < 700 ? `10px` : `16px`}
+                  display={width < 700 ? `flex` : `none`}
+                >
+                  Head offices
                 </Text>
                 {/* 8 */}
                 <Wrapper
