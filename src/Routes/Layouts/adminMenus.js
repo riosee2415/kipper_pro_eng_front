@@ -104,6 +104,15 @@ export const allMenus = [
   //   ],
   // },
   {
+    menuName: "회원 관리",
+    subMenu: [
+      {
+        subMenuName: "회원 리스트/생성",
+        subMenuLink: "/admin/tokenManagement",
+      },
+    ],
+  },
+  {
     menuName: "고객 문의",
     subMenu: [
       {
