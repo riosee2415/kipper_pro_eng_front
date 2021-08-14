@@ -860,7 +860,7 @@ const MM01Presenter = ({
                   </Wrapper> */}
                   <Image
                     alt="smartkeeper"
-                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2FSMARTKEEPER.svg?alt=media&token=414a9ee8-c0b1-4299-aec0-2fa5276d8193`}
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Fmodify%2FSMARTKEEPER_%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8F%E1%85%B5%E1%84%91%E1%85%A5%E1%84%85%E1%85%A1%E1%86%AB.svg?alt=media&token=e3021d23-3de3-44f5-b34f-f47235f02d5b`}
                     width={width < 800 ? `164px` : `235px`}
                     margin={width < 800 && `0 0 20px`}
                   />
@@ -1249,7 +1249,11 @@ const MM01Presenter = ({
                 ></Wrapper> */}
 
                 <Wrapper al={`flex-start`} height={`100%`}>
-                  <Wrapper
+                  <Image
+                    width={width < 700 ? `58px` : `67px`}
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2FPRO_%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8F%E1%85%B5%E1%84%91%E1%85%A5%E1%84%85%E1%85%A1%E1%86%AB.svg?alt=media&token=f98e4044-3d42-4b29-95c4-363dc5836188`}
+                  />
+                  {/* <Wrapper
                     al={`flex-start`}
                     fontSize={width < 900 ? `26px` : `30px`}
                     fontWeight={`500`}
@@ -1257,7 +1261,7 @@ const MM01Presenter = ({
                     isGotham={true}
                   >
                     PRO
-                  </Wrapper>
+                  </Wrapper> */}
                   <Wrapper
                     al={`flex-start`}
                     fontSize={`14px`}

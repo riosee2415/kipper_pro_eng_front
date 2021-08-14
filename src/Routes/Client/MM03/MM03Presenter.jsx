@@ -53,12 +53,12 @@ const MM03Presenter = ({
         </Wrapper> */}
         <Image
           alt="smartkeeper"
-          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM03%2FSMARTKEEPER%20PRO%20(2).svg?alt=media&token=1bad9f59-a10d-4d8f-8309-d01ea8eadd4a`}
+          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Fmodify%2FSMARTKEEPER%20PRO_%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8F%E1%85%B5%E1%84%91%E1%85%A5%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9.svg?alt=media&token=abfe4d80-46a5-441a-bfa8-2ea0f21e5cae`}
           width={width < 700 ? `146px` : `188px`}
         />
         <Image
           alt="reference"
-          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM03%2FReference.svg?alt=media&token=b56e0939-a82f-4cc2-81fe-be815b68e4c3`}
+          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Fmodify%2FReferences_%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%89%E1%85%A1%E1%84%85%E1%85%A8.svg?alt=media&token=984bbc00-bfcd-419d-bb0e-0a1359cc6d2e`}
           width={width < 700 ? `250px` : `312px`}
           margin={width < 700 ? `16px 0 25px` : `16px 0 75px`}
         />
