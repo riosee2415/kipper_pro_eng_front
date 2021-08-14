@@ -1,5 +1,14 @@
 import { gql } from "@apollo/client";
 
+export const GET_TOKEN = gql`
+  query getToken($id: String!) {
+    getToken(id: $id) {
+      _id
+      level
+    }
+  }
+`;
+
 export const GET_PRODUCT_ONE = gql`
   query getProductOne($id: String!) {
     getProductOne(id: $id) {
@@ -71,6 +80,9 @@ export const GET_PRODUCT_ONE = gql`
       fileOriginName2
       thumbnailPath
       createdAt
+      price
+      vipPrice1
+      vipPrice2
     }
   }
 `;

@@ -149,6 +149,7 @@ const MM15Presenter = ({
   prevAndNextPageChangeHandler,
   changePageHandler,
   searchHandler,
+  searchBlurHandler,
   changeTabHandler,
   downloadHandler,
   changeLinkHandler,
@@ -221,7 +222,8 @@ const MM15Presenter = ({
                 placeholderColor={Theme.black_C}
                 focusBorder={`1px solid ${Theme.greyTheme7_C}`}
                 {...inputSearch}
-                onKeyDown={(e) => e.keyCode === 13 && searchHandler()}
+                onChange={searchHandler}
+                onBlur={searchBlurHandler}
                 placeholderFontSize={width < 700 ? `10px` : `12px`}
               />
 
@@ -339,7 +341,9 @@ const MM15Presenter = ({
                   })
                 )
               ) : (
-                <CircularIndeterminate />
+                <EmptyList>
+                  <CircularIndeterminate />
+                </EmptyList>
               )}
             </Wrapper>
           )}
@@ -393,7 +397,9 @@ const MM15Presenter = ({
                   })
                 )
               ) : (
-                <CircularIndeterminate />
+                <EmptyList>
+                  <CircularIndeterminate />
+                </EmptyList>
               )}
             </Wrapper>
           )}

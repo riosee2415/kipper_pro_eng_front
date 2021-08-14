@@ -106,6 +106,7 @@ const MM09Presenter = ({
   currentColorImage,
   setCurrentColorImage,
   //
+  tData,
   pData,
   //
   searchToggle,
@@ -1180,13 +1181,15 @@ const MM09Presenter = ({
                   >
                     MMP
                   </Text>
-                  <Text
-                    fontSize={`22px`}
-                    fontWeight={`800`}
-                    letterSpacing={`-0.02em`}
-                  >
-                    UNIT PRICE
-                  </Text>
+                  {tData && (
+                    <Text
+                      fontSize={`22px`}
+                      fontWeight={`800`}
+                      letterSpacing={`-0.02em`}
+                    >
+                      UNIT PRICE
+                    </Text>
+                  )}
                 </Wrapper>
                 <Wrapper width={`auto`} al={`flex-start`}>
                   <Text
@@ -1195,15 +1198,23 @@ const MM09Presenter = ({
                     letterSpacing={`-0.02em`}
                     lineHeight={`2.14`}
                   >
-                    $ 80.00 USD
+                    $ {pData && pData.price} USD
                   </Text>
-                  <Text
-                    fontSize={`22px`}
-                    fontWeight={`800`}
-                    letterSpacing={`-0.02em`}
-                  >
-                    $40.00 USD
-                  </Text>
+                  {tData && pData && (
+                    <Text
+                      fontSize={`22px`}
+                      fontWeight={`800`}
+                      letterSpacing={`-0.02em`}
+                    >
+                      $&nbsp;
+                      {tData.level === `LEVEL3`
+                        ? pData.vipPrice1
+                        : tData.level === `LEVEL4`
+                        ? pData.vipPrice2
+                        : ``}
+                      &nbsp;USD
+                    </Text>
+                  )}
                 </Wrapper>
               </Wrapper>
               <Text

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import withSplitting from "../../../Lib/withSplitting";
 const MM09Presenter = withSplitting(() => import("./MM09Presenter"));
 import { useQuery, useMutation } from "@apollo/client";
-import { GET_PRODUCT_ONE } from "./MM09Queries";
+import { GET_TOKEN, GET_PRODUCT_ONE } from "./MM09Queries";
 import { animateScroll as scroll } from "react-scroll";
 import useInput from "../../../Components/Hooks/useInput";
 import { toast } from "react-toastify";
@@ -10,6 +10,8 @@ import { saveAs } from "file-saver";
 
 const MM09Container = ({ history, location, match }) => {
   ////////////// - VARIABLE- ////////////////
+  const tokenId = sessionStorage.getItem("DLJHQSUDCJSKALDJ");
+
   const currentMenu = location.pathname.split("/")[1];
 
   ////////////// - USE REF- ///////////////
@@ -26,6 +28,13 @@ const MM09Container = ({ history, location, match }) => {
   const [currentColorImage, setCurrentColorImage] = useState(null);
 
   ////////////// - USE QUERY- ///////////////
+  const { data: tData, refetch: tRefetch } = useQuery(GET_TOKEN, {
+    variables: {
+      id: tokenId,
+    },
+    skip: !tokenId,
+  });
+
   const { data: pData, refetch: pRefetch } = useQuery(GET_PRODUCT_ONE, {
     variables: {
       id: match.params.key,
@@ -66,6 +75,8 @@ const MM09Container = ({ history, location, match }) => {
 
   useEffect(() => {
     scroll.scrollTo(0);
+
+    if (tokenId) tRefetch();
 
     pRefetch();
   }, []);
@@ -131,6 +142,7 @@ const MM09Container = ({ history, location, match }) => {
       currentColorImage={currentColorImage}
       setCurrentColorImage={setCurrentColorImage}
       //
+      tData={tData && tData.getToken}
       pData={pData && pData.getProductOne}
       //
       searchToggle={searchToggle}

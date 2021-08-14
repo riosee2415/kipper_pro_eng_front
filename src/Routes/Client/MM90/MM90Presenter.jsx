@@ -26,7 +26,14 @@ const Button = styled(Wrapper)`
   }
 `;
 
-const MM90Presenter = ({ width }) => {
+const MM90Presenter = ({
+  width,
+  //
+  inputUserId,
+  inputPassword,
+  //
+  loginHandler,
+}) => {
   useTitle(`login | ${process.env["HOMEPAGE_NAME"]}`);
 
   return (
@@ -44,6 +51,8 @@ const MM90Presenter = ({ width }) => {
           type={`text`}
           placeholder={`Entry code`}
           margin={`0 0 13px`}
+          {...inputUserId}
+          onKeyDown={(e) => e.keyCode === 13 && loginHandler()}
         />
         <TextInput
           width={`346px`}
@@ -51,8 +60,10 @@ const MM90Presenter = ({ width }) => {
           type={`password`}
           placeholder={`Password`}
           margin={`0 0 63px`}
+          {...inputPassword}
+          onKeyDown={(e) => e.keyCode === 13 && loginHandler()}
         />
-        <Button>Sign in</Button>
+        <Button onClick={loginHandler}>Sign in</Button>
       </Wrapper>
     </WholeWrapper>
   );

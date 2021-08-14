@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import withSplitting from "../../../Lib/withSplitting";
 const MM18Presenter = withSplitting(() => import("./MM18Presenter"));
 import { useQuery, useMutation } from "@apollo/client";
-import { GET_PRODUCT_LIST_BY_TYPE } from "./MM18Queries";
+import { GET_TOKEN, GET_PRODUCT_LIST_BY_TYPE } from "./MM18Queries";
 import { animateScroll as scroll } from "react-scroll";
 import useInput from "../../../Components/Hooks/useInput";
 import { toast } from "react-toastify";
@@ -11,6 +11,8 @@ import queryString from "query-string";
 const MM18Container = ({ history, location }) => {
   ////////////// - VARIABLE- ////////////////
   const query = queryString.parse(location.search);
+
+  const tokenId = sessionStorage.getItem("DLJHQSUDCJSKALDJ");
 
   ////////////// - USE REF- ///////////////
 
@@ -27,6 +29,13 @@ const MM18Container = ({ history, location }) => {
   const inputSearchValue = useInput("");
 
   ////////////// - USE QUERY- ///////////////
+  const { data: tData, refetch: tRefetch } = useQuery(GET_TOKEN, {
+    variables: {
+      id: tokenId,
+    },
+    skip: !tokenId,
+  });
+
   const { data: pDatum, refetch: pRefetch } = useQuery(
     GET_PRODUCT_LIST_BY_TYPE,
     {
@@ -58,7 +67,17 @@ const MM18Container = ({ history, location }) => {
     history.push(`/p_network?type=${type}`);
   };
 
-  const searchDataHandler = () => {
+  const searchDataHandler = (e) => {
+    const value = e.target.value;
+
+    inputSearchValue.setValue(value);
+
+    setTimeout(() => {
+      setProductSkip(false);
+    }, 1);
+  };
+
+  const searchDataBlurHandler = () => {
     let url = `/p_network?search=${inputSearchValue.value}`;
     if (query.type) url += `&type=${query.type}`;
 
@@ -69,6 +88,8 @@ const MM18Container = ({ history, location }) => {
 
   useEffect(() => {
     scroll.scrollTo(0);
+
+    if (tokenId) tRefetch();
   }, []);
 
   useEffect(() => {
@@ -107,6 +128,7 @@ const MM18Container = ({ history, location }) => {
       productSubType={productSubType}
       inputSearchValue={inputSearchValue}
       //
+      tData={tData && tData.getToken}
       pDatum={productViewDatum}
       //
       searchToggle={searchToggle}
@@ -114,6 +136,7 @@ const MM18Container = ({ history, location }) => {
       moveLinkHandler={moveLinkHandler}
       changeSubTypeHandler={changeSubTypeHandler}
       searchDataHandler={searchDataHandler}
+      searchDataBlurHandler={searchDataBlurHandler}
     />
   );
 };

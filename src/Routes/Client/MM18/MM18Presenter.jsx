@@ -91,6 +91,7 @@ const MM18Presenter = ({
   productSubType,
   inputSearchValue,
   //
+  tData,
   pDatum,
   //
   searchToggle,
@@ -98,6 +99,7 @@ const MM18Presenter = ({
   moveLinkHandler,
   changeSubTypeHandler,
   searchDataHandler,
+  searchDataBlurHandler,
 }) => {
   useTitle(`Network Security | ${process.env["HOMEPAGE_NAME"]}`);
 
@@ -350,7 +352,8 @@ const MM18Presenter = ({
                   <SearchInput
                     type={`text`}
                     {...inputSearchValue}
-                    onKeyDown={(e) => e.keyCode === 13 && searchDataHandler()}
+                    onChange={searchDataHandler}
+                    onBlur={searchDataBlurHandler}
                   />
 
                   <Wrapper
@@ -571,16 +574,23 @@ const MM18Presenter = ({
                     <Wrapper dr={`row`} ju={`space-between`} al={`flex-end`}>
                       <Text fontSize={`10px`}>{data.keyType}</Text>
                       <Wrapper width={`auto`} al={`flex-end`}>
-                        <Text
-                          fontSize={`15px`}
-                          color={`#C50000`}
-                          lineHeight={`1`}
-                          fontWeight={`bold`}
-                        >
-                          40.00USD
-                        </Text>
+                        {tData && (
+                          <Text
+                            fontSize={`15px`}
+                            color={`#C50000`}
+                            lineHeight={`1`}
+                            fontWeight={`bold`}
+                          >
+                            {tData.level === `LEVEL3`
+                              ? data.vipPrice1
+                              : tData.level === `LEVEL4`
+                              ? data.vipPrice2
+                              : ``}
+                            USD
+                          </Text>
+                        )}
                         <Text fontSize={`10px`} color={`#a5a5a5`}>
-                          MMP 80.00USD
+                          MMP {data.price}USD
                         </Text>
                       </Wrapper>
                     </Wrapper>
