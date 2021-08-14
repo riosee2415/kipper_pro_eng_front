@@ -266,7 +266,7 @@ const Header = ({ history, width, match }) => {
       left={`0px`}
       bgColor={Theme.black_C}
     >
-      <Wrapper>
+      <Wrapper height={`100%`}>
         <H_Wrapper dr={`row`} margin={`0 auto`}>
           <Wrapper
             height={`100%`}
