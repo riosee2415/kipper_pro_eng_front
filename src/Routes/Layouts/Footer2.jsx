@@ -159,7 +159,7 @@ const Footer = ({ width, location }) => {
                           fontSize={width < 900 ? `8px` : `12px`}
                           fontWeight={`600`}
                           margin={`0 0 20px`}
-                          color={Theme.essGrey2_C}
+                          color={Theme.greyTheme4_C}
                         >
                           {menu.menuName}
                         </Wrapper>
@@ -171,7 +171,7 @@ const Footer = ({ width, location }) => {
                           fontSize={width < 900 ? `8px` : `12px`}
                           fontWeight={`600`}
                           margin={`0 0 20px`}
-                          color={Theme.essGrey2_C}
+                          color={Theme.greyTheme4_C}
                         >
                           {menu.menuName}
                         </Wrapper>
@@ -503,7 +503,7 @@ const Footer = ({ width, location }) => {
             fontWeight={`500`}
             fontSize={width < 900 ? `10px` : `14px`}
           >
-            (주)컴엑스아이
+            COMXI Co., Ltd.
           </Text>
           <Wrapper
             dr={`row`}
@@ -547,7 +547,7 @@ const Footer = ({ width, location }) => {
               {fDatum && fDatum.getAllFooterInfo[2].content}
             </Text>
           </Wrapper>
-          <Wrapper
+          {/* <Wrapper
             dr={`row`}
             ju={`flex-start`}
             fontSize={width < 900 ? `8px` : `10px`}
@@ -562,7 +562,7 @@ const Footer = ({ width, location }) => {
             <Text fontWeight={`300`}>
               {fDatum && fDatum.getAllFooterInfo[3].content}
             </Text>
-          </Wrapper>
+          </Wrapper> */}
           <Wrapper
             dr={`row`}
             ju={`flex-start`}
@@ -590,7 +590,7 @@ const Footer = ({ width, location }) => {
             fontSize={width < 900 ? `10px` : `14px`}
             margin={width < 900 && `20px 0 0`}
           >
-            미국 법인
+            USA Office
           </Text>
           <Wrapper
             dr={`row`}
@@ -676,15 +676,15 @@ const Footer = ({ width, location }) => {
           dr={`row`}
         >
           <Text fontWeight={`300`} padding={`0 20px 0 0`}>
-            개인정보보호정책
+            Privacy Policy
           </Text>
           |
           <Text fontWeight={`300`} padding={`0 20px`}>
-            <Link to="/sitemap">사이트맵</Link>
+            <Link to="/sitemap">Site Map</Link>
           </Text>
           |
           <Text fontWeight={`300`} padding={`0 0 0 20px`}>
-            <Link to="/agreement">스마트키퍼 웹 사이트 이용 약관</Link>
+            <Link to="/agreement">Terms of Use</Link>
           </Text>
         </Wrapper>
         <Wrapper
@@ -710,15 +710,15 @@ const Footer = ({ width, location }) => {
           margin={`10px 0 0`}
         >
           <Text fontWeight={`300`} padding={`0 10px 0 0`}>
-            개인정보보호정책
+            Privacy Policy
           </Text>
           |
           <Text fontWeight={`300`} padding={`0 10px`}>
-            <Link to="/sitemap">사이트맵</Link>
+            <Link to="/sitemap">Site Map</Link>
           </Text>
           |
           <Text fontWeight={`300`} padding={`0 0 0 10px`}>
-            <Link to="/agreement">스마트키퍼 웹 사이트 이용 약관</Link>
+            <Link to="/agreement">Terms of Use</Link>
           </Text>
         </Wrapper>
       </RsWrapper>

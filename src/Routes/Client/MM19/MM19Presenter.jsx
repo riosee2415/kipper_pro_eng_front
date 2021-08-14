@@ -45,7 +45,7 @@ const Box = styled(Wrapper)`
   position: relative;
   background-attachment: initial;
   margin: ${(props) => props.margin || `0 7px 0 0`};
-  padding: 50px 0 0 50px;
+  padding: 30px 0 0 30px;
   align-items: flex-start;
   justify-content: flex-start;
 
@@ -113,7 +113,7 @@ const Button = styled(Wrapper)`
 
 const AniImage = styled(Image)`
   animation: ${translateX} 2s forwards;
-  width: 112%;
+  width: 110%;
 `;
 
 const Popup = withSplitting(() =>
@@ -221,7 +221,7 @@ const MM19Presenter = ({
                 <Wrapper al={`flex-start`}>
                   <Text
                     color={Theme.blackTheme2_C}
-                    fontSize={width < 700 ? `19px` : `18px`}
+                    fontSize={width < 700 ? `19px` : `20px`}
                     fontWeight={`700`}
                     display={width < 700 ? `none` : `flex`}
                   >
@@ -344,49 +344,81 @@ const MM19Presenter = ({
             <Wrapper
               al={`flex-start`}
               ju={`flex-start`}
-              padding={width < 700 ? `80px 35px 0` : `120px 0 0`}
+              padding={width < 700 ? `80px 35px 0` : `100px 0 0`}
               height={`100%`}
             >
               <CommonSubTitle2 shadow={`0 1px ${Theme.blackTheme2_C}`}>
-                사용중인 케이블도
+                USING CABLES
               </CommonSubTitle2>
+              <Text
+                color={Theme.blackTheme2_C}
+                fontSize={width < 700 ? `19px` : `20px`}
+                fontWeight={`700`}
+                display={width < 700 ? `none` : `flex`}
+              >
+                Also vulnerable from the attack
+              </Text>
+              <Text
+                color={Theme.blackTheme2_C}
+                fontSize={width < 700 ? `19px` : `18px`}
+                fontWeight={`700`}
+                display={width < 700 ? `flex` : `none`}
+              >
+                Also vulnerable
+              </Text>
+              <Text
+                color={Theme.blackTheme2_C}
+                fontSize={width < 700 ? `19px` : `18px`}
+                fontWeight={`700`}
+                display={width < 700 ? `flex` : `none`}
+              >
+                from the attack
+              </Text>
               <Text
                 fontSize={`18px`}
                 fontWieght={`500`}
-                color={Theme.essGrey2_C}
+                color={Theme.greyTheme6_C}
               >
-                모든 것을 하나의 키로 관리하는 능력.
+                Because all the informations connected to the cloud via network,
+              </Text>
+              <Text
+                fontSize={`18px`}
+                fontWieght={`500`}
+                color={Theme.greyTheme6_C}
+              >
+                we need to focus more on the security. Not enough for the
+                blockers,
               </Text>
               <Text
                 display={width < 700 ? `none` : `flex`}
                 fontSize={`18px`}
                 fontWieght={`500`}
-                color={Theme.essGrey2_C}
+                color={Theme.greyTheme6_C}
               >
-                암호화된 키-패턴으로 수많은 장치를 안심하고 사용할 수 있는
-                보안장치.
+                it is necessary to lock the using cables. We have a better
+                security, SMARTKEEPER.
               </Text>
 
               <Text
                 display={width < 700 ? `flex` : `none`}
                 fontSize={`18px`}
                 fontWieght={`500`}
-                color={Theme.essGrey2_C}
+                color={Theme.greyTheme6_C}
               >
-                암호화된 키-패턴으로 수많은 장치를
+                it is necessary to lock the using cables.
               </Text>
               <Text
                 display={width < 700 ? `flex` : `none`}
                 fontSize={`18px`}
                 fontWieght={`500`}
-                color={Theme.essGrey2_C}
+                color={Theme.greyTheme6_C}
               >
-                안심하고 사용할 수 있는 보안장치.
+                We have a better security, SMARTKEEPER.
               </Text>
               <Link to="/basic/6114d0a2b3595147440ae6a0">
                 <Button dr={`row`} margin={`20px 0 0`}>
                   <Text fontSize={`16px`} fontWeight={`600`}>
-                    랜케이블락 자세히 보러가기
+                    See more about LAN CABLE LOCK
                   </Text>
                   <RiArrowRightSLine fontSize={`27px`} />
                 </Button>
@@ -428,13 +460,13 @@ const MM19Presenter = ({
                   padding={width < 700 ? `40px 20px 0` : `0 50px`}
                   height={`100%`}
                 >
-                  <Text
+                  {/* <Text
                     color={Theme.essGrey3_C}
                     fontSize={width < 700 ? `16px` : `20px`}
                     fontWeight={`500`}
                   >
                     RJ45 Port Lock
-                  </Text>
+                  </Text> */}
                   <Wrapper
                     dr={`row`}
                     width={`auto`}
@@ -445,7 +477,7 @@ const MM19Presenter = ({
                       fontSize={width < 700 ? `30px` : `40px`}
                       margin={`0`}
                     >
-                      다양한 컬러의 패턴
+                      COLOR-CODED PATTERN
                     </CommonSubTitle2>
                     <Image
                       width={`38px`}
@@ -453,14 +485,37 @@ const MM19Presenter = ({
                       src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM00%2FHOME_ICON.png?alt=media&token=deba963a-50f3-41b0-8597-6f60d21c8f4b`}
                     />
                   </Wrapper>
-
+                  <Text
+                    color={Theme.blackTheme2_C}
+                    fontSize={width < 700 ? `19px` : `20px`}
+                    fontWeight={`700`}
+                    display={width < 700 ? `none` : `flex`}
+                  >
+                    More convenient by various patterns
+                  </Text>
+                  {/* <Text
+                color={Theme.blackTheme2_C}
+                fontSize={width < 700 ? `19px` : `18px`}
+                fontWeight={`700`}
+                display={width < 700 ? `flex` : `none`}
+              >
+                More convenient 
+              </Text>
+              <Text
+                color={Theme.blackTheme2_C}
+                fontSize={width < 700 ? `19px` : `18px`}
+                fontWeight={`700`}
+                display={width < 700 ? `flex` : `none`}
+              >
+                by various patterns
+              </Text> */}
                   <Text
                     display={width < 700 ? `none` : `flex`}
                     fontSize={`20px`}
                     fontWieght={`500`}
                     color={Theme.greyTheme6_C}
                   >
-                    사용하지 않는 Ethernet RJ45 포트를 물리적으로 차단하여
+                    Locks of SMARTKEEPER only unlockable with
                   </Text>
                   <Text
                     display={width < 700 ? `none` : `flex`}
@@ -468,7 +523,23 @@ const MM19Presenter = ({
                     fontWieght={`500`}
                     color={Theme.greyTheme6_C}
                   >
-                    비인가된 기기의 포트접속을 방지합니다.
+                    same color-coded patterned key.
+                  </Text>
+                  <Text
+                    display={width < 700 ? `none` : `flex`}
+                    fontSize={`20px`}
+                    fontWieght={`500`}
+                    color={Theme.greyTheme6_C}
+                  >
+                    By purpose or department, establish security
+                  </Text>
+                  <Text
+                    display={width < 700 ? `none` : `flex`}
+                    fontSize={`20px`}
+                    fontWieght={`500`}
+                    color={Theme.greyTheme6_C}
+                  >
+                    environment with different color(pattern).
                   </Text>
                   <Text
                     display={width < 700 ? `flex` : `none`}
@@ -476,7 +547,7 @@ const MM19Presenter = ({
                     fontWieght={`500`}
                     color={Theme.greyTheme6_C}
                   >
-                    사용하지 않는 Ethernet RJ45 포트를
+                    Locks of SMARTKEEPER
                   </Text>
                   <Text
                     display={width < 700 ? `flex` : `none`}
@@ -484,7 +555,7 @@ const MM19Presenter = ({
                     fontWieght={`500`}
                     color={Theme.greyTheme6_C}
                   >
-                    물리적으로 차단하여 비인가된 기기의
+                    only unlockable with
                   </Text>
                   <Text
                     display={width < 700 ? `flex` : `none`}
@@ -492,13 +563,37 @@ const MM19Presenter = ({
                     fontWieght={`500`}
                     color={Theme.greyTheme6_C}
                   >
-                    포트접속을 방지합니다.
+                    same color-coded patterned key.
+                  </Text>
+                  <Text
+                    display={width < 700 ? `flex` : `none`}
+                    fontSize={`18px`}
+                    fontWieght={`500`}
+                    color={Theme.greyTheme6_C}
+                  >
+                    By purpose or department,
+                  </Text>
+                  <Text
+                    display={width < 700 ? `flex` : `none`}
+                    fontSize={`18px`}
+                    fontWieght={`500`}
+                    color={Theme.greyTheme6_C}
+                  >
+                    establish security environment
+                  </Text>
+                  <Text
+                    display={width < 700 ? `flex` : `none`}
+                    fontSize={`18px`}
+                    fontWieght={`500`}
+                    color={Theme.greyTheme6_C}
+                  >
+                    with different color(pattern).
                   </Text>
 
                   <Link to="/basic/6114d0a2b3595147440ae69f">
                     <Button dr={`row`} margin={`20px 0 0`}>
                       <Text fontSize={`16px`} fontWeight={`500`}>
-                        랜 포트락 자세히 보러가기
+                        See more about RJ45 Port Lock
                       </Text>
                       <RiArrowRightSLine fontSize={`17px`} />
                     </Button>
@@ -538,56 +633,104 @@ const MM19Presenter = ({
                     padding={width < 700 ? `0 20px` : `0 50px`}
                     height={`100%`}
                   >
-                    <Text
+                    {/* <Text
                       color={Theme.essGrey3_C}
                       fontSize={width < 700 ? `16px` : `20px`}
                       fontWeight={`500`}
                     >
                       Lock Key Basic
-                    </Text>
+                    </Text> */}
+
+                    <CommonSubTitle2
+                      margin={`0`}
+                      fontSize={width < 700 ? `30px` : `40px`}
+                    >
+                      SINGLE KEY
+                    </CommonSubTitle2>
                     <CommonSubTitle2 fontSize={width < 700 ? `30px` : `40px`}>
-                      베이직 키 하나로
+                      FOR MULTIPLE DEVICE
                     </CommonSubTitle2>
 
                     <Text
                       display={width < 700 ? `none` : `flex`}
                       fontSize={`20px`}
                       fontWieght={`500`}
-                      color={Theme.essGrey2_C}
+                      color={Theme.greyTheme6_C}
                     >
-                      13종의 스마트키퍼 에센셜 락 장비를 해제할 수 있는 키로,
+                      Still manage all the ports with each keys?
                     </Text>
                     <Text
                       display={width < 700 ? `none` : `flex`}
                       fontSize={`20px`}
                       fontWieght={`500`}
-                      color={Theme.essGrey2_C}
+                      color={Theme.greyTheme6_C}
                     >
-                      7가지 색상의 키 패턴이 존재합니다.
+                      One of our client shows us a bunch of key
+                    </Text>
+                    <Text
+                      display={width < 700 ? `none` : `flex`}
+                      fontSize={`20px`}
+                      fontWieght={`500`}
+                      color={Theme.greyTheme6_C}
+                    >
+                      to open a single port. Lock Key Basic of
+                    </Text>
+                    <Text
+                      display={width < 700 ? `none` : `flex`}
+                      fontSize={`20px`}
+                      fontWieght={`500`}
+                      color={Theme.greyTheme6_C}
+                    >
+                      SMARTKEEPER ESSENTIAL compatible with
+                    </Text>
+                    <Text
+                      display={width < 700 ? `none` : `flex`}
+                      fontSize={`20px`}
+                      fontWieght={`500`}
+                      color={Theme.greyTheme6_C}
+                    >
+                      13 type of locks!
                     </Text>
                     <Text
                       display={width < 700 ? `flex` : `none`}
                       fontSize={`18px`}
                       fontWieght={`500`}
-                      color={Theme.essGrey2_C}
+                      color={Theme.greyTheme6_C}
                     >
-                      13종의 스마트키퍼 에센셜 락 장비를
+                      Still manage all the ports with each keys?
                     </Text>
                     <Text
                       display={width < 700 ? `flex` : `none`}
                       fontSize={`18px`}
                       fontWieght={`500`}
-                      color={Theme.essGrey2_C}
+                      color={Theme.greyTheme6_C}
                     >
-                      해제할 수 있는 키로, 7가지 색상의
+                      One of our client shows us a bunch of key
                     </Text>
                     <Text
                       display={width < 700 ? `flex` : `none`}
                       fontSize={`18px`}
                       fontWieght={`500`}
-                      color={Theme.essGrey2_C}
+                      color={Theme.greyTheme6_C}
                     >
-                      키 패턴이 존재합니다.
+                      to open a single port. Lock Key Basic of
+                    </Text>
+                    <Text
+                      display={width < 700 ? `flex` : `none`}
+                      fontSize={`18px`}
+                      fontWieght={`500`}
+                      color={Theme.greyTheme6_C}
+                    >
+                      SMARTKEEPER ESSENTIAL compatible with
+                    </Text>
+
+                    <Text
+                      display={width < 700 ? `flex` : `none`}
+                      fontSize={`18px`}
+                      fontWieght={`500`}
+                      color={Theme.greyTheme6_C}
+                    >
+                      13 type of locks!
                     </Text>
 
                     <Link to="/lock/6114d0a2b3595147440ae699">
@@ -596,7 +739,7 @@ const MM19Presenter = ({
                         margin={width < 700 ? `10px 0 0` : `20px 0 0`}
                       >
                         <Text fontSize={`16px`} fontWeight={`500`}>
-                          베이직 키 자세히 보러가기
+                          See more about Lock Key Basic
                         </Text>
                         <RiArrowRightSLine fontSize={`27px`} />
                       </Button>
@@ -650,14 +793,9 @@ const MM19Presenter = ({
               fontSize={width < 700 ? `16px` : `20px`}
               color={Theme.blackTheme_C}
             >
-              3천여 개 국내외 주요사이트.
+              Physical security is being Essential for all industries.
             </Text>
-            <Text
-              fontSize={width < 700 ? `16px` : `20px`}
-              color={Theme.blackTheme_C}
-            >
-              물리보안을 가장 완벽하게 활용하는 모든 곳.
-            </Text>
+
             {/* <Text
               fontSize={`14px`}
               color={Theme.essGrey2_C}
@@ -677,23 +815,23 @@ const MM19Presenter = ({
               >
                 <Text
                   color={Theme.white_C}
-                  fontSize={width < 700 ? `12px` : `30px`}
+                  fontSize={width < 700 ? `12px` : `28px`}
                   fontWeight={`700`}
                   margin={`0 0 5px`}
                 >
-                  공유 오피스
+                  Shared Office
                 </Text>
                 <Text
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
                 >
-                  노트북, PC등 장비보호 및
+                  Data, Anti-Theft for Laptop,
                 </Text>
                 <Text
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
                 >
-                  데이터포트
+                  Desktop
                 </Text>
                 {/* 1 */}
                 <Wrapper
@@ -888,25 +1026,33 @@ const MM19Presenter = ({
               >
                 <Text
                   color={Theme.white_C}
-                  fontSize={width < 700 ? `12px` : `30px`}
+                  fontSize={width < 700 ? `12px` : `28px`}
+                  fontWeight={`700`}
+                >
+                  Communication
+                </Text>
+                <Text
+                  color={Theme.white_C}
+                  fontSize={width < 700 ? `12px` : `28px`}
                   fontWeight={`700`}
                   margin={`0 0 5px`}
+                  lineHeight={`1`}
                 >
-                  통신 네트워크
+                  &#38; Network
                 </Text>
                 <Text
                   display={width < 700 ? `none` : `flex`}
                   color={Theme.essGrey2_C}
                   fontSize={`16px`}
                 >
-                  IDC, 네트워크 서비스 공급자 등
+                  Network devices
                 </Text>
                 <Text
                   display={width < 700 ? `none` : `flex`}
                   color={Theme.essGrey2_C}
                   fontSize={`16px`}
                 >
-                  200여 사이트
+                  (Switch, Router)
                 </Text>
 
                 <Text
@@ -914,14 +1060,14 @@ const MM19Presenter = ({
                   color={Theme.essGrey2_C}
                   fontSize={`10px`}
                 >
-                  IT, IDC 등의
+                  Network devices
                 </Text>
                 <Text
                   display={width < 700 ? `flex` : `none`}
                   color={Theme.essGrey2_C}
                   fontSize={`10px`}
                 >
-                  통신포트 정보보안
+                  (Switch, Router)
                 </Text>
                 {/* 2 */}
                 <Wrapper
@@ -1138,25 +1284,25 @@ const MM19Presenter = ({
               >
                 <Text
                   color={Theme.white_C}
-                  fontSize={width < 700 ? `12px` : `30px`}
+                  fontSize={width < 700 ? `12px` : `28px`}
                   fontWeight={`700`}
                   margin={`0 0 5px`}
                 >
-                  공공기관
+                  Public institution
                 </Text>
                 <Text
                   display={width < 700 ? `none` : `flex`}
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
                 >
-                  개인정보 등 민감정보 유출의
+                  PC, Server which storing
                 </Text>
                 <Text
                   display={width < 700 ? `none` : `flex`}
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
                 >
-                  통제 및 보호
+                  personal information
                 </Text>
 
                 <Text
@@ -1164,14 +1310,14 @@ const MM19Presenter = ({
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
                 >
-                  개인정보 등 민감정보
+                  PC, Server which storing
                 </Text>
                 <Text
                   display={width < 700 ? `flex` : `noe`}
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
                 >
-                  유출의 통제 및 보호
+                  personal information
                 </Text>
                 {/* 3 */}
                 <Wrapper
@@ -1393,23 +1539,23 @@ const MM19Presenter = ({
               >
                 <Text
                   color={Theme.white_C}
-                  fontSize={width < 700 ? `12px` : `30px`}
+                  fontSize={width < 700 ? `12px` : `28px`}
                   fontWeight={`700`}
                   margin={`0 0 5px`}
                 >
-                  교육기관
+                  Education
                 </Text>
                 <Text
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
                 >
-                  초중고, 대학교 등 교육기관
+                  Computers of Elementary
                 </Text>
                 <Text
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
                 >
-                  58개 사이트의 자료보호
+                  /Middle/High-school, University
                 </Text>
                 {/* 4 */}
                 <Wrapper
@@ -1603,18 +1749,11 @@ const MM19Presenter = ({
                   color={Theme.white_C}
                   fontSize={`30px`}
                   fontWeight={`700`}
-                >
-                  의료시설 및
-                </Text>
-                <Text
-                  display={width < 700 ? `none` : `flex`}
-                  color={Theme.white_C}
-                  fontSize={`30px`}
-                  fontWeight={`700`}
                   margin={`0 0 5px`}
                 >
-                  연구소
+                  Laboratory
                 </Text>
+
                 <Text
                   display={width < 700 ? `flex` : `none`}
                   color={Theme.white_C}
@@ -1622,28 +1761,35 @@ const MM19Presenter = ({
                   fontWeight={`700`}
                   margin={`0 0 5px`}
                 >
-                  의료시설 및 연구소
+                  Laboratory
                 </Text>
                 <Text
                   display={width < 700 ? `none` : `flex`}
                   color={Theme.essGrey2_C}
                   fontSize={`16px`}
                 >
-                  의료정보, R&#38;D 연구 자료 보호
+                  Medical equipment, computers
+                </Text>
+                <Text
+                  display={width < 700 ? `none` : `flex`}
+                  color={Theme.essGrey2_C}
+                  fontSize={`16px`}
+                >
+                  for research/study information
                 </Text>
                 <Text
                   display={width < 700 ? `flex` : `none`}
                   color={Theme.essGrey2_C}
                   fontSize={`10px`}
                 >
-                  의료정보, R&#38;D
+                  Medical equipment, computers
                 </Text>
                 <Text
                   display={width < 700 ? `flex` : `none`}
                   color={Theme.essGrey2_C}
                   fontSize={`10px`}
                 >
-                  연구 자료 보호
+                  for research/study information
                 </Text>
                 {/* 5 */}
                 <Wrapper
@@ -1877,23 +2023,29 @@ const MM19Presenter = ({
               >
                 <Text
                   color={Theme.white_C}
-                  fontSize={width < 700 ? `12px` : `30px`}
+                  fontSize={width < 700 ? `12px` : `28px`}
                   fontWeight={`700`}
                   margin={`0 0 5px`}
                 >
-                  금융
+                  Finance
                 </Text>
                 <Text
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
                 >
-                  주요 은행, 증권, 생보사 등
+                  Computers of Bank,
                 </Text>
                 <Text
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
                 >
-                  금융자료 보안
+                  Insurance, Stock,
+                </Text>
+                <Text
+                  color={Theme.essGrey2_C}
+                  fontSize={width < 700 ? `10px` : `16px`}
+                >
+                  Investment companies
                 </Text>
                 {/* 6 */}
                 <Wrapper
@@ -2067,40 +2219,28 @@ const MM19Presenter = ({
               >
                 <Text
                   color={Theme.white_C}
-                  fontSize={width < 700 ? `12px` : `30px`}
+                  fontSize={width < 700 ? `12px` : `28px`}
+                  fontWeight={`700`}
+                >
+                  Railroads &#38;
+                </Text>
+                <Text
+                  color={Theme.white_C}
                   fontWeight={`700`}
                   margin={`0 0 5px`}
+                  fontSize={width < 700 ? `12px` : `28px`}
+                  lineHeight={`1`}
                 >
-                  교통망 기반시설
+                  Highways
                 </Text>
                 <Text
                   display={width < 700 ? `none` : `flex`}
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
                 >
-                  교통망 기반시설
+                  Transportation infrastructures
                 </Text>
-                <Text
-                  display={width < 700 ? `none` : `flex`}
-                  color={Theme.essGrey2_C}
-                  fontSize={width < 700 ? `10px` : `16px`}
-                >
-                  교통망 연계 업종의 데이터 보안
-                </Text>
-                <Text
-                  display={width < 700 ? `flex` : `none`}
-                  color={Theme.essGrey2_C}
-                  fontSize={width < 700 ? `10px` : `16px`}
-                >
-                  철도, 도로 등 교통망
-                </Text>
-                <Text
-                  display={width < 700 ? `flex` : `none`}
-                  color={Theme.essGrey2_C}
-                  fontSize={width < 700 ? `10px` : `16px`}
-                >
-                  연계 업종의 데이터 보안
-                </Text>
+
                 {/* 7 */}
                 <Wrapper
                   className={`mobile`}
@@ -2341,7 +2481,7 @@ const MM19Presenter = ({
                   fontSize={`30px`}
                   fontWeight={`700`}
                 >
-                  공항, 항만 등
+                  Airport &#38;
                 </Text>
                 <Text
                   display={width < 700 ? `none` : `flex`}
@@ -2349,8 +2489,9 @@ const MM19Presenter = ({
                   fontSize={`30px`}
                   fontWeight={`700`}
                   margin={`0 0 5px`}
+                  lineHeight={`1`}
                 >
-                  운송
+                  Shipping
                 </Text>
                 <Text
                   display={width < 700 ? `flex` : `none`}
@@ -2359,19 +2500,19 @@ const MM19Presenter = ({
                   fontWeight={`700`}
                   margin={`0 0 5px`}
                 >
-                  공항, 항만 등 운송
+                  Airport &#38; Shipping
                 </Text>
                 <Text
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
                 >
-                  공항, 비행기, 선박 및
+                  Ships by regulation of IMO,
                 </Text>
                 <Text
                   color={Theme.essGrey2_C}
                   fontSize={width < 700 ? `10px` : `16px`}
                 >
-                  운송사의 정보보호
+                  Airplanes, Head offices
                 </Text>
                 {/* 8 */}
                 <Wrapper
