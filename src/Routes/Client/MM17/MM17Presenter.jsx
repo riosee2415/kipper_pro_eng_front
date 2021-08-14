@@ -293,7 +293,7 @@ const MM17Presenter = ({
                   <Image
                     width={width < 700 ? `136px` : `200px`}
                     alt="usb port lock-font"
-                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2FUSB%20Port%20Lock.svg?alt=media&token=664fa82c-56e0-4155-91e0-70beaefdea79`}
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2FUSB%20Port%20Lock_USB%E1%84%87%E1%85%A9%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%89%E1%85%A5%E1%86%BC.svg?alt=media&token=b00404ee-2eff-4da2-a7a9-a627772db5da`}
                   />
                   <Text
                     fontSize={width < 700 ? `12px` : `18px`}
@@ -301,7 +301,7 @@ const MM17Presenter = ({
                   >
                     (CSK-UL10)
                   </Text>
-                  <Link to="/usb/6107dd1dbdf08f065ce6cd1e">
+                  <Link to="/usb/6114b080e48e2e29f6cd570d">
                     <ArrowIcon>
                       Learn more
                       <FaChevronRight />
@@ -361,7 +361,7 @@ const MM17Presenter = ({
                   <Image
                     width={`110px`}
                     alt="link lock-font"
-                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2FLink%20Lock.svg?alt=media&token=89f30c83-4d6c-4ebe-9a08-a51db3378520`}
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2FLink%20Lock_USB%E1%84%87%E1%85%A9%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%89%E1%85%A5%E1%86%BC.svg?alt=media&token=0f8b5ab2-bc37-4db5-aa19-c7ce654fce5b`}
                   />
                   <Text
                     fontSize={width < 900 ? `12px` : `18px`}
@@ -369,7 +369,7 @@ const MM17Presenter = ({
                   >
                     (CSK-LK11)
                   </Text>
-                  <Link to="/usb/6107e4e0bdf08f065ce6cd25">
+                  <Link to="/usb/6114b080e48e2e29f6cd570f">
                     <ArrowIcon>
                       Learn more
                       <FaChevronRight />
@@ -407,7 +407,7 @@ const MM17Presenter = ({
               width={width < 900 ? `220px` : `500px`}
               margin={`0 0 10px`}
               alt="usb port lock-font"
-              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2FUSB%20Port%20Lock.svg?alt=media&token=664fa82c-56e0-4155-91e0-70beaefdea79`}
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2FUSB%20Port%20Lock_USB%E1%84%87%E1%85%A9%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%89%E1%85%A5%E1%86%BC.svg?alt=media&token=b00404ee-2eff-4da2-a7a9-a627772db5da`}
             />
             {/* <Text
               fontSize={width < 900 ? `20px` : `34px`}
@@ -781,7 +781,7 @@ const MM17Presenter = ({
             electricity.
           </Text>
 
-          <Link to="/usb/6107dd1dbdf08f065ce6cd1e">
+          <Link to="/usb/6114b080e48e2e29f6cd570d">
             <ArrowIcon fontWeight={`bold`} margin={`30px 0 0`}>
               Learn more about USB Port Lock
               <FaChevronRight />
@@ -974,7 +974,7 @@ const MM17Presenter = ({
             내부의 보안규정을 준수할 수 있도록 도와드립니다.
           </Text> */}
 
-          <Link to="/usb/6107e4e0bdf08f065ce6cd25">
+          <Link to="/usb/6114b080e48e2e29f6cd570f">
             <ArrowIcon>
               Learn more about Link Lock
               <FaChevronRight />
@@ -1000,7 +1000,7 @@ const MM17Presenter = ({
               </Text>
               <Text fontSize={`20px`}>to enhance physical</Text>
               <Text fontSize={`20px`}>cybersecurity. </Text>
-              <Link to="/usb/6107dd1dbdf08f065ce6cd1e">
+              <Link to="/usb/6114b080e48e2e29f6cd570d">
                 <ArrowIcon margin={`22px 0 0`}>
                   Learn more bout USB Port Lock
                   <FaChevronRight />
@@ -1060,7 +1060,7 @@ const MM17Presenter = ({
           Link and Lock it down!
         </Text>
 
-        <Link to="/usb/6107e4e0bdf08f065ce6cd25">
+        <Link to="/usb/6114b080e48e2e29f6cd570f">
           <ArrowIcon>
             Learn more about Link Lock
             <FaChevronRight />
@@ -1091,7 +1091,7 @@ const MM17Presenter = ({
             <Text fontSize={`16px`} lineHeight={`1.4`} fontWeight={`400`}>
               cybersecurity.
             </Text>
-            <Link to="/usb/6107dd1dbdf08f065ce6cd1e">
+            <Link to="/usb/6114b080e48e2e29f6cd570d">
               <ArrowIcon color={Theme.greyTheme4_C} margin={`18px 0 0`}>
                 Learn more bout USB Port Lock
                 <FaChevronRight />
@@ -1143,7 +1143,7 @@ const MM17Presenter = ({
               with products of matching pattern.
             </Text>
 
-            <Link to="/lock/6106a4c1284536707ffa20d9">
+            <Link to="/lock/6114b080e48e2e29f6cd570b">
               <ArrowIcon fontWeight={`bold`}>
                 Learn more about Universal Lock Key
                 <FaChevronRight />
@@ -1188,7 +1188,7 @@ const MM17Presenter = ({
             <Text fontWeight={`400`} margin={`0 0 30px`}>
               of matching pattern.
             </Text>
-            <Link to="/lock/6106a4c1284536707ffa20d9">
+            <Link to="/lock/6114b080e48e2e29f6cd570b">
               <ArrowIcon fontWeight={`bold`}>
                 Learn more about Universal Lock Key
                 <FaChevronRight />

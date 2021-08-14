@@ -76,10 +76,10 @@ export const translate = keyframes`
 
 export const translateX = keyframes`
 0%{
-  transform:translateX(-50px);
+  transform: translateX(500px) translateY(-100px) rotate(-3deg);
 }
 100%{
-  transform:translateX(0px);
+  transform: translateX(-157px) translateY(-100px);
 }
 `;
 

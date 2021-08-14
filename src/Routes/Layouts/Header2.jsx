@@ -5,21 +5,17 @@ import {
   SpanText,
   Text,
   Image,
+  ATag,
 } from "../../Components/CommonComponents";
 import { Link, withRouter, NavLink } from "react-router-dom";
 import styled, { ThemeContext } from "styled-components";
 import { header, header2 } from "../../Components/AnimationCommon";
-import {
-  AiOutlineClose,
-  AiOutlineMenu,
-  AiOutlinePlus,
-  AiOutlineMinus,
-} from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { IoIosArrowDown } from "react-icons/io";
 import { withResizeDetector } from "react-resize-detector";
 import Drawer from "@material-ui/core/Drawer";
 import Bounce from "react-reveal/Bounce";
-import { menus } from "./clientMenus";
+import { essmMenus } from "./clientMenus";
 import Theme from "../../Styles/Theme";
 import { toast } from "react-toastify";
 
@@ -29,7 +25,7 @@ const OnlyHeadAbsoluteWrapper = styled.div`
   visibility: hidden;
   width: ${(props) => props.width || `100%`};
   height: ${(props) => props.height};
-  background: ${(props) => props.theme.black_C};
+  background: ${(props) => props.theme.subTheme_C};
   font-size: 14px;
   flex-direction: ${(props) => props.dr || `column`};
   align-items: ${(props) => props.al || `center`};
@@ -91,6 +87,10 @@ const H_Wrapper = styled.div`
     animation: ${header} 0.3s forwards;
   }
 
+  & .Header__menu {
+    font-weight: 300;
+  }
+
   & .Header__menu:hover {
     font-weight: 600;
     color: ${(props) => props.theme.white_C};
@@ -113,7 +113,7 @@ const H_Wrapper = styled.div`
 `;
 
 const Logo = styled.div`
-  width: ${(props) => props.width || `120px`};
+  width: ${(props) => props.width || `90px`};
   text-align: left;
 
   & a {
@@ -126,7 +126,7 @@ const Logo = styled.div`
 `;
 
 const LogoImg = styled.img`
-  width: 52px;
+  width: 47px;
 
   @media (max-width: 800px) {
     width: 38px;
@@ -137,12 +137,12 @@ const ToggleBtn = styled.button`
   width: 57px;
   height: 22px;
   color: ${(props) => props.theme.white_C};
-  background: rgb(69, 69, 69);
+  background: rgb(41, 154, 223);
   border-radius: 20px;
   font-size: 14px;
 
   &:hover {
-    background: rgb(20, 131, 199);
+    background: ${(props) => props.theme.subTheme_C};
   }
 
   @media (max-width: 800px) {
@@ -183,7 +183,7 @@ const MobileHeader = styled.div`
 const MobileMenu = styled.div`
   width: 100%;
   height: 900px;
-  background: ${(props) => props.theme.black_C};
+  background: ${(props) => props.theme.subTheme_C};
   color: ${(props) => props.theme.white_C};
   z-index: 10000;
 
@@ -203,13 +203,12 @@ const ToggleSubMenu = styled(Wrapper)`
   }
 `;
 
-const Header = ({ history, width, match }) => {
+const Header = ({ location, width, match }) => {
   //state
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileSubMenuOpen, setMobileSubMenuOpen] = useState(false);
   const [mobileSubMenu, setMobileSubMenu] = useState(null);
   const [reload, setReload] = useState(false);
-  const [subToggle, setSubToggle] = useState([]);
 
   const [loginUserKey, setLoginUserKey] = useState(
     sessionStorage.getItem("XKQUSLAHDYQUWLXM")
@@ -218,43 +217,15 @@ const Header = ({ history, width, match }) => {
   const [currentIndex, setCurrentIndex] = useState(99);
 
   //handler
-
   const mobileMenuToggle = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
-  const mobileSubMenuToggle = () => {
-    setMobileSubMenuOpen(!mobileSubMenuOpen);
-  };
-
-  const logoutUserHandler = () => {
-    sessionStorage.removeItem("XKQUSLAHDYQUWLXM");
-    setLoginUserKey("");
-    toast.success("로그아웃 되었습니다.");
-    history.push("/main");
-    setMobileMenuOpen(false);
-  };
-
-  // 서브 메뉴 업데이트
-  const updateSubMenuHandler = (index) => {
-    const tempArr = subToggle.map((data, idx) => {
-      return index === idx ? !data : data;
-    });
-
-    setSubToggle(tempArr);
+  const mobileSubMenuToggle = (idx, menu) => {
+    setCurrentIndex(idx);
   };
 
   //useEffect
-  // 서브 메뉴 배열 생성
-  useEffect(() => {
-    const tempArr = [];
-    menus.map((_, idx) => {
-      tempArr.push(false);
-    });
-
-    setSubToggle(tempArr);
-  }, []);
-
   useEffect(() => {
     setReload(!reload);
   }, [mobileSubMenu]);
@@ -264,134 +235,75 @@ const Header = ({ history, width, match }) => {
       isFixed={true}
       top={`0px`}
       left={`0px`}
-      bgColor={Theme.black_C}
+      bgColor={Theme.subTheme_C}
     >
-      <Wrapper>
+      <Wrapper height={`100%`}>
         <H_Wrapper dr={`row`} margin={`0 auto`}>
           <Wrapper
             height={`100%`}
             dr={`row`}
+            al={`center`}
             ju={`space-between`}
             isMenu={true}
           >
             <Logo>
-              <Link to="/pro">
+              <Link to="/essential">
                 <LogoImg
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Flogo%2Fpro-logo.png?alt=media&token=1d7babc2-4c9d-4923-b9e2-b46f8967ca07`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Flogo%2Fes-logo-w.png?alt=media&token=9caac45d-857b-4d48-8ec7-08ff2c5f0fad`}
                   alt="LOGO"
                 />
               </Link>
             </Logo>
 
             <Wrapper width={`auto`} dr={`row`}>
-              {menus &&
-                menus.map((menu, activeIndex) => {
+              {essmMenus &&
+                essmMenus.map((menu, activeIndex) => {
                   return (
                     <Fragment key={menu.menuName}>
                       <Wrapper
                         width={`auto`}
                         fontSize={`14px`}
-                        margin={`0 40px`}
+                        margin={`0 60px`}
                         header={true}
                         color={Theme.white_C}
                       >
                         <Link
                           className={
-                            activeIndex === parseInt(match.params.active)
+                            location.pathname.includes(`${menu.menuLink}`)
                               ? "Header__menu active"
                               : "Header__menu"
                           }
                           to={`${menu.menuLink}`}
                         >
-                          <Wrapper width={`150px`} al={`flex-start`}>
+                          <Wrapper width={`120px`} al={`flex-start`}>
                             {menu.menuName}
                           </Wrapper>
                         </Link>
-                        <OnlyHeadAbsoluteWrapper
-                          top={`44px`}
-                          left={`0`}
-                          padding={`5px 0px`}
-                        >
-                          <RsWrapper
-                            dr={`row`}
-                            al={`flex-start`}
-                            ju={`space-between`}
-                            wrap={`inherit`}
-                          >
-                            <Wrapper width={`90px`}></Wrapper>
-
-                            <Wrapper
-                              width={`auto`}
-                              dr={`row`}
-                              al={`flex-start`}
-                            >
-                              {menus &&
-                                menus.map((menu, menuIndex) => {
-                                  return (
-                                    <Wrapper
-                                      key={menuIndex}
-                                      width={`auto`}
-                                      fontSize={`11px`}
-                                      padding={`15px 0px 0px`}
-                                      margin={`0 40px`}
-                                      fontWeight={`300`}
-                                      header={true}
-                                    >
-                                      {menu.subMenus.map((sub, idx) => {
-                                        return (
-                                          <Link
-                                            key={idx}
-                                            to={`${sub.subMenuLink}`}
-                                          >
-                                            <Wrapper
-                                              width={`150px`}
-                                              al={`flex-start`}
-                                            >
-                                              <MenuItem>
-                                                {sub.subMenuName}
-                                              </MenuItem>
-                                            </Wrapper>
-                                          </Link>
-                                        );
-                                      })}
-                                    </Wrapper>
-                                  );
-                                })}
-                            </Wrapper>
-                            <Wrapper width={`90px`}></Wrapper>
-                          </RsWrapper>
-                        </OnlyHeadAbsoluteWrapper>
                       </Wrapper>
                     </Fragment>
                   );
                 })}
             </Wrapper>
 
-            <Wrapper width={`120px`} dr={`row`} ju={`flex-end`}>
-              <Link to="/essential">
-                <ToggleBtn>ESS</ToggleBtn>
+            <Wrapper width={`90px`} dr={`row`} ju={`flex-end`}>
+              <Link to="/pro">
+                <ToggleBtn>PRO</ToggleBtn>
               </Link>
-              <Image
-                margin={`0 0 0 10px`}
-                width={`auto`}
-                alt="lan"
-                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Ficon%2F%E1%84%91%E1%85%A2%E1%84%89%E1%85%B3%20416.svg?alt=media&token=6a0d8888-77bf-4027-b540-99ee0d9a1a8e`}
-              />
-              <Link to="/login">
+              <ATag href={``} target="_blank" width={`auto`}>
                 <Image
                   margin={`0 0 0 10px`}
                   width={`auto`}
                   alt="lan"
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Ficon%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20561.svg?alt=media&token=fbb179f2-a819-4bc1-81be-cf6b2023f465`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Ficon%2Flan-icon.png?alt=media&token=c73ffa55-d8cb-4cc3-be57-b49646ff5032`}
                 />
-              </Link>
+              </ATag>
             </Wrapper>
           </Wrapper>
         </H_Wrapper>
       </Wrapper>
       <MobileHeader>
         <Wrapper dr={`row`} ju={`space-between`}>
-          <Wrapper width={`120px`} al={`flex-start`}>
+          <Wrapper width={`80px`} al={`flex-start`}>
             {mobileMenuOpen ? (
               <AiOutlineClose onClick={mobileMenuToggle} />
             ) : (
@@ -399,31 +311,23 @@ const Header = ({ history, width, match }) => {
             )}
           </Wrapper>
           <Logo>
-            <Link to="/pro">
+            <Link to="/essential">
               <LogoImg
                 alt="logo"
-                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Flogo%2Fpro-logo.png?alt=media&token=1d7babc2-4c9d-4923-b9e2-b46f8967ca07`}
+                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Flogo%2Fes-logo-w.png?alt=media&token=9caac45d-857b-4d48-8ec7-08ff2c5f0fad`}
               />
             </Link>
           </Logo>
-          <Wrapper width={`120px`} dr={`row`} ju={`flex-end`}>
-            <Link to="/essential">
-              <ToggleBtn>ESS</ToggleBtn>
+          <Wrapper width={`80px`} dr={`row`} ju={`flex-end`}>
+            <Link to="/pro">
+              <ToggleBtn>PRO</ToggleBtn>
             </Link>
             <Image
               margin={`0 0 0 10px`}
               width={`auto`}
               alt="lan"
-              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Ficon%2F%E1%84%91%E1%85%A2%E1%84%89%E1%85%B3%20416.svg?alt=media&token=6a0d8888-77bf-4027-b540-99ee0d9a1a8e`}
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Ficon%2Flan-icon.png?alt=media&token=c73ffa55-d8cb-4cc3-be57-b49646ff5032`}
             />
-            <Link to="/login">
-              <Image
-                margin={`0 0 0 10px`}
-                width={`auto`}
-                alt="lan"
-                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Ficon%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20561.svg?alt=media&token=fbb179f2-a819-4bc1-81be-cf6b2023f465`}
-              />
-            </Link>
           </Wrapper>
         </Wrapper>
 
@@ -437,58 +341,39 @@ const Header = ({ history, width, match }) => {
               borderBottom={`1px solid ${Theme.white_C}`}
             >
               <AiOutlineClose onClick={mobileMenuToggle} />
-              <Link to="/main">
+              <Link to="/essential">
                 <LogoImg
                   alt="logo"
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Flogo%2Fpro-logo.png?alt=media&token=1d7babc2-4c9d-4923-b9e2-b46f8967ca07`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Flogo%2Fes-logo-w.png?alt=media&token=9caac45d-857b-4d48-8ec7-08ff2c5f0fad`}
                 />
               </Link>
               <Wrapper width={`14px`}></Wrapper>
             </Wrapper>
 
             <Wrapper margin={`10px 0 0`}>
-              {menus &&
-                menus.map((menu, activeIndex) => {
+              {essmMenus &&
+                essmMenus.map((menu, activeIndex) => {
                   return (
                     <Fragment key={menu.menuName}>
                       <ToggleSubMenu al={`flex-start`} padding={`0px 35px`}>
                         <Wrapper
                           dr={`row`}
                           ju={`space-between`}
-                          borderBottom={`1px solid ${Theme.white_C}`}
+                          borderBottom={`1px solid #fff`}
                           padding={`15px 0`}
                           fontSize={`12px !important`}
-                          margin={subToggle[activeIndex] && `0 0 15px`}
-                          onClick={() => updateSubMenuHandler(activeIndex)}
                         >
-                          {menu.menuName}
-                          {subToggle[activeIndex] ? (
-                            <AiOutlineMinus />
-                          ) : (
-                            <AiOutlinePlus />
-                          )}
+                          <Link
+                            className={
+                              activeIndex === parseInt(match.params.active)
+                                ? "Header__menu active"
+                                : "Header__menu"
+                            }
+                            to={`${menu.menuLink}`}
+                          >
+                            {menu.menuName}
+                          </Link>
                         </Wrapper>
-
-                        {subToggle[activeIndex] && (
-                          <Wrapper al={`flex-start`}>
-                            {menu.subMenus.map((data, idx) => {
-                              return (
-                                <Bounce key={idx} delay={idx * 100}>
-                                  <Link to={`${data.subMenuLink}`}>
-                                    <Wrapper
-                                      fontSize={`11px`}
-                                      color={`rgb(161, 161, 166)`}
-                                      al={`flex-start`}
-                                      padding={`0 0 20px`}
-                                    >
-                                      {data.subMenuName}
-                                    </Wrapper>
-                                  </Link>
-                                </Bounce>
-                              );
-                            })}
-                          </Wrapper>
-                        )}
                       </ToggleSubMenu>
                     </Fragment>
                   );

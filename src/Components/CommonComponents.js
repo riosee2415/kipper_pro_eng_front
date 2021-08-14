@@ -670,6 +670,30 @@ export const CommonSubTitle = styled.h2`
       : `'Noto Sans KR', sans-serif`};
 `;
 
+export const CommonSubTitle2 = styled.h2`
+  width: ${(props) => props.width};
+  font-size: ${(props) => props.fontSize || `60px`};
+  font-weight: ${(props) => props.fontWeight || `900`};
+  color: ${(props) => props.color};
+  position: relative;
+  margin: ${(props) => props.margin || `0 0 25px`};
+  display: ${(props) => props.display || `flex`};
+  align-items: center;
+  color: ${(props) => props.color || `${props.theme.blackTheme2_C}`};
+  line-height: ${(props) => props.lineHeight};
+  text-shadow: ${(props) => props.shadow};
+
+  font-family: ${(props) =>
+    props.isGotham
+      ? `'Gotham Black', sans-serif`
+      : `'Noto Sans KR', sans-serif`};
+
+  @media (max-width: 700px) {
+    font-size: 30px;
+    margin: 0 0 15px;
+  }
+`;
+
 export const SubjectTitle = styled.h3`
   width: ${(props) => props.width};
   display: ${(props) => props.display};
@@ -1133,7 +1157,6 @@ export const Image = styled.img`
 
   transform: ${(props) => props.transform};
 
-
   &:hover {
     filter: ${(props) => (props.isHover ? `brightness(100%) opacity(1)` : ` `)};
 
@@ -1152,6 +1175,29 @@ export const Image = styled.img`
         ? `-15px -20px ${props.theme.lightBasicTheme_c};`
         : ``};
   }
+`;
+
+export const Image2 = styled.img`
+  display: ${(props) => props.display};
+  width: ${(props) => props.width || `100%`};
+  min-width: ${(props) => props.minWidth};
+  height: ${(props) => props.height || `auto`};
+  margin: ${(props) => props.margin};
+  cursor: ${(props) => props.cursor};
+  transform: ${(props) => props.transform};
+  object-fit: ${(props) => props.objectFit || `cover`};
+  position: ${(props) => (props.isAbsolute ? `absolute` : ``)};
+  position: ${(props) => (props.isRelative ? `relative` : ``)};
+  box-shadow: ${(props) => props.shadow};
+  border-radius: ${(props) => props.radius};
+  z-index: ${(props) => props.zIndex};
+  top: ${(props) => props.top};
+  left: ${(props) => props.left};
+  bottom: ${(props) => props.bottom};
+  right: ${(props) => props.right};
+  transition: ${(props) => props.delay || `0.3s`};
+  filter: ${(props) =>
+    props.isFilter ? `brightness(600) opacity(0.5)` : `brightness(600)`};
 `;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////

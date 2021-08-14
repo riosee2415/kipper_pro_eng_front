@@ -1944,7 +1944,7 @@ const MM09Presenter = ({
               pData.specDetailImage1 &&
               pData.specDetailContent1 && (
                 <Wrapper
-                  width={width < 700 ? `100%` : `33%`}
+                  width={width < 700 ? `100%` : `calc(100% / 3 - 15px)`}
                   // margin={`0 20px 0 0`}
                 >
                   <TitleBox>
@@ -1998,10 +1998,7 @@ const MM09Presenter = ({
               pData.specDetailTitle2 &&
               pData.specDetailImage2 &&
               pData.specDetailContent2 && (
-                <Wrapper
-                  width={width < 700 ? `100%` : `33%`}
-                  padding={`0 30px`}
-                >
+                <Wrapper width={width < 700 ? `100%` : `calc(100% / 3 - 15px)`}>
                   <TitleBox>
                     {pData && (
                       <EditorViewer
@@ -2054,7 +2051,7 @@ const MM09Presenter = ({
               pData.specDetailImage3 &&
               pData.specDetailContent3 && (
                 <Wrapper
-                  width={width < 700 ? `100%` : `33%`}
+                  width={width < 700 ? `100%` : `calc(100% / 3 - 15px)`}
                   // margin={`0 20px 0 0`}
                 >
                   <TitleBox>

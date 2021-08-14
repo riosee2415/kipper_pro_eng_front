@@ -554,7 +554,7 @@ const MM06Presenter = ({
                     key={data._id}
                     bgImg={`url("${data.thumbnailPath}")`}
                     bgImg2={`url("${data.thumbnailPath2}")`}
-                    onClick={() => moveLinkHandler(`/usb/${data._id}`)}
+                    onClick={() => moveLinkHandler(`/computer/${data._id}`)}
                   >
                     <Text
                       fontSize={width < 700 ? `10px` : `19px`}
