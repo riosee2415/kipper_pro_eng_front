@@ -398,7 +398,9 @@ const MM00Presenter = ({
                 fontWeight={`700`}
                 color={Theme.white_C}
               >
-                데이터가 움직이는 통로라면 어디든지.
+                {width < 700
+                  ? `Even the narrowest data pathway.`
+                  : `Exclusive to SMARTKEEPER`}
               </Text>
               <Text
                 display={width < 700 ? `none` : `flex`}
@@ -406,7 +408,7 @@ const MM00Presenter = ({
                 fontSize={`18px`}
                 fontWeight={`700`}
               >
-                USB-C, Mini, Micro 포트의 잠금장치까지
+                The key that controls locks for
               </Text>
               <Text
                 display={width < 700 ? `none` : `flex`}
@@ -414,7 +416,7 @@ const MM00Presenter = ({
                 fontSize={`18px`}
                 fontWeight={`700`}
               >
-                통제할 수 있는 스마트키퍼만의 전용 키.
+                USB-C, Mini &#38; Micro Ports
               </Text>
 
               <Wrapper
@@ -451,13 +453,14 @@ const MM00Presenter = ({
                 </Link>
               </Wrapper>
               {/* mobile */}
+
               <Text
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.greyTheme6_C}
                 fontSize={`18px`}
                 fontWeight={`700`}
               >
-                USB-C, Mini, Micro 포트의
+                Exclusive to SMARTKEEPER
               </Text>
               <Text
                 display={width < 700 ? `flex` : `none`}
@@ -465,7 +468,7 @@ const MM00Presenter = ({
                 fontSize={`18px`}
                 fontWeight={`700`}
               >
-                잠금장치까지 통제할 수 있는
+                The key that controls locks
               </Text>
               <Text
                 display={width < 700 ? `flex` : `none`}
@@ -473,7 +476,7 @@ const MM00Presenter = ({
                 fontSize={`18px`}
                 fontWeight={`700`}
               >
-                스마트키퍼만의 전용 키.
+                for USB-C, Mini &#38; Micro Ports .
               </Text>
 
               <Wrapper
@@ -547,14 +550,36 @@ const MM00Presenter = ({
                 margin={`0`}
                 fontSize={width < 700 ? `30px` : `40px`}
               >
-                Starting point of Port Security,
+                {width < 700
+                  ? `Starting point of`
+                  : `Starting point of Port Security,`}
               </CommonSubTitle>
+
+              {/* mobile */}
+              <CommonSubTitle
+                display={width < 700 ? `flex` : `none`}
+                lineHeight={`1.2`}
+                margin={`0`}
+                fontSize={width < 700 ? `30px` : `40px`}
+              >
+                Port Security,
+              </CommonSubTitle>
+
               <CommonSubTitle
                 lineHeight={`1.2`}
                 margin={`0`}
                 fontSize={width < 700 ? `30px` : `40px`}
               >
-                End it with Physical Security.
+                {width < 700 ? `End it with` : `End it with Physical Security.`}
+              </CommonSubTitle>
+              {/* mobile */}
+              <CommonSubTitle
+                lineHeight={`1.2`}
+                margin={`0`}
+                fontSize={width < 700 ? `30px` : `40px`}
+                display={width < 700 ? `flex` : `none`}
+              >
+                Physical Security.
               </CommonSubTitle>
             </Wrapper>
             <Button dr={`row`}>
@@ -590,6 +615,7 @@ const MM00Presenter = ({
             <Text
               fontSize={width < 700 ? `18px` : `25px`}
               color={Theme.white_C}
+              textAlign={width < 700 ? `right` : `center`}
             >
               The essential combination of network security
             </Text>
@@ -615,10 +641,10 @@ const MM00Presenter = ({
                 Network &#38; Intranet :
               </CommonSubTitle>
               <CommonSubTitle lineHeight={`1.2`} margin={`0`} fontSize={`30px`}>
-                Pathway to all
+                Pathway
               </CommonSubTitle>
               <CommonSubTitle lineHeight={`1.2`} margin={`0`} fontSize={`30px`}>
-                assets within
+                to all assets within
               </CommonSubTitle>
             </Wrapper>
 
@@ -639,11 +665,10 @@ const MM00Presenter = ({
           </Wrapper>
         </RsWrapper>
       </Wrapper>
-      {/*  */}
+      {/* */}
       <Wrapper
-        display={width < 700 ? `none` : `flex`}
         margin={`10px 0`}
-        height={`370px`}
+        height={width < 700 ? `300px` : `370px`}
         isRelative={true}
         attachment={`initial`}
         bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM00%2FMAIN_BACKGROUND_4.png?alt=media&token=4e6a7c82-310b-436f-86fc-ab1187aeff1a")`}
@@ -657,18 +682,63 @@ const MM00Presenter = ({
         ></Wrapper>
 
         <RsWrapper>
-          <Wrapper al={`flex-start`}>
-            <Text fontSize={`25px`} color={Theme.white_C}>
+          <Wrapper
+            al={width < 700 ? `flex-end` : `flex-start`}
+            padding={width < 700 ? `0 30px 0` : `0`}
+          >
+            <Text
+              fontSize={`25px`}
+              color={Theme.white_C}
+              display={width < 700 ? `none` : `flex`}
+            >
               Examples of SMARTKEEPER PRO Application
             </Text>
-            <Wrapper al={`flex-start`} margin={`20px 0`}>
-              <CommonSubTitle lineHeight={`1.2`} margin={`0`} fontSize={`40px`}>
+
+            <Text
+              display={width < 700 ? `flex` : `none`}
+              fontSize={width < 700 ? `18px` : `25px`}
+              color={Theme.white_C}
+              textAlign={width < 700 ? `right` : `center`}
+            >
+              Examples of
+            </Text>
+            <Text
+              display={width < 700 ? `flex` : `none`}
+              fontSize={width < 700 ? `18px` : `25px`}
+              color={Theme.white_C}
+              textAlign={width < 700 ? `right` : `center`}
+            >
+              SMARTKEEPER PRO Application
+            </Text>
+
+            <Wrapper
+              al={width < 700 ? `flex-end` : `flex-start`}
+              margin={`20px 0`}
+            >
+              <CommonSubTitle
+                lineHeight={`1.2`}
+                margin={`0`}
+                fontSize={width < 700 ? `30px` : `40px`}
+              >
                 Making the most of
               </CommonSubTitle>
-              <CommonSubTitle lineHeight={`1.2`} margin={`0`} fontSize={`40px`}>
-                physical cybersecurity
+              <CommonSubTitle
+                lineHeight={`1.2`}
+                margin={`0`}
+                fontSize={width < 700 ? `30px` : `40px`}
+              >
+                {width < 700 ? `physical` : `physical cybersecurity`}
+              </CommonSubTitle>
+              <CommonSubTitle
+                lineHeight={`1.2`}
+                margin={`0`}
+                fontSize={width < 700 ? `30px` : `40px`}
+                display={width < 700 ? `flex` : `none`}
+              >
+                cybersecurity
               </CommonSubTitle>
             </Wrapper>
+
             <Button dr={`row`}>
               <Text
                 fontSize={`16px`}
@@ -683,19 +753,21 @@ const MM00Presenter = ({
           </Wrapper>
         </RsWrapper>
       </Wrapper>
+
       {/*  */}
-      <Wrapper
-        height={width < 700 ? `700px` : `1200px`}
-        isRelative={true}
-        attachment={`initial`}
-        bgImg={
-          width < 700
-            ? `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM00%2FMM00-bgImg-M.jpeg?alt=media&token=6acffea7-9ca1-4521-a024-2fdbf83cf10c")`
-            : `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM00%2FMAIN_BACKGROUND_5.png?alt=media&token=3deeeeed-e761-409a-9c1f-8880078ada83")`
-        }
-        bgPosition={width < 700 ? `0 -100px` : ``}
-      >
-        {/* <Wrapper
+      <Wrapper bgColor={`rgb(28,28,28)`}>
+        <Wrapper
+          height={width < 700 ? `700px` : `1200px`}
+          isRelative={true}
+          attachment={`initial`}
+          bgImg={
+            width < 700
+              ? `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM00%2FMM00-bgImg-M.jpeg?alt=media&token=6acffea7-9ca1-4521-a024-2fdbf83cf10c")`
+              : `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM00%2FMAIN_BACKGROUND_5.png?alt=media&token=3deeeeed-e761-409a-9c1f-8880078ada83")`
+          }
+          bgPosition={width < 700 ? `0 -100px` : ``}
+        >
+          {/* <Wrapper
           display={width < 700 ? `none` : `flex`}
           bgColor={`rgba(0,0,0,0.7)`}
           isAbsolute={true}
@@ -704,149 +776,180 @@ const MM00Presenter = ({
           left={`0`}
         ></Wrapper> */}
 
-        <RsWrapper>
-          <Wrapper
-            al={`flex-start`}
-            ju={`flex-start`}
-            margin={width < 700 ? `50px 0 0` : `150px 0 0`}
-            height={`100%`}
-            padding={width < 700 ? `0 30px` : `0`}
-          >
-            <Text
-              fontSize={width < 700 ? `18px` : `25px`}
-              color={Theme.white_C}
-            >
-              Advantages of SMARTKEEPER PRO
-            </Text>
-
+          <RsWrapper>
             <Wrapper
               al={`flex-start`}
-              margin={width < 700 ? `0 0 10px` : `10px 0`}
+              ju={`flex-start`}
+              margin={width < 700 ? `50px 0 0` : `150px 0 0`}
+              height={`100%`}
+              padding={width < 700 ? `0 30px` : `0`}
             >
-              <CommonSubTitle
-                lineHeight={`1.2`}
-                margin={`0`}
-                fontSize={width < 700 ? `30px` : `48px`}
+              <Text
+                fontSize={width < 700 ? `18px` : `25px`}
+                color={Theme.white_C}
               >
-                Secure but convenient.
-              </CommonSubTitle>
-              {/* <CommonSubTitle
+                Advantages of SMARTKEEPER PRO
+              </Text>
+
+              <Wrapper
+                al={`flex-start`}
+                margin={width < 700 ? `0 0 10px` : `10px 0`}
+              >
+                <CommonSubTitle
+                  lineHeight={`1.2`}
+                  margin={`0`}
+                  fontSize={width < 700 ? `30px` : `48px`}
+                >
+                  Secure but convenient.
+                </CommonSubTitle>
+                {/* <CommonSubTitle
                 lineHeight={`1.2`}
                 margin={`0`}
                 fontSize={width < 700 ? `30px` : `48px`}
               >
                 두마리 토끼 모두.
               </CommonSubTitle> */}
-            </Wrapper>
-            {/* web */}
-            <Wrapper al={`flex-start`} display={width < 700 ? `none` : `flex`}>
-              <Text
-                fontSize={`24px`}
-                lineHeight={`34px`}
-                color={Theme.white_C}
-                fontWeight={`300`}
+              </Wrapper>
+              {/* web */}
+              <Wrapper
+                al={`flex-start`}
+                display={width < 700 ? `none` : `flex`}
               >
-                The convenience of managing more than 40 locks with
-              </Text>
-              <Text
-                fontSize={`24px`}
-                lineHeight={`34px`}
-                color={Theme.white_C}
-                fontWeight={`300`}
-              >
-                single key is only possible with SMARTKEEPER PRO.
-              </Text>
-            </Wrapper>
+                <Text
+                  fontSize={`24px`}
+                  lineHeight={`34px`}
+                  color={Theme.white_C}
+                  fontWeight={`300`}
+                >
+                  The convenience of managing more than 40 locks with
+                </Text>
+                <Text
+                  fontSize={`24px`}
+                  lineHeight={`34px`}
+                  color={Theme.white_C}
+                  fontWeight={`300`}
+                >
+                  single key is only possible with SMARTKEEPER PRO.
+                </Text>
+              </Wrapper>
 
-            <Wrapper
-              al={`flex-start`}
-              margin={`20px 0 0`}
-              display={width < 700 ? `none` : `flex`}
-            >
-              <Text
-                fontSize={`24px`}
-                lineHeight={`34px`}
-                color={Theme.white_C}
-                fontWeight={`300`}
+              <Wrapper
+                al={`flex-start`}
+                margin={`20px 0 0`}
+                display={width < 700 ? `none` : `flex`}
               >
-                In addition,
-              </Text>
-              <Text
-                fontSize={`24px`}
-                lineHeight={`34px`}
-                color={Theme.white_C}
-                fontWeight={`300`}
+                <Text
+                  fontSize={`24px`}
+                  lineHeight={`34px`}
+                  color={Theme.white_C}
+                  fontWeight={`300`}
+                >
+                  In addition,
+                </Text>
+                <Text
+                  fontSize={`24px`}
+                  lineHeight={`34px`}
+                  color={Theme.white_C}
+                  fontWeight={`300`}
+                >
+                  with hundreds of patterns of the key, superior security and
+                  strict
+                </Text>
+                <Text
+                  fontSize={`24px`}
+                  lineHeight={`34px`}
+                  color={Theme.white_C}
+                  fontWeight={`300`}
+                >
+                  sales policy of the key through B2B non-distribution sales and
+                  end-user
+                </Text>
+                <Text
+                  fontSize={`24px`}
+                  lineHeight={`34px`}
+                  color={Theme.white_C}
+                  fontWeight={`300`}
+                >
+                  verification process ensures the security.
+                </Text>
+                <Text
+                  fontSize={`24px`}
+                  lineHeight={`34px`}
+                  color={Theme.white_C}
+                  fontWeight={`300`}
+                  margin={`21px 0 0`}
+                >
+                  Now experience a new Physical Cybersecurity Solution.
+                </Text>
+              </Wrapper>
+              {/* mobile */}
+              <Wrapper
+                display={width < 700 ? `flex` : `none`}
+                al={`flex-start`}
               >
-                with hundreds of patterns of the key, superior security and
-                strict
-              </Text>
-              <Text
-                fontSize={`24px`}
-                lineHeight={`34px`}
-                color={Theme.white_C}
-                fontWeight={`300`}
-              >
-                sales policy of the key through B2B non-distribution sales and
-                end-user
-              </Text>
-              <Text
-                fontSize={`24px`}
-                lineHeight={`34px`}
-                color={Theme.white_C}
-                fontWeight={`300`}
-              >
-                verification process ensures the security.
-              </Text>
-              <Text
-                fontSize={`24px`}
-                lineHeight={`34px`}
-                color={Theme.white_C}
-                fontWeight={`300`}
-                margin={`21px 0 0`}
-              >
-                Now experience a new Physical Cybersecurity Solution.
-              </Text>
-            </Wrapper>
-            {/* mobile */}
-            <Wrapper display={width < 700 ? `flex` : `none`} al={`flex-start`}>
-              <Text fontSize={`18px`} fontWeight={`300`} color={Theme.white_C}>
-                The convenience of managing more than 40 locks with
-              </Text>
-              <Text fontSize={`18px`} fontWeight={`300`} color={Theme.white_C}>
-                single key is only possible with SMARTKEEPER PRO.
-              </Text>
-            </Wrapper>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.white_C}
+                >
+                  The convenience of managing more than 40 locks with
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.white_C}
+                >
+                  single key is only possible with SMARTKEEPER PRO.
+                </Text>
+              </Wrapper>
 
-            <Wrapper
-              display={width < 700 ? `flex` : `none`}
-              al={`flex-start`}
-              margin={`10px 0 0`}
-            >
-              <Text fontSize={`18px`} fontWeight={`300`} color={Theme.white_C}>
-                In addition,
-              </Text>
-              <Text fontSize={`18px`} fontWeight={`300`} color={Theme.white_C}>
-                with hundreds of patterns of the key, superior security and
-                strict
-              </Text>
-              <Text fontSize={`18px`} fontWeight={`300`} color={Theme.white_C}>
-                sales policy of the key through B2B non-distribution sales and
-                end-user
-              </Text>
-              <Text fontSize={`18px`} fontWeight={`300`} color={Theme.white_C}>
-                verification process ensures the security.
-              </Text>
-              <Text
-                fontSize={`18px`}
-                fontWeight={`300`}
-                color={Theme.white_C}
-                margin={`21px 0 0`}
+              <Wrapper
+                display={width < 700 ? `flex` : `none`}
+                al={`flex-start`}
+                margin={`10px 0 0`}
               >
-                Now experience a new Physical Cybersecurity Solution.
-              </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.white_C}
+                >
+                  In addition,
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.white_C}
+                >
+                  with hundreds of patterns of the key, superior security and
+                  strict
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.white_C}
+                >
+                  sales policy of the key through B2B non-distribution sales and
+                  end-user
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.white_C}
+                >
+                  verification process ensures the security.
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.white_C}
+                  margin={`21px 0 0`}
+                >
+                  Now experience a new Physical Cybersecurity Solution.
+                </Text>
+              </Wrapper>
             </Wrapper>
-          </Wrapper>
-        </RsWrapper>
+          </RsWrapper>
+        </Wrapper>
       </Wrapper>
       <Popup />
     </WholeWrapper>
