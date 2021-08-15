@@ -22,6 +22,10 @@ const SubTitle = styled.h2`
   font-weight: bold;
   color: ${(props) => props.theme.white_C};
   line-height: 1.3;
+
+  @media (max-width: 900px) {
+    font-size: 17px;
+  }
 `;
 
 const Button = styled(Wrapper)`
@@ -43,6 +47,10 @@ const Button = styled(Wrapper)`
   }
   &:hover:before {
     width: 100%;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 14px;
   }
 `;
 
@@ -161,7 +169,7 @@ const MM02Presenter = ({
             >
               <CommonSubTitle
                 fontSize={
-                  width < 900 ? (width < 700 ? `32px` : `50px`) : `60px`
+                  width < 900 ? (width < 700 ? `27px` : `50px`) : `60px`
                 }
                 fontWeight={`700`}
                 lineHeight={`1.4`}
@@ -172,7 +180,7 @@ const MM02Presenter = ({
               </CommonSubTitle>
               <CommonSubTitle
                 fontSize={
-                  width < 900 ? (width < 700 ? `32px` : `50px`) : `60px`
+                  width < 900 ? (width < 700 ? `27px` : `50px`) : `60px`
                 }
                 fontWeight={`700`}
                 lineHeight={`1.4`}
@@ -183,7 +191,7 @@ const MM02Presenter = ({
               </CommonSubTitle>
               <CommonSubTitle
                 fontSize={
-                  width < 900 ? (width < 700 ? `32px` : `50px`) : `60px`
+                  width < 900 ? (width < 700 ? `27px` : `50px`) : `60px`
                 }
                 fontWeight={`700`}
                 lineHeight={`1.4`}
@@ -194,7 +202,7 @@ const MM02Presenter = ({
               </CommonSubTitle>
               <CommonSubTitle
                 fontSize={
-                  width < 900 ? (width < 700 ? `32px` : `50px`) : `60px`
+                  width < 900 ? (width < 700 ? `27px` : `50px`) : `60px`
                 }
                 fontWeight={`700`}
                 lineHeight={`1.4`}
@@ -225,14 +233,21 @@ const MM02Presenter = ({
                 color={Theme.greyTheme7_C}
                 margin={width < 700 ? `14px 0 0` : `25px 0 0`}
               >
-                SMARTKEEPER PRO with hundreds of confidential
+                SMARTKEEPER PRO with hundreds
               </Text>
               <Text
                 fontSize={width < 700 ? `14px !important` : `20px`}
                 display={width < 900 ? `flex` : `none`}
                 color={Theme.greyTheme7_C}
               >
-                key patterns Available for corporate use only
+                of confidential key patterns
+              </Text>
+              <Text
+                fontSize={width < 700 ? `14px !important` : `20px`}
+                display={width < 900 ? `flex` : `none`}
+                color={Theme.greyTheme7_C}
+              >
+                Available for corporate use only
               </Text>
             </Wrapper>
           </RsWrapper>
@@ -250,10 +265,9 @@ const MM02Presenter = ({
                 : `80px 0 0`
               : `140px 0 40px`
           }
-          padding={width < 700 ? `0 35px` : `9`}
         >
           <Image
-            width={width < 700 ? `100%` : `80%`}
+            width={width < 700 ? `301px` : `80%`}
             src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Fmodify%2FSMARTKEEPER%20PRO_%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8F%E1%85%B5%E1%84%91%E1%85%A5%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9_1.svg?alt=media&token=a51b4955-3235-4e54-9a3b-153641d73eb7`}
           />
           <Wrapper
@@ -308,11 +322,11 @@ const MM02Presenter = ({
         {/* mobile */}
         <Wrapper
           display={width < 900 ? `flex` : `none`}
-          padding={width < 700 ? `0 35px` : `0 70px`}
+          padding={width < 700 ? `0 0 0 35px` : `0 70px`}
           al={`flex-start`}
         >
           <Text
-            fontSize={width < 700 ? `25px` : `45px`}
+            fontSize={width < 700 ? `27px` : `45px`}
             color={Theme.white_C}
             fontWeight={`700`}
             margin={width < 700 ? `0 0 11px` : `0 0 20px`}
@@ -328,9 +342,25 @@ const MM02Presenter = ({
             letterSpacing={`0.5px`}
           >
             Not available on-line for sales to the public. Distributed
-            exclusively to verified companies only through proper channels. To
-            ensure key security, there are no exceptions in the distribution
-            process.
+            exclusively to verified companies only through proper channels.
+          </Text>
+          <Text
+            color={Theme.greyTheme3_C}
+            fontSize={width < 700 ? `14px !important` : `18px`}
+            fontWeight={`400`}
+            lineHeight={`1.8`}
+            letterSpacing={`0.5px`}
+          >
+            To ensure key security, there are no
+          </Text>
+          <Text
+            color={Theme.greyTheme3_C}
+            fontSize={width < 700 ? `14px !important` : `18px`}
+            fontWeight={`400`}
+            lineHeight={`1.8`}
+            letterSpacing={`0.5px`}
+          >
+            exceptions in the distribution process.
           </Text>
         </Wrapper>
 
@@ -380,11 +410,13 @@ const MM02Presenter = ({
 
       {/*  */}
       <Wrapper
-        height={width < 900 ? (width < 700 ? `450px` : `700px`) : `2000px`}
+        height={width < 900 ? (width < 700 ? `800px` : `700px`) : `2000px`}
         attachment={`initial`}
         bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2FSMARTKEEPER-POR-ALL-set_Large.jpg?alt=media&token=431c605f-c5f6-47b1-9354-ff947ed14294")`}
         ref={numberRef}
         ju={width < 900 ? `flex-start` : `center`}
+        bgSize={width < 900 && `630px`}
+        bgPosition={width < 900 ? `center bottom ` : `center`}
       >
         {/* mobile */}
         <Wrapper
@@ -395,10 +427,17 @@ const MM02Presenter = ({
         >
           <Text
             fontWeight={`700`}
-            fontSize={width < 700 ? `25px` : `50px`}
+            fontSize={width < 700 ? `30px` : `50px`}
             color={Theme.white_C}
           >
-            Hundreds of Key Patterns
+            Hundreds of
+          </Text>
+          <Text
+            fontWeight={`700`}
+            fontSize={width < 700 ? `30px` : `50px`}
+            color={Theme.white_C}
+          >
+            Key Patterns
           </Text>
 
           <Text
@@ -410,9 +449,54 @@ const MM02Presenter = ({
             letterSpacing={`0.3px`}
           >
             There are hundreds of confidential key patterns available in
-            SMARTKEEPER PRO. Each end-user’s confidential key pattern is matched
-            and managed exclusively by COMXI. This procedure prevents
-            unauthorized purchases of Universal Lock Keys with malicious intent.
+            SMARTKEEPER PRO.
+          </Text>
+          <Text
+            fontSize={width < 700 ? `14px !important` : `20px`}
+            color={Theme.greyTheme3_C}
+            fontWeight={`400`}
+            lineHeight={`1.8`}
+            letterSpacing={`0.3px`}
+          >
+            Each end-user’s confidential key pattern is matched and managed
+            exclusively by COMXI. This procedure prevents unauthorized purchases
+            of Universal Lock Keys with malicious intent.
+          </Text>
+
+          <Image
+            width={width < 700 ? `50px` : `70px`}
+            margin={`35px 0 0`}
+            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM03%2Fpro-icon-1.png?alt=media&token=b5b0fd63-cdca-4be7-ae19-932b58f777d8`}
+          />
+
+          <Text
+            fontSize={width < 700 ? `23px` : `50px`}
+            color={Theme.white_C}
+            fontWeight={`700`}
+            margin={width < 700 ? `18px 0 0` : `30px 0 0`}
+          >
+            Complete product line-up,
+          </Text>
+          <Text
+            fontSize={width < 700 ? `23px` : `50px`}
+            color={Theme.white_C}
+            fontWeight={`700`}
+            margin={width < 700 ? `0 0 11px` : `0 0 20px`}
+          >
+            Convenient Key Management
+          </Text>
+
+          <Text
+            fontSize={width < 700 ? `18px !important` : `24px`}
+            color={Theme.greyTheme3_C}
+          >
+            The ability to manage 40+
+          </Text>
+          <Text
+            fontSize={width < 700 ? `18px !important` : `24px`}
+            color={Theme.greyTheme3_C}
+          >
+            products with ONE key.
           </Text>
         </Wrapper>
 
@@ -892,41 +976,6 @@ const MM02Presenter = ({
         display={width < 900 ? `flex` : `none`}
         al={`flex-start`}
       >
-        <Image
-          width={width < 700 ? `50px` : `70px`}
-          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM03%2Fpro-icon-1.png?alt=media&token=b5b0fd63-cdca-4be7-ae19-932b58f777d8`}
-        />
-
-        <Text
-          fontSize={width < 700 ? `24px` : `50px`}
-          color={Theme.white_C}
-          fontWeight={`700`}
-          margin={width < 700 ? `18px 0 0` : `30px 0 0`}
-        >
-          Complete product line-up,
-        </Text>
-        <Text
-          fontSize={width < 700 ? `24px` : `50px`}
-          color={Theme.white_C}
-          fontWeight={`700`}
-          margin={width < 700 ? `0 0 11px` : `0 0 20px`}
-        >
-          Convenient Key Management
-        </Text>
-
-        <Text
-          fontSize={width < 700 ? `18px !important` : `24px`}
-          color={Theme.greyTheme3_C}
-        >
-          The ability to manage 40+ products
-        </Text>
-        <Text
-          fontSize={width < 700 ? `18px !important` : `24px`}
-          color={Theme.greyTheme3_C}
-        >
-          with ONE key.
-        </Text>
-
         <Wrapper dr={`row`} margin={width < 700 ? `40px 0 0` : `80px 0 0`}>
           <Wrapper width={`50%`} al={`flex-start`}>
             <Text
@@ -1124,9 +1173,16 @@ const MM02Presenter = ({
               fontSize={width < 700 ? `18px !important` : `24px`}
               fontWeight={`400`}
             >
-              SMARTKEEPER PRO’s complete line-up not only includes locks for
-              everyday use ports, such as USB, USB-C and RJ45 ports, but for
-              uncommon ports, such as ODD, Micro-B, BNC ports, as well.
+              SMARTKEEPER PRO’s complete
+            </Text>
+            <Text
+              color={Theme.greyTheme3_C}
+              fontSize={width < 700 ? `18px !important` : `24px`}
+              fontWeight={`400`}
+            >
+              line-up not only includes locks for everyday use ports, such as
+              USB, USB-C and RJ45 ports, but for uncommon ports, such as ODD,
+              Micro-B, BNC ports, as well.
             </Text>
           </Wrapper>
 
@@ -1407,7 +1463,7 @@ const MM02Presenter = ({
           >
             <Wrapper al={`flex-start`} height={`100%`} ju={`flex-start`}>
               <Text
-                fontSize={width < 900 ? `12px` : `18px`}
+                fontSize={width < 900 ? `11.5px` : `18px`}
                 fontWeight={`300`}
                 color={Theme.white_C}
               >
@@ -1444,7 +1500,7 @@ const MM02Presenter = ({
           >
             <Wrapper al={`flex-start`} height={`100%`} ju={`flex-start`}>
               <Text
-                fontSize={width < 900 ? `12px` : `18px`}
+                fontSize={width < 900 ? `11.5px` : `18px`}
                 fontWeight={`300`}
                 color={Theme.white_C}
               >
@@ -1482,9 +1538,8 @@ const MM02Presenter = ({
           isRelative={true}
           width={width < 700 ? `302px` : `700px`}
           height={width < 700 ? `200px` : `460px`}
-          ju={`flex-start`}
           al={`flex-start`}
-          padding={width < 700 ? `30px 18px 0` : `50px 32px 0`}
+          padding={width < 700 ? `0 18px` : `50px 32px 0`}
           margin={width < 700 ? `0 0 10px` : `0 0 20px`}
         >
           <Image
@@ -1495,14 +1550,14 @@ const MM02Presenter = ({
             src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-image-10.png?alt=media&token=c57b03a9-a2f5-41d8-80ef-4ff5200d7f90`}
           />
           <Text
-            fontSize={width < 700 ? `12px !important` : `20px`}
-            fontWeight={`700`}
+            fontSize={width < 700 ? `11.5px !important` : `20px`}
+            fontWeight={`500`}
             color={Theme.greyTheme3_C}
           >
             USB Port Security
           </Text>
           <Text
-            fontSize={width < 700 ? `18px` : `50px`}
+            fontSize={width < 700 ? `17px` : `50px`}
             fontWeight={`700`}
             color={Theme.white_C}
             lineHeight={`1.4`}
@@ -1511,7 +1566,7 @@ const MM02Presenter = ({
           </Text>
 
           <Text
-            fontSize={width < 700 ? `18px` : `50px`}
+            fontSize={width < 700 ? `17px` : `50px`}
             fontWeight={`700`}
             color={Theme.white_C}
             lineHeight={`1.4`}
@@ -1540,9 +1595,8 @@ const MM02Presenter = ({
           isRelative={true}
           width={width < 700 ? `302px` : `700px`}
           height={width < 700 ? `200px` : `460px`}
-          ju={`flex-start`}
           al={`flex-start`}
-          padding={width < 700 ? `30px 18px 0` : `50px 32px 0`}
+          padding={width < 700 ? `0 18px` : `50px 32px 0`}
         >
           <Image
             isAbsolute={true}
@@ -1551,14 +1605,14 @@ const MM02Presenter = ({
             src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-image-11.png?alt=media&token=78526b8e-b773-42f8-8131-3a4385a3d2b3`}
           />
           <Text
-            fontSize={width < 700 ? `12px !important` : `20px`}
-            fontWeight={`700`}
+            fontSize={width < 700 ? `11.5px !important` : `20px`}
+            fontWeight={`500`}
             color={Theme.greyTheme3_C}
           >
             The essential combination of network security
           </Text>
           <Text
-            fontSize={width < 700 ? `18px !important` : `50px`}
+            fontSize={width < 700 ? `19px !important` : `50px`}
             fontWeight={`700`}
             color={Theme.white_C}
             lineHeight={`1.4`}
@@ -1566,7 +1620,7 @@ const MM02Presenter = ({
             Network &#38; Intranet :
           </Text>
           <Text
-            fontSize={width < 700 ? `18px !important` : `50px`}
+            fontSize={width < 700 ? `19px !important` : `50px`}
             fontWeight={`700`}
             color={Theme.white_C}
             lineHeight={`1.4`}
