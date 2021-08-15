@@ -178,6 +178,7 @@ const ArrowIcon = styled(Text)`
 
   @media (max-width: 700px) {
     font-size: 14px;
+    font-weight: 700;
   }
 `;
 
@@ -414,20 +415,25 @@ const MMinitPresenter = ({ width, moveLinkHandler }) => {
 
       <Wrapper
         attachment={`initial`}
-        bgPosition={width < 700 && `-680px 0`}
+        bgPosition={width < 700 && `-590px 0`}
+        height={width < 700 ? `500px` : `auto`}
         bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FLanding%2Fimage02.png?alt=media&token=af88cb43-aaa3-4161-ae76-f960b4217d35")`}
       >
         <RsWrapper
           width={`1230px`}
           al={`flex-start`}
           color={Theme.white_C}
-          padding={width < 900 ? `100px 30px 60px` : `180px 0`}
+          padding={width < 900 ? `76px 36px 94px` : `180px 0`}
         >
-          <Text fontSize={width < 900 ? `26px` : `40px`} fontWeight={`bold`}>
-            Arguably,
+          <Text
+            fontSize={width < 900 ? `26px` : `40px`}
+            fontWeight={`bold`}
+            lineHeight={width < 700 ? `1.3` : `1.6`}
+          >
+            {width < 900 ? `Arguably the most` : `Arguably`},
           </Text>
           <Text
-            display={width > 900 ? `flex` : `none`}
+            display={width < 900 ? `none` : `flex`}
             fontSize={`40px`}
             fontWeight={`bold`}
           >
@@ -437,18 +443,20 @@ const MMinitPresenter = ({ width, moveLinkHandler }) => {
             display={width < 900 ? `flex` : `none`}
             fontSize={`26px`}
             fontWeight={`bold`}
+            lineHeight={`1.3`}
           >
-            the most effective defense is
+            effective defense is
           </Text>
           <Text
             display={width < 900 ? `flex` : `none`}
             fontSize={`26px`}
             fontWeight={`bold`}
+            lineHeight={`1.3`}
           >
             physical defense.
           </Text>
           <Wrapper
-            display={width > 900 ? `flex` : `none`}
+            display={width < 900 ? `none` : `flex`}
             al={`flex-start`}
             padding={`30px 0`}
           >
@@ -473,31 +481,74 @@ const MMinitPresenter = ({ width, moveLinkHandler }) => {
           <Wrapper
             display={width < 900 ? `flex` : `none`}
             al={`flex-start`}
-            padding={width < 900 ? `30px 0 18px` : `30px 0`}
+            padding={width < 900 ? `15px 0 10px` : `30px 0`}
           >
-            <Text fontSize={`17px`} fontWeight={`300`}>
+            <Text
+              fontSize={`17px`}
+              lineHeight={`1.4`}
+              letterSpacing={`-0.2px`}
+              fontWeight={`300`}
+            >
               “Physical Cybersecurity” may sound
             </Text>
-            <Text fontSize={`17px`} fontWeight={`300`}>
+            <Text
+              fontSize={`17px`}
+              lineHeight={`1.4`}
+              letterSpacing={`-0.2px`}
+              fontWeight={`300`}
+            >
               foreign, however, like armor and shields,
             </Text>
-            <Text fontSize={`17px`} fontWeight={`300`}>
+            <Text
+              fontSize={`17px`}
+              lineHeight={`1.4`}
+              letterSpacing={`-0.2px`}
+              fontWeight={`300`}
+            >
               and fences and walls, we have been
             </Text>
-            <Text fontSize={`17px`} fontWeight={`300`}>
+            <Text
+              fontSize={`17px`}
+              lineHeight={`1.4`}
+              letterSpacing={`-0.2px`}
+              fontWeight={`300`}
+            >
               “physically” protected for a long time.
             </Text>
-            <Text fontSize={`17px`} fontWeight={`300`}>
-              What is physical is real, and what is real has always been
-              perfect.
+            <Text
+              fontSize={`17px`}
+              lineHeight={`1.4`}
+              letterSpacing={`-0.2px`}
+              fontWeight={`300`}
+            >
+              What is physical is real, and what is real
             </Text>
-            <Text fontSize={`17px`} fontWeight={`300`}>
-              SMARTKEEPER is committed to setting
+            <Text
+              fontSize={`17px`}
+              lineHeight={`1.4`}
+              letterSpacing={`-0.2px`}
+              fontWeight={`300`}
+            >
+              has always been perfect. SmartKeeper
             </Text>
-            <Text fontSize={`17px`} fontWeight={`300`}>
-              the standard in physical cybersecurity.
+            <Text
+              fontSize={`17px`}
+              lineHeight={`1.4`}
+              letterSpacing={`-0.2px`}
+              fontWeight={`300`}
+            >
+              is committed to setting the standard in
+            </Text>
+            <Text
+              fontSize={`17px`}
+              lineHeight={`1.4`}
+              letterSpacing={`-0.2px`}
+              fontWeight={`300`}
+            >
+              physical cybersecurity.
             </Text>
           </Wrapper>
+
           <Link to="/about">
             <ArrowIcon>
               Learn more
@@ -509,8 +560,17 @@ const MMinitPresenter = ({ width, moveLinkHandler }) => {
       <BeforeImg
         bgPosition={width < 700 && `-720px 0`}
         attachment={`initial`}
+        isRelative={true}
         bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FLanding%2Fimage03.png?alt=media&token=054146a5-1c4b-456b-bcc6-5353e7fade52")`}
       >
+        <Wrapper
+          isAbsolute={true}
+          width={`100%`}
+          height={`100%`}
+          top={`0`}
+          left={`0`}
+          bgColor={`rgba(0,0,0,0.4)`}
+        ></Wrapper>
         <RsWrapper
           width={`1230px`}
           al={`flex-start`}
@@ -518,10 +578,12 @@ const MMinitPresenter = ({ width, moveLinkHandler }) => {
           padding={width < 900 ? `100px 30px 60px` : `180px 0`}
         >
           <Text fontSize={width < 900 ? `26px` : `40px`} fontWeight={`bold`}>
-            We
+            {width < 700 ? `We value the voice of` : `We`}
           </Text>
           <Text fontSize={width < 900 ? `26px` : `40px`} fontWeight={`bold`}>
-            value the voice of our customers.
+            {width < 700
+              ? `our customers.`
+              : `value the voice of our customers.`}
           </Text>
           <Wrapper
             display={width > 900 ? `flex` : `none`}
@@ -560,25 +622,25 @@ const MMinitPresenter = ({ width, moveLinkHandler }) => {
               communications with cybersecurity
             </Text>
             <Text fontSize={`17px`} fontWeight={`300`}>
-              teams. We discuss and examine ways to
+              teams. We discuss and examine ways
             </Text>
             <Text fontSize={`17px`} fontWeight={`300`}>
-              enhance security, safety and convenience of use.
+              to enhance security, safety and
+            </Text>
+            <Text fontSize={`17px`} fontWeight={`300`}>
+              convenience of use.
             </Text>
             <Text fontSize={`17px`} fontWeight={`300`}>
               From office use to server rooms and
             </Text>
             <Text fontSize={`17px`} fontWeight={`300`}>
-              industrial sites, we research
+              industrial sites, we research and analyze
             </Text>
             <Text fontSize={`17px`} fontWeight={`300`}>
-              and analyze port specifications
+              port specifications and characteristics
             </Text>
             <Text fontSize={`17px`} fontWeight={`300`}>
-              and characteristics to present
-            </Text>
-            <Text fontSize={`17px`} fontWeight={`300`}>
-              the best products.
+              to present the best products.
             </Text>
           </Wrapper>
           <ArrowIcon>
