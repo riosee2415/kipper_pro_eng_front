@@ -181,7 +181,7 @@ const MM05Presenter = ({
           </Text>
           <Text fontSize={width < 700 ? `12px` : `16px`}>(CSK-NL11)</Text>
 
-          <Link to="/p_network/6107f36abdf08f065ce6cd53">
+          <Link to="/p_network/611910452c1dfdde5b57cd6b">
             <ArrowIcon>
               Learn more
               <FaChevronRight />
@@ -202,7 +202,7 @@ const MM05Presenter = ({
           </Text>
           <Text fontSize={width < 700 ? `12px` : `16px`}>(CSK-NC11)</Text>
 
-          <Link to="/p_network/6107f6c7bdf08f065ce6cd5f">
+          <Link to="/p_network/611910452c1dfdde5b57cd6c">
             <ArrowIcon>
               Learn more
               <FaChevronRight />
@@ -487,7 +487,7 @@ const MM05Presenter = ({
             <Text fontSize={`24px`} color={Theme.greyTheme4_C}>
               Physical cyber security is now a must, not a choice.
             </Text>
-            <Link to="/usb/6107dd1dbdf08f065ce6cd1e">
+            <Link to="/p_network/611910452c1dfdde5b57cd6b">
               <ArrowIcon fontWeight={`bold`} margin={`30px 0 0`}>
                 Learn more about Network Port Lock Plus
                 <FaChevronRight />
@@ -524,7 +524,7 @@ const MM05Presenter = ({
             >
               is now a must, not a choice.
             </Text>
-            <Link to="/usb/6107dd1dbdf08f065ce6cd1e">
+            <Link to="/p_network/611910452c1dfdde5b57cd6b">
               <ArrowIcon fontWeight={`bold`} margin={`30px 0 0`}>
                 Learn more about Network Port Lock Plus
                 <FaChevronRight />
@@ -752,7 +752,7 @@ const MM05Presenter = ({
               for Network Cables
             </Text>
 
-            <Link to="/p_network/6107f6c7bdf08f065ce6cd5f">
+            <Link to="/p_network/611910452c1dfdde5b57cd6c">
               <ArrowIcon color={Theme.blackTheme2_C}>
                 Learn more about LAN Cable Lock Plus
                 <FaChevronRight />
@@ -804,7 +804,7 @@ const MM05Presenter = ({
               with products of matching pattern.
             </Text>
 
-            <Link to="/lock/6114b080e48e2e29f6cd570b">
+            <Link to="/lock/611910452c1dfdde5b57cd5e">
               <ArrowIcon fontWeight={`bold`}>
                 Learn more about Universal Lock Key
                 <FaChevronRight />
@@ -861,7 +861,7 @@ const MM05Presenter = ({
             <Text fontWeight={`400`} margin={`0 0 30px`}>
               products of matching pattern.
             </Text>
-            <Link to="/lock/6114b080e48e2e29f6cd570b">
+            <Link to="/lock/611910452c1dfdde5b57cd5e">
               <ArrowIcon fontWeight={`bold`}>
                 Learn more about Universal Lock Key
                 <FaChevronRight />

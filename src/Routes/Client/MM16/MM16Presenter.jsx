@@ -56,7 +56,7 @@ const Button = styled(Wrapper)`
 `;
 
 const PieImage = styled(Image)`
-  width: 31.3%;
+  width: 31%;
   position: absolute;
   top: 0px;
   right: 141px;
@@ -176,7 +176,7 @@ const MM16Presenter = ({
           >
             <Image
               width={`100%`}
-              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM10%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3_%E1%84%80%E1%85%B3%E1%84%85%E1%85%A2%E1%84%91%E1%85%B3_%E1%84%80%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%87%E1%85%A5%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC.png?alt=media&token=85533cd2-4637-4214-9b40-7a1210d16e52`}
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-%E1%84%8B%E1%85%AF%E1%86%AB%E1%84%92%E1%85%A7%E1%86%BC%E1%84%80%E1%85%B3%E1%84%85%E1%85%A2%E1%84%91%E1%85%B3.png?alt=media&token=f768784f-472f-4aec-ab57-738c9c1c0dea`}
             />
             <PieImage
               src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2F%E1%84%8B%E1%85%AF%E1%86%AB%E1%84%92%E1%85%A7%E1%86%BC%E1%84%80%E1%85%B3%E1%84%85%E1%85%A2%E1%84%91%E1%85%B3.png?alt=media&token=a0c61985-5e4f-492e-9766-379bc5e221dc`}
@@ -634,7 +634,7 @@ const MM16Presenter = ({
               ju={`space-between`}
               al={`flex-start`}
             >
-              <Wrapper width={`calc(100% / 3.3)`} al={`flex-start`}>
+              <Wrapper width={`calc(100% / 3.2)`} al={`flex-start`}>
                 <Image
                   src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2Fgraph-image-6.png?alt=media&token=2bbd3a54-ab5d-4d4a-80d2-c4a8f8eeb42f`}
                 />
@@ -671,7 +671,7 @@ const MM16Presenter = ({
                 </ATag>
               </Wrapper>
 
-              <Wrapper width={`calc(100% / 3.3)`}>
+              <Wrapper width={`calc(100% / 3.2)`}>
                 <Image
                   src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2Fgraph-image-7.png?alt=media&token=1352434f-d92f-4b48-b38e-2e6f61af8aa4`}
                 />
@@ -688,7 +688,7 @@ const MM16Presenter = ({
                 </Text>
               </Wrapper>
 
-              <Wrapper width={`calc(100% / 3.3)`} al={`flex-start`}>
+              <Wrapper width={`calc(100% / 3.2)`} al={`flex-start`}>
                 <Image
                   src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2Fgraph-image-8.png?alt=media&token=4e89fdff-0fdc-45ee-b3d1-5158bf0a1c09`}
                 />

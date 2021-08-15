@@ -1346,7 +1346,7 @@ const MM09Presenter = ({
                 <Image
                   width={`70px`}
                   src={pData.productIcon}
-                  filter={`brightness(10)`}
+                  // filter={`brightness(10)`}
                   margin={`10px 0`}
                 />
               )}
@@ -1990,7 +1990,7 @@ const MM09Presenter = ({
 
           <Wrapper
             dr={`row`}
-            ju={`space-around`}
+            ju={`space-between`}
             al={`flex-start`}
             padding={width < 700 ? `50px 0 40px` : `70px 0 80px`}
           >
