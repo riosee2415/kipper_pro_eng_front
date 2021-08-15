@@ -2439,185 +2439,203 @@ const MM09Presenter = ({
             padding={`30px 0 0`}
           >
             {/* 제조 인증 아이콘 */}
-            {pData && pData.cerIconImage1 && pData.cerContent1 && (
-              <Wrapper
-                width={
-                  width < 700
-                    ? `calc(100% / 2 - (10px / 2))`
-                    : `calc(100% / 6 - (180px / 6) )`
-                }
-                margin={width < 700 ? `0 10px 30px 0` : `0 30px 0 0`}
-              >
-                <Image
-                  width={`70px`}
-                  height={`90px`}
-                  margin={`0 0 20px`}
-                  objectFit={`contain`}
-                  src={pData.cerIconImage1}
-                />
+            {pData &&
+              pData.cerIconImage1 &&
+              pData.cerContent1 &&
+              pData.cerContent1 !== `undefined` && (
+                <Wrapper
+                  width={
+                    width < 700
+                      ? `calc(100% / 2 - (10px / 2))`
+                      : `calc(100% / 6 - (180px / 6) )`
+                  }
+                  margin={width < 700 ? `0 10px 30px 0` : `0 30px 0 0`}
+                >
+                  <Image
+                    width={`70px`}
+                    height={`90px`}
+                    margin={`0 0 20px`}
+                    objectFit={`contain`}
+                    src={pData.cerIconImage1}
+                  />
 
-                <Text fontWeight={`300`} textAlign={`center`}>
-                  {pData.cerContent1.split(`\n`).map((title, idx) => {
-                    return (
-                      <SpanText key={idx}>
-                        {title}
-                        <br />
-                      </SpanText>
-                    );
-                  })}
-                </Text>
-              </Wrapper>
-            )}
+                  <Text fontWeight={`300`} textAlign={`center`}>
+                    {pData.cerContent1.split(`\n`).map((title, idx) => {
+                      return (
+                        <SpanText key={idx}>
+                          {title}
+                          <br />
+                        </SpanText>
+                      );
+                    })}
+                  </Text>
+                </Wrapper>
+              )}
 
-            {pData && pData.cerIconImage2 && pData.cerContent2 && (
-              <Wrapper
-                width={
-                  width < 700
-                    ? `calc(100% / 2 - (10px / 2))`
-                    : `calc(100% / 6 - (180px / 6) )`
-                }
-                margin={width < 700 ? `0 0 30px 0` : `0 30px 0 0`}
-              >
-                <Image
-                  width={`70px`}
-                  height={`90px`}
-                  margin={`0 0 20px`}
-                  objectFit={`contain`}
-                  src={pData.cerIconImage2}
-                />
+            {pData &&
+              pData.cerIconImage2 &&
+              pData.cerContent2 &&
+              pData.cerContent2 !== `undefined` && (
+                <Wrapper
+                  width={
+                    width < 700
+                      ? `calc(100% / 2 - (10px / 2))`
+                      : `calc(100% / 6 - (180px / 6) )`
+                  }
+                  margin={width < 700 ? `0 0 30px 0` : `0 30px 0 0`}
+                >
+                  <Image
+                    width={`70px`}
+                    height={`90px`}
+                    margin={`0 0 20px`}
+                    objectFit={`contain`}
+                    src={pData.cerIconImage2}
+                  />
 
-                <Text fontWeight={`300`} textAlign={`center`}>
-                  {pData.cerContent2.split(`\n`).map((title, idx) => {
-                    return (
-                      <SpanText key={idx}>
-                        {title}
-                        <br />
-                      </SpanText>
-                    );
-                  })}
-                </Text>
-              </Wrapper>
-            )}
+                  <Text fontWeight={`300`} textAlign={`center`}>
+                    {pData.cerContent2.split(`\n`).map((title, idx) => {
+                      return (
+                        <SpanText key={idx}>
+                          {title}
+                          <br />
+                        </SpanText>
+                      );
+                    })}
+                  </Text>
+                </Wrapper>
+              )}
 
-            {pData && pData.cerIconImage3 && pData.cerContent3 && (
-              <Wrapper
-                width={
-                  width < 700
-                    ? `calc(100% / 2 - (10px / 2))`
-                    : `calc(100% / 6 - (180px / 6) )`
-                }
-                margin={width < 700 ? `0 10px 30px 0` : `0 30px 0 0`}
-              >
-                <Image
-                  width={`70px`}
-                  height={`90px`}
-                  margin={`0 0 20px`}
-                  objectFit={`contain`}
-                  src={pData.cerIconImage3}
-                />
+            {pData &&
+              pData.cerIconImage3 &&
+              pData.cerContent3 &&
+              pData.cerContent3 !== `undefined` && (
+                <Wrapper
+                  width={
+                    width < 700
+                      ? `calc(100% / 2 - (10px / 2))`
+                      : `calc(100% / 6 - (180px / 6) )`
+                  }
+                  margin={width < 700 ? `0 10px 30px 0` : `0 30px 0 0`}
+                >
+                  <Image
+                    width={`70px`}
+                    height={`90px`}
+                    margin={`0 0 20px`}
+                    objectFit={`contain`}
+                    src={pData.cerIconImage3}
+                  />
 
-                <Text fontWeight={`300`} textAlign={`center`}>
-                  {pData.cerContent3.split(`\n`).map((title, idx) => {
-                    return (
-                      <SpanText key={idx}>
-                        {title}
-                        <br />
-                      </SpanText>
-                    );
-                  })}
-                </Text>
-              </Wrapper>
-            )}
+                  <Text fontWeight={`300`} textAlign={`center`}>
+                    {pData.cerContent3.split(`\n`).map((title, idx) => {
+                      return (
+                        <SpanText key={idx}>
+                          {title}
+                          <br />
+                        </SpanText>
+                      );
+                    })}
+                  </Text>
+                </Wrapper>
+              )}
 
-            {pData && pData.cerIconImage4 && pData.cerContent4 && (
-              <Wrapper
-                width={
-                  width < 700
-                    ? `calc(100% / 2 - (10px / 2))`
-                    : `calc(100% / 6 - (180px / 6) )`
-                }
-                margin={width < 700 ? `0 0 30px 0` : `0 30px 0 0`}
-              >
-                <Image
-                  width={`70px`}
-                  height={`90px`}
-                  margin={`0 0 20px`}
-                  objectFit={`contain`}
-                  src={pData.cerIconImage4}
-                />
+            {pData &&
+              pData.cerIconImage4 &&
+              pData.cerContent4 &&
+              pData.cerContent4 !== `undefined` && (
+                <Wrapper
+                  width={
+                    width < 700
+                      ? `calc(100% / 2 - (10px / 2))`
+                      : `calc(100% / 6 - (180px / 6) )`
+                  }
+                  margin={width < 700 ? `0 0 30px 0` : `0 30px 0 0`}
+                >
+                  <Image
+                    width={`70px`}
+                    height={`90px`}
+                    margin={`0 0 20px`}
+                    objectFit={`contain`}
+                    src={pData.cerIconImage4}
+                  />
 
-                <Text fontWeight={`300`} textAlign={`center`}>
-                  {pData.cerContent4.split(`\n`).map((title, idx) => {
-                    return (
-                      <SpanText key={idx}>
-                        {title}
-                        <br />
-                      </SpanText>
-                    );
-                  })}
-                </Text>
-              </Wrapper>
-            )}
+                  <Text fontWeight={`300`} textAlign={`center`}>
+                    {pData.cerContent4.split(`\n`).map((title, idx) => {
+                      return (
+                        <SpanText key={idx}>
+                          {title}
+                          <br />
+                        </SpanText>
+                      );
+                    })}
+                  </Text>
+                </Wrapper>
+              )}
 
-            {pData && pData.cerIconImage5 && pData.cerContent5 && (
-              <Wrapper
-                width={
-                  width < 700
-                    ? `calc(100% / 2 - (10px / 2))`
-                    : `calc(100% / 6 - (180px / 6) )`
-                }
-                margin={width < 700 ? `0 10px 30px 0` : `0 30px 0 0`}
-              >
-                <Image
-                  width={`70px`}
-                  height={`90px`}
-                  margin={`0 0 20px`}
-                  objectFit={`contain`}
-                  src={pData.cerIconImage5}
-                />
+            {pData &&
+              pData.cerIconImage5 &&
+              pData.cerContent5 &&
+              pData.cerContent5 !== `undefined` && (
+                <Wrapper
+                  width={
+                    width < 700
+                      ? `calc(100% / 2 - (10px / 2))`
+                      : `calc(100% / 6 - (180px / 6) )`
+                  }
+                  margin={width < 700 ? `0 10px 30px 0` : `0 30px 0 0`}
+                >
+                  <Image
+                    width={`70px`}
+                    height={`90px`}
+                    margin={`0 0 20px`}
+                    objectFit={`contain`}
+                    src={pData.cerIconImage5}
+                  />
 
-                <Text fontWeight={`300`} textAlign={`center`}>
-                  {pData.cerContent5.split(`\n`).map((title, idx) => {
-                    return (
-                      <SpanText key={idx}>
-                        {title}
-                        <br />
-                      </SpanText>
-                    );
-                  })}
-                </Text>
-              </Wrapper>
-            )}
+                  <Text fontWeight={`300`} textAlign={`center`}>
+                    {pData.cerContent5.split(`\n`).map((title, idx) => {
+                      return (
+                        <SpanText key={idx}>
+                          {title}
+                          <br />
+                        </SpanText>
+                      );
+                    })}
+                  </Text>
+                </Wrapper>
+              )}
 
-            {pData && pData.cerIconImage6 && pData.cerContent6 && (
-              <Wrapper
-                width={
-                  width < 700
-                    ? `calc(100% / 2 - (10px / 2))`
-                    : `calc(100% / 6 - (180px / 6) )`
-                }
-                margin={width < 700 ? `0 0 30px 0` : `0 30px 0 0`}
-              >
-                <Image
-                  width={`70px`}
-                  height={`90px`}
-                  margin={`0 0 20px`}
-                  objectFit={`contain`}
-                  src={pData.cerIconImage6}
-                />
+            {pData &&
+              pData.cerIconImage6 &&
+              pData.cerContent6 &&
+              pData.cerContent6 !== `undefined` && (
+                <Wrapper
+                  width={
+                    width < 700
+                      ? `calc(100% / 2 - (10px / 2))`
+                      : `calc(100% / 6 - (180px / 6) )`
+                  }
+                  margin={width < 700 ? `0 0 30px 0` : `0 30px 0 0`}
+                >
+                  <Image
+                    width={`70px`}
+                    height={`90px`}
+                    margin={`0 0 20px`}
+                    objectFit={`contain`}
+                    src={pData.cerIconImage6}
+                  />
 
-                <Text fontWeight={`300`} textAlign={`center`}>
-                  {pData.cerContent6.split(`\n`).map((title, idx) => {
-                    return (
-                      <SpanText key={idx}>
-                        {title}
-                        <br />
-                      </SpanText>
-                    );
-                  })}
-                </Text>
-              </Wrapper>
-            )}
+                  <Text fontWeight={`300`} textAlign={`center`}>
+                    {pData.cerContent6.split(`\n`).map((title, idx) => {
+                      return (
+                        <SpanText key={idx}>
+                          {title}
+                          <br />
+                        </SpanText>
+                      );
+                    })}
+                  </Text>
+                </Wrapper>
+              )}
           </Wrapper>
         </RsWrapper>
       </Wrapper>
