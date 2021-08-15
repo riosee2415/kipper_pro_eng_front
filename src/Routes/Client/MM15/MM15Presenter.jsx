@@ -171,7 +171,7 @@ const MM15Presenter = ({
             Download
           </Wrapper>
 
-          <Wrapper dr={`row`} margin={`21px 0 18px`}>
+          <Wrapper dr={`row`} margin={`21px 0 18px`} al={`flex-end`}>
             <Tab
               color={
                 currentTab === 0
@@ -186,7 +186,7 @@ const MM15Presenter = ({
               fontWeight={currentTab === 0 ? `700` : `400`}
               onClick={() => changeTabHandler(0)}
             >
-              User Guide
+              <Text>User Guide</Text>
             </Tab>
             <Tab
               color={
@@ -201,8 +201,26 @@ const MM15Presenter = ({
               }
               fontWeight={currentTab === 0 ? `700` : `400`}
               onClick={() => changeTabHandler(1)}
+              display={width < 900 ? `none` : `flex`}
             >
               Catalog / Product Introduction
+            </Tab>
+            <Tab
+              color={
+                currentTab === 1
+                  ? `${Theme.greyTheme3_C}`
+                  : `${Theme.greyTheme7_C}`
+              }
+              borderBottom={
+                currentTab === 1
+                  ? `1px solid ${Theme.greyTheme3_C}`
+                  : `1px solid ${Theme.greyTheme7_C}`
+              }
+              fontWeight={currentTab === 0 ? `700` : `400`}
+              onClick={() => changeTabHandler(1)}
+              display={width < 900 ? `flex` : `none`}
+            >
+              <Text>Catalog /</Text> <Text>Product Introduction</Text>
             </Tab>
           </Wrapper>
 

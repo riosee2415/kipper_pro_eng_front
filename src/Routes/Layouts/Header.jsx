@@ -5,6 +5,7 @@ import {
   SpanText,
   Text,
   Image,
+  ATag,
 } from "../../Components/CommonComponents";
 import { Link, withRouter, NavLink } from "react-router-dom";
 import styled, { ThemeContext } from "styled-components";
@@ -369,21 +370,27 @@ const Header = ({ history, width, match }) => {
               <Link to="/essential">
                 <ToggleBtn>ESS</ToggleBtn>
               </Link>
-              <Image
-                margin={`0 0 0 10px`}
+              <ATag
+                target={`_blank`}
+                href={`https://schoolhealing3.co.kr/#/pro`}
                 width={`auto`}
-                alt="lan"
-                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Ficon%2F%E1%84%91%E1%85%A2%E1%84%89%E1%85%B3%20416.svg?alt=media&token=6a0d8888-77bf-4027-b540-99ee0d9a1a8e`}
-              />
+              >
+                <Image
+                  margin={`0 0 0 10px`}
+                  width={`auto`}
+                  alt="lan"
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Ficon%2F%E1%84%91%E1%85%A2%E1%84%89%E1%85%B3%20416.svg?alt=media&token=6a0d8888-77bf-4027-b540-99ee0d9a1a8e`}
+                />
+              </ATag>
 
               {loginUserKey ? (
-                <Wrapper
-                  width={`auto`}
-                  margin={`0 0 0 5px`}
-                  onClick={logoutUserHandler}
-                  color={Theme.white_C}
-                >
-                  log
+                <Wrapper width={`auto`} onClick={logoutUserHandler}>
+                  <Image
+                    margin={`0 0 0 10px`}
+                    width={`23px`}
+                    alt="lan"
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Ficon%2Flogout.png?alt=media&token=dee7b062-cafa-4bb4-92f1-d03ac259476b`}
+                  />
                 </Wrapper>
               ) : (
                 <Link to="/login">
@@ -420,20 +427,26 @@ const Header = ({ history, width, match }) => {
             <Link to="/essential">
               <ToggleBtn>ESS</ToggleBtn>
             </Link>
-            <Image
-              margin={`0 0 0 10px`}
+            <ATag
+              target={`_blank`}
+              href={`https://schoolhealing3.co.kr/#/pro`}
               width={`auto`}
-              alt="lan"
-              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Ficon%2F%E1%84%91%E1%85%A2%E1%84%89%E1%85%B3%20416.svg?alt=media&token=6a0d8888-77bf-4027-b540-99ee0d9a1a8e`}
-            />
-            {loginUserKey ? (
-              <Wrapper
+            >
+              <Image
+                margin={`0 0 0 10px`}
                 width={`auto`}
-                margin={`0 0 0 5px`}
-                onClick={logoutUserHandler}
-                color={Theme.white_C}
-              >
-                log
+                alt="lan"
+                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Ficon%2F%E1%84%91%E1%85%A2%E1%84%89%E1%85%B3%20416.svg?alt=media&token=6a0d8888-77bf-4027-b540-99ee0d9a1a8e`}
+              />
+            </ATag>
+            {loginUserKey ? (
+              <Wrapper width={`auto`} onClick={logoutUserHandler}>
+                <Image
+                  margin={`0 0 0 10px`}
+                  width={`23px`}
+                  alt="lan"
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Ficon%2Flogout.png?alt=media&token=dee7b062-cafa-4bb4-92f1-d03ac259476b`}
+                />
               </Wrapper>
             ) : (
               <Link to="/login">
