@@ -169,7 +169,7 @@ const MM11Presenter = ({
                     </Box>
                     <Box
                       onClick={() => {
-                        moveUrlHandler("https://www.schoolhealing2.co.kr/#/");
+                        moveLinkHandler("/essential");
                       }}
                     >
                       <Text fontSize={`11px`}>SMARTKEEPER ESSENTIAL</Text>
@@ -188,9 +188,7 @@ const MM11Presenter = ({
                     </Box>
                     <Box
                       onClick={() => {
-                        moveUrlHandler(
-                          "https://www.schoolhealing2.co.kr/#/?type=reference"
-                        );
+                        moveLinkHandler("/essential?type=reference");
                       }}
                     >
                       <Text fontSize={`11px`}>REFERENCE(ESSENTIAL)</Text>
@@ -306,7 +304,7 @@ const MM11Presenter = ({
                     <Box
                       onClick={() => {
                         moveUrlHandler(
-                          "https://www.schoolhealing2.co.kr/#/basic"
+                          "https://www.schoolhealing7.co.kr/#/basic"
                         );
                       }}
                     >
@@ -316,7 +314,7 @@ const MM11Presenter = ({
                     <Box
                       onClick={() => {
                         moveUrlHandler(
-                          "https://www.schoolhealing2.co.kr/#/mini"
+                          "https://www.schoolhealing7.co.kr/#/mini"
                         );
                       }}
                     >
@@ -326,7 +324,7 @@ const MM11Presenter = ({
                     <Box
                       onClick={() => {
                         moveUrlHandler(
-                          "https://www.schoolhealing2.co.kr/#/product"
+                          "https://www.schoolhealing7.co.kr/#/product"
                         );
                       }}
                     >
@@ -336,7 +334,7 @@ const MM11Presenter = ({
                     <Box
                       onClick={() => {
                         moveUrlHandler(
-                          "https://www.schoolhealing2.co.kr/#/lock"
+                          "https://www.schoolhealing7.co.kr/#/lock"
                         );
                       }}
                     >
@@ -373,7 +371,7 @@ const MM11Presenter = ({
                     </Box>
                     <Box
                       onClick={() => {
-                        moveLinkHandler("/info?type=history");
+                        moveLinkHandler("/info?type=business");
                       }}
                     >
                       <Text fontSize={`11px`}>How to Business</Text>
@@ -381,7 +379,7 @@ const MM11Presenter = ({
                     </Box>
                     <Box
                       onClick={() => {
-                        moveLinkHandler("/info?type=sign");
+                        moveLinkHandler("/info?type=where");
                       }}
                     >
                       <Text fontSize={`12px`}>Where our Partners</Text>
@@ -502,7 +500,7 @@ const MM11Presenter = ({
               </Box>
               <Box
                 onClick={() => {
-                  moveUrlHandler("https://www.schoolhealing2.co.kr/#/");
+                  moveLinkHandler("/essential");
                 }}
               >
                 <Text fontSize={`12px`}>SMARTKEEPER ESSENTIAL</Text>
@@ -518,7 +516,7 @@ const MM11Presenter = ({
               </Box>
               <Box
                 onClick={() => {
-                  moveUrlHandler("https://www.schoolhealing2.co.kr/#/example");
+                  moveLinkHandler("/essential?type=reference");
                 }}
               >
                 <Text fontSize={`11px`}>REFERENCE(ESSENTIAL)</Text>
@@ -584,7 +582,7 @@ const MM11Presenter = ({
               <Title margin={`35px 0 0 26px`}>ESSENTIAL</Title>
               <Box
                 onClick={() => {
-                  moveUrlHandler("https://www.schoolhealing2.co.kr/#/basic");
+                  moveUrlHandler("https://www.schoolhealing7.co.kr/#/basic");
                 }}
               >
                 <Text fontSize={`12px`}>Basic Series</Text>
@@ -592,7 +590,7 @@ const MM11Presenter = ({
               </Box>
               <Box
                 onClick={() => {
-                  moveUrlHandler("https://www.schoolhealing2.co.kr/#/mini");
+                  moveUrlHandler("https://www.schoolhealing7.co.kr/#/mini");
                 }}
               >
                 <Text fontSize={`11px`}>Mini Series</Text>
@@ -600,7 +598,7 @@ const MM11Presenter = ({
               </Box>
               <Box
                 onClick={() => {
-                  moveUrlHandler("https://www.schoolhealing2.co.kr/#/product");
+                  moveUrlHandler("https://www.schoolhealing7.co.kr/#/product");
                 }}
               >
                 <Text fontSize={`12px`}>No Key Required</Text>
@@ -608,7 +606,7 @@ const MM11Presenter = ({
               </Box>
               <Box
                 onClick={() => {
-                  moveUrlHandler("https://www.schoolhealing2.co.kr/#/lock");
+                  moveUrlHandler("https://www.schoolhealing7.co.kr/#/lock");
                 }}
               >
                 <Text fontSize={`12px`}>Lock Key ESSENTIAL</Text>
@@ -625,7 +623,7 @@ const MM11Presenter = ({
               </Box>
               <Box
                 onClick={() => {
-                  moveLinkHandler("/info?type=history");
+                  moveLinkHandler("/info?type=business");
                 }}
               >
                 <Text fontSize={`11px`}>How to Business</Text>
@@ -633,7 +631,7 @@ const MM11Presenter = ({
               </Box>
               <Box
                 onClick={() => {
-                  moveLinkHandler("/info?type=sign");
+                  moveLinkHandler("/info?type=where");
                 }}
               >
                 <Text fontSize={`12px`}>Where our Partners</Text>
@@ -668,14 +666,6 @@ const MM11Presenter = ({
             </Wrapper>
           </Wrapper>
         </Wrapper>
-        {/* <Image
-          alt="sitemap"
-          src={
-            width < 900
-              ? `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM11%2Fm-sitemap.png?alt=media&token=c3ce8692-f5f5-41c4-b2ac-5a1f9bf35154`
-              : `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM11%2Fsitemap.png?alt=media&token=5b8d4443-c1c1-426b-8841-6fa78b0168d5`
-          }
-        /> */}
       </RsWrapper>
     </WholeWrapper>
   );
