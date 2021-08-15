@@ -45,19 +45,19 @@ export const menus = [
   },
   {
     menuName: "BUSINESS",
-    menuLink: "/info?type=about",
+    menuLink: "/info",
     subMenus: [
       {
         subMenuName: "Partnership",
-        subMenuLink: "/info?type=about",
+        subMenuLink: "/info?type=partnership",
       },
       {
         subMenuName: "How to Business",
-        subMenuLink: "/info?type=sign",
+        subMenuLink: "/info?type=business",
       },
       {
         subMenuName: "Where our Partners",
-        subMenuLink: "/info?type=history",
+        subMenuLink: "/info?type=where",
       },
     ],
   },
@@ -127,7 +127,7 @@ export const footerMenus = [
       },
       {
         subMenuName: "REFERENCE(ESSENTIAL)",
-        subMenuLink: "/essential",
+        subMenuLink: "/essential?type=reference",
       },
       {
         subMenuName: "Completion of USB Security",

@@ -14,6 +14,9 @@ import { withResizeDetector } from "react-resize-detector";
 import useTitle from "@4leaf.ysh/use-title";
 import Theme from "../../../Styles/Theme";
 import { IoMdArrowDropleft } from "react-icons/io";
+import queryString from "query-string";
+import { useRef } from "react";
+import { animateScroll as scroll } from "react-scroll";
 
 const Gotham = styled(Wrapper)`
   font-family: "Gotham", sans-serif;
@@ -35,8 +38,32 @@ const Gotham2 = styled(SpanText)`
   line-height: ${(props) => props.lineHeight};
 `;
 
-const MM10Presenter = ({ width }) => {
+const MM10Presenter = ({
+  width,
+  //
+  location,
+  //
+  aboutRef,
+  historyRef,
+  signRef,
+}) => {
   useTitle(`BUSINESS | ${process.env["HOMEPAGE_NAME"]}`);
+
+  useEffect(() => {
+    const query = queryString.parse(location.search);
+
+    // referenceRefconsole.log(referenceRef);
+
+    if (query.type === "partnership") {
+      scroll.scrollTo(aboutRef.current.offsetTop);
+    }
+    if (query.type === "business") {
+      scroll.scrollTo(historyRef.current.offsetTop);
+    }
+    if (query.type === "where") {
+      scroll.scrollTo(signRef.current.offsetTop);
+    }
+  }, [location.search]);
 
   return (
     <WholeWrapper bgColor={`rgb(26,26,26)`}>
@@ -64,6 +91,7 @@ const MM10Presenter = ({ width }) => {
         </RsWrapper>
       </Wrapper>
       {/* 1 */}
+      <Text ref={aboutRef}></Text>
       <Wrapper
         isRelative={true}
         margin={width < 700 ? `49px 0 0` : `39px 0 0`}
@@ -566,6 +594,7 @@ const MM10Presenter = ({ width }) => {
         </RsWrapper>
       </Wrapper>
       {/* 2 */}
+      <Text ref={historyRef}></Text>
       <Wrapper
         isRelative={true}
         margin={`128px 0 0`}
@@ -690,6 +719,7 @@ const MM10Presenter = ({ width }) => {
         </RsWrapper>
       </Wrapper>
 
+      <Text ref={signRef}></Text>
       <Wrapper
         isRelative={true}
         margin={width < 900 ? `130px 0 80px` : `132px 0 200px`}
