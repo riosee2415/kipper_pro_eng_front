@@ -516,64 +516,6 @@ const Footer = ({ width, location }) => {
             )}
           </Wrapper>
 
-          <Wrapper
-            borderBottom={`1px solid ${Theme.greyTheme9_C}`}
-            padding={`15px 0`}
-            dr={`row`}
-            ju={`space-between`}
-          >
-            <ATag
-              width={`auto`}
-              href={`http://comxi-partners.musign.co.kr/user/login.php`}
-              target={`_blank`}
-            >
-              <Wrapper width={`auto`} dr={`row`}>
-                <Image
-                  alt="icon"
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206378.svg?alt=media&token=cffa0d51-f356-4e22-8043-3a9b06d49ac4`}
-                  width={`11px`}
-                  height={`11px`}
-                  margin={`0 5px 0 0`}
-                />
-                <Text fontSize={`12px`}>PARTNERS</Text>
-              </Wrapper>
-            </ATag>
-            <Wrapper width={`auto`} dr={`row`}>
-              <ATag
-                width={`auto`}
-                href={`https://www.facebook.com/smartkeeperworld/`}
-                target={`_blank`}
-              >
-                <Image
-                  alt="icon"
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206383.svg?alt=media&token=1afe73c4-8184-44a6-8973-3c81e13a79b6`}
-                  width={`4px`}
-                />
-              </ATag>
-              <Image
-                alt="icon"
-                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206382.svg?alt=media&token=05c46c5e-9cb8-43e7-bcf6-e2ce5fcc3c53`}
-                width={`9px`}
-                margin={`0 10px`}
-                cursor={`pointer`}
-                onClick={() => {
-                  viewInfoHandler();
-                }}
-              />
-              <ATag
-                width={`auto`}
-                href={`https://www.youtube.com/channel/UC10KyXQWAUmyzgJUX_lk0Og`}
-                target={`_blank`}
-              >
-                <Image
-                  alt="icon"
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206381.svg?alt=media&token=74d4a9c5-924e-446a-8003-9ef724f531d3`}
-                  width={`14px`}
-                />
-              </ATag>
-            </Wrapper>
-          </Wrapper>
-
           {subToggle[5] && (
             <Wrapper al={`flex-start`} margin={`20px 0 0`}>
               <ATag
@@ -645,6 +587,64 @@ const Footer = ({ width, location }) => {
               </ATag>
             </Wrapper>
           )}
+
+          <Wrapper
+            borderBottom={`1px solid ${Theme.greyTheme9_C}`}
+            padding={`15px 0`}
+            dr={`row`}
+            ju={`space-between`}
+          >
+            <ATag
+              width={`auto`}
+              href={`http://comxi-partners.musign.co.kr/user/login.php`}
+              target={`_blank`}
+            >
+              <Wrapper width={`auto`} dr={`row`}>
+                <Image
+                  alt="icon"
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206378.svg?alt=media&token=cffa0d51-f356-4e22-8043-3a9b06d49ac4`}
+                  width={`11px`}
+                  height={`11px`}
+                  margin={`0 5px 0 0`}
+                />
+                <Text fontSize={`12px`}>PARTNERS</Text>
+              </Wrapper>
+            </ATag>
+            <Wrapper width={`auto`} dr={`row`}>
+              <ATag
+                width={`auto`}
+                href={`https://www.facebook.com/smartkeeperworld/`}
+                target={`_blank`}
+              >
+                <Image
+                  alt="icon"
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206383.svg?alt=media&token=1afe73c4-8184-44a6-8973-3c81e13a79b6`}
+                  width={`4px`}
+                />
+              </ATag>
+              <Image
+                alt="icon"
+                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206382.svg?alt=media&token=05c46c5e-9cb8-43e7-bcf6-e2ce5fcc3c53`}
+                width={`9px`}
+                margin={`0 10px`}
+                cursor={`pointer`}
+                onClick={() => {
+                  viewInfoHandler();
+                }}
+              />
+              <ATag
+                width={`auto`}
+                href={`https://www.youtube.com/channel/UC10KyXQWAUmyzgJUX_lk0Og`}
+                target={`_blank`}
+              >
+                <Image
+                  alt="icon"
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206381.svg?alt=media&token=74d4a9c5-924e-446a-8003-9ef724f531d3`}
+                  width={`14px`}
+                />
+              </ATag>
+            </Wrapper>
+          </Wrapper>
         </Wrapper>
       </RsWrapper>
       <RsWrapper

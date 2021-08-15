@@ -64,17 +64,21 @@ const MM10Presenter = ({
   return (
     <WholeWrapper bgColor={`rgb(26,26,26)`}>
       <Wrapper
-        height={`600px`}
+        height={width < 700 ? `257px` : `600px`}
         attachment={`initial`}
         bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM10%2F%E1%84%87%E1%85%B5%E1%84%8C%E1%85%B3%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-1.png?alt=media&token=59acb346-16b4-4ed8-a097-95ce62a33a9a")`}
       >
-        <RsWrapper width={`1126px`} al={`flex-start`}>
-          <Text color={Theme.white_C} fontSize={`70px`}>
+        <RsWrapper
+          width={`1126px`}
+          al={`flex-start`}
+          padding={width < 700 ? `0 36px` : `0`}
+        >
+          <Text color={Theme.white_C} fontSize={width < 700 ? `39px` : `70px`}>
             Partnership at
           </Text>
 
           <Image
-            width={`547px`}
+            width={width < 700 ? `305px` : `547px`}
             src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Fmodify%2FSMARTKEEPER_Landing.svg?alt=media&token=7cb2d12f-0f34-4dc0-a15f-6c43fbdbcdf4`}
           />
           {/* <Gotham color={Theme.white_C} fontSize={`70px`}>
@@ -84,8 +88,12 @@ const MM10Presenter = ({
       </Wrapper>
       {/* 1 */}
       <Text ref={aboutRef}></Text>
-      <Wrapper isRelative={true} margin={`39px 0 0`}>
-        <Wrapper
+      <Wrapper
+        isRelative={true}
+        margin={width < 700 ? `49px 0 0` : `39px 0 0`}
+        padding={width < 700 ? `0 0 0 36px` : `0`}
+      >
+        {/* <Wrapper
           isAbsolute={true}
           dr={`row`}
           top={`0`}
@@ -101,11 +109,10 @@ const MM10Presenter = ({
           <Text fontSize={`13px`} fontWeight={`700`} color={Theme.subTheme4_C}>
             Partnership
           </Text>
-        </Wrapper>
-
+        </Wrapper> */}
         <RsWrapper width={`1126px`} al={`flex-start`}>
           <Text
-            fontSize={`45px`}
+            fontSize={width < 700 ? `28px` : `45px`}
             color={Theme.white_C}
             fontWeight={`800`}
             lineHeight={`1.4`}
@@ -113,7 +120,7 @@ const MM10Presenter = ({
             Benefits of becoming a
           </Text>
           <Text
-            fontSize={`45px`}
+            fontSize={width < 700 ? `28px` : `45px`}
             color={Theme.white_C}
             fontWeight={`800`}
             lineHeight={`1.4`}
@@ -121,21 +128,62 @@ const MM10Presenter = ({
             Partner
           </Text>
 
-          <Wrapper al={`flex-start`} margin={`6px 0 37px`}>
-            <Text color={Theme.white_C} fontSize={`20px`} fontWeight={`700`}>
+          <Wrapper
+            al={`flex-start`}
+            margin={width < 700 ? `20px 0 19px` : `6px 0 37px`}
+          >
+            <Text
+              color={Theme.white_C}
+              fontSize={width < 700 ? `18px` : `20px`}
+              fontWeight={`700`}
+            >
               <Gotham2>SMARTKEEPER</Gotham2> is a Physical Cybersecurity System
               that is the proven choice of 3,000
             </Text>
-            <Text color={Theme.white_C} fontSize={`20px`} fontWeight={`700`}>
+            <Text
+              color={Theme.white_C}
+              fontSize={width < 700 ? `18px` : `20px`}
+              fontWeight={`700`}
+            >
               installation sites worldwide from a wide range of industries.
             </Text>
-            <Text color={Theme.white_C} fontSize={`20px`} fontWeight={`700`}>
+            <Text
+              color={Theme.white_C}
+              fontSize={`20px`}
+              fontWeight={`700`}
+              display={width < 700 ? `none` : `flex`}
+            >
               Become a partner with <Gotham2>SMARTKEEPER</Gotham2> to secure
+              distribution rights in your country.
+            </Text>
+
+            <Text
+              display={width < 700 ? `flex` : `none`}
+              fontSize={`18px`}
+              fontWeight={`700`}
+              color={Theme.white_C}
+            >
+              Become a partner with
+            </Text>
+            <Text
+              display={width < 700 ? `flex` : `none`}
+              fontSize={`18px`}
+              fontWeight={`700`}
+              color={Theme.white_C}
+            >
+              SMARTKEEPER to secure
+            </Text>
+            <Text
+              display={width < 700 ? `flex` : `none`}
+              fontSize={`18px`}
+              fontWeight={`700`}
+              color={Theme.white_C}
+            >
               distribution rights in your country.
             </Text>
           </Wrapper>
 
-          <Wrapper al={`flex-start`}>
+          <Wrapper al={`flex-start`} display={width < 700 ? `none` : `flex`}>
             <Text color={Theme.greyTheme7_C}>
               <Gotham2>SMARTKEEPER</Gotham2> is the world’s first complete
               line-up of physical security products from Korea.
@@ -154,8 +202,24 @@ const MM10Presenter = ({
             </Text>
           </Wrapper>
 
+          <Wrapper display={width < 700 ? `flex` : `none`}>
+            <Text
+              fontSize={`16px`}
+              color={Theme.greyTheme7_C}
+              letterSpacing={`0.4px`}
+            >
+              SMARTKEEPER is the world’s first complete line-up of physical
+              security products from Korea. Deployed to more than 3,000 sites
+              globally, SMARTKEEPER is used in various industries including the
+              military, government, IT, manufacturing, telecommunications,
+              finance, medical care and education. Companies that understand the
+              need for physical cybersecurity rely on SMARTKEEPER to keep their
+              information safe.
+            </Text>
+          </Wrapper>
+
           <Wrapper al={`flex-start`} margin={`35px 0 40px`}>
-            <Text color={Theme.greyTheme7_C}>
+            <Text color={Theme.greyTheme7_C} letterSpacing={`0.4px`}>
               We are looking to partner with distributors that will enlarge
               SMARTKEEPER’s presence in the global physical cybersecurity
               market.
@@ -308,7 +372,7 @@ const MM10Presenter = ({
       {/* 2 */}
       <Text ref={historyRef}></Text>
       <Wrapper isRelative={true} margin={`128px 0 0`}>
-        <Wrapper
+        {/* <Wrapper
           isAbsolute={true}
           dr={`row`}
           top={`0`}
@@ -324,7 +388,7 @@ const MM10Presenter = ({
           <Text fontSize={`13px`} fontWeight={`700`} color={Theme.subTheme4_C}>
             How to Business
           </Text>
-        </Wrapper>
+        </Wrapper> */}
         <RsWrapper al={`flex-start`} width={`1126px`}>
           <Text fontSize={`45px`} fontWeight={`700`} color={Theme.white_C}>
             How to become a Partner
@@ -345,7 +409,7 @@ const MM10Presenter = ({
 
       <Text ref={signRef}></Text>
       <Wrapper isRelative={true} margin={`132px 0 200px`}>
-        <Wrapper
+        {/* <Wrapper
           isAbsolute={true}
           dr={`row`}
           top={`0`}
@@ -361,8 +425,7 @@ const MM10Presenter = ({
           <Text fontSize={`13px`} fontWeight={`700`} color={Theme.subTheme4_C}>
             Where our Partners
           </Text>
-        </Wrapper>
-
+        </Wrapper> */}
         <RsWrapper width={`1126px`} al={`flex-start`}>
           <Text
             fontSize={`45px`}
