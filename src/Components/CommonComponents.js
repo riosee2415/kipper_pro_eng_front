@@ -59,6 +59,10 @@ export const WholeWrapper = styled.div`
     color: #a3a3a3;
   }
 
+  & .magnifier-image {
+    object-fit: cover;
+  }
+
   @media (max-width: 900px) {
     .MuiFormControlLabel-root {
       margin-right: 0;

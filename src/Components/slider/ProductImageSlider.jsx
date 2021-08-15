@@ -35,7 +35,7 @@ const ProductImageSlider = ({
     } else if (width > 700) {
       setSlidesPerView(4);
     } else {
-      setSlidesPerView(3);
+      setSlidesPerView(5);
     }
   }, [width]);
 
