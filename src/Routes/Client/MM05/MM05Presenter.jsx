@@ -108,8 +108,8 @@ const MM05Presenter = ({
     }
 
     if (pageYOffset > temp5Height - 500 && pageYOffset < temp5Height + 300) {
-      if (marginImg2 - 50 < -200 && pageY < pageYOffset) {
-        setMarginImg2(-200);
+      if (marginImg2 - 50 < -300 && pageY < pageYOffset) {
+        setMarginImg2(-300);
       } else if (pageY > pageYOffset && marginImg2 + 30 < 50) {
         setMarginImg2(marginImg2 + 30);
       } else if (pageY > pageYOffset && marginImg2 + 30 >= 50) {
