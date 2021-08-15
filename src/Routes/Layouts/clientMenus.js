@@ -119,8 +119,7 @@ export const footerMenus = [
       },
       {
         subMenuName: "SMARTKEEPER ESSENTIAL",
-        subMenuLink: "https://schoolhealing2.co.kr/#/main",
-        isEx: true,
+        subMenuLink: "/essential",
       },
       {
         subMenuName: "REFERENCE(PRO)",
@@ -128,7 +127,7 @@ export const footerMenus = [
       },
       {
         subMenuName: "REFERENCE(ESSENTIAL)",
-        subMenuLink: "/example",
+        subMenuLink: "/essential",
       },
       {
         subMenuName: "Completion of USB Security",
@@ -168,27 +167,26 @@ export const footerMenus = [
   },
   {
     menuName: "ESSENTIAL",
-    menuLink: "https://schoolhealing2.co.kr/#/basic",
-    isEx: true,
+    menuLink: "/essential",
     subMenus: [
       {
         subMenuName: "Basic Series",
-        subMenuLink: "https://schoolhealing2.co.kr/#/basic",
+        subMenuLink: "https://schoolhealing7.co.kr/#/basic",
         isEx: true,
       },
       {
         subMenuName: "Mini Series",
-        subMenuLink: "https://schoolhealing2.co.kr/#/mini",
+        subMenuLink: "https://schoolhealing7.co.kr/#/mini",
         isEx: true,
       },
       {
         subMenuName: "No Key Required",
-        subMenuLink: "https://schoolhealing2.co.kr/#/product",
+        subMenuLink: "https://schoolhealing7.co.kr/#/product",
         isEx: true,
       },
       {
         subMenuName: "Lock Key ESSENTIAL",
-        subMenuLink: "https://schoolhealing2.co.kr/#/lock",
+        subMenuLink: "https://schoolhealing7.co.kr/#/lock",
         isEx: true,
       },
     ],
