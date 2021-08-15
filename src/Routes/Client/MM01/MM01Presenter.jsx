@@ -26,7 +26,7 @@ const Title = styled.h1`
   display: ${(props) => props.display};
 
   @media (max-width: 900px) {
-    font-size: 25px;
+    font-size: ${(props) => props.fontSize || `27px`};
   }
 `;
 
@@ -302,6 +302,7 @@ const MM01Presenter = ({
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
                 >
                   Malware is like the flu. Even with consistent monitoring
                 </Text>
@@ -328,7 +329,23 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  and vaccination, it always infiltrates our bodies with
+                  Malware is like the flu. Even with
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  consistent monitoring and
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.greyTheme7_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  vaccination, it always infiltrates
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -337,7 +354,7 @@ const MM01Presenter = ({
                   display={width < 900 ? `flex` : `none`}
                   margin={`0 0 40px`}
                 >
-                  new viruses.
+                  our bodies with new viruses.
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -361,7 +378,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  The perfect way to protect against viruses is to block the
+                  The perfect way to protect against
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -369,7 +386,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  intrusion route directly.
+                  viruses is to block the intrusion
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -377,14 +394,15 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  Leaving the intrusion route
+                  route directly. Leaving the
                 </Text>
                 <Text
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                 >
-                  unattended means that there is a lapse in security.
+                  intrusion route unattended means that there is a lapse in
+                  security.
                 </Text>
               </Wrapper>
               {/*  */}
@@ -394,13 +412,14 @@ const MM01Presenter = ({
                 ref={tab2Ref}
                 al={`flex-start`}
               >
-                <Title ref={check1Ref}>The best security is</Title>
-                <Title display={width < 900 ? `none` : `block`}>
-                  physical security.
+                <Title
+                  fontSize={width < 900 && `30px !important`}
+                  ref={check1Ref}
+                >
+                  The best security is
                 </Title>
-                <Title display={width < 900 ? `block` : `none`}>physical</Title>
-                <Title display={width < 900 ? `block` : `none`}>
-                  security.
+                <Title fontSize={width < 900 && `30px !important`}>
+                  physical security.
                 </Title>
 
                 <Wrapper
@@ -414,6 +433,7 @@ const MM01Presenter = ({
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
                 >
                   We all know what to do when we receive a spam mail
                 </Text>
@@ -432,7 +452,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  We all know what to do when we receive a spam mail
+                  We all know what to do when we
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -441,7 +461,7 @@ const MM01Presenter = ({
                   display={width < 900 ? `flex` : `none`}
                   margin={`0 0 40px`}
                 >
-                  with malware. “Do NOT click to open.”
+                  receive a spam mail with malware. “Do NOT click to open.”
                 </Text>
                 {/* <Text
                   fontSize={`18px`}
@@ -499,7 +519,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  Will you continue to allow connecting personal devices
+                  Will you continue to allow
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -507,7 +527,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  that may be infected to industrial equipment
+                  connecting personal devices
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -515,7 +535,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  full of confidential data?
+                  that may be infected to industrial
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -523,7 +543,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  Will you continue to neglect
+                  equipment full of confidential
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -531,7 +551,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  removable storage devices
+                  data? Will you continue to neglect
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -539,7 +559,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  with important data?
+                  removable storage devices with important data?
                 </Text>
               </Wrapper>
               {/*  */}
@@ -549,8 +569,12 @@ const MM01Presenter = ({
                 ref={tab3Ref}
                 al={`flex-start`}
               >
-                <Title ref={check2Ref}>Arguably</Title>
-                <Title>the Best Security</Title>
+                <Title fontSize={width < 900 && `30px`} ref={check2Ref}>
+                  Arguably
+                </Title>
+                <Title fontSize={width < 900 && `30px`}>
+                  the Best Security
+                </Title>
 
                 <Wrapper
                   width={`20px`}
@@ -563,6 +587,7 @@ const MM01Presenter = ({
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
+                  display={width < 900 ? `none` : `flex`}
                 >
                   The best way to prevent malware infection &#38; data breach is
                   to
@@ -598,7 +623,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  infection &#38; data breach is to
+                  infection &#38; data breach is
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -607,7 +632,7 @@ const MM01Presenter = ({
                   display={width < 900 ? `flex` : `none`}
                   margin={`0 0 40px`}
                 >
-                  physically block open ports.
+                  to physically block open ports.
                 </Text>
                 {/* <Text
                   fontSize={`18px`}
@@ -653,8 +678,12 @@ const MM01Presenter = ({
                 ref={tab4Ref}
                 al={`flex-start`}
               >
-                <Title ref={check3Ref}>Physical Cybersecurity,</Title>
-                <Title>Now a must, not a choice.</Title>
+                <Title fontSize={width < 900 && `23px`} ref={check3Ref}>
+                  Physical Cybersecurity,
+                </Title>
+                <Title fontSize={width < 900 && `23px`}>
+                  Now a must, not a choice.
+                </Title>
 
                 <Wrapper
                   width={`20px`}
@@ -677,16 +706,15 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  The 4th Industrial Revolution,
+                  The 4th Industrial Revolution, the
                 </Text>
                 <Text
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
-                  margin={`0 0 15px`}
                 >
-                  the era where intangible data
+                  era where intangible data
                 </Text>
                 {/* <Text
                   fontSize={`18px`}
@@ -727,7 +755,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  is now an asset…
+                  is now an asset… Physically block
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -735,7 +763,7 @@ const MM01Presenter = ({
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
                 >
-                  Physically block open ports with SMARTKEEPER
+                  open ports with SMARTKEEPER
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -866,23 +894,43 @@ const MM01Presenter = ({
                   />
                   <Wrapper
                     width={`auto`}
-                    fontSize={width < 900 ? `23px` : `45px`}
+                    fontSize={width < 900 ? `28px` : `45px`}
                     fontWeight={`bold`}
                     lineHeight={`1.3`}
+                    display={width < 900 ? `none` : `flex`}
                   >
                     Sustainable cybersecurity
                   </Wrapper>
                   <Wrapper
                     width={`auto`}
-                    fontSize={width < 900 ? `23px` : `45px`}
+                    fontSize={width < 900 ? `28px` : `45px`}
                     fontWeight={`bold`}
                     lineHeight={`1.3`}
+                    display={width < 900 ? `none` : `flex`}
                   >
                     system with one physical
                   </Wrapper>
                   <Wrapper
                     width={`auto`}
-                    fontSize={width < 900 ? `23px` : `45px`}
+                    fontSize={width < 900 ? `28px` : `45px`}
+                    fontWeight={`bold`}
+                    lineHeight={`1.3`}
+                    display={width < 900 ? `flex` : `none`}
+                  >
+                    Sustainable
+                  </Wrapper>
+                  <Wrapper
+                    width={`auto`}
+                    fontSize={width < 900 ? `28px` : `45px`}
+                    fontWeight={`bold`}
+                    lineHeight={`1.3`}
+                    display={width < 900 ? `flex` : `none`}
+                  >
+                    cybersecurity system with one physical
+                  </Wrapper>
+                  <Wrapper
+                    width={`auto`}
+                    fontSize={width < 900 ? `28px` : `45px`}
                     fontWeight={`bold`}
                     lineHeight={`1.3`}
                   >
@@ -976,51 +1024,74 @@ const MM01Presenter = ({
             />
 
             <Wrapper
-              bgColor={`linear-gradient(to top, rgb(255, 255, 255), ${Theme.lightGrey_C})`}
               al={`flex-start`}
               display={width < 900 ? `flex` : `none`}
               padding={width < 900 && `40px 36px`}
-              margin={`480px 0 0`}
+              margin={`420px 0 0`}
+              color={`rgb(36, 36, 36)`}
+              bgColor={Theme.lightGrey_C}
+              isRelative={true}
             >
               <Wrapper
-                width={`auto`}
-                dr={`row`}
-                fontSize={`15px`}
-                fontWeight={`500`}
+                isAbsolute={true}
+                top={`-150px`}
+                left={`0`}
+                height={`150px`}
               >
-                SMARTKEEPER physically blocks the
+                <Image
+                  height={`100%`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM01%2F%E1%84%89%E1%85%A1%E1%84%80%E1%85%A1%E1%86%A8%E1%84%92%E1%85%A7%E1%86%BC%20657.png?alt=media&token=fbe1579f-ab54-4346-a904-fedddee9d0e8`}
+                />
               </Wrapper>
               <Wrapper
                 width={`auto`}
                 dr={`row`}
-                fontSize={`15px`}
+                fontSize={`18px`}
                 fontWeight={`500`}
-                lineHeight={`1.5`}
               >
-                input/output ports of computers and
+                SMARTKEEPER physically blocks
               </Wrapper>
               <Wrapper
                 width={`auto`}
                 dr={`row`}
-                fontSize={`15px`}
-                fontWeight={`500`}
-                lineHeight={`1.5`}
-              >
-                network devices to prevent unauthorized
-              </Wrapper>
-              <Wrapper
-                width={`auto`}
-                dr={`row`}
-                fontSize={`15px`}
+                fontSize={`18px`}
                 fontWeight={`500`}
                 lineHeight={`1.5`}
               >
-                use. Secure USB, SD Card, RJ45 Ports
+                the input/output ports of
               </Wrapper>
               <Wrapper
                 width={`auto`}
                 dr={`row`}
-                fontSize={`15px`}
+                fontSize={`18px`}
+                fontWeight={`500`}
+                lineHeight={`1.5`}
+              >
+                computers and network devices
+              </Wrapper>
+              <Wrapper
+                width={`auto`}
+                dr={`row`}
+                fontSize={`18px`}
+                fontWeight={`500`}
+                lineHeight={`1.5`}
+              >
+                to prevent unauthorized use.
+              </Wrapper>
+              <Wrapper
+                width={`auto`}
+                dr={`row`}
+                fontSize={`18px`}
+                fontWeight={`500`}
+                lineHeight={`1.5`}
+                margin={`25px 0 0`}
+              >
+                Secure USB, SD Card, RJ45 Ports
+              </Wrapper>
+              <Wrapper
+                width={`auto`}
+                dr={`row`}
+                fontSize={`18px`}
                 fontWeight={`500`}
                 lineHeight={`1.5`}
               >
