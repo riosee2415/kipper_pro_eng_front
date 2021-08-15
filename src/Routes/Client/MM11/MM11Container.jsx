@@ -25,7 +25,7 @@ const MM11Container = ({ history }) => {
   };
 
   const moveUrlHandler = (url) => {
-    history.push(url, "_blank");
+    window.open(url, "_blank");
   };
 
   ////////////// - USE EFFECT- //////////////
