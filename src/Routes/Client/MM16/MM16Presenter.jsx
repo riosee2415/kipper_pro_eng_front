@@ -114,7 +114,7 @@ const MM16Presenter = ({
         setIsCheck(true);
       }, 4000);
 
-      setGraphValue(width < 700 ? `60%` : `85%`);
+      setGraphValue(width < 700 ? `64%` : `85%`);
       setGraphValue2(width < 700 ? `30%` : `50%`);
     }
   }, [isFirst]);
@@ -871,30 +871,28 @@ const MM16Presenter = ({
       {/* mobile */}
       <Wrapper display={width < 900 ? `flex` : `none`}>
         <RsWrapper margin={`111px 0 0`}>
-          <Wrapper margin={`0 0 50px`} padding={`0 35px`}>
-            <Text
-              fontSize={width < 700 ? `14px !important` : `22px`}
-              color={Theme.white_C}
-            >
+          <Wrapper margin={`0 0 50px`}>
+            <Text fontSize={`14px`} color={Theme.white_C}>
               valuable assets and data of the company,
             </Text>
             <CommonSubTitle
               margin={`10px 0 0`}
-              fontSize={`30px`}
+              fontSize={`27px`}
               fontWeight={`700`}
               color={Theme.subTheme3_C}
               lineHeight={`1.4`}
             >
-              Malicious or criminal attack
+              Malicious or criminal
               {/* <SpanText color={Theme.white_C}>이</SpanText> */}
             </CommonSubTitle>
             <CommonSubTitle
               margin={`0 0 5px`}
-              fontSize={`30px`}
+              fontSize={`27px`}
               fontWeight={`700`}
               color={Theme.white_C}
             >
-              is highest reason
+              <SpanText color={Theme.subTheme3_C}>attack&nbsp;</SpanText> is
+              highest reason
             </CommonSubTitle>
 
             {/* <Text
@@ -906,10 +904,9 @@ const MM16Presenter = ({
             </Text> */}
 
             <Text
-              fontSize={width < 700 ? `20px !important` : `40px`}
+              fontSize={`18px`}
               color={Theme.white_C}
-              margin={`6px 0 44px`}
-              fontWeight={`300`}
+              margin={`38px 0 39px`}
             >
               Major Causes of Data Breach
               {/* <SpanText fontWeight={`700`}>데이터 유출</SpanText> 주요 원인 */}
@@ -917,13 +914,14 @@ const MM16Presenter = ({
 
             <Wrapper isRelative={true}>
               <Image
+                width={`90%`}
                 src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3_%E1%84%80%E1%85%B3%E1%84%85%E1%85%A2%E1%84%91%E1%85%B3.png?alt=media&token=fadc8b74-2bee-428d-9a01-645bbe825007`}
               />
               <Wrapper
                 top={`0`}
-                right={`19.5%`}
+                right={`22.5%`}
                 isAbsolute={true}
-                width={`31.5%`}
+                width={`28.3%`}
               >
                 <PieMobileImage
                   src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2F%E1%84%8B%E1%85%AF%E1%86%AB%E1%84%92%E1%85%A7%E1%86%BC%E1%84%80%E1%85%B3%E1%84%85%E1%85%A2%E1%84%91%E1%85%B3.png?alt=media&token=a0c61985-5e4f-492e-9766-379bc5e221dc`}
@@ -933,7 +931,7 @@ const MM16Presenter = ({
                   top={`18%`}
                   right={`30%`}
                   color={Theme.white_C}
-                  fontSize={width < 700 ? `14px !important` : `30px`}
+                  fontSize={`14px`}
                   fontWeight={`700`}
                 >
                   <AnimatedNumber
@@ -947,36 +945,30 @@ const MM16Presenter = ({
             </Wrapper>
 
             <Text
-              fontSize={width < 700 ? `18px !important` : `28px`}
+              fontSize={`18px`}
               color={Theme.white_C}
-              margin={width < 700 ? `100px 0 27px` : `150px 0 40px`}
+              margin={`96px 0 20px`}
             >
               Data Leak Damage
-              <SpanText fontSize={width < 700 ? `12px !important` : `20px`}>
-                &nbsp;(in 100 million dollars)
-              </SpanText>
             </Text>
+            <Text fontSize={`12px`}>(in 100 million dollars)</Text>
 
-            <Wrapper al={`flex-start`}>
+            <Wrapper>
               <Text
-                fontSize={width < 700 ? `12px !important` : `25px`}
+                fontSize={`12px`}
                 color={Theme.white_C}
                 fontWeight={`700`}
-                margin={width < 700 ? `0 0 0 77px` : `0 0 0 110px`}
+                margin={`0 0 77px`}
               >
                 {isCheck ? `2018` : `2017`}
               </Text>
 
-              <Wrapper
-                dr={`row`}
-                ju={`flex-start`}
-                margin={width < 700 ? `15px 0 0` : `30px 0 0`}
-              >
+              <Wrapper dr={`row`} ju={`flex-start`} margin={`15px 0 0`}>
                 <Text
-                  fontSize={width < 700 ? `12px !important` : `20px`}
+                  fontSize={`12px`}
                   color={Theme.white_C}
-                  margin={width < 700 ? `0 10px 0 0` : `0 14px 0 0`}
-                  width={width < 700 ? `67px` : `100px`}
+                  margin={`0 10px 0 0`}
+                  width={`67px`}
                   textAlign={`right`}
                 >
                   Leakage Cost
@@ -984,7 +976,7 @@ const MM16Presenter = ({
                 <GraphWrapper
                   width={graphValue}
                   bgColor={Theme.basicTheme_C}
-                  height={width < 700 ? `15px` : `25px`}
+                  height={`15px`}
                   radius={`0 20px 20px 0`}
                 ></GraphWrapper>
                 <Text
@@ -1005,16 +997,12 @@ const MM16Presenter = ({
                 </Text>
               </Wrapper>
 
-              <Wrapper
-                dr={`row`}
-                ju={`flex-start`}
-                margin={width < 700 ? `14px 0 0` : `30px 0 0`}
-              >
+              <Wrapper dr={`row`} ju={`flex-start`} margin={`14px 0 0`}>
                 <Text
-                  fontSize={width < 700 ? `12px !important` : `20px`}
+                  fontSize={`12px`}
                   color={Theme.white_C}
-                  margin={width < 700 ? `0 10px 0 0` : `0 14px 0 0`}
-                  width={width < 700 ? `67px` : `100px`}
+                  margin={`0 10px 0 0`}
+                  width={`67px`}
                   textAlign={`right`}
                 >
                   Follow-up Processign Cost
@@ -1022,7 +1010,7 @@ const MM16Presenter = ({
                 <GraphWrapper
                   width={graphValue2}
                   bgColor={Theme.white_C}
-                  height={width < 700 ? `15px` : `25px`}
+                  height={`15px`}
                   radius={`0 20px 20px 0`}
                 ></GraphWrapper>
                 <Text
@@ -1051,9 +1039,9 @@ const MM16Presenter = ({
               </Wrapper>
 
               <Text
-                margin={width < 700 ? `37px 0 150px` : `50px 0 150px`}
+                margin={`17px 0 78px`}
                 color={Theme.greyTheme7_C}
-                fontSize={width < 700 ? `12px !important` : `20px`}
+                fontSize={`12px`}
                 fontWeight={`300`}
               >
                 Source : Ponemon 2018 Cost of a Data Breach Study
@@ -1064,118 +1052,175 @@ const MM16Presenter = ({
 
         <Wrapper bgColor={Theme.black_C}>
           <Text
-            fontSize={`14px`}
+            fontSize={`16px`}
             color={Theme.white_C}
             fontWeight={`400`}
-            margin={`50px 0 5px`}
+            margin={`40px 0 0`}
           >
             Malware Intrusion and Data Leak
           </Text>
           <CommonSubTitle
-            fontWeight={`700`}
-            fontSize={`30px`}
+            fontSize={`27px`}
             color={Theme.subTheme3_C}
+            fontWeight={`700`}
             margin={`0`}
           >
-            이동식디스크<SpanText color={Theme.white_C}>는 여전히</SpanText>
+            Types and Means 
           </CommonSubTitle>
           <CommonSubTitle
+            fontSize={`27px`}
+            color={Theme.white_C}
             fontWeight={`700`}
-            fontSize={`30px`}
-            margin={`0 0 50px`}
-            color={Theme.subTheme3_C}
-            lineHeight={`1.8`}
+            margin={`0 0 48px`}
           >
-            보안의 위협<SpanText color={Theme.white_C}>적 요소입니다.</SpanText>
+            of Technology Leakage
           </CommonSubTitle>
 
           <Image
-            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-mobile-1.png?alt=media&token=efe1e420-d0c4-462a-95e0-1c70597db5c2`}
+            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-mobile.png?alt=media&token=9f1fac16-a358-48ea-a9d6-5d0a008dcc83`}
           />
 
           <Image
-            margin={width < 700 ? `30px 0` : `60px 0`}
-            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-mobile-2.png?alt=media&token=99c8c7b7-b9f7-4e31-8d24-ab8338d6be53`}
+            margin={`30px 0`}
+            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-mobile2.png?alt=media&token=f1fcd20e-9f2c-4e94-93f7-21fe95b60b8a`}
           />
         </Wrapper>
 
+        <Text
+          fontSize={`16px`}
+          color={Theme.white_C}
+          fontWeight={`400`}
+          margin={`44px 0 0`}
+        >
+          Major Cause of Industrial System Malware
+        </Text>
+        <CommonSubTitle
+          fontWeight={`700`}
+          fontSize={`27px`}
+          color={Theme.subTheme3_C}
+          margin={`0`}
+        >
+          Removable data storage
+        </CommonSubTitle>
+        <CommonSubTitle
+          fontWeight={`700`}
+          fontSize={`27px`}
+          margin={`0`}
+          color={Theme.white_C}
+        >
+          is still a major threat
+        </CommonSubTitle>
+        <CommonSubTitle
+          fontWeight={`700`}
+          fontSize={`27px`}
+          margin={`0`}
+          color={Theme.white_C}
+        >
+          to security
+        </CommonSubTitle>
+
+        <Image
+          margin={`27px 0 56px`}
+          height={`235px`}
+          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-mobile3.png?alt=media&token=f798f058-8b20-4ecd-8b16-4d71b81299c8`}
+        />
+
         <RsWrapper>
-          <Text
-            fontSize={`14px`}
-            color={Theme.white_C}
-            fontWeight={`400`}
-            margin={`50px 0 5px`}
-          >
-            철통같은 보안을 통과하는 손 쉬운 방법
+          <Text color={Theme.white_C} fontSize={`16px`}>
+            Malware Intrusion and Data Leak
           </Text>
-          <CommonSubTitle
-            fontWeight={`700`}
-            fontSize={`30px`}
-            color={Theme.subTheme3_C}
-            margin={`0`}
-          >
-            길에서 주운 USB,
-          </CommonSubTitle>
-          <CommonSubTitle
-            fontWeight={`700`}
-            fontSize={`30px`}
-            margin={`0 0 50px`}
-            color={Theme.white_C}
-            lineHeight={`1.8`}
-          >
-            과연 몇 명 이 꽂아 볼까요?
-          </CommonSubTitle>
+          <Text fontSize={`25px`} color={Theme.subTheme3_C} fontWeight={`700`}>
+            How many people 
+          </Text>
+          <Text fontSize={`25px`} color={Theme.white_C} fontWeight={`700`}>
+            would plug in a USB drive
+          </Text>
+          <Text fontSize={`25px`} color={Theme.white_C} fontWeight={`700`}>
+            that they picked up
+          </Text>
+          <Text fontSize={`25px`} color={Theme.white_C} fontWeight={`700`}>
+            on the street?
+          </Text>
 
           <Text
+            fontSize={`18px`}
             color={Theme.white_C}
-            fontSize={width < 700 ? `18px !important` : `32px`}
-            margin={width < 700 ? `14px 0 0` : `25px 0 0`}
+            fontWeight={`700`}
+            margin={`19px 0 0`}
           >
-            길에서 주운 USB를 직원이
+            USB drive picked up on the street
           </Text>
-          <Text
-            color={Theme.white_C}
-            fontSize={width < 700 ? `18px !important` : `32px`}
-            margin={width < 700 ? `0 0 26px` : `0 0 50px`}
-          >
-            사내 PC에 사용한 경우
+          <Text fontSize={`18px`} color={Theme.white_C} fontWeight={`700`}>
+            is used by an employee
+          </Text>
+          <Text fontSize={`18px`} color={Theme.white_C} fontWeight={`700`}>
+            on an in-house PC
           </Text>
 
           <Image
+            margin={`47px 0 0`}
             width={`80%`}
-            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2Fgraph-image-3.png?alt=media&token=b6c74fb4-172f-441f-91ff-4d7791225ff2`}
+            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-3.png?alt=media&token=de0e4a82-53f7-40d1-9a71-a8384b4a0397`}
           />
           <Wrapper
             width={`80%`}
             bgColor={`rgba(255,255,255,0.2)`}
-            padding={width < 700 ? `20px` : `30px`}
+            padding={`20px`}
             al={`flex-start`}
           >
-            <Text
-              margin={width < 700 ? `0 0 40px` : `0 0 60px`}
-              color={Theme.white_C}
-              fontSize={width < 700 ? `14px !important` : `30px`}
-              fontWeight={`400`}
-              lineHeight={`1.8`}
-            >
-              2011년, 미 국토보안부(U.S. Department of Homeland Security)
-              US-CERT (U.S. Computer Emergency Readiness Team) 에서 보안부
-              직원들을 대상으로 한 가지 실험을 했습니다.
+            <Text fontSize={`14px`} fontWeight={`300`} color={Theme.white_C}>
+              In 2011, the US Department of
             </Text>
-            <Text
-              color={Theme.white_C}
-              fontSize={width < 700 ? `14px !important` : `30px`}
-              fontWeight={`400`}
-              lineHeight={`1.8`}
-              letterSpacing={`0.6px`}
-            >
-              ‘해커가 직원을 통해 시스템에 얼마나 쉽게 접근할 수 있는가’ 그
-              실험은, 보안부의 주차장에 USB를 떨어트려 놓고 직원들이 사내PC에
-              사용하는지 관찰하는 것이었죠. 결과가 어떻게 되었을까요? 약 60%가
-              땅에 떨어진 USB를 사용하였고, 국토보안부 공식 로고가 새겨진 USB나
-              CD는 90%가 사용했죠. 그 USB안에 Malware가 있을 수도 있는 위험성은
-              모두 잊고 사내 pc에 사용했어요. 보안의 가장 큰 취약점은 직원의
-              ‘멍청함’(Idiocy) 이라고 이야기 하더군요.
+            <Text fontSize={`14px`} fontWeight={`300`} color={Theme.white_C}>
+              Homeland Security US-CERT (United
+            </Text>
+            <Text fontSize={`14px`} fontWeight={`300`} color={Theme.white_C}>
+              States Computer Emergency Readiness
+            </Text>
+            <Text fontSize={`14px`} fontWeight={`300`} color={Theme.white_C}>
+              Team) conducted an experiment on
+            </Text>
+            <Text fontSize={`14px`} fontWeight={`300`} color={Theme.white_C}>
+              security staff. ‘How easily hackers can
+            </Text>
+            <Text fontSize={`14px`} fontWeight={`300`} color={Theme.white_C}>
+              access the system through employees’.
+            </Text>
+            <Text fontSize={`14px`} fontWeight={`300`} color={Theme.white_C}>
+              The experiment was to drop a USB
+            </Text>
+            <Text fontSize={`14px`} fontWeight={`300`} color={Theme.white_C}>
+              drive into the parking lot of the security
+            </Text>
+            <Text fontSize={`14px`} fontWeight={`300`} color={Theme.white_C}>
+              department and see if the employees
+            </Text>
+            <Text fontSize={`14px`} fontWeight={`300`} color={Theme.white_C}>
+              were using it on the in-house PC. What
+            </Text>
+            <Text fontSize={`14px`} fontWeight={`300`} color={Theme.white_C}>
+              was the result? About 60% of them
+            </Text>
+            <Text fontSize={`14px`} fontWeight={`300`} color={Theme.white_C}>
+              used a USB drive which fell to the
+            </Text>
+            <Text fontSize={`14px`} fontWeight={`300`} color={Theme.white_C}>
+              ground, and 90% used a USB drive or
+            </Text>
+            <Text fontSize={`14px`} fontWeight={`300`} color={Theme.white_C}>
+              CD with official logo of DHS. “I forgot all
+            </Text>
+            <Text fontSize={`14px`} fontWeight={`300`} color={Theme.white_C}>
+              the risks that there might be malware
+            </Text>
+            <Text fontSize={`14px`} fontWeight={`300`} color={Theme.white_C}>
+              in the USB and used it on my PC.” The
+            </Text>
+            <Text fontSize={`14px`} fontWeight={`300`} color={Theme.white_C}>
+              biggest security vulnerability is the
+            </Text>
+            <Text fontSize={`14px`} fontWeight={`300`} color={Theme.white_C}>
+              employee’s “idiocy”.
             </Text>
 
             <ATag
@@ -1184,52 +1229,37 @@ const MM16Presenter = ({
               target="_blank"
             >
               <Text
-                margin={width < 700 ? `25px 0 0` : `50px 0 0`}
+                margin={`25px 0 0`}
                 color={Theme.subTheme2_C}
-                fontSize={width < 700 ? `14px !important` : `30px`}
+                fontSize={`14px`}
                 borderBottom={`1px solid ${Theme.subTheme2_C}`}
               >
-                출처 : Bloomberg
+                Source : Bloomberg
               </Text>
             </ATag>
           </Wrapper>
 
-          <Text
-            fontSize={width < 700 ? `14px !important` : `30px`}
-            color={Theme.white_C}
-            fontWeight={`300`}
-            margin={width < 700 ? `48px 0 0` : `70px 0 0`}
-          >
-            누가, 언제, 어디서
+          <Text fontSize={`16px`} color={Theme.white_C} margin={`55px 0 0`}>
+            Malware Intrusion and Data Leak
           </Text>
-          <Text
-            fontSize={width < 700 ? `14px !important` : `30px`}
-            color={Theme.white_C}
-            fontWeight={`300`}
-            margin={width < 700 ? `0 0 15px` : `0 0 30px`}
-          >
-            감염된 기기를 꽂을지 모르는 두려움
+          <Text fontSize={`20px`} color={Theme.white_C} fontWeight={`700`}>
+            A Single Malware Infection
           </Text>
 
           <Text
             color={Theme.white_C}
-            margin={width < 700 ? `0` : `15px 0 0`}
-            fontSize={width < 700 ? `26px !important` : `50px`}
+            fontSize={`20px`}
+            fontWeight={`700`}
+            margin={`0 0 36px`}
           >
-            단 한 번이
-          </Text>
-          <Text
-            color={Theme.subTheme3_C}
-            fontSize={width < 700 ? `26px !important` : `50px`}
-            margin={width < 700 ? `0 0 30px` : `0 0 55px`}
-          >
-            재앙과도 같은 피해로
+            Can Cause
+            <SpanText color={Theme.subTheme3_C}>
+              &nbsp;Catastrophic&nbsp;
+            </SpanText>
+            Damage
           </Text>
 
-          <Wrapper
-            padding={width < 700 ? `0 36px` : `0 50px`}
-            al={`flex-start`}
-          >
+          <Wrapper padding={`0 36px`} al={`flex-start`}>
             <Image
               src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-image-4.png?alt=media&token=2a959f13-5c4a-4562-95dc-8f0e664f163f`}
             />
@@ -1237,139 +1267,146 @@ const MM16Presenter = ({
             <Text
               isGotham={true}
               color={Theme.white_C}
-              fontSize={width < 700 ? `18px !important` : `32px`}
-              margin={width < 700 ? `28px 0 11px` : `45px 0 20px`}
+              fontSize={`18px`}
+              margin={`20px 0 11px`}
             >
               Two Us Power plants infected with malware spread via USB drive
             </Text>
 
             <Text
-              margin={width < 700 ? `0 0 40px` : `0 0 60px`}
+              margin={`11px 0 15px`}
               color={Theme.greyTheme3_C}
-              fontSize={width < 700 ? `14px !important` : `30px`}
+              fontSize={`14px`}
               fontWeight={`300`}
             >
-              생산설비 점검을 위해 외주 직원이 꽂은 USB 드라이브 하나로 인해
-              미국 2개의 전력 공장 네트워크에 Malware가 감염된 사례가 있죠. 이
-              감염때문에 터빈 관리 시스템의 10개 PC와 시스템 다운타임에 영향이
-              와서, 시스템 재시동만 정확히 3주 지연되는 사건이 있었죠.
+              Two US power plant networks were infected with malware that was
+              spread by a USB drive plugged in by a subcontractor, who wanted to
+              check on production facilities.
             </Text>
 
             <Text
-              fontSize={width < 700 ? `14px !important` : `30px`}
+              fontSize={`14px`}
               fontWeight={`300`}
               color={Theme.greyTheme3_C}
+              letterSpacing={`0.4px`}
             >
-              <SpanText fontWeight={`700`}>SCADA</SpanText>(Supervisory Control
-              and Data Acquisition) 나
-              <SpanText fontWeight={`700`}>ICS</SpanText>(Industrial Control
-              System), 즉, 산업제어시스템에 Malware가 감염되면 즉시 장비의
-              중단이나 원격 공격의 위험에 무방비로 노출되게 됩니다. 이 경로가
-              이번엔 USB였지만 다른 포트로 공격해 올 수도 있죠.
+              The malware affected 10 PCs in the turbine management system and
+              system downtime, which caused a 3-week delay in system restart.
+            </Text>
+            <Text
+              fontSize={`14px`}
+              fontWeight={`300`}
+              color={Theme.greyTheme3_C}
+              letterSpacing={`0.4px`}
+            >
+              Supervisory Control and Data Acquisition (SCADA) or Industrial
+              Control System (ICS), that is, industrial control systems are
+              especially vulnerable to immediate threats of machine interruption
+              or remote attack. Malware infection path was a USB port this time,
+              but all other open data ports were equally vulnerable.
             </Text>
 
             <Wrapper
-              margin={width < 700 ? `25px 0 0` : `50px 0 0`}
+              margin={`10px 0 0`}
               color={Theme.subTheme2_C}
               dr={`row`}
               width={`auto`}
             >
-              <Text fontSize={width < 700 ? `14px !important` : `30px`}>
-                기사보기
+              <Text fontSize={`14px`} fontWeight={`700`}>
+                See articles
               </Text>
 
-              <RiArrowRightSLine size={width < 700 ? `20` : `30`} />
+              <RiArrowRightSLine size={`20`} />
             </Wrapper>
           </Wrapper>
 
           <Text
-            fontSize={width < 700 ? `14px !important` : `30px`}
+            fontSize={`16px`}
             color={Theme.white_C}
             fontWeight={`300`}
-            margin={width < 700 ? `48px 0 0` : `90px 0 0`}
+            margin={`76px 0 0`}
           >
-            악성코드 유입과 데이터 유출
+            Malware Intrusion and Data Leak
+          </Text>
+          <Text
+            fontSize={`27px`}
+            fontWeight={`700`}
+            lineHeight={`1.4`}
+            color={Theme.subTheme3_C}
+          >
+            One Small Act of
+          </Text>
+          <Text
+            fontSize={`27px`}
+            fontWeight={`700`}
+            lineHeight={`1.4`}
+            color={Theme.white_C}
+          >
+            Thoughtlessness
           </Text>
 
-          <Text
-            fontSize={width < 700 ? `29px !important` : `60px`}
-            color={Theme.white_C}
-            margin={width < 700 ? `0 0 22px` : `0 0 50px`}
-            fontWeight={`300`}
-          >
-            무심코 한 <SpanText fontWeight={`700`}>작은 행동 하나</SpanText>
-          </Text>
-          <Wrapper
-            padding={width < 700 ? `0 36px` : `0 50px`}
-            al={`flex-start`}
-          >
+          <Wrapper padding={`26px 36px 0`} al={`flex-start`}>
             <Image
               src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-image-5.png?alt=media&token=a58af519-738d-4d57-83b2-b23c7f06b6c8`}
             />
 
             <Text
               color={Theme.white_C}
-              fontSize={width < 700 ? `18px !important` : `32px`}
+              fontSize={`18px`}
               isGotham={true}
-              margin={width < 700 ? `30px 0 0` : `55px 0 0`}
+              margin={`30px 0 0`}
             >
               Under worm assault, military
             </Text>
+
             <Text
               color={Theme.white_C}
-              fontSize={width < 700 ? `18px !important` : `32px`}
+              fontSize={`18px`}
               isGotham={true}
-              margin={width < 700 ? `0 0 20px` : `0 0 40px`}
+              margin={`0 0 16px`}
             >
               bans disks, USB drives
             </Text>
 
             <Text
-              fontSize={width < 700 ? `14px !important` : `30px`}
+              fontSize={`14px`}
               color={Theme.greyTheme3_C}
               fontWeight={`300`}
-              margin={width < 700 ? `0 0 20px` : `0 0 40px`}
+              margin={`0 0 15px`}
+              letterSpacing={`0.4px`}
             >
-              원자력시설의 원심분리기를 파괴할 목적으로 설계된 사이버 공격의
-              대표적인 예로, 이란의 부셰르 원자력 발전소 SCADA(Supervisory
-              Control and Data Acquisition) 시스템에 감염되었던 Stuxnet worm을
-              들 수 있죠.
+              An example of a cyber attack designed to destroy nuclear
+              centrifuges is the Stuxnet worm attack, which infected the
+              Supervisory Control and Data Acquisition (SCADA) system at Iran’s
+              Bushehr nuclear power plant. Through a USB drive, malicious codes
+              spread throughout the internal network, infecting more than 60,000
+              PCs and halting the plant’s operation for two years.
             </Text>
 
             <Text
-              fontSize={width < 700 ? `14px !important` : `30px`}
+              fontSize={`14px`}
               color={Theme.greyTheme3_C}
               fontWeight={`300`}
             >
-              감염 경로는 USB 드라이브 이를 통해 악성코드는 내부망을 타고
-              확산되어 6만대 이상의 PC를 감염시키고 2년 동안 원전 가동이
-              중단되는 막대한 피해가 발생했어요. 발전소, 군등을 비롯한 많은
-              조직들은 이미 보안의 해결책으로 설비와 사내에 일체의 DISK와 CD 등
-              이동식디스크에 대한 사용금지 조치를 취하고 있습니다.
+              Many companies, including power plants, the military and others,
+              have already taken measures to prohibit the use of removable data
+              storage devices such as DISK and CDs for increased cyber security.
             </Text>
           </Wrapper>
 
-          <Text
-            fontSize={width < 700 ? `14px !important` : `30px`}
-            color={Theme.white_C}
-            margin={width < 700 ? `53px 0 10px` : `100px 0 20px`}
-          >
-            USB KILLER를 아시나요?
+          <Text fontSize={`14px`} color={Theme.white_C} margin={`53px 0 0`}>
+            Do you know the USB KILLER?
+          </Text>
+          <Text fontSize={`27px`} color={Theme.white_C} fontWeight={`700`}>
+            More popular and
           </Text>
           <Text
-            fontSize={width < 700 ? `29px !important` : `60px`}
+            fontSize={`27px`}
             color={Theme.white_C}
             fontWeight={`700`}
+            margin={`0 0 26px`}
           >
-            더 보급화 되고 쉽게
-          </Text>
-          <Text
-            fontSize={width < 700 ? `29px !important` : `60px`}
-            color={Theme.white_C}
-            margin={width < 700 ? `0 0 22px` : `0 0 44px`}
-            fontWeight={`700`}
-          >
-            구할 수 있는 <SpanText color={Theme.subTheme3_C}>공격도구</SpanText>
+            closer <SpanText color={Theme.subTheme3_C}>attack methods</SpanText>
           </Text>
 
           <Image
@@ -1377,32 +1414,28 @@ const MM16Presenter = ({
             src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-image-6.png?alt=media&token=a0523653-4f02-472a-8093-d9908947f10e`}
           />
 
-          <Wrapper
-            padding={width < 700 ? `0 36px` : `0 50px`}
-            al={`flex-start`}
-          >
+          <Wrapper padding={`26px 36px 39px`} al={`flex-start`}>
             <Text
               color={Theme.greyTheme3_C}
-              fontSize={width < 700 ? `14px !important` : `30px`}
+              fontSize={`14px`}
               fontWeight={`300`}
             >
-              인터넷검색만 해도 누구나 쉽게 구매할 수 있는 이 제품은, 컴퓨터
-              내부에 DC/DC 컨버터와 컨덴서를 이용하여 전류를 모은 뒤, 110v
-              (2.0에서는 220v) 까지 승압하여 고전압을 되돌려 보내는 구조로
-              설계되었습니다. 고전압 방어 회로가 없다면 순식간에 과유입되며,
-              관련 회로와 부품이 전부 타버리는 동작 원리이죠.
+              This easily accessible product is designed to rapidly collect
+              current from the USB power source. Once fully charged, it releases
+              the high voltage and burns all of the circuits, effectively
+              “killing” the computer.
             </Text>
 
             <Wrapper
-              margin={width < 700 ? `10px 0 27px` : `20px 0 50px`}
+              margin={`10px 0 8px`}
               color={Theme.subTheme2_C}
               dr={`row`}
               width={`auto`}
             >
-              <Text fontSize={width < 700 ? `14px !important` : `30px`}>
-                원문보기
+              <Text fontSize={`14px`} fontWeight={`700`}>
+                Read More
               </Text>
-              <RiArrowRightSLine size={width < 700 ? `20` : `30`} />
+              <RiArrowRightSLine size={`20`} />
             </Wrapper>
           </Wrapper>
 
@@ -1412,18 +1445,17 @@ const MM16Presenter = ({
           />
 
           <Wrapper
-            padding={width < 700 ? `0 36px` : `0 50px`}
+            padding={`10px 36px 39px`}
             al={`flex-start`}
-            margin={width < 700 ? `10px 0 30px` : `20px 0 60px`}
+            margin={`10px 0 39px`}
           >
             <Text
               color={Theme.greyTheme3_C}
-              fontSize={width < 700 ? `14px !important` : `30px`}
+              fontSize={`14px`}
               fontWeight={`300`}
             >
-              국내의 한 PC방 사장은, 경쟁 PC방의 영업방해를 목적으로 40여대의
-              PC에 USB Killer를 삽입하여 해당 PC들의 CPU와 메인보드를 의도적으로
-              손상시킨 사례도 있었습니다.
+              In one case, the owner of a local PC Cafe intentionally damaged
+              approximately 40 PCs of a competitor using the USB Killer.
             </Text>
           </Wrapper>
 
@@ -1432,42 +1464,33 @@ const MM16Presenter = ({
             src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-image-8.png?alt=media&token=880d36f6-63bf-4c23-8682-7bd5534d7600`}
           />
 
-          <Wrapper
-            padding={width < 700 ? `0 36px` : `0 50px`}
-            al={`flex-start`}
-            margin={width < 700 ? `10px 0 57px` : `20px 0 100px`}
-          >
+          <Wrapper al={`flex-start`} margin={`0 0 54px`} padding={`0 36px`}>
             <Text
+              margin={`10px 0`}
               color={Theme.greyTheme3_C}
-              fontSize={width < 700 ? `14px !important` : `30px`}
+              fontSize={`14px`}
               fontWeight={`300`}
             >
-              최근에는(2019년 4월), 미국의 한 대학생이 자신이 다니는 학교
-              시스템에 USB Killer를 사용해 $58,000 (약 6천5백만원)의 피해를
-              입히기도 했죠.
+              Recently, in April 2019, a college student in the U.S. used a USB
+              Killer on his school system, causing $58,000 in damage.
             </Text>
 
-            <Wrapper
-              margin={width < 700 ? `10px 0 27px` : `20px 0 50px`}
-              color={Theme.subTheme2_C}
-              dr={`row`}
-              width={`auto`}
-            >
-              <Text fontSize={width < 700 ? `14px !important` : `30px`}>
+            <Wrapper color={Theme.subTheme2_C} dr={`row`} width={`auto`}>
+              <Text fontSize={`14px`} fontWeight={`700`}>
                 원문보기
               </Text>
-              <RiArrowRightSLine size={width < 700 ? `20` : `30`} />
+              <RiArrowRightSLine size={`20`} />
             </Wrapper>
           </Wrapper>
 
           <Wrapper
             isRelative={true}
-            width={width < 700 ? `302px` : `700px`}
-            height={width < 700 ? `302px` : `700px`}
+            width={`302px`}
+            height={`302px`}
             ju={`flex-start`}
             al={`flex-start`}
-            padding={width < 700 ? `20px 16px` : `40px 30px`}
-            margin={width < 700 ? `0 0 30px` : `0 0 50px`}
+            padding={`20px 16px 16px`}
+            margin={`0 0 20px`}
           >
             <Image
               isAbsolute={true}
@@ -1476,46 +1499,35 @@ const MM16Presenter = ({
               height={`100%`}
               src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-mobile-3.png?alt=media&token=2aa3f303-e0e8-4d0b-a6c8-d2740fd43d8c`}
             />
-            <Text
-              fontSize={width < 700 ? `29px !important` : `60px`}
-              fontWeight={`700`}
-              color={Theme.white_C}
-            >
-              물리보안,
+            <Text fontSize={`21px`} fontWeight={`700`} color={Theme.white_C}>
+              Physical Cyber Security,
             </Text>
-            <Text
-              fontSize={width < 700 ? `29px !important` : `60px`}
-              fontWeight={`700`}
-              color={Theme.white_C}
-            >
-              이제 선택이 아닌 필수
+            <Text fontSize={`21px`} fontWeight={`700`} color={Theme.white_C}>
+              Now a must, not a choice.
             </Text>
             <Link to="/about">
               <Wrapper
-                margin={width < 700 ? `10px 0 0` : `20px 0 0`}
+                margin={`10px 0 0`}
                 color={Theme.subTheme2_C}
                 dr={`row`}
                 width={`auto`}
               >
-                <Text
-                  fontSize={width < 700 ? `14px !important` : `30px`}
-                  fontWeight={`700`}
-                >
+                <Text fontSize={`14px`} fontWeight={`700`}>
                   Learn more
                 </Text>
-                <RiArrowRightSLine size={width < 700 ? `20` : `30`} />
+                <RiArrowRightSLine size={`20`} />
               </Wrapper>
             </Link>
           </Wrapper>
 
           <Wrapper
             isRelative={true}
-            width={width < 700 ? `302px` : `700px`}
-            height={width < 700 ? `200px` : `460px`}
+            width={`302px`}
+            height={`200px`}
             ju={`flex-start`}
             al={`flex-start`}
-            padding={width < 700 ? `30px 18px 0` : `50px 32px 0`}
-            margin={width < 700 ? `0 0 10px` : `0 0 20px`}
+            padding={`30px 18px 0`}
+            margin={`0 0 10px`}
           >
             <Image
               isAbsolute={true}
@@ -1525,55 +1537,52 @@ const MM16Presenter = ({
               src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-image-10.png?alt=media&token=c57b03a9-a2f5-41d8-80ef-4ff5200d7f90`}
             />
             <Text
-              fontSize={width < 700 ? `12px !important` : `20px`}
+              fontSize={`12px`}
               fontWeight={`300`}
               color={Theme.greyTheme3_C}
             >
-              USB 포트의 보안
+              USB Port Security
             </Text>
             <Text
-              fontSize={width < 700 ? `26px !important` : `50px`}
+              fontSize={`17px`}
               fontWeight={`700`}
               color={Theme.white_C}
               lineHeight={`1.4`}
             >
-              포트보안의 시작점,
+              Starting point of Port Security,
             </Text>
             <Text
-              fontSize={width < 700 ? `26px !important` : `50px`}
+              fontSize={`17px`}
               fontWeight={`700`}
               color={Theme.white_C}
               lineHeight={`1.4`}
             >
-              물리보안으로 종결.
+              End it with Physical Security.
             </Text>
 
             <Link to="/security">
               <Wrapper
-                margin={width < 700 ? `10px 0 0` : `20px 0 0`}
+                margin={`10px 0 0`}
                 color={Theme.white_C}
                 dr={`row`}
                 width={`auto`}
               >
-                <Text
-                  fontSize={width < 700 ? `14px !important` : `30px`}
-                  fontWeight={`700`}
-                >
-                  더 알아보기
+                <Text fontSize={`14px`} fontWeight={`700`}>
+                  Learn more
                 </Text>
-                <RiArrowRightSLine size={width < 700 ? `20` : `30`} />
+                <RiArrowRightSLine size={`20`} />
               </Wrapper>
             </Link>
           </Wrapper>
 
           <Wrapper
             isRelative={true}
-            width={width < 700 ? `302px` : `700px`}
-            height={width < 700 ? `200px` : `460px`}
+            width={`302px`}
+            height={`200px`}
             ju={`flex-start`}
             al={`flex-start`}
-            padding={width < 700 ? `30px 18px 0` : `50px 32px 0`}
-            margin={width < 700 ? `0 0 87px` : `0 0 140px`}
+            padding={`30px 18px 0`}
+            margin={`0 0 54px`}
           >
             <Image
               isAbsolute={true}
@@ -1582,42 +1591,39 @@ const MM16Presenter = ({
               src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-image-11.png?alt=media&token=78526b8e-b773-42f8-8131-3a4385a3d2b3`}
             />
             <Text
-              fontSize={width < 700 ? `12px !important` : `20px`}
+              fontSize={`11.5px`}
               fontWeight={`300`}
               color={Theme.greyTheme3_C}
             >
-              네트워크 보안의 필수 조합
+              The essential combination of network security
             </Text>
             <Text
-              fontSize={width < 700 ? `23px !important` : `50px`}
+              fontSize={`19px`}
               fontWeight={`700`}
               color={Theme.white_C}
               lineHeight={`1.4`}
             >
-              네트워크와 인트라넷,
+              Network &#38; Intranet :
             </Text>
             <Text
-              fontSize={width < 700 ? `23px !important` : `50px`}
+              fontSize={`19px`}
               fontWeight={`700`}
               color={Theme.white_C}
               lineHeight={`1.4`}
             >
-              사내 모든 자산으로의 통로.
+              Pathway to all assets within
             </Text>
             <Link to="/network">
               <Wrapper
-                margin={width < 700 ? `10px 0 0` : `20px 0 0`}
+                margin={`10px 0 0`}
                 color={Theme.white_C}
                 dr={`row`}
                 width={`auto`}
               >
-                <Text
-                  fontSize={width < 700 ? `14px !important` : `30px`}
-                  fontWeight={`700`}
-                >
-                  더 알아보기
+                <Text fontSize={`14px`} fontWeight={`700`}>
+                  Learn more
                 </Text>
-                <RiArrowRightSLine size={width < 700 ? `20` : `30`} />
+                <RiArrowRightSLine size={`20`} />
               </Wrapper>
             </Link>
           </Wrapper>
