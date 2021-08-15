@@ -186,7 +186,7 @@ const MM15Presenter = ({
               fontWeight={currentTab === 0 ? `700` : `400`}
               onClick={() => changeTabHandler(0)}
             >
-              <Text>User Guide</Text>
+              User Guide
             </Tab>
             <Tab
               color={
