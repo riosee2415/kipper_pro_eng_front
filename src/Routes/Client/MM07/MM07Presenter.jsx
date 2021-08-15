@@ -453,7 +453,7 @@ const MM07Presenter = ({
 
                   <Wrapper
                     width={`auto`}
-                    margin={width < 900 ? ` 0 10px` : `0 80px`}
+                    margin={width < 900 ? `0 10px` : `0 80px`}
                     cursor={`pointer`}
                     onClick={() => changeSubTypeHandler(`Drive/Memory`)}
                   >

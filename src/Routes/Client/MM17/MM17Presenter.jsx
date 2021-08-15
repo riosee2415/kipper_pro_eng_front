@@ -48,7 +48,7 @@ const ArrowIcon = styled(Text)`
   }
 
   @media (max-width: 700px) {
-    font-size: 12px;
+    font-size: ${(props) => props.fontSize || `14px`};
   }
 `;
 
@@ -263,14 +263,14 @@ const MM17Presenter = ({
               >
                 USB Physical Security
               </Text>
-              <Text fontSize={`25px`} fontWeight={`bold`}>
-                Ideal combination to
+              <Text fontSize={`27px`} fontWeight={`bold`}>
+                Ideal combination
               </Text>
-              <Text fontSize={`25px`} fontWeight={`bold`}>
-                perfect the physical
+              <Text fontSize={`27px`} fontWeight={`bold`}>
+                to perfect
               </Text>
-              <Text fontSize={`25px`} fontWeight={`bold`}>
-                security of USB Ports.
+              <Text fontSize={`27px`} fontWeight={`bold`}>
+                the physical security of USB Ports.
               </Text>
             </Wrapper>
 
@@ -318,7 +318,7 @@ const MM17Presenter = ({
                     width={width < 900 ? `70px` : `120px`}
                     alt="usb port lock"
                     margin={width < 700 ? `0` : `0 0 0 -100%`}
-                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Fmodify%2FUSB%20Port%20Lock_USB%E1%84%87%E1%85%A9%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%89%E1%85%A5%E1%86%BC.svg?alt=media&token=0b441f0d-6603-47ed-86b0-f163c13a6293`}
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2FUSB%20Port%20Lock.png?alt=media&token=853fa599-c36c-4a30-94ee-15007b72a1ef`}
                   />
                 </Wrapper>
               </Wrapper>
@@ -384,7 +384,7 @@ const MM17Presenter = ({
 
       <Wrapper
         ref={tempRef}
-        padding={width < 900 ? `100px 0 40px` : `180px 0`}
+        padding={width < 900 ? `100px 0 30px` : `180px 0`}
         height={width < 900 ? `500px` : `100%`}
         attachment={`initial`}
         bgImg={
@@ -448,7 +448,7 @@ const MM17Presenter = ({
             <Wrapper
               display={width < 900 ? `flex` : `none`}
               al={`flex-start`}
-              padding={`70px 0 100px`}
+              padding={`70px 0 20px`}
             >
               <Text fontSize={`20px`} fontWeight={`bold`}>
                 Block unused USB ports
@@ -456,17 +456,17 @@ const MM17Presenter = ({
               <Text fontSize={`20px`} fontWeight={`bold`}>
                 with USB Port Locks
               </Text>
-              <Text fontSize={`18px`} color={Theme.greyTheme7_C}>
+              <Text fontSize={`16px`} color={Theme.greyTheme7_C}>
                 You would not use any lock or any
               </Text>
-              <Text fontSize={`18px`} color={Theme.greyTheme7_C}>
+              <Text fontSize={`16px`} color={Theme.greyTheme7_C}>
                 key for your home’s front door.
               </Text>
-              <Text fontSize={`18px`} color={Theme.greyTheme7_C}>
-                Why would you use locking devices for your USB ports
+              <Text fontSize={`16px`} color={Theme.greyTheme7_C}>
+                Why would you use locking devices for
               </Text>
-              <Text fontSize={`18px`} color={Theme.greyTheme7_C}>
-                because they are “cheaper” or “easy” to purchase?
+              <Text fontSize={`16px`} color={Theme.greyTheme7_C}>
+                your USB ports because they are “cheaper” or “easy” to purchase?
               </Text>
             </Wrapper>
           </RsWrapper>
@@ -480,15 +480,15 @@ const MM17Presenter = ({
         <RsWrapper>
           <Wrapper
             // transform={width < 700 ? `` : `scale(${scale1})`}
-            height={width < 700 ? `280px` : `100%`}
+            height={width < 700 ? `230px` : `100%`}
             color={Theme.white_C}
-            // bgSize={width < 700 ? `cover` : `1300px`}
-            // bgImg={
-            //   width < 700
-            //     ? `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2FbgImg.png?alt=media&token=6710cec1-200d-45e0-a720-951ae2f5b83d")`
-            //     : `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2FPRO_Local_USB%20%E1%84%87%E1%85%A9%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%20%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%89%E1%85%A5%E1%86%BC_0.3mm.png?alt=media&token=3c950a31-c661-4814-b490-1aa95c1c37fd")`
-            // }
-            // attachment={`initial`}
+            bgSize={width < 700 ? `cover` : ``}
+            bgImg={
+              width < 700
+                ? `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2FbgImg.png?alt=media&token=6710cec1-200d-45e0-a720-951ae2f5b83d")`
+                : ``
+            }
+            attachment={`initial`}
             // bgPosition={`center 43%`}
             margin={width < 700 ? `-55px 0 0` : `-100px 0 0`}
             isRelative={true}
@@ -498,9 +498,9 @@ const MM17Presenter = ({
             <Image
               isAbsolute={true}
               top={`0`}
-              left={`27%`}
+              left={width < 700 ? `10%` : `27%`}
               transform={width < 700 ? `` : `scale(${scale1})`}
-              width={`46%`}
+              width={width < 700 ? `80%` : `46%`}
               alt="usb"
               src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2Fusb.svg?alt=media&token=659fa47e-d6f3-4683-915f-83e50b33f8e3`}
             />
@@ -545,7 +545,7 @@ const MM17Presenter = ({
             <Wrapper
               display={width < 700 ? `flex` : `none`}
               isAbsolute={true}
-              top={`30px`}
+              top={`15px`}
               left={`0`}
             >
               <Text fontSize={width < 700 ? `20px` : `29px`}>
@@ -558,10 +558,10 @@ const MM17Presenter = ({
                 Exceptionally thin Key Hole.
               </Text>
 
-              <Text fontSize={width < 700 ? `18px` : `21px`} fontWeight={`200`}>
+              <Text fontSize={width < 700 ? `14px` : `21px`} fontWeight={`200`}>
                 Tamper-proof key hole, designed to
               </Text>
-              <Text fontSize={width < 700 ? `18px` : `21px`} fontWeight={`200`}>
+              <Text fontSize={width < 700 ? `14px` : `21px`} fontWeight={`200`}>
                 prevent removal with foreign objects.
               </Text>
             </Wrapper>
@@ -743,7 +743,7 @@ const MM17Presenter = ({
             shadow={`2px 2px 7px rgba(3, 4, 2, 0.31)`}
             radius={`30px`}
             width={`85%`}
-            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2Fmobile-01.png?alt=media&token=4c5545fe-548a-45ff-8398-0e95d24307e8`}
+            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM17%2F%E1%84%86%E1%85%A1%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%20%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20704.png?alt=media&token=00ec46fc-a03f-483e-b4fa-99fb16eb0885`}
           />
           <Image
             margin={`30px 0`}
@@ -751,14 +751,14 @@ const MM17Presenter = ({
             radius={`30px`}
             alt="mobileImg"
             width={`85%`}
-            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2Fmobile-02.png?alt=media&token=92d8dab2-60e9-401c-9898-11e7f4a7aa2c`}
+            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM17%2F%E1%84%86%E1%85%A1%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%20%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20705.png?alt=media&token=df4d3fb4-14d1-4b8e-9d4f-b67261546bd8`}
           />
           <Image
             alt="mobileImg"
             width={`85%`}
             shadow={`2px 2px 7px rgba(3, 4, 2, 0.31)`}
             radius={`30px`}
-            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2Fmobile-03.png?alt=media&token=9d2d8211-c1c8-4b50-a7d6-c75c24b085be`}
+            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM17%2F%E1%84%86%E1%85%A1%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%20%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20706.png?alt=media&token=2dd62ff6-e1f6-427e-b34d-45d9c7807092`}
           />
         </Wrapper>
 
@@ -794,28 +794,28 @@ const MM17Presenter = ({
           padding={`0 35px`}
         >
           <Text fontSize={`18px`} margin={`50px 0 0`}>
-            Learn more about USB Port Lock
+            For any standard USB Port (Type A)
           </Text>
           {/* <Text fontSize={`20px`}>어디라도</Text> */}
           <Text
-            fontSize={`15px`}
+            fontSize={`18px`}
             color={Theme.greyTheme4_C}
             margin={`20px 0 0`}
           >
             Desktop PC (front &#38; rear), Laptop computers, network devices,
           </Text>
-          <Text fontSize={`15px`} color={Theme.greyTheme4_C}>
+          <Text fontSize={`18px`} color={Theme.greyTheme4_C}>
             industrial equipment, etc.
           </Text>
-          <Text fontSize={`15px`} color={Theme.greyTheme4_C}>
-            Easily installed by hand and
+          <Text fontSize={`18px`} color={Theme.greyTheme4_C}>
+            Easily installed by hand and does
           </Text>
           <Text
-            fontSize={`15px`}
+            fontSize={`18px`}
             color={Theme.greyTheme4_C}
             margin={`0 0 30px`}
           >
-            does not require software or electricity.
+            not require software or electricity.
           </Text>
 
           <ArrowIcon fontWeight={`bold`}>
@@ -885,6 +885,7 @@ const MM17Presenter = ({
                 <Text
                   fontSize={width < 900 ? `15px` : `24px`}
                   color={Theme.greyTheme7_C}
+                  display={width < 700 ? `none` : `flex`}
                 >
                   Now that open USB ports are secured,
                 </Text>
@@ -898,17 +899,17 @@ const MM17Presenter = ({
 
                 <Text
                   display={width < 700 ? `flex` : `none`}
-                  fontSize={width < 900 ? `15px` : `24px`}
+                  fontSize={width < 900 ? `18px` : `24px`}
                   color={Theme.greyTheme7_C}
                 >
-                  Now that open USB ports are secured,
+                  Now that open USB ports are
                 </Text>
                 <Text
                   display={width < 700 ? `flex` : `none`}
-                  fontSize={width < 900 ? `15px` : `24px`}
+                  fontSize={width < 900 ? `18px` : `24px`}
                   color={Theme.greyTheme7_C}
                 >
-                  what about USB devices that are in use?
+                  secured, what about USB devices that are in use?
                 </Text>
               </Wrapper>
             </Wrapper>
@@ -1020,16 +1021,14 @@ const MM17Presenter = ({
       >
         <Wrapper al={`flex-start`}>
           <Text fontSize={`20px`} fontWeight={`bold`}>
-            If you can’t
+            If you can’t secure it,
           </Text>
+
           <Text fontSize={`20px`} fontWeight={`bold`}>
-            secure it,
-          </Text>
-          <Text fontSize={`20px`} fontWeight={`bold`}>
-            there is still
+            there is still a lapse
           </Text>
           <Text fontSize={`20px`} fontWeight={`bold`} margin={`0 0 50px`}>
-            a lapse in security.
+            in security.
           </Text>
         </Wrapper>
       </Wrapper>
@@ -1040,16 +1039,19 @@ const MM17Presenter = ({
         al={`flex-start`}
       >
         <Text fontSize={`18px`} color={Theme.darkGrey_C}>
-          Link Lock is designed to physically prevent unauthorized
+          Link Lock is designed to physically
         </Text>
         <Text fontSize={`18px`} color={Theme.darkGrey_C}>
-          removal of attached USB devices.
+          prevent unauthorized removal of
+        </Text>
+        <Text fontSize={`18px`} color={Theme.darkGrey_C} margin={`0 0 35px`}>
+          attached USB devices.
         </Text>
         <Text fontSize={`18px`} color={Theme.darkGrey_C}>
-          It can be released only by using the Universal Lock Key of
+          It can be released only by using the
         </Text>
         <Text fontSize={`18px`} color={Theme.darkGrey_C}>
-          the matching pattern.
+          Universal Lock Key of the matching pattern.
         </Text>
         <Text
           fontSize={`18px`}
@@ -1072,7 +1074,7 @@ const MM17Presenter = ({
           border={`3px dotted rgba(98, 98, 101, 0.5)`}
           radius={`30px`}
           padding={`20px 0`}
-          al={`flex-start`}
+          al={width < 700 ? `center` : `flex-start`}
         >
           <Wrapper width={`30%`}>
             <Image
@@ -1092,7 +1094,11 @@ const MM17Presenter = ({
               cybersecurity.
             </Text>
             <Link to="/usb/6114b080e48e2e29f6cd570d">
-              <ArrowIcon color={Theme.greyTheme4_C} margin={`18px 0 0`}>
+              <ArrowIcon
+                fontSize={width < 700 && `12px`}
+                color={Theme.greyTheme4_C}
+                margin={`18px 0 0`}
+              >
                 Learn more bout USB Port Lock
                 <FaChevronRight />
               </ArrowIcon>
@@ -1174,19 +1180,18 @@ const MM17Presenter = ({
             left={`0`}
             fontSize={`18px`}
           >
-            <Text fontWeight={`400`}>
-              As the name suggests, the key is universal.
-            </Text>
-            <Text fontWeight={`400`}>ONE key can manage </Text>
-            <Text fontWeight={`400`}>30+ SMARTKEEPER products </Text>
+            <Text fontWeight={`400`}>As the name suggests,</Text>
+            <Text fontWeight={`400`}>the key is universal.</Text>
+            <Text fontWeight={`400`}>ONE key can manage 30+</Text>
+            <Text fontWeight={`400`}>SMARTKEEPER products to enhance</Text>
             <Text fontWeight={`400`} margin={`0 0 30px`}>
-              to enhance user efficiency.
+              user efficiency.
             </Text>
 
             <Text fontWeight={`400`}>Numerous confidential key patterns</Text>
-            <Text fontWeight={`400`}>are only compatible with products</Text>
+            <Text fontWeight={`400`}>are only compatible with </Text>
             <Text fontWeight={`400`} margin={`0 0 30px`}>
-              of matching pattern.
+              products of matching pattern.
             </Text>
             <Link to="/lock/6114b080e48e2e29f6cd570b">
               <ArrowIcon fontWeight={`bold`}>

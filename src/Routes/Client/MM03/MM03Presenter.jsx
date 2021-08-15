@@ -20,7 +20,7 @@ const Title = styled.h1`
   color: ${(props) => props.theme.white_C};
 
   @media (max-width: 700px) {
-    font-size: 21px;
+    font-size: ${(props) => props.fontSize || `25px`};
     margin: 0 0 15px;
   }
 `;
@@ -32,7 +32,7 @@ const Desc = styled.h2`
   display: ${(props) => props.display};
 
   @media (max-width: 700px) {
-    font-size: 15px;
+    font-size: ${(props) => props.fontSize || `18px`};
     margin: 0 0 10px;
     color: rgb(226, 226, 226);
   }
@@ -89,21 +89,21 @@ const MM03Presenter = ({
           lineHeight={width < 700 ? `30px` : `40px`}
           display={width < 700 ? `block` : `none`}
         >
-          Making the most of physical
+          Making the most of
         </Text>
         <Text
           fontSize={width < 700 ? `18px` : `24px`}
           lineHeight={width < 700 ? `30px` : `40px`}
           display={width < 700 ? `block` : `none`}
         >
-          cyber security in
+          physical cyber security
         </Text>
         <Text
           fontSize={width < 700 ? `18px` : `24px`}
           lineHeight={width < 700 ? `30px` : `40px`}
           display={width < 700 ? `block` : `none`}
         >
-          3,000+ sites worldwide.
+          in 3,000+ sites worldwide.
         </Text>
       </Wrapper>
       <Wrapper isRelative={true} margin={width < 700 ? `15px 0 0` : `10px 0 0`}>
@@ -818,10 +818,10 @@ const MM03Presenter = ({
                 Global shipping companies using maritime or ground based
                 transportation 70+ sites
               </Desc>
-              <Desc display={width < 700 ? `block` : `none`}>
+              <Desc fontSize={`15px`} display={width < 700 ? `block` : `none`}>
                 Global shipping companies using maritime
               </Desc>
-              <Desc display={width < 700 ? `block` : `none`}>
+              <Desc fontSize={`15px`} display={width < 700 ? `block` : `none`}>
                 or ground based transportation 70+ sites
               </Desc>
               <Text
@@ -1053,11 +1053,17 @@ const MM03Presenter = ({
               <Desc display={width < 700 ? `none` : `block`}>
                 Federal Government, The Blue House &#38; 200+ other sites
               </Desc>
-              <Desc display={width < 700 ? `block` : `none`}>
-                Federal Government,
+              <Desc
+                fontSize={`16.5px`}
+                display={width < 700 ? `block` : `none`}
+              >
+                Federal Government, The Blue House &#38;
               </Desc>
-              <Desc display={width < 700 ? `block` : `none`}>
-                The Blue House &#38; 200+ other sites
+              <Desc
+                fontSize={`16.5px`}
+                display={width < 700 ? `block` : `none`}
+              >
+                200+ other sites
               </Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
@@ -1349,10 +1355,10 @@ const MM03Presenter = ({
               </Desc>
 
               <Desc display={width < 700 ? `block` : `none`}>
-                Army, Navy, Air Force &#38; 80+
+                Army, Navy, Air Force &#38;
               </Desc>
               <Desc display={width < 700 ? `block` : `none`}>
-                other national defense sites
+                80+ other national defense sites
               </Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
@@ -1635,10 +1641,10 @@ const MM03Presenter = ({
                 Banking, Investment Brokerage, Insurance companies &#38; 150+
                 other sites
               </Desc>
-              <Desc display={width < 700 ? `block` : `none`}>
+              <Desc fontSize={`16px`} display={width < 700 ? `block` : `none`}>
                 Banking, Investment Brokerage,
               </Desc>
-              <Desc display={width < 700 ? `block` : `none`}>
+              <Desc fontSize={`16px`} display={width < 700 ? `block` : `none`}>
                 Insurance companies &#38; 150+ other sites
               </Desc>
               <Text
@@ -1839,16 +1845,18 @@ const MM03Presenter = ({
         <Wrapper isAbsolute={true} height={`100%`} top={`0`} left={`0`}>
           <RsWrapper>
             <Wrapper width={width < 700 ? `100%` : `90%`}>
-              <Title>Technology &#38; Manufacturing</Title>
+              <Title fontSize={width < 700 && `22px`}>
+                Technology &#38; Manufacturing
+              </Title>
               <Desc display={width < 700 ? `none` : `block`}>
                 Ship building, display, semiconductors &#38; 200+ other
                 manufacturing sites
               </Desc>
-              <Desc display={width < 700 ? `block` : `none`}>
-                Ship building, display, semiconductors &#38;
+              <Desc fontSize={`16px`} display={width < 700 ? `block` : `none`}>
+                Ship building, display, semiconductors
               </Desc>
-              <Desc display={width < 700 ? `block` : `none`}>
-                200+ other manufacturing sites
+              <Desc fontSize={`16px`} display={width < 700 ? `block` : `none`}>
+                &#38; 200+ other manufacturing sites
               </Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
@@ -2094,14 +2102,16 @@ const MM03Presenter = ({
         <Wrapper isAbsolute={true} height={`100%`} top={`0`} left={`0`}>
           <RsWrapper>
             <Wrapper width={width < 700 ? `100%` : `90%`}>
-              <Title>Telecommunications &#38; Networking</Title>
+              <Title fontSize={width < 700 && `18px`}>
+                Telecommunications &#38; Networking
+              </Title>
               <Desc display={width < 700 ? `none` : `block`}>
                 IDC, Network Service Providers and 200+ other sites
               </Desc>
-              <Desc display={width < 700 ? `block` : `none`}>
+              <Desc fontSize={`16px`} display={width < 700 ? `block` : `none`}>
                 IDC, Network Service Providers and
               </Desc>
-              <Desc display={width < 700 ? `block` : `none`}>
+              <Desc fontSize={`16px`} display={width < 700 ? `block` : `none`}>
                 200+ other sites
               </Desc>
               <Text

@@ -10,6 +10,7 @@ import {
   CommonButton,
   TextInput,
   ATag,
+  Image2,
 } from "../../../Components/CommonComponents";
 import styled from "styled-components";
 import { withResizeDetector } from "react-resize-detector";
@@ -746,10 +747,10 @@ const MM09Presenter = ({
                 {currentMenu === `port` && (
                   <Wrapper
                     width={
-                      width < 900 ? `calc(100% - 70px)` : `calc(100% - 430px)`
+                      width < 900 ? `calc(100% - 80px)` : `calc(100% - 430px)`
                     }
                     dr={`row`}
-                    ju={`space-between`}
+                    ju={width < 900 ? `center` : `space-between`}
                   >
                     {/* <ProductTypeSlider /> */}
                     <Wrapper
@@ -776,7 +777,7 @@ const MM09Presenter = ({
                       onClick={() =>
                         moveLinkHandler(`/${currentMenu}?type=Input/Output`)
                       }
-                      margin={width < 900 ? `0 0 0 40px` : `0 0 0 110px`}
+                      margin={width < 900 ? `0 0 0 5px` : `0 0 0 110px`}
                     >
                       <Image
                         alt="icon"
@@ -792,7 +793,7 @@ const MM09Presenter = ({
 
                     <Wrapper
                       width={`auto`}
-                      margin={width < 900 ? ` 0 30px` : `0 130px`}
+                      margin={width < 900 ? ` 0 10px` : `0 80px`}
                       cursor={`pointer`}
                       onClick={() =>
                         moveLinkHandler(`/${currentMenu}?type=Drive/Memory`)
@@ -816,7 +817,7 @@ const MM09Presenter = ({
                       onClick={() =>
                         moveLinkHandler(`/${currentMenu}?type=Display`)
                       }
-                      margin={width < 900 ? `0 40px 0 0px` : `0 110px 0 0`}
+                      margin={width < 900 ? `0 5px 0 0px` : `0 110px 0 0`}
                     >
                       <Image
                         alt="icon"
@@ -827,6 +828,27 @@ const MM09Presenter = ({
                       />
                       <Text fontSize={`9px`} fontWeight={`300`}>
                         Display
+                      </Text>
+                    </Wrapper>
+
+                    <Wrapper
+                      width={`auto`}
+                      cursor={`pointer`}
+                      onClick={() =>
+                        moveLinkHandler(`/${currentMenu}?type=Network`)
+                      }
+                      margin={width < 900 ? ` 0 10px 0 0` : `0 110px 0 0`}
+                    >
+                      <Image2
+                        isFilter={false}
+                        alt="icon"
+                        width={`26px`}
+                        height={`14px`}
+                        objectFit={`contain`}
+                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2Fdrive-05.svg?alt=media&token=4b8e496b-ef62-427f-b780-30fe2a849a70`}
+                      />
+                      <Text fontSize={`9px`} fontWeight={`300`}>
+                        Network
                       </Text>
                     </Wrapper>
                     <Wrapper
@@ -1093,7 +1115,7 @@ const MM09Presenter = ({
               />
             </Wrapper>
 
-            <BuyButton color={Theme.white_C}>Buy now</BuyButton>
+            {/* <BuyButton color={Theme.white_C}>Buy now</BuyButton> */}
           </Wrapper>
 
           <Wrapper
@@ -1171,7 +1193,12 @@ const MM09Presenter = ({
               ＄64.00
             </Text> */}
             <Wrapper al={`flex-start`} margin={`35px 0 0`}>
-              <Wrapper dr={`row`} width={`auto`} margin={`0 0 13px`}>
+              <Wrapper
+                dr={width < 900 ? `column` : `row`}
+                ju={width < 900 ? `flex-start` : `center`}
+                width={`auto`}
+                margin={`0 0 13px`}
+              >
                 <Wrapper width={`auto`} al={`flex-start`} margin={`0 30px 0 0`}>
                   <Text
                     fontSize={`14px`}
@@ -1432,6 +1459,14 @@ const MM09Presenter = ({
             </Wrapper>
           </Wrapper>
 
+          <Wrapper display={width < 900 ? `flex` : `none`}>
+            <BuyButton
+              color={Theme.white_C}
+              onClick={() => moveLinkHandler(`/info?type=history`)}
+            >
+              Buy now
+            </BuyButton>
+          </Wrapper>
           {/* 상단 메인 이미지 */}
           <Wrapper
             display={width < 900 ? `none` : `flex`}

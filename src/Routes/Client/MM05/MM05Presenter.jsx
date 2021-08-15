@@ -49,7 +49,7 @@ const ArrowIcon = styled(Text)`
   }
 
   @media (max-width: 700px) {
-    font-size: 12px;
+    font-size: 14px;
   }
 `;
 
@@ -147,19 +147,19 @@ const MM05Presenter = ({
         <RsWrapper isAbsolute={true} top={`-22%`} left={`0`} height={`100%`}>
           <Wrapper
             color={Theme.white_C}
-            al={`flex-start`}
-            margin={width < 700 ? `0 0 0 35px` : `0 0 0 50px`}
+            al={width < 700 ? `center` : `flex-start`}
+            margin={width < 700 ? `0` : `0 0 0 50px`}
           >
             <Text color={Theme.greyTheme7_C}>Physical Network Security</Text>
             <Text
-              fontSize={width < 700 ? `30px` : `40px`}
+              fontSize={width < 700 ? `23px` : `40px`}
               fontWeight={`bold`}
               lineHeight={`1.3`}
             >
               Ideal combination for
             </Text>
             <Text
-              fontSize={width < 700 ? `30px` : `40px`}
+              fontSize={width < 700 ? `23px` : `40px`}
               fontWeight={`bold`}
               lineHeight={`1.3`}
             >
@@ -273,13 +273,13 @@ const MM05Presenter = ({
               <Text fontSize={`20px`} fontWeight={`bold`} margin={`0 0 10px`}>
                 open RJ45 Port
               </Text>
-              <Text fontSize={`18`} color={Theme.greyTheme7_C}>
+              <Text fontSize={`18px`} color={Theme.greyTheme7_C}>
                 Entryway to all network systems
               </Text>
-              <Text fontSize={`18`} color={Theme.greyTheme7_C}>
+              <Text fontSize={`18px`} color={Theme.greyTheme7_C}>
                 If a network port is open,
               </Text>
-              <Text fontSize={`18`} color={Theme.greyTheme7_C}>
+              <Text fontSize={`18px`} color={Theme.greyTheme7_C}>
                 anyone can have access.
               </Text>
             </Wrapper>
@@ -333,19 +333,19 @@ const MM05Presenter = ({
                   포트락.
                 </Text> */}
                 <Text
-                  fontSize={width < 900 ? `18px` : `28px`}
+                  fontSize={width < 900 ? `16px` : `28px`}
                   color={Theme.darkGrey_C}
                 >
                   Fully locks into network port.
                 </Text>
                 <Text
-                  fontSize={width < 900 ? `18px` : `28px`}
+                  fontSize={width < 900 ? `16px` : `28px`}
                   color={Theme.darkGrey_C}
                 >
                   Enhanced security with exceptionally
                 </Text>
                 <Text
-                  fontSize={width < 900 ? `18px` : `28px`}
+                  fontSize={width < 900 ? `16px` : `28px`}
                   color={Theme.darkGrey_C}
                 >
                   thin key hole that prevents tampering.
@@ -411,13 +411,13 @@ const MM05Presenter = ({
             lineHeight={`1.4`}
           >
             <Text fontSize={`18px`} lineHeight={`1.4`} color={`rgb(69,69,69)`}>
-              Insert Network Port Lock Plus
+              Insert Network Port Lock Plus in
             </Text>
             <Text fontSize={`18px`} lineHeight={`1.4`} color={`rgb(69,69,69)`}>
-              in the disengaged position and
+              the disengaged position and press
             </Text>
             <Text fontSize={`18px`} lineHeight={`1.4`} color={`rgb(69,69,69)`}>
-              press into the network port fully to
+              into the network port fully to
             </Text>
             <Text fontSize={`18px`} lineHeight={`1.4`} color={`rgb(69,69,69)`}>
               engage the locking mechanism.
@@ -451,25 +451,25 @@ const MM05Presenter = ({
           <Wrapper display={width < 700 ? `flex` : `none`} margin={`-70px 0 0`}>
             <Image
               alt="mobileImg"
-              shadow={`2px 2px 7px rgba(3, 4, 2, 0.31)`}
+              // shadow={`2px 2px 7px rgba(3, 4, 2, 0.31)`}
               radius={`30px`}
               width={`85%`}
-              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2Fmobile-%E1%84%82%E1%85%A9%E1%84%90%E1%85%B3%E1%84%87%E1%85%AE%E1%86%A8.png?alt=media&token=6df8310f-17be-4713-84f1-73b26c87a5c1`}
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM05%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%204492.png?alt=media&token=9b7166ba-86d0-4e5a-834f-e1ba6fb932dc`}
             />
             <Image
               margin={`30px 0`}
-              shadow={`2px 2px 7px rgba(3, 4, 2, 0.31)`}
+              // shadow={`2px 2px 7px rgba(3, 4, 2, 0.31)`}
               radius={`30px`}
               alt="mobileImg"
               width={`85%`}
-              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2Fmobile-PC%E1%84%92%E1%85%AE%E1%84%86%E1%85%A7%E1%86%AB.png?alt=media&token=1f5ca452-78d6-4639-bfb5-ac3145a6af46`}
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM05%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%204496.png?alt=media&token=9ef74519-1a26-4446-9442-dc5b272197e4`}
             />
             <Image
               alt="mobileImg"
               width={`85%`}
-              shadow={`2px 2px 7px rgba(3, 4, 2, 0.31)`}
+              // shadow={`2px 2px 7px rgba(3, 4, 2, 0.31)`}
               radius={`30px`}
-              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2Fmobile-%E1%84%82%E1%85%A6%E1%84%90%E1%85%B3%E1%84%8B%E1%85%AF%E1%84%8F%E1%85%B3.png?alt=media&token=d95fb19e-13f5-4b63-957a-533b99d98b60`}
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM05%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%204494.png?alt=media&token=74b687cb-70b5-4148-8217-323aef6b44a5`}
             />
           </Wrapper>
 
@@ -504,25 +504,25 @@ const MM05Presenter = ({
               Block access to open Network Ports
             </Text>
             <Text
-              fontSize={`16px`}
+              fontSize={`18px`}
               color={Theme.greyTheme4_C}
               lineHeight={`1.4`}
             >
-              Simple but effective
+              Simple but effective economical
             </Text>
             <Text
-              fontSize={`16px`}
+              fontSize={`18px`}
               color={Theme.greyTheme4_C}
               lineHeight={`1.4`}
             >
-              economical solution Physical cyber
+              solution Physical cyber security
             </Text>
             <Text
-              fontSize={`16px`}
+              fontSize={`18px`}
               color={Theme.greyTheme4_C}
               lineHeight={`1.4`}
             >
-              security is now a must, not a choice.
+              is now a must, not a choice.
             </Text>
             <Link to="/usb/6107dd1dbdf08f065ce6cd1e">
               <ArrowIcon fontWeight={`bold`} margin={`30px 0 0`}>
@@ -537,7 +537,7 @@ const MM05Presenter = ({
       <Wrapper
         isRelative={true}
         ref={temp4Ref}
-        height={width < 900 ? `550px` : `955px`}
+        height={width < 900 ? `580px` : `955px`}
       >
         <Image
           height={`100%`}
@@ -597,16 +597,16 @@ const MM05Presenter = ({
               display={width < 900 ? `flex` : `none`}
               al={`flex-start`}
               ju={`flex-end`}
-              padding={width < 900 ? `250px 0 0` : `50px 0 0`}
+              padding={width < 900 ? `310px 0 0` : `50px 0 0`}
             >
               <Text fontSize={`18px`} color={Theme.greyTheme7_C}>
-                Install LAN Cable Lock Plus without removing
+                Install LAN Cable Lock Plus without
               </Text>
               <Text fontSize={`18px`} color={Theme.greyTheme7_C}>
-                the network cables in use.
+                removing the network cables in
               </Text>
               <Text fontSize={`18px`} color={Theme.greyTheme7_C}>
-                Striving for better security.
+                use. Striving for better security.
               </Text>
             </Wrapper>
           </RsWrapper>
@@ -654,33 +654,30 @@ const MM05Presenter = ({
       </Wrapper>
 
       {/* mobile */}
-      <Wrapper display={width < 900 ? `flex` : `none`}>
+      <Wrapper display={width < 900 ? `flex` : `none`} isRelative={true}>
         <Image
           alt="image"
-          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2Fmobile-image.png?alt=media&token=24e460ca-79a7-4ee0-8fc0-012c58f7ed8c`}
+          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM05%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20710.png?alt=media&token=2204c780-11c2-48e5-a055-b038a0ed4880`}
         />
-        <Wrapper al={`flex-start`} padding={`0 35px`}>
-          <Text
-            fontSize={`15px`}
-            lineHeight={`1.4`}
-            color={Theme.darkGrey_C}
-            margin={`20px 0 0`}
-          >
-            Easy to install on devices with multiple
+        <Wrapper
+          al={`flex-start`}
+          padding={`0 35px`}
+          height={`100%`}
+          isAbsolute={true}
+          top={`0`}
+          left={`0`}
+        >
+          <Text fontSize={`17px`} lineHeight={`1.4`} color={Theme.white_C}>
+            Easy to install on devices with
           </Text>
-          <Text fontSize={`15px`} lineHeight={`1.4`} color={Theme.darkGrey_C}>
-            ports, such as a server or Network Switch,
+          <Text fontSize={`17px`} lineHeight={`1.4`} color={Theme.white_C}>
+            multiple ports, such as a server or
           </Text>
-          <Text fontSize={`15px`} lineHeight={`1.4`} color={Theme.darkGrey_C}>
-            without removing the cables in use. Install
+          <Text fontSize={`17px`} lineHeight={`1.4`} color={Theme.white_C}>
+            Network Switch, without removing
           </Text>
-          <Text
-            fontSize={`15px`}
-            lineHeight={`1.4`}
-            color={Theme.darkGrey_C}
-            margin={`0 0 110px`}
-          >
-            vertically and/or horizontally.
+          <Text fontSize={`17px`} lineHeight={`1.4`} color={Theme.white_C}>
+            the cables in use. Install vertically and/or horizontally.
           </Text>
         </Wrapper>
       </Wrapper>
@@ -708,28 +705,25 @@ const MM05Presenter = ({
           </Wrapper>
 
           {/* mobile */}
-          <Wrapper display={width < 700 ? `flex` : `none`} margin={`-70px 0 0`}>
+          <Wrapper display={width < 700 ? `flex` : `none`} margin={`45px 0 0`}>
             <Image
               alt="mobileImg"
-              shadow={`2px 2px 7px rgba(3, 4, 2, 0.31)`}
               radius={`30px`}
               width={`85%`}
-              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2Fmobile-%E1%84%82%E1%85%A9%E1%84%90%E1%85%B3%E1%84%87%E1%85%AE%E1%86%A82.png?alt=media&token=0fcff4fe-cc8c-4570-bcd7-944caefa7732`}
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM05%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%204492.png?alt=media&token=9b7166ba-86d0-4e5a-834f-e1ba6fb932dc`}
             />
             <Image
               margin={`30px 0`}
-              shadow={`2px 2px 7px rgba(3, 4, 2, 0.31)`}
               radius={`30px`}
               alt="mobileImg"
               width={`85%`}
-              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2Fmobile-PC%E1%84%92%E1%85%AE%E1%84%86%E1%85%A7%E1%86%AB2.png?alt=media&token=c5df68ec-df27-4853-ae62-17b29b61675e`}
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM05%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%204500.png?alt=media&token=9fc925b2-6e6f-45f7-b574-89560f576c1a`}
             />
             <Image
               alt="mobileImg"
               width={`85%`}
-              shadow={`2px 2px 7px rgba(3, 4, 2, 0.31)`}
               radius={`30px`}
-              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2Fmobile-%E1%84%82%E1%85%A6%E1%84%90%E1%85%B3%E1%84%8B%E1%85%AF%E1%84%8F%E1%85%B32.png?alt=media&token=fee1f6c8-de92-47f6-a11c-80798a8cebfb`}
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM05%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%204499.png?alt=media&token=27cfb9c0-eadd-46a6-91fd-2e96546bce93`}
             />
           </Wrapper>
 
@@ -739,17 +733,23 @@ const MM05Presenter = ({
             padding={`0 35px`}
           >
             <Text
-              fontSize={width < 700 ? `18px` : `24px`}
+              fontSize={width < 700 ? `17px` : `24px`}
               color={Theme.greyTheme4_C}
             >
               Possible only with SMARTKEEPER
             </Text>
             <Text
-              fontSize={width < 700 ? `18px` : `24px`}
+              fontSize={width < 700 ? `17px` : `24px`}
+              color={Theme.greyTheme4_C}
+            >
+              Physical cyber security
+            </Text>
+            <Text
+              fontSize={width < 700 ? `17px` : `24px`}
               color={Theme.greyTheme4_C}
               margin={`0 0 10px`}
             >
-              Physical cyber security for Network Cables
+              for Network Cables
             </Text>
 
             <Link to="/p_network/6107f6c7bdf08f065ce6cd5f">
@@ -848,19 +848,18 @@ const MM05Presenter = ({
             left={`0`}
             fontSize={`18px`}
           >
-            <Text fontWeight={`400`}>
-              As the name suggests, the key is universal.
-            </Text>
+            <Text fontWeight={`400`}>As the name suggests,</Text>
+            <Text fontWeight={`400`}>the key is universal.</Text>
             <Text fontWeight={`400`}>ONE key can manage 30+</Text>
-            <Text fontWeight={`400`}>SMARTKEEPER products to</Text>
+            <Text fontWeight={`400`}>SMARTKEEPER products to enhance</Text>
             <Text fontWeight={`400`} margin={`0 0 30px`}>
-              enhance user efficiency.
+              user efficiency.
             </Text>
 
             <Text fontWeight={`400`}>Numerous confidential key patterns</Text>
-            <Text fontWeight={`400`}>are only compatible</Text>
+            <Text fontWeight={`400`}>are only compatible with </Text>
             <Text fontWeight={`400`} margin={`0 0 30px`}>
-              with products of matching pattern.
+              products of matching pattern.
             </Text>
             <Link to="/lock/6114b080e48e2e29f6cd570b">
               <ArrowIcon fontWeight={`bold`}>
