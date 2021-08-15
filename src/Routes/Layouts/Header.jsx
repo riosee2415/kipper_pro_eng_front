@@ -212,7 +212,7 @@ const Header = ({ history, width, match }) => {
   const [subToggle, setSubToggle] = useState([]);
 
   const [loginUserKey, setLoginUserKey] = useState(
-    sessionStorage.getItem("XKQUSLAHDYQUWLXM")
+    sessionStorage.getItem("DLJHQSUDCJSKALDJ")
   );
 
   const [currentIndex, setCurrentIndex] = useState(99);
@@ -228,10 +228,8 @@ const Header = ({ history, width, match }) => {
   };
 
   const logoutUserHandler = () => {
-    sessionStorage.removeItem("XKQUSLAHDYQUWLXM");
+    sessionStorage.removeItem("DLJHQSUDCJSKALDJ");
     setLoginUserKey("");
-    toast.success("로그아웃 되었습니다.");
-    history.push("/main");
     setMobileMenuOpen(false);
   };
 
@@ -377,14 +375,26 @@ const Header = ({ history, width, match }) => {
                 alt="lan"
                 src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Ficon%2F%E1%84%91%E1%85%A2%E1%84%89%E1%85%B3%20416.svg?alt=media&token=6a0d8888-77bf-4027-b540-99ee0d9a1a8e`}
               />
-              <Link to="/login">
-                <Image
-                  margin={`0 0 0 10px`}
+
+              {loginUserKey ? (
+                <Wrapper
                   width={`auto`}
-                  alt="lan"
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Ficon%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20561.svg?alt=media&token=fbb179f2-a819-4bc1-81be-cf6b2023f465`}
-                />
-              </Link>
+                  margin={`0 0 0 5px`}
+                  onClick={logoutUserHandler}
+                  color={Theme.white_C}
+                >
+                  log
+                </Wrapper>
+              ) : (
+                <Link to="/login">
+                  <Image
+                    margin={`0 0 0 10px`}
+                    width={`auto`}
+                    alt="lan"
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Ficon%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20561.svg?alt=media&token=fbb179f2-a819-4bc1-81be-cf6b2023f465`}
+                  />
+                </Link>
+              )}
             </Wrapper>
           </Wrapper>
         </H_Wrapper>
@@ -416,14 +426,25 @@ const Header = ({ history, width, match }) => {
               alt="lan"
               src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Ficon%2F%E1%84%91%E1%85%A2%E1%84%89%E1%85%B3%20416.svg?alt=media&token=6a0d8888-77bf-4027-b540-99ee0d9a1a8e`}
             />
-            <Link to="/login">
-              <Image
-                margin={`0 0 0 10px`}
+            {loginUserKey ? (
+              <Wrapper
                 width={`auto`}
-                alt="lan"
-                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Ficon%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20561.svg?alt=media&token=fbb179f2-a819-4bc1-81be-cf6b2023f465`}
-              />
-            </Link>
+                margin={`0 0 0 5px`}
+                onClick={logoutUserHandler}
+                color={Theme.white_C}
+              >
+                log
+              </Wrapper>
+            ) : (
+              <Link to="/login">
+                <Image
+                  margin={`0 0 0 10px`}
+                  width={`auto`}
+                  alt="lan"
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Ficon%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20561.svg?alt=media&token=fbb179f2-a819-4bc1-81be-cf6b2023f465`}
+                />
+              </Link>
+            )}
           </Wrapper>
         </Wrapper>
 
