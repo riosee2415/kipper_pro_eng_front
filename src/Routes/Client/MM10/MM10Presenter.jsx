@@ -21,6 +21,10 @@ const Gotham = styled(Wrapper)`
   width: auto;
   letter-spacing: ${(props) => props.letterSpacing};
   line-height: ${(props) => props.lineHeight};
+
+  @media (max-width: 900px) {
+    font-size: 28px;
+  }
 `;
 
 const Gotham2 = styled(SpanText)`
@@ -107,6 +111,7 @@ const MM10Presenter = ({ width }) => {
             <Text
               color={Theme.white_C}
               fontSize={width < 700 ? `18px` : `20px`}
+              display={width < 700 ? `none` : `flex`}
               fontWeight={`700`}
             >
               <Gotham2>SMARTKEEPER</Gotham2> is a Physical Cybersecurity System
@@ -115,6 +120,7 @@ const MM10Presenter = ({ width }) => {
             <Text
               color={Theme.white_C}
               fontSize={width < 700 ? `18px` : `20px`}
+              display={width < 700 ? `none` : `flex`}
               fontWeight={`700`}
             >
               installation sites worldwide from a wide range of industries.
@@ -127,6 +133,46 @@ const MM10Presenter = ({ width }) => {
             >
               Become a partner with <Gotham2>SMARTKEEPER</Gotham2> to secure
               distribution rights in your country.
+            </Text>
+            <Text
+              display={width < 700 ? `flex` : `none`}
+              fontSize={`18px`}
+              fontWeight={`700`}
+              color={Theme.white_C}
+            >
+              <Gotham2>SMARTKEEPER</Gotham2> is a Physical
+            </Text>
+            <Text
+              display={width < 700 ? `flex` : `none`}
+              fontSize={`18px`}
+              fontWeight={`700`}
+              color={Theme.white_C}
+            >
+              cybersecurity System that is the
+            </Text>
+            <Text
+              display={width < 700 ? `flex` : `none`}
+              fontSize={`18px`}
+              fontWeight={`700`}
+              color={Theme.white_C}
+            >
+              proven choice of 3,000 installation
+            </Text>
+            <Text
+              display={width < 700 ? `flex` : `none`}
+              fontSize={`18px`}
+              fontWeight={`700`}
+              color={Theme.white_C}
+            >
+              sites worldwide from a wide range
+            </Text>
+            <Text
+              display={width < 700 ? `flex` : `none`}
+              fontSize={`18px`}
+              fontWeight={`700`}
+              color={Theme.white_C}
+            >
+              of industries.
             </Text>
 
             <Text
@@ -174,34 +220,103 @@ const MM10Presenter = ({ width }) => {
             </Text>
           </Wrapper>
 
-          <Wrapper display={width < 700 ? `flex` : `none`}>
+          <Wrapper display={width < 700 ? `flex` : `none`} al={`flex-start`}>
             <Text
               fontSize={`16px`}
               color={Theme.greyTheme7_C}
-              letterSpacing={`0.4px`}
+              letterSpacing={width < 700 ? `-0.2px` : `0.4px`}
             >
-              SMARTKEEPER is the world’s first complete line-up of physical
-              security products from Korea. Deployed to more than 3,000 sites
-              globally, SMARTKEEPER is used in various industries including the
-              military, government, IT, manufacturing, telecommunications,
-              finance, medical care and education. Companies that understand the
-              need for physical cybersecurity rely on SMARTKEEPER to keep their
-              information safe.
+              SMARTKEEPER is the world’s first
+            </Text>
+            <Text
+              fontSize={`16px`}
+              color={Theme.greyTheme7_C}
+              letterSpacing={width < 700 ? `-0.2px` : `0.4px`}
+            >
+              complete line-up of physical security products from Korea.
+              Deployed to more
+            </Text>
+            <Text
+              fontSize={`16px`}
+              color={Theme.greyTheme7_C}
+              letterSpacing={width < 700 ? `-0.2px` : `0.4px`}
+            >
+              than 3,000 sites globally, SMARTKEEPER
+            </Text>
+            <Text
+              fontSize={`16px`}
+              color={Theme.greyTheme7_C}
+              letterSpacing={width < 700 ? `-0.2px` : `0.4px`}
+            >
+              is used in various industries including the military, government,
+              IT, manufacturing, telecommunications, finance, medical
+            </Text>
+            <Text
+              fontSize={`16px`}
+              color={Theme.greyTheme7_C}
+              letterSpacing={width < 700 ? `-0.2px` : `0.4px`}
+            >
+              care and education. Companies that understand the need for
+              physical cybersecurity rely on SMARTKEEPER to
+            </Text>
+            <Text
+              fontSize={`16px`}
+              color={Theme.greyTheme7_C}
+              letterSpacing={width < 700 ? `-0.2px` : `0.4px`}
+            >
+              keep their information safe.
             </Text>
           </Wrapper>
 
           <Wrapper al={`flex-start`} margin={`35px 0 40px`}>
-            <Text color={Theme.greyTheme7_C} letterSpacing={`0.4px`}>
+            <Text
+              color={Theme.greyTheme7_C}
+              letterSpacing={width < 700 ? `-0.2px` : `0.4px`}
+              display={width < 700 ? `none` : `flex`}
+            >
               We are looking to partner with distributors that will enlarge
+              SMARTKEEPER’s presence in the global physical cybersecurity
+              market.
+            </Text>
+            <Text
+              color={Theme.greyTheme7_C}
+              letterSpacing={width < 700 ? `-0.2px` : `0.4px`}
+              display={width < 700 ? `flex` : `none`}
+            >
+              We are looking to partner with
+            </Text>
+            <Text
+              color={Theme.greyTheme7_C}
+              letterSpacing={width < 700 ? `-0.2px` : `0.4px`}
+              display={width < 700 ? `flex` : `none`}
+            >
+              distributors that will enlarge
+            </Text>
+            <Text
+              color={Theme.greyTheme7_C}
+              letterSpacing={width < 700 ? `-0.2px` : `0.4px`}
+              display={width < 700 ? `flex` : `none`}
+            >
               SMARTKEEPER’s presence in the global physical cybersecurity
               market.
             </Text>
           </Wrapper>
 
           <Wrapper al={`flex-start`} margin={`0 0 133px`}>
-            <Text color={Theme.white_C}>
+            <Text color={Theme.white_C} display={width < 700 ? `none` : `flex`}>
               We share with our distributors 10 years of product design &#38;
               sales know-how, company vision and success stories from customers.
+            </Text>
+            <Text color={Theme.white_C} display={width < 700 ? `flex` : `none`}>
+              We share with our distributors 10 years of product design &#38;
+              sales know-how,
+            </Text>
+            <Text
+              color={Theme.white_C}
+              display={width < 700 ? `flex` : `none`}
+              margin={`0 0 35px`}
+            >
+              company vision and success stories from customers.
             </Text>
             <Wrapper
               dr={`row`}
@@ -213,10 +328,19 @@ const MM10Presenter = ({ width }) => {
                 -
               </Text>
               <Wrapper width={`calc(100% - 10px)`} al={`flex-start`}>
-                <Text>
+                <Text display={width < 700 ? `none` : `flex`}>
                   We provide various marketing materials (catalogs, websites,
                   high-resolution images, videos, advertisements, banners and
                   manuals)
+                </Text>
+                <Text display={width < 700 ? `flex` : `none`}>
+                  We provide various marketing
+                </Text>
+                <Text display={width < 700 ? `flex` : `none`}>
+                  materials (catalogs, websites, high-resolution images, videos,
+                </Text>
+                <Text display={width < 700 ? `flex` : `none`}>
+                  advertisements, banners and manuals)
                 </Text>
                 <Text>for the eCommerce market.</Text>
               </Wrapper>
@@ -246,16 +370,26 @@ const MM10Presenter = ({ width }) => {
                 -
               </Text>
               <Wrapper width={`calc(100% - 10px)`} al={`flex-start`}>
-                <Text>
+                <Text display={width < 700 ? `none` : `flex`}>
                   We provide free samples of our products for testing.
+                </Text>
+                <Text display={width < 700 ? `flex` : `none`}>
+                  We provide free samples of our
+                </Text>
+                <Text display={width < 700 ? `flex` : `none`}>
+                  products for testing.
                 </Text>
               </Wrapper>
             </Wrapper>
           </Wrapper>
 
           <Wrapper dr={`row`}>
-            <Wrapper width={`50%`} al={`flex-start`}>
-              <Text fontSize={`30px`} color={Theme.white_C} fontWeight={`700`}>
+            <Wrapper width={width < 900 ? `100%` : `50%`} al={`flex-start`}>
+              <Text
+                fontSize={width < 900 ? `23px` : `30px`}
+                color={Theme.white_C}
+                fontWeight={`700`}
+              >
                 Success Story
               </Text>
               <Gotham
@@ -263,7 +397,7 @@ const MM10Presenter = ({ width }) => {
                 fontSize={`50px`}
                 fontWeight={`700`}
                 margin={`9px 0 0`}
-                lineHeight={`1.0`}
+                lineHeight={width < 900 ? `36px` : `1.0`}
               >
                 Different level of
               </Gotham>
@@ -271,15 +405,15 @@ const MM10Presenter = ({ width }) => {
                 color={Theme.greyTheme7_C}
                 fontSize={`50px`}
                 fontWeight={`700`}
-                lineHeight={`1.0`}
+                lineHeight={width < 900 ? `36px` : `1.0`}
               >
                 network security,
               </Gotham>
               <Gotham
-                margin={`20px 0 0`}
+                margin={width < 900 ? `15px 0 0` : `20px 0 0`}
                 fontSize={`50px`}
                 color={Theme.white_C}
-                lineHeight={`1.0`}
+                lineHeight={width < 900 ? `36px` : `1.0`}
                 fontWeight={`400`}
               >
                 proven by countless
@@ -287,12 +421,25 @@ const MM10Presenter = ({ width }) => {
               <Gotham
                 fontSize={`50px`}
                 color={Theme.white_C}
-                lineHeight={`1.0`}
+                lineHeight={width < 900 ? `36px` : `1.0`}
                 fontWeight={`400`}
               >
                 customers :
               </Gotham>
-              <Wrapper al={`flex-start`}>
+
+              <Wrapper
+                display={width < 900 ? `flex` : `none`}
+                padding={`20px 35px 20px 0`}
+              >
+                <Image
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM10%2F%E1%84%87%E1%85%B5%E1%84%8C%E1%85%B3%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-2.png?alt=media&token=35063d90-a0cf-416f-81c2-fb71796d880c`}
+                />
+              </Wrapper>
+
+              <Wrapper
+                al={`flex-start`}
+                display={width < 900 ? `none` : `flex`}
+              >
                 <Text
                   fontSize={`20px`}
                   fontWeight={`700`}
@@ -329,11 +476,88 @@ const MM10Presenter = ({ width }) => {
                   deployment, there was a renewed sense of security.
                 </Text>
               </Wrapper>
-              <Text fontSize={`30px`} color={Theme.white_C}>
-                In one word，it was PERFECT!
+              <Wrapper
+                al={`flex-start`}
+                display={width < 900 ? `flex` : `none`}
+              >
+                <Text
+                  fontSize={`20px`}
+                  fontWeight={`700`}
+                  color={Theme.white_C}
+                >
+                  <Gotham2>SMARTKEEPER</Gotham2> provides
+                </Text>
+                <Text
+                  fontSize={`20px`}
+                  fontWeight={`700`}
+                  color={Theme.white_C}
+                >
+                  superior security
+                </Text>
+                <Text
+                  fontSize={`20px`}
+                  fontWeight={`700`}
+                  color={Theme.white_C}
+                >
+                  in comparison to their competition.
+                </Text>
+                <Text
+                  fontSize={`20px`}
+                  fontWeight={`700`}
+                  color={Theme.white_C}
+                  margin={`35px 0 0`}
+                >
+                  In addition, SMARTKEEPER products integrated
+                </Text>
+                <Text
+                  fontSize={`20px`}
+                  fontWeight={`700`}
+                  color={Theme.white_C}
+                >
+                  seamlessly into our
+                </Text>
+                <Text
+                  fontSize={`20px`}
+                  fontWeight={`700`}
+                  color={Theme.white_C}
+                >
+                  networking system and after deployment, there was a
+                </Text>
+                <Text
+                  fontSize={`20px`}
+                  fontWeight={`700`}
+                  color={Theme.white_C}
+                  margin={`0 0 20px`}
+                >
+                  renewed sense of security.
+                </Text>
+              </Wrapper>
+              <Text
+                fontSize={`30px`}
+                color={Theme.white_C}
+                fontWeight={`bold`}
+                display={width < 900 ? `none` : `flex`}
+              >
+                In one word, it was PERFECT!
+              </Text>
+              <Text
+                fontSize={`30px`}
+                fontWeight={`bold`}
+                color={Theme.white_C}
+                display={width < 900 ? `flex` : `none`}
+              >
+                In one word,
+              </Text>
+              <Text
+                fontSize={`30px`}
+                fontWeight={`bold`}
+                color={Theme.white_C}
+                display={width < 900 ? `flex` : `none`}
+              >
+                it was PERFECT!
               </Text>
             </Wrapper>
-            <Wrapper width={`50%`}>
+            <Wrapper width={`50%`} display={width < 900 ? `none` : `flex`}>
               <Image
                 src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM10%2F%E1%84%87%E1%85%B5%E1%84%8C%E1%85%B3%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-2.png?alt=media&token=35063d90-a0cf-416f-81c2-fb71796d880c`}
               />
@@ -342,7 +566,11 @@ const MM10Presenter = ({ width }) => {
         </RsWrapper>
       </Wrapper>
       {/* 2 */}
-      <Wrapper isRelative={true} margin={`128px 0 0`}>
+      <Wrapper
+        isRelative={true}
+        margin={`128px 0 0`}
+        padding={width < 900 && `0 35px`}
+      >
         {/* <Wrapper
           isAbsolute={true}
           dr={`row`}
@@ -361,24 +589,112 @@ const MM10Presenter = ({ width }) => {
           </Text>
         </Wrapper> */}
         <RsWrapper al={`flex-start`} width={`1126px`}>
-          <Text fontSize={`45px`} fontWeight={`700`} color={Theme.white_C}>
+          <Text
+            fontSize={width < 900 ? `28px` : `45px`}
+            margin={width < 900 && `0 0 20px`}
+            fontWeight={`700`}
+            color={Theme.white_C}
+          >
             How to become a Partner
           </Text>
-          <Text fontSize={`20px`} color={Theme.white_C} fontWeight={`700`}>
+          <Text
+            fontSize={`20px`}
+            color={Theme.white_C}
+            fontWeight={`700`}
+            display={width < 900 ? `none` : `flex`}
+          >
             We aim to grow together with our partners by providing exceptional
             incentives and benefits.
           </Text>
-          <Text fontSize={`20px`} color={Theme.white_C} fontWeight={`700`}>
+          <Text
+            fontSize={`20px`}
+            color={Theme.white_C}
+            fontWeight={`700`}
+            display={width < 900 ? `none` : `flex`}
+          >
             We look forward to hearing from people who would like to partner
             with us.
           </Text>
-          <Text fontSize={`20px`} color={Theme.white_C} fontWeight={`700`}>
+          <Text
+            fontSize={`20px`}
+            color={Theme.white_C}
+            fontWeight={`700`}
+            display={width < 900 ? `none` : `flex`}
+          >
             Please contact us at global_sales@comxi.com.
+          </Text>
+          <Text
+            fontSize={`20px`}
+            color={Theme.white_C}
+            fontWeight={`700`}
+            display={width < 900 ? `flex` : `none`}
+          >
+            We aim to grow together with
+          </Text>
+          <Text
+            fontSize={`20px`}
+            color={Theme.white_C}
+            fontWeight={`700`}
+            display={width < 900 ? `flex` : `none`}
+          >
+            our partners by providing
+          </Text>
+          <Text
+            fontSize={`20px`}
+            color={Theme.white_C}
+            fontWeight={`700`}
+            display={width < 900 ? `flex` : `none`}
+          >
+            exceptional incentives and
+          </Text>
+          <Text
+            fontSize={`20px`}
+            color={Theme.white_C}
+            fontWeight={`700`}
+            display={width < 900 ? `flex` : `none`}
+          >
+            benefits. We look forward to
+          </Text>
+          <Text
+            fontSize={`20px`}
+            color={Theme.white_C}
+            fontWeight={`700`}
+            display={width < 900 ? `flex` : `none`}
+          >
+            hearing from people who
+          </Text>
+          <Text
+            fontSize={`20px`}
+            color={Theme.white_C}
+            fontWeight={`700`}
+            display={width < 900 ? `flex` : `none`}
+          >
+            would like to partner with us.
+          </Text>
+          <Text
+            fontSize={`20px`}
+            color={Theme.white_C}
+            fontWeight={`700`}
+            display={width < 900 ? `flex` : `none`}
+          >
+            Please contact us at
+          </Text>
+          <Text
+            fontSize={`20px`}
+            color={Theme.white_C}
+            fontWeight={`700`}
+            display={width < 900 ? `flex` : `none`}
+          >
+            global_sales@comxi.com.
           </Text>
         </RsWrapper>
       </Wrapper>
 
-      <Wrapper isRelative={true} margin={`132px 0 200px`}>
+      <Wrapper
+        isRelative={true}
+        margin={width < 900 ? `130px 0 80px` : `132px 0 200px`}
+        padding={width < 900 && `0 35px`}
+      >
         {/* <Wrapper
           isAbsolute={true}
           dr={`row`}
@@ -398,17 +714,18 @@ const MM10Presenter = ({ width }) => {
         </Wrapper> */}
         <RsWrapper width={`1126px`} al={`flex-start`}>
           <Text
-            fontSize={`45px`}
+            fontSize={width < 900 ? `28px` : `45px`}
             fontWeight={`700`}
             color={Theme.white_C}
-            margin={`0 0 50px`}
+            margin={width < 900 ? `0 0 30px` : `0 0 50px`}
           >
             Our Partner Locations
           </Text>
           <Wrapper dr={`row`} ju={`flex-start`}>
             <Wrapper
               color={Theme.white_C}
-              width={`250px`}
+              width={width < 900 ? `100%` : `250px`}
+              margin={width < 900 && `0 0 10px`}
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
@@ -416,10 +733,15 @@ const MM10Presenter = ({ width }) => {
               USA
             </Wrapper>
           </Wrapper>
-          <Wrapper dr={`row`} ju={`flex-start`} margin={`72px 0 50px`}>
+          <Wrapper
+            dr={`row`}
+            ju={`flex-start`}
+            margin={width < 900 ? `0` : `72px 0 50px`}
+          >
             <Wrapper
               color={Theme.white_C}
-              width={`250px`}
+              width={width < 900 ? `100%` : `250px`}
+              margin={width < 900 && `10px 0`}
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
@@ -429,7 +751,8 @@ const MM10Presenter = ({ width }) => {
 
             <Wrapper
               color={Theme.white_C}
-              width={`250px`}
+              width={width < 900 ? `100%` : `250px`}
+              margin={width < 900 && `10px 0`}
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
@@ -439,7 +762,8 @@ const MM10Presenter = ({ width }) => {
 
             <Wrapper
               color={Theme.white_C}
-              width={`250px`}
+              width={width < 900 ? `100%` : `250px`}
+              margin={width < 900 && `10px 0`}
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
@@ -449,7 +773,8 @@ const MM10Presenter = ({ width }) => {
 
             <Wrapper
               color={Theme.white_C}
-              width={`250px`}
+              width={width < 900 ? `100%` : `250px`}
+              margin={width < 900 && `10px 0`}
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
@@ -460,7 +785,8 @@ const MM10Presenter = ({ width }) => {
           <Wrapper dr={`row`} ju={`flex-start`}>
             <Wrapper
               color={Theme.white_C}
-              width={`250px`}
+              width={width < 900 ? `100%` : `250px`}
+              margin={width < 900 && `10px 0`}
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
@@ -470,7 +796,8 @@ const MM10Presenter = ({ width }) => {
 
             <Wrapper
               color={Theme.white_C}
-              width={`250px`}
+              width={width < 900 ? `100%` : `250px`}
+              margin={width < 900 && `10px 0`}
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
@@ -480,7 +807,8 @@ const MM10Presenter = ({ width }) => {
 
             <Wrapper
               color={Theme.white_C}
-              width={`250px`}
+              width={width < 900 ? `100%` : `250px`}
+              margin={width < 900 && `10px 0`}
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
@@ -488,10 +816,15 @@ const MM10Presenter = ({ width }) => {
               NORWAY
             </Wrapper>
           </Wrapper>
-          <Wrapper dr={`row`} ju={`flex-start`} margin={`72px 0 50px`}>
+          <Wrapper
+            dr={`row`}
+            ju={`flex-start`}
+            margin={width < 900 ? `0` : `72px 0 50px`}
+          >
             <Wrapper
               color={Theme.white_C}
-              width={`250px`}
+              width={width < 900 ? `100%` : `250px`}
+              margin={width < 900 && `10px 0`}
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
@@ -500,7 +833,8 @@ const MM10Presenter = ({ width }) => {
             </Wrapper>
             <Wrapper
               color={Theme.white_C}
-              width={`250px`}
+              width={width < 900 ? `100%` : `250px`}
+              margin={width < 900 && `10px 0`}
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
@@ -509,7 +843,8 @@ const MM10Presenter = ({ width }) => {
             </Wrapper>
             <Wrapper
               color={Theme.white_C}
-              width={`250px`}
+              width={width < 900 ? `100%` : `250px`}
+              margin={width < 900 && `10px 0`}
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
@@ -518,7 +853,8 @@ const MM10Presenter = ({ width }) => {
             </Wrapper>
             <Wrapper
               color={Theme.white_C}
-              width={`250px`}
+              width={width < 900 ? `100%` : `250px`}
+              margin={width < 900 && `10px 0`}
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
@@ -529,7 +865,8 @@ const MM10Presenter = ({ width }) => {
           <Wrapper dr={`row`} ju={`flex-start`}>
             <Wrapper
               color={Theme.white_C}
-              width={`250px`}
+              width={width < 900 ? `100%` : `250px`}
+              margin={width < 900 && `10px 0`}
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
@@ -538,7 +875,8 @@ const MM10Presenter = ({ width }) => {
             </Wrapper>
             <Wrapper
               color={Theme.white_C}
-              width={`250px`}
+              width={width < 900 ? `100%` : `250px`}
+              margin={width < 900 && `10px 0`}
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
@@ -547,7 +885,8 @@ const MM10Presenter = ({ width }) => {
             </Wrapper>
             <Wrapper
               color={Theme.white_C}
-              width={`250px`}
+              width={width < 900 ? `100%` : `250px`}
+              margin={width < 900 && `10px 0`}
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
@@ -556,7 +895,8 @@ const MM10Presenter = ({ width }) => {
             </Wrapper>
             <Wrapper
               color={Theme.white_C}
-              width={`250px`}
+              width={width < 900 ? `100%` : `250px`}
+              margin={width < 900 && `10px 0`}
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
@@ -567,7 +907,8 @@ const MM10Presenter = ({ width }) => {
           {/* <Wrapper dr={`row`} ju={`flex-start`} margin={`50px 0 0`}>
             <Wrapper
               color={Theme.white_C}
-              width={`250px`}
+              width={width < 900 ? `100%`:`250px`}
+              margin={width < 900 && `10px 0`}
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`700`}
@@ -576,7 +917,8 @@ const MM10Presenter = ({ width }) => {
             </Wrapper>
             <Wrapper
               color={Theme.white_C}
-              width={`250px`}
+              width={width < 900 ? `100%`:`250px`}
+              margin={width < 900 && `10px 0`}
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`700`}
@@ -585,7 +927,8 @@ const MM10Presenter = ({ width }) => {
             </Wrapper>
             <Wrapper
               color={Theme.white_C}
-              width={`250px`}
+              width={width < 900 ? `100%`:`250px`}
+              margin={width < 900 && `10px 0`}
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`700`}
