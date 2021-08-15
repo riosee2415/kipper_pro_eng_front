@@ -568,7 +568,7 @@ const MM09Presenter = ({
                         //     : `brightness(80%) opacity(0.7)`
                         // }
                         objectFit={`contain`}
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20398.png?alt=media&token=145c178d-a351-496e-9f34-2d00f16679bb`}
+                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2Fdrive-03.svg?alt=media&token=8d680327-ac7d-4291-bd43-dbd43c14327f`}
                       />
                       <Text
                         fontSize={`9px`}
@@ -592,7 +592,7 @@ const MM09Presenter = ({
                         width={`26px`}
                         height={`14px`}
                         objectFit={`contain`}
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20396.png?alt=media&token=73465992-9401-4cd4-b7d3-20faf3c1efb9`}
+                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2Fdrive-04.svg?alt=media&token=0c4ce1d6-1a46-4c84-b3cf-82d2af34c2e1`}
                       />
                       <Text fontSize={`9px`} fontWeight={`300`}>
                         USB Type-B
@@ -784,7 +784,7 @@ const MM09Presenter = ({
                         width={`26px`}
                         height={`14px`}
                         objectFit={`contain`}
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20398.png?alt=media&token=145c178d-a351-496e-9f34-2d00f16679bb`}
+                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2Fdrive-03.svg?alt=media&token=8d680327-ac7d-4291-bd43-dbd43c14327f`}
                       />
                       <Text fontSize={`9px`} fontWeight={`300`}>
                         Input/Output
@@ -804,7 +804,7 @@ const MM09Presenter = ({
                         width={`26px`}
                         height={`14px`}
                         objectFit={`contain`}
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20396.png?alt=media&token=73465992-9401-4cd4-b7d3-20faf3c1efb9`}
+                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2Fdrive-04.svg?alt=media&token=0c4ce1d6-1a46-4c84-b3cf-82d2af34c2e1`}
                       />
                       <Text fontSize={`9px`} fontWeight={`300`}>
                         Drive/Memory
@@ -1156,7 +1156,7 @@ const MM09Presenter = ({
                   );
                 })}
             </Gotham>
-            <Text
+            {/* <Text
               letterSpacing={`-0.04em`}
               fontSize={width < 900 ? (width < 700 ? `18px` : `22px`) : `25px`}
               color={Theme.greyTheme7_C}
@@ -1166,9 +1166,9 @@ const MM09Presenter = ({
               }
               lineHeight={`1.4`}
             >
-              {/* 제품명 입력 필드 */}
+              {/* 제품명 입력 필드 
               {pData && pData.productName}
-            </Text>
+            </Text> */}
             <Text
               letterSpacing={`-0.03em`}
               fontSize={width < 900 ? (width < 700 ? `14px` : `16px`) : `18px`}
@@ -1199,7 +1199,12 @@ const MM09Presenter = ({
                 width={`auto`}
                 margin={`0 0 13px`}
               >
-                <Wrapper width={`auto`} al={`flex-start`} margin={`0 30px 0 0`}>
+                <Wrapper
+                  width={`auto`}
+                  al={`flex-start`}
+                  margin={`0 30px 0 0`}
+                  display={width < 900 ? `none` : `flex`}
+                >
                   <Text
                     fontSize={`14px`}
                     fontWeight={`400`}
@@ -1220,12 +1225,12 @@ const MM09Presenter = ({
                 </Wrapper>
                 <Wrapper width={`auto`} al={`flex-start`}>
                   <Text
-                    fontSize={`14px`}
+                    fontSize={width < 900 ? `18px` : `14px`}
                     fontWeight={`400`}
                     letterSpacing={`-0.02em`}
                     lineHeight={`2.14`}
                   >
-                    $ {pData && pData.price} USD
+                    $ {pData && pData.price}
                   </Text>
                   {tData && pData && (
                     <Text
@@ -1239,7 +1244,7 @@ const MM09Presenter = ({
                         : tData.level === `LEVEL4`
                         ? pData.vipPrice2
                         : ``}
-                      &nbsp;USD
+                      &nbsp;
                     </Text>
                   )}
                 </Wrapper>
