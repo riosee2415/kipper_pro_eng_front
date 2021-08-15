@@ -755,9 +755,9 @@ const MM00Presenter = ({
       </Wrapper>
 
       {/*  */}
-      <Wrapper bgColor={`rgb(28,28,28)`}>
+      <Wrapper bgColor={`rgb(0, 0, 0)`}>
         <Wrapper
-          height={width < 700 ? `700px` : `1200px`}
+          height={width < 700 ? `900px` : `1200px`}
           isRelative={true}
           attachment={`initial`}
           bgImg={
@@ -765,16 +765,18 @@ const MM00Presenter = ({
               ? `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM00%2FMM00-bgImg-M.jpeg?alt=media&token=6acffea7-9ca1-4521-a024-2fdbf83cf10c")`
               : `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM00%2FMAIN_BACKGROUND_5.png?alt=media&token=3deeeeed-e761-409a-9c1f-8880078ada83")`
           }
-          bgPosition={width < 700 ? `0 -100px` : ``}
+          bgSize={width < 700 && `100%`}
+          bgPosition={width < 700 ? `0 100px` : ``}
         >
           {/* <Wrapper
-          display={width < 700 ? `none` : `flex`}
-          bgColor={`rgba(0,0,0,0.7)`}
-          isAbsolute={true}
-          height={`100%`}
-          top={`0`}
-          left={`0`}
-        ></Wrapper> */}
+            display={width < 700 ? `flex` : `none`}
+            bgColor={`rgb(0, 0, 0)`}
+            isAbsolute={true}
+            height={`100%`}
+            top={`0`}
+            left={`0`}
+            zIndex={`-1`}
+          ></Wrapper> */}
 
           <RsWrapper>
             <Wrapper
@@ -793,22 +795,22 @@ const MM00Presenter = ({
 
               <Wrapper
                 al={`flex-start`}
-                margin={width < 700 ? `0 0 10px` : `10px 0`}
+                margin={width < 700 ? `20px 0` : `10px 0`}
               >
                 <CommonSubTitle
                   lineHeight={`1.2`}
                   margin={`0`}
-                  fontSize={width < 700 ? `30px` : `48px`}
+                  fontSize={width < 700 ? `24px` : `48px`}
                 >
-                  Secure but convenient.
+                  Security &#38; Convenience
                 </CommonSubTitle>
-                {/* <CommonSubTitle
-                lineHeight={`1.2`}
-                margin={`0`}
-                fontSize={width < 700 ? `30px` : `48px`}
-              >
-                두마리 토끼 모두.
-              </CommonSubTitle> */}
+                <CommonSubTitle
+                  lineHeight={`1.2`}
+                  margin={`0`}
+                  fontSize={width < 700 ? `24px` : `48px`}
+                >
+                  Two Birds with One Stone
+                </CommonSubTitle>
               </Wrapper>
               {/* web */}
               <Wrapper
@@ -821,7 +823,8 @@ const MM00Presenter = ({
                   color={Theme.white_C}
                   fontWeight={`300`}
                 >
-                  The convenience of managing more than 40 locks with
+                  The ability to control approximately 40 locking devices with
+                  one
                 </Text>
                 <Text
                   fontSize={`24px`}
@@ -829,7 +832,8 @@ const MM00Presenter = ({
                   color={Theme.white_C}
                   fontWeight={`300`}
                 >
-                  single key is only possible with SMARTKEEPER PRO.
+                  Universal Lock Key is a convenience that is offered only with
+                  SMARTKEEPER PRO.
                 </Text>
               </Wrapper>
 
@@ -844,7 +848,8 @@ const MM00Presenter = ({
                   color={Theme.white_C}
                   fontWeight={`300`}
                 >
-                  In addition,
+                  For enhanced security, SMARTKEEPER PRO uses various patterns
+                  of
                 </Text>
                 <Text
                   fontSize={`24px`}
@@ -852,25 +857,18 @@ const MM00Presenter = ({
                   color={Theme.white_C}
                   fontWeight={`300`}
                 >
-                  with hundreds of patterns of the key, superior security and
-                  strict
+                  Universal Lock Keys that are managed confidentially to open
+                  the locking devices.
                 </Text>
+
                 <Text
                   fontSize={`24px`}
                   lineHeight={`34px`}
                   color={Theme.white_C}
                   fontWeight={`300`}
                 >
-                  sales policy of the key through B2B non-distribution sales and
-                  end-user
-                </Text>
-                <Text
-                  fontSize={`24px`}
-                  lineHeight={`34px`}
-                  color={Theme.white_C}
-                  fontWeight={`300`}
-                >
-                  verification process ensures the security.
+                  All products are sold exclusively to verified companies only
+                  through B2B sales.
                 </Text>
                 <Text
                   fontSize={`24px`}
@@ -879,7 +877,8 @@ const MM00Presenter = ({
                   fontWeight={`300`}
                   margin={`21px 0 0`}
                 >
-                  Now experience a new Physical Cybersecurity Solution.
+                  Come &#38; experience SMARTKEEPER, the new era of Physical
+                  Cybersecurity.
                 </Text>
               </Wrapper>
               {/* mobile */}
@@ -892,51 +891,98 @@ const MM00Presenter = ({
                   fontWeight={`300`}
                   color={Theme.white_C}
                 >
-                  The convenience of managing more than 40 locks with
+                  The ability to control
                 </Text>
                 <Text
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.white_C}
                 >
-                  single key is only possible with SMARTKEEPER PRO.
+                  approximately 30 locking devices
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.white_C}
+                >
+                  with one universal key is
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.white_C}
+                >
+                  a convenience that is offered only
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.white_C}
+                >
+                  with SMARTKEEPER PRO.
                 </Text>
               </Wrapper>
 
               <Wrapper
                 display={width < 700 ? `flex` : `none`}
                 al={`flex-start`}
-                margin={`10px 0 0`}
+                margin={`20px 0 0`}
               >
                 <Text
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.white_C}
                 >
-                  In addition,
+                  For enhanced security,
                 </Text>
                 <Text
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.white_C}
                 >
-                  with hundreds of patterns of the key, superior security and
-                  strict
+                  SMARTKEEPER PRO uses various
                 </Text>
                 <Text
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.white_C}
                 >
-                  sales policy of the key through B2B non-distribution sales and
-                  end-user
+                  patterns of Universal Lock Keys
                 </Text>
                 <Text
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.white_C}
                 >
-                  verification process ensures the security.
+                  that are managed confidentially
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.white_C}
+                >
+                  to open the locking devices.
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.white_C}
+                >
+                  All products are sold exclusively
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.white_C}
+                >
+                  to verified companies only
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.white_C}
+                >
+                  through B2B sales.
                 </Text>
                 <Text
                   fontSize={`18px`}
@@ -944,7 +990,21 @@ const MM00Presenter = ({
                   color={Theme.white_C}
                   margin={`21px 0 0`}
                 >
-                  Now experience a new Physical Cybersecurity Solution.
+                  Come &#38; experience
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.white_C}
+                >
+                  SMARTKEEPER, the new era
+                </Text>
+                <Text
+                  fontSize={`18px`}
+                  fontWeight={`300`}
+                  color={Theme.white_C}
+                >
+                  of physical cybersecurity.
                 </Text>
               </Wrapper>
             </Wrapper>
