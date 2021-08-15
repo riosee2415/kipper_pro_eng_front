@@ -18,6 +18,14 @@ const Dot = styled(Wrapper)`
   position: relative;
   cursor: pointer;
 
+  img {
+    display: none;
+  }
+
+  :hover img {
+    display: flex;
+  }
+
   &:before {
     content: "";
     position: absolute;
@@ -94,7 +102,16 @@ const MM14Presenter = ({
                     radius={`50%`}
                     bgColor={`#fff`}
                     onClick={() => setAbleIcon(idx)}
-                  ></Dot>
+                  >
+                    <Image
+                      isAbsolute={true}
+                      src={data.src}
+                      width={`50px`}
+                      height={`50px`}
+                      top={`-16px`}
+                      letf={`0px`}
+                    />
+                  </Dot>
                 ) : (
                   <Wrapper
                     isAbsolute={true}
