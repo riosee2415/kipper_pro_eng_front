@@ -2455,7 +2455,7 @@ const MM09Presenter = ({
             letterSpacing={`0`}
             lineHeight={`1.47`}
           >
-            제조 &amp; 인증
+            Manufacturing &#38; Certification
           </Text>
           <Wrapper
             dr={`row`}
@@ -2688,7 +2688,7 @@ const MM09Presenter = ({
               color={Theme.greyTheme3_C}
               fontSize={width < 700 && `14px`}
             >
-              사용설명서
+              User Guide
             </Text>
             <Wrapper width={width < 700 ? `50%` : `80%`} al={`flex-start`}>
               <CommonButton
@@ -2716,7 +2716,7 @@ const MM09Presenter = ({
               color={Theme.greyTheme3_C}
               fontSize={width < 700 && `14px`}
             >
-              제품별 카탈로그
+              Catalogue
             </Text>
             <Wrapper width={width < 700 ? `50%` : `80%`} al={`flex-start`}>
               <CommonButton
