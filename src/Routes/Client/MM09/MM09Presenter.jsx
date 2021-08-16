@@ -48,7 +48,7 @@ const BuyButton = styled.button`
 `;
 
 const Gotham = styled(Wrapper)`
-  font-family: "Gotham", sans-serif;
+  /* font-family: "Gotham", sans-serif; */
   font-weight: 800;
   width: auto;
   letter-spacing: ${(props) => props.letterSpacing};
