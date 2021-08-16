@@ -130,7 +130,7 @@ const MM03Presenter = ({
               </Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
-                color={`#9D9D9D`}
+                color={Theme.greyTheme3_C}
                 fontWeight={`300`}
               >
                 * Click the target port to go to the product.
@@ -366,7 +366,7 @@ const MM03Presenter = ({
               <Desc display={width < 700 ? `block` : `none`}> 60+ sites</Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
-                color={`#9D9D9D`}
+                color={Theme.greyTheme3_C}
                 fontWeight={`300`}
               >
                 * Click the target port to go to the product.
@@ -602,7 +602,7 @@ const MM03Presenter = ({
               <Desc display={width < 700 ? `block` : `none`}>70+ sites</Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
-                color={`#9D9D9D`}
+                color={Theme.greyTheme3_C}
                 fontWeight={`300`}
               >
                 * Click the target port to go to the product.
@@ -841,7 +841,7 @@ const MM03Presenter = ({
               </Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
-                color={`#9D9D9D`}
+                color={Theme.greyTheme3_C}
                 fontWeight={`300`}
               >
                 * Click the target port to go to the product.
@@ -1082,7 +1082,7 @@ const MM03Presenter = ({
               </Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
-                color={`#9D9D9D`}
+                color={Theme.greyTheme3_C}
                 fontWeight={`300`}
               >
                 * Click the target port to go to the product.
@@ -1386,7 +1386,7 @@ const MM03Presenter = ({
               </Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
-                color={`rgb(157, 157, 157)`}
+                color={Theme.greyTheme3_C}
                 fontWeight={`300`}
               >
                 * Click the target port to go to the product.
@@ -1690,7 +1690,7 @@ const MM03Presenter = ({
               </Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
-                color={`#9D9D9D`}
+                color={Theme.greyTheme3_C}
                 fontWeight={`300`}
               >
                 * Click the target port to go to the product.
@@ -1901,7 +1901,7 @@ const MM03Presenter = ({
               </Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
-                color={`#9D9D9D`}
+                color={Theme.greyTheme3_C}
                 fontWeight={`300`}
               >
                 * Click the target port to go to the product.
@@ -2157,7 +2157,7 @@ const MM03Presenter = ({
               </Desc>
               <Text
                 fontSize={width < 700 ? `13px` : `12px`}
-                color={`rgb(157, 157, 157)`}
+                color={Theme.greyTheme3_C}
                 fontWeight={`300`}
               >
                 * Click the target port to go to the product.
