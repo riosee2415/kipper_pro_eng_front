@@ -278,15 +278,15 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
                   For Professionals Only
                 </Text>
                 <Wrapper margin={`100px 0 0`}>
-                  <Text fontSize={`18px`}>
+                  <Text fontSize={width < 1280 ? `14px` : `18px`}>
                     For better security, sold exclusively to verified companies.
                     Proven choice of
                   </Text>
-                  <Text fontSize={`18px`}>
+                  <Text fontSize={width < 1280 ? `14px` : `18px`}>
                     3,000+ installation sites worldwide from a wide range of
                     industries
                   </Text>
-                  <Text fontSize={`18px`}>
+                  <Text fontSize={width < 1280 ? `14px` : `18px`}>
                     including, government, military and public &#38; private
                     institutions.
                   </Text>
@@ -390,14 +390,14 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
                 </Text>
 
                 <Wrapper margin={`90px 0 0`}>
-                  <Text fontSize={`18px`}>
+                  <Text fontSize={width < 1280 ? `14px` : `18px`}>
                     Manage the results of your hard work with better security.
                   </Text>
-                  <Text fontSize={`18px`}>
+                  <Text fontSize={width < 1280 ? `14px` : `18px`}>
                     ESSENTIAL Series available online with economical prices!
                     Secure open USB
                   </Text>
-                  <Text fontSize={`18px`}>
+                  <Text fontSize={width < 1280 ? `14px` : `18px`}>
                     Ports and other input/output ports with locks from our
                     ESSENTIAL Series.
                   </Text>
@@ -425,7 +425,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
         >
           <Text
             fontSize={width < 900 ? `26px` : `40px`}
-            700
+            fontWeight={`700`}
             lineHeight={width < 700 ? `1.3` : `1.6`}
           >
             {width < 900 ? `Arguably the most` : `Arguably`},
@@ -433,14 +433,14 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
           <Text
             display={width < 900 ? `none` : `flex`}
             fontSize={`40px`}
-            700
+            fontWeight={`700`}
           >
             the most effective defense is physical defense.
           </Text>
           <Text
             display={width < 900 ? `flex` : `none`}
             fontSize={`26px`}
-            700
+            fontWeight={`700`}
             lineHeight={`1.3`}
           >
             effective defense is
@@ -448,7 +448,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
           <Text
             display={width < 900 ? `flex` : `none`}
             fontSize={`26px`}
-            700
+            fontWeight={`700`}
             lineHeight={`1.3`}
           >
             physical defense.
@@ -575,10 +575,10 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
           color={Theme.white_C}
           padding={width < 900 ? `100px 30px 60px` : `180px 0`}
         >
-          <Text fontSize={width < 900 ? `26px` : `40px`} 700>
+          <Text fontSize={width < 900 ? `26px` : `40px`} fontWeight={`700`}>
             {width < 700 ? `We value the voice of` : `We`}
           </Text>
-          <Text fontSize={width < 900 ? `26px` : `40px`} 700>
+          <Text fontSize={width < 900 ? `26px` : `40px`} fontWeight={`700`}>
             {width < 700
               ? `our customers.`
               : `value the voice of our customers.`}

@@ -577,7 +577,7 @@ const MM04Presenter = ({
                   >
                     <Text
                       fontSize={width < 700 ? `10px` : `19px`}
-                      700
+                      fontWeight={`700`}
                     >
                       {data.mainTitle}
                     </Text>
@@ -591,7 +591,7 @@ const MM04Presenter = ({
                             fontSize={width < 700 ? `10px` : `15px`}
                             color={`#C50000`}
                             lineHeight={`1`}
-                            700
+                            fontWeight={`700`}
                           >
                             {tData.level === `LEVEL3`
                               ? data.vipPrice1

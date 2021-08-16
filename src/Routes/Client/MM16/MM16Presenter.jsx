@@ -770,12 +770,14 @@ const MM16Presenter = ({
                 </Text>
               </Wrapper>
               <Wrapper al={`flex-start`}>
-                <Button dr={`row`}>
-                  Learn more
-                  <Wrapper width={`auto`} margin={`5px 0 0`}>
-                    <RiArrowRightSLine fontSize={`20px`} />
-                  </Wrapper>
-                </Button>
+                <Link to="/security">
+                  <Button dr={`row`}>
+                    Learn more
+                    <Wrapper width={`auto`} margin={`5px 0 0`}>
+                      <RiArrowRightSLine fontSize={`20px`} />
+                    </Wrapper>
+                  </Button>
+                </Link>
               </Wrapper>
             </Wrapper>
           </Wrapper>
