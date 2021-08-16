@@ -23,13 +23,22 @@ const MMinitContainer = ({ history }) => {
     window.open(url, "_blank");
   };
 
+  const moveLinkHandler2 = (link) => {
+    history.push(link);
+  };
+
   ////////////// - USE EFFECT- //////////////
 
   useEffect(() => {
     scroll.scrollTo(0);
   }, []);
 
-  return <MMinitPresenter moveLinkHandler={moveLinkHandler} />;
+  return (
+    <MMinitPresenter
+      moveLinkHandler={moveLinkHandler}
+      moveLinkHandler2={moveLinkHandler2}
+    />
+  );
 };
 
 export default MMinitContainer;

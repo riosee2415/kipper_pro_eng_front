@@ -207,7 +207,7 @@ const LinkTag = styled(Link)`
   justify-content: ${(props) => props.ju || `center`};
 `;
 
-const MMinitPresenter = ({ width, moveLinkHandler }) => {
+const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
   useTitle(`${process.env["HOMEPAGE_NAME"]}`);
 
   return (
@@ -287,7 +287,7 @@ const MMinitPresenter = ({ width, moveLinkHandler }) => {
                     industries
                   </Text>
                   <Text fontSize={`18px`}>
-                    including, government, military and public & private
+                    including, government, military and public &#38; private
                     institutions.
                   </Text>
                 </Wrapper>
@@ -307,9 +307,7 @@ const MMinitPresenter = ({ width, moveLinkHandler }) => {
                 : `calc(100vh - 150px)`
             }
             isRelative={true}
-            onClick={() =>
-              moveLinkHandler("https://www.schoolhealing2.co.kr/#/main")
-            }
+            onClick={() => moveLinkHandler2("/essential")}
           >
             <Image
               height={
