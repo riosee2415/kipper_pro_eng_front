@@ -384,7 +384,7 @@ const MM17Presenter = ({
 
       <Wrapper
         ref={tempRef}
-        padding={width < 900 ? `100px 0 30px` : `180px 0`}
+        padding={width < 900 ? `0 0 30px` : `180px 0`}
         height={width < 900 ? `500px` : `100%`}
         attachment={`initial`}
         bgImg={
@@ -405,7 +405,7 @@ const MM17Presenter = ({
           <RsWrapper al={`flex-start`} color={Theme.white_C}>
             <Image
               width={width < 900 ? `220px` : `500px`}
-              margin={`0 0 10px`}
+              margin={width < 700 ? `60px 0 10px` : `0 0 10px`}
               alt="usb port lock-font"
               src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2FUSB%20Port%20Lock_USB%E1%84%87%E1%85%A9%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%89%E1%85%A5%E1%86%BC.svg?alt=media&token=b00404ee-2eff-4da2-a7a9-a627772db5da`}
             />
@@ -448,7 +448,7 @@ const MM17Presenter = ({
             <Wrapper
               display={width < 900 ? `flex` : `none`}
               al={`flex-start`}
-              padding={`70px 0 20px`}
+              padding={`120px 0 20px`}
             >
               <Text fontSize={`20px`} fontWeight={`bold`}>
                 Block unused USB ports
@@ -810,15 +810,11 @@ const MM17Presenter = ({
           <Text fontSize={`18px`} color={Theme.greyTheme4_C}>
             Easily installed by hand and does
           </Text>
-          <Text
-            fontSize={`18px`}
-            color={Theme.greyTheme4_C}
-            margin={`0 0 30px`}
-          >
+          <Text fontSize={`18px`} color={Theme.greyTheme4_C}>
             not require software or electricity.
           </Text>
 
-          <ArrowIcon fontWeight={`bold`}>
+          <ArrowIcon fontWeight={`bold`} margin={`10px 0 0`}>
             Learn more about USB Port Lock
             <FaChevronRight />
           </ArrowIcon>
@@ -856,6 +852,7 @@ const MM17Presenter = ({
               <Image
                 width={width < 900 ? `145px` : `338px`}
                 alt="link lock-font"
+                margin={width < 700 ? `0 0 10px` : `0`}
                 src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Fmodify%2FLink%20Lock_USB%E1%84%87%E1%85%A9%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%89%E1%85%A5%E1%86%BC.svg?alt=media&token=7c2c5264-9d74-47fd-b751-0c0aae7831e5`}
               />
               {/* <Text
