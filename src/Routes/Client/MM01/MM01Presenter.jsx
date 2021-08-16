@@ -21,7 +21,7 @@ import { useRef } from "react";
 
 const Gotham = styled(SpanText)`
   font-family: "Gotham", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: ${(props) => props.letterSpacing};
   margin: ${(props) => props.margin};
 `;
@@ -876,7 +876,7 @@ const MM01Presenter = ({
               // isAbsolute={width < 900 ? false : true}
               // top={width < 900 ? `100px` : `150px`}
               // left={width < 900 ? `36px` : `0`}
-              width={width < 800 ? `100%` : `50%`}
+              width={width < 800 ? `100%` : `52%`}
               height={`100%`}
             >
               <Wrapper
@@ -948,20 +948,19 @@ const MM01Presenter = ({
                     width={`auto`}
                     dr={`row`}
                     fontSize={width < 900 ? `18px` : `22px`}
-                    fontWeight={`300`}
+                    fontWeight={`500`}
                     display={width < 900 ? `none` : `flex`}
+                    margin={`10px 0 0`}
                   >
-                    <Gotham margin={`22px 0 0`}>SMARTKEEPER&nbsp;</Gotham>
-                    physically blocks the input/output
+                    SMARTKEEPER physically blocks the input/output
                   </Wrapper>
                   <Wrapper
                     width={`auto`}
                     dr={`row`}
                     fontSize={width < 900 ? `18px` : `22px`}
-                    fontWeight={`300`}
+                    fontWeight={`500`}
                     lineHeight={`1.5`}
                     display={width < 900 ? `none` : `flex`}
-                    margin={`-6px 0 0`}
                   >
                     ports of computers and network devices to prevent
                   </Wrapper>
@@ -969,7 +968,7 @@ const MM01Presenter = ({
                     width={`auto`}
                     dr={`row`}
                     fontSize={width < 900 ? `18px` : `22px`}
-                    fontWeight={`300`}
+                    fontWeight={`500`}
                     lineHeight={`1.5`}
                     display={width < 900 ? `none` : `flex`}
                   >
@@ -979,7 +978,7 @@ const MM01Presenter = ({
                     width={`auto`}
                     dr={`row`}
                     fontSize={width < 900 ? `18px` : `22px`}
-                    fontWeight={`300`}
+                    fontWeight={`500`}
                     lineHeight={`1.5`}
                     margin={`20px 0 0`}
                     display={width < 900 ? `none` : `flex`}
@@ -990,7 +989,7 @@ const MM01Presenter = ({
                     width={`auto`}
                     dr={`row`}
                     fontSize={width < 900 ? `18px` : `22px`}
-                    fontWeight={`300`}
+                    fontWeight={`500`}
                     lineHeight={`1.5`}
                     display={width < 900 ? `none` : `flex`}
                   >
@@ -1022,7 +1021,7 @@ const MM01Presenter = ({
             </Wrapper>
 
             <Image
-              width={width < 900 ? `100%` : `50%`}
+              width={width < 900 ? `100%` : `48%`}
               isAbsolute={width < 900 && `true`}
               top={width < 900 && `218px`}
               right={width < 900 && `0px`}
