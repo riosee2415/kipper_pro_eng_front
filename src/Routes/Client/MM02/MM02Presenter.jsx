@@ -541,7 +541,7 @@ const MM02Presenter = ({
             <Wrapper dr={`row`} al={`flex-start`} ju={`flex-start`}>
               <Wrapper
                 width={`auto`}
-                margin={`0 50px 0 0`}
+                margin={`0 76px 0 0`}
                 ju={`flex-start`}
                 al={`flex-start`}
               >
@@ -586,9 +586,10 @@ const MM02Presenter = ({
                   </Text>
                 </Wrapper>
               </Wrapper>
+
               <Wrapper
                 width={`auto`}
-                margin={`0 50px 0 0`}
+                margin={`0 76px 0 0`}
                 ju={`flex-start`}
                 al={`flex-start`}
               >
@@ -635,7 +636,7 @@ const MM02Presenter = ({
               </Wrapper>
               <Wrapper
                 width={`auto`}
-                margin={`0 50px 0 0`}
+                margin={`0 76px 0 0`}
                 ju={`flex-start`}
                 al={`flex-start`}
               >
@@ -740,7 +741,7 @@ const MM02Presenter = ({
             <Wrapper width={`auto`} al={`flex-start`}>
               <Text color={Theme.greyTheme3_C} fontSize={`25px`}>
                 SMARTKEEPER PRO’s complete line-up not only includes locks for
-                everyday use por
+                everyday use ports,
               </Text>
               <Text color={Theme.greyTheme3_C} fontSize={`25px`}>
                 such as USB, USB-C and RJ45 ports, but for uncommon ports, such

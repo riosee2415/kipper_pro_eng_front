@@ -37,7 +37,7 @@ const Button = styled(Wrapper)`
   color: ${Theme.white_C};
   position: relative;
   cursor: pointer;
-  font-weight: 300;
+  font-weight: 700;
 
   &:before {
     content: "";

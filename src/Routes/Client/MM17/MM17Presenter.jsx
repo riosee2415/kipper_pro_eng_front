@@ -425,9 +425,9 @@ const MM17Presenter = ({
             </Text>
 
             <Wrapper
-              display={width > 900 ? `flex` : `none`}
+              display={width < 900 ? `none` : `flex`}
               al={`flex-start`}
-              padding={`40px 0 300px`}
+              padding={`40px 0 50px`}
             >
               <Text fontSize={`30px`} fontWeight={`bold`}>
                 Block unused USB ports with USB Port Locks
@@ -782,7 +782,7 @@ const MM17Presenter = ({
           </Text>
 
           <Link to="/usb/6114b080e48e2e29f6cd570d">
-            <ArrowIcon fontWeight={`bold`} margin={`30px 0 0`}>
+            <ArrowIcon fontWeight={`bold`} margin={`10px 0 0`}>
               Learn more about USB Port Lock
               <FaChevronRight />
             </ArrowIcon>
