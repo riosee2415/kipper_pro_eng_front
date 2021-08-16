@@ -993,7 +993,6 @@ const MM02Presenter = ({
       {/* mobile */}
       <Wrapper
         width={`85%`}
-        margin={width < 700 ? `23px 0 0` : `50px 0 0`}
         display={width < 900 ? `flex` : `none`}
         al={`flex-start`}
       >
@@ -1190,14 +1189,14 @@ const MM02Presenter = ({
             />
 
             <Text
-              color={Theme.greyTheme3_C}
+              color={Theme.greyTheme7_C}
               fontSize={width < 700 ? `18px !important` : `24px`}
               fontWeight={`400`}
             >
               SMARTKEEPER PRO’s complete
             </Text>
             <Text
-              color={Theme.greyTheme3_C}
+              color={Theme.greyTheme7_C}
               fontSize={width < 700 ? `18px !important` : `24px`}
               fontWeight={`400`}
             >
@@ -1209,7 +1208,7 @@ const MM02Presenter = ({
 
           <Wrapper
             dr={`row`}
-            ju={`space-around`}
+            ju={`space-between`}
             margin={width < 700 ? `34px 0 0` : `70px 0 0`}
             al={`flex-end`}
           >
@@ -1217,7 +1216,7 @@ const MM02Presenter = ({
               <Wrapper width={`auto`}>
                 <Image
                   width={width < 700 ? `60px` : `110px`}
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon-1.png?alt=media&token=582df5e6-4616-4f79-b100-6f2bbdfb1349`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FUSB(USB%20Type-A).svg?alt=media&token=67984156-1155-4aac-bf52-8063413d52ce`}
                 />
               </Wrapper>
               <Text
@@ -1234,7 +1233,7 @@ const MM02Presenter = ({
               <Wrapper width={`auto`}>
                 <Image
                   width={width < 700 ? `60px` : `110px`}
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon-2.png?alt=media&token=a0114d90-9456-4e28-b9cc-12fcb5da615a`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8F%E1%85%B5%E1%84%91%E1%85%A5%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon.png?alt=media&token=78cfd0b8-6d90-4f14-a651-668b1d5dd584`}
                 />
               </Wrapper>
               <Text
@@ -1251,7 +1250,7 @@ const MM02Presenter = ({
               <Wrapper width={`auto`}>
                 <Image
                   width={width < 700 ? `34px` : `80px`}
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon-3.png?alt=media&token=03ad6ba9-e32e-4010-b452-d049dfad5792`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FRJ11(RJ-11).svg?alt=media&token=cb9891b3-67a5-40c8-8f95-3c6741116ced`}
                 />
               </Wrapper>
               <Text
@@ -1268,7 +1267,7 @@ const MM02Presenter = ({
               <Wrapper width={`auto`}>
                 <Image
                   width={width < 700 ? `40px` : `90px`}
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon-4.png?alt=media&token=8bf421c7-b468-4ce9-a234-2426abd95f1f`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FRJ45(RJ-45%2C%20Ethernet%20RJ-45).svg?alt=media&token=7d8d6406-3dca-4e17-97bd-d1264b28530d`}
                 />
               </Wrapper>
               <Text
@@ -1284,7 +1283,7 @@ const MM02Presenter = ({
 
           <Wrapper
             dr={`row`}
-            ju={`space-around`}
+            ju={`space-between`}
             margin={width < 700 ? `32px 0 0` : `65px 0 0`}
             al={`flex-end`}
           >
@@ -1292,7 +1291,7 @@ const MM02Presenter = ({
               <Wrapper width={`auto`}>
                 <Image
                   width={width < 700 ? `66px` : `100px`}
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM03%2Fpro-icon-7.png?alt=media&token=f5c65f7d-873a-4ab4-8ab5-240c7f794ccc`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FQSFP%20Transceiver.svg?alt=media&token=d810f8d0-bfe2-4c53-adc1-a112ca3cf30c`}
                 />
               </Wrapper>
               <Text
@@ -1316,7 +1315,7 @@ const MM02Presenter = ({
               <Wrapper width={`auto`}>
                 <Image
                   width={width < 700 ? `46px` : `85px`}
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM03%2Fpro-icon-8.png?alt=media&token=8a20c4c0-043e-4f4d-8086-dd4a1db5b048`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP%20Transceiver.svg?alt=media&token=43f4d232-5fd9-42d7-ab7f-3409476fb9ff`}
                 />
               </Wrapper>
               <Text
@@ -1340,7 +1339,7 @@ const MM02Presenter = ({
               <Wrapper width={`auto`}>
                 <Image
                   width={width < 700 ? `46px` : `85px`}
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon-7.png?alt=media&token=0ae58d19-202c-4a89-973b-a3ab7383cf35`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP%20Port%20(Mini%20GBIC).svg?alt=media&token=b2ef4865-ef70-4b08-9dcb-5a4da57d6b73`}
                 />
               </Wrapper>
               <Text
@@ -1364,7 +1363,7 @@ const MM02Presenter = ({
               <Wrapper width={`auto`}>
                 <Image
                   width={width < 700 ? `50px` : `90px`}
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon-9.png?alt=media&token=a5255952-c315-457b-8d8e-01ff1bb0c3a9`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2Ffemale%20BNC%20Connector.svg?alt=media&token=700ebe76-67b6-47a6-90ec-f73643f0f7e6`}
                 />
               </Wrapper>
               <Text
@@ -1387,7 +1386,7 @@ const MM02Presenter = ({
 
           <Wrapper
             dr={`row`}
-            ju={`space-around`}
+            ju={`space-between`}
             margin={width < 700 ? `32px 0 0` : `65px 0 0`}
             al={`flex-end`}
           >
@@ -1395,7 +1394,7 @@ const MM02Presenter = ({
               <Wrapper width={`auto`}>
                 <Image
                   width={width < 700 ? `55px` : `120px`}
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon-10.png?alt=media&token=1e3b5c61-4508-43c6-ba78-96a2fd7421e3`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FRF%20Connector.svg?alt=media&token=41442fcf-01af-41bf-bf98-2e18f166c635`}
                 />
               </Wrapper>
 
@@ -1418,7 +1417,7 @@ const MM02Presenter = ({
               <Wrapper width={`auto`}>
                 <Image
                   width={width < 700 ? `45px` : `85px`}
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon-11.png?alt=media&token=aa4a9a9e-1723-4150-b2dc-854cb6d206d0`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FOptical%20Disc%20Drive.svg?alt=media&token=4167e33b-cb79-45da-8b47-31f57d29d3cd`}
                 />
               </Wrapper>
 
@@ -1444,10 +1443,10 @@ const MM02Presenter = ({
               </Wrapper>
             </Wrapper>
 
-            <Wrapper width={`auto`}>
+            <Wrapper width={`auto`} margin={`0 25px 0 0`}>
               <Wrapper width={`auto`}>
                 <Image
-                  width={width < 700 ? `76px` : `140px`}
+                  width={width < 700 ? `90px` : `140px`}
                   src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon-8.png?alt=media&token=9c366b8c-861f-4706-95bd-6173d8c10646`}
                 />
               </Wrapper>
@@ -1571,7 +1570,7 @@ const MM02Presenter = ({
             src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-image-10.png?alt=media&token=c57b03a9-a2f5-41d8-80ef-4ff5200d7f90`}
           />
           <Text
-            fontSize={width < 700 ? `11.5px !important` : `20px`}
+            fontSize={width < 700 ? `12px !important` : `20px`}
             fontWeight={`500`}
             color={Theme.greyTheme3_C}
           >
