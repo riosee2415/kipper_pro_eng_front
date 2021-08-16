@@ -404,7 +404,7 @@ const MM08Presenter = ({
                     display={width < 900 ? `none` : `flex`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("computer")}
+                    onClick={() => moveLinkHandler("/computer")}
                   >
                     <IoIosArrowBack fontSize={22} />
                   </Wrapper>
@@ -415,7 +415,7 @@ const MM08Presenter = ({
                     left={`15px`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("computer")}
+                    onClick={() => moveLinkHandler("/computer")}
                   >
                     <IoIosArrowBack fontSize={22} />
                   </Wrapper>
@@ -487,7 +487,7 @@ const MM08Presenter = ({
                     display={width < 900 ? `none` : `flex`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("usb")}
+                    onClick={() => moveLinkHandler("/usb")}
                   >
                     <IoIosArrowForward fontSize={22} />
                   </Wrapper>
@@ -498,7 +498,7 @@ const MM08Presenter = ({
                     right={`42px`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("usb")}
+                    onClick={() => moveLinkHandler("/usb")}
                   >
                     <IoIosArrowForward fontSize={22} />
                   </Wrapper>

@@ -404,7 +404,7 @@ const MM06Presenter = ({
                     display={width < 900 ? `none` : `flex`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("port")}
+                    onClick={() => moveLinkHandler("/port")}
                   >
                     <IoIosArrowBack fontSize={22} />
                   </Wrapper>
@@ -415,7 +415,7 @@ const MM06Presenter = ({
                     left={`15px`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("port")}
+                    onClick={() => moveLinkHandler("/port")}
                   >
                     <IoIosArrowBack fontSize={22} />
                   </Wrapper>
@@ -507,7 +507,7 @@ const MM06Presenter = ({
                     display={width < 900 ? `none` : `flex`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("lock")}
+                    onClick={() => moveLinkHandler("/lock")}
                   >
                     <IoIosArrowForward fontSize={22} />
                   </Wrapper>
@@ -518,7 +518,7 @@ const MM06Presenter = ({
                     right={`42px`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("lock")}
+                    onClick={() => moveLinkHandler("/lock")}
                   >
                     <IoIosArrowForward fontSize={22} />
                   </Wrapper>

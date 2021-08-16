@@ -405,7 +405,7 @@ const MM07Presenter = ({
                     display={width < 900 ? `none` : `flex`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("p_network")}
+                    onClick={() => moveLinkHandler("/p_network")}
                   >
                     <IoIosArrowBack fontSize={22} />
                   </Wrapper>
@@ -416,7 +416,7 @@ const MM07Presenter = ({
                     left={`15px`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("p_network")}
+                    onClick={() => moveLinkHandler("/p_network")}
                   >
                     <IoIosArrowBack fontSize={22} />
                   </Wrapper>
@@ -548,7 +548,7 @@ const MM07Presenter = ({
                     display={width < 900 ? `none` : `flex`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("computer")}
+                    onClick={() => moveLinkHandler("/computer")}
                   >
                     <IoIosArrowForward fontSize={22} />
                   </Wrapper>
@@ -559,7 +559,7 @@ const MM07Presenter = ({
                     right={`42px`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("computer")}
+                    onClick={() => moveLinkHandler("/computer")}
                   >
                     <IoIosArrowForward fontSize={22} />
                   </Wrapper>

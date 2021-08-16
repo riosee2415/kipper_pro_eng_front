@@ -404,7 +404,7 @@ const MM18Presenter = ({
                     display={width < 700 ? `none` : `flex`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("usb")}
+                    onClick={() => moveLinkHandler("/usb")}
                   >
                     <IoIosArrowBack fontSize={22} />
                   </Wrapper>
@@ -415,7 +415,7 @@ const MM18Presenter = ({
                     left={`15px`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("usb")}
+                    onClick={() => moveLinkHandler("/usb")}
                   >
                     <IoIosArrowBack fontSize={22} />
                   </Wrapper>
@@ -513,7 +513,7 @@ const MM18Presenter = ({
                     display={width < 700 ? `none` : `flex`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("port")}
+                    onClick={() => moveLinkHandler("/port")}
                   >
                     <IoIosArrowForward fontSize={22} />
                   </Wrapper>
@@ -524,7 +524,7 @@ const MM18Presenter = ({
                     right={`42px`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("port")}
+                    onClick={() => moveLinkHandler("/port")}
                   >
                     <IoIosArrowForward fontSize={22} />
                   </Wrapper>

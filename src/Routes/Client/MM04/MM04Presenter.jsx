@@ -408,7 +408,7 @@ const MM04Presenter = ({
                     display={width < 900 ? `none` : `flex`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("lock")}
+                    onClick={() => moveLinkHandler("/lock")}
                   >
                     <IoIosArrowBack fontSize={22} />
                   </Wrapper>
@@ -419,7 +419,7 @@ const MM04Presenter = ({
                     left={`15px`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("lock")}
+                    onClick={() => moveLinkHandler("/lock")}
                   >
                     <IoIosArrowBack fontSize={22} />
                   </Wrapper>
@@ -519,7 +519,7 @@ const MM04Presenter = ({
                     display={width < 900 ? `none` : `flex`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("p_network")}
+                    onClick={() => moveLinkHandler("/p_network")}
                   >
                     <IoIosArrowForward fontSize={22} />
                   </Wrapper>
@@ -530,7 +530,7 @@ const MM04Presenter = ({
                     right={`42px`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("p_network")}
+                    onClick={() => moveLinkHandler("/p_network")}
                   >
                     <IoIosArrowForward fontSize={22} />
                   </Wrapper>
