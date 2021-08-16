@@ -1521,8 +1521,8 @@ const MM09Presenter = ({
             ju={`flex-start`}
           >
             <Magnifier
-              mgWidth={200}
-              mgHeight={200}
+              mgWidth={350}
+              mgHeight={350}
               height={width < 1100 ? `468px` : `525px`}
               alt="image"
               src={currentColorImage && currentColorImage.imagePath}
