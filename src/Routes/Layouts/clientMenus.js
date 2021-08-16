@@ -45,7 +45,7 @@ export const menus = [
   },
   {
     menuName: "BUSINESS",
-    menuLink: "/info?type=partnership",
+    menuLink: "/info",
     subMenus: [
       {
         subMenuName: "Partnership",
@@ -193,7 +193,7 @@ export const footerMenus = [
   },
   {
     menuName: "BUSINESS",
-    menuLink: "/info?type=partnership",
+    menuLink: "/info",
     subMenus: [
       {
         subMenuName: "Partnership",

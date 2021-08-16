@@ -301,7 +301,7 @@ const MM17Presenter = ({
                   >
                     (CSK-UL10)
                   </Text>
-                  <Link to="/usb/6114b080e48e2e29f6cd570d">
+                  <Link to="/usb/611910452c1dfdde5b57cd60">
                     <ArrowIcon>
                       Learn more
                       <FaChevronRight />
@@ -369,7 +369,7 @@ const MM17Presenter = ({
                   >
                     (CSK-LK11)
                   </Text>
-                  <Link to="/usb/6114b080e48e2e29f6cd570f">
+                  <Link to="/usb/611910452c1dfdde5b57cd62">
                     <ArrowIcon>
                       Learn more
                       <FaChevronRight />
@@ -781,7 +781,7 @@ const MM17Presenter = ({
             electricity.
           </Text>
 
-          <Link to="/usb/6114b080e48e2e29f6cd570d">
+          <Link to="/usb/611910452c1dfdde5b57cd60">
             <ArrowIcon fontWeight={`bold`} margin={`10px 0 0`}>
               Learn more about USB Port Lock
               <FaChevronRight />
@@ -975,7 +975,7 @@ const MM17Presenter = ({
             내부의 보안규정을 준수할 수 있도록 도와드립니다.
           </Text> */}
 
-          <Link to="/usb/6114b080e48e2e29f6cd570f">
+          <Link to="/usb/611910452c1dfdde5b57cd62">
             <ArrowIcon>
               Learn more about Link Lock
               <FaChevronRight />
@@ -1001,7 +1001,7 @@ const MM17Presenter = ({
               </Text>
               <Text fontSize={`20px`}>to enhance physical</Text>
               <Text fontSize={`20px`}>cybersecurity. </Text>
-              <Link to="/usb/6114b080e48e2e29f6cd570d">
+              <Link to="/usb/611910452c1dfdde5b57cd60">
                 <ArrowIcon margin={`22px 0 0`}>
                   Learn more bout USB Port Lock
                   <FaChevronRight />
@@ -1062,7 +1062,7 @@ const MM17Presenter = ({
           Link and Lock it down!
         </Text>
 
-        <Link to="/usb/6114b080e48e2e29f6cd570f">
+        <Link to="/usb/611910452c1dfdde5b57cd62">
           <ArrowIcon>
             Learn more about Link Lock
             <FaChevronRight />
@@ -1093,7 +1093,7 @@ const MM17Presenter = ({
             <Text fontSize={`16px`} lineHeight={`1.4`} fontWeight={`400`}>
               cybersecurity.
             </Text>
-            <Link to="/usb/6114b080e48e2e29f6cd570d">
+            <Link to="/usb/611910452c1dfdde5b57cd60">
               <ArrowIcon
                 fontSize={width < 700 && `12px`}
                 color={Theme.greyTheme4_C}
