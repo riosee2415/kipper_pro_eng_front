@@ -28,7 +28,7 @@ const Gotham = styled(SpanText)`
 
 const Title = styled.h1`
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 700;
   color: ${(props) => props.theme.white_C};
   line-height: 1.3;
   display: ${(props) => props.display};
@@ -40,7 +40,7 @@ const Title = styled.h1`
 
 const SubTitle = styled.h2`
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 900;
   color: ${(props) => props.theme.white_C};
   display: ${(props) => props.display};
   line-height: 1.3;
@@ -903,7 +903,7 @@ const MM01Presenter = ({
                   <Wrapper
                     width={`auto`}
                     fontSize={width < 900 ? `28px` : `45px`}
-                    fontWeight={`700`}
+                    fontWeight={`900`}
                     lineHeight={`1.3`}
                     display={width < 900 ? `none` : `flex`}
                   >
@@ -912,7 +912,7 @@ const MM01Presenter = ({
                   <Wrapper
                     width={`auto`}
                     fontSize={width < 900 ? `28px` : `45px`}
-                    fontWeight={`700`}
+                    fontWeight={`900`}
                     lineHeight={`1.3`}
                     display={width < 900 ? `none` : `flex`}
                   >
@@ -921,7 +921,7 @@ const MM01Presenter = ({
                   <Wrapper
                     width={`auto`}
                     fontSize={width < 900 ? `28px` : `45px`}
-                    fontWeight={`700`}
+                    fontWeight={`900`}
                     lineHeight={`1.3`}
                     display={width < 900 ? `flex` : `none`}
                   >
@@ -930,7 +930,7 @@ const MM01Presenter = ({
                   <Wrapper
                     width={`auto`}
                     fontSize={width < 900 ? `28px` : `45px`}
-                    fontWeight={`700`}
+                    fontWeight={`900`}
                     lineHeight={`1.3`}
                     display={width < 900 ? `flex` : `none`}
                   >
@@ -939,7 +939,7 @@ const MM01Presenter = ({
                   <Wrapper
                     width={`auto`}
                     fontSize={width < 900 ? `28px` : `45px`}
-                    fontWeight={`700`}
+                    fontWeight={`900`}
                     lineHeight={`1.3`}
                   >
                     application
@@ -1005,7 +1005,7 @@ const MM01Presenter = ({
                     width={`auto`}
                     lineHeight={`1.3`}
                     fontSize={`30px`}
-                    fontWeight={`700`}
+                    fontWeight={`900`}
                   >
                     Physical Cybersecurity,
                   </Wrapper>
@@ -1013,7 +1013,7 @@ const MM01Presenter = ({
                     width={`auto`}
                     lineHeight={`1.3`}
                     fontSize={`30px`}
-                    fontWeight={`700`}
+                    fontWeight={`900`}
                   >
                     Simple but effective economical solution!
                   </Wrapper>

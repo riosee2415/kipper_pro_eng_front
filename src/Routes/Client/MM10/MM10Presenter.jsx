@@ -118,7 +118,7 @@ const MM10Presenter = ({
           <Text
             fontSize={width < 700 ? `28px` : `45px`}
             color={Theme.white_C}
-            fontWeight={`800`}
+            fontWeight={`900`}
             lineHeight={`1.4`}
           >
             Benefits of becoming a
@@ -126,7 +126,7 @@ const MM10Presenter = ({
           <Text
             fontSize={width < 700 ? `28px` : `45px`}
             color={Theme.white_C}
-            fontWeight={`800`}
+            fontWeight={`900`}
             lineHeight={`1.4`}
           >
             Partner

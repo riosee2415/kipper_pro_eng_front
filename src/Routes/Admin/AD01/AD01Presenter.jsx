@@ -139,7 +139,7 @@ export default ({
               width={`70px`}
               margin={`0px 10px 0px 0px`}
               al={`flex-start`}
-              fontWeight={`800`}
+              fontWeight={`900`}
               fontSize={`13.5px`}
             >
               디바이스
@@ -156,7 +156,7 @@ export default ({
               width={`70px`}
               margin={`0px 10px 0px 0px`}
               al={`flex-start`}
-              fontWeight={`800`}
+              fontWeight={`900`}
               fontSize={`13.5px`}
             >
               플랫폼
@@ -177,7 +177,7 @@ export default ({
               width={`70px`}
               margin={`0px 10px 0px 0px`}
               al={`flex-start`}
-              fontWeight={`800`}
+              fontWeight={`900`}
               fontSize={`13.5px`}
             >
               브라우저

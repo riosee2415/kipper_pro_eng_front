@@ -84,7 +84,7 @@ const Board = ({
           <TableHead>
             <TableHeadLIST width={`100px`}>번호</TableHeadLIST>
             <TableHeadLIST
-              fontWeight={`800`}
+              fontWeight={`900`}
               width={`calc(100% - 100px - 160px - 120px - 60px)`}
               ju={`flex-start`}
             >
@@ -109,7 +109,7 @@ const Board = ({
                       {pageCnt - (currentPage * limit + idx) + ""}
                     </TableBodyLIST>
                     <TableBodyLIST
-                      fontWeight={`800`}
+                      fontWeight={`900`}
                       width={`calc(100% - 100px - 160px - 120px - 60px)`}
                       ju={`flex-start`}
                     >
@@ -144,7 +144,7 @@ const Board = ({
                   >
                     <TableBody>
                       <TableBodyLIST
-                        fontWeight={`800`}
+                        fontWeight={`900`}
                         width={`100%`}
                         ju={`flex-start`}
                       >

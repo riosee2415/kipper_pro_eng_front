@@ -302,7 +302,7 @@ const A_Content = ({ location }) => {
             shadow={`0px 5px 10px ${Theme.grey_C}`}
           >
             <Wrapper
-              fontWeight={`800`}
+              fontWeight={`900`}
               fontSize={`30px`}
               color={Theme.white_C}
               margin={`0 0 30px`}
