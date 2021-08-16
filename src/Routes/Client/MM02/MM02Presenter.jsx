@@ -163,7 +163,7 @@ const MM02Presenter = ({
                   ? width < 700
                     ? `90px 24px 0 0`
                     : `140px 40px 0 0`
-                  : `200px 0 0`
+                  : `100px 0 0`
               }
               width={`auto`}
             >
@@ -301,11 +301,7 @@ const MM02Presenter = ({
             <CommonSubTitle fontSize={`40px`}>
               End-User Verification
             </CommonSubTitle>
-            <Text
-              fontSize={`24px`}
-              color={Theme.greyTheme3_C}
-              margin={`20px 0 0`}
-            >
+            <Text fontSize={`24px`} color={Theme.greyTheme3_C}>
               Not available on-line for sales to the public. Distributed
               exclusively to verified
             </Text>
@@ -386,11 +382,7 @@ const MM02Presenter = ({
           <CommonSubTitle fontSize={`40px`}>
             Hundreds of Key Patterns
           </CommonSubTitle>
-          <Text
-            fontSize={`24px`}
-            color={Theme.greyTheme3_C}
-            margin={`20px 0 0`}
-          >
+          <Text fontSize={`24px`} color={Theme.greyTheme3_C}>
             There are hundreds of confidential key patterns available in
             SMARTKEEPER PRO.
           </Text>
@@ -515,19 +507,16 @@ const MM02Presenter = ({
             />
 
             <CommonSubTitle
-              lineHeight={`1.2`}
               fontSize={`36px`}
               fontWeight={`700`}
-              margin={`0`}
-              margin={`10px 0 0`}
+              margin={`20px 0 0`}
             >
               Complete product line-up,
             </CommonSubTitle>
             <CommonSubTitle
-              lineHeight={`1.2`}
               fontSize={`36px`}
               fontWeight={`700`}
-              margin={`0`}
+              margin={`10px 0 0`}
             >
               Convenient Key Management
             </CommonSubTitle>
@@ -541,7 +530,7 @@ const MM02Presenter = ({
             <Wrapper dr={`row`} al={`flex-start`} ju={`flex-start`}>
               <Wrapper
                 width={`auto`}
-                margin={`0 76px 0 0`}
+                margin={`0 85px 0 0`}
                 ju={`flex-start`}
                 al={`flex-start`}
               >
@@ -589,7 +578,7 @@ const MM02Presenter = ({
 
               <Wrapper
                 width={`auto`}
-                margin={`0 76px 0 0`}
+                margin={`0 85px 0 0`}
                 ju={`flex-start`}
                 al={`flex-start`}
               >
@@ -636,7 +625,7 @@ const MM02Presenter = ({
               </Wrapper>
               <Wrapper
                 width={`auto`}
-                margin={`0 76px 0 0`}
+                margin={`0 85px 0 0`}
                 ju={`flex-start`}
                 al={`flex-start`}
               >
@@ -760,146 +749,166 @@ const MM02Presenter = ({
               margin={`50px 0 20px`}
             >
               <Wrapper width={`auto`} margin={`0 50px 0 0`} ju={`flex-start`}>
-                <Wrapper width={`auto`} height={`65px`}>
+                <Wrapper width={`auto`} height={`45px`}>
                   <Image
-                    width={`60px`}
-                    height={`40px`}
+                    width={`auto`}
+                    height={`30px`}
                     objectFit={`contain`}
-                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon-1.png?alt=media&token=582df5e6-4616-4f79-b100-6f2bbdfb1349`}
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FUSB(USB%20Type-A).svg?alt=media&token=67984156-1155-4aac-bf52-8063413d52ce`}
                   />
                 </Wrapper>
                 <Text
                   color={Theme.white_C}
                   fontSize={`11px`}
                   margin={`10px 0 0`}
+                  fontWeight={`300`}
                 >
                   USB Type-A
                 </Text>
               </Wrapper>
               <Wrapper width={`auto`} margin={`0 50px 0 0`} ju={`flex-start`}>
-                <Wrapper width={`auto`} height={`65px`}>
+                <Wrapper width={`auto`} height={`45px`}>
                   <Image
-                    width={`60px`}
-                    height={`40px`}
+                    width={`auto`}
+                    height={`30px`}
                     objectFit={`contain`}
-                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon-2.png?alt=media&token=a0114d90-9456-4e28-b9cc-12fcb5da615a`}
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8F%E1%85%B5%E1%84%91%E1%85%A5%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon.png?alt=media&token=78cfd0b8-6d90-4f14-a651-668b1d5dd584`}
                   />
                 </Wrapper>
                 <Text
                   color={Theme.white_C}
                   fontSize={`11px`}
                   margin={`10px 0 0`}
+                  fontWeight={`300`}
                 >
                   USB Type-C
                 </Text>
               </Wrapper>
               <Wrapper width={`auto`} margin={`0 50px 0 0`} ju={`flex-start`}>
-                <Wrapper width={`auto`} height={`65px`}>
+                <Wrapper width={`auto`} height={`45px`}>
                   <Image
-                    width={`60px`}
-                    height={`40px`}
+                    width={`auto`}
+                    height={`45px`}
                     objectFit={`contain`}
-                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon-3.png?alt=media&token=03ad6ba9-e32e-4010-b452-d049dfad5792`}
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FRJ11(RJ-11).svg?alt=media&token=cb9891b3-67a5-40c8-8f95-3c6741116ced`}
                   />
                 </Wrapper>
                 <Text
                   color={Theme.white_C}
                   fontSize={`11px`}
                   margin={`10px 0 0`}
+                  fontWeight={`300`}
                 >
                   RJ-11
                 </Text>
               </Wrapper>
               <Wrapper width={`auto`} margin={`0 50px 0 0`} ju={`flex-start`}>
-                <Wrapper width={`auto`} height={`65px`}>
+                <Wrapper width={`auto`} height={`45px`}>
                   <Image
-                    width={`60px`}
-                    height={`40px`}
+                    width={`auto`}
+                    height={`45px`}
                     objectFit={`contain`}
-                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon-4.png?alt=media&token=8bf421c7-b468-4ce9-a234-2426abd95f1f`}
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FRJ45(RJ-45%2C%20Ethernet%20RJ-45).svg?alt=media&token=7d8d6406-3dca-4e17-97bd-d1264b28530d`}
                   />
                 </Wrapper>
                 <Text
                   color={Theme.white_C}
                   fontSize={`11px`}
                   margin={`10px 0 0`}
+                  fontWeight={`300`}
                 >
                   RJ-45
                 </Text>
               </Wrapper>
               <Wrapper width={`auto`} margin={`0 50px 0 0`} ju={`flex-start`}>
-                <Wrapper width={`auto`} height={`65px`}>
+                <Wrapper width={`auto`} height={`45px`}>
                   <Image
-                    width={`60px`}
-                    height={`40px`}
+                    width={`auto`}
+                    height={`45px`}
                     objectFit={`contain`}
-                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon-5.png?alt=media&token=3e1c1da1-7dbc-4998-8fa7-60efd7b19dee`}
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FQSFP%20Transceiver.svg?alt=media&token=d810f8d0-bfe2-4c53-adc1-a112ca3cf30c`}
                   />
                 </Wrapper>
                 <Text
                   color={Theme.white_C}
                   fontSize={`11px`}
                   margin={`10px 0 0`}
+                  fontWeight={`300`}
                 >
                   QSFP
                 </Text>
-                <Text color={Theme.white_C} fontSize={`14px`}>
+                <Text
+                  color={Theme.white_C}
+                  fontSize={`14px`}
+                  fontWeight={`300`}
+                >
                   Transceiver
                 </Text>
               </Wrapper>
               <Wrapper width={`auto`} margin={`0 50px 0 0`} ju={`flex-start`}>
-                <Wrapper width={`auto`} height={`65px`}>
+                <Wrapper width={`auto`} height={`45px`}>
                   <Image
-                    width={`60px`}
-                    height={`40px`}
+                    width={`auto`}
+                    height={`45px`}
                     objectFit={`contain`}
-                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon-6.png?alt=media&token=0e20acb7-0b0e-4510-a6c6-c545f02042c3`}
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP%20Transceiver.svg?alt=media&token=43f4d232-5fd9-42d7-ab7f-3409476fb9ff`}
                   />
                 </Wrapper>
                 <Text
                   color={Theme.white_C}
                   fontSize={`11px`}
                   margin={`10px 0 0`}
+                  fontWeight={`300`}
                 >
                   SFP
                 </Text>
-                <Text color={Theme.white_C} fontSize={`14px`}>
+                <Text
+                  color={Theme.white_C}
+                  fontSize={`14px`}
+                  fontWeight={`300`}
+                >
                   Transceiver
                 </Text>
               </Wrapper>
               <Wrapper width={`auto`} margin={`0 50px 0 0`} ju={`flex-start`}>
-                <Wrapper width={`auto`} height={`65px`}>
+                <Wrapper width={`auto`} height={`45px`}>
                   <Image
-                    width={`60px`}
-                    height={`40px`}
+                    width={`auto`}
+                    height={`45px`}
                     objectFit={`contain`}
-                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon-7.png?alt=media&token=0ae58d19-202c-4a89-973b-a3ab7383cf35`}
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP%20Port%20(Mini%20GBIC).svg?alt=media&token=b2ef4865-ef70-4b08-9dcb-5a4da57d6b73`}
                   />
                 </Wrapper>
                 <Text
                   color={Theme.white_C}
                   fontSize={`11px`}
                   margin={`10px 0 0`}
+                  fontWeight={`300`}
                 >
                   SFP Port
                 </Text>
-                <Text color={Theme.white_C} fontSize={`14px`}>
+                <Text
+                  color={Theme.white_C}
+                  fontSize={`14px`}
+                  fontWeight={`300`}
+                >
                   (Mini GBIC)
                 </Text>
               </Wrapper>
               <Wrapper width={`auto`}>
-                <Wrapper width={`auto`} height={`65px`}>
+                <Wrapper width={`auto`} height={`45px`}>
                   <Image
-                    width={`60px`}
+                    width={`90px`}
                     height={`40px`}
                     objectFit={`contain`}
-                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon-8.png?alt=media&token=9c366b8c-861f-4706-95bd-6173d8c10646`}
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FGBIC%20Port.svg?alt=media&token=59eb23c5-245e-43b1-9cb7-4e13534ebec8`}
                   />
                 </Wrapper>
                 <Text
                   color={Theme.white_C}
                   fontSize={`11px`}
                   margin={`10px 0 0`}
+                  fontWeight={`300`}
                 >
                   GBIC Port
                 </Text>
@@ -908,61 +917,72 @@ const MM02Presenter = ({
 
             <Wrapper dr={`row`} ju={`flex-start`} al={`flex-start`}>
               <Wrapper width={`auto`} margin={`0 50px 0 0`} ju={`flex-start`}>
-                <Wrapper width={`auto`} height={`65px`}>
+                <Wrapper width={`auto`} height={`50px`}>
                   <Image
-                    width={`60px`}
-                    height={`40px`}
+                    width={`auto`}
+                    height={`50px`}
                     objectFit={`contain`}
-                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon-9.png?alt=media&token=a5255952-c315-457b-8d8e-01ff1bb0c3a9`}
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2Ffemale%20BNC%20Connector.svg?alt=media&token=700ebe76-67b6-47a6-90ec-f73643f0f7e6`}
                   />
                 </Wrapper>
                 <Text
                   color={Theme.white_C}
                   fontSize={`11px`}
                   margin={`10px 0 0`}
+                  fontWeight={`300`}
                 >
                   female BNC
                 </Text>
-                <Text color={Theme.white_C} fontSize={`14px`}>
+                <Text
+                  color={Theme.white_C}
+                  fontSize={`14px`}
+                  fontWeight={`300`}
+                >
                   Connector
                 </Text>
               </Wrapper>
 
               <Wrapper width={`auto`} margin={`0 50px 0 0`} ju={`flex-start`}>
-                <Wrapper width={`auto`} height={`65px`}>
+                <Wrapper width={`auto`} height={`50px`}>
                   <Image
-                    width={`60px`}
+                    width={`auto`}
                     height={`40px`}
                     objectFit={`contain`}
-                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon-10.png?alt=media&token=1e3b5c61-4508-43c6-ba78-96a2fd7421e3`}
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FRF%20Connector.svg?alt=media&token=41442fcf-01af-41bf-bf98-2e18f166c635`}
                   />
                 </Wrapper>
                 <Text
                   color={Theme.white_C}
                   fontSize={`11px`}
                   margin={`10px 0 0`}
+                  fontWeight={`300`}
                 >
                   RF Connector
                 </Text>
               </Wrapper>
 
               <Wrapper width={`auto`}>
-                <Wrapper width={`auto`} height={`65px`}>
+                <Wrapper width={`auto`} height={`50px`}>
                   <Image
-                    width={`60px`}
-                    height={`40px`}
+                    width={`auto`}
+                    height={`50px`}
                     objectFit={`contain`}
-                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9-icon-11.png?alt=media&token=aa4a9a9e-1723-4150-b2dc-854cb6d206d0`}
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FOptical%20Disc%20Drive.svg?alt=media&token=4167e33b-cb79-45da-8b47-31f57d29d3cd`}
                   />
                 </Wrapper>
                 <Text
                   color={Theme.white_C}
                   fontSize={`11px`}
                   margin={`10px 0 0`}
+                  fontWeight={`300`}
                 >
                   Optical Disc Drive
                 </Text>
-                <Text color={Theme.white_C} fontSize={`14px`}>
+                <Text
+                  color={Theme.white_C}
+                  fontSize={`14px`}
+                  fontWeight={`300`}
+                >
                   (DVD/CD-ROM)
                 </Text>
               </Wrapper>
