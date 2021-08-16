@@ -201,23 +201,16 @@ const MM19Presenter = ({
                   src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM00%2FSMARTKEEPER_ESSENTIAL_ESSOHOME.svg?alt=media&token=cc2f8234-1996-45a2-a848-f37a2886bd0b`}
                   width={width < 700 ? `305px` : `499px`}
                 />
-                <CommonSubTitle2
-                  display={width < 700 ? `none` : `flex`}
-                  shadow={`0 1px ${Theme.blackTheme2_C}`}
-                >
+                <CommonSubTitle2 display={width < 700 ? `none` : `flex`}>
                   Now, it should be blocked
                 </CommonSubTitle2>
                 <CommonSubTitle2
                   margin={`0 0 5px !important`}
                   display={width < 700 ? `flex` : `none`}
-                  shadow={`0 1px ${Theme.blackTheme2_C}`}
                 >
                   Now,
                 </CommonSubTitle2>
-                <CommonSubTitle2
-                  display={width < 700 ? `flex` : `none`}
-                  shadow={`0 1px ${Theme.blackTheme2_C}`}
-                >
+                <CommonSubTitle2 display={width < 700 ? `flex` : `none`}>
                   it should be blocked
                 </CommonSubTitle2>
                 <Wrapper al={`flex-start`}>
@@ -336,9 +329,7 @@ const MM19Presenter = ({
               padding={width < 700 ? `50px 35px 0` : `100px 0 0`}
               height={`100%`}
             >
-              <CommonSubTitle2 shadow={`0 1px ${Theme.blackTheme2_C}`}>
-                USING CABLES
-              </CommonSubTitle2>
+              <CommonSubTitle2>USING CABLES</CommonSubTitle2>
               <Text
                 color={Theme.blackTheme2_C}
                 fontSize={width < 700 ? `16px` : `20px`}
