@@ -1161,9 +1161,9 @@ const MM09Presenter = ({
               {pData && pData.keyType}
             </Text>
             <Gotham
-              fontSize={width < 900 ? (width < 700 ? `26px` : `50px`) : `55px`}
+              fontSize={width < 900 ? (width < 700 ? `26px` : `50px`) : `50px`}
               lineHeight={`1`}
-              letterSpacing={`-0.065em`}
+              // letterSpacing={`-0.025em`}
               lineHeight={`1.18`}
             >
               {/* 메인 타이틀 */}
@@ -1192,11 +1192,11 @@ const MM09Presenter = ({
             </Text> */}
             <Text
               letterSpacing={`-0.03em`}
-              fontSize={width < 900 ? (width < 700 ? `14px` : `16px`) : `18px`}
+              fontSize={width < 900 ? (width < 700 ? `14px` : `16px`) : `16px`}
               color={Theme.greyTheme7_C}
               fontWeight={`400`}
               lineHeight={`1.5`}
-              margin={`1px 0 0`}
+              margin={width < 700 ? `10px 0 0` : `1px 0 0`}
             >
               {/* 모델명 입력 필드 */}
               {pData && pData.modelName}
@@ -1213,14 +1213,17 @@ const MM09Presenter = ({
             >
               ＄64.00
             </Text> */}
-            <Wrapper al={`flex-start`} margin={`35px 0 0`}>
-              <Wrapper
-                dr={width < 900 ? `column` : `row`}
-                ju={width < 900 ? `flex-start` : `center`}
-                width={`auto`}
-                margin={`0 0 13px`}
-              >
-                {tokenId && (
+            <Wrapper
+              al={`flex-start`}
+              margin={tokenId ? `30px 0 0` : `35px 0 0`}
+            >
+              {tokenId && (
+                <Wrapper
+                  dr={width < 900 ? `column` : `row`}
+                  ju={width < 900 ? `flex-start` : `center`}
+                  width={`auto`}
+                  margin={`0 0 11px`}
+                >
                   <Wrapper
                     width={`auto`}
                     al={`flex-start`}
@@ -1231,13 +1234,13 @@ const MM09Presenter = ({
                       fontSize={`14px`}
                       fontWeight={`400`}
                       letterSpacing={`-0.02em`}
-                      lineHeight={`2.14`}
                     >
                       MMP
                     </Text>
                     {tData && (
                       <Text
                         fontSize={`22px`}
+                        lineHeight={`1.2`}
                         fontWeight={`800`}
                         letterSpacing={`-0.02em`}
                       >
@@ -1245,21 +1248,19 @@ const MM09Presenter = ({
                       </Text>
                     )}
                   </Wrapper>
-                )}
 
-                {tokenId && (
                   <Wrapper width={`auto`} al={`flex-start`}>
                     <Text
                       fontSize={width < 900 ? `18px` : `14px`}
                       fontWeight={`400`}
                       letterSpacing={`-0.02em`}
-                      lineHeight={`2.14`}
                     >
                       $ {pData && pData.price}
                     </Text>
                     {tData && pData && (
                       <Text
                         fontSize={`22px`}
+                        lineHeight={`1.2`}
                         fontWeight={`800`}
                         letterSpacing={`-0.02em`}
                       >
@@ -1273,10 +1274,11 @@ const MM09Presenter = ({
                       </Text>
                     )}
                   </Wrapper>
-                )}
-              </Wrapper>
+                </Wrapper>
+              )}
               <Text
                 letterSpacing={`-0.03em`}
+                margin={width < 700 && `15px 0 0`}
                 fontSize={
                   width < 900 ? (width < 700 ? `14px` : `20px`) : `16px`
                 }
@@ -1373,12 +1375,12 @@ const MM09Presenter = ({
                   width={`70px`}
                   src={pData.productIcon}
                   // filter={`brightness(10)`}
-                  margin={`10px 0`}
+                  margin={`5px 0`}
                 />
               )}
               <Text
                 letterSpacing={`-0.02em`}
-                fontSize={width < 700 ? `14px` : `16px`}
+                fontSize={width < 700 ? `14px` : `14px`}
                 fontWeight={`300`}
                 lineHeight={`1.25`}
                 color={Theme.greyTheme7_C}
@@ -1396,7 +1398,13 @@ const MM09Presenter = ({
 
             {/* 제품 설명 */}
             <Wrapper
-              margin={width < 700 ? `30px 0 15px` : `50px 0 0`}
+              margin={
+                width < 700
+                  ? `30px 0 15px`
+                  : tokenId
+                  ? `10px 0 30px`
+                  : `50px 0 30px`
+              }
               al={`flex-start`}
             >
               {pData && (
@@ -1426,16 +1434,16 @@ const MM09Presenter = ({
                 })} */}
             </Wrapper>
 
-            <Wrapper dr={`row`} ju={`flex-start`} margin={`10px 0 30px`}>
+            {/* <Wrapper dr={`row`} ju={`flex-start`} margin={`10px 0 30px`}>
               <Image
                 width={`30px`}
                 margin={`0 10px 0 0`}
                 alt="image"
                 src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM02%2Ficon-01.png?alt=media&token=544f517a-e3da-4688-946d-9efc0d485270`}
-              />
+              />*/}
 
-              {/* 주의 사항 */}
-              {pData && (
+            {/* 주의 사항 */}
+            {/*  {pData && (
                 <EditorViewer
                   lineHeight={`1.36`}
                   letterSpacing={`-0.03em`}
@@ -1445,9 +1453,14 @@ const MM09Presenter = ({
                   color={Theme.greyTheme7_C}
                 />
               )}
-            </Wrapper>
+            </Wrapper> */}
 
-            <Wrapper dr={`row`} ju={`flex-start`} al={`flex-start`}>
+            <Wrapper
+              dr={`row`}
+              ju={`flex-start`}
+              al={`flex-start`}
+              margin={width < 700 && `15px 0`}
+            >
               <Image
                 width={`30px`}
                 margin={`0 10px 0 0`}
@@ -1507,7 +1520,7 @@ const MM09Presenter = ({
             <Magnifier
               mgWidth={200}
               mgHeight={200}
-              height={width < 1100 ? `468px` : `640px`}
+              height={width < 1100 ? `468px` : `525px`}
               alt="image"
               src={currentColorImage && currentColorImage.imagePath}
             />

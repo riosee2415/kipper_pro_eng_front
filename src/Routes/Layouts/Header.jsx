@@ -232,6 +232,7 @@ const Header = ({ history, width, match }) => {
     sessionStorage.removeItem("DLJHQSUDCJSKALDJ");
     setLoginUserKey("");
     setMobileMenuOpen(false);
+    history.push("/pro");
   };
 
   // 서브 메뉴 업데이트
@@ -384,7 +385,11 @@ const Header = ({ history, width, match }) => {
               </ATag>
 
               {loginUserKey ? (
-                <Wrapper width={`auto`} onClick={logoutUserHandler}>
+                <Wrapper
+                  width={`auto`}
+                  onClick={logoutUserHandler}
+                  cursor={`pointer`}
+                >
                   <Image
                     margin={`0 0 0 10px`}
                     width={`23px`}
