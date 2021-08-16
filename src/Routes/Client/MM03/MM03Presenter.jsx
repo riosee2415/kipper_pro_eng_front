@@ -284,6 +284,7 @@ const MM03Presenter = ({
                     <Wrapper
                       width={`calc(100% / 4)`}
                       ju={`flex-start`}
+                      cursor={`pointer`}
                       onClick={() =>
                         moveLinkHandler(`/p_network?type=SFP/QSFP`)
                       }
@@ -321,7 +322,7 @@ const MM03Presenter = ({
                     >
                       <Image
                         alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP%20Port%20(Mini%20GBIC).svg?alt=media&token=b2ef4865-ef70-4b08-9dcb-5a4da57d6b73`}
+                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
                         width={width < 700 ? `31px` : `62px`}
                         height={width < 700 ? `23px` : `40px`}
                         objectFit={`contain`}
@@ -516,7 +517,14 @@ const MM03Presenter = ({
                         RJ45 Port
                       </Text>
                     </Wrapper>
-                    <Wrapper width={`calc(100% / 4)`} ju={`flex-start`}>
+                    <Wrapper
+                      width={`calc(100% / 4)`}
+                      ju={`flex-start`}
+                      cursor={`pointer`}
+                      onClick={() =>
+                        moveLinkHandler(`/p_network?type=SFP/QSFP`)
+                      }
+                    >
                       <Image
                         alt="icon"
                         src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
@@ -550,7 +558,7 @@ const MM03Presenter = ({
                     >
                       <Image
                         alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP%20Port%20(Mini%20GBIC).svg?alt=media&token=b2ef4865-ef70-4b08-9dcb-5a4da57d6b73`}
+                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
                         width={width < 700 ? `31px` : `62px`}
                         height={width < 700 ? `23px` : `40px`}
                         objectFit={`contain`}
@@ -745,7 +753,14 @@ const MM03Presenter = ({
                         RJ45 Port
                       </Text>
                     </Wrapper>
-                    <Wrapper width={`calc(100% / 4)`} ju={`flex-start`}>
+                    <Wrapper
+                      width={`calc(100% / 4)`}
+                      ju={`flex-start`}
+                      cursor={`pointer`}
+                      onClick={() =>
+                        moveLinkHandler(`/p_network?type=SFP/QSFP`)
+                      }
+                    >
                       <Image
                         alt="icon"
                         src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
@@ -779,7 +794,7 @@ const MM03Presenter = ({
                     >
                       <Image
                         alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP%20Port%20(Mini%20GBIC).svg?alt=media&token=b2ef4865-ef70-4b08-9dcb-5a4da57d6b73`}
+                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
                         width={width < 700 ? `31px` : `62px`}
                         height={width < 700 ? `23px` : `40px`}
                         objectFit={`contain`}
@@ -1015,7 +1030,7 @@ const MM03Presenter = ({
                     >
                       <Image
                         alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP%20Port%20(Mini%20GBIC).svg?alt=media&token=b2ef4865-ef70-4b08-9dcb-5a4da57d6b73`}
+                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
                         width={width < 700 ? `31px` : `62px`}
                         height={width < 700 ? `23px` : `40px`}
                         objectFit={`contain`}
@@ -1146,6 +1161,7 @@ const MM03Presenter = ({
                   width={`50%`}
                   display={width < 700 ? `block` : `none`}
                   onClick={() => moveLinkHandler(`/computer?type=Desktop`)}
+                  cursor={`pointer`}
                 >
                   <Text
                     fontSize={width < 700 ? `10px` : `20px`}
@@ -1254,7 +1270,14 @@ const MM03Presenter = ({
                         RJ45 Port
                       </Text>
                     </Wrapper>
-                    <Wrapper width={`calc(100% / 4)`} ju={`flex-start`}>
+                    <Wrapper
+                      width={`calc(100% / 4)`}
+                      ju={`flex-start`}
+                      cursor={`pointer`}
+                      onClick={() =>
+                        moveLinkHandler(`/p_network?type=SFP/QSFP`)
+                      }
+                    >
                       <Image
                         alt="icon"
                         src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
@@ -1288,7 +1311,7 @@ const MM03Presenter = ({
                     >
                       <Image
                         alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP%20Port%20(Mini%20GBIC).svg?alt=media&token=b2ef4865-ef70-4b08-9dcb-5a4da57d6b73`}
+                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
                         width={width < 700 ? `31px` : `62px`}
                         height={width < 700 ? `23px` : `40px`}
                         objectFit={`contain`}
@@ -1308,6 +1331,7 @@ const MM03Presenter = ({
                   width={`20%`}
                   display={width < 700 ? `none` : `flex`}
                   onClick={() => moveLinkHandler(`/computer?type=Desktop`)}
+                  cursor={`pointer`}
                 >
                   <Text
                     fontSize={`20px`}
@@ -1437,7 +1461,12 @@ const MM03Presenter = ({
                     </Wrapper>
                   </Wrapper>
                 </Wrapper>
-                <Wrapper width={`50%`} display={width < 700 ? `block` : `none`}>
+                <Wrapper
+                  width={`50%`}
+                  display={width < 700 ? `block` : `none`}
+                  onClick={() => moveLinkHandler(`/computer?type=Desktop`)}
+                  cursor={`pointer`}
+                >
                   <Text
                     fontSize={width < 700 ? `10px` : `20px`}
                     textAlign={`left`}
@@ -1545,7 +1574,14 @@ const MM03Presenter = ({
                         RJ45 Port
                       </Text>
                     </Wrapper>
-                    <Wrapper width={`calc(100% / 4)`} ju={`flex-start`}>
+                    <Wrapper
+                      width={`calc(100% / 4)`}
+                      ju={`flex-start`}
+                      cursor={`pointer`}
+                      onClick={() =>
+                        moveLinkHandler(`/p_network?type=SFP/QSFP`)
+                      }
+                    >
                       <Image
                         alt="icon"
                         src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
@@ -1579,7 +1615,7 @@ const MM03Presenter = ({
                     >
                       <Image
                         alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP%20Port%20(Mini%20GBIC).svg?alt=media&token=b2ef4865-ef70-4b08-9dcb-5a4da57d6b73`}
+                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
                         width={width < 700 ? `31px` : `62px`}
                         height={width < 700 ? `23px` : `40px`}
                         objectFit={`contain`}
@@ -1595,7 +1631,12 @@ const MM03Presenter = ({
                     </Wrapper>
                   </Wrapper>
                 </Wrapper>
-                <Wrapper width={`20%`} display={width < 700 ? `none` : `flex`}>
+                <Wrapper
+                  width={`20%`}
+                  display={width < 700 ? `none` : `flex`}
+                  onClick={() => moveLinkHandler(`/computer?type=Desktop`)}
+                  cursor={`pointer`}
+                >
                   <Text
                     fontSize={`20px`}
                     textAlign={`center`}
@@ -1811,7 +1852,7 @@ const MM03Presenter = ({
                     >
                       <Image
                         alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP%20Port%20(Mini%20GBIC).svg?alt=media&token=b2ef4865-ef70-4b08-9dcb-5a4da57d6b73`}
+                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
                         width={width < 700 ? `52px` : `62px`}
                         height={width < 700 ? `26px` : `40px`}
                         objectFit={`contain`}
@@ -2044,7 +2085,7 @@ const MM03Presenter = ({
                     >
                       <Image
                         alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP%20Port%20(Mini%20GBIC).svg?alt=media&token=b2ef4865-ef70-4b08-9dcb-5a4da57d6b73`}
+                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
                         width={width < 700 ? `31px` : `62px`}
                         height={width < 700 ? `auto` : `40px`}
                         objectFit={`contain`}
@@ -2267,7 +2308,14 @@ const MM03Presenter = ({
                         RJ45 Port
                       </Text>
                     </Wrapper>
-                    <Wrapper width={`calc(100% / 4)`} ju={`flex-start`}>
+                    <Wrapper
+                      width={`calc(100% / 4)`}
+                      ju={`flex-start`}
+                      cursor={`pointer`}
+                      onClick={() =>
+                        moveLinkHandler(`/p_network?type=SFP/QSFP`)
+                      }
+                    >
                       <Image
                         alt="icon"
                         src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
@@ -2301,7 +2349,7 @@ const MM03Presenter = ({
                     >
                       <Image
                         alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP%20Port%20(Mini%20GBIC).svg?alt=media&token=b2ef4865-ef70-4b08-9dcb-5a4da57d6b73`}
+                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
                         width={width < 700 ? `31px` : `62px`}
                         height={width < 700 ? `23px` : `40px`}
                         objectFit={`contain`}
