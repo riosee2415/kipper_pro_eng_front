@@ -468,7 +468,7 @@ const MM19Presenter = ({
                   //     ? `30px`
                   //     : `${isFirst ? `0` : width < 700 ? `200` : `400`}px`
                   // }
-
+                  radius={`30px`}
                   attachment={`initial`}
                   bgSize={width < 700 && `350px`}
                   bgPosition={width < 700 && `center bottom`}
@@ -671,10 +671,11 @@ const MM19Presenter = ({
                   }
                 />
                 <Wrapper
-                // radius={`30px`}
-                // height={width < 700 ? `400px` : `600px`}
-                // attachment={`initial`}
-                // bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM00%2FHOME_bgImg_4.png?alt=media&token=ad3045da-aee8-4d0d-84c2-e7e23095423b")`}
+                  radius={`30px`}
+                  // radius={`30px`}
+                  // height={width < 700 ? `400px` : `600px`}
+                  // attachment={`initial`}
+                  // bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM00%2FHOME_bgImg_4.png?alt=media&token=ad3045da-aee8-4d0d-84c2-e7e23095423b")`}
                 >
                   <Wrapper
                     isAbsolute={true}
