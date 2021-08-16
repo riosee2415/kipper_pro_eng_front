@@ -142,7 +142,6 @@ const MM05Presenter = ({
         <Image
           height={width < 700 ? `350px` : `800px`}
           ait="image"
-          objectFit={width < 700 ? `cover` : `initial`}
           src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2F%E1%84%86%E1%85%A1%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%20%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20795.png?alt=media&token=621dd404-c143-4489-b7be-93ba3ce0183c`}
         />
 
