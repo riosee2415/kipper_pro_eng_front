@@ -1192,7 +1192,7 @@ const MM17Presenter = ({
             <Text fontWeight={`400`} margin={`0 0 30px`}>
               products of matching pattern.
             </Text>
-            <Link to="/lock/6114b080e48e2e29f6cd570b">
+            <Link to="/lock/611910452c1dfdde5b57cd5e">
               <ArrowIcon fontWeight={`700`}>
                 Learn more about Universal Lock Key
                 <FaChevronRight />
