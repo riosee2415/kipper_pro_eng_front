@@ -768,7 +768,7 @@ const MM17Presenter = ({
           ju={`flex-end`}
           padding={`0 0 50px`}
         >
-          <Text fontSize={`30px`} fontWeight={`bold`}>
+          <Text fontSize={`30px`} fontWeight={`bold`} margin={`0 0 10px`}>
             For any standard USB Port (Type A)
           </Text>
           <Text fontSize={`24px`} color={Theme.greyTheme4_C}>
@@ -848,14 +848,13 @@ const MM17Presenter = ({
         <Wrapper isAbsolute={true} top={`0`} left={`0`} height={`100%`}>
           <RsWrapper
             al={`flex-start`}
-            ju={width < 800 && `flex-start`}
+            ju={`flex-start`}
             color={Theme.white_C}
-            padding={width < 800 && `50px 35px 0`}
+            padding={width < 800 ? `50px 35px 0` : `180px 0 0`}
           >
             <Wrapper width={`auto`} al={`flex-start`}>
               <Image
                 width={width < 900 ? `145px` : `338px`}
-                margin={width < 700 ? `0 0 10px` : `0 0 30px`}
                 alt="link lock-font"
                 src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Fmodify%2FLink%20Lock_USB%E1%84%87%E1%85%A9%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%E1%84%8B%E1%85%AA%E1%86%AB%E1%84%89%E1%85%A5%E1%86%BC.svg?alt=media&token=7c2c5264-9d74-47fd-b751-0c0aae7831e5`}
               />
@@ -874,7 +873,7 @@ const MM17Presenter = ({
               </Text>
               <Wrapper
                 al={`flex-start`}
-                padding={width < 700 ? `30px 0 0` : `50px 0 0`}
+                padding={width < 700 ? `30px 0 0` : `100px 0 0`}
               >
                 <Text
                   fontSize={width < 900 ? `20px` : `30px`}
