@@ -45,7 +45,7 @@ const MM13Presenter = ({
           margin={`0 0 90px`}
           color={Theme.white_C}
           letterSpacing={`-5px`}
-          fontWeight={`bold`}
+          700
         >
           FAQs
         </Wrapper> */}

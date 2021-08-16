@@ -165,7 +165,7 @@ const MM15Presenter = ({
           <Wrapper
             al={`flex-start`}
             fontSize={width < 700 ? `26px` : `34px`}
-            fontWeight={`bold`}
+            700
             margin={width < 700 ? `100px 0 20px` : `160px 0 20px`}
           >
             Download

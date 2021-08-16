@@ -130,28 +130,28 @@ export const allMenus = [
       },
     ],
   },
-  {
-    menuName: "EXHIBITION 관리",
-    subMenu: [
-      {
-        subMenuName: "EXHIBITION 관리",
-        subMenuLink: "/admin/exhibitionManagement",
-      },
-    ],
-  },
-  {
-    menuName: "자료실 관리",
-    subMenu: [
-      {
-        subMenuName: "제품 사용설명서 관리",
-        subMenuLink: "/admin/referenceManagement",
-      },
-      {
-        subMenuName: "카탈로그 관리",
-        subMenuLink: "/admin/catalogueManagement",
-      },
-    ],
-  },
+  // {
+  //   menuName: "EXHIBITION 관리",
+  //   subMenu: [
+  //     {
+  //       subMenuName: "EXHIBITION 관리",
+  //       subMenuLink: "/admin/exhibitionManagement",
+  //     },
+  //   ],
+  // },
+  // {
+  //   menuName: "자료실 관리",
+  //   subMenu: [
+  //     {
+  //       subMenuName: "제품 사용설명서 관리",
+  //       subMenuLink: "/admin/referenceManagement",
+  //     },
+  //     {
+  //       subMenuName: "카탈로그 관리",
+  //       subMenuLink: "/admin/catalogueManagement",
+  //     },
+  //   ],
+  // },
   {
     menuName: "FAQ 관리",
     subMenu: [
@@ -161,19 +161,19 @@ export const allMenus = [
       },
     ],
   },
-  {
-    menuName: "수상 내역 관리",
-    subMenu: [
-      {
-        subMenuName: "수상 내역 등록",
-        subMenuLink: "/admin/awardManagement",
-      },
-      {
-        subMenuName: "수상 내역 리스트",
-        subMenuLink: "/admin/awardListManagement",
-      },
-    ],
-  },
+  // {
+  //   menuName: "수상 내역 관리",
+  //   subMenu: [
+  //     {
+  //       subMenuName: "수상 내역 등록",
+  //       subMenuLink: "/admin/awardManagement",
+  //     },
+  //     {
+  //       subMenuName: "수상 내역 리스트",
+  //       subMenuLink: "/admin/awardListManagement",
+  //     },
+  //   ],
+  // },
   {
     menuName: "주요제품 링크",
     subMenu: [

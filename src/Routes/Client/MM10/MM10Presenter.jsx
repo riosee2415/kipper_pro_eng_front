@@ -543,14 +543,14 @@ const MM10Presenter = ({
               <Text
                 fontSize={`30px`}
                 color={Theme.white_C}
-                fontWeight={`bold`}
+                fontWeight={`700`}
                 display={width < 900 ? `none` : `flex`}
               >
                 In one word, it was PERFECT!
               </Text>
               <Text
                 fontSize={`30px`}
-                fontWeight={`bold`}
+                fontWeight={`700`}
                 color={Theme.white_C}
                 display={width < 900 ? `flex` : `none`}
               >
@@ -558,7 +558,7 @@ const MM10Presenter = ({
               </Text>
               <Text
                 fontSize={`30px`}
-                fontWeight={`bold`}
+                fontWeight={`700`}
                 color={Theme.white_C}
                 display={width < 900 ? `flex` : `none`}
               >

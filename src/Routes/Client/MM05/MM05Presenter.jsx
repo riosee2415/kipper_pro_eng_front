@@ -160,14 +160,14 @@ const MM05Presenter = ({
             </Text>
             <Text
               fontSize={width < 700 ? `23px` : `40px`}
-              fontWeight={`bold`}
+              fontWeight={`700`}
               lineHeight={`1.3`}
             >
               Ideal combination for
             </Text>
             <Text
               fontSize={width < 700 ? `23px` : `40px`}
-              fontWeight={`bold`}
+              fontWeight={`700`}
               lineHeight={`1.3`}
             >
               physical network security.
@@ -259,7 +259,7 @@ const MM05Presenter = ({
               al={`flex-start`}
               padding={`40px 0 0`}
             >
-              <Text fontSize={`30px`} fontWeight={`bold`} margin={`0 0 5px`}>
+              <Text fontSize={`30px`} fontWeight={`700`} margin={`0 0 5px`}>
                 Physically secure open RJ45 Port
               </Text>
               <Text fontSize={`24px`} color={Theme.greyTheme7_C}>
@@ -275,10 +275,10 @@ const MM05Presenter = ({
               al={`flex-start`}
               padding={`80px 0 0`}
             >
-              <Text fontSize={`20px`} fontWeight={`bold`}>
+              <Text fontSize={`20px`} fontWeight={`700`}>
                 Physically secure
               </Text>
-              <Text fontSize={`20px`} fontWeight={`bold`} margin={`0 0 10px`}>
+              <Text fontSize={`20px`} fontWeight={`700`} margin={`0 0 10px`}>
                 open RJ45 Port
               </Text>
               <Text fontSize={`18px`} color={Theme.greyTheme7_C}>
@@ -320,7 +320,7 @@ const MM05Presenter = ({
               <Wrapper width={width < 700 ? `100%` : `80%`} al={`flex-start`}>
                 <Text
                   fontSize={width < 900 ? `20px` : `34px`}
-                  fontWeight={`bold`}
+                  fontWeight={`700`}
                   margin={`0 0 10px`}
                 >
                   Market’s First
@@ -328,14 +328,14 @@ const MM05Presenter = ({
                 {/* <Text
                   display={width < 900 ? `flex` : `none`}
                   fontSize={`20px`}
-                  fontWeight={`bold`}
+                  700
                 >
                   세계최초 동작구조
                 </Text>
                 <Text
                   display={width < 900 ? `flex` : `none`}
                   fontSize={`20px`}
-                  fontWeight={`bold`}
+                  700
                   margin={`0 0 10px`}
                 >
                   포트락.
@@ -496,7 +496,7 @@ const MM05Presenter = ({
               Physical cyber security is now a must, not a choice.
             </Text>
             <Link to="/p_network/611910452c1dfdde5b57cd6b">
-              <ArrowIcon fontWeight={`bold`} margin={`10px 0 0`}>
+              <ArrowIcon fontWeight={`700`} margin={`10px 0 0`}>
                 Learn more about Network Port Lock Plus
                 <FaChevronRight />
               </ArrowIcon>
@@ -508,7 +508,7 @@ const MM05Presenter = ({
             margin={`40px 0 0`}
             padding={`0 35px`}
           >
-            <Text fontWeight={`bold`} margin={`0 0 10px`} fontSize={`17px`}>
+            <Text fontWeight={`700`} margin={`0 0 10px`} fontSize={`17px`}>
               Block access to open Network Ports
             </Text>
             <Text
@@ -533,7 +533,7 @@ const MM05Presenter = ({
               is now a must, not a choice.
             </Text>
             <Link to="/p_network/611910452c1dfdde5b57cd6b">
-              <ArrowIcon fontWeight={`bold`} margin={`10px 0 0`}>
+              <ArrowIcon fontWeight={`700`} margin={`10px 0 0`}>
                 Learn more about Network Port Lock Plus
                 <FaChevronRight />
               </ArrowIcon>
@@ -583,7 +583,7 @@ const MM05Presenter = ({
 
             <Text
               fontSize={width < 900 ? `14px` : `25px`}
-              fontWeight={`bold`}
+              fontWeight={`700`}
               color={Theme.greyTheme7_C}
             >
               CSK-NC11
@@ -820,7 +820,7 @@ const MM05Presenter = ({
             </Text>
 
             <Link to="/lock/611910452c1dfdde5b57cd5e">
-              <ArrowIcon fontWeight={`bold`}>
+              <ArrowIcon fontWeight={`700`}>
                 Learn more about Universal Lock Key
                 <FaChevronRight />
               </ArrowIcon>
@@ -877,7 +877,7 @@ const MM05Presenter = ({
               products of matching pattern.
             </Text>
             <Link to="/lock/611910452c1dfdde5b57cd5e">
-              <ArrowIcon fontWeight={`bold`}>
+              <ArrowIcon fontWeight={`700`}>
                 Learn more about Universal Lock Key
                 <FaChevronRight />
               </ArrowIcon>

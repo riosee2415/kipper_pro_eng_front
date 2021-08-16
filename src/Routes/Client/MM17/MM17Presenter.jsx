@@ -242,15 +242,15 @@ const MM17Presenter = ({
             <Wrapper display={width > 700 ? `flex` : `none`} al={`flex-start`}>
               <Text
                 fontSize={`25px`}
-                fontWeight={`bold`}
+                fontWeight={`700`}
                 color={Theme.greyTheme3_C}
               >
                 USB Physical Security
               </Text>
-              <Text fontSize={`48px`} fontWeight={`bold`} lineHeight={`1.3`}>
+              <Text fontSize={`48px`} fontWeight={`700`} lineHeight={`1.3`}>
                 Ideal combination to perfect
               </Text>
-              <Text fontSize={`48px`} fontWeight={`bold`} lineHeight={`1.3`}>
+              <Text fontSize={`48px`} fontWeight={`700`} lineHeight={`1.3`}>
                 the physical security of USB Ports.
               </Text>
             </Wrapper>
@@ -258,18 +258,18 @@ const MM17Presenter = ({
             <Wrapper display={width < 700 ? `flex` : `none`} al={`flex-start`}>
               <Text
                 fontSize={`16px`}
-                fontWeight={`bold`}
+                fontWeight={`700`}
                 color={Theme.greyTheme3_C}
               >
                 USB Physical Security
               </Text>
-              <Text fontSize={`27px`} fontWeight={`bold`}>
+              <Text fontSize={`27px`} fontWeight={`700`}>
                 Ideal combination
               </Text>
-              <Text fontSize={`27px`} fontWeight={`bold`}>
+              <Text fontSize={`27px`} fontWeight={`700`}>
                 to perfect
               </Text>
-              <Text fontSize={`27px`} fontWeight={`bold`}>
+              <Text fontSize={`27px`} fontWeight={`700`}>
                 the physical security of USB Ports.
               </Text>
             </Wrapper>
@@ -297,7 +297,7 @@ const MM17Presenter = ({
                   />
                   <Text
                     fontSize={width < 700 ? `12px` : `18px`}
-                    fontWeight={`bold`}
+                    fontWeight={`700`}
                   >
                     (CSK-UL10)
                   </Text>
@@ -411,7 +411,7 @@ const MM17Presenter = ({
             />
             {/* <Text
               fontSize={width < 900 ? `20px` : `34px`}
-              fontWeight={`bold`}
+              700
               lineHeight={`1.3`}
             >
               USB 포트락
@@ -429,7 +429,7 @@ const MM17Presenter = ({
               al={`flex-start`}
               padding={`40px 0 50px`}
             >
-              <Text fontSize={`30px`} fontWeight={`bold`}>
+              <Text fontSize={`30px`} fontWeight={`700`}>
                 Block unused USB ports with USB Port Locks
               </Text>
               <Text fontSize={`24px`} color={Theme.greyTheme7_C}>
@@ -450,10 +450,10 @@ const MM17Presenter = ({
               al={`flex-start`}
               padding={`120px 0 20px`}
             >
-              <Text fontSize={`20px`} fontWeight={`bold`}>
+              <Text fontSize={`20px`} fontWeight={`700`}>
                 Block unused USB ports
               </Text>
-              <Text fontSize={`20px`} fontWeight={`bold`}>
+              <Text fontSize={`20px`} fontWeight={`700`}>
                 with USB Port Locks
               </Text>
               <Text fontSize={`16px`} color={Theme.greyTheme7_C}>
@@ -618,7 +618,7 @@ const MM17Presenter = ({
         <RsWrapper
           al={`flex-start`}
           ju={width < 700 && `flex-end`}
-          fontWeight={`bold`}
+          fontWeight={`700`}
           padding={width < 900 && `0 35px`}
         >
           <Wrapper
@@ -632,7 +632,7 @@ const MM17Presenter = ({
             <Wrapper width={`auto`}>
               <SpanText
                 fontSize={width < 700 ? `50px` : `80px`}
-                fontWeight={`bold`}
+                fontWeight={`700`}
               >
                 {!isFirst ? (
                   `0`
@@ -678,7 +678,7 @@ const MM17Presenter = ({
             <Wrapper width={`auto`}>
               <SpanText
                 fontSize={width < 700 ? `50px` : `80px`}
-                fontWeight={`bold`}
+                fontWeight={`700`}
               >
                 {!isFirst ? (
                   `0`
@@ -768,7 +768,7 @@ const MM17Presenter = ({
           ju={`flex-end`}
           padding={`0 0 50px`}
         >
-          <Text fontSize={`30px`} fontWeight={`bold`} margin={`0 0 10px`}>
+          <Text fontSize={`30px`} fontWeight={`700`} margin={`0 0 10px`}>
             For any standard USB Port (Type A)
           </Text>
           <Text fontSize={`24px`} color={Theme.greyTheme4_C}>
@@ -782,7 +782,7 @@ const MM17Presenter = ({
           </Text>
 
           <Link to="/usb/611910452c1dfdde5b57cd60">
-            <ArrowIcon fontWeight={`bold`} margin={`10px 0 0`}>
+            <ArrowIcon fontWeight={`700`} margin={`10px 0 0`}>
               Learn more about USB Port Lock
               <FaChevronRight />
             </ArrowIcon>
@@ -814,7 +814,7 @@ const MM17Presenter = ({
             not require software or electricity.
           </Text>
 
-          <ArrowIcon fontWeight={`bold`} margin={`10px 0 0`}>
+          <ArrowIcon fontWeight={`700`} margin={`10px 0 0`}>
             Learn more about USB Port Lock
             <FaChevronRight />
           </ArrowIcon>
@@ -857,7 +857,7 @@ const MM17Presenter = ({
               />
               {/* <Text
                 fontSize={width < 900 ? `20px` : `34px`}
-                fontWeight={`bold`}
+                700
               >
                 링크락
               </Text> */}
@@ -874,7 +874,7 @@ const MM17Presenter = ({
               >
                 <Text
                   fontSize={width < 900 ? `20px` : `30px`}
-                  fontWeight={`bold`}
+                  fontWeight={`700`}
                 >
                   Securing USB Devices
                 </Text>
@@ -941,10 +941,10 @@ const MM17Presenter = ({
             width={`auto`}
             display={width < 900 ? `none` : `flex`}
           >
-            <Text fontSize={`30px`} fontWeight={`bold`}>
+            <Text fontSize={`30px`} fontWeight={`700`}>
               If you can’t secure it,
             </Text>
-            <Text fontSize={`30px`} fontWeight={`bold`} margin={`0 0 20px`}>
+            <Text fontSize={`30px`} fontWeight={`700`} margin={`0 0 20px`}>
               there is still a lapse in security.
             </Text>
           </Wrapper>
@@ -993,7 +993,7 @@ const MM17Presenter = ({
             />
             <Wrapper width={`auto`} padding={`0 0 0 15px`} al={`flex-start`}>
               <Text fontSize={`20px`}>
-                Use with <SpanText fontWeight={`bold`}>USB Port Lock</SpanText>
+                Use with <SpanText fontWeight={`700`}>USB Port Lock</SpanText>
               </Text>
               <Text fontSize={`20px`}>to enhance physical</Text>
               <Text fontSize={`20px`}>cybersecurity. </Text>
@@ -1016,14 +1016,14 @@ const MM17Presenter = ({
         bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2Fmobile-img03.png?alt=media&token=f00fb782-3193-43f9-a6ae-47edc84e2d5d")`}
       >
         <Wrapper al={`flex-start`}>
-          <Text fontSize={`20px`} fontWeight={`bold`}>
+          <Text fontSize={`20px`} fontWeight={`700`}>
             If you can’t secure it,
           </Text>
 
-          <Text fontSize={`20px`} fontWeight={`bold`}>
+          <Text fontSize={`20px`} fontWeight={`700`}>
             there is still a lapse
           </Text>
-          <Text fontSize={`20px`} fontWeight={`bold`} margin={`0 0 50px`}>
+          <Text fontSize={`20px`} fontWeight={`700`} margin={`0 0 50px`}>
             in security.
           </Text>
         </Wrapper>
@@ -1052,7 +1052,7 @@ const MM17Presenter = ({
         <Text
           fontSize={`18px`}
           color={Theme.darkGrey_C}
-          fontWeight={`bold`}
+          fontWeight={`700`}
           margin={`0 0 10px`}
         >
           Link and Lock it down!
@@ -1081,7 +1081,7 @@ const MM17Presenter = ({
           </Wrapper>
           <Wrapper width={`70%`} al={`flex-start`}>
             <Text fontSize={`16px`} lineHeight={`1.4`} fontWeight={`400`}>
-              Use with <SpanText fontWeight={`bold`}>USB Port Lock</SpanText>
+              Use with <SpanText fontWeight={`700`}>USB Port Lock</SpanText>
             </Text>
             <Text fontSize={`16px`} lineHeight={`1.4`} fontWeight={`400`}>
               to enhance physical
@@ -1146,7 +1146,7 @@ const MM17Presenter = ({
             </Text>
 
             <Link to="/lock/6114b080e48e2e29f6cd570b">
-              <ArrowIcon fontWeight={`bold`}>
+              <ArrowIcon fontWeight={`700`}>
                 Learn more about Universal Lock Key
                 <FaChevronRight />
               </ArrowIcon>
@@ -1190,7 +1190,7 @@ const MM17Presenter = ({
               products of matching pattern.
             </Text>
             <Link to="/lock/6114b080e48e2e29f6cd570b">
-              <ArrowIcon fontWeight={`bold`}>
+              <ArrowIcon fontWeight={`700`}>
                 Learn more about Universal Lock Key
                 <FaChevronRight />
               </ArrowIcon>

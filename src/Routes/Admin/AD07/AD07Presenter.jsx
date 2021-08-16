@@ -26,7 +26,7 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import Slide from "@material-ui/core/Slide";
 import useTitle from "@4leaf.ysh/use-title";
 
-const tabs = ["FAQ 관리", "FAQ 등록", "FAQ유형 관리"];
+const tabs = ["FAQ 관리", "FAQ 등록"];
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
