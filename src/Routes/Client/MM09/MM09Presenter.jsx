@@ -2655,7 +2655,7 @@ const MM09Presenter = ({
             color={Theme.blackTheme_C}
             margin={width < 700 ? `0 0 30px` : `0 0 50px`}
           >
-            다운로드
+            Download
           </Text>
           <Wrapper
             dr={`row`}
