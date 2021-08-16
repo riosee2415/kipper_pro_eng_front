@@ -48,7 +48,7 @@ const Desc = styled.p`
 `;
 
 const MM12Presenter = ({ width }) => {
-  useTitle(`Terms of Use | ${process.env["HOMEPAGE_NAME"]}`);
+  useTitle(`스마트키퍼 웹 사이트 이용 약관 | ${process.env["HOMEPAGE_NAME"]}`);
 
   return (
     <WholeWrapper bgColor={Theme.black_C} color={Theme.white_C}>
@@ -68,7 +68,7 @@ const MM12Presenter = ({ width }) => {
         <Desc display={width < 700 ? `contents` : `block`}>
           이 약관은 ㈜컴엑스아이(이하 ‘회사’라 한다)가 운영하는 스마트키퍼
           웹사이트(이하 ‘사이트’라 한다)에서 제공하는 인터넷 관련 서비스(이하
-          “서비스”라 한다)를 이용
+          '서비스'라 한다)를 이용
         </Desc>
         <Desc display={width < 700 ? `contents` : `block`}>
           함에 있어 사이트와 이용자의 권리, 의무 및 책임 사항과 기타 필요한
@@ -149,13 +149,13 @@ const MM12Presenter = ({ width }) => {
           설정한 가상의
         </Desc>
         <Desc
-          display={width < 700 ? `contents` : `block`}
+          display={width < 700 ? `contents` : `inherit`}
           margin={width < 700 ? `0` : `0 0 0 15px`}
         >
           영업장 또는 회사가 운영하는 웹사이트를 말하며&nbsp;
           <SpanText
             color={Theme.subTheme_C}
-            display={width < 700 ? `contents` : `block`}
+            display={width < 700 ? `contents` : `inherit`}
           >
             www.smartkeeper.kr
           </SpanText>
@@ -262,10 +262,7 @@ const MM12Presenter = ({ width }) => {
           방법으로 통지를 합니다. 단, 사이트가 통제할 수 없는 사유로 인한 서비스
           중단으로
         </Desc>
-        <Desc
-          display={width < 700 ? `contents` : `block`}
-          margin={width < 700 ? `0` : `0 0 40px 15px`}
-        >
+        <Desc display={width < 700 ? `contents` : `block`}>
           사전 통지가 불가능한 경우에는 그러하지 아니합니다.
         </Desc>
         <Desc>
@@ -273,12 +270,7 @@ const MM12Presenter = ({ width }) => {
           유료임을 명시한 정보에 대해서는 해당 정보에 명시된 요금을 지불하여야
           사용이
         </Desc>
-        <Desc
-          display={width < 700 ? `contents` : `block`}
-          margin={width < 700 ? `0` : `0 0 40px 15px`}
-        >
-          가능합니다.
-        </Desc>
+        <Desc display={width < 700 ? `contents` : `block`}>가능합니다.</Desc>
         <Desc>
           5. 사이트가 제공하는 저작물에 대한 저작권, 기타 지적 재산권은 사이트에
           귀속합니다.
@@ -288,10 +280,7 @@ const MM12Presenter = ({ width }) => {
           복제, 송신, 출판, 배포, 방송, 기타 방법에 의하여 영리목적으로
           이용하거나 제3자에게
         </Desc>
-        <Desc
-          display={width < 700 ? `contents` : `block`}
-          margin={width < 700 ? `0` : `0 0 40px 15px`}
-        >
+        <Desc display={width < 700 ? `contents` : `block`}>
           이용하게 하여서는 안됩니다.
         </Desc>
         <Desc margin={`0 0 40px`}>
@@ -311,10 +300,7 @@ const MM12Presenter = ({ width }) => {
           누설, 배포하지 않습니다. 다만, 관계법령에 의하여 관계 국가기관 등의
           요구가 있는
         </Desc>
-        <Desc
-          display={width < 700 ? `contents` : `block`}
-          margin={width < 700 ? `0` : `0 0 40px 15px`}
-        >
+        <Desc display={width < 700 ? `contents` : `block`}>
           경우에는 그러하지 아니합니다.
         </Desc>
         <Desc>
@@ -335,10 +321,7 @@ const MM12Presenter = ({ width }) => {
           사전승낙 없이 복사, 복제, 변경, 번역, 출판, 방송 기타의 방법으로
           사용하거나 이를 타인에게
         </Desc>
-        <Desc
-          display={width < 700 ? `contents` : `block`}
-          margin={width < 700 ? `0` : `0 0 40px 15px`}
-        >
+        <Desc display={width < 700 ? `contents` : `block`}>
           제공할 수 없습니다.
         </Desc>
         <Desc>
@@ -405,7 +388,7 @@ const MM12Presenter = ({ width }) => {
         </Desc>
         <Desc
           display={width < 700 ? `contents` : `block`}
-          margin={width < 700 ? `0` : `0 0 0px 30px`}
+          margin={width < 700 ? `0` : `0 0 0px 16px`}
         >
           당 사이트에 소유권이 있습니다.
         </Desc>

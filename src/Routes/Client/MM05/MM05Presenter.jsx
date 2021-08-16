@@ -492,7 +492,7 @@ const MM05Presenter = ({
               Simple but effective economical solution
             </Text>
             <Text fontSize={`24px`} color={Theme.greyTheme4_C}>
-              Physical cyber security is now a must, not a choice.
+              Physical cyberisecurity is now a must, not a choice.
             </Text>
             <Link to="/p_network/611910452c1dfdde5b57cd6b">
               <ArrowIcon fontWeight={`700`} margin={`10px 0 0`}>
@@ -753,8 +753,8 @@ const MM05Presenter = ({
               margin={width < 700 ? `0` : `0 0 10px`}
             >
               {width < 700
-                ? `Physical cyber security`
-                : `Physical cyber security for Network Cables`}
+                ? `Physical cybersecurity`
+                : `Physical cybersecurity for Network Cables`}
             </Text>
             <Text
               fontSize={width < 700 ? `17px` : `24px`}
