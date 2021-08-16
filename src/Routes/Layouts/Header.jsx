@@ -302,7 +302,7 @@ const Header = ({ history, width, match }) => {
                           }
                           to={`${menu.menuLink}`}
                         >
-                          <Wrapper width={`150px`} al={`flex-start`}>
+                          <Wrapper width={`155px`} al={`flex-start`}>
                             {menu.menuName}
                           </Wrapper>
                         </Link>
@@ -343,7 +343,7 @@ const Header = ({ history, width, match }) => {
                                             to={`${sub.subMenuLink}`}
                                           >
                                             <Wrapper
-                                              width={`150px`}
+                                              width={`155px`}
                                               al={`flex-start`}
                                             >
                                               <MenuItem>
