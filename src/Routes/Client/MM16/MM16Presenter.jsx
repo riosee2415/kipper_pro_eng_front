@@ -132,7 +132,7 @@ const MM16Presenter = ({
         <RsWrapper margin={`153px 0 0`}>
           <Wrapper margin={`0 0 50px`}>
             <Text
-              fontSize={width < 900 ? `14px !important` : `20px`}
+              fontSize={`20px`}
               color={Theme.white_C}
               lineHeight={`1.2`}
               fontWeight={`300`}
@@ -872,7 +872,7 @@ const MM16Presenter = ({
       <Wrapper display={width < 900 ? `flex` : `none`}>
         <RsWrapper margin={`111px 0 0`}>
           <Wrapper margin={`0 0 50px`}>
-            <Text fontSize={`14px`} color={Theme.white_C}>
+            <Text fontSize={`16px`} color={Theme.white_C}>
               valuable assets and data of the company,
             </Text>
             <CommonSubTitle
@@ -883,7 +883,6 @@ const MM16Presenter = ({
               lineHeight={`1.4`}
             >
               Malicious or criminal
-              {/* <SpanText color={Theme.white_C}>이</SpanText> */}
             </CommonSubTitle>
             <CommonSubTitle
               margin={`0 0 5px`}
@@ -895,27 +894,18 @@ const MM16Presenter = ({
               highest reason
             </CommonSubTitle>
 
-            {/* <Text
-              color={Theme.greyTheme7_C}
-              fontSize={width < 700 ? `12px !important` : `20px`}
-              margin={`0 0 50px`}
-            >
-              (외/내부 유포자)
-            </Text> */}
-
             <Text
               fontSize={`18px`}
               color={Theme.white_C}
               margin={`38px 0 39px`}
             >
               Major Causes of Data Breach
-              {/* <SpanText fontWeight={`700`}>데이터 유출</SpanText> 주요 원인 */}
             </Text>
 
             <Wrapper isRelative={true}>
               <Image
                 width={`90%`}
-                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3_%E1%84%80%E1%85%B3%E1%84%85%E1%85%A2%E1%84%91%E1%85%B3.png?alt=media&token=fadc8b74-2bee-428d-9a01-645bbe825007`}
+                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-%E1%84%8B%E1%85%AF%E1%86%AB%E1%84%92%E1%85%A7%E1%86%BC%E1%84%80%E1%85%B3%E1%84%85%E1%85%A2%E1%84%91%E1%85%B3.png?alt=media&token=f768784f-472f-4aec-ab57-738c9c1c0dea`}
               />
               <Wrapper
                 top={`0`}
@@ -944,21 +934,19 @@ const MM16Presenter = ({
               </Wrapper>
             </Wrapper>
 
-            <Text
-              fontSize={`18px`}
-              color={Theme.white_C}
-              margin={`96px 0 20px`}
-            >
+            <Text fontSize={`18px`} color={Theme.white_C} margin={`96px 0 0`}>
               Data Leak Damage
             </Text>
-            <Text fontSize={`12px`}>(in 100 million dollars)</Text>
+            <Text fontSize={`12px`} color={Theme.white_C} margin={`0 0 20px`}>
+              (in 100 million dollars)
+            </Text>
 
-            <Wrapper>
+            <Wrapper al={`flex-start`} padding={`0 0 0 36px`}>
               <Text
                 fontSize={`12px`}
                 color={Theme.white_C}
                 fontWeight={`700`}
-                margin={`0 0 77px`}
+                margin={width < 700 ? `0` : `0 0 77px`}
               >
                 {isCheck ? `2018` : `2017`}
               </Text>
@@ -1055,7 +1043,7 @@ const MM16Presenter = ({
             fontSize={`16px`}
             color={Theme.white_C}
             fontWeight={`400`}
-            margin={`40px 0 0`}
+            margin={`40px 0 10px`}
           >
             Malware Intrusion and Data Leak
           </Text>
@@ -1077,12 +1065,12 @@ const MM16Presenter = ({
           </CommonSubTitle>
 
           <Image
-            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-mobile.png?alt=media&token=9f1fac16-a358-48ea-a9d6-5d0a008dcc83`}
+            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-mobile.png?alt=media&token=7a5ba78f-1be3-4c1b-a743-ebcd114fcf5a`}
           />
 
           <Image
             margin={`30px 0`}
-            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-mobile2.png?alt=media&token=f1fcd20e-9f2c-4e94-93f7-21fe95b60b8a`}
+            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-mobile2.png?alt=media&token=28588637-409b-43a7-82e5-466413ad0c97`}
           />
         </Wrapper>
 
@@ -1489,7 +1477,7 @@ const MM16Presenter = ({
             height={`302px`}
             ju={`flex-start`}
             al={`flex-start`}
-            padding={`20px 16px 16px`}
+            padding={`40px 16px 16px`}
             margin={`0 0 20px`}
           >
             <Image

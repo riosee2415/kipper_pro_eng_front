@@ -131,7 +131,7 @@ const MM00Presenter = ({
     <WholeWrapper bgColor={Theme.greyTheme3_C}>
       <Wrapper
         width={`100%`}
-        height={width < 700 ? `1100px` : `1115px`}
+        height={width < 700 ? `1200px` : `1115px`}
         bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM00%2FMAIN_BACKGROUND_1.png?alt=media&token=68067aff-5329-467d-8f68-baddc84c0d8a")`}
         overflow={`hidden`}
       >
@@ -206,7 +206,7 @@ const MM00Presenter = ({
               />
               <Image
                 width={`186px`}
-                margin={`0 0 10px`}
+                margin={`0 0 15px`}
                 display={width < 700 ? `flex` : `none`}
                 src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM00%2FPro%20s%20Choice_M_PRO%20HOME.svg?alt=media&token=781adf05-3723-4d3b-a12d-1f4cab8d50c4`}
               />
@@ -287,25 +287,25 @@ const MM00Presenter = ({
               <Text
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.white_C}
-                fontSize={`18px`}
+                fontSize={`20px`}
                 fontWeight={`700`}
               >
-                The ability to manage everything
+                The ability to manage
               </Text>
 
               <Text
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.white_C}
                 fontWeight={`700`}
-                fontSize={`18px`}
+                fontSize={`20px`}
               >
-                with ONE key.
+                everything with ONE key.
               </Text>
 
               <Text
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.greyTheme6_C}
-                fontSize={`17px`}
+                fontSize={`20px`}
                 fontWeight={`700`}
               >
                 A cyber security system that can be used safely on numerous
@@ -314,7 +314,7 @@ const MM00Presenter = ({
               <Text
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.greyTheme6_C}
-                fontSize={`17px`}
+                fontSize={`20px`}
                 fontWeight={`700`}
               >
                 with confidential key patterns. SMARTKEEPER is the physical
@@ -322,15 +322,23 @@ const MM00Presenter = ({
               <Text
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.greyTheme6_C}
-                fontSize={`17px`}
+                fontSize={`20px`}
                 fontWeight={`700`}
               >
-                cybersecuri system chosen by leaders and professionals of 3,000+
+                cybersecurity
               </Text>
               <Text
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.greyTheme6_C}
-                fontSize={`17px`}
+                fontSize={`20px`}
+                fontWeight={`700`}
+              >
+                system chosen by leaders and professionals of 3,000+
+              </Text>
+              <Text
+                display={width < 700 ? `flex` : `none`}
+                color={Theme.greyTheme6_C}
+                fontSize={`20px`}
                 fontWeight={`700`}
               >
                 sites worldwide fro a wide range of industries.
@@ -392,9 +400,7 @@ const MM00Presenter = ({
                 fontWeight={`700`}
                 color={Theme.white_C}
               >
-                {width < 700
-                  ? `Even the narrowest data pathway.`
-                  : `Exclusive to SMARTKEEPER`}
+                Exclusive to SMARTKEEPER
               </Text>
               <Text
                 display={width < 700 ? `none` : `flex`}
@@ -448,14 +454,6 @@ const MM00Presenter = ({
               </Wrapper>
               {/* mobile */}
 
-              <Text
-                display={width < 700 ? `flex` : `none`}
-                color={Theme.greyTheme6_C}
-                fontSize={`18px`}
-                fontWeight={`700`}
-              >
-                Exclusive to SMARTKEEPER
-              </Text>
               <Text
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.greyTheme6_C}
@@ -535,7 +533,7 @@ const MM00Presenter = ({
             >
               USB Port Security
             </Text>
-            <Wrapper al={`flex-start`} margin={`10px 0 20px`}>
+            <Wrapper al={`flex-start`} margin={`0 0 10px`}>
               <CommonSubTitle
                 lineHeight={`1.2`}
                 margin={`0`}
@@ -625,7 +623,7 @@ const MM00Presenter = ({
             </Wrapper>
             <Wrapper
               al={`flex-end`}
-              margin={`10px 0 20px`}
+              margin={`0 0 10px`}
               display={width < 700 ? `flex` : `none`}
             >
               <CommonSubTitle lineHeight={`1.2`} margin={`0`} fontSize={`30px`}>
@@ -704,7 +702,7 @@ const MM00Presenter = ({
 
             <Wrapper
               al={width < 700 ? `flex-end` : `flex-start`}
-              margin={`10px 0 20px`}
+              margin={width < 700 ? `0 0 10px` : `10px 0 20px`}
             >
               <CommonSubTitle
                 lineHeight={`1.2`}
