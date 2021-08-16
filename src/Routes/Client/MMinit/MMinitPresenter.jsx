@@ -227,7 +227,7 @@ const MMinitPresenter = ({ width, moveLinkHandler }) => {
             }
             isRelative={true}
             onClick={() =>
-              moveLinkHandler("https://www.schoolhealing3.co.kr/#/pro")
+              moveLinkHandler("https://www.schoolhealing4.co.kr/#/pro")
             }
           >
             <Image

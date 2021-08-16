@@ -372,7 +372,7 @@ const Header = ({ history, width, match }) => {
               </Link>
               <ATag
                 target={`_blank`}
-                href={`https://schoolhealing3.co.kr/#/pro`}
+                href={`https://schoolhealing4.co.kr/#/pro`}
                 width={`auto`}
               >
                 <Image
@@ -429,7 +429,7 @@ const Header = ({ history, width, match }) => {
             </Link>
             <ATag
               target={`_blank`}
-              href={`https://schoolhealing3.co.kr/#/pro`}
+              href={`https://schoolhealing4.co.kr/#/pro`}
               width={`auto`}
             >
               <Image
