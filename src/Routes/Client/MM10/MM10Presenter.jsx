@@ -468,39 +468,19 @@ const MM10Presenter = ({
                 al={`flex-start`}
                 display={width < 900 ? `none` : `flex`}
               >
-                <Text
-                  fontSize={`20px`}
-                  fontWeight={`700`}
-                  color={Theme.white_C}
-                >
+                <Text fontSize={`20px`} color={Theme.white_C}>
                   <Gotham2>SMARTKEEPER</Gotham2> provides superior security
                 </Text>
-                <Text
-                  fontSize={`20px`}
-                  fontWeight={`700`}
-                  color={Theme.white_C}
-                >
+                <Text fontSize={`20px`} color={Theme.white_C}>
                   in comparison to their competition
                 </Text>
-                <Text
-                  fontSize={`20px`}
-                  fontWeight={`700`}
-                  color={Theme.white_C}
-                >
+                <Text fontSize={`20px`} color={Theme.white_C}>
                   In addition, SMARTKEEPER products integrated
                 </Text>
-                <Text
-                  fontSize={`20px`}
-                  fontWeight={`700`}
-                  color={Theme.white_C}
-                >
+                <Text fontSize={`20px`} color={Theme.white_C}>
                   seamlessly into our networking system and after
                 </Text>
-                <Text
-                  fontSize={`20px`}
-                  fontWeight={`700`}
-                  color={Theme.white_C}
-                >
+                <Text fontSize={`20px`} color={Theme.white_C}>
                   deployment, there was a renewed sense of security.
                 </Text>
               </Wrapper>
@@ -629,7 +609,6 @@ const MM10Presenter = ({
           <Text
             fontSize={`20px`}
             color={Theme.white_C}
-            fontWeight={`700`}
             display={width < 900 ? `none` : `flex`}
           >
             We aim to grow together with our partners by providing exceptional
@@ -638,7 +617,6 @@ const MM10Presenter = ({
           <Text
             fontSize={`20px`}
             color={Theme.white_C}
-            fontWeight={`700`}
             display={width < 900 ? `none` : `flex`}
           >
             We look forward to hearing from people who would like to partner
@@ -647,7 +625,6 @@ const MM10Presenter = ({
           <Text
             fontSize={`20px`}
             color={Theme.white_C}
-            fontWeight={`700`}
             display={width < 900 ? `none` : `flex`}
           >
             Please contact us at global_sales@comxi.com.
