@@ -218,16 +218,16 @@ const MM16Presenter = ({
                 {isCheck ? `2018` : `2017`}
               </Text>
               <Wrapper dr={`row`} ju={`flex-start`}>
-                <Text
-                  fontSize={`18px`}
+                <Wrapper
                   color={Theme.white_C}
                   width={`100px`}
                   margin={`0 10px 0 0`}
-                  textAlign={`right`}
                   fontWeight={`700`}
+                  al={`flex-end`}
                 >
-                  Leakage Cost
-                </Text>
+                  <Text fontSize={`18px`}>Leakage</Text>
+                  <Text fontSize={`18px`}>Cost</Text>
+                </Wrapper>
                 <GraphWrapper
                   width={graphValue}
                   bgColor={Theme.basicTheme_C}
@@ -252,16 +252,17 @@ const MM16Presenter = ({
                 </Text>
               </Wrapper>
               <Wrapper dr={`row`} ju={`flex-start`} margin={`20px 0 15px`}>
-                <Text
-                  fontSize={`18px`}
+                <Wrapper
                   color={Theme.white_C}
                   width={`100px`}
                   margin={`0 10px 0 0`}
-                  textAlign={`right`}
                   fontWeight={`700`}
+                  al={`flex-end`}
                 >
-                  Follow-up Processign Cost
-                </Text>
+                  <Text fontSize={`18px`}>Follow-up</Text>
+                  <Text fontSize={`18px`}>Processign</Text>
+                  <Text fontSize={`18px`}>Cost</Text>
+                </Wrapper>
                 <GraphWrapper
                   width={graphValue2}
                   bgColor={Theme.white_C}
