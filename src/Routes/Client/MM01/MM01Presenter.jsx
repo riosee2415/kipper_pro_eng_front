@@ -889,7 +889,8 @@ const MM01Presenter = ({
                     width={`auto`}
                     fontSize={width < 900 ? `21px` : `40px`}
                     isGotham={true}
-                    fontWeight={`bold`}
+                                  fontWeight={`700`}
+
                   >
                     SMARTKEEPER
                   </Wrapper> */}
@@ -902,7 +903,7 @@ const MM01Presenter = ({
                   <Wrapper
                     width={`auto`}
                     fontSize={width < 900 ? `28px` : `45px`}
-                    fontWeight={`bold`}
+                    fontWeight={`700`}
                     lineHeight={`1.3`}
                     display={width < 900 ? `none` : `flex`}
                   >
@@ -911,7 +912,7 @@ const MM01Presenter = ({
                   <Wrapper
                     width={`auto`}
                     fontSize={width < 900 ? `28px` : `45px`}
-                    fontWeight={`bold`}
+                    fontWeight={`700`}
                     lineHeight={`1.3`}
                     display={width < 900 ? `none` : `flex`}
                   >
@@ -920,7 +921,7 @@ const MM01Presenter = ({
                   <Wrapper
                     width={`auto`}
                     fontSize={width < 900 ? `28px` : `45px`}
-                    fontWeight={`bold`}
+                    fontWeight={`700`}
                     lineHeight={`1.3`}
                     display={width < 900 ? `flex` : `none`}
                   >
@@ -929,7 +930,7 @@ const MM01Presenter = ({
                   <Wrapper
                     width={`auto`}
                     fontSize={width < 900 ? `28px` : `45px`}
-                    fontWeight={`bold`}
+                    fontWeight={`700`}
                     lineHeight={`1.3`}
                     display={width < 900 ? `flex` : `none`}
                   >
@@ -938,7 +939,7 @@ const MM01Presenter = ({
                   <Wrapper
                     width={`auto`}
                     fontSize={width < 900 ? `28px` : `45px`}
-                    fontWeight={`bold`}
+                    fontWeight={`700`}
                     lineHeight={`1.3`}
                   >
                     application
@@ -1004,7 +1005,7 @@ const MM01Presenter = ({
                     width={`auto`}
                     lineHeight={`1.3`}
                     fontSize={`30px`}
-                    fontWeight={`bold`}
+                    fontWeight={`700`}
                   >
                     Physical Cybersecurity,
                   </Wrapper>
@@ -1012,7 +1013,7 @@ const MM01Presenter = ({
                     width={`auto`}
                     lineHeight={`1.3`}
                     fontSize={`30px`}
-                    fontWeight={`bold`}
+                    fontWeight={`700`}
                   >
                     Simple but effective economical solution!
                   </Wrapper>
@@ -1122,7 +1123,7 @@ const MM01Presenter = ({
               width={`auto`}
               lineHeight={`1.3`}
               fontSize={`20px`}
-              fontWeight={`bold`}
+              fontWeight={`700`}
             >
               Physical Cybersecurity,
             </Wrapper>
@@ -1130,7 +1131,7 @@ const MM01Presenter = ({
               width={`auto`}
               lineHeight={`1.3`}
               fontSize={`20px`}
-              fontWeight={`bold`}
+              fontWeight={`700`}
             >
               Simple but effective
             </Wrapper>
@@ -1138,7 +1139,7 @@ const MM01Presenter = ({
               width={`auto`}
               lineHeight={`1.3`}
               fontSize={`20px`}
-              fontWeight={`bold`}
+              fontWeight={`700`}
             >
               economical solution!
             </Wrapper>

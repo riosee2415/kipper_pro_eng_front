@@ -65,7 +65,7 @@ const MM03Presenter = ({
         {/* <Wrapper
           isGotham={true}
           fontSize={`70px`}
-          fontWeight={`bold`}
+          700
           margin={`15px 0 75px`}
         >
           Reference

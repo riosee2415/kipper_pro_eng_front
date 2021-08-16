@@ -2055,7 +2055,7 @@ const MM09Presenter = ({
                         value={pData.specDetailTitle1}
                         textAlign={`center`}
                         fontSize={`16px`}
-                        fontWeight={`bold`}
+                        fontWeight={`700`}
                       />
                     )}
                   </TitleBox>
@@ -2107,7 +2107,7 @@ const MM09Presenter = ({
                         value={pData.specDetailTitle2}
                         textAlign={`center`}
                         fontSize={`16px`}
-                        fontWeight={`bold`}
+                        fontWeight={`700`}
                       />
                     )}
                   </TitleBox>
@@ -2162,7 +2162,7 @@ const MM09Presenter = ({
                         value={pData.specDetailTitle3}
                         textAlign={`center`}
                         fontSize={`16px`}
-                        fontWeight={`bold`}
+                        fontWeight={`700`}
                       />
                     )}
                   </TitleBox>
@@ -2277,7 +2277,7 @@ const MM09Presenter = ({
                       value={pData.specDetailTitle1}
                       textAlign={`center`}
                       fontSize={`16px`}
-                      fontWeight={`bold`}
+                      fontWeight={`700`}
                     />
                   )}
                 </TitleBox>
@@ -2331,7 +2331,7 @@ const MM09Presenter = ({
                       value={pData.specDetailTitle2}
                       textAlign={`center`}
                       fontSize={`16px`}
-                      fontWeight={`bold`}
+                      fontWeight={`700`}
                     />
                   )}
                 </TitleBox>
@@ -2385,7 +2385,7 @@ const MM09Presenter = ({
                       value={pData.specDetailTitle3}
                       textAlign={`center`}
                       fontSize={`16px`}
-                      fontWeight={`bold`}
+                      fontWeight={`700`}
                     />
                   )}
                 </TitleBox>

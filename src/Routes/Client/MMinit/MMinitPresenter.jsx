@@ -425,7 +425,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
         >
           <Text
             fontSize={width < 900 ? `26px` : `40px`}
-            fontWeight={`bold`}
+            700
             lineHeight={width < 700 ? `1.3` : `1.6`}
           >
             {width < 900 ? `Arguably the most` : `Arguably`},
@@ -433,14 +433,14 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
           <Text
             display={width < 900 ? `none` : `flex`}
             fontSize={`40px`}
-            fontWeight={`bold`}
+            700
           >
             the most effective defense is physical defense.
           </Text>
           <Text
             display={width < 900 ? `flex` : `none`}
             fontSize={`26px`}
-            fontWeight={`bold`}
+            700
             lineHeight={`1.3`}
           >
             effective defense is
@@ -448,7 +448,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
           <Text
             display={width < 900 ? `flex` : `none`}
             fontSize={`26px`}
-            fontWeight={`bold`}
+            700
             lineHeight={`1.3`}
           >
             physical defense.
@@ -575,10 +575,10 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
           color={Theme.white_C}
           padding={width < 900 ? `100px 30px 60px` : `180px 0`}
         >
-          <Text fontSize={width < 900 ? `26px` : `40px`} fontWeight={`bold`}>
+          <Text fontSize={width < 900 ? `26px` : `40px`} 700>
             {width < 700 ? `We value the voice of` : `We`}
           </Text>
-          <Text fontSize={width < 900 ? `26px` : `40px`} fontWeight={`bold`}>
+          <Text fontSize={width < 900 ? `26px` : `40px`} 700>
             {width < 700
               ? `our customers.`
               : `value the voice of our customers.`}

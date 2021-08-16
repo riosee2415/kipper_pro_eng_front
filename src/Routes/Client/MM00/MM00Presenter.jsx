@@ -264,7 +264,7 @@ const MM00Presenter = ({
                   <Button dr={`row`}>
                     <Wrapper
                       width={`auto`}
-                      fontWeight={`bold`}
+                      fontWeight={`700`}
                       margin={`0 10px 2px 0`}
                     >
                       Universal Lock Key
@@ -358,7 +358,7 @@ const MM00Presenter = ({
                   <Button dr={`row`} margin={`0 0 0 3px`}>
                     <Wrapper
                       width={`auto`}
-                      fontWeight={`bold`}
+                      fontWeight={`700`}
                       margin={`0 10px 0 0`}
                     >
                       Lock Key Mini
@@ -433,7 +433,7 @@ const MM00Presenter = ({
                   <Button dr={`row`} margin={`0 0 5px 10px`}>
                     <Wrapper
                       width={`auto`}
-                      fontWeight={`bold`}
+                      fontWeight={`700`}
                       margin={`0 10px 0 0`}
                     >
                       Lock Key Mini
@@ -481,7 +481,7 @@ const MM00Presenter = ({
                   <Button dr={`row`} margin={`0 0 5px 10px`}>
                     <Wrapper
                       width={`auto`}
-                      fontWeight={`bold`}
+                      fontWeight={`700`}
                       margin={`0 10px 0 0`}
                     >
                       Lock Key Mini
@@ -538,6 +538,7 @@ const MM00Presenter = ({
                 lineHeight={`1.2`}
                 margin={`0`}
                 fontSize={width < 700 ? `30px` : `40px`}
+                fontWeight={`900`}
               >
                 {width < 700
                   ? `Starting point of`
@@ -550,6 +551,7 @@ const MM00Presenter = ({
                 lineHeight={`1.2`}
                 margin={`0`}
                 fontSize={width < 700 ? `30px` : `40px`}
+                fontWeight={`900`}
               >
                 Port Security,
               </CommonSubTitle>
@@ -558,11 +560,13 @@ const MM00Presenter = ({
                 lineHeight={`1.2`}
                 margin={`0`}
                 fontSize={width < 700 ? `30px` : `40px`}
+                fontWeight={`900`}
               >
                 {width < 700 ? `End it with` : `End it with Physical Security.`}
               </CommonSubTitle>
               {/* mobile */}
               <CommonSubTitle
+                fontWeight={`900`}
                 lineHeight={`1.2`}
                 margin={`0`}
                 fontSize={width < 700 ? `30px` : `40px`}
@@ -614,10 +618,20 @@ const MM00Presenter = ({
               margin={`10px 0 20px`}
               display={width < 700 ? `none` : `flex`}
             >
-              <CommonSubTitle lineHeight={`1.2`} margin={`0`} fontSize={`40px`}>
+              <CommonSubTitle
+                lineHeight={`1.2`}
+                margin={`0`}
+                fontSize={`40px`}
+                fontWeight={`900`}
+              >
                 Network &#38; Intranet :
               </CommonSubTitle>
-              <CommonSubTitle lineHeight={`1.2`} margin={`0`} fontSize={`40px`}>
+              <CommonSubTitle
+                lineHeight={`1.2`}
+                margin={`0`}
+                fontSize={`40px`}
+                fontWeight={`900`}
+              >
                 Pathway to all assets within
               </CommonSubTitle>
             </Wrapper>
@@ -626,13 +640,28 @@ const MM00Presenter = ({
               margin={`0 0 10px`}
               display={width < 700 ? `flex` : `none`}
             >
-              <CommonSubTitle lineHeight={`1.2`} margin={`0`} fontSize={`30px`}>
+              <CommonSubTitle
+                lineHeight={`1.2`}
+                margin={`0`}
+                fontSize={`30px`}
+                fontWeight={`900`}
+              >
                 Network &#38; Intranet :
               </CommonSubTitle>
-              <CommonSubTitle lineHeight={`1.2`} margin={`0`} fontSize={`30px`}>
+              <CommonSubTitle
+                lineHeight={`1.2`}
+                margin={`0`}
+                fontSize={`30px`}
+                fontWeight={`900`}
+              >
                 Pathway
               </CommonSubTitle>
-              <CommonSubTitle lineHeight={`1.2`} margin={`0`} fontSize={`30px`}>
+              <CommonSubTitle
+                lineHeight={`1.2`}
+                margin={`0`}
+                fontSize={`30px`}
+                fontWeight={`900`}
+              >
                 to all assets within
               </CommonSubTitle>
             </Wrapper>
@@ -708,6 +737,7 @@ const MM00Presenter = ({
                 lineHeight={`1.2`}
                 margin={`0`}
                 fontSize={width < 700 ? `30px` : `40px`}
+                fontWeight={`900`}
               >
                 Making the most of
               </CommonSubTitle>
@@ -715,6 +745,7 @@ const MM00Presenter = ({
                 lineHeight={`1.2`}
                 margin={`0`}
                 fontSize={width < 700 ? `30px` : `40px`}
+                fontWeight={`900`}
               >
                 {width < 700 ? `physical` : `physical cybersecurity`}
               </CommonSubTitle>
@@ -723,6 +754,7 @@ const MM00Presenter = ({
                 margin={`0`}
                 fontSize={width < 700 ? `30px` : `40px`}
                 display={width < 700 ? `flex` : `none`}
+                fontWeight={`900`}
               >
                 cybersecurity
               </CommonSubTitle>
