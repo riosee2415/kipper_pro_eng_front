@@ -45,6 +45,8 @@ const ArrowIcon = styled(Text)`
     @media (max-width: 700px) {
       font-size: 14px;
       font-weight: bold;
+      margin-left: 0;
+      margin-top: 3px;
     }
   }
 
@@ -150,7 +152,12 @@ const MM05Presenter = ({
             al={width < 700 ? `center` : `flex-start`}
             margin={width < 700 ? `0` : `0 0 0 50px`}
           >
-            <Text color={Theme.greyTheme7_C}>Physical Network Security</Text>
+            <Text
+              margin={width < 700 ? `0 0 10px` : `0`}
+              color={width < 700 ? Theme.white_C : Theme.greyTheme7_C}
+            >
+              Physical Network Security
+            </Text>
             <Text
               fontSize={width < 700 ? `23px` : `40px`}
               fontWeight={`bold`}
@@ -237,6 +244,7 @@ const MM05Presenter = ({
                   ? `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Fmodify%2FNetwork%20Port%20Lock%20Plus_M_%E1%84%82%E1%85%A6%E1%84%90%E1%85%B3%E1%84%8B%E1%85%AF%E1%84%8F%E1%85%B3%E1%84%86%E1%85%AE%E1%86%AF%E1%84%85%E1%85%B5%E1%84%87%E1%85%A9%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A1%E1%86%BC%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%8C%E1%85%A9%E1%84%92%E1%85%A1%E1%86%B8.svg?alt=media&token=405f7d2c-9df8-4134-9505-231ab914a757`
                   : `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Fmodify%2FNetwork%20Port%20Lock%20Plus_%E1%84%82%E1%85%A6%E1%84%90%E1%85%B3%E1%84%8B%E1%85%AF%E1%84%8F%E1%85%B3%E1%84%86%E1%85%AE%E1%86%AF%E1%84%85%E1%85%B5%E1%84%87%E1%85%A9%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B4%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A1%E1%86%BC%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%8C%E1%85%A9%E1%84%92%E1%85%A1%E1%86%B8.svg?alt=media&token=6ce996bb-fc51-4dd0-9c5b-f42518e171c4`
               }
+              margin={width < 700 ? `0 0 10px` : `0`}
             />
 
             <Text
@@ -525,7 +533,7 @@ const MM05Presenter = ({
               is now a must, not a choice.
             </Text>
             <Link to="/p_network/611910452c1dfdde5b57cd6b">
-              <ArrowIcon fontWeight={`bold`} margin={`30px 0 0`}>
+              <ArrowIcon fontWeight={`bold`} margin={`10px 0 0`}>
                 Learn more about Network Port Lock Plus
                 <FaChevronRight />
               </ArrowIcon>
@@ -735,17 +743,28 @@ const MM05Presenter = ({
             <Text
               fontSize={width < 700 ? `17px` : `24px`}
               color={Theme.greyTheme4_C}
-              lineHeight={`1.4`}
+              lineHeight={width < 700 ? `1.8` : `1.4`}
             >
               Possible only with SMARTKEEPER
             </Text>
             <Text
               fontSize={width < 700 ? `17px` : `24px`}
               color={Theme.greyTheme4_C}
-              lineHeight={`1.4`}
-              margin={`0 0 10px`}
+              lineHeight={width < 700 ? `1.8` : `1.4`}
+              margin={width < 700 ? `0` : `0 0 10px`}
             >
-              Physical cyber security for Network Cables
+              {width < 700
+                ? `Physical cyber security`
+                : `Physical cyber security for Network Cables`}
+            </Text>
+            <Text
+              fontSize={width < 700 ? `17px` : `24px`}
+              color={Theme.greyTheme4_C}
+              lineHeight={width < 700 ? `1.8` : `1.4`}
+              margin={`0 0 10px`}
+              display={width < 700 ? `flex` : `none`}
+            >
+              for Network Cables
             </Text>
 
             <Link to="/p_network/611910452c1dfdde5b57cd6c">
