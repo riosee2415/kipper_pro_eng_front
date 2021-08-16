@@ -303,7 +303,7 @@ const MM01Presenter = ({
                   width={`20px`}
                   height={`2px`}
                   bgColor={width < 900 ? `transparent` : Theme.white_C}
-                  margin={width < 900 ? `40px 0 0` : `50px 0`}
+                  margin={width < 900 ? `20px 0 0` : `50px 0`}
                 ></Wrapper>
 
                 <Text
@@ -360,7 +360,7 @@ const MM01Presenter = ({
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
-                  margin={`0 0 40px`}
+                  margin={width < 700 ? `0 0 20px` : `0 0 40px`}
                 >
                   our bodies with new viruses.
                 </Text>
@@ -433,7 +433,7 @@ const MM01Presenter = ({
                   width={`20px`}
                   height={`2px`}
                   bgColor={width < 900 ? `transparent` : Theme.white_C}
-                  margin={width < 900 ? `40px 0 0` : `50px 0`}
+                  margin={width < 900 ? `20px 0 0` : `50px 0`}
                 ></Wrapper>
 
                 <Text
@@ -466,7 +466,7 @@ const MM01Presenter = ({
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
-                  margin={`0 0 40px`}
+                  margin={width < 700 ? `0 0 20px` : `0 0 40px`}
                 >
                   receive a spam mail with malware. “Do NOT click to open.”
                 </Text>
@@ -587,7 +587,7 @@ const MM01Presenter = ({
                   width={`20px`}
                   height={`2px`}
                   bgColor={width < 900 ? `transparent` : Theme.white_C}
-                  margin={width < 900 ? `40px 0 0` : `50px 0`}
+                  margin={width < 900 ? `20px 0 0` : `50px 0`}
                 ></Wrapper>
 
                 <Text
@@ -637,7 +637,7 @@ const MM01Presenter = ({
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                   display={width < 900 ? `flex` : `none`}
-                  margin={`0 0 40px`}
+                  margin={width < 700 ? `0 0 20px` : `0 0 40px`}
                 >
                   to physically block open ports.
                 </Text>
@@ -696,7 +696,7 @@ const MM01Presenter = ({
                   width={`20px`}
                   height={`2px`}
                   bgColor={width < 900 ? `transparent` : Theme.white_C}
-                  margin={width < 900 ? `40px 0 0` : `50px 0`}
+                  margin={width < 900 ? `20px 0 0` : `50px 0`}
                 ></Wrapper>
 
                 <Text
@@ -1111,7 +1111,7 @@ const MM01Presenter = ({
 
         <Wrapper
           bgColor={Theme.lightGrey_C}
-          padding={width < 900 ? `30px 36px` : `30px 0 160px`}
+          padding={width < 900 ? `0 36px` : `30px 0 160px`}
         >
           <Wrapper
             al={`flex-start`}
