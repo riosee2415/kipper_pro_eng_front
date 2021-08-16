@@ -514,6 +514,7 @@ const MM17Presenter = ({
                 fontSize={width < 700 ? `20px` : `29px`}
                 lineHeight={`1`}
                 opacity={isView}
+                fontWeight={`900`}
               >
                 Enhanced Security.
               </Text>
@@ -521,6 +522,7 @@ const MM17Presenter = ({
                 fontSize={width < 700 ? `20px` : `29px`}
                 margin={`0 0 10px`}
                 opacity={isView}
+                fontWeight={`900`}
               >
                 Exceptionally thin Key Hole.
               </Text>
@@ -548,11 +550,12 @@ const MM17Presenter = ({
               top={`15px`}
               left={`0`}
             >
-              <Text fontSize={width < 700 ? `20px` : `29px`}>
+              <Text fontSize={width < 700 ? `20px` : `29px`} fontWeight={`900`}>
                 Enhanced Security.
               </Text>
               <Text
                 fontSize={width < 700 ? `20px` : `29px`}
+                fontWeight={`900`}
                 margin={`0 0 10px`}
               >
                 Exceptionally thin Key Hole.
@@ -768,7 +771,7 @@ const MM17Presenter = ({
           ju={`flex-end`}
           padding={`0 0 50px`}
         >
-          <Text fontSize={`30px`} fontWeight={`700`} margin={`0 0 10px`}>
+          <Text fontSize={`30px`} fontWeight={`900`} margin={`0 0 10px`}>
             For any standard USB Port (Type A)
           </Text>
           <Text fontSize={`24px`} color={Theme.greyTheme4_C}>
@@ -941,10 +944,10 @@ const MM17Presenter = ({
             width={`auto`}
             display={width < 900 ? `none` : `flex`}
           >
-            <Text fontSize={`30px`} fontWeight={`700`}>
+            <Text fontSize={`30px`} fontWeight={`900`}>
               If you can’t secure it,
             </Text>
-            <Text fontSize={`30px`} fontWeight={`700`} margin={`0 0 20px`}>
+            <Text fontSize={`30px`} fontWeight={`900`} margin={`0 0 20px`}>
               there is still a lapse in security.
             </Text>
           </Wrapper>
@@ -1016,14 +1019,14 @@ const MM17Presenter = ({
         bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2Fmobile-img03.png?alt=media&token=f00fb782-3193-43f9-a6ae-47edc84e2d5d")`}
       >
         <Wrapper al={`flex-start`}>
-          <Text fontSize={`20px`} fontWeight={`700`}>
+          <Text fontSize={`20px`} fontWeight={`900`}>
             If you can’t secure it,
           </Text>
 
-          <Text fontSize={`20px`} fontWeight={`700`}>
+          <Text fontSize={`20px`} fontWeight={`900`}>
             there is still a lapse
           </Text>
-          <Text fontSize={`20px`} fontWeight={`700`} margin={`0 0 50px`}>
+          <Text fontSize={`20px`} fontWeight={`900`} margin={`0 0 50px`}>
             in security.
           </Text>
         </Wrapper>

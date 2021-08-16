@@ -165,7 +165,7 @@ const MM15Presenter = ({
           <Wrapper
             al={`flex-start`}
             fontSize={width < 700 ? `26px` : `34px`}
-            700
+            fontWeight={`700`}
             margin={width < 700 ? `100px 0 20px` : `160px 0 20px`}
           >
             Download
@@ -183,7 +183,7 @@ const MM15Presenter = ({
                   ? `1px solid ${Theme.greyTheme3_C}`
                   : `1px solid ${Theme.greyTheme7_C}`
               }
-              fontWeight={currentTab === 0 ? `700` : `400`}
+              fontWeight={currentTab === 0 ? `900` : `400`}
               onClick={() => changeTabHandler(0)}
             >
               User Guide
@@ -199,7 +199,7 @@ const MM15Presenter = ({
                   ? `1px solid ${Theme.greyTheme3_C}`
                   : `1px solid ${Theme.greyTheme7_C}`
               }
-              fontWeight={currentTab === 0 ? `700` : `400`}
+              fontWeight={currentTab === 0 ? `900` : `400`}
               onClick={() => changeTabHandler(1)}
               display={width < 900 ? `none` : `flex`}
             >
@@ -216,7 +216,7 @@ const MM15Presenter = ({
                   ? `1px solid ${Theme.greyTheme3_C}`
                   : `1px solid ${Theme.greyTheme7_C}`
               }
-              fontWeight={currentTab === 0 ? `700` : `400`}
+              fontWeight={currentTab === 0 ? `900` : `400`}
               onClick={() => changeTabHandler(1)}
               display={width < 900 ? `flex` : `none`}
             >

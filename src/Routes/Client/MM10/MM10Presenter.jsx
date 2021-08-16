@@ -416,7 +416,7 @@ const MM10Presenter = ({
               <Text
                 fontSize={width < 900 ? `23px` : `30px`}
                 color={Theme.white_C}
-                fontWeight={`700`}
+                fontWeight={`900`}
               >
                 Success Story
               </Text>
@@ -543,14 +543,14 @@ const MM10Presenter = ({
               <Text
                 fontSize={`30px`}
                 color={Theme.white_C}
-                fontWeight={`700`}
+                fontWeight={`900`}
                 display={width < 900 ? `none` : `flex`}
               >
                 In one word, it was PERFECT!
               </Text>
               <Text
                 fontSize={`30px`}
-                fontWeight={`700`}
+                fontWeight={`900`}
                 color={Theme.white_C}
                 display={width < 900 ? `flex` : `none`}
               >
@@ -558,7 +558,7 @@ const MM10Presenter = ({
               </Text>
               <Text
                 fontSize={`30px`}
-                fontWeight={`700`}
+                fontWeight={`900`}
                 color={Theme.white_C}
                 display={width < 900 ? `flex` : `none`}
               >
@@ -601,7 +601,7 @@ const MM10Presenter = ({
           <Text
             fontSize={width < 900 ? `28px` : `45px`}
             margin={width < 900 && `0 0 20px`}
-            fontWeight={`700`}
+            fontWeight={`900`}
             color={Theme.white_C}
           >
             How to become a Partner
@@ -722,7 +722,7 @@ const MM10Presenter = ({
         <RsWrapper width={`1126px`} al={`flex-start`}>
           <Text
             fontSize={width < 900 ? `28px` : `45px`}
-            fontWeight={`700`}
+            fontWeight={`900`}
             color={Theme.white_C}
             margin={width < 900 ? `0 0 30px` : `0 0 50px`}
           >

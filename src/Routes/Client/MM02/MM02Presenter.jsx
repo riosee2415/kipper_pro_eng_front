@@ -19,7 +19,7 @@ import { Link } from "react-router-dom";
 
 const SubTitle = styled.h2`
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 900;
   color: ${(props) => props.theme.white_C};
   line-height: 1.3;
 
@@ -171,7 +171,7 @@ const MM02Presenter = ({
                 fontSize={
                   width < 900 ? (width < 700 ? `27px` : `50px`) : `60px`
                 }
-                fontWeight={`700`}
+                fontWeight={`900`}
                 lineHeight={`1.4`}
                 margin={`0`}
                 color={`rgba(255,255,255,0.5)`}
@@ -182,7 +182,7 @@ const MM02Presenter = ({
                 fontSize={
                   width < 900 ? (width < 700 ? `27px` : `50px`) : `60px`
                 }
-                fontWeight={`700`}
+                fontWeight={`900`}
                 lineHeight={`1.4`}
                 margin={`0`}
                 color={`rgba(255,255,255,0.75)`}
@@ -193,7 +193,7 @@ const MM02Presenter = ({
                 fontSize={
                   width < 900 ? (width < 700 ? `27px` : `50px`) : `60px`
                 }
-                fontWeight={`700`}
+                fontWeight={`900`}
                 lineHeight={`1.4`}
                 margin={`0`}
                 color={Theme.white_C}
@@ -204,7 +204,7 @@ const MM02Presenter = ({
                 fontSize={
                   width < 900 ? (width < 700 ? `27px` : `50px`) : `60px`
                 }
-                fontWeight={`700`}
+                fontWeight={`900`}
                 lineHeight={`1.4`}
                 margin={`0`}
                 color={Theme.white_C}
@@ -464,7 +464,7 @@ const MM02Presenter = ({
           <Text
             fontSize={width < 700 ? `23px` : `50px`}
             color={Theme.white_C}
-            fontWeight={`700`}
+            fontWeight={`900`}
             margin={width < 700 ? `18px 0 0` : `30px 0 0`}
           >
             Complete product line-up,
@@ -472,7 +472,7 @@ const MM02Presenter = ({
           <Text
             fontSize={width < 700 ? `23px` : `50px`}
             color={Theme.white_C}
-            fontWeight={`700`}
+            fontWeight={`900`}
             margin={width < 700 ? `0 0 11px` : `0 0 20px`}
           >
             Convenient Key Management

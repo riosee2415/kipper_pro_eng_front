@@ -183,7 +183,7 @@ const MM05Presenter = ({
           al={`flex-start`}
           color={Theme.white_C}
         >
-          <Text fontSize={width < 700 ? `18px` : `24px`}>
+          <Text fontSize={width < 700 ? `18px` : `24px`} fontWeight={`900`}>
             Network Port Lock Plus
           </Text>
           <Text fontSize={width < 700 ? `12px` : `16px`}>(CSK-NL11)</Text>
@@ -204,7 +204,7 @@ const MM05Presenter = ({
           al={`flex-start`}
           color={Theme.white_C}
         >
-          <Text fontSize={width < 700 ? `18px` : `24px`}>
+          <Text fontSize={width < 700 ? `18px` : `24px`} fontWeight={`900`}>
             LAN Cable Lock Plus
           </Text>
           <Text fontSize={width < 700 ? `12px` : `16px`}>(CSK-NC11)</Text>
@@ -320,7 +320,7 @@ const MM05Presenter = ({
               <Wrapper width={width < 700 ? `100%` : `80%`} al={`flex-start`}>
                 <Text
                   fontSize={width < 900 ? `20px` : `34px`}
-                  fontWeight={`700`}
+                  fontWeight={`900`}
                   margin={`0 0 10px`}
                 >
                   Market’s First
@@ -486,7 +486,7 @@ const MM05Presenter = ({
             al={`flex-start`}
             margin={`300px 0 0`}
           >
-            <Text fontSize={`30px`} fontWeight={`700`} margin={`10px 0 0`}>
+            <Text fontSize={`30px`} fontWeight={`900`} margin={`10px 0 0`}>
               Block access to open Network Ports
             </Text>
             <Text fontSize={`24px`} color={Theme.greyTheme4_C}>

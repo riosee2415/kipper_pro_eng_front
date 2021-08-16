@@ -16,7 +16,7 @@ import Theme from "../../../Styles/Theme";
 
 const Title = styled.h1`
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 700;
   color: ${(props) => props.theme.white_C};
 
   @media (max-width: 700px) {
