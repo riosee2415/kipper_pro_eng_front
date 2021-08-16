@@ -138,7 +138,7 @@ export const Wrapper = styled.div`
   font-family: ${(props) =>
     props.isGotham
       ? `'Gotham Black', sans-serif`
-      : `'Noto Sans KR', sans-serif`};
+      : `'Noto Sans CJK KR', sans-serif`};
 
   & pre {
     white-space: pre-wrap;
@@ -677,7 +677,7 @@ export const CommonSubTitle = styled.h2`
   font-family: ${(props) =>
     props.isGotham
       ? `'Gotham Black', sans-serif`
-      : `'Noto Sans KR', sans-serif`};
+      : `'Noto Sans CJK KR', sans-serif`};
 `;
 
 export const CommonSubTitle2 = styled.h2`
@@ -696,7 +696,7 @@ export const CommonSubTitle2 = styled.h2`
   font-family: ${(props) =>
     props.isGotham
       ? `'Gotham Black', sans-serif`
-      : `'Noto Sans KR', sans-serif`};
+      : `'Noto Sans CJK KR', sans-serif`};
 
   @media (max-width: 700px) {
     font-size: ${(props) => props.fontSize || `30px`};
@@ -1025,7 +1025,7 @@ export const Text = styled.p`
   font-family: ${(props) =>
     props.isGotham
       ? `'Gotham Black', sans-serif`
-      : `'Noto Sans KR', sans-serif`};
+      : `'Noto Sans CJK KR', sans-serif`};
 
   & svg {
     color: ${(props) => props.color};
@@ -1126,7 +1126,7 @@ export const SpanText = styled.span`
   font-family: ${(props) =>
     props.isGotham
       ? `'Gotham Black', sans-serif`
-      : `'Noto Sans KR', sans-serif`};
+      : `'Noto Sans CJK KR', sans-serif`};
 `;
 
 export const DotTitle = styled.span`
