@@ -19,6 +19,13 @@ import { animateScroll as scroll } from "react-scroll";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
 
+const Gotham = styled(SpanText)`
+  font-family: "Gotham", sans-serif;
+  font-weight: 300;
+  letter-spacing: ${(props) => props.letterSpacing};
+  margin: ${(props) => props.margin};
+`;
+
 const Title = styled.h1`
   font-size: 40px;
   font-weight: bold;
@@ -890,7 +897,7 @@ const MM01Presenter = ({
                     alt="smartkeeper"
                     src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Fmodify%2FSMARTKEEPER_%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8F%E1%85%B5%E1%84%91%E1%85%A5%E1%84%85%E1%85%A1%E1%86%AB.svg?alt=media&token=e3021d23-3de3-44f5-b34f-f47235f02d5b`}
                     width={width < 800 ? `164px` : `235px`}
-                    margin={width < 800 && `0 0 20px`}
+                    margin={width < 800 ? `0 0 20px` : `0 0 5px`}
                   />
                   <Wrapper
                     width={`auto`}
@@ -940,12 +947,11 @@ const MM01Presenter = ({
                     width={`auto`}
                     dr={`row`}
                     fontSize={width < 900 ? `18px` : `22px`}
-                    margin={`20px 0 0`}
                     fontWeight={`300`}
                     display={width < 900 ? `none` : `flex`}
                   >
-                    <SpanText isGotham={true}>SMARTKEEPER</SpanText> physically
-                    blocks the input/output
+                    <Gotham margin={`22px 0 0`}>SMARTKEEPER&nbsp;</Gotham>
+                    physically blocks the input/output
                   </Wrapper>
                   <Wrapper
                     width={`auto`}
@@ -954,6 +960,7 @@ const MM01Presenter = ({
                     fontWeight={`300`}
                     lineHeight={`1.5`}
                     display={width < 900 ? `none` : `flex`}
+                    margin={`-6px 0 0`}
                   >
                     ports of computers and network devices to prevent
                   </Wrapper>
