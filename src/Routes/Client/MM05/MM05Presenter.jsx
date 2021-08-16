@@ -478,7 +478,7 @@ const MM05Presenter = ({
             al={`flex-start`}
             margin={`300px 0 0`}
           >
-            <Text fontSize={`30px`} fontWeight={`700`}>
+            <Text fontSize={`30px`} fontWeight={`700`} margin={`10px 0 0`}>
               Block access to open Network Ports
             </Text>
             <Text fontSize={`24px`} color={Theme.greyTheme4_C}>
@@ -735,21 +735,17 @@ const MM05Presenter = ({
             <Text
               fontSize={width < 700 ? `17px` : `24px`}
               color={Theme.greyTheme4_C}
+              lineHeight={`1.4`}
             >
               Possible only with SMARTKEEPER
             </Text>
             <Text
               fontSize={width < 700 ? `17px` : `24px`}
               color={Theme.greyTheme4_C}
-            >
-              Physical cyber security
-            </Text>
-            <Text
-              fontSize={width < 700 ? `17px` : `24px`}
-              color={Theme.greyTheme4_C}
+              lineHeight={`1.4`}
               margin={`0 0 10px`}
             >
-              for Network Cables
+              Physical cyber security for Network Cables
             </Text>
 
             <Link to="/p_network/611910452c1dfdde5b57cd6c">
