@@ -147,10 +147,14 @@ export default createGlobalStyle`
         text-decoration : none;
     }
 
-    a:hover {
-        color : inherit;
+    svg tspan{
+        font-family: 'Gotham Black', sans-serif !important;
     }
 
+    .ql-container{
+      font-family: 'Noto Sans KR', sans-serif !important;
+    }
+    
     input, textarea, button {
         outline : none;
         border : none;
