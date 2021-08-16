@@ -8,6 +8,7 @@ import {
   CommonSubTitle2,
   RsWrapper,
   TableWrapper,
+  ATag,
 } from "../../../Components/CommonComponents";
 import styled from "styled-components";
 import useTitle from "@4leaf.ysh/use-title";
@@ -299,7 +300,10 @@ const MM19Presenter = ({
                   </Text>
                 </Wrapper>
 
-                <Link to="/basic/6114d0a2b3595147440ae69a">
+                <ATag
+                  href={`https://schoolhealing7.co.kr/#/basic/611a182a4d003e615dea1960`}
+                  width={`auto`}
+                >
                   <Button dr={`row`} margin={`10px 0 0`}>
                     <Text
                       fontSize={width < 700 ? `14px` : `16px`}
@@ -309,7 +313,7 @@ const MM19Presenter = ({
                     </Text>
                     <RiArrowRightSLine fontSize={`27px`} />
                   </Button>
-                </Link>
+                </ATag>
               </Wrapper>
             </RsWrapper>
           </Wrapper>
@@ -418,7 +422,10 @@ const MM19Presenter = ({
               >
                 SMARTKEEPER.
               </Text>
-              <Link to="/basic/6114d0a2b3595147440ae6a0">
+              <ATag
+                href={`https://schoolhealing7.co.kr/#/basic/611a182a4d003e615dea1966`}
+                width={`auto`}
+              >
                 <Button dr={`row`} margin={`20px 0 0`}>
                   <Text
                     fontSize={width < 7800 ? `14px` : `16px`}
@@ -428,7 +435,7 @@ const MM19Presenter = ({
                   </Text>
                   <RiArrowRightSLine fontSize={`27px`} />
                 </Button>
-              </Link>
+              </ATag>
             </Wrapper>
           </RsWrapper>
         </Wrapper>
@@ -626,7 +633,10 @@ const MM19Presenter = ({
                       color(pattern).
                     </Text>
 
-                    <Link to="/basic/6114d0a2b3595147440ae69f">
+                    <ATag
+                      href={`https://schoolhealing7.co.kr/#/basic/611a182a4d003e615dea1965`}
+                      width={`auto`}
+                    >
                       <Button dr={`row`} margin={`20px 0 0`}>
                         <Text
                           fontSize={width < 700 ? `14px` : `16px`}
@@ -636,7 +646,7 @@ const MM19Presenter = ({
                         </Text>
                         <RiArrowRightSLine fontSize={`17px`} />
                       </Button>
-                    </Link>
+                    </ATag>
                   </Wrapper>
                 </Wrapper>
               </Wrapper>
@@ -778,7 +788,10 @@ const MM19Presenter = ({
                       13 type of locks!
                     </Text>
 
-                    <Link to="/lock/6114d0a2b3595147440ae699">
+                    <ATag
+                      href={`https://schoolhealing7.co.kr/#/lock/611a182a4d003e615dea195f`}
+                      width={`auto`}
+                    >
                       <Button
                         dr={`row`}
                         margin={width < 700 ? `10px 0 0` : `20px 0 0`}
@@ -791,7 +804,7 @@ const MM19Presenter = ({
                         </Text>
                         <RiArrowRightSLine fontSize={`27px`} />
                       </Button>
-                    </Link>
+                    </ATag>
                   </Wrapper>
                 </Wrapper>
               </Wrapper>
