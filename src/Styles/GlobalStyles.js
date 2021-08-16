@@ -134,12 +134,12 @@ export default createGlobalStyle`
     ${editorCss};
     * {
         box-sizing : border-box;
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans CJK KR', sans-serif;
     }
     body {
         background-color: ${(props) => props.theme.bgColor};
         color : ${(props) => props.theme.blackColor};
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans CJK KR', sans-serif;
         .hidden {height:100%; min-height:100%; overflow:hidden !important; touch-action:none;}
     }
     a {
@@ -152,7 +152,7 @@ export default createGlobalStyle`
     }
 
     .ql-container{
-      font-family: 'Noto Sans KR', sans-serif !important;
+      font-family: 'Noto Sans CJK KR', sans-serif !important;
     }
     
     input, textarea, button {

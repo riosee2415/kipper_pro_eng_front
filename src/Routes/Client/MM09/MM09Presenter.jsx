@@ -1241,7 +1241,7 @@ const MM09Presenter = ({
                       <Text
                         fontSize={width < 700 ? `22px` : `22px`}
                         lineHeight={`1.2`}
-                        fontWeight={`800`}
+                        fontWeight={`900`}
                         letterSpacing={`-0.02em`}
                       >
                         UNIT PRICE
@@ -1261,7 +1261,7 @@ const MM09Presenter = ({
                       <Text
                         fontSize={`22px`}
                         lineHeight={`1.2`}
-                        fontWeight={`800`}
+                        fontWeight={`900`}
                         letterSpacing={`-0.02em`}
                       >
                         $&nbsp;
@@ -1311,6 +1311,7 @@ const MM09Presenter = ({
                     : `17px 0 0`
                 }
                 lineHeight={`1.87`}
+                fontWeight={`700`}
               >
                 Dimensions
               </Text>
@@ -1338,6 +1339,7 @@ const MM09Presenter = ({
                     : `18px 0 0`
                 }
                 lineHeight={`1.87`}
+                fontWeight={`700`}
               >
                 Weight
               </Text>
@@ -1355,6 +1357,7 @@ const MM09Presenter = ({
               <Text
                 letterSpacing={`-0.03em`}
                 lineHeight={`1.87`}
+                fontWeight={`700`}
                 fontSize={
                   width < 900 ? (width < 700 ? `14px` : `20px`) : `16px`
                 }
