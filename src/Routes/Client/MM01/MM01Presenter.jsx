@@ -7,6 +7,7 @@ import {
   Image,
   Text,
   ATag,
+  SpanText,
 } from "../../../Components/CommonComponents";
 import styled from "styled-components";
 import { withResizeDetector } from "react-resize-detector";
@@ -401,8 +402,7 @@ const MM01Presenter = ({
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
                 >
-                  intrusion route unattended means that there is a lapse in
-                  security.
+                  unattended means that there is a lapse in security.
                 </Text>
               </Wrapper>
               {/*  */}
@@ -944,7 +944,8 @@ const MM01Presenter = ({
                     fontWeight={`300`}
                     display={width < 900 ? `none` : `flex`}
                   >
-                    SMARTKEEPER physically blocks the input/output
+                    <SpanText isGotham={true}>SMARTKEEPER</SpanText> physically
+                    blocks the input/output
                   </Wrapper>
                   <Wrapper
                     width={`auto`}

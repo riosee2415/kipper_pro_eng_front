@@ -1123,6 +1123,10 @@ export const SpanText = styled.span`
   cursor: ${(props) => props.cursor};
   z-index: 1;
   border: ${(props) => props.border};
+  font-family: ${(props) =>
+    props.isGotham
+      ? `'Gotham Black', sans-serif`
+      : `'Noto Sans KR', sans-serif`};
 `;
 
 export const DotTitle = styled.span`

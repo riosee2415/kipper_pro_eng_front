@@ -216,19 +216,13 @@ const MM00Presenter = ({
                 fontWeight={`700`}
                 color={Theme.white_C}
                 display={width < 700 ? `none` : `flex`}
+                margin={`10px 0 0`}
               >
-                The ability to manage everything with ONE key.
+                {width < 700
+                  ? `A cyber security system that can be used safely on numerous devices`
+                  : `The ability to manage everything with ONE key.`}
               </Text>
 
-              <Text
-                color={Theme.greyTheme6_C}
-                display={width < 700 ? `none` : `flex`}
-                fontSize={`18px`}
-                fontWeight={`700`}
-              >
-                A cyber security system that can be used safely on numerous
-                devices
-              </Text>
               <Text
                 color={Theme.greyTheme6_C}
                 display={width < 700 ? `none` : `flex`}
@@ -271,7 +265,7 @@ const MM00Presenter = ({
                     <Wrapper
                       width={`auto`}
                       fontWeight={`bold`}
-                      margin={`0 10px 0 0`}
+                      margin={`0 10px 2px 0`}
                     >
                       Universal Lock Key
                     </Wrapper>
@@ -541,10 +535,7 @@ const MM00Presenter = ({
             >
               USB Port Security
             </Text>
-            <Wrapper
-              al={`flex-start`}
-              margin={width < 700 ? `10px 0 20px` : `20px 0`}
-            >
+            <Wrapper al={`flex-start`} margin={`10px 0 20px`}>
               <CommonSubTitle
                 lineHeight={`1.2`}
                 margin={`0`}
@@ -622,7 +613,7 @@ const MM00Presenter = ({
 
             <Wrapper
               al={`flex-end`}
-              margin={`20px 0`}
+              margin={`10px 0 20px`}
               display={width < 700 ? `none` : `flex`}
             >
               <CommonSubTitle lineHeight={`1.2`} margin={`0`} fontSize={`40px`}>
@@ -713,7 +704,7 @@ const MM00Presenter = ({
 
             <Wrapper
               al={width < 700 ? `flex-end` : `flex-start`}
-              margin={`20px 0`}
+              margin={`10px 0 20px`}
             >
               <CommonSubTitle
                 lineHeight={`1.2`}
@@ -795,7 +786,7 @@ const MM00Presenter = ({
 
               <Wrapper
                 al={`flex-start`}
-                margin={width < 700 ? `20px 0` : `10px 0`}
+                margin={width < 700 ? `20px 0` : `0 0 10px`}
               >
                 <CommonSubTitle
                   lineHeight={`1.2`}
