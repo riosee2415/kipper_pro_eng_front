@@ -568,7 +568,7 @@ const MM09Presenter = ({
                         //     : `brightness(80%) opacity(0.7)`
                         // }
                         objectFit={`contain`}
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2Fdrive-03.svg?alt=media&token=8d680327-ac7d-4291-bd43-dbd43c14327f`}
+                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20398.png?alt=media&token=145c178d-a351-496e-9f34-2d00f16679bb`}
                       />
                       <Text
                         fontSize={`9px`}
@@ -592,7 +592,7 @@ const MM09Presenter = ({
                         width={`26px`}
                         height={`14px`}
                         objectFit={`contain`}
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2Fdrive-04.svg?alt=media&token=0c4ce1d6-1a46-4c84-b3cf-82d2af34c2e1`}
+                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20396.png?alt=media&token=73465992-9401-4cd4-b7d3-20faf3c1efb9`}
                       />
                       <Text fontSize={`9px`} fontWeight={`300`}>
                         USB Type-B
