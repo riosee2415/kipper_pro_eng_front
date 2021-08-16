@@ -95,6 +95,7 @@ const MM09Presenter = ({
   //
   width,
   //
+  tokenId,
   currentMenu,
   //
   search,
@@ -1219,55 +1220,60 @@ const MM09Presenter = ({
                 width={`auto`}
                 margin={`0 0 13px`}
               >
-                <Wrapper
-                  width={`auto`}
-                  al={`flex-start`}
-                  margin={`0 30px 0 0`}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  <Text
-                    fontSize={`14px`}
-                    fontWeight={`400`}
-                    letterSpacing={`-0.02em`}
-                    lineHeight={`2.14`}
+                {tokenId && (
+                  <Wrapper
+                    width={`auto`}
+                    al={`flex-start`}
+                    margin={`0 30px 0 0`}
+                    display={width < 900 ? `none` : `flex`}
                   >
-                    MMP
-                  </Text>
-                  {tData && (
                     <Text
-                      fontSize={`22px`}
-                      fontWeight={`800`}
+                      fontSize={`14px`}
+                      fontWeight={`400`}
                       letterSpacing={`-0.02em`}
+                      lineHeight={`2.14`}
                     >
-                      UNIT PRICE
+                      MMP
                     </Text>
-                  )}
-                </Wrapper>
-                <Wrapper width={`auto`} al={`flex-start`}>
-                  <Text
-                    fontSize={width < 900 ? `18px` : `14px`}
-                    fontWeight={`400`}
-                    letterSpacing={`-0.02em`}
-                    lineHeight={`2.14`}
-                  >
-                    $ {pData && pData.price}
-                  </Text>
-                  {tData && pData && (
+                    {tData && (
+                      <Text
+                        fontSize={`22px`}
+                        fontWeight={`800`}
+                        letterSpacing={`-0.02em`}
+                      >
+                        UNIT PRICE
+                      </Text>
+                    )}
+                  </Wrapper>
+                )}
+
+                {tokenId && (
+                  <Wrapper width={`auto`} al={`flex-start`}>
                     <Text
-                      fontSize={`22px`}
-                      fontWeight={`800`}
+                      fontSize={width < 900 ? `18px` : `14px`}
+                      fontWeight={`400`}
                       letterSpacing={`-0.02em`}
+                      lineHeight={`2.14`}
                     >
-                      $&nbsp;
-                      {tData.level === `LEVEL3`
-                        ? pData.vipPrice1
-                        : tData.level === `LEVEL4`
-                        ? pData.vipPrice2
-                        : ``}
-                      &nbsp;
+                      $ {pData && pData.price}
                     </Text>
-                  )}
-                </Wrapper>
+                    {tData && pData && (
+                      <Text
+                        fontSize={`22px`}
+                        fontWeight={`800`}
+                        letterSpacing={`-0.02em`}
+                      >
+                        $&nbsp;
+                        {tData.level === `LEVEL3`
+                          ? pData.vipPrice1
+                          : tData.level === `LEVEL4`
+                          ? pData.vipPrice2
+                          : ``}
+                        &nbsp;
+                      </Text>
+                    )}
+                  </Wrapper>
+                )}
               </Wrapper>
               <Text
                 letterSpacing={`-0.03em`}

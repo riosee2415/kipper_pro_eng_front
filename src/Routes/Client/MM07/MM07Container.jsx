@@ -123,6 +123,8 @@ const MM07Container = ({ history, location }) => {
 
   return (
     <MM07Presenter
+      tokenId={tokenId}
+      //
       search={search}
       arrow={arrow}
       productSubType={productSubType}

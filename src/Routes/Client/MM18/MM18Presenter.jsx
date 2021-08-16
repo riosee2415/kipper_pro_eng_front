@@ -86,6 +86,9 @@ const BoxImage = styled(Wrapper)`
 
 const MM18Presenter = ({
   width,
+  //
+  tokenId,
+  //
   search,
   arrow,
   productSubType,
@@ -589,9 +592,11 @@ const MM18Presenter = ({
                             USD
                           </Text>
                         )}
-                        <Text fontSize={`10px`} color={`#a5a5a5`}>
-                          MMP {data.price}USD
-                        </Text>
+                        {tokenId && (
+                          <Text fontSize={`10px`} color={`#a5a5a5`}>
+                            MMP {data.price}USD
+                          </Text>
+                        )}
                       </Wrapper>
                     </Wrapper>
                   </BoxImage>
