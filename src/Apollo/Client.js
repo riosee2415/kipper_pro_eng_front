@@ -5,7 +5,7 @@ dotenv.config();
 
 const uri =
   process.env.NODE_ENV === "production"
-    ? `https://www.sample.com/graphql`
+    ? `https://www.schoolhealing4.co.kr/graphql`
     : "http://localhost:7068/graphql";
 
 export default new ApolloClient({
