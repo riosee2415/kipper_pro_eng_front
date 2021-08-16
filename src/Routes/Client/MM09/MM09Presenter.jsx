@@ -1219,7 +1219,7 @@ const MM09Presenter = ({
             >
               {tokenId && (
                 <Wrapper
-                  dr={width < 900 ? `column` : `row`}
+                  dr={`row`}
                   ju={width < 900 ? `flex-start` : `center`}
                   width={`auto`}
                   margin={`0 0 11px`}
@@ -1228,10 +1228,10 @@ const MM09Presenter = ({
                     width={`auto`}
                     al={`flex-start`}
                     margin={`0 30px 0 0`}
-                    display={width < 900 ? `none` : `flex`}
+                    // display={width < 900 ? `none` : `flex`}
                   >
                     <Text
-                      fontSize={`14px`}
+                      fontSize={width < 700 ? `18px` : `14px`}
                       fontWeight={`400`}
                       letterSpacing={`-0.02em`}
                     >
@@ -1239,7 +1239,7 @@ const MM09Presenter = ({
                     </Text>
                     {tData && (
                       <Text
-                        fontSize={`22px`}
+                        fontSize={width < 700 ? `22px` : `22px`}
                         lineHeight={`1.2`}
                         fontWeight={`800`}
                         letterSpacing={`-0.02em`}

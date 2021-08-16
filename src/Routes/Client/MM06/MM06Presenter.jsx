@@ -569,11 +569,13 @@ const MM06Presenter = ({
                       {data.mainTitle}
                     </Text>
                     <Wrapper dr={`row`} ju={`space-between`} al={`flex-end`}>
-                      <Text fontSize={`10px`}>{data.keyType}</Text>
+                      <Text fontSize={`10px`} width={width < 700 && `55%`}>
+                        {data.keyType}
+                      </Text>
                       <Wrapper width={`auto`} al={`flex-end`}>
                         {tData && (
                           <Text
-                            fontSize={`15px`}
+                            fontSize={width < 700 ? `10px` : `15px`}
                             color={`#C50000`}
                             lineHeight={`1`}
                             fontWeight={`bold`}
