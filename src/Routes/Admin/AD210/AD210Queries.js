@@ -74,6 +74,7 @@ export const GET_PRODUCT = gql`
       createdAt
       isDelete
       deletedAt
+      sort
     }
   }
 `;
@@ -81,5 +82,11 @@ export const GET_PRODUCT = gql`
 export const DELETE_PRODUCT = gql`
   mutation deleteProduct($id: String!) {
     deleteProduct(id: $id)
+  }
+`;
+
+export const UPDATE_SORT = gql`
+  mutation updateProductSort($id: String!, $sort: Int!) {
+    updateProductSort(id: $id, sort: $sort)
   }
 `;

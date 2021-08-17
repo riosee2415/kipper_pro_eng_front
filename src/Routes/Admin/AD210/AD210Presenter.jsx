@@ -72,6 +72,7 @@ export default ({
   deleteProductHandler,
   moveCreateProductPage,
   moveUpdateProductPage,
+  sortUpdateHandler,
 }) => {
   useTitle("ADMIN | 제품 관리");
 
@@ -159,8 +160,11 @@ export default ({
               <TableHeadColumn width={`45%`} isStart={true}>
                 제품명
               </TableHeadColumn>
-              <TableHeadColumn width={`45%`} isStart={true}>
+              <TableHeadColumn width={`30%`} isStart={true}>
                 모델명
+              </TableHeadColumn>
+              <TableHeadColumn width={`15%`} isStart={true}>
+                정렬
               </TableHeadColumn>
             </TableWrapper>
 
@@ -204,12 +208,33 @@ export default ({
                           </TableHeadColumn>
                           <TableHeadColumn
                             isData={true}
-                            width={`45%`}
+                            width={`30%`}
                             isStart={true}
                             isToday={true}
                             onClick={() => dataClickHandler(data)}
                           >
                             {data.modelName}
+                          </TableHeadColumn>
+                          <TableHeadColumn
+                            isData={true}
+                            width={`15%`}
+                            dr={`row`}
+                            isSvg={true}
+                          >
+                            <TextInput
+                              type={"number"}
+                              width={`50px`}
+                              placeholder={data.sort}
+                              height={`25px`}
+                            />
+                            <CommonButton
+                              kindOf={`update`}
+                              width={`40px`}
+                              height={`25px`}
+                              onClick={(e) => sortUpdateHandler(e, data._id)}
+                            >
+                              적용
+                            </CommonButton>
                           </TableHeadColumn>
                         </TableWrapper>
                       </Fade>
