@@ -141,7 +141,7 @@ export const footerMenus = [
   },
   {
     menuName: "PRO",
-    menuLink: "/usb",
+    menuLink: "/pro",
     subMenus: [
       {
         subMenuName: "USB Physical Security",
@@ -200,17 +200,17 @@ export const footerMenus = [
         subMenuLink: "/info?type=partnership",
       },
       {
-        subMenuName: "How to Business",
+        subMenuName: "How to become a Partner",
         subMenuLink: "/info?type=business",
       },
       {
-        subMenuName: "Where our Partners",
+        subMenuName: "Our Partner Locations",
         subMenuLink: "/info?type=where",
       },
     ],
   },
   {
-    menuName: "IMQUIRY",
+    menuName: "INQUIRY",
     menuLink: "/faq",
     subMenus: [
       {
