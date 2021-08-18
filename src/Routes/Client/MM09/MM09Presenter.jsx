@@ -1520,13 +1520,19 @@ const MM09Presenter = ({
             width={`50%`}
             ju={`flex-start`}
           >
-            <Magnifier
-              mgWidth={350}
-              mgHeight={350}
+            <Wrapper
               height={width < 1100 ? `468px` : `525px`}
-              alt="image"
-              src={currentColorImage && currentColorImage.imagePath}
-            />
+              overflow={`hidden`}
+            >
+              <Magnifier
+                mgWidth={350}
+                mgHeight={350}
+                height={width < 1100 ? `468px` : `525px`}
+                alt="image"
+                zoomFactor={-10}
+                src={currentColorImage && currentColorImage.imagePath}
+              />
+            </Wrapper>
 
             {/* 세미 이미지 리스트 */}
             <Wrapper margin={`20px 0 0`}>
