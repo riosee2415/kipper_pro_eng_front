@@ -228,7 +228,7 @@ const MM17Presenter = ({
         borderBottom={`10px solid ${Theme.greyTheme4_C}`}
       >
         <Image
-          height={width < 700 ? `700px` : `800px`}
+          height={width < 700 ? `600px` : `800px`}
           alt="Background-img"
           src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2F%E1%84%86%E1%85%A1%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%20%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20789.png?alt=media&token=a162cac3-b142-4b9c-9f67-6de2e56dec3c`}
         />
@@ -263,13 +263,13 @@ const MM17Presenter = ({
               >
                 USB Physical Security
               </Text>
-              <Text fontSize={`27px`} fontWeight={`700`}>
+              <Text fontSize={`27px`} lineHeight={`1.2`} fontWeight={`700`}>
                 Ideal combination
               </Text>
-              <Text fontSize={`27px`} fontWeight={`700`}>
+              <Text fontSize={`27px`} lineHeight={`1.2`} fontWeight={`700`}>
                 to perfect
               </Text>
-              <Text fontSize={`27px`} fontWeight={`700`}>
+              <Text fontSize={`27px`} lineHeight={`1.2`} fontWeight={`700`}>
                 the physical security of USB Ports.
               </Text>
             </Wrapper>
@@ -277,7 +277,8 @@ const MM17Presenter = ({
             <Wrapper
               dr={`row`}
               ju={`flex-start`}
-              padding={width < 700 ? `50px 0 0` : `170px 0 0`}
+              al={width < 700 && `flex-start`}
+              padding={width < 700 ? `20px 0 0` : `170px 0 0`}
             >
               <Wrapper
                 dr={`row`}
@@ -288,7 +289,7 @@ const MM17Presenter = ({
                 <Wrapper
                   width={`auto`}
                   al={`flex-end`}
-                  margin={width < 700 ? `120px 30px 0 0` : `70px 30px 0 60px`}
+                  margin={width < 700 ? `100px 30px 0 0` : `70px 30px 0 60px`}
                 >
                   <Image
                     width={width < 700 ? `136px` : `200px`}
@@ -311,8 +312,8 @@ const MM17Presenter = ({
                 <Wrapper
                   width={`auto`}
                   isAbsolute={true}
-                  bottom={width < 900 ? (width < 700 ? `-32%` : `-7%`) : `-15%`}
-                  left={width < 900 ? (width < 700 ? `6%` : `40%`) : `36%`}
+                  bottom={width < 900 ? (width < 700 ? `-34%` : `-7%`) : `-15%`}
+                  left={width < 900 ? (width < 700 ? `25%` : `40%`) : `36%`}
                 >
                   <Image
                     width={width < 900 ? `70px` : `120px`}
@@ -325,7 +326,7 @@ const MM17Presenter = ({
 
               <Wrapper
                 width={`50%`}
-                padding={width < 700 ? `0 0 0 10px` : `0`}
+                padding={width < 700 ? `0 0 0 40px` : `0`}
                 al={`flex-start`}
                 ju={`flex-start`}
               >
@@ -333,12 +334,12 @@ const MM17Presenter = ({
                   width={`auto`}
                   height={`100%`}
                   isAbsolute={true}
-                  top={width < 1100 ? (width < 700 ? `70%` : `35%`) : `30%`}
+                  top={width < 1100 ? (width < 700 ? `56%` : `35%`) : `30%`}
                   right={
                     width < 1100
                       ? width < 900
                         ? width < 700
-                          ? `-60%`
+                          ? `-58%`
                           : `-15%`
                         : `-20%`
                       : `5%`
