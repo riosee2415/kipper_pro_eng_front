@@ -118,6 +118,7 @@ const MM16Presenter = ({
       setGraphValue2(`50%`);
     }
   }, [isFirst]);
+  
   useEffect(() => {
     documentRef.current.addEventListener("scroll", handleScroll);
     return () =>
