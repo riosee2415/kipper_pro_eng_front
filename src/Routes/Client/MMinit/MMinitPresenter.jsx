@@ -527,7 +527,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
               letterSpacing={`-0.2px`}
               fontWeight={`300`}
             >
-              has always been perfect. SmartKeeper
+              has always been perfect. SMARTKEEPER
             </Text>
             <Text
               fontSize={`17px`}
@@ -589,7 +589,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
             padding={`30px 0`}
           >
             <Text fontSize={`20px`} fontWeight={`300`}>
-              SmartKeeper is in constant communications with cybersecurity
+              SMARTKEEPER is in constant communications with cybersecurity
               teams.
             </Text>
             <Text fontSize={`20px`} fontWeight={`300`}>
@@ -614,7 +614,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
             padding={width < 900 ? `30px 0 18px` : `30px 0`}
           >
             <Text fontSize={`17px`} fontWeight={`300`}>
-              SmartKeeper is in constant
+              SMARTKEEPER is in constant
             </Text>
             <Text fontSize={`17px`} fontWeight={`300`}>
               communications with cybersecurity
