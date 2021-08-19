@@ -414,7 +414,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
       <Wrapper
         attachment={`initial`}
         bgPosition={width < 700 && `-590px 0`}
-        height={width < 700 ? `500px` : `auto`}
+        height={`auto`}
         bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FLanding%2Fimage02.png?alt=media&token=af88cb43-aaa3-4161-ae76-f960b4217d35")`}
       >
         <RsWrapper
