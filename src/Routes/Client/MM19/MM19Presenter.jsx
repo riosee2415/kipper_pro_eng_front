@@ -28,7 +28,7 @@ const BoxWrapper = styled(Wrapper)`
   top: 0;
   left: 0;
   height: 100%;
-  background-color: rgb(0, 97, 176);
+  background-color: ${(props) => props.bgColor || `rgb(0, 97, 176)`};
   color: ${(props) => props.theme.white_C};
   align-items: flex-start;
   justify-content: space-between;
@@ -1159,7 +1159,7 @@ const MM19Presenter = ({
                     src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM00%2F%E1%84%90%E1%85%A9%E1%86%BC%E1%84%89%E1%85%B5%E1%86%AB%20%E1%84%82%E1%85%A6%E1%84%90%E1%85%B3%E1%84%8B%E1%85%AF%E1%84%8F%E1%85%B3.png?alt=media&token=55176a7b-2fcc-414f-8a69-29151040c7bc`}
                   />
                 </Wrapper>
-                <BoxWrapper>
+                <BoxWrapper bgColor={`rgb(0, 97, 176)`}>
                   <Wrapper al={`flex-start`}>
                     <Text fontSize={width < 700 && `10px`}>USB</Text>
                     <Wrapper
