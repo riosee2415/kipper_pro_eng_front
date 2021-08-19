@@ -42,7 +42,7 @@ const MM08Container = ({ history, location }) => {
     {
       variables: {
         searchValue: searchValue ? searchValue : inputSearchValue.value,
-        productType: "락키 PRO",
+        productType: "Lock Key PRO",
         productSubType: productSubType.value,
       },
       skip: productSkip,
