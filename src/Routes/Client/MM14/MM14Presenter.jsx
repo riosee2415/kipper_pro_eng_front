@@ -70,15 +70,43 @@ const MM14Presenter = ({
       padding={`0 0 200px`}
     >
       <RsWrapper>
-        <Wrapper padding={width < 900 && `0 0 0 36px`} margin={`160px 0 15px`}>
+        <Wrapper
+          padding={width < 900 && `0 36px`}
+          margin={`160px 0 15px`}
+          al={width < 900 && `flex-start`}
+        >
           <Image
             alt="contact"
             src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ftitle%2FContact%20us.svg?alt=media&token=ba2e1b7a-c77d-4315-8526-53b595f21a12`}
             width={width < 900 ? `164px` : `383px`}
           />
         </Wrapper>
-        <Text fontSize={`18px`} color={Theme.greyTheme7_C}>
+        <Text
+          fontSize={`18px`}
+          color={Theme.greyTheme7_C}
+          display={width < 900 ? `none` : `flex`}
+        >
           Find a SMARTKEEPER distributor near your region
+        </Text>
+        <Text
+          fontSize={`18px`}
+          color={Theme.greyTheme7_C}
+          display={width < 900 ? `flex` : `none`}
+          width={`100%`}
+          textAlign={`left`}
+          padding={width < 900 && `0 36px`}
+        >
+          Find a SMARTKEEPER distributor
+        </Text>
+        <Text
+          width={`100%`}
+          textAlign={`left`}
+          padding={width < 900 && `0 36px 80px`}
+          fontSize={`18px`}
+          color={Theme.greyTheme7_C}
+          display={width < 900 ? `flex` : `none`}
+        >
+          near your region
         </Text>
 
         <Wrapper isRelative={true}>
