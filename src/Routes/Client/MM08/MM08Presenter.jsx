@@ -224,49 +224,6 @@ const MM08Presenter = ({
           {arrow ? (
             <>
               <Wrapper
-                width={`calc((100% - 36px - 36px) / 2)`}
-                cursor={`pointer`}
-                onClick={() => moveLinkHandler(`/computer`)}
-              >
-                <Wrapper width={`80px`}>
-                  <Image
-                    alt="icon"
-                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2Fproduct-icon-06.png?alt=media&token=adae713b-c659-4475-beac-a7c1cd85abab`}
-                    width={`37px`}
-                    height={`37px`}
-                    objectFit={`contain`}
-                    margin={`0 0 5px`}
-                  />
-                </Wrapper>
-                <Text fontSize={`10px`}>Anti-Theft for Computer</Text>
-              </Wrapper>
-              <Wrapper
-                width={`calc((100% - 36px - 36px) / 2)`}
-                cursor={`pointer`}
-                onClick={() => moveLinkHandler(`/lock`)}
-              >
-                <Wrapper width={`80px`}>
-                  <Image
-                    alt="icon"
-                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%85%E1%85%A1%E1%86%A8%E1%84%8F%E1%85%B5-07.svg?alt=media&token=d15e62ca-8c1d-4f50-b494-d1e20466cf78`}
-                    width={`37px`}
-                    height={`37px`}
-                    objectFit={`contain`}
-                    margin={`0 0 5px`}
-                  />
-                </Wrapper>
-                <Text
-                  fontSize={`10px`}
-                  fontWeight={`700`}
-                  color={`rgb(209, 0, 0)`}
-                >
-                  Lock Key PRO
-                </Text>
-              </Wrapper>
-            </>
-          ) : (
-            <>
-              <Wrapper
                 width={`calc((100% - 36px - 36px) / 3)`}
                 cursor={`pointer`}
                 onClick={() => moveLinkHandler(`/usb`)}
@@ -316,6 +273,49 @@ const MM08Presenter = ({
                   />
                 </Wrapper>
                 <Text fontSize={`10px`}>Other Port Security</Text>
+              </Wrapper>
+            </>
+          ) : (
+            <>
+              <Wrapper
+                width={`calc((100% - 36px - 36px) / 2)`}
+                cursor={`pointer`}
+                onClick={() => moveLinkHandler(`/computer`)}
+              >
+                <Wrapper width={`80px`}>
+                  <Image
+                    alt="icon"
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2Fproduct-icon-06.png?alt=media&token=adae713b-c659-4475-beac-a7c1cd85abab`}
+                    width={`37px`}
+                    height={`37px`}
+                    objectFit={`contain`}
+                    margin={`0 0 5px`}
+                  />
+                </Wrapper>
+                <Text fontSize={`10px`}>Anti-Theft for Computer</Text>
+              </Wrapper>
+              <Wrapper
+                width={`calc((100% - 36px - 36px) / 2)`}
+                cursor={`pointer`}
+                onClick={() => moveLinkHandler(`/lock`)}
+              >
+                <Wrapper width={`80px`}>
+                  <Image
+                    alt="icon"
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%85%E1%85%A1%E1%86%A8%E1%84%8F%E1%85%B5-07.svg?alt=media&token=d15e62ca-8c1d-4f50-b494-d1e20466cf78`}
+                    width={`37px`}
+                    height={`37px`}
+                    objectFit={`contain`}
+                    margin={`0 0 5px`}
+                  />
+                </Wrapper>
+                <Text
+                  fontSize={`10px`}
+                  fontWeight={`700`}
+                  color={`rgb(209, 0, 0)`}
+                >
+                  Lock Key PRO
+                </Text>
               </Wrapper>
             </>
           )}

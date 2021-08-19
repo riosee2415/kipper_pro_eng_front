@@ -401,7 +401,7 @@ const MM07Presenter = ({
                     width < 900 ? `calc(100% - 80px)` : `calc(100% - 430px)`
                   }
                   dr={`row`}
-                  ju={width < 900 ? `center` : `space-between`}
+                  ju={width < 900 ? `flex-start` : `space-between`}
                 >
                   {/* <ProductTypeSlider /> */}
                   <Wrapper
@@ -427,7 +427,7 @@ const MM07Presenter = ({
                     width={`auto`}
                     cursor={`pointer`}
                     onClick={() => changeSubTypeHandler(`Input/Output`)}
-                    margin={width < 900 ? `0 0 0 5px` : `0 0 0 110px`}
+                    margin={width < 900 ? `0 0 0 10px` : `0 0 0 110px`}
                   >
                     <Image
                       alt="icon"
@@ -456,7 +456,7 @@ const MM07Presenter = ({
 
                   <Wrapper
                     width={`auto`}
-                    margin={width < 900 ? `0 10px` : `0 80px`}
+                    margin={width < 900 ? `0 20px` : `0 80px`}
                     cursor={`pointer`}
                     onClick={() => changeSubTypeHandler(`Drive/Memory`)}
                   >
@@ -488,7 +488,7 @@ const MM07Presenter = ({
                   <Wrapper
                     width={`auto`}
                     cursor={`pointer`}
-                    margin={width < 900 ? ` 0 5px 0 0` : `0 80px 0 0`}
+                    margin={width < 900 ? ` 0 20px 0 0` : `0 80px 0 0`}
                     onClick={() => changeSubTypeHandler(`Display`)}
                   >
                     <Image
@@ -520,7 +520,7 @@ const MM07Presenter = ({
                     width={`auto`}
                     cursor={`pointer`}
                     onClick={() => changeSubTypeHandler(`Network`)}
-                    margin={width < 900 ? ` 0 10px 0 0` : `0 110px 0 0`}
+                    margin={width < 900 ? `0 10px 0 0` : `0 110px 0 0`}
                   >
                     <Image2
                       alt="icon"
