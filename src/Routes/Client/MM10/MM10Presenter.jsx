@@ -44,6 +44,8 @@ const MM10Presenter = ({
   location,
   history,
   //
+  lDatum,
+  //
   aboutRef,
   historyRef,
   signRef,
@@ -781,6 +783,16 @@ const MM10Presenter = ({
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
+              cursor={`pointer`}
+              onClick={() => {
+                let link = "";
+                lDatum.map((data) => {
+                  if (data.title === "USA") {
+                    link = data.link;
+                  }
+                });
+                window.open(link, "_blank");
+              }}
             >
               USA
             </Wrapper>
@@ -797,6 +809,16 @@ const MM10Presenter = ({
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
+              cursor={`pointer`}
+              onClick={() => {
+                let link = "";
+                lDatum.map((data) => {
+                  if (data.title === "GERMANY") {
+                    link = data.link;
+                  }
+                });
+                window.open(link, "_blank");
+              }}
             >
               GERMANY
             </Wrapper>
@@ -808,6 +830,16 @@ const MM10Presenter = ({
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
+              cursor={`pointer`}
+              onClick={() => {
+                let link = "";
+                lDatum.map((data) => {
+                  if (data.title === "POLAND") {
+                    link = data.link;
+                  }
+                });
+                window.open(link, "_blank");
+              }}
             >
               POLAND
             </Wrapper>
@@ -819,6 +851,16 @@ const MM10Presenter = ({
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
+              cursor={`pointer`}
+              onClick={() => {
+                let link = "";
+                lDatum.map((data) => {
+                  if (data.title === "CZECH REPUBLIC") {
+                    link = data.link;
+                  }
+                });
+                window.open(link, "_blank");
+              }}
             >
               CZECH REPUBLIC
             </Wrapper>
@@ -830,6 +872,16 @@ const MM10Presenter = ({
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
+              cursor={`pointer`}
+              onClick={() => {
+                let link = "";
+                lDatum.map((data) => {
+                  if (data.title === "SLOVAKIA") {
+                    link = data.link;
+                  }
+                });
+                window.open(link, "_blank");
+              }}
             >
               SLOVAKIA
             </Wrapper>
@@ -842,6 +894,16 @@ const MM10Presenter = ({
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
+              cursor={`pointer`}
+              onClick={() => {
+                let link = "";
+                lDatum.map((data) => {
+                  if (data.title === "SWEDEN") {
+                    link = data.link;
+                  }
+                });
+                window.open(link, "_blank");
+              }}
             >
               SWEDEN
             </Wrapper>
@@ -853,6 +915,16 @@ const MM10Presenter = ({
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
+              cursor={`pointer`}
+              onClick={() => {
+                let link = "";
+                lDatum.map((data) => {
+                  if (data.title === "HUNGARY") {
+                    link = data.link;
+                  }
+                });
+                window.open(link, "_blank");
+              }}
             >
               HUNGARY
             </Wrapper>
@@ -864,6 +936,16 @@ const MM10Presenter = ({
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
+              cursor={`pointer`}
+              onClick={() => {
+                let link = "";
+                lDatum.map((data) => {
+                  if (data.title === "NORWAY") {
+                    link = data.link;
+                  }
+                });
+                window.open(link, "_blank");
+              }}
             >
               NORWAY
             </Wrapper>
@@ -880,6 +962,16 @@ const MM10Presenter = ({
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
+              cursor={`pointer`}
+              onClick={() => {
+                let link = "";
+                lDatum.map((data) => {
+                  if (data.title === "CHINA") {
+                    link = data.link;
+                  }
+                });
+                window.open(link, "_blank");
+              }}
             >
               CHINA
             </Wrapper>
@@ -890,6 +982,16 @@ const MM10Presenter = ({
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
+              cursor={`pointer`}
+              onClick={() => {
+                let link = "";
+                lDatum.map((data) => {
+                  if (data.title === "JAPAN") {
+                    link = data.link;
+                  }
+                });
+                window.open(link, "_blank");
+              }}
             >
               JAPAN
             </Wrapper>
@@ -900,6 +1002,16 @@ const MM10Presenter = ({
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
+              cursor={`pointer`}
+              onClick={() => {
+                let link = "";
+                lDatum.map((data) => {
+                  if (data.title === "SINGAPORE") {
+                    link = data.link;
+                  }
+                });
+                window.open(link, "_blank");
+              }}
             >
               SINGAPORE
             </Wrapper>
@@ -910,6 +1022,16 @@ const MM10Presenter = ({
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
+              cursor={`pointer`}
+              onClick={() => {
+                let link = "";
+                lDatum.map((data) => {
+                  if (data.title === "INDIA") {
+                    link = data.link;
+                  }
+                });
+                window.open(link, "_blank");
+              }}
             >
               INDIA
             </Wrapper>
@@ -922,6 +1044,16 @@ const MM10Presenter = ({
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
+              cursor={`pointer`}
+              onClick={() => {
+                let link = "";
+                lDatum.map((data) => {
+                  if (data.title === "VIETNAM") {
+                    link = data.link;
+                  }
+                });
+                window.open(link, "_blank");
+              }}
             >
               VIETNAM
             </Wrapper>
@@ -932,6 +1064,16 @@ const MM10Presenter = ({
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
+              cursor={`pointer`}
+              onClick={() => {
+                let link = "";
+                lDatum.map((data) => {
+                  if (data.title === "PHILIPPINES") {
+                    link = data.link;
+                  }
+                });
+                window.open(link, "_blank");
+              }}
             >
               PHILIPPINES
             </Wrapper>
@@ -942,6 +1084,16 @@ const MM10Presenter = ({
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
+              cursor={`pointer`}
+              onClick={() => {
+                let link = "";
+                lDatum.map((data) => {
+                  if (data.title === "MALAYSIA") {
+                    link = data.link;
+                  }
+                });
+                window.open(link, "_blank");
+              }}
             >
               MALAYSIA
             </Wrapper>
@@ -952,6 +1104,16 @@ const MM10Presenter = ({
               al={`flex-start`}
               fontSize={`20px`}
               fontWeight={`500`}
+              cursor={`pointer`}
+              onClick={() => {
+                let link = "";
+                lDatum.map((data) => {
+                  if (data.title === "THAILAND") {
+                    link = data.link;
+                  }
+                });
+                window.open(link, "_blank");
+              }}
             >
               THAILAND
             </Wrapper>

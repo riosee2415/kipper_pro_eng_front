@@ -46,11 +46,8 @@ const MM09Container = ({ history, location, match }) => {
 
   ///////////// - EVENT HANDLER- ////////////
   const searchToggle = () => {
-    if (!search) {
-      setSearchValue(null);
-    }
-
     setSearch(!search);
+    inputSearchValue.setValue("");
   };
 
   const arrowToggle = () => {
@@ -130,6 +127,15 @@ const MM09Container = ({ history, location, match }) => {
       })();
     }
   }, [currentColor]);
+
+  useEffect(() => {
+    if (
+      location.pathname.includes("/computer") ||
+      location.pathname.includes("/lock")
+    ) {
+      setArrow(true);
+    }
+  }, [location.pathname]);
 
   return (
     <MM09Presenter

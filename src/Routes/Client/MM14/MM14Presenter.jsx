@@ -113,26 +113,37 @@ const MM14Presenter = ({
                     />
                   </Dot>
                 ) : (
-                  <Wrapper
-                    isAbsolute={true}
-                    width={`370px`}
-                    top={`0px`}
-                    left={`0px`}
-                    dr={`row`}
-                    ju={`space-between`}
-                    al={`flex-start`}
-                    onClick={() => setAbleIcon(null)}
-                  >
-                    <Image src={data.src} width={`50px`} height={`50px`} />
-                    <Image
-                      src={data.info}
-                      width={`300px`}
-                      isFixed={width < 900 ? true : false}
-                      top={width < 900 ? `52%` : ``}
-                      transform={width < 900 ? `translateX(-50%)` : ``}
-                      left={width < 900 ? `50%` : ``}
-                    />
-                  </Wrapper>
+                  <>
+                    <Wrapper
+                      width={`100%`}
+                      height={`100%`}
+                      isFixed={true}
+                      bgColor={`rgba(0,0,0,0.4)`}
+                      top={`0`}
+                      left={`0`}
+                      onClick={() => setAbleIcon(null)}
+                    ></Wrapper>
+                    <Wrapper
+                      isAbsolute={true}
+                      width={`370px`}
+                      top={`0px`}
+                      left={`0px`}
+                      dr={`row`}
+                      ju={`space-between`}
+                      al={`flex-start`}
+                      onClick={() => setAbleIcon(null)}
+                    >
+                      <Image src={data.src} width={`50px`} height={`50px`} />
+                      <Image
+                        src={data.info}
+                        width={`300px`}
+                        isFixed={width < 900 ? true : false}
+                        top={width < 900 ? `52%` : ``}
+                        transform={width < 900 ? `translateX(-50%)` : ``}
+                        left={width < 900 ? `50%` : ``}
+                      />
+                    </Wrapper>
+                  </>
                 )}
               </Wrapper>
             );
