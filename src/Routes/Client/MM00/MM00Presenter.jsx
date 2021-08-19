@@ -288,7 +288,7 @@ const MM00Presenter = ({
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.white_C}
                 fontSize={`20px`}
-                lineHeight={`1.1`}
+                lineHeight={`1.4`}
                 fontWeight={`700`}
               >
                 The ability to manage
@@ -299,7 +299,7 @@ const MM00Presenter = ({
                 color={Theme.white_C}
                 fontWeight={`700`}
                 fontSize={`20px`}
-                lineHeight={`1.1`}
+                lineHeight={`1.4`}
               >
                 everything with ONE key.
               </Text>
@@ -308,7 +308,7 @@ const MM00Presenter = ({
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.greyTheme6_C}
                 fontSize={`20px`}
-                lineHeight={`1.1`}
+                lineHeight={`1.4`}
                 fontWeight={`700`}
               >
                 A cyber security system that can be used safely on numerous
@@ -318,7 +318,7 @@ const MM00Presenter = ({
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.greyTheme6_C}
                 fontSize={`20px`}
-                lineHeight={`1.1`}
+                lineHeight={`1.4`}
                 fontWeight={`700`}
               >
                 with confidential key patterns. SMARTKEEPER is the physical
@@ -327,7 +327,7 @@ const MM00Presenter = ({
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.greyTheme6_C}
                 fontSize={`20px`}
-                lineHeight={`1.1`}
+                lineHeight={`1.4`}
                 fontWeight={`700`}
               >
                 cybersecurity
@@ -336,7 +336,7 @@ const MM00Presenter = ({
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.greyTheme6_C}
                 fontSize={`20px`}
-                lineHeight={`1.1`}
+                lineHeight={`1.4`}
                 fontWeight={`700`}
               >
                 system chosen by leaders and professionals of 3,000+
@@ -345,7 +345,7 @@ const MM00Presenter = ({
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.greyTheme6_C}
                 fontSize={`20px`}
-                lineHeight={`1.1`}
+                lineHeight={`1.4`}
                 fontWeight={`700`}
               >
                 sites worldwide fro a wide range of industries.
