@@ -19,6 +19,7 @@ const MM06Container = ({ history, location }) => {
   ////////////// - USE STATE- ///////////////
   const [search, setSearch] = useState(false);
   const [arrow, setArrow] = useState(false);
+  const [searchValue, setSearchValue] = useState(null);
 
   const [productViewDatum, setProductViewDatum] = useState(null);
 
@@ -40,7 +41,7 @@ const MM06Container = ({ history, location }) => {
     GET_PRODUCT_LIST_BY_TYPE,
     {
       variables: {
-        searchValue: inputSearchValue.value,
+        searchValue: searchValue ? searchValue : inputSearchValue.value,
         productType: "컴퓨터 물리보안",
         productSubType: productSubType.value,
       },
@@ -52,6 +53,10 @@ const MM06Container = ({ history, location }) => {
 
   ///////////// - EVENT HANDLER- ////////////
   const searchToggle = () => {
+    if (!search) {
+      setSearchValue(null);
+    }
+
     setSearch(!search);
   };
 
@@ -86,6 +91,10 @@ const MM06Container = ({ history, location }) => {
   ////////////// - USE EFFECT- //////////////
 
   useEffect(() => {
+    inputSearchValue.setValue("");
+  }, [search]);
+
+  useEffect(() => {
     scroll.scrollTo(0);
 
     if (tokenId) tRefetch();
@@ -106,9 +115,9 @@ const MM06Container = ({ history, location }) => {
     }
 
     if (query.search) {
-      inputSearchValue.setValue(query.search);
+      setSearchValue(query.search);
     } else {
-      inputSearchValue.setValue("");
+      setSearchValue(null);
     }
 
     setTimeout(() => {

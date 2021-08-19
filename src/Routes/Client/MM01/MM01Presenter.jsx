@@ -32,6 +32,7 @@ const Title = styled.h1`
   color: ${(props) => props.theme.white_C};
   line-height: 1.3;
   display: ${(props) => props.display};
+  opacity: ${(props) => props.opacity};
 
   @media (max-width: 900px) {
     font-size: ${(props) => props.fontSize || `27px`};
@@ -131,6 +132,7 @@ const MM01Presenter = ({
   const [isCheck1, setIsCheck1] = useState(false);
   const [isCheck2, setIsCheck2] = useState(false);
   const [isCheck3, setIsCheck3] = useState(false);
+  const [isCheck4, setIsCheck4] = useState(false);
 
   const handleScroll = () => {
     const { pageYOffset } = window;

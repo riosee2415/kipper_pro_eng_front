@@ -49,6 +49,7 @@ const MM10Container = ({ history, location }) => {
   return (
     <MM10Presenter
       location={location}
+      history={history}
       //
       aboutRef={aboutRef}
       historyRef={historyRef}
