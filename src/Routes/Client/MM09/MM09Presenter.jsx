@@ -1417,7 +1417,6 @@ const MM09Presenter = ({
                   value={pData.productContent}
                   fontSize={width < 700 ? `16px` : `18px`}
                   fontWeight={`400`}
-                  color={Theme.greyTheme3_C}
                 />
               )}
 
@@ -2079,7 +2078,6 @@ const MM09Presenter = ({
                       value={pData.specDetailContent1}
                       fontSize={width < 700 ? `18px` : `15px`}
                       fontWeight={`400`}
-                      color={Theme.greyTheme3_C}
                       textAlign={`center`}
                     />
                   )}
@@ -2131,7 +2129,6 @@ const MM09Presenter = ({
                       value={pData.specDetailContent2}
                       fontSize={width < 700 ? `18px` : `15px`}
                       fontWeight={`400`}
-                      color={Theme.greyTheme3_C}
                       textAlign={`center`}
                     />
                   )}
@@ -2186,7 +2183,6 @@ const MM09Presenter = ({
                       value={pData.specDetailContent3}
                       fontSize={width < 700 ? `18px` : `15px`}
                       fontWeight={`400`}
-                      color={Theme.greyTheme3_C}
                       textAlign={`center`}
                     />
                   )}
@@ -2302,7 +2298,6 @@ const MM09Presenter = ({
                     padding={`0 36px 0`}
                     fontSize={`18px`}
                     fontWeight={`400`}
-                    color={Theme.greyTheme3_C}
                     textAlign={`center`}
                   />
                 )}
@@ -2356,7 +2351,6 @@ const MM09Presenter = ({
                     padding={`0 36px 0`}
                     fontSize={`18px`}
                     fontWeight={`400`}
-                    color={Theme.greyTheme3_C}
                     textAlign={`center`}
                   />
                 )}
@@ -2410,7 +2404,6 @@ const MM09Presenter = ({
                     padding={`0 36px 0`}
                     fontSize={`18px`}
                     fontWeight={`400`}
-                    color={Theme.greyTheme3_C}
                     textAlign={`center`}
                   />
                 )}
