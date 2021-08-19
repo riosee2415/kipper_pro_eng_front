@@ -262,7 +262,6 @@ export default ({ history }) => {
           });
         });
       setDataList(scvData);
-      console.log(scvData);
     }
   }, [nDatum]);
 

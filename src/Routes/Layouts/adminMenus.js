@@ -130,6 +130,15 @@ export const allMenus = [
       },
     ],
   },
+  {
+    menuName: "LOCATION 관리",
+    subMenu: [
+      {
+        subMenuName: "LOCATION 리스트/수정",
+        subMenuLink: "/admin/locationManagement",
+      },
+    ],
+  },
   // {
   //   menuName: "EXHIBITION 관리",
   //   subMenu: [
