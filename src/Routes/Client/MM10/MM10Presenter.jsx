@@ -42,6 +42,7 @@ const MM10Presenter = ({
   width,
   //
   location,
+  history,
   //
   aboutRef,
   historyRef,
@@ -56,12 +57,15 @@ const MM10Presenter = ({
 
     if (query.type === "partnership") {
       scroll.scrollTo(aboutRef.current.offsetTop);
+      history.push("/info");
     }
     if (query.type === "business") {
       scroll.scrollTo(historyRef.current.offsetTop);
+      history.push("/info");
     }
     if (query.type === "where") {
       scroll.scrollTo(signRef.current.offsetTop);
+      history.push("/info");
     }
   }, [location.search]);
 
