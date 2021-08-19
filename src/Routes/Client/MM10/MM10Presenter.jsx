@@ -435,7 +435,11 @@ const MM10Presenter = ({
                 al={`flex-start`}
                 ju={`flex-start`}
               >
-                <Gotham
+                <Image
+                  margin={`9px 0 0`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM10%2FDifferent%20level%20of%20network%20security_proven%20by%20countless%20customers%202.svg?alt=media&token=17fdc991-d7ba-471f-9ed0-effa42815952`}
+                />
+                {/* <Gotham
                   color={Theme.greyTheme7_C}
                   fontSize={`50px`}
                   fontWeight={`700`}
@@ -468,11 +472,11 @@ const MM10Presenter = ({
                   fontWeight={`400`}
                 >
                   customers :
-                </Gotham>
+                </Gotham> */}
 
                 <Wrapper
                   display={width < 900 ? `flex` : `none`}
-                  padding={`20px 35px 20px 0`}
+                  padding={`20px 0`}
                 >
                   <Image
                     src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM10%2F%E1%84%87%E1%85%B5%E1%84%8C%E1%85%B3%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-2.png?alt=media&token=35063d90-a0cf-416f-81c2-fb71796d880c`}
