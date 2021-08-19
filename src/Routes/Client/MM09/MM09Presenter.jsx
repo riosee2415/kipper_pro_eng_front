@@ -1120,11 +1120,16 @@ const MM09Presenter = ({
         >
           {/* mobile */}
           <Wrapper display={width < 900 ? `flex` : `none`} ju={`flex-start`}>
-            <Magnifier
+            <Wrapper
               height={width < 700 ? `230px` : `468px`}
-              alt="image"
-              src={currentColorImage && currentColorImage.imagePath}
-            />
+              overflow={`hidden`}
+            >
+              <Magnifier
+                height={width < 700 ? `230px` : `468px`}
+                alt="image"
+                src={currentColorImage && currentColorImage.imagePath}
+              />
+            </Wrapper>
 
             {/* 세미 이미지 리스트 */}
             <Wrapper margin={`17px 0 0`}>

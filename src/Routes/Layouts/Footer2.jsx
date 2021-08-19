@@ -348,18 +348,39 @@ const Footer = ({ width, location }) => {
                     {subToggle[activeIndex] &&
                       menu.subMenus.map((sub, idx) => {
                         return (
-                          <Link key={idx} to={`${sub.subMenuLink}`}>
-                            <Wrapper
-                              width={`auto`}
-                              margin={`0 0 20px`}
-                              al={`flex-start`}
-                              fontSize={`11px`}
-                              fontWeight={`300`}
-                              color={Theme.greyTheme1_C}
-                            >
-                              {sub.subMenuName}
-                            </Wrapper>
-                          </Link>
+                          <Fragment key={idx}>
+                            {sub.isEx === true ? (
+                              <ATag
+                                width={`auto`}
+                                href={`${sub.subMenuLink}`}
+                                target="_blank"
+                              >
+                                <Wrapper
+                                  width={`auto`}
+                                  margin={`0 0 20px`}
+                                  al={`flex-start`}
+                                  fontSize={`11px`}
+                                  fontWeight={`300`}
+                                  color={Theme.greyTheme1_C}
+                                >
+                                  {sub.subMenuName}
+                                </Wrapper>
+                              </ATag>
+                            ) : (
+                              <Link key={idx} to={`${sub.subMenuLink}`}>
+                                <Wrapper
+                                  width={`auto`}
+                                  margin={`0 0 20px`}
+                                  al={`flex-start`}
+                                  fontSize={`11px`}
+                                  fontWeight={`300`}
+                                  color={Theme.greyTheme1_C}
+                                >
+                                  {sub.subMenuName}
+                                </Wrapper>
+                              </Link>
+                            )}
+                          </Fragment>
                         );
                       })}
                   </Wrapper>
