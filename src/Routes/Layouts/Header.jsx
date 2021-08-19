@@ -513,7 +513,10 @@ const Header = ({ history, width, match }) => {
                             {menu.subMenus.map((data, idx) => {
                               return (
                                 <Bounce key={idx} delay={idx * 100}>
-                                  <Link to={`${data.subMenuLink}`}>
+                                  <Link
+                                    to={`${data.subMenuLink}`}
+                                    onClick={mobileMenuToggle}
+                                  >
                                     <Wrapper
                                       fontSize={`11px`}
                                       color={`rgb(161, 161, 166)`}
