@@ -116,7 +116,6 @@ const MM16Presenter = ({
 
       setGraphValue(`85%`);
       setGraphValue2(`50%`);
-      console.log(width);
     }
   }, [isFirst]);
   useEffect(() => {
