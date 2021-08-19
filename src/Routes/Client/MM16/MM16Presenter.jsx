@@ -114,8 +114,8 @@ const MM16Presenter = ({
         setIsCheck(true);
       }, 4000);
 
-      setGraphValue(width < 700 ? `64%` : `85%`);
-      setGraphValue2(width < 700 ? `30%` : `50%`);
+      setGraphValue(`85%`);
+      setGraphValue2(`50%`);
       console.log(width);
     }
   }, [isFirst]);
@@ -228,6 +228,7 @@ const MM16Presenter = ({
                   <Text fontSize={`18px`}>Leakage</Text>
                   <Text fontSize={`18px`}>Cost</Text>
                 </Wrapper>
+
                 <GraphWrapper
                   width={graphValue}
                   bgColor={Theme.basicTheme_C}
@@ -263,6 +264,7 @@ const MM16Presenter = ({
                   <Text fontSize={`18px`}>Processign</Text>
                   <Text fontSize={`18px`}>Cost</Text>
                 </Wrapper>
+
                 <GraphWrapper
                   width={graphValue2}
                   bgColor={Theme.white_C}
@@ -945,12 +947,7 @@ const MM16Presenter = ({
             </Text>
 
             <Wrapper al={`flex-start`} padding={`0 0 0 36px`}>
-              <Text
-                fontSize={`12px`}
-                color={Theme.white_C}
-                fontWeight={`700`}
-                margin={`0 0 0 67px`}
-              >
+              <Text fontSize={`12px`} color={Theme.white_C} fontWeight={`700`}>
                 {isCheck ? `2018` : `2017`}
               </Text>
 
@@ -958,13 +955,11 @@ const MM16Presenter = ({
                 <Wrapper
                   fontSize={`12px`}
                   color={Theme.white_C}
-                  margin={`0 10px 0 0`}
-                  width={`67px`}
-                  textAlign={`right`}
-                  al={`flex-end`}
+                  width={`100%`}
+                  al={`flex-start`}
+                  margin={`0 0 5px`}
                 >
-                  <Text>Leakage</Text>
-                  <Text>Cost</Text>
+                  Leakage Cost
                 </Wrapper>
                 <GraphWrapper
                   width={graphValue}
@@ -994,14 +989,12 @@ const MM16Presenter = ({
                 <Wrapper
                   fontSize={`12px`}
                   color={Theme.white_C}
-                  margin={`0 10px 0 0`}
-                  width={`67px`}
-                  textAlign={`right`}
-                  al={`flex-end`}
+                  width={`100%`}
+                  textAlign={`left`}
+                  al={`flex-start`}
+                  margin={`0 0 5px`}
                 >
-                  <Text>Follow-up</Text>
-                  <Text>Processign</Text>
-                  <Text>Cost</Text>
+                  Follow-up Processign Cost
                 </Wrapper>
                 <GraphWrapper
                   width={graphValue2}
@@ -1094,7 +1087,7 @@ const MM16Presenter = ({
           fontWeight={`700`}
           fontSize={`27px`}
           color={Theme.subTheme3_C}
-          margin={`0`}
+          margin={`5px 0`}
         >
           Removable data storage
         </CommonSubTitle>
@@ -1109,7 +1102,7 @@ const MM16Presenter = ({
         <CommonSubTitle
           fontWeight={`700`}
           fontSize={`27px`}
-          margin={`0`}
+          margin={`5px 0 0`}
           color={Theme.white_C}
         >
           to security
@@ -1125,16 +1118,36 @@ const MM16Presenter = ({
           <Text color={Theme.white_C} fontSize={`16px`}>
             Malware Intrusion and Data Leak
           </Text>
-          <Text fontSize={`25px`} color={Theme.subTheme3_C} fontWeight={`700`}>
+          <Text
+            fontSize={`25px`}
+            lineHeight={`1.2`}
+            color={Theme.subTheme3_C}
+            fontWeight={`700`}
+          >
             How many people 
           </Text>
-          <Text fontSize={`25px`} color={Theme.white_C} fontWeight={`700`}>
+          <Text
+            fontSize={`25px`}
+            lineHeight={`1.2`}
+            color={Theme.white_C}
+            fontWeight={`700`}
+          >
             would plug in a USB drive
           </Text>
-          <Text fontSize={`25px`} color={Theme.white_C} fontWeight={`700`}>
+          <Text
+            fontSize={`25px`}
+            lineHeight={`1.2`}
+            color={Theme.white_C}
+            fontWeight={`700`}
+          >
             that they picked up
           </Text>
-          <Text fontSize={`25px`} color={Theme.white_C} fontWeight={`700`}>
+          <Text
+            fontSize={`25px`}
+            lineHeight={`1.2`}
+            color={Theme.white_C}
+            fontWeight={`700`}
+          >
             on the street?
           </Text>
 
@@ -1302,18 +1315,24 @@ const MM16Presenter = ({
               but all other open data ports were equally vulnerable.
             </Text>
 
-            <Wrapper
-              margin={`10px 0 0`}
-              color={Theme.subTheme2_C}
-              dr={`row`}
+            <ATag
               width={`auto`}
+              href="https://arstechnica.com/information-technology/2013/01/two-us-power-plants-infected-with-malware-spread-via-usb-drive/"
+              target="_blank"
             >
-              <Text fontSize={`14px`} fontWeight={`700`}>
-                See articles
-              </Text>
+              <Wrapper
+                margin={`10px 0 0`}
+                color={Theme.subTheme2_C}
+                dr={`row`}
+                width={`auto`}
+              >
+                <Text fontSize={`14px`} fontWeight={`700`}>
+                  See articles
+                </Text>
 
-              <RiArrowRightSLine size={`20`} />
-            </Wrapper>
+                <RiArrowRightSLine size={`20`} />
+              </Wrapper>
+            </ATag>
           </Wrapper>
 
           <Text
@@ -1471,12 +1490,18 @@ const MM16Presenter = ({
               Killer on his school system, causing $58,000 in damage.
             </Text>
 
-            <Wrapper color={Theme.subTheme2_C} dr={`row`} width={`auto`}>
-              <Text fontSize={`14px`} fontWeight={`700`}>
-                Read More
-              </Text>
-              <RiArrowRightSLine size={`20`} />
-            </Wrapper>
+            <ATag
+              width={`auto`}
+              href="https://www.theverge.com/2019/4/17/18412427/college-saint-rose-student-guilty-usb-killerdestroyed-computers"
+              target="_blank"
+            >
+              <Wrapper color={Theme.subTheme2_C} dr={`row`} width={`auto`}>
+                <Text fontSize={`14px`} fontWeight={`700`}>
+                  Read More
+                </Text>
+                <RiArrowRightSLine size={`20`} />
+              </Wrapper>
+            </ATag>
           </Wrapper>
 
           <Wrapper
