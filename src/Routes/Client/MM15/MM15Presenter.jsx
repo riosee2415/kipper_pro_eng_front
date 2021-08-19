@@ -103,8 +103,9 @@ const Box = styled(Wrapper)`
   }
 
   @media (max-width: 700px) {
-    height: 163px;
+    height: 190px;
     padding: 10px 5px;
+    justify-content: space-between;
   }
 `;
 
@@ -269,27 +270,28 @@ const MM15Presenter = ({
                   rDatum.map((data) => {
                     return (
                       <Box>
-                        <Wrapper
-                          overflow={`hidden`}
-                          padding={width < 700 ? `5px 0` : `17px 0`}
-                        >
-                          <Image
-                            height={width < 700 ? `56px` : `115px`}
-                            src={data.thumbnailPath}
-                            objectFit={`contain`}
-                          />
-                        </Wrapper>
+                        <Wrapper>
+                          <Wrapper
+                            overflow={`hidden`}
+                            padding={width < 700 ? `5px 0` : `17px 0`}
+                          >
+                            <Image
+                              height={width < 700 ? `56px` : `115px`}
+                              src={data.thumbnailPath}
+                              objectFit={`contain`}
+                            />
+                          </Wrapper>
 
-                        <Wrapper
-                          borderBottom={`1px solid ${Theme.greyTheme9_C}`}
-                          color={Theme.greyTheme7_C}
-                          fontSize={`10px`}
-                          al={`flex-end`}
-                          padding={`0 0 4px`}
-                        >
-                          {data.content}
+                          <Wrapper
+                            borderBottom={`1px solid ${Theme.greyTheme9_C}`}
+                            color={Theme.greyTheme7_C}
+                            fontSize={`10px`}
+                            al={`flex-end`}
+                            padding={`0 0 4px`}
+                          >
+                            {data.content}
+                          </Wrapper>
                         </Wrapper>
-
                         <Wrapper al={`flex-start`}>
                           <Text
                             isEllipsis={true}
