@@ -308,7 +308,7 @@ const Header = ({ location, width, match }) => {
       </Wrapper>
       <MobileHeader>
         <Wrapper dr={`row`} ju={`space-between`}>
-          <Wrapper width={`80px`} al={`flex-start`}>
+          <Wrapper width={`100px`} al={`flex-start`}>
             {mobileMenuOpen ? (
               <AiOutlineClose onClick={mobileMenuToggle} />
             ) : (
@@ -323,7 +323,7 @@ const Header = ({ location, width, match }) => {
               />
             </Link>
           </Logo>
-          <Wrapper width={`80px`} dr={`row`} ju={`flex-end`}>
+          <Wrapper width={`100px`} dr={`row`} ju={`flex-end`}>
             <Link to="/pro">
               <ToggleBtn>PRO</ToggleBtn>
             </Link>
