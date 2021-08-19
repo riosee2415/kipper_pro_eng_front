@@ -148,19 +148,19 @@ export const allMenus = [
   //     },
   //   ],
   // },
-  // {
-  //   menuName: "자료실 관리",
-  //   subMenu: [
-  //     {
-  //       subMenuName: "제품 사용설명서 관리",
-  //       subMenuLink: "/admin/referenceManagement",
-  //     },
-  //     {
-  //       subMenuName: "카탈로그 관리",
-  //       subMenuLink: "/admin/catalogueManagement",
-  //     },
-  //   ],
-  // },
+  {
+    menuName: "자료실 관리",
+    subMenu: [
+      {
+        subMenuName: "제품 사용설명서 관리",
+        subMenuLink: "/admin/referenceManagement",
+      },
+      {
+        subMenuName: "카탈로그 관리",
+        subMenuLink: "/admin/catalogueManagement",
+      },
+    ],
+  },
   {
     menuName: "FAQ 관리",
     subMenu: [
