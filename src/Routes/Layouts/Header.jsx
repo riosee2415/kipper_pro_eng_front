@@ -147,7 +147,7 @@ const ToggleBtn = styled.button`
 
   @media (max-width: 800px) {
     width: auto;
-    padding: 0 11px;
+    padding: 0 10px;
   }
 `;
 

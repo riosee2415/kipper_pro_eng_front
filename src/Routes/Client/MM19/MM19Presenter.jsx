@@ -85,6 +85,11 @@ const Box = styled(Wrapper)`
     &:hover .mobile {
       display: flex;
       transition: 0.6s;
+      height: 100%;
+
+      & img {
+        height: 100%;
+      }
     }
   }
 `;
@@ -479,7 +484,7 @@ const MM19Presenter = ({
                     <Text
                       color={Theme.essGrey3_C}
                       fontSize={width < 700 ? `16px` : `20px`}
-                      fontWeight={`500`}
+                      fontWeight={`700`}
                     >
                       RJ45 Port Lock
                     </Text>
@@ -631,7 +636,7 @@ const MM19Presenter = ({
                       <Button dr={`row`} margin={`20px 0 0`}>
                         <Text
                           fontSize={width < 700 ? `14px` : `16px`}
-                          fontWeight={`500`}
+                          fontWeight={`700`}
                         >
                           See more about RJ45 Port Lock
                         </Text>
@@ -679,7 +684,7 @@ const MM19Presenter = ({
                     <Text
                       color={Theme.essGrey3_C}
                       fontSize={width < 700 ? `16px` : `20px`}
-                      fontWeight={`500`}
+                      fontWeight={`700`}
                     >
                       Lock Key Basic
                     </Text>
@@ -790,7 +795,7 @@ const MM19Presenter = ({
                       >
                         <Text
                           fontSize={width < 700 ? `14px` : `16px`}
-                          fontWeight={`500`}
+                          fontWeight={`700`}
                         >
                           See more about Lock Key Basic
                         </Text>
