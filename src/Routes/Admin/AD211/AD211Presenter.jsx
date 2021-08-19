@@ -2308,7 +2308,7 @@ export default ({
         <DataWrapper>
           <Combo {...currentColor}>
             <ComboOption value={``}>--선택--</ComboOption>
-            <ComboOption value={`레드`}>레드</ComboOption>
+            <ComboOption value={`Red`}>레드</ComboOption>
             <ComboOption value={`없음`}>없음</ComboOption>
           </Combo>
         </DataWrapper>
