@@ -794,7 +794,7 @@ const MM00Presenter = ({
               : `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16_modify%2FGLOBAL_SMARTKEEPER-POR-ALL-set_Large.jpg?alt=media&token=474cf650-f4cb-4fc4-9b01-71f0885bea80")`
           }
           bgSize={width < 700 && `100%`}
-          bgPosition={width < 700 ? `0 100px` : ``}
+          bgPosition={width < 700 ? `0 100px` : `bottom`}
         >
           {/* <Wrapper
             display={width < 700 ? `flex` : `none`}
