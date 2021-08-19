@@ -95,7 +95,7 @@ export const essmMenus = [
     menuLink: "https://schoolhealing7.co.kr/#/product",
   },
   {
-    menuName: "Lock Key ESS",
+    menuName: "Lock Key ESSENTIAL",
     menuLink: "https://schoolhealing7.co.kr/#/lock",
   },
 ];

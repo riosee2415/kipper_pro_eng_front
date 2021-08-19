@@ -307,8 +307,8 @@ const MM05Presenter = ({
       >
         <Image
           isAbsolute={true}
-          top={width < 700 ? `20%` : `33%`}
-          right={width < 700 ? `10%` : `16%`}
+          top={width < 700 ? `20%` : `37.5%`}
+          right={width < 700 ? `10%` : `19%`}
           width={width < 900 ? (width < 700 ? `130px` : `200px`) : `400px`}
           alt="Network Port Lock01"
           src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2FNetwork%20Port%20Lock0${image}.png?alt=media&token=7523599c-2077-4af2-9a3a-07b54f670e72`}

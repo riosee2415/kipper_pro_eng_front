@@ -276,7 +276,7 @@ const Header = ({ location, width, match }) => {
                           }
                           href={`${menu.menuLink}`}
                         >
-                          <Wrapper width={`120px`} al={`flex-start`}>
+                          <Wrapper width={`140px`} al={`flex-start`}>
                             {menu.menuName}
                           </Wrapper>
                         </ATag>
