@@ -376,11 +376,15 @@ export default ({
         <DataWrapper>
           <Combo {...keyTypeInput} width={`200px`}>
             <ComboOption value={``}>--전체--</ComboOption>
-            <ComboOption value={`유니버셜 락키`}>유니버셜 락키</ComboOption>
-            <ComboOption value={`미니용키`}>미니용키</ComboOption>
-            <ComboOption value={`별도키`}>별도키</ComboOption>
-            <ComboOption value={`다이얼`}>다이얼</ComboOption>
-            <ComboOption value={`키 불필요 제품`}>키 불필요 제품</ComboOption>
+            <ComboOption value={`Universial Lock Key Compatible`}>
+              Universial Lock Key Compatible
+            </ComboOption>
+            <ComboOption value={`Lock Key Mini Compatible`}>
+              Lock Key Mini Compatible
+            </ComboOption>
+            <ComboOption value={`Exclusive Key`}>Exclusive Key</ComboOption>
+            <ComboOption value={`Combination`}>Combination</ComboOption>
+            <ComboOption value={`No key required`}>No key required</ComboOption>
           </Combo>
         </DataWrapper>
       </Wrapper>
