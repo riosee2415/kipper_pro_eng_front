@@ -759,7 +759,7 @@ const MM09Presenter = ({
                       width < 900 ? `calc(100% - 80px)` : `calc(100% - 430px)`
                     }
                     dr={`row`}
-                    ju={width < 900 ? `center` : `space-between`}
+                    ju={width < 900 ? `flex-start` : `space-between`}
                   >
                     {/* <ProductTypeSlider /> */}
                     <Wrapper
@@ -788,7 +788,7 @@ const MM09Presenter = ({
                       onClick={() =>
                         moveLinkHandler(`/${currentMenu}?type=Input/Output`)
                       }
-                      margin={width < 900 ? `0 0 0 5px` : `0 0 0 110px`}
+                      margin={width < 900 ? `0 0 0 10px` : `0 0 0 110px`}
                     >
                       <Image
                         alt="icon"
@@ -804,7 +804,7 @@ const MM09Presenter = ({
 
                     <Wrapper
                       width={`auto`}
-                      margin={width < 900 ? ` 0 10px` : `0 80px`}
+                      margin={width < 900 ? `0 20px` : `0 80px`}
                       cursor={`pointer`}
                       onClick={() =>
                         moveLinkHandler(`/${currentMenu}?type=Drive/Memory`)
@@ -828,7 +828,7 @@ const MM09Presenter = ({
                       onClick={() =>
                         moveLinkHandler(`/${currentMenu}?type=Display`)
                       }
-                      margin={width < 900 ? `0 5px 0 0px` : `0 110px 0 0`}
+                      margin={width < 900 ? ` 0 20px 0 0` : `0 80px 0 0`}
                     >
                       <Image
                         alt="icon"
@@ -1120,11 +1120,16 @@ const MM09Presenter = ({
         >
           {/* mobile */}
           <Wrapper display={width < 900 ? `flex` : `none`} ju={`flex-start`}>
-            <Magnifier
+            <Wrapper
               height={width < 700 ? `230px` : `468px`}
-              alt="image"
-              src={currentColorImage && currentColorImage.imagePath}
-            />
+              overflow={`hidden`}
+            >
+              <Magnifier
+                height={width < 700 ? `230px` : `468px`}
+                alt="image"
+                src={currentColorImage && currentColorImage.imagePath}
+              />
+            </Wrapper>
 
             {/* 세미 이미지 리스트 */}
             <Wrapper margin={`17px 0 0`}>
@@ -1255,7 +1260,7 @@ const MM09Presenter = ({
                       fontWeight={`400`}
                       letterSpacing={`-0.02em`}
                     >
-                      $ {pData && pData.price}
+                      $ {pData && pData.price} USD
                     </Text>
                     {tData && pData && (
                       <Text
@@ -1270,7 +1275,7 @@ const MM09Presenter = ({
                           : tData.level === `LEVEL4`
                           ? pData.vipPrice2
                           : ``}
-                        &nbsp;
+                        &nbsp;USD
                       </Text>
                     )}
                   </Wrapper>
@@ -1649,7 +1654,7 @@ const MM09Presenter = ({
                 value={pData.pointTitle}
                 fontSize={width < 700 ? `26px` : `34px`}
                 fontWeight={`900`}
-                margin={width < 700 ? `50px 0` : `50px 0 34px`}
+                margin={width < 700 ? `400px 0 0` : `50px 0 34px`}
                 textAlign={`center`}
               />
             )}
@@ -1715,10 +1720,7 @@ const MM09Presenter = ({
 
               {/* 핵심 특징 입력 필드 2 */}
               {pData && pData.pointContent2 && (
-                <Wrapper
-                  width={width < 700 ? `100%` : `31%`}
-                  margin={width < 700 ? `0 50px` : `0`}
-                >
+                <Wrapper width={width < 700 ? `100%` : `31%`} margin={`0`}>
                   {pData && (
                     <EditorViewer
                       value={pData.pointNumber2}
@@ -1726,7 +1728,7 @@ const MM09Presenter = ({
                       lineHeight={`1.47`}
                       fontSize={width < 700 ? `20px` : `34px`}
                       fontWeight={`900`}
-                      margin={width < 700 ? `50px 0 20px` : `0 0 30px`}
+                      margin={width < 700 ? `20px 0 10px` : `0 0 30px`}
                       textAlign={`center`}
                     />
                   )}
@@ -1767,7 +1769,7 @@ const MM09Presenter = ({
                       lineHeight={`1.47`}
                       fontSize={width < 700 ? `20px` : `34px`}
                       fontWeight={`900`}
-                      margin={width < 700 ? `50px 0 20px` : `0 0 30px`}
+                      margin={width < 700 ? `20px 0 10px` : `0 0 30px`}
                       textAlign={`center`}
                     />
                   )}
@@ -2497,6 +2499,7 @@ const MM09Presenter = ({
                       ? `calc(100% / 2 - (10px / 2))`
                       : `calc(100% / 6 - (180px / 6) )`
                   }
+                  al={width < 700 && `flex-start`}
                   margin={width < 700 ? `0 10px 30px 0` : `0 30px 0 0`}
                 >
                   <Image
@@ -2530,6 +2533,7 @@ const MM09Presenter = ({
                       ? `calc(100% / 2 - (10px / 2))`
                       : `calc(100% / 6 - (180px / 6) )`
                   }
+                  al={width < 700 && `flex-start`}
                   margin={width < 700 ? `0 0 30px 0` : `0 30px 0 0`}
                 >
                   <Image
@@ -2563,6 +2567,7 @@ const MM09Presenter = ({
                       ? `calc(100% / 2 - (10px / 2))`
                       : `calc(100% / 6 - (180px / 6) )`
                   }
+                  al={width < 700 && `flex-start`}
                   margin={width < 700 ? `0 10px 30px 0` : `0 30px 0 0`}
                 >
                   <Image
@@ -2596,6 +2601,7 @@ const MM09Presenter = ({
                       ? `calc(100% / 2 - (10px / 2))`
                       : `calc(100% / 6 - (180px / 6) )`
                   }
+                  al={width < 700 && `flex-start`}
                   margin={width < 700 ? `0 0 30px 0` : `0 30px 0 0`}
                 >
                   <Image
@@ -2629,6 +2635,7 @@ const MM09Presenter = ({
                       ? `calc(100% / 2 - (10px / 2))`
                       : `calc(100% / 6 - (180px / 6) )`
                   }
+                  al={width < 700 && `flex-start`}
                   margin={width < 700 ? `0 10px 30px 0` : `0 30px 0 0`}
                 >
                   <Image
@@ -2662,6 +2669,7 @@ const MM09Presenter = ({
                       ? `calc(100% / 2 - (10px / 2))`
                       : `calc(100% / 6 - (180px / 6) )`
                   }
+                  al={width < 700 && `flex-start`}
                   margin={width < 700 ? `0 0 30px 0` : `0 30px 0 0`}
                 >
                   <Image

@@ -2,7 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 import withSplitting from "../../../Lib/withSplitting";
 const MM10Presenter = withSplitting(() => import("./MM10Presenter"));
 import { useQuery, useMutation } from "@apollo/client";
-import { GET_EXHIBITION_ALL, GET_SIGN_LIST } from "./MM10Queries";
+import {
+  GET_ALL_LOCATION,
+  GET_EXHIBITION_ALL,
+  GET_SIGN_LIST,
+} from "./MM10Queries";
 import { animateScroll as scroll } from "react-scroll";
 import useInput from "../../../Components/Hooks/useInput";
 import { toast } from "react-toastify";
@@ -25,6 +29,8 @@ const MM10Container = ({ history, location }) => {
   ////////////// - USE QUERY- ///////////////
   const { data: sDatum, refetch: sRefetch } = useQuery(GET_SIGN_LIST);
   const { data: eDatum, refetch: eRefetch } = useQuery(GET_EXHIBITION_ALL);
+
+  const { data: lDatum, refetch: lRefetch } = useQuery(GET_ALL_LOCATION);
 
   ///////////// - USE MUTATION- /////////////
 
@@ -49,6 +55,7 @@ const MM10Container = ({ history, location }) => {
   return (
     <MM10Presenter
       location={location}
+      history={history}
       //
       aboutRef={aboutRef}
       historyRef={historyRef}
@@ -66,6 +73,7 @@ const MM10Container = ({ history, location }) => {
       //
       sDatum={sDatum && sDatum.getSignList}
       eDatum={eDatum && eDatum.getExhibitionAll}
+      lDatum={lDatum && lDatum.getAllLocation}
       //
       readMoreToggle={readMoreToggle}
     />

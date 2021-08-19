@@ -25,3 +25,13 @@ export const GET_EXHIBITION_ALL = gql`
     }
   }
 `;
+
+export const GET_ALL_LOCATION = gql`
+  query getAllLocation {
+    getAllLocation {
+      _id
+      title
+      link
+    }
+  }
+`;

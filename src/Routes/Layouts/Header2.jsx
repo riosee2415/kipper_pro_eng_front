@@ -146,7 +146,8 @@ const ToggleBtn = styled.button`
   }
 
   @media (max-width: 800px) {
-    width: 49px;
+    width: auto;
+    padding: 0 10px;
   }
 `;
 
@@ -249,7 +250,7 @@ const Header = ({ location, width, match }) => {
             <Logo>
               <Link to="/essential">
                 <LogoImg
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Flogo%2Fes-logo-w.png?alt=media&token=9caac45d-857b-4d48-8ec7-08ff2c5f0fad`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Flogo%2Flogo.svg?alt=media&token=1956886f-e038-4305-a4c6-8447afd8ee2a`}
                   alt="LOGO"
                 />
               </Link>
@@ -307,7 +308,7 @@ const Header = ({ location, width, match }) => {
       </Wrapper>
       <MobileHeader>
         <Wrapper dr={`row`} ju={`space-between`}>
-          <Wrapper width={`80px`} al={`flex-start`}>
+          <Wrapper width={`100px`} al={`flex-start`}>
             {mobileMenuOpen ? (
               <AiOutlineClose onClick={mobileMenuToggle} />
             ) : (
@@ -318,11 +319,11 @@ const Header = ({ location, width, match }) => {
             <Link to="/essential">
               <LogoImg
                 alt="logo"
-                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Flogo%2Fes-logo-w.png?alt=media&token=9caac45d-857b-4d48-8ec7-08ff2c5f0fad`}
+                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Flogo%2Flogo.svg?alt=media&token=1956886f-e038-4305-a4c6-8447afd8ee2a`}
               />
             </Link>
           </Logo>
-          <Wrapper width={`80px`} dr={`row`} ju={`flex-end`}>
+          <Wrapper width={`100px`} dr={`row`} ju={`flex-end`}>
             <Link to="/pro">
               <ToggleBtn>PRO</ToggleBtn>
             </Link>
@@ -354,7 +355,7 @@ const Header = ({ location, width, match }) => {
               <Link to="/essential">
                 <LogoImg
                   alt="logo"
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Flogo%2Fes-logo-w.png?alt=media&token=9caac45d-857b-4d48-8ec7-08ff2c5f0fad`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Flogo%2Flogo.svg?alt=media&token=1956886f-e038-4305-a4c6-8447afd8ee2a`}
                 />
               </Link>
               <Wrapper width={`14px`}></Wrapper>
@@ -367,13 +368,13 @@ const Header = ({ location, width, match }) => {
                     <Fragment key={menu.menuName}>
                       <ToggleSubMenu al={`flex-start`} padding={`0px 35px`}>
                         <Wrapper
-                          dr={`row`}
-                          ju={`space-between`}
+                          al={`flex-start`}
                           borderBottom={`1px solid #fff`}
                           padding={`15px 0`}
                           fontSize={`12px !important`}
                         >
                           <ATag
+                            width={`auto`}
                             className={
                               activeIndex === parseInt(match.params.active)
                                 ? "Header__menu active"

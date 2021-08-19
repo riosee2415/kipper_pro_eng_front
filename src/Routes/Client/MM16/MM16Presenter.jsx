@@ -114,11 +114,11 @@ const MM16Presenter = ({
         setIsCheck(true);
       }, 4000);
 
-      setGraphValue(width < 700 ? `64%` : `85%`);
-      setGraphValue2(width < 700 ? `30%` : `50%`);
+      setGraphValue(`85%`);
+      setGraphValue2(`50%`);
+      console.log(width);
     }
   }, [isFirst]);
-
   useEffect(() => {
     documentRef.current.addEventListener("scroll", handleScroll);
     return () =>
@@ -228,6 +228,7 @@ const MM16Presenter = ({
                   <Text fontSize={`18px`}>Leakage</Text>
                   <Text fontSize={`18px`}>Cost</Text>
                 </Wrapper>
+
                 <GraphWrapper
                   width={graphValue}
                   bgColor={Theme.basicTheme_C}
@@ -263,6 +264,7 @@ const MM16Presenter = ({
                   <Text fontSize={`18px`}>Processign</Text>
                   <Text fontSize={`18px`}>Cost</Text>
                 </Wrapper>
+
                 <GraphWrapper
                   width={graphValue2}
                   bgColor={Theme.white_C}
@@ -382,11 +384,11 @@ const MM16Presenter = ({
             </Text>
             <Wrapper margin={`10px 0 0`} dr={`row`} ju={`space-between`}>
               <Image
-                width={`50%`}
+                width={`calc(50% - 15px)`}
                 src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-3.png?alt=media&token=de0e4a82-53f7-40d1-9a71-a8384b4a0397`}
               />
               <Wrapper
-                width={`48%`}
+                width={`calc(50% - 15px)`}
                 bgColor={Theme.greyTheme10_C}
                 padding={`48px 55px`}
                 height={`464px`}
@@ -485,16 +487,16 @@ const MM16Presenter = ({
             </CommonSubTitle>
 
             <Wrapper margin={`10px 0 0`} dr={`row`} ju={`space-between`}>
-              <Wrapper width={`50%`} bgColor={Theme.white_C}>
+              <Wrapper width={`calc(50% - 15px)`} bgColor={Theme.white_C}>
                 <Image
                   height={`435px`}
                   isBlendMode={true}
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2Fgraph-image-4.png?alt=media&token=bd25000d-522f-428d-af3e-69b54c2e6726`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16_modify%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-01.jpg?alt=media&token=2d0d87d3-3108-416e-a80f-eca06ae4b612`}
                 />
               </Wrapper>
 
               <Wrapper
-                width={`45%`}
+                width={`calc(50% - 15px)`}
                 al={`flex-start`}
                 ju={`space-between`}
                 height={`435px`}
@@ -572,7 +574,7 @@ const MM16Presenter = ({
             </CommonSubTitle>
 
             <Wrapper margin={`10px 0 0`} dr={`row`} ju={`space-between`}>
-              <Wrapper width={`45%`} al={`flex-start`}>
+              <Wrapper width={`calc(50% - 15px)`} al={`flex-start`}>
                 <Image
                   width={`70%`}
                   src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2FTitle-2.png?alt=media&token=66866a78-0998-48b9-950c-b8070ffb9b13`}
@@ -581,8 +583,8 @@ const MM16Presenter = ({
                   fontWeight={`300`}
                   color={Theme.white_C}
                   fontSize={`16px`}
-                  margin={`20px 0 40px`}
-                  letterSpacing={`0.4px`}
+                  margin={`10px 0 40px`}
+                  letterSpacing={`1.2px`}
                 >
                   An example of a cyber attack designed to destroy nuclear
                   centrifuges is the Stuxnet worm attack, which infected the
@@ -596,7 +598,7 @@ const MM16Presenter = ({
                   fontWeight={`300`}
                   color={Theme.white_C}
                   fontSize={`16px`}
-                  letterSpacing={`0.4px`}
+                  letterSpacing={`1.2px`}
                 >
                   Many companies, including power plants, the military and
                   others, have already taken measures to prohibit the use of
@@ -605,11 +607,11 @@ const MM16Presenter = ({
                 </Text>
               </Wrapper>
 
-              <Wrapper width={`50%`} bgColor={Theme.white_C}>
+              <Wrapper width={`calc(50% - 15px)`} bgColor={Theme.white_C}>
                 <Image
                   height={`450px`}
                   isBlendMode={true}
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-image-5.png?alt=media&token=a58af519-738d-4d57-83b2-b23c7f06b6c8`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16_modify%2F%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3-02.jpg?alt=media&token=c2e77f08-d273-4b82-ae93-93b7232afb87`}
                 />
               </Wrapper>
             </Wrapper>
@@ -945,25 +947,20 @@ const MM16Presenter = ({
             </Text>
 
             <Wrapper al={`flex-start`} padding={`0 0 0 36px`}>
-              <Text
-                fontSize={`12px`}
-                color={Theme.white_C}
-                fontWeight={`700`}
-                margin={width < 700 ? `0` : `0 0 77px`}
-              >
+              <Text fontSize={`12px`} color={Theme.white_C} fontWeight={`700`}>
                 {isCheck ? `2018` : `2017`}
               </Text>
 
               <Wrapper dr={`row`} ju={`flex-start`} margin={`15px 0 0`}>
-                <Text
+                <Wrapper
                   fontSize={`12px`}
                   color={Theme.white_C}
-                  margin={`0 10px 0 0`}
-                  width={`67px`}
-                  textAlign={`right`}
+                  width={`100%`}
+                  al={`flex-start`}
+                  margin={`0 0 5px`}
                 >
                   Leakage Cost
-                </Text>
+                </Wrapper>
                 <GraphWrapper
                   width={graphValue}
                   bgColor={Theme.basicTheme_C}
@@ -989,15 +986,16 @@ const MM16Presenter = ({
               </Wrapper>
 
               <Wrapper dr={`row`} ju={`flex-start`} margin={`14px 0 0`}>
-                <Text
+                <Wrapper
                   fontSize={`12px`}
                   color={Theme.white_C}
-                  margin={`0 10px 0 0`}
-                  width={`67px`}
-                  textAlign={`right`}
+                  width={`100%`}
+                  textAlign={`left`}
+                  al={`flex-start`}
+                  margin={`0 0 5px`}
                 >
                   Follow-up Processign Cost
-                </Text>
+                </Wrapper>
                 <GraphWrapper
                   width={graphValue2}
                   bgColor={Theme.white_C}
@@ -1089,7 +1087,7 @@ const MM16Presenter = ({
           fontWeight={`700`}
           fontSize={`27px`}
           color={Theme.subTheme3_C}
-          margin={`0`}
+          margin={`5px 0`}
         >
           Removable data storage
         </CommonSubTitle>
@@ -1104,7 +1102,7 @@ const MM16Presenter = ({
         <CommonSubTitle
           fontWeight={`700`}
           fontSize={`27px`}
-          margin={`0`}
+          margin={`5px 0 0`}
           color={Theme.white_C}
         >
           to security
@@ -1120,16 +1118,36 @@ const MM16Presenter = ({
           <Text color={Theme.white_C} fontSize={`16px`}>
             Malware Intrusion and Data Leak
           </Text>
-          <Text fontSize={`25px`} color={Theme.subTheme3_C} fontWeight={`700`}>
+          <Text
+            fontSize={`25px`}
+            lineHeight={`1.2`}
+            color={Theme.subTheme3_C}
+            fontWeight={`700`}
+          >
             How many people 
           </Text>
-          <Text fontSize={`25px`} color={Theme.white_C} fontWeight={`700`}>
+          <Text
+            fontSize={`25px`}
+            lineHeight={`1.2`}
+            color={Theme.white_C}
+            fontWeight={`700`}
+          >
             would plug in a USB drive
           </Text>
-          <Text fontSize={`25px`} color={Theme.white_C} fontWeight={`700`}>
+          <Text
+            fontSize={`25px`}
+            lineHeight={`1.2`}
+            color={Theme.white_C}
+            fontWeight={`700`}
+          >
             that they picked up
           </Text>
-          <Text fontSize={`25px`} color={Theme.white_C} fontWeight={`700`}>
+          <Text
+            fontSize={`25px`}
+            lineHeight={`1.2`}
+            color={Theme.white_C}
+            fontWeight={`700`}
+          >
             on the street?
           </Text>
 
@@ -1297,18 +1315,24 @@ const MM16Presenter = ({
               but all other open data ports were equally vulnerable.
             </Text>
 
-            <Wrapper
-              margin={`10px 0 0`}
-              color={Theme.subTheme2_C}
-              dr={`row`}
+            <ATag
               width={`auto`}
+              href="https://arstechnica.com/information-technology/2013/01/two-us-power-plants-infected-with-malware-spread-via-usb-drive/"
+              target="_blank"
             >
-              <Text fontSize={`14px`} fontWeight={`700`}>
-                See articles
-              </Text>
+              <Wrapper
+                margin={`10px 0 0`}
+                color={Theme.subTheme2_C}
+                dr={`row`}
+                width={`auto`}
+              >
+                <Text fontSize={`14px`} fontWeight={`700`}>
+                  See articles
+                </Text>
 
-              <RiArrowRightSLine size={`20`} />
-            </Wrapper>
+                <RiArrowRightSLine size={`20`} />
+              </Wrapper>
+            </ATag>
           </Wrapper>
 
           <Text
@@ -1466,12 +1490,18 @@ const MM16Presenter = ({
               Killer on his school system, causing $58,000 in damage.
             </Text>
 
-            <Wrapper color={Theme.subTheme2_C} dr={`row`} width={`auto`}>
-              <Text fontSize={`14px`} fontWeight={`700`}>
-                원문보기
-              </Text>
-              <RiArrowRightSLine size={`20`} />
-            </Wrapper>
+            <ATag
+              width={`auto`}
+              href="https://www.theverge.com/2019/4/17/18412427/college-saint-rose-student-guilty-usb-killerdestroyed-computers"
+              target="_blank"
+            >
+              <Wrapper color={Theme.subTheme2_C} dr={`row`} width={`auto`}>
+                <Text fontSize={`14px`} fontWeight={`700`}>
+                  Read More
+                </Text>
+                <RiArrowRightSLine size={`20`} />
+              </Wrapper>
+            </ATag>
           </Wrapper>
 
           <Wrapper
@@ -1515,9 +1545,8 @@ const MM16Presenter = ({
             isRelative={true}
             width={`302px`}
             height={`200px`}
-            ju={`flex-start`}
             al={`flex-start`}
-            padding={`30px 18px 0`}
+            padding={`0 18px 0`}
             margin={`0 0 10px`}
           >
             <Image
@@ -1570,9 +1599,8 @@ const MM16Presenter = ({
             isRelative={true}
             width={`302px`}
             height={`200px`}
-            ju={`flex-start`}
             al={`flex-start`}
-            padding={`30px 18px 0`}
+            padding={`0 18px 0`}
             margin={`0 0 54px`}
           >
             <Image

@@ -44,7 +44,7 @@ const OnlyHeadAbsoluteWrapper = styled.div`
   margin: ${(props) => props.margin};
   padding: ${(props) => props.padding};
   transition: 0.2s;
-  animation: ${header2} 0.3s forwards;
+  animation: ${header2} 0s forwards;
 `;
 
 const HeaderWrapper = styled.div`
@@ -67,7 +67,6 @@ const HeaderWrapper = styled.div`
   bottom: ${(props) => props.bottom};
   margin: ${(props) => props.margin};
   padding: ${(props) => props.padding};
-  transition: 0.4s;
 `;
 
 const H_Wrapper = styled.div`
@@ -89,7 +88,7 @@ const H_Wrapper = styled.div`
   &:hover ${OnlyHeadAbsoluteWrapper} {
     opacity: 1;
     visibility: visible;
-    animation: ${header} 0.3s forwards;
+    animation: ${header} 0.1s forwards;
   }
 
   & .Header__menu:hover {
@@ -147,7 +146,8 @@ const ToggleBtn = styled.button`
   }
 
   @media (max-width: 800px) {
-    width: 49px;
+    width: auto;
+    padding: 0 10px;
   }
 `;
 
@@ -513,7 +513,10 @@ const Header = ({ history, width, match }) => {
                             {menu.subMenus.map((data, idx) => {
                               return (
                                 <Bounce key={idx} delay={idx * 100}>
-                                  <Link to={`${data.subMenuLink}`}>
+                                  <Link
+                                    to={`${data.subMenuLink}`}
+                                    onClick={mobileMenuToggle}
+                                  >
                                     <Wrapper
                                       fontSize={`11px`}
                                       color={`rgb(161, 161, 166)`}

@@ -21,6 +21,7 @@ const MM01Container = ({ history }) => {
   const check1Ref = useRef();
   const check2Ref = useRef();
   const check3Ref = useRef();
+  const check4Ref = useRef();
 
   ////////////// - USE STATE- ///////////////
 
@@ -47,6 +48,7 @@ const MM01Container = ({ history }) => {
       check1Ref={check1Ref}
       check2Ref={check2Ref}
       check3Ref={check3Ref}
+      check4Ref={check4Ref}
       //
     />
   );
