@@ -118,7 +118,7 @@ const MM16Presenter = ({
       setGraphValue2(`50%`);
     }
   }, [isFirst]);
-  
+
   useEffect(() => {
     documentRef.current.addEventListener("scroll", handleScroll);
     return () =>
@@ -1053,6 +1053,7 @@ const MM16Presenter = ({
             color={Theme.subTheme3_C}
             fontWeight={`700`}
             margin={`0`}
+            lineHeight={`1.8`}
           >
             Types and Means 
           </CommonSubTitle>
