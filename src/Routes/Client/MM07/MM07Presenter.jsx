@@ -401,7 +401,7 @@ const MM07Presenter = ({
                     width < 900 ? `calc(100% - 80px)` : `calc(100% - 430px)`
                   }
                   dr={`row`}
-                  ju={width < 900 ? `flex-start` : `space-between`}
+                  ju={width < 900 ? `center` : `space-between`}
                 >
                   {/* <ProductTypeSlider /> */}
                   <Wrapper
