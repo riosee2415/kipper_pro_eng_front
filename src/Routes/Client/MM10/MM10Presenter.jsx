@@ -70,7 +70,10 @@ const MM10Presenter = ({
   }, [location.search]);
 
   return (
-    <WholeWrapper bgColor={`rgb(26,26,26)`}>
+    <WholeWrapper
+      bgColor={`rgb(26,26,26)`}
+      margin={width < 700 ? `42px 0 0` : `44px 0 0`}
+    >
       <Wrapper
         height={width < 700 ? `257px` : `600px`}
         attachment={`initial`}
@@ -79,7 +82,8 @@ const MM10Presenter = ({
         <RsWrapper
           width={`1126px`}
           al={`flex-start`}
-          padding={width < 700 ? `0 36px` : `0`}
+          padding={width < 700 ? `0 36px 60px` : `0`}
+          ju={width < 700 ? `flex-end` : `center`}
         >
           <Text color={Theme.white_C} fontSize={width < 700 ? `39px` : `70px`}>
             Partnership at
@@ -99,7 +103,7 @@ const MM10Presenter = ({
       <Wrapper
         isRelative={true}
         margin={width < 700 ? `49px 0 0` : `39px 0 0`}
-        padding={width < 700 ? `0 0 0 36px` : `0`}
+        padding={width < 700 ? `0 36px 0` : `0`}
       >
         {/* <Wrapper
           isAbsolute={true}
@@ -120,7 +124,7 @@ const MM10Presenter = ({
         </Wrapper> */}
         <RsWrapper width={`1126px`} al={`flex-start`}>
           <Text
-            fontSize={width < 700 ? `28px` : `45px`}
+            fontSize={width < 700 ? `26px` : `45px`}
             color={Theme.white_C}
             fontWeight={`900`}
             lineHeight={`1.4`}
@@ -128,7 +132,7 @@ const MM10Presenter = ({
             Benefits of becoming a
           </Text>
           <Text
-            fontSize={width < 700 ? `28px` : `45px`}
+            fontSize={width < 700 ? `26px` : `45px`}
             color={Theme.white_C}
             fontWeight={`900`}
             lineHeight={`1.4`}
@@ -424,152 +428,189 @@ const MM10Presenter = ({
               >
                 Success Story
               </Text>
-              <Gotham
-                color={Theme.greyTheme7_C}
-                fontSize={`50px`}
-                fontWeight={`700`}
-                margin={`9px 0 0`}
-                lineHeight={width < 900 ? `36px` : `1.0`}
-              >
-                Different level of
-              </Gotham>
-              <Gotham
-                color={Theme.greyTheme7_C}
-                fontSize={`50px`}
-                fontWeight={`700`}
-                lineHeight={width < 900 ? `36px` : `1.0`}
-              >
-                network security,
-              </Gotham>
-              <Gotham
-                margin={width < 900 ? `15px 0 0` : `20px 0 0`}
-                fontSize={`50px`}
-                color={Theme.white_C}
-                lineHeight={width < 900 ? `36px` : `1.0`}
-                fontWeight={`400`}
-              >
-                proven by countless
-              </Gotham>
-              <Gotham
-                fontSize={`50px`}
-                color={Theme.white_C}
-                lineHeight={width < 900 ? `36px` : `1.0`}
-                fontWeight={`400`}
-              >
-                customers :
-              </Gotham>
-
               <Wrapper
-                display={width < 900 ? `flex` : `none`}
-                padding={`20px 35px 20px 0`}
-              >
-                <Image
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM10%2F%E1%84%87%E1%85%B5%E1%84%8C%E1%85%B3%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-2.png?alt=media&token=35063d90-a0cf-416f-81c2-fb71796d880c`}
-                />
-              </Wrapper>
-
-              <Wrapper
+                height={width < 700 ? `auto` : `432px`}
                 al={`flex-start`}
-                display={width < 900 ? `none` : `flex`}
+                ju={`flex-start`}
               >
-                <Text fontSize={`20px`} color={Theme.white_C}>
-                  <Gotham2>SMARTKEEPER</Gotham2> provides superior security
+                <Gotham
+                  color={Theme.greyTheme7_C}
+                  fontSize={`50px`}
+                  fontWeight={`700`}
+                  margin={`9px 0 0`}
+                  lineHeight={width < 900 ? `36px` : `1.0`}
+                >
+                  Different level of
+                </Gotham>
+                <Gotham
+                  color={Theme.greyTheme7_C}
+                  fontSize={`50px`}
+                  fontWeight={`700`}
+                  lineHeight={width < 900 ? `36px` : `1.0`}
+                >
+                  network security,
+                </Gotham>
+                <Gotham
+                  margin={width < 900 ? `15px 0 0` : `20px 0 0`}
+                  fontSize={`50px`}
+                  color={Theme.white_C}
+                  lineHeight={width < 900 ? `36px` : `1.0`}
+                  fontWeight={`400`}
+                >
+                  proven by countless
+                </Gotham>
+                <Gotham
+                  fontSize={`50px`}
+                  color={Theme.white_C}
+                  lineHeight={width < 900 ? `36px` : `1.0`}
+                  fontWeight={`400`}
+                >
+                  customers :
+                </Gotham>
+
+                <Wrapper
+                  display={width < 900 ? `flex` : `none`}
+                  padding={`20px 35px 20px 0`}
+                >
+                  <Image
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM10%2F%E1%84%87%E1%85%B5%E1%84%8C%E1%85%B3%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-2.png?alt=media&token=35063d90-a0cf-416f-81c2-fb71796d880c`}
+                  />
+                </Wrapper>
+
+                <Wrapper
+                  al={`flex-start`}
+                  display={width < 900 ? `none` : `flex`}
+                >
+                  <Text
+                    lineHeight={`1.5`}
+                    fontSize={`20px`}
+                    color={Theme.white_C}
+                  >
+                    <Gotham2>SMARTKEEPER</Gotham2> provides superior security
+                  </Text>
+                  <Text
+                    lineHeight={`1.5`}
+                    fontSize={`20px`}
+                    color={Theme.white_C}
+                  >
+                    in comparison to their competition
+                  </Text>
+                  <Text
+                    lineHeight={`1.5`}
+                    fontSize={`20px`}
+                    color={Theme.white_C}
+                  >
+                    In addition, SMARTKEEPER products integrated
+                  </Text>
+                  <Text
+                    lineHeight={`1.5`}
+                    fontSize={`20px`}
+                    color={Theme.white_C}
+                  >
+                    seamlessly into our networking system and after
+                  </Text>
+                  <Text
+                    lineHeight={`1.5`}
+                    fontSize={`20px`}
+                    color={Theme.white_C}
+                  >
+                    deployment, there was a renewed sense of security.
+                  </Text>
+                </Wrapper>
+                <Wrapper
+                  al={`flex-start`}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  <Text
+                    lineHeight={`1.5`}
+                    fontSize={`20px`}
+                    fontWeight={`700`}
+                    color={Theme.white_C}
+                  >
+                    <Gotham2>SMARTKEEPER</Gotham2> provides
+                  </Text>
+                  <Text
+                    lineHeight={`1.5`}
+                    fontSize={`20px`}
+                    fontWeight={`700`}
+                    color={Theme.white_C}
+                  >
+                    superior security
+                  </Text>
+                  <Text
+                    lineHeight={`1.5`}
+                    fontSize={`20px`}
+                    fontWeight={`700`}
+                    color={Theme.white_C}
+                  >
+                    in comparison to their competition.
+                  </Text>
+                  <Text
+                    lineHeight={`1.5`}
+                    fontSize={`20px`}
+                    fontWeight={`700`}
+                    color={Theme.white_C}
+                    margin={`35px 0 0`}
+                  >
+                    In addition, SMARTKEEPER products integrated
+                  </Text>
+                  <Text
+                    lineHeight={`1.5`}
+                    fontSize={`20px`}
+                    fontWeight={`700`}
+                    color={Theme.white_C}
+                  >
+                    seamlessly into our
+                  </Text>
+                  <Text
+                    lineHeight={`1.5`}
+                    fontSize={`20px`}
+                    fontWeight={`700`}
+                    color={Theme.white_C}
+                  >
+                    networking system and after deployment, there was a
+                  </Text>
+                  <Text
+                    lineHeight={`1.5`}
+                    fontSize={`20px`}
+                    fontWeight={`700`}
+                    color={Theme.white_C}
+                    margin={`0 0 20px`}
+                  >
+                    renewed sense of security.
+                  </Text>
+                </Wrapper>
+                <Text
+                  fontSize={`30px`}
+                  color={Theme.white_C}
+                  fontWeight={`900`}
+                  display={width < 900 ? `none` : `flex`}
+                >
+                  In one word, it was PERFECT!
                 </Text>
-                <Text fontSize={`20px`} color={Theme.white_C}>
-                  in comparison to their competition
+                <Text
+                  fontSize={`30px`}
+                  fontWeight={`900`}
+                  color={Theme.white_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  In one word,
                 </Text>
-                <Text fontSize={`20px`} color={Theme.white_C}>
-                  In addition, SMARTKEEPER products integrated
-                </Text>
-                <Text fontSize={`20px`} color={Theme.white_C}>
-                  seamlessly into our networking system and after
-                </Text>
-                <Text fontSize={`20px`} color={Theme.white_C}>
-                  deployment, there was a renewed sense of security.
+                <Text
+                  fontSize={`30px`}
+                  fontWeight={`900`}
+                  color={Theme.white_C}
+                  display={width < 900 ? `flex` : `none`}
+                >
+                  it was PERFECT!
                 </Text>
               </Wrapper>
-              <Wrapper
-                al={`flex-start`}
-                display={width < 900 ? `flex` : `none`}
-              >
-                <Text
-                  fontSize={`20px`}
-                  fontWeight={`700`}
-                  color={Theme.white_C}
-                >
-                  <Gotham2>SMARTKEEPER</Gotham2> provides
-                </Text>
-                <Text
-                  fontSize={`20px`}
-                  fontWeight={`700`}
-                  color={Theme.white_C}
-                >
-                  superior security
-                </Text>
-                <Text
-                  fontSize={`20px`}
-                  fontWeight={`700`}
-                  color={Theme.white_C}
-                >
-                  in comparison to their competition.
-                </Text>
-                <Text
-                  fontSize={`20px`}
-                  fontWeight={`700`}
-                  color={Theme.white_C}
-                  margin={`35px 0 0`}
-                >
-                  In addition, SMARTKEEPER products integrated
-                </Text>
-                <Text
-                  fontSize={`20px`}
-                  fontWeight={`700`}
-                  color={Theme.white_C}
-                >
-                  seamlessly into our
-                </Text>
-                <Text
-                  fontSize={`20px`}
-                  fontWeight={`700`}
-                  color={Theme.white_C}
-                >
-                  networking system and after deployment, there was a
-                </Text>
-                <Text
-                  fontSize={`20px`}
-                  fontWeight={`700`}
-                  color={Theme.white_C}
-                  margin={`0 0 20px`}
-                >
-                  renewed sense of security.
-                </Text>
-              </Wrapper>
-              <Text
-                fontSize={`30px`}
-                color={Theme.white_C}
-                fontWeight={`900`}
-                display={width < 900 ? `none` : `flex`}
-              >
-                In one word, it was PERFECT!
-              </Text>
-              <Text
-                fontSize={`30px`}
-                fontWeight={`900`}
-                color={Theme.white_C}
-                display={width < 900 ? `flex` : `none`}
-              >
-                In one word,
-              </Text>
-              <Text
-                fontSize={`30px`}
-                fontWeight={`900`}
-                color={Theme.white_C}
-                display={width < 900 ? `flex` : `none`}
-              >
-                it was PERFECT!
-              </Text>
             </Wrapper>
-            <Wrapper width={`50%`} display={width < 900 ? `none` : `flex`}>
+            <Wrapper
+              width={`50%`}
+              display={width < 900 ? `none` : `flex`}
+              margin={`48px 0 0`}
+            >
               <Image
                 src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM10%2F%E1%84%87%E1%85%B5%E1%84%8C%E1%85%B3%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-2.png?alt=media&token=35063d90-a0cf-416f-81c2-fb71796d880c`}
               />

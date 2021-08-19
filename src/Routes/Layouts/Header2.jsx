@@ -147,7 +147,7 @@ const ToggleBtn = styled.button`
 
   @media (max-width: 800px) {
     width: auto;
-    padding: 0 11px;
+    padding: 0 10px;
   }
 `;
 
@@ -368,13 +368,13 @@ const Header = ({ location, width, match }) => {
                     <Fragment key={menu.menuName}>
                       <ToggleSubMenu al={`flex-start`} padding={`0px 35px`}>
                         <Wrapper
-                          dr={`row`}
-                          ju={`space-between`}
+                          al={`flex-start`}
                           borderBottom={`1px solid #fff`}
                           padding={`15px 0`}
                           fontSize={`12px !important`}
                         >
                           <ATag
+                            width={`auto`}
                             className={
                               activeIndex === parseInt(match.params.active)
                                 ? "Header__menu active"
