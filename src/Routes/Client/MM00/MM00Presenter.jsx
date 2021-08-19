@@ -288,6 +288,7 @@ const MM00Presenter = ({
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.white_C}
                 fontSize={`20px`}
+                lineHeight={`1.4`}
                 fontWeight={`700`}
               >
                 The ability to manage
@@ -298,6 +299,7 @@ const MM00Presenter = ({
                 color={Theme.white_C}
                 fontWeight={`700`}
                 fontSize={`20px`}
+                lineHeight={`1.4`}
               >
                 everything with ONE key.
               </Text>
@@ -306,6 +308,7 @@ const MM00Presenter = ({
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.greyTheme6_C}
                 fontSize={`20px`}
+                lineHeight={`1.4`}
                 fontWeight={`700`}
               >
                 A cyber security system that can be used safely on numerous
@@ -315,6 +318,7 @@ const MM00Presenter = ({
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.greyTheme6_C}
                 fontSize={`20px`}
+                lineHeight={`1.4`}
                 fontWeight={`700`}
               >
                 with confidential key patterns. SMARTKEEPER is the physical
@@ -323,6 +327,7 @@ const MM00Presenter = ({
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.greyTheme6_C}
                 fontSize={`20px`}
+                lineHeight={`1.4`}
                 fontWeight={`700`}
               >
                 cybersecurity
@@ -331,6 +336,7 @@ const MM00Presenter = ({
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.greyTheme6_C}
                 fontSize={`20px`}
+                lineHeight={`1.4`}
                 fontWeight={`700`}
               >
                 system chosen by leaders and professionals of 3,000+
@@ -339,6 +345,7 @@ const MM00Presenter = ({
                 display={width < 700 ? `flex` : `none`}
                 color={Theme.greyTheme6_C}
                 fontSize={`20px`}
+                lineHeight={`1.4`}
                 fontWeight={`700`}
               >
                 sites worldwide fro a wide range of industries.
@@ -361,7 +368,7 @@ const MM00Presenter = ({
                       fontWeight={`700`}
                       margin={`0 10px 0 0`}
                     >
-                      Lock Key Mini
+                      Universal Lock Key
                     </Wrapper>
                     <Text
                       fontSize={`16px`}
@@ -784,7 +791,7 @@ const MM00Presenter = ({
           bgImg={
             width < 700
               ? `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM00%2FMM00-bgImg-M.jpeg?alt=media&token=6acffea7-9ca1-4521-a024-2fdbf83cf10c")`
-              : `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM00%2FMAIN_BACKGROUND_5.png?alt=media&token=3deeeeed-e761-409a-9c1f-8880078ada83")`
+              : `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16_modify%2FGLOBAL_SMARTKEEPER-POR-ALL-set_Large.jpg?alt=media&token=474cf650-f4cb-4fc4-9b01-71f0885bea80")`
           }
           bgSize={width < 700 && `100%`}
           bgPosition={width < 700 ? `0 100px` : ``}

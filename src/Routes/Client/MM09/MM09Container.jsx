@@ -19,6 +19,7 @@ const MM09Container = ({ history, location, match }) => {
   ////////////// - USE STATE- ///////////////
   const [search, setSearch] = useState(false);
   const [arrow, setArrow] = useState(false);
+  const [searchValue, setSearchValue] = useState(null);
 
   const inputSearchValue = useInput("");
 
@@ -45,6 +46,10 @@ const MM09Container = ({ history, location, match }) => {
 
   ///////////// - EVENT HANDLER- ////////////
   const searchToggle = () => {
+    if (!search) {
+      setSearchValue(null);
+    }
+
     setSearch(!search);
   };
 
