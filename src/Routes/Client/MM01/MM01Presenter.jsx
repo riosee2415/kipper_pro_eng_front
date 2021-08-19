@@ -1408,7 +1408,7 @@ const MM01Presenter = ({
                   </Wrapper> */}
                   <Image
                     alt="ess"
-                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2FESSENTIAL.svg?alt=media&token=affba8f4-fa4c-4aab-a372-0f971daffe41`}
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2FESSENTIAL_%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8F%E1%85%B5%E1%84%91%E1%85%A5%E1%84%85%E1%85%A1%E1%86%AB.svg?alt=media&token=d951addf-29e7-4ac0-9f03-95b82bed8605`}
                     width={`174px`}
                   />
                   <Wrapper
@@ -1513,6 +1513,7 @@ const MM01Presenter = ({
                 padding={width < 900 ? `35px 0px 35px 20px` : `80px 50px`}
                 isRelative={true}
                 attachment={`initial`}
+                bgPosition={width < 900 && `80%`}
                 bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2F%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5_%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B3.jpg?alt=media&token=d4533b5d-e70f-456c-9886-164ddb70f0e4")`}
               >
                 <Wrapper al={`flex-start`} height={`100%`}>

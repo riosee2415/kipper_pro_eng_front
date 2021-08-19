@@ -110,8 +110,8 @@ const MM05Presenter = ({
     }
 
     if (pageYOffset > temp5Height - 500 && pageYOffset < temp5Height + 300) {
-      if (marginImg2 - 50 < -300 && pageY < pageYOffset) {
-        setMarginImg2(-300);
+      if (marginImg2 - 50 < -200 && pageY < pageYOffset) {
+        setMarginImg2(-200);
       } else if (pageY > pageYOffset && marginImg2 + 30 < 50) {
         setMarginImg2(marginImg2 + 30);
       } else if (pageY > pageYOffset && marginImg2 + 30 >= 50) {
@@ -358,13 +358,13 @@ const MM05Presenter = ({
                   thin key hole that prevents tampering.
                 </Text>
                 <Image
-                  width={width < 700 ? `50%` : `50%`}
+                  width={width < 700 ? `50%` : `80%`}
                   margin={
                     width < 900
                       ? width < 700
                         ? `10px 0 0`
                         : `30px 0 0`
-                      : `100px 0 0`
+                      : `80px 0 0`
                   }
                   alt="image"
                   src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2Fnet-icon-2.png?alt=media&token=4fc68e0b-1b42-45f5-8b0b-26b519547b2e`}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import AD210Presenter from "./AD210Presenter";
 import { useMutation, useQuery } from "@apollo/client";
-import { GET_PRODUCT, DELETE_PRODUCT } from "./AD210Queries.js";
+import { GET_PRODUCT, DELETE_PRODUCT, UPDATE_SORT } from "./AD210Queries.js";
 import { toast } from "react-toastify";
 import storageFn from "../../../fsStorage";
 import useInput from "../../../Components/Hooks/useInput";
@@ -99,6 +99,7 @@ export default ({ history }) => {
 
   ////////////// - USE MUTATION- //////////////
   const [deleteProductMutation] = useMutation(DELETE_PRODUCT);
+  const [updateSortMutation] = useMutation(UPDATE_SORT);
 
   ////////////// - USE HANDLER- //////////////
   const moveUpdateProductPage = () => {
@@ -157,6 +158,28 @@ export default ({ history }) => {
 
   const moveProductPage = () => {
     history.push(`/usb/${selectData._id}`);
+  };
+
+  const sortUpdateHandler = async (e, id) => {
+    const input = e.currentTarget.previousSibling;
+    const sortValue = input.value;
+    e.currentTarget.previousSibling.value = "";
+
+    const {
+      data: { updateProductSort },
+    } = await updateSortMutation({
+      variables: {
+        id,
+        sort: parseInt(sortValue),
+      },
+    });
+
+    if (updateProductSort) {
+      toast.success("정렬 순서가 변경되었습니다.");
+      nRefetch();
+    } else {
+      toast.error("잠시 후 다시 시도 해주세요.");
+    }
   };
 
   ////////////// - USE EFFECT- ///////////////
@@ -239,7 +262,6 @@ export default ({ history }) => {
           });
         });
       setDataList(scvData);
-      console.log(scvData);
     }
   }, [nDatum]);
 
@@ -262,6 +284,7 @@ export default ({ history }) => {
       moveCreateProductPage={moveCreateProductPage}
       moveProductPage={moveProductPage}
       moveUpdateProductPage={moveUpdateProductPage}
+      sortUpdateHandler={sortUpdateHandler}
     />
   );
 };

@@ -224,49 +224,6 @@ const MM06Presenter = ({
           {arrow ? (
             <>
               <Wrapper
-                width={`calc((100% - 36px - 36px) / 2)`}
-                cursor={`pointer`}
-                onClick={() => moveLinkHandler(`/computer`)}
-              >
-                <Wrapper width={`80px`}>
-                  <Image
-                    alt="icon"
-                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%85%E1%85%A1%E1%86%A8%E1%84%8F%E1%85%B5-05.svg?alt=media&token=2ee09f47-3c0a-4922-8bc3-50873a5028a8`}
-                    width={`37px`}
-                    height={`37px`}
-                    objectFit={`contain`}
-                    margin={`0 0 5px`}
-                  />
-                </Wrapper>
-                <Text
-                  fontSize={`10px`}
-                  fontWeight={`700`}
-                  color={`rgb(209, 0, 0)`}
-                >
-                  Anti-Theft for Computer
-                </Text>
-              </Wrapper>
-              <Wrapper
-                width={`calc((100% - 36px - 36px) / 2)`}
-                cursor={`pointer`}
-                onClick={() => moveLinkHandler(`/lock`)}
-              >
-                <Wrapper width={`80px`}>
-                  <Image
-                    alt="icon"
-                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2Fproduct-icon-07.png?alt=media&token=adae713b-c659-4475-beac-a7c1cd85abab`}
-                    width={`37px`}
-                    height={`37px`}
-                    objectFit={`contain`}
-                    margin={`0 0 5px`}
-                  />
-                </Wrapper>
-                <Text fontSize={`10px`}>Lock Key PRO</Text>
-              </Wrapper>
-            </>
-          ) : (
-            <>
-              <Wrapper
                 width={`calc((100% - 36px - 36px) / 3)`}
                 cursor={`pointer`}
                 onClick={() => moveLinkHandler(`/usb`)}
@@ -316,6 +273,49 @@ const MM06Presenter = ({
                   />
                 </Wrapper>
                 <Text fontSize={`10px`}>Other Port Security</Text>
+              </Wrapper>
+            </>
+          ) : (
+            <>
+              <Wrapper
+                width={`calc((100% - 36px - 36px) / 2)`}
+                cursor={`pointer`}
+                onClick={() => moveLinkHandler(`/computer`)}
+              >
+                <Wrapper width={`80px`}>
+                  <Image
+                    alt="icon"
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%85%E1%85%A1%E1%86%A8%E1%84%8F%E1%85%B5-05.svg?alt=media&token=2ee09f47-3c0a-4922-8bc3-50873a5028a8`}
+                    width={`37px`}
+                    height={`37px`}
+                    objectFit={`contain`}
+                    margin={`0 0 5px`}
+                  />
+                </Wrapper>
+                <Text
+                  fontSize={`10px`}
+                  fontWeight={`700`}
+                  color={`rgb(209, 0, 0)`}
+                >
+                  Anti-Theft for Computer
+                </Text>
+              </Wrapper>
+              <Wrapper
+                width={`calc((100% - 36px - 36px) / 2)`}
+                cursor={`pointer`}
+                onClick={() => moveLinkHandler(`/lock`)}
+              >
+                <Wrapper width={`80px`}>
+                  <Image
+                    alt="icon"
+                    src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2Fproduct-icon-07.png?alt=media&token=adae713b-c659-4475-beac-a7c1cd85abab`}
+                    width={`37px`}
+                    height={`37px`}
+                    objectFit={`contain`}
+                    margin={`0 0 5px`}
+                  />
+                </Wrapper>
+                <Text fontSize={`10px`}>Lock Key PRO</Text>
               </Wrapper>
             </>
           )}
@@ -400,7 +400,7 @@ const MM06Presenter = ({
                     width < 900 ? `calc(100% - 70px)` : `calc(100% - 430px)`
                   }
                   dr={`row`}
-                  ju={`space-between`}
+                  ju={width < 900 ? `center` : `space-between`}
                 >
                   {/* <ProductTypeSlider /> */}
                   <Wrapper
@@ -426,7 +426,7 @@ const MM06Presenter = ({
                     width={`auto`}
                     cursor={`pointer`}
                     onClick={() => changeSubTypeHandler(`Desktop`)}
-                    margin={width < 900 ? `0 0 0 40px` : `0 0 0 110px`}
+                    margin={width < 900 ? `0 30px 0 0` : `0 130px 0 0`}
                   >
                     <Image
                       alt="icon"
@@ -455,7 +455,6 @@ const MM06Presenter = ({
 
                   <Wrapper
                     width={`auto`}
-                    margin={width < 900 ? ` 0 30px` : `0 130px`}
                     cursor={`pointer`}
                     onClick={() => changeSubTypeHandler(`Laptop`)}
                   >

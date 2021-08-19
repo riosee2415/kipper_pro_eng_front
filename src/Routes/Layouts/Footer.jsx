@@ -847,17 +847,17 @@ const Footer = ({ width, location }) => {
           color={Theme.greyTheme1_C}
           dr={`row`}
         >
-          <Text fontWeight={`300`} padding={`0 20px 0 0`}>
+          {/* <Text fontWeight={`300`} padding={`0 20px 0 0`}>
             Privacy Policy
           </Text>
-          |
+          | */}
           <Text fontWeight={`300`} padding={`0 20px`}>
             <Link to="/sitemap">Site Map</Link>
           </Text>
-          |
+          {/* |
           <Text fontWeight={`300`} padding={`0 0 0 20px`}>
             <Link to="/agreement">Terms of Use</Link>
-          </Text>
+          </Text> */}
         </Wrapper>
         <Wrapper
           width={width < 900 ? `auto` : `300px`}
@@ -881,17 +881,17 @@ const Footer = ({ width, location }) => {
           ju={`space-between`}
           margin={`10px 0 0`}
         >
-          <Text fontWeight={`300`} padding={`0 10px 0 0`}>
+          {/* <Text fontWeight={`300`} padding={`0 10px 0 0`}>
             Privacy Policy
           </Text>
-          |
+          | */}
           <Text fontWeight={`300`} padding={`0 10px`}>
             <Link to="/sitemap">Site Map</Link>
           </Text>
-          |
+          {/* |
           <Text fontWeight={`300`} padding={`0 0 0 10px`}>
             <Link to="/agreement">Terms of Use</Link>
-          </Text>
+          </Text> */}
         </Wrapper>
       </RsWrapper>
 

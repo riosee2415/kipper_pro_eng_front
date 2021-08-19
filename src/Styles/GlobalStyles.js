@@ -143,8 +143,12 @@ export default createGlobalStyle`
         .hidden {height:100%; min-height:100%; overflow:hidden !important; touch-action:none;}
     }
     a {
-        color : inherit;
-        text-decoration : none;
+      color : inherit;
+      text-decoration : none;
+    }
+
+    a:hover{
+      color : inherit;
     }
 
     svg tspan{
