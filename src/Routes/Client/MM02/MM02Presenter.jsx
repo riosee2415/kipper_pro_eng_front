@@ -404,7 +404,7 @@ const MM02Presenter = ({
       <Wrapper
         height={width < 900 ? (width < 700 ? `800px` : `700px`) : `2000px`}
         attachment={`initial`}
-        bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM02%2FSMARTKEEPER-POR-ALL-set_Large.jpg?alt=media&token=431c605f-c5f6-47b1-9354-ff947ed14294")`}
+        bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16_modify%2FGLOBAL_SMARTKEEPER-POR-ALL-set_Large.jpg?alt=media&token=474cf650-f4cb-4fc4-9b01-71f0885bea80")`}
         ref={numberRef}
         ju={width < 900 ? `flex-start` : `center`}
         bgSize={width < 900 && `630px`}
