@@ -205,6 +205,7 @@ const MM19Presenter = ({
                   margin={`0 0 5px`}
                   src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM00%2FSMARTKEEPER_ESSENTIAL_ESSOHOME.svg?alt=media&token=cc2f8234-1996-45a2-a848-f37a2886bd0b`}
                   width={width < 700 ? `305px` : `499px`}
+                  height={width < 700 ? `16.5px` : `27px`}
                 />
                 <CommonSubTitle2 display={width < 700 ? `none` : `flex`}>
                   Now, it should be blocked
@@ -831,6 +832,7 @@ const MM19Presenter = ({
               alt="smart"
               src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM00%2FSMARTKEEPER_ESSENTIAL_ESSOHOME.svg?alt=media&token=cc2f8234-1996-45a2-a848-f37a2886bd0b`}
               width={width < 700 ? `166px` : `261px`}
+              height={width < 700 ? `9px` : `14px`}
             />
             {/* <Wrapper
               al={`flex-start`}
