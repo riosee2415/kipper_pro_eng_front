@@ -333,15 +333,17 @@ export default ({
         <DataWrapper>
           <Combo {...productTypeInput} width={`200px`}>
             <ComboOption value={``}>--전체--</ComboOption>
-            <ComboOption value={`USB 물리보안`}>USB 물리보안</ComboOption>
-            <ComboOption value={`네트워크 물리보안`}>
-              네트워크 물리보안
+            <ComboOption value={`USB Security`}>USB Security</ComboOption>
+            <ComboOption value={`Network Security`}>
+              Network Security
             </ComboOption>
-            <ComboOption value={`기타포트 물리보안`}>
-              기타포트 물리보안
+            <ComboOption value={`Other Port Security`}>
+              Other Port Security
             </ComboOption>
-            <ComboOption value={`컴퓨터 물리보안`}>컴퓨터 물리보안</ComboOption>
-            <ComboOption value={`락키 PRO`}>락키 PRO</ComboOption>
+            <ComboOption value={`Anti-Theft for Computer`}>
+              Anti-Theft for Computer
+            </ComboOption>
+            <ComboOption value={`Lock Key PRO`}>Lock Key PRO</ComboOption>
           </Combo>
         </DataWrapper>
       </Wrapper>
