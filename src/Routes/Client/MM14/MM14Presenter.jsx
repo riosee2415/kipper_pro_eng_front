@@ -36,7 +36,7 @@ const Dot = styled(Wrapper)`
     width: 51px;
     height: 51px;
     background: rgba(255, 255, 255, 0.5);
-    animation: ${dotAni} 1.5s infinite;
+    animation: ${dotAni} 1.5s ${(props) => props.delay} infinite;
     border-radius: 100%;
 
     @media (max-width: 700px) {
@@ -129,6 +129,7 @@ const MM14Presenter = ({
                     height={`15px`}
                     radius={`50%`}
                     bgColor={`#fff`}
+                    delay={idx % 2 === 0 ? `0s` : `0.5s`}
                     onClick={() => setAbleIcon(idx)}
                   >
                     <Image

@@ -355,6 +355,7 @@ const MM08Presenter = ({
                   <SearchInput
                     type={`text`}
                     {...inputSearchValue}
+                    autoFocus={true}
                     onChange={searchDataHandler}
                     onBlur={searchDataBlurHandler}
                   />
