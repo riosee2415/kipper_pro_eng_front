@@ -18,6 +18,25 @@ import queryString from "query-string";
 import { useRef } from "react";
 import { animateScroll as scroll } from "react-scroll";
 
+const LocationWrapper = styled(Wrapper)`
+  color: ${Theme.white_C};
+  width: 250px;
+  align-items: flex-start;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.5s;
+
+  @media (max-width: 900px) {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  &:hover {
+    color: ${Theme.subTheme3_C};
+  }
+`;
+
 const Gotham = styled(Wrapper)`
   font-family: "Gotham", sans-serif;
   font-weight: ${(props) => props.fontWeight || `800`};
@@ -784,7 +803,7 @@ const MM10Presenter = ({
             Our Partner Locations
           </Text>
           <Wrapper dr={`row`} ju={`flex-start`}>
-            <Wrapper
+            <LocationWrapper
               color={Theme.white_C}
               width={width < 900 ? `100%` : `250px`}
               margin={width < 900 && `0 0 10px`}
@@ -803,14 +822,14 @@ const MM10Presenter = ({
               }}
             >
               USA
-            </Wrapper>
+            </LocationWrapper>
           </Wrapper>
           <Wrapper
             dr={`row`}
             ju={`flex-start`}
             margin={width < 900 ? `0` : `72px 0 50px`}
           >
-            <Wrapper
+            <LocationWrapper
               color={Theme.white_C}
               width={width < 900 ? `100%` : `250px`}
               margin={width < 900 && `10px 0`}
@@ -829,9 +848,9 @@ const MM10Presenter = ({
               }}
             >
               GERMANY
-            </Wrapper>
+            </LocationWrapper>
 
-            <Wrapper
+            <LocationWrapper
               color={Theme.white_C}
               width={width < 900 ? `100%` : `250px`}
               margin={width < 900 && `10px 0`}
@@ -850,9 +869,9 @@ const MM10Presenter = ({
               }}
             >
               POLAND
-            </Wrapper>
+            </LocationWrapper>
 
-            <Wrapper
+            <LocationWrapper
               color={Theme.white_C}
               width={width < 900 ? `100%` : `250px`}
               margin={width < 900 && `10px 0`}
@@ -871,9 +890,9 @@ const MM10Presenter = ({
               }}
             >
               CZECH REPUBLIC
-            </Wrapper>
+            </LocationWrapper>
 
-            <Wrapper
+            <LocationWrapper
               color={Theme.white_C}
               width={width < 900 ? `100%` : `250px`}
               margin={width < 900 && `10px 0`}
@@ -892,10 +911,10 @@ const MM10Presenter = ({
               }}
             >
               SLOVAKIA
-            </Wrapper>
+            </LocationWrapper>
           </Wrapper>
           <Wrapper dr={`row`} ju={`flex-start`}>
-            <Wrapper
+            <LocationWrapper
               color={Theme.white_C}
               width={width < 900 ? `100%` : `250px`}
               margin={width < 900 && `10px 0`}
@@ -914,9 +933,9 @@ const MM10Presenter = ({
               }}
             >
               SWEDEN
-            </Wrapper>
+            </LocationWrapper>
 
-            <Wrapper
+            <LocationWrapper
               color={Theme.white_C}
               width={width < 900 ? `100%` : `250px`}
               margin={width < 900 && `10px 0`}
@@ -935,9 +954,9 @@ const MM10Presenter = ({
               }}
             >
               HUNGARY
-            </Wrapper>
+            </LocationWrapper>
 
-            <Wrapper
+            <LocationWrapper
               color={Theme.white_C}
               width={width < 900 ? `100%` : `250px`}
               margin={width < 900 && `10px 0`}
@@ -956,14 +975,14 @@ const MM10Presenter = ({
               }}
             >
               NORWAY
-            </Wrapper>
+            </LocationWrapper>
           </Wrapper>
           <Wrapper
             dr={`row`}
             ju={`flex-start`}
             margin={width < 900 ? `0` : `72px 0 50px`}
           >
-            <Wrapper
+            <LocationWrapper
               color={Theme.white_C}
               width={width < 900 ? `100%` : `250px`}
               margin={width < 900 && `10px 0`}
@@ -982,8 +1001,8 @@ const MM10Presenter = ({
               }}
             >
               CHINA
-            </Wrapper>
-            <Wrapper
+            </LocationWrapper>
+            <LocationWrapper
               color={Theme.white_C}
               width={width < 900 ? `100%` : `250px`}
               margin={width < 900 && `10px 0`}
@@ -1002,8 +1021,8 @@ const MM10Presenter = ({
               }}
             >
               JAPAN
-            </Wrapper>
-            <Wrapper
+            </LocationWrapper>
+            <LocationWrapper
               color={Theme.white_C}
               width={width < 900 ? `100%` : `250px`}
               margin={width < 900 && `10px 0`}
@@ -1022,8 +1041,8 @@ const MM10Presenter = ({
               }}
             >
               SINGAPORE
-            </Wrapper>
-            <Wrapper
+            </LocationWrapper>
+            <LocationWrapper
               color={Theme.white_C}
               width={width < 900 ? `100%` : `250px`}
               margin={width < 900 && `10px 0`}
@@ -1042,10 +1061,10 @@ const MM10Presenter = ({
               }}
             >
               INDIA
-            </Wrapper>
+            </LocationWrapper>
           </Wrapper>
           <Wrapper dr={`row`} ju={`flex-start`}>
-            <Wrapper
+            <LocationWrapper
               color={Theme.white_C}
               width={width < 900 ? `100%` : `250px`}
               margin={width < 900 && `10px 0`}
@@ -1064,8 +1083,8 @@ const MM10Presenter = ({
               }}
             >
               VIETNAM
-            </Wrapper>
-            <Wrapper
+            </LocationWrapper>
+            <LocationWrapper
               color={Theme.white_C}
               width={width < 900 ? `100%` : `250px`}
               margin={width < 900 && `10px 0`}
@@ -1084,8 +1103,8 @@ const MM10Presenter = ({
               }}
             >
               PHILIPPINES
-            </Wrapper>
-            <Wrapper
+            </LocationWrapper>
+            <LocationWrapper
               color={Theme.white_C}
               width={width < 900 ? `100%` : `250px`}
               margin={width < 900 && `10px 0`}
@@ -1104,8 +1123,8 @@ const MM10Presenter = ({
               }}
             >
               MALAYSIA
-            </Wrapper>
-            <Wrapper
+            </LocationWrapper>
+            <LocationWrapper
               color={Theme.white_C}
               width={width < 900 ? `100%` : `250px`}
               margin={width < 900 && `10px 0`}
@@ -1124,7 +1143,7 @@ const MM10Presenter = ({
               }}
             >
               THAILAND
-            </Wrapper>
+            </LocationWrapper>
           </Wrapper>
           {/* <Wrapper dr={`row`} ju={`flex-start`} margin={`50px 0 0`}>
             <Wrapper
