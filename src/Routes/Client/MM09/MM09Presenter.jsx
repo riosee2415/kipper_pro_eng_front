@@ -1289,7 +1289,6 @@ const MM09Presenter = ({
                 }
                 lineHeight={`1.87`}
               >
-                {console.log(currentColor)}
                 Color -{" "}
                 {currentColor &&
                   (currentColor.color === "없음" ? "N/A" : currentColor.color)}
