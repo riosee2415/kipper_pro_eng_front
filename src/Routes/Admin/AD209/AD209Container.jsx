@@ -79,7 +79,7 @@ export default ({ history }) => {
   const cerContent4Input = useInput(``);
   const cerContent5Input = useInput(``);
   const cerContent6Input = useInput(``);
-
+  //
   const inputFilePath1 = useInput("");
   const inputFileName1 = useInput("");
   const inputFilePath2 = useInput("");
@@ -88,6 +88,10 @@ export default ({ history }) => {
   const priceInput = useInput("");
   const vipPrice1Input = useInput("");
   const vipPrice2Input = useInput("");
+  //
+  const [pointNumber1Input, setPointNumber1Input] = useState(``);
+  const [pointNumber2Input, setPointNumber2Input] = useState(``);
+  const [pointNumber3Input, setPointNumber3Input] = useState(``);
   // const [innerImageList, setInnerImageList] = useState([]);
 
   const fileUploadProgress = useInput(null);
@@ -571,6 +575,9 @@ export default ({ history }) => {
         price: priceInput.value,
         vipPrice1: vipPrice1Input.value,
         vipPrice2: vipPrice2Input.value,
+        pointNumber1: pointNumber1Input,
+        pointNumber2: pointNumber2Input,
+        pointNumber3: pointNumber3Input,
       },
     });
 
@@ -760,6 +767,13 @@ export default ({ history }) => {
       priceInput={priceInput}
       vipPrice1Input={vipPrice1Input}
       vipPrice2Input={vipPrice2Input}
+      //
+      pointNumber1Input={pointNumber1Input}
+      pointNumber2Input={pointNumber2Input}
+      pointNumber3Input={pointNumber3Input}
+      setPointNumber1Input={setPointNumber1Input}
+      setPointNumber2Input={setPointNumber2Input}
+      setPointNumber3Input={setPointNumber3Input}
     />
   );
 };

@@ -42,7 +42,7 @@ const MM18Container = ({ history, location }) => {
     {
       variables: {
         searchValue: searchValue ? searchValue : inputSearchValue.value,
-        productType: "네트워크 물리보안",
+        productType: "Network Security",
         productSubType: productSubType.value,
       },
       skip: productSkip,
