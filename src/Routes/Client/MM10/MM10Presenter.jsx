@@ -818,7 +818,7 @@ const MM10Presenter = ({
                     link = data.link;
                   }
                 });
-                window.open(link, "_blank");
+                window.open(link);
               }}
             >
               USA
@@ -844,7 +844,7 @@ const MM10Presenter = ({
                     link = data.link;
                   }
                 });
-                window.open(link, "_blank");
+                window.open(link);
               }}
             >
               GERMANY
@@ -865,7 +865,7 @@ const MM10Presenter = ({
                     link = data.link;
                   }
                 });
-                window.open(link, "_blank");
+                window.open(link);
               }}
             >
               POLAND
@@ -886,7 +886,7 @@ const MM10Presenter = ({
                     link = data.link;
                   }
                 });
-                window.open(link, "_blank");
+                window.open(link);
               }}
             >
               CZECH REPUBLIC
@@ -907,7 +907,7 @@ const MM10Presenter = ({
                     link = data.link;
                   }
                 });
-                window.open(link, "_blank");
+                window.open(link);
               }}
             >
               SLOVAKIA
@@ -929,7 +929,7 @@ const MM10Presenter = ({
                     link = data.link;
                   }
                 });
-                window.open(link, "_blank");
+                window.open(link);
               }}
             >
               SWEDEN
@@ -950,7 +950,7 @@ const MM10Presenter = ({
                     link = data.link;
                   }
                 });
-                window.open(link, "_blank");
+                window.open(link);
               }}
             >
               HUNGARY
@@ -971,7 +971,7 @@ const MM10Presenter = ({
                     link = data.link;
                   }
                 });
-                window.open(link, "_blank");
+                window.open(link);
               }}
             >
               NORWAY
@@ -997,7 +997,7 @@ const MM10Presenter = ({
                     link = data.link;
                   }
                 });
-                window.open(link, "_blank");
+                window.open(link);
               }}
             >
               CHINA
@@ -1017,7 +1017,7 @@ const MM10Presenter = ({
                     link = data.link;
                   }
                 });
-                window.open(link, "_blank");
+                window.open(link);
               }}
             >
               JAPAN
@@ -1037,7 +1037,7 @@ const MM10Presenter = ({
                     link = data.link;
                   }
                 });
-                window.open(link, "_blank");
+                window.open(link);
               }}
             >
               SINGAPORE
@@ -1057,7 +1057,7 @@ const MM10Presenter = ({
                     link = data.link;
                   }
                 });
-                window.open(link, "_blank");
+                window.open(link);
               }}
             >
               INDIA
@@ -1079,7 +1079,7 @@ const MM10Presenter = ({
                     link = data.link;
                   }
                 });
-                window.open(link, "_blank");
+                window.open(link);
               }}
             >
               VIETNAM
@@ -1099,7 +1099,7 @@ const MM10Presenter = ({
                     link = data.link;
                   }
                 });
-                window.open(link, "_blank");
+                window.open(link);
               }}
             >
               PHILIPPINES
@@ -1119,7 +1119,7 @@ const MM10Presenter = ({
                     link = data.link;
                   }
                 });
-                window.open(link, "_blank");
+                window.open(link);
               }}
             >
               MALAYSIA
@@ -1139,7 +1139,7 @@ const MM10Presenter = ({
                     link = data.link;
                   }
                 });
-                window.open(link, "_blank");
+                window.open(link);
               }}
             >
               THAILAND
