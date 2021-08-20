@@ -66,9 +66,9 @@ export const REGISTER_PRODUCT = gql`
     $price: String!
     $vipPrice1: String!
     $vipPrice2: String!
-    $pointNumber1: String!
-    $pointNumber2: String!
-    $pointNumber3: String!
+    $pointNumber1: String
+    $pointNumber2: String
+    $pointNumber3: String
   ) {
     registerProduct(
       thumbnailPath: $thumbnailPath
