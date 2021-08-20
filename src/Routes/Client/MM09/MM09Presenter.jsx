@@ -1289,10 +1289,10 @@ const MM09Presenter = ({
                 }
                 lineHeight={`1.87`}
               >
+                {console.log(currentColor)}
                 Color -{" "}
-                {currentColor && currentColor.color === "없음"
-                  ? "N/A"
-                  : currentColor.color}
+                {currentColor &&
+                  (currentColor.color === "없음" ? "N/A" : currentColor.color)}
               </Text>
               <Wrapper dr={`row`} ju={`flex-start`} padding={`7px 0`}>
                 {colorList.map((data) => {
