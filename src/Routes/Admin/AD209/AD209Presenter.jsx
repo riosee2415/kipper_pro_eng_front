@@ -214,6 +214,13 @@ export default ({
   priceInput,
   vipPrice1Input,
   vipPrice2Input,
+  //
+  pointNumber1Input,
+  pointNumber2Input,
+  pointNumber3Input,
+  setPointNumber1Input,
+  setPointNumber2Input,
+  setPointNumber3Input,
 }) => {
   useTitle("ADMIN | 제품 등록");
 
@@ -1511,6 +1518,19 @@ export default ({
       </Wrapper>
 
       <Wrapper dr={`row`} ju={`flex-start`}>
+        <DataGuideWrapper height={`200px`}>핵심특징 01 title</DataGuideWrapper>
+        <DataWrapper height={`200px`}>
+          {/* 에디터 */}
+
+          <Editor
+            value={pointNumber1Input}
+            componentHeight="h-100"
+            editorChangeHandler={(html) => setPointNumber1Input(html)}
+          />
+        </DataWrapper>
+      </Wrapper>
+
+      <Wrapper dr={`row`} ju={`flex-start`}>
         <DataGuideWrapper height={`200px`}>핵심특징 설명 01</DataGuideWrapper>
         <DataWrapper height={`200px`}>
           {/* 에디터 */}
@@ -1523,6 +1543,19 @@ export default ({
         </DataWrapper>
       </Wrapper>
       <Wrapper dr={`row`} ju={`flex-start`}>
+        <DataGuideWrapper height={`200px`}>핵심특징 02 title</DataGuideWrapper>
+        <DataWrapper height={`200px`}>
+          {/* 에디터 */}
+
+          <Editor
+            value={pointNumber2Input}
+            componentHeight="h-100"
+            editorChangeHandler={(html) => setPointNumber2Input(html)}
+          />
+        </DataWrapper>
+      </Wrapper>
+
+      <Wrapper dr={`row`} ju={`flex-start`}>
         <DataGuideWrapper height={`200px`}>핵심특징 설명 02</DataGuideWrapper>
         <DataWrapper height={`200px`}>
           {/* 에디터 */}
@@ -1534,6 +1567,19 @@ export default ({
           />
         </DataWrapper>
       </Wrapper>
+      <Wrapper dr={`row`} ju={`flex-start`}>
+        <DataGuideWrapper height={`200px`}>핵심특징 03 title</DataGuideWrapper>
+        <DataWrapper height={`200px`}>
+          {/* 에디터 */}
+
+          <Editor
+            value={pointNumber3Input}
+            componentHeight="h-100"
+            editorChangeHandler={(html) => setPointNumber3Input(html)}
+          />
+        </DataWrapper>
+      </Wrapper>
+
       <Wrapper dr={`row`} ju={`flex-start`}>
         <DataGuideWrapper height={`200px`}>핵심특징 설명 03</DataGuideWrapper>
         <DataWrapper height={`200px`}>

@@ -90,6 +90,9 @@ export default ({ history, match }) => {
   const inputFileName1 = useInput("");
   const inputFilePath2 = useInput("");
   const inputFileName2 = useInput("");
+  const [pointNumber1Input, setPointNumber1Input] = useState(``);
+  const [pointNumber2Input, setPointNumber2Input] = useState(``);
+  const [pointNumber3Input, setPointNumber3Input] = useState(``);
   //
   const priceInput = useInput("");
   const vipPrice1Input = useInput("");
@@ -627,6 +630,9 @@ export default ({ history, match }) => {
         price: priceInput.value,
         vipPrice1: vipPrice1Input.value,
         vipPrice2: vipPrice2Input.value,
+        pointNumber1: pointNumber1Input.value,
+        pointNumber2: pointNumber2Input.value,
+        pointNumber3: pointNumber3Input.value,
       },
     });
 
@@ -749,6 +755,9 @@ export default ({ history, match }) => {
       priceInput.setValue(nData.getProductOne.price);
       vipPrice1Input.setValue(nData.getProductOne.vipPrice1);
       vipPrice2Input.setValue(nData.getProductOne.vipPrice2);
+      setPointNumber1Input(nData.getProductOne.pointNumber1);
+      setPointNumber2Input(nData.getProductOne.pointNumber2);
+      setPointNumber3Input(nData.getProductOne.pointNumber3);
     }
   }, [nData]);
 
@@ -876,6 +885,13 @@ export default ({ history, match }) => {
       priceInput={priceInput}
       vipPrice1Input={vipPrice1Input}
       vipPrice2Input={vipPrice2Input}
+      //
+      pointNumber1Input={pointNumber1Input}
+      pointNumber2Input={pointNumber2Input}
+      pointNumber3Input={pointNumber3Input}
+      setPointNumber1Input={setPointNumber1Input}
+      setPointNumber2Input={setPointNumber2Input}
+      setPointNumber3Input={setPointNumber3Input}
     />
   );
 };
