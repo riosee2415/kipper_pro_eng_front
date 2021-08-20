@@ -129,7 +129,7 @@ const MM14Presenter = ({
                     height={`15px`}
                     radius={`50%`}
                     bgColor={`#fff`}
-                    delay={idx % 2 === 0 ? `0s` : `0.5s`}
+                    delay={idx % 2 === 0 ? `0s` : `0.15s`}
                     onClick={() => setAbleIcon(idx)}
                   >
                     <Image
