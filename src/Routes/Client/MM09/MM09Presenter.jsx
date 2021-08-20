@@ -2750,7 +2750,7 @@ const MM09Presenter = ({
               color={Theme.greyTheme3_C}
               fontSize={width < 700 && `14px`}
             >
-              Catalogue
+              Product page
             </Text>
             <Wrapper width={width < 700 ? `50%` : `80%`} al={`flex-start`}>
               <CommonButton

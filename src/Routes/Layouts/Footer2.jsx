@@ -149,11 +149,7 @@ const Footer = ({ width, location }) => {
                 <Fragment key={menu.menuName}>
                   <Wrapper width={`calc(100% / 6 )`} al={`flex-start`}>
                     {menu.isEx === true ? (
-                      <ATag
-                        width={`auto`}
-                        href={`${menu.menuLink}`}
-                        target="_blank"
-                      >
+                      <ATag width={`auto`} href={`${menu.menuLink}`}>
                         <Wrapper
                           width={`auto`}
                           fontSize={width < 900 ? `8px` : `12px`}
@@ -182,11 +178,7 @@ const Footer = ({ width, location }) => {
                       return (
                         <Fragment key={idx}>
                           {sub.isEx === true ? (
-                            <ATag
-                              width={`auto`}
-                              href={`${sub.subMenuLink}`}
-                              target="_blank"
-                            >
+                            <ATag width={`auto`} href={`${sub.subMenuLink}`}>
                               <Wrapper
                                 width={`auto`}
                                 margin={`0 0 15px`}
@@ -350,11 +342,7 @@ const Footer = ({ width, location }) => {
                         return (
                           <Fragment key={idx}>
                             {sub.isEx === true ? (
-                              <ATag
-                                width={`auto`}
-                                href={`${sub.subMenuLink}`}
-                                target="_blank"
-                              >
+                              <ATag width={`auto`} href={`${sub.subMenuLink}`}>
                                 <Wrapper
                                   width={`auto`}
                                   margin={`0 0 20px`}
