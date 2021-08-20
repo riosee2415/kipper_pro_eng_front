@@ -100,11 +100,16 @@ const H_Wrapper = styled.div`
     font-weight: 600;
   }
 
-  @media (max-width: 1100px) {
-    width: 900px;
+  @media (max-width: 1230px) {
+    width: 1100px;
   }
-  @media (max-width: 900px) {
-    width: 800px;
+
+  @media (max-width: 1100px) {
+    width: 1000px;
+  }
+  @media (max-width: 1000px) {
+    width: 900px;
+    display: none;
   }
   @media (max-width: 800px) {
     width: 700px;
@@ -171,7 +176,7 @@ const MobileHeader = styled.div`
   justify-content: space-between;
   display: none;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     display: flex;
   }
 
@@ -264,7 +269,7 @@ const Header = ({ location, width, match }) => {
                       <Wrapper
                         width={`auto`}
                         fontSize={`14px`}
-                        margin={`0 60px`}
+                        margin={width < 1200 ? `0 30px` : `0 60px`}
                         header={true}
                         color={Theme.white_C}
                       >

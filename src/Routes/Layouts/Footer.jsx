@@ -152,11 +152,7 @@ const Footer = ({ width, location }) => {
                 <Fragment key={menu.menuName}>
                   <Wrapper width={`calc(100% / 6 )`} al={`flex-start`}>
                     {menu.isEx === true ? (
-                      <ATag
-                        width={`auto`}
-                        href={`${menu.menuLink}`}
-                        target="_blank"
-                      >
+                      <ATag width={`auto`} href={`${menu.menuLink}`}>
                         <Wrapper
                           width={`auto`}
                           fontSize={width < 900 ? `8px` : `12px`}
@@ -182,11 +178,7 @@ const Footer = ({ width, location }) => {
                       return (
                         <Fragment key={idx}>
                           {sub.isEx === true ? (
-                            <ATag
-                              width={`auto`}
-                              href={`${sub.subMenuLink}`}
-                              target="_blank"
-                            >
+                            <ATag width={`auto`} href={`${sub.subMenuLink}`}>
                               <Wrapper
                                 width={`auto`}
                                 margin={`0 0 15px`}
@@ -270,11 +262,7 @@ const Footer = ({ width, location }) => {
               Major Products
             </Wrapper>
 
-            <ATag
-              width={`auto`}
-              href={sDatum && sDatum.getAllSns[0].url}
-              target="_blank"
-            >
+            <ATag width={`auto`} href={sDatum && sDatum.getAllSns[0].url}>
               <Wrapper
                 width={`auto`}
                 margin={`0 0 15px`}
@@ -287,11 +275,7 @@ const Footer = ({ width, location }) => {
               </Wrapper>
             </ATag>
 
-            <ATag
-              width={`auto`}
-              href={sDatum && sDatum.getAllSns[1].url}
-              target="_blank"
-            >
+            <ATag width={`auto`} href={sDatum && sDatum.getAllSns[1].url}>
               <Wrapper
                 width={`auto`}
                 margin={`0 0 15px`}
@@ -304,11 +288,7 @@ const Footer = ({ width, location }) => {
               </Wrapper>
             </ATag>
 
-            <ATag
-              width={`auto`}
-              href={sDatum && sDatum.getAllSns[2].url}
-              target="_blank"
-            >
+            <ATag width={`auto`} href={sDatum && sDatum.getAllSns[2].url}>
               <Wrapper
                 width={`auto`}
                 margin={`0 0 15px`}
@@ -321,11 +301,7 @@ const Footer = ({ width, location }) => {
               </Wrapper>
             </ATag>
 
-            <ATag
-              width={`auto`}
-              href={sDatum && sDatum.getAllSns[3].url}
-              target="_blank"
-            >
+            <ATag width={`auto`} href={sDatum && sDatum.getAllSns[3].url}>
               <Wrapper
                 width={`auto`}
                 margin={`0 0 15px`}
@@ -427,11 +403,7 @@ const Footer = ({ width, location }) => {
                         return (
                           <Fragment key={idx}>
                             {sub.isEx === true ? (
-                              <ATag
-                                width={`auto`}
-                                href={`${sub.subMenuLink}`}
-                                target="_blank"
-                              >
+                              <ATag width={`auto`} href={`${sub.subMenuLink}`}>
                                 <Wrapper
                                   width={`auto`}
                                   margin={`0 0 20px`}
@@ -539,11 +511,7 @@ const Footer = ({ width, location }) => {
 
           {subToggle[5] && (
             <Wrapper al={`flex-start`} margin={`20px 0 0`}>
-              <ATag
-                width={`auto`}
-                href={sDatum && sDatum.getAllSns[0].url}
-                target="_blank"
-              >
+              <ATag width={`auto`} href={sDatum && sDatum.getAllSns[0].url}>
                 <Wrapper
                   width={`auto`}
                   margin={`0 0 20px`}
@@ -556,11 +524,7 @@ const Footer = ({ width, location }) => {
                 </Wrapper>
               </ATag>
 
-              <ATag
-                width={`auto`}
-                href={sDatum && sDatum.getAllSns[1].url}
-                target="_blank"
-              >
+              <ATag width={`auto`} href={sDatum && sDatum.getAllSns[1].url}>
                 <Wrapper
                   width={`auto`}
                   margin={`0 0 20px`}
@@ -573,11 +537,7 @@ const Footer = ({ width, location }) => {
                 </Wrapper>
               </ATag>
 
-              <ATag
-                width={`auto`}
-                href={sDatum && sDatum.getAllSns[2].url}
-                target="_blank"
-              >
+              <ATag width={`auto`} href={sDatum && sDatum.getAllSns[2].url}>
                 <Wrapper
                   width={`auto`}
                   margin={`0 0 20px`}
@@ -590,11 +550,7 @@ const Footer = ({ width, location }) => {
                 </Wrapper>
               </ATag>
 
-              <ATag
-                width={`auto`}
-                href={sDatum && sDatum.getAllSns[3].url}
-                target="_blank"
-              >
+              <ATag width={`auto`} href={sDatum && sDatum.getAllSns[3].url}>
                 <Wrapper
                   width={`auto`}
                   margin={`0 0 20px`}
