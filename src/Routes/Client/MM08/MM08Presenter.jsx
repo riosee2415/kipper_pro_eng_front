@@ -58,6 +58,10 @@ const BoxImage = styled(Wrapper)`
   }
   &:hover {
     background-image: ${(props) => props.bgImg2};
+
+    & ${Text}:first-child {
+      color: rgb(193, 47, 34);
+    }
   }
 
   @media (max-width: 900px) {

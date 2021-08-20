@@ -42,7 +42,7 @@ const MM06Container = ({ history, location }) => {
     {
       variables: {
         searchValue: searchValue ? searchValue : inputSearchValue.value,
-        productType: "컴퓨터 물리보안",
+        productType: "Anti-Theft for Computer",
         productSubType: productSubType.value,
       },
       skip: productSkip,

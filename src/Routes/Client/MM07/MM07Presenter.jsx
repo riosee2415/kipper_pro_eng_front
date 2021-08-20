@@ -59,6 +59,10 @@ const BoxImage = styled(Wrapper)`
   }
   &:hover {
     background-image: ${(props) => props.bgImg2};
+
+    & ${Text}:first-child {
+      color: rgb(193, 47, 34);
+    }
   }
 
   @media (max-width: 900px) {
@@ -558,9 +562,6 @@ const MM07Presenter = ({
                   </Wrapper>
                   <Wrapper
                     display={width < 900 ? `flex` : `none`}
-                    isAbsolute={true}
-                    top={`6px`}
-                    right={`42px`}
                     width={`auto`}
                     cursor={`pointer`}
                     onClick={() => moveLinkHandler("/computer")}

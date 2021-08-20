@@ -42,7 +42,7 @@ const MM07Container = ({ history, location }) => {
     {
       variables: {
         searchValue: searchValue ? searchValue : inputSearchValue.value,
-        productType: "기타포트 물리보안",
+        productType: "Other Port Security",
         productSubType: productSubType.value,
       },
       skip: productSkip,

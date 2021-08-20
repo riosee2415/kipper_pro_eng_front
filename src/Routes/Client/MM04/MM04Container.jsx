@@ -42,7 +42,7 @@ const MM04Container = ({ history, location }) => {
     {
       variables: {
         searchValue: searchValue ? searchValue : inputSearchValue.value,
-        productType: "USB 물리보안",
+        productType: "USB Security",
         productSubType: productSubType.value,
       },
       skip: productSkip,

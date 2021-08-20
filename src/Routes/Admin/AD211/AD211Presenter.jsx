@@ -209,6 +209,13 @@ export default ({
   //
   nData,
   productSaveHandler,
+  //
+  pointNumber1Input,
+  pointNumber2Input,
+  pointNumber3Input,
+  setPointNumber1Input,
+  setPointNumber2Input,
+  setPointNumber3Input,
 }) => {
   useTitle("ADMIN | 제품 수정");
 
@@ -328,15 +335,17 @@ export default ({
         <DataWrapper>
           <Combo {...productTypeInput} width={`200px`}>
             <ComboOption value={``}>--전체--</ComboOption>
-            <ComboOption value={`USB 물리보안`}>USB 물리보안</ComboOption>
-            <ComboOption value={`네트워크 물리보안`}>
-              네트워크 물리보안
+            <ComboOption value={`USB Security`}>USB Security</ComboOption>
+            <ComboOption value={`Network Security`}>
+              Network Security
             </ComboOption>
-            <ComboOption value={`기타포트 물리보안`}>
-              기타포트 물리보안
+            <ComboOption value={`Other Port Security`}>
+              Other Port Security
             </ComboOption>
-            <ComboOption value={`컴퓨터 물리보안`}>컴퓨터 물리보안</ComboOption>
-            <ComboOption value={`락키 PRO`}>락키 PRO</ComboOption>
+            <ComboOption value={`Anti-Theft for Computer`}>
+              Anti-Theft for Computer
+            </ComboOption>
+            <ComboOption value={`Lock Key PRO`}>Lock Key PRO</ComboOption>
           </Combo>
         </DataWrapper>
       </Wrapper>
@@ -1504,6 +1513,19 @@ export default ({
       </Wrapper>
 
       <Wrapper dr={`row`} ju={`flex-start`}>
+        <DataGuideWrapper height={`200px`}>핵심특징 01 title</DataGuideWrapper>
+        <DataWrapper height={`200px`}>
+          {/* 에디터 */}
+
+          <Editor
+            value={pointNumber1Input}
+            componentHeight="h-100"
+            editorChangeHandler={(html) => setPointNumber1Input(html)}
+          />
+        </DataWrapper>
+      </Wrapper>
+
+      <Wrapper dr={`row`} ju={`flex-start`}>
         <DataGuideWrapper height={`200px`}>핵심특징 설명 01</DataGuideWrapper>
         <DataWrapper height={`200px`}>
           {/* 에디터 */}
@@ -1515,6 +1537,20 @@ export default ({
           />
         </DataWrapper>
       </Wrapper>
+
+      <Wrapper dr={`row`} ju={`flex-start`}>
+        <DataGuideWrapper height={`200px`}>핵심특징 02 title</DataGuideWrapper>
+        <DataWrapper height={`200px`}>
+          {/* 에디터 */}
+
+          <Editor
+            value={pointNumber2Input}
+            componentHeight="h-100"
+            editorChangeHandler={(html) => setPointNumber2Input(html)}
+          />
+        </DataWrapper>
+      </Wrapper>
+
       <Wrapper dr={`row`} ju={`flex-start`}>
         <DataGuideWrapper height={`200px`}>핵심특징 설명 02</DataGuideWrapper>
         <DataWrapper height={`200px`}>
@@ -1527,6 +1563,20 @@ export default ({
           />
         </DataWrapper>
       </Wrapper>
+
+      <Wrapper dr={`row`} ju={`flex-start`}>
+        <DataGuideWrapper height={`200px`}>핵심특징 03 title</DataGuideWrapper>
+        <DataWrapper height={`200px`}>
+          {/* 에디터 */}
+
+          <Editor
+            value={pointNumber3Input}
+            componentHeight="h-100"
+            editorChangeHandler={(html) => setPointNumber3Input(html)}
+          />
+        </DataWrapper>
+      </Wrapper>
+
       <Wrapper dr={`row`} ju={`flex-start`}>
         <DataGuideWrapper height={`200px`}>핵심특징 설명 03</DataGuideWrapper>
         <DataWrapper height={`200px`}>
@@ -2306,7 +2356,7 @@ export default ({
         <DataWrapper>
           <Combo {...currentColor}>
             <ComboOption value={``}>--선택--</ComboOption>
-            <ComboOption value={`레드`}>레드</ComboOption>
+            <ComboOption value={`Red`}>레드</ComboOption>
             <ComboOption value={`없음`}>없음</ComboOption>
           </Combo>
         </DataWrapper>
