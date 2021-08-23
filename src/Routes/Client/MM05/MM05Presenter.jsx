@@ -808,7 +808,7 @@ const MM05Presenter = ({
               As the name suggests, the key is universal.
             </Text>
             <Text fontSize={`20px`}>
-              ONE key can manage 30+ SMARTKEEPER products to
+              ONE key can manage 40+ SMARTKEEPER products to
             </Text>
             <Text fontSize={`20px`}>enhance user efficiency.</Text>
             <Text fontSize={`20px`} margin={`15px 0 0`}>
@@ -864,7 +864,7 @@ const MM05Presenter = ({
           >
             <Text fontWeight={`400`}>As the name suggests,</Text>
             <Text fontWeight={`400`}>the key is universal.</Text>
-            <Text fontWeight={`400`}>ONE key can manage 30+</Text>
+            <Text fontWeight={`400`}>ONE key can manage 40+</Text>
             <Text fontWeight={`400`}>SMARTKEEPER products to enhance</Text>
             <Text fontWeight={`400`} margin={`0 0 30px`}>
               user efficiency.
