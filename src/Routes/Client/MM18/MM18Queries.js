@@ -24,6 +24,7 @@ export const GET_PRODUCT_LIST_BY_TYPE = gql`
       keyType
       mainTitle
       thumbnailPath
+      thumbnailPath2
       price
       vipPrice1
       vipPrice2
