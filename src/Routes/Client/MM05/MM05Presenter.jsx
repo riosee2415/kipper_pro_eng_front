@@ -818,7 +818,7 @@ const MM05Presenter = ({
               with products of matching pattern.
             </Text>
 
-            <Link to="/lock/611910452c1dfdde5b57cd5e">
+            <Link to="/lock/611eb54dc3605319d4babda2">
               <ArrowIcon fontWeight={`700`}>
                 Learn more about Universal Lock Key
                 <FaChevronRight />
@@ -875,7 +875,7 @@ const MM05Presenter = ({
             <Text fontWeight={`400`} margin={`0 0 30px`}>
               products of matching pattern.
             </Text>
-            <Link to="/lock/611910452c1dfdde5b57cd5e">
+            <Link to="/lock/611eb54dc3605319d4babda2">
               <ArrowIcon fontWeight={`700`}>
                 Learn more about Universal Lock Key
                 <FaChevronRight />
