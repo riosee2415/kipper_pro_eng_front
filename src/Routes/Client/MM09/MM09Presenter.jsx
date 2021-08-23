@@ -1515,9 +1515,9 @@ const MM09Presenter = ({
           <Wrapper display={width < 900 ? `flex` : `none`}>
             <BuyButton
               color={Theme.white_C}
-              onClick={() => moveLinkHandler(`/info?type=history`)}
+              onClick={() => moveLinkHandler(`/contact`)}
             >
-              Contact Us
+              Buy Now
             </BuyButton>
           </Wrapper>
           {/* 상단 메인 이미지 */}
@@ -1551,9 +1551,9 @@ const MM09Presenter = ({
             </Wrapper>
             <BuyButton
               color={Theme.white_C}
-              onClick={() => moveLinkHandler(`/info?type=history`)}
+              onClick={() => moveLinkHandler(`/contact`)}
             >
-              Contact Us
+              Buy Now
             </BuyButton>
           </Wrapper>
         </RsWrapper>

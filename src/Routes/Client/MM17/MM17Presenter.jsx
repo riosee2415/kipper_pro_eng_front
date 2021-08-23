@@ -975,7 +975,7 @@ const MM17Presenter = ({
             내부의 보안규정을 준수할 수 있도록 도와드립니다.
           </Text> */}
 
-          <Link to="/usb/611910452c1dfdde5b57cd62">
+          <Link to="usb/611eb54dc3605319d4babda8">
             <ArrowIcon>
               Learn more about Link Lock
               <FaChevronRight />
@@ -1062,7 +1062,7 @@ const MM17Presenter = ({
           Link and Lock it down!
         </Text>
 
-        <Link to="/usb/611910452c1dfdde5b57cd62">
+        <Link to="/usb/611eb54dc3605319d4babda8">
           <ArrowIcon>
             Learn more about Link Lock
             <FaChevronRight />
