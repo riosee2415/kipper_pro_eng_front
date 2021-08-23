@@ -187,7 +187,7 @@ const MM05Presenter = ({
           </Text>
           <Text fontSize={width < 700 ? `12px` : `16px`}>(CSK-NL11)</Text>
 
-          <Link to="/p_network/611910452c1dfdde5b57cd6b">
+          <Link to="/p_network/611eb54ec3605319d4babdb1">
             <ArrowIcon>
               Learn more
               <FaChevronRight />
@@ -208,7 +208,7 @@ const MM05Presenter = ({
           </Text>
           <Text fontSize={width < 700 ? `12px` : `16px`}>(CSK-NC11)</Text>
 
-          <Link to="/p_network/611910452c1dfdde5b57cd6c">
+          <Link to="/p_network/611eb54ec3605319d4babdb0">
             <ArrowIcon>
               Learn more
               <FaChevronRight />
@@ -494,7 +494,7 @@ const MM05Presenter = ({
             <Text fontSize={`24px`} color={Theme.greyTheme4_C}>
               Physical cyberisecurity is now a must, not a choice.
             </Text>
-            <Link to="/p_network/611910452c1dfdde5b57cd6b">
+            <Link to="/p_network/611eb54ec3605319d4babdb1">
               <ArrowIcon fontWeight={`700`} margin={`10px 0 0`}>
                 Learn more about Network Port Lock Plus
                 <FaChevronRight />
@@ -531,7 +531,7 @@ const MM05Presenter = ({
             >
               is now a must, not a choice.
             </Text>
-            <Link to="/p_network/611910452c1dfdde5b57cd6b">
+            <Link to="/p_network/611eb54ec3605319d4babdb1">
               <ArrowIcon fontWeight={`700`} margin={`10px 0 0`}>
                 Learn more about Network Port Lock Plus
                 <FaChevronRight />
@@ -766,7 +766,7 @@ const MM05Presenter = ({
               for Network Cables
             </Text>
 
-            <Link to="/p_network/611910452c1dfdde5b57cd6c">
+            <Link to="/p_network/611eb54ec3605319d4babdb0">
               <ArrowIcon color={Theme.blackTheme2_C}>
                 Learn more about LAN Cable Lock Plus
                 <FaChevronRight />
