@@ -20,7 +20,7 @@ const MMinitContainer = ({ history }) => {
 
   ///////////// - EVENT HANDLER- ////////////
   const moveLinkHandler = (url) => {
-    window.open(url);
+    window.open(url, "_self");
   };
 
   const moveLinkHandler2 = (link) => {
