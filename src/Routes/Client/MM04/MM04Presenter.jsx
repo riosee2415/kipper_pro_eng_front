@@ -45,6 +45,7 @@ const BoxImage = styled(Wrapper)`
   padding: 10px 15px;
   background-attachment: initial;
   cursor: pointer;
+  transition: 0.5s;
 
   &:nth-child(-n + 4) {
     border-top: 1px solid rgb(216, 216, 216);

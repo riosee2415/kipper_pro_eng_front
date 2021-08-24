@@ -25,9 +25,9 @@ import Theme from "../../Styles/Theme";
 import { toast } from "react-toastify";
 
 const OnlyHeadAbsoluteWrapper = styled.div`
-  display: flex;
-  opacity: 0;
-  visibility: hidden;
+  display: none;
+  /* opacity: 0;
+  visibility: hidden; */
   width: ${(props) => props.width || `100%`};
   height: ${(props) => props.height};
   background: ${(props) => props.theme.black_C};
@@ -43,8 +43,6 @@ const OnlyHeadAbsoluteWrapper = styled.div`
   bottom: ${(props) => props.bottom};
   margin: ${(props) => props.margin};
   padding: ${(props) => props.padding};
-  transition: 0.2s;
-  animation: ${header2} 0s forwards;
 `;
 
 const HeaderWrapper = styled.div`
@@ -86,8 +84,7 @@ const H_Wrapper = styled.div`
   transition: ${(props) => props.theme.transition};
 
   &:hover ${OnlyHeadAbsoluteWrapper} {
-    opacity: 1;
-    visibility: visible;
+    display: flex;
     animation: ${header} 0.1s forwards;
   }
 

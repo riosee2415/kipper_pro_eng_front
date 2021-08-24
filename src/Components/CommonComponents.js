@@ -128,7 +128,7 @@ export const Wrapper = styled.div`
 
   transform: ${(props) => props.transform};
 
-  transition: ${(props) => props.transition || `0.5s`};
+  transition: ${(props) => props.transition};
   cursor: ${(props) => props.cursor};
   line-height: ${(props) => props.lineHeight};
   text-align: ${(props) => props.textAlign};
