@@ -90,7 +90,7 @@ const MM11Presenter = ({
   return (
     <WholeWrapper bgColor={`rgb(36, 36, 36)`}>
       <RsWrapper
-        padding={width < 900 ? `115px 0 100px` : `280px 0 240px`}
+        padding={width < 900 ? `115px 0 100px` : `120px 0 240px`}
         paddingLeft={width < 900 && `36px`}
         paddingRight={width < 900 && `95px`}
       >
@@ -98,8 +98,8 @@ const MM11Presenter = ({
           <Image
             alt="site Map"
             src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Fmodify%2FSITE%20MAP.svg?alt=media&token=4909a331-7ba8-485a-bdc9-09b77d740527`}
-            width={width < 700 ? `148px` : `344px`}
-            margin={`0 0 80px`}
+            width={width < 700 ? `148px` : `250px`}
+            margin={`0 0 40px`}
           />
           <Image
             alt="HOME"
