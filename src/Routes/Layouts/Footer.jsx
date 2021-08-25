@@ -21,6 +21,7 @@ import { Fragment } from "react";
 import { saveAs } from "file-saver";
 import { Modal } from "4leaf-antd";
 import { GiSandsOfTime } from "react-icons/gi";
+import { animateScroll as scroll } from "react-scroll";
 
 const Footer = ({ width, location }) => {
   const files = [
@@ -511,7 +512,13 @@ const Footer = ({ width, location }) => {
 
           {subToggle[5] && (
             <Wrapper al={`flex-start`} margin={`20px 0 0`}>
-              <ATag width={`auto`} href={sDatum && sDatum.getAllSns[0].url}>
+              {sDatum &&
+              sDatum.getAllSns[0].url.split("/")[
+                sDatum.getAllSns[0].url.split("/").length - 1
+              ] ===
+                location.pathname.split("/")[
+                  location.pathname.split("/").length - 1
+                ] ? (
                 <Wrapper
                   width={`auto`}
                   margin={`0 0 20px`}
@@ -519,12 +526,32 @@ const Footer = ({ width, location }) => {
                   fontSize={`11px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme1_C}
+                  onClick={() => scroll.scrollTo(0)}
+                  cursor={`pointer`}
                 >
                   {sDatum && sDatum.getAllSns[0].platform}
                 </Wrapper>
-              </ATag>
-
-              <ATag width={`auto`} href={sDatum && sDatum.getAllSns[1].url}>
+              ) : (
+                <ATag width={`auto`} href={sDatum && sDatum.getAllSns[0].url}>
+                  <Wrapper
+                    width={`auto`}
+                    margin={`0 0 20px`}
+                    al={`flex-start`}
+                    fontSize={`11px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme1_C}
+                  >
+                    {sDatum && sDatum.getAllSns[0].platform}
+                  </Wrapper>
+                </ATag>
+              )}
+              {sDatum &&
+              sDatum.getAllSns[1].url.split("/")[
+                sDatum.getAllSns[1].url.split("/").length - 1
+              ] ===
+                location.pathname.split("/")[
+                  location.pathname.split("/").length - 1
+                ] ? (
                 <Wrapper
                   width={`auto`}
                   margin={`0 0 20px`}
@@ -532,12 +559,32 @@ const Footer = ({ width, location }) => {
                   fontSize={`11px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme1_C}
+                  onClick={() => scroll.scrollTo(0)}
+                  cursor={`pointer`}
                 >
                   {sDatum && sDatum.getAllSns[1].platform}
                 </Wrapper>
-              </ATag>
-
-              <ATag width={`auto`} href={sDatum && sDatum.getAllSns[2].url}>
+              ) : (
+                <ATag width={`auto`} href={sDatum && sDatum.getAllSns[1].url}>
+                  <Wrapper
+                    width={`auto`}
+                    margin={`0 0 20px`}
+                    al={`flex-start`}
+                    fontSize={`11px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme1_C}
+                  >
+                    {sDatum && sDatum.getAllSns[1].platform}
+                  </Wrapper>
+                </ATag>
+              )}
+              {sDatum &&
+              sDatum.getAllSns[2].url.split("/")[
+                sDatum.getAllSns[2].url.split("/").length - 1
+              ] ===
+                location.pathname.split("/")[
+                  location.pathname.split("/").length - 1
+                ] ? (
                 <Wrapper
                   width={`auto`}
                   margin={`0 0 20px`}
@@ -545,12 +592,33 @@ const Footer = ({ width, location }) => {
                   fontSize={`11px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme1_C}
+                  onClick={() => scroll.scrollTo(0)}
+                  cursor={`pointer`}
                 >
                   {sDatum && sDatum.getAllSns[2].platform}
                 </Wrapper>
-              </ATag>
+              ) : (
+                <ATag width={`auto`} href={sDatum && sDatum.getAllSns[2].url}>
+                  <Wrapper
+                    width={`auto`}
+                    margin={`0 0 20px`}
+                    al={`flex-start`}
+                    fontSize={`11px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme1_C}
+                  >
+                    {sDatum && sDatum.getAllSns[2].platform}
+                  </Wrapper>
+                </ATag>
+              )}
 
-              <ATag width={`auto`} href={sDatum && sDatum.getAllSns[3].url}>
+              {sDatum &&
+              sDatum.getAllSns[3].url.split("/")[
+                sDatum.getAllSns[3].url.split("/").length - 1
+              ] ===
+                location.pathname.split("/")[
+                  location.pathname.split("/").length - 1
+                ] ? (
                 <Wrapper
                   width={`auto`}
                   margin={`0 0 20px`}
@@ -558,10 +626,25 @@ const Footer = ({ width, location }) => {
                   fontSize={`11px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme1_C}
+                  onClick={() => scroll.scrollTo(0)}
+                  cursor={`pointer`}
                 >
                   {sDatum && sDatum.getAllSns[3].platform}
                 </Wrapper>
-              </ATag>
+              ) : (
+                <ATag width={`auto`} href={sDatum && sDatum.getAllSns[3].url}>
+                  <Wrapper
+                    width={`auto`}
+                    margin={`0 0 20px`}
+                    al={`flex-start`}
+                    fontSize={`11px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme1_C}
+                  >
+                    {sDatum && sDatum.getAllSns[3].platform}
+                  </Wrapper>
+                </ATag>
+              )}
             </Wrapper>
           )}
 
