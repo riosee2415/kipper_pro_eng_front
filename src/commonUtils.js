@@ -133,10 +133,10 @@ export const resizeImage = (uploadPath, file, width, height) => {
           .getContext("2d")
           .drawImage(image, 0, 0, canvas.width, canvas.height);
 
-        const dataURL = canvas.toDataURL("image/jpeg");
+        const dataURL = canvas.toDataURL("image/png");
 
         const blob = dataURItoBlob(dataURL);
-        const resultFile = new File([blob], file.name, { type: "image/jpeg" });
+        const resultFile = new File([blob], file.name, { type: "image/png" });
 
         const path = await storageFn.uploadFile(
           uploadPath,
