@@ -1567,7 +1567,6 @@ const MM09Presenter = ({
       >
         <RsWrapper
           height={`100%`}
-          color={Theme.white_C}
           padding={width < 700 ? `0 36px` : `0`}
           ju={`space-between`}
         >
@@ -1826,7 +1825,6 @@ const MM09Presenter = ({
         <RsWrapper
           minHeight={width < 700 ? `300px` : `500px`}
           ju={`flex-start`}
-          color={Theme.white_C}
         >
           {pData && (
             <EditorViewer
@@ -1906,7 +1904,6 @@ const MM09Presenter = ({
         <RsWrapper
           minHeight={width < 700 ? `300px` : `500px`}
           ju={`flex-start`}
-          color={Theme.white_C}
         >
           {/* 제품 특징2 서브타이틀 */}
           {pData && (
@@ -1978,13 +1975,10 @@ const MM09Presenter = ({
       </Wrapper>
 
       <Wrapper bgColor={`rgba(36, 36, 36, 0.95)`}>
-        <RsWrapper
-          display={width < 700 ? `none` : `flex`}
-          padding={`120px 0`}
-          color={Theme.white_C}
-        >
+        <RsWrapper display={width < 700 ? `none` : `flex`} padding={`120px 0`}>
           <Wrapper al={`flex-start`}>
             <Text
+              color={Theme.white_C}
               lineHeight={`1.47`}
               fontSize={width < 700 ? `30px` : `34px`}
               fontWeight={`900`}
@@ -2211,7 +2205,6 @@ const MM09Presenter = ({
 
         <RsWrapper
           display={width < 700 ? `flex` : `none`}
-          color={Theme.white_C}
           padding={`35px 36px`}
         >
           <Wrapper al={`flex-start`}>
@@ -2220,6 +2213,7 @@ const MM09Presenter = ({
               fontWeight={`900`}
               letterSpacing={`-0.03em`}
               lineHeight={`1.47`}
+              color={Theme.white_C}
             >
               Specifications
             </Text>
@@ -2437,11 +2431,7 @@ const MM09Presenter = ({
         bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM02%2FbgImage.png?alt=media&token=0917fcbf-c46d-4f3c-a371-8b1e69100a61")`}
       >
         {/* 맺음말 타이틀 */}
-        <RsWrapper
-          color={Theme.white_C}
-          al={`flex-start`}
-          padding={width < 700 && `0 36px`}
-        >
+        <RsWrapper al={`flex-start`} padding={width < 700 && `0 36px`}>
           {pData && (
             <EditorViewer
               letterSpacing={`-0.03em`}
