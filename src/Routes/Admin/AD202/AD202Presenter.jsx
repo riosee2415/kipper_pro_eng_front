@@ -41,7 +41,7 @@ export default ({
   nDatum,
   //
   dataClickHandler,
-  deleteMainReferenceHandler,
+  deleteReferenceHandler,
   moveUpdateReferencePage,
   moveCreateReferencePage,
 }) => {
@@ -240,7 +240,7 @@ export default ({
                   <CommonButton
                     margin={`0px 10px`}
                     kindOf={`delete`}
-                    onClick={() => deleteMainReferenceHandler()}
+                    onClick={() => deleteReferenceHandler()}
                   >
                     데이터 삭제
                   </CommonButton>
