@@ -342,22 +342,26 @@ const MM15Presenter = ({
                                 User Guide
                               </Text>
                             </Wrapper>
-                            <Wrapper dr={`row`} width={`auto`}>
-                              <Image
-                                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM15%2F%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD%E1%84%89%E1%85%B5%E1%86%AF-icon-2.png?alt=media&token=8feef21a-dafb-45a1-bdc3-70a2acc1f0b1`}
-                                width={width < 700 ? `15px` : `20px`}
-                              />
-                              <Text
-                                color={Theme.white_C}
-                                fontSize={`10px`}
-                                margin={width < 700 ? `0 0 0 3px` : `0 0 0 6px`}
-                                onClick={() => {
-                                  changeLinkHandler(data);
-                                }}
-                              >
-                                Video
-                              </Text>
-                            </Wrapper>
+                            {data.link && data.link !== `-` && (
+                              <Wrapper dr={`row`} width={`auto`}>
+                                <Image
+                                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM15%2F%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD%E1%84%89%E1%85%B5%E1%86%AF-icon-2.png?alt=media&token=8feef21a-dafb-45a1-bdc3-70a2acc1f0b1`}
+                                  width={width < 700 ? `15px` : `20px`}
+                                />
+                                <Text
+                                  color={Theme.white_C}
+                                  fontSize={`10px`}
+                                  margin={
+                                    width < 700 ? `0 0 0 3px` : `0 0 0 6px`
+                                  }
+                                  onClick={() => {
+                                    changeLinkHandler(data);
+                                  }}
+                                >
+                                  Video
+                                </Text>
+                              </Wrapper>
+                            )}
                           </Wrapper>
                         </Wrapper>
                       </Box>
