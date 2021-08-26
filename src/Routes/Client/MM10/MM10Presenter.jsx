@@ -150,7 +150,7 @@ const MM10Presenter = ({
             fontWeight={`900`}
             lineHeight={`1.4`}
           >
-            Benefits of becoming a
+            Benefits of becoming
           </Text>
           <Text
             fontSize={width < 700 ? `26px` : `45px`}
@@ -158,7 +158,7 @@ const MM10Presenter = ({
             fontWeight={`900`}
             lineHeight={`1.4`}
           >
-            Partner
+            a Partner
           </Text>
 
           <Wrapper

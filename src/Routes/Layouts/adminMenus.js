@@ -4,6 +4,19 @@ export const allMenus = [
     link: "/admin",
   },
   {
+    menuName: "제품 관리",
+    link: "/admin/productManagement",
+  },
+  // {
+  //   menuName: "제품 관리",
+  //   subMenu: [
+  //     {
+  //       subMenuName: "제품 리스트/등록",
+  //       subMenuLink: "/admin/productManagement",
+  //     },
+  //   ],
+  // },
+  {
     menuName: "통계 관리",
     subMenu: [
       {
@@ -122,15 +135,15 @@ export const allMenus = [
     ],
   },
 
-  {
-    menuName: "제품 관리",
-    subMenu: [
-      {
-        subMenuName: "제품 리스트/등록",
-        subMenuLink: "/admin/productManagement",
-      },
-    ],
-  },
+  // {
+  //   menuName: "제품 관리",
+  //   subMenu: [
+  //     {
+  //       subMenuName: "제품 리스트/등록",
+  //       subMenuLink: "/admin/productManagement",
+  //     },
+  //   ],
+  // },
   {
     menuName: "LOCATION 관리",
     subMenu: [
