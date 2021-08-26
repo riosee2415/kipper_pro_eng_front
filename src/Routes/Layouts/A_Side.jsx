@@ -43,6 +43,10 @@ const A_Side = () => {
                   {menu.menuName}
                 </SideMenu>
               </Link>
+            ) : idx === 1 ? (
+              <Link to={menu.link} className={`Atag`}>
+                <SideMenu>{menu.menuName}</SideMenu>
+              </Link>
             ) : (
               <>
                 <SideMenu

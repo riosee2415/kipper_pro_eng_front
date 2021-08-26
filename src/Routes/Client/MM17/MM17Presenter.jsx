@@ -785,12 +785,12 @@ const MM17Presenter = ({
             electricity.
           </Text>
 
-          <Link to="/usb/611910452c1dfdde5b57cd60">
+          {/* <Link to="/usb/611910452c1dfdde5b57cd60">
             <ArrowIcon fontWeight={`700`} margin={`10px 0 0`}>
               Learn more about USB Port Lock
               <FaChevronRight />
             </ArrowIcon>
-          </Link>
+          </Link> */}
         </RsWrapper>
         <RsWrapper
           display={width < 700 ? `flex` : `none`}

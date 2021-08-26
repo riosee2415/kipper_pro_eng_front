@@ -1413,7 +1413,7 @@ const MM09Presenter = ({
                   ? `30px 0 15px`
                   : tokenId
                   ? `10px 0 30px`
-                  : `50px 0 30px`
+                  : `50px 0 15px`
               }
               al={`flex-start`}
             >
@@ -1443,26 +1443,26 @@ const MM09Presenter = ({
                 })} */}
             </Wrapper>
 
-            {/* <Wrapper dr={`row`} ju={`flex-start`} margin={`10px 0 30px`}>
+            <Wrapper dr={`row`} ju={`flex-start`} margin={`10px 0 20px`}>
               <Image
                 width={`30px`}
                 margin={`0 10px 0 0`}
                 alt="image"
                 src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM02%2Ficon-01.png?alt=media&token=544f517a-e3da-4688-946d-9efc0d485270`}
-              />*/}
+              />
 
-            {/* 주의 사항 */}
-            {/*  {pData && (
+              {/* 주의 사항 */}
+              {pData && (
                 <EditorViewer
                   lineHeight={`1.36`}
                   letterSpacing={`-0.03em`}
                   value={pData.warningContent}
                   width={`calc(100% - 60px)`}
-                  fontSize={width < 390 ? `10px !important` : `16px`}
+                  fontSize={width < 390 ? `10px !important` : `11px`}
                   color={Theme.greyTheme7_C}
                 />
               )}
-            </Wrapper> */}
+            </Wrapper>
 
             <Wrapper
               dr={`row`}

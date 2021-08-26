@@ -30,12 +30,12 @@ export const menus = [
         subMenuLink: "/p_network",
       },
       {
-        subMenuName: "Computer Physical Security",
-        subMenuLink: "/computer",
-      },
-      {
         subMenuName: "Other Port Physical Security",
         subMenuLink: "/port",
+      },
+      {
+        subMenuName: "Computer Physical Security",
+        subMenuLink: "/computer",
       },
       {
         subMenuName: "Lock Key PRO",
@@ -52,11 +52,11 @@ export const menus = [
         subMenuLink: "/info?type=partnership",
       },
       {
-        subMenuName: "How to Business",
+        subMenuName: "How to become a Partner",
         subMenuLink: "/info?type=business",
       },
       {
-        subMenuName: "Where our Partners",
+        subMenuName: "Our Partner Locations",
         subMenuLink: "/info?type=where",
       },
     ],
@@ -91,7 +91,7 @@ export const essmMenus = [
     menuLink: "https://schoolhealing7.co.kr/#/mini",
   },
   {
-    menuName: "Keyless Devices",
+    menuName: "No Key Required",
     menuLink: "https://schoolhealing7.co.kr/#/product",
   },
   {
@@ -152,12 +152,12 @@ export const footerMenus = [
         subMenuLink: "/p_network",
       },
       {
-        subMenuName: "Computer Physical Security",
-        subMenuLink: "/computer",
-      },
-      {
         subMenuName: "Other Port Physical Security",
         subMenuLink: "/port",
+      },
+      {
+        subMenuName: "Computer Physical Security",
+        subMenuLink: "/computer",
       },
       {
         subMenuName: "Lock Key PRO",
