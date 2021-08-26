@@ -60,7 +60,7 @@ const BoxImage = styled(Wrapper)`
   &:hover {
     background-image: ${(props) => props.bgImg2};
 
-    & ${Text}:first-child {
+    & ${Text}.title {
       color: rgb(193, 47, 34);
     }
   }
@@ -584,6 +584,7 @@ const MM04Presenter = ({
                     <Text
                       fontSize={width < 700 ? `10px` : `19px`}
                       fontWeight={`700`}
+                      className={`title`}
                     >
                       {data.mainTitle}
                     </Text>
