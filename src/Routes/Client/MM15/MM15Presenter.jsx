@@ -313,7 +313,11 @@ const MM15Presenter = ({
                           >
                             {data.subTitle}
                           </Text>
-                          <Wrapper dr={`row`} ju={`flex-start`}>
+                          <Wrapper
+                            dr={`row`}
+                            ju={`flex-start`}
+                            minHeight={`20px`}
+                          >
                             <Wrapper
                               dr={`row`}
                               width={`auto`}
