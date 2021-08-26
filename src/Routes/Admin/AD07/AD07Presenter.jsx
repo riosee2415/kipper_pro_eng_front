@@ -58,6 +58,9 @@ export default ({
   faqDeleteHandler,
   dialogToggle,
   modifyAnswerHandler,
+  //
+  currentQuestion,
+  setCurrentQuestion,
 }) => {
   useTitle(`ADMIN | FAQ`);
   return (
@@ -124,7 +127,9 @@ export default ({
                           <CommonButton
                             width={`100%`}
                             height={`25px`}
-                            onClick={() => dialogToggle(data.answer, data._id)}
+                            onClick={() =>
+                              dialogToggle(data._id, data.question, data.answer)
+                            }
                           >
                             답변보기
                           </CommonButton>
@@ -302,6 +307,14 @@ export default ({
           {`FAQ 답변 상세보기`}
         </DialogTitle>
         <DialogContent>
+          <InfoText width={`70px`} height={`30px`}>
+            질문
+          </InfoText>
+          <TextInput
+            height={`30px`}
+            value={currentQuestion}
+            onChange={(e) => setCurrentQuestion(e.target.value)}
+          ></TextInput>
           <Editor
             value={currentAnswer}
             componentHeight="h-300"

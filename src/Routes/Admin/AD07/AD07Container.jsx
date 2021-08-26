@@ -25,6 +25,7 @@ export default () => {
   const [type, setType] = useState("");
   const [editContent, setEditContent] = useState("");
 
+  const [currentQuestion, setCurrentQuestion] = useState(``);
   const [currentAnswer, setCurrentAnswer] = useState("");
   const [currentId, setCurrentId] = useState("");
 
@@ -39,9 +40,11 @@ export default () => {
     refetch: faqTypeRefetch,
   } = useQuery(GET_FAQTYPE);
 
-  const { data: faqDatum, loading: faqLoading, refetch: faqRefetch } = useQuery(
-    GET_FAQ
-  );
+  const {
+    data: faqDatum,
+    loading: faqLoading,
+    refetch: faqRefetch,
+  } = useQuery(GET_FAQ);
 
   ///////////// - USE MUTATION- /////////////
   const [createFaqTypeMutation] = useMutation(CREATE_FAQTYPE, {
@@ -163,9 +166,10 @@ export default () => {
     }
   };
 
-  const dialogToggle = (answer = "", id = "") => {
-    setCurrentAnswer(answer);
+  const dialogToggle = (id = "", question = "", answer = "") => {
     setCurrentId(id);
+    setCurrentQuestion(question);
+    setCurrentAnswer(answer);
 
     setOpenDialog(!openDialog);
   };
@@ -174,6 +178,7 @@ export default () => {
     const { data } = await modifyFaqMutation({
       variables: {
         id: currentId,
+        question: currentQuestion,
         answer: currentAnswer,
       },
     });
@@ -208,6 +213,8 @@ export default () => {
       openDialog={openDialog}
       currentAnswer={currentAnswer}
       setCurrentAnswer={setCurrentAnswer}
+      currentQuestion={currentQuestion}
+      setCurrentQuestion={setCurrentQuestion}
       //
       faqTypeDatum={faqTypeDatum && faqTypeDatum.getFaqType}
       faqDatum={faqDatum && faqDatum.getFaq}

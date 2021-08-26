@@ -51,7 +51,7 @@ export const DELETE_FAQ = gql`
 `;
 
 export const MODIFY_FAQ = gql`
-  mutation modifyFaq($id: String!, $answer: String!) {
-    modifyFaq(id: $id, answer: $answer)
+  mutation modifyFaq($id: String!, $question: String!, $answer: String!) {
+    modifyFaq(id: $id, answer: $answer, question: $question)
   }
 `;
