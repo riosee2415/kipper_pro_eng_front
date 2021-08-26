@@ -1431,7 +1431,7 @@ export default ({
         </DataWrapper>
       </Wrapper>
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper height={`200px`}>주의 사항</DataGuideWrapper>
+        <DataGuideWrapper height={`200px`}>주의 사항 *</DataGuideWrapper>
         <DataWrapper height={`200px`}>
           <Editor
             value={warningContentInput}
