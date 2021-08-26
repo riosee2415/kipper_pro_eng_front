@@ -2290,13 +2290,13 @@ const MM09Presenter = ({
             height={`250px`}
           />
           <Image
-            src={pData && `${pData.specImage1}`}
+            src={pData && `${pData.specImage2}`}
             attachment={`initial`}
             height={`250px`}
             margin={`10px 0`}
           />
           <Image
-            src={pData && `${pData.specImage1}`}
+            src={pData && `${pData.specImage3}`}
             attachment={`initial`}
             height={`250px`}
           />
