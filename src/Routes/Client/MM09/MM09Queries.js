@@ -39,6 +39,9 @@ export const GET_PRODUCT_ONE = gql`
       pointContent1
       pointContent2
       pointContent3
+      pointNumber1
+      pointNumber2
+      pointNumber3
       featureImage1
       featureTitle1
       featureSubTitle1
