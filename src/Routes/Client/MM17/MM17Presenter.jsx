@@ -302,7 +302,7 @@ const MM17Presenter = ({
                   >
                     (CSK-UL10)
                   </Text>
-                  <Link to="/usb/611910452c1dfdde5b57cd60">
+                  <Link to="/usb/611eb54dc3605319d4babda5">
                     <ArrowIcon>
                       Learn more
                       <FaChevronRight />
@@ -370,7 +370,7 @@ const MM17Presenter = ({
                   >
                     (CSK-LK11)
                   </Text>
-                  <Link to="/usb/611910452c1dfdde5b57cd62">
+                  <Link to="/usb/611eb54dc3605319d4babda8">
                     <ArrowIcon>
                       Learn more
                       <FaChevronRight />
@@ -785,7 +785,7 @@ const MM17Presenter = ({
             electricity.
           </Text>
 
-          {/* <Link to="/usb/611910452c1dfdde5b57cd60">
+          {/* <Link to="/usb/611eb54dc3605319d4babda5">
             <ArrowIcon fontWeight={`700`} margin={`10px 0 0`}>
               Learn more about USB Port Lock
               <FaChevronRight />
@@ -1001,7 +1001,7 @@ const MM17Presenter = ({
               </Text>
               <Text fontSize={`20px`}>to enhance physical</Text>
               <Text fontSize={`20px`}>cybersecurity. </Text>
-              <Link to="/usb/611910452c1dfdde5b57cd60">
+              <Link to="/usb/611eb54dc3605319d4babda5">
                 <ArrowIcon margin={`22px 0 0`}>
                   Learn more bout USB Port Lock
                   <FaChevronRight />
@@ -1093,7 +1093,7 @@ const MM17Presenter = ({
             <Text fontSize={`16px`} lineHeight={`1.4`} fontWeight={`400`}>
               cybersecurity.
             </Text>
-            <Link to="/usb/611910452c1dfdde5b57cd60">
+            <Link to="/usb/611eb54dc3605319d4babda5">
               <ArrowIcon
                 fontSize={width < 700 && `12px`}
                 color={Theme.greyTheme4_C}
@@ -1149,7 +1149,7 @@ const MM17Presenter = ({
               with products of matching pattern.
             </Text>
 
-            <Link to="/lock/6114b080e48e2e29f6cd570b">
+            <Link to="/lock/611eb54dc3605319d4babda2">
               <ArrowIcon fontWeight={`700`}>
                 Learn more about Universal Lock Key
                 <FaChevronRight />
@@ -1193,7 +1193,7 @@ const MM17Presenter = ({
             <Text fontWeight={`400`} margin={`0 0 30px`}>
               products of matching pattern.
             </Text>
-            <Link to="/lock/611910452c1dfdde5b57cd5e">
+            <Link to="/lock/611eb54dc3605319d4babda2">
               <ArrowIcon fontWeight={`700`}>
                 Learn more about Universal Lock Key
                 <FaChevronRight />
