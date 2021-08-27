@@ -5,8 +5,8 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
-  .BundleAnalyzerPlugin;
+const BundleAnalyzerPlugin =
+  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = {
   resolve: {
@@ -20,6 +20,7 @@ module.exports = {
     net: "empty",
   },
   output: {
+    publicPatch: "/",
     path: path.resolve(__dirname, "./build"),
     filename:
       process.env.NODE_ENV === "production"
