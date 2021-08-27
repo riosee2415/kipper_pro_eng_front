@@ -20,7 +20,6 @@ module.exports = {
     net: "empty",
   },
   output: {
-    publicPatch: "/",
     path: path.resolve(__dirname, "./build"),
     filename:
       process.env.NODE_ENV === "production"
