@@ -304,7 +304,7 @@ const MM11Presenter = ({
                     <Box
                       onClick={() => {
                         moveUrlHandler(
-                          "https://www.schoolhealing7.co.kr/#/basic"
+                          "http://smartkeeperessential.com/#/basic"
                         );
                       }}
                     >
@@ -314,7 +314,7 @@ const MM11Presenter = ({
                     <Box
                       onClick={() => {
                         moveUrlHandler(
-                          "https://www.schoolhealing7.co.kr/#/mini"
+                          "http://smartkeeperessential.com/#/mini"
                         );
                       }}
                     >
@@ -324,7 +324,7 @@ const MM11Presenter = ({
                     <Box
                       onClick={() => {
                         moveUrlHandler(
-                          "https://www.schoolhealing7.co.kr/#/product"
+                          "http://smartkeeperessential.com/#/product"
                         );
                       }}
                     >
@@ -334,7 +334,7 @@ const MM11Presenter = ({
                     <Box
                       onClick={() => {
                         moveUrlHandler(
-                          "https://www.schoolhealing7.co.kr/#/lock"
+                          "http://smartkeeperessential.com/#/lock"
                         );
                       }}
                     >
@@ -582,7 +582,7 @@ const MM11Presenter = ({
               <Title margin={`35px 0 0 26px`}>ESSENTIAL</Title>
               <Box
                 onClick={() => {
-                  moveUrlHandler("https://www.schoolhealing7.co.kr/#/basic");
+                  moveUrlHandler("http://smartkeeperessential.com/#/basic");
                 }}
               >
                 <Text fontSize={`12px`}>Basic Series</Text>
@@ -590,7 +590,7 @@ const MM11Presenter = ({
               </Box>
               <Box
                 onClick={() => {
-                  moveUrlHandler("https://www.schoolhealing7.co.kr/#/mini");
+                  moveUrlHandler("http://smartkeeperessential.com/#/mini");
                 }}
               >
                 <Text fontSize={`11px`}>Mini Series</Text>
@@ -598,7 +598,7 @@ const MM11Presenter = ({
               </Box>
               <Box
                 onClick={() => {
-                  moveUrlHandler("https://www.schoolhealing7.co.kr/#/product");
+                  moveUrlHandler("http://smartkeeperessential.com/#/product");
                 }}
               >
                 <Text fontSize={`12px`}>No Key Required</Text>
@@ -606,7 +606,7 @@ const MM11Presenter = ({
               </Box>
               <Box
                 onClick={() => {
-                  moveUrlHandler("https://www.schoolhealing7.co.kr/#/lock");
+                  moveUrlHandler("http://smartkeeperessential.com/#/lock");
                 }}
               >
                 <Text fontSize={`12px`}>Lock Key ESSENTIAL</Text>
