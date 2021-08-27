@@ -7,6 +7,27 @@ export const allMenus = [
     menuName: "제품 관리",
     link: "/admin/productManagement",
   },
+  {
+    menuName: "회원 관리",
+    link: "/admin/tokenManagement",
+  },
+  {
+    menuName: "고객 문의",
+    link: "/admin/directRequestManagement",
+  },
+  {
+    menuName: "LOCATION 관리",
+    link: "/admin/locationManagement",
+  },
+  {
+    menuName: "FAQ 관리",
+    link: "/admin/faqManagement",
+  },
+  {
+    menuName: "주요제품 관리",
+    link: "/admin/snsLinkManagement",
+  },
+
   // {
   //   menuName: "제품 관리",
   //   subMenu: [
@@ -116,24 +137,6 @@ export const allMenus = [
   //     },
   //   ],
   // },
-  {
-    menuName: "회원 관리",
-    subMenu: [
-      {
-        subMenuName: "회원 리스트/생성",
-        subMenuLink: "/admin/tokenManagement",
-      },
-    ],
-  },
-  {
-    menuName: "고객 문의",
-    subMenu: [
-      {
-        subMenuName: "1:1 문의",
-        subMenuLink: "/admin/directRequestManagement",
-      },
-    ],
-  },
 
   // {
   //   menuName: "제품 관리",
@@ -144,15 +147,7 @@ export const allMenus = [
   //     },
   //   ],
   // },
-  {
-    menuName: "LOCATION 관리",
-    subMenu: [
-      {
-        subMenuName: "LOCATION 리스트/수정",
-        subMenuLink: "/admin/locationManagement",
-      },
-    ],
-  },
+
   // {
   //   menuName: "EXHIBITION 관리",
   //   subMenu: [
@@ -175,15 +170,7 @@ export const allMenus = [
       },
     ],
   },
-  {
-    menuName: "FAQ 관리",
-    subMenu: [
-      {
-        subMenuName: "FAQ 관리",
-        subMenuLink: "/admin/faqManagement",
-      },
-    ],
-  },
+
   // {
   //   menuName: "수상 내역 관리",
   //   subMenu: [
@@ -197,13 +184,4 @@ export const allMenus = [
   //     },
   //   ],
   // },
-  {
-    menuName: "주요제품 링크",
-    subMenu: [
-      {
-        subMenuName: "링크 관리",
-        subMenuLink: "/admin/snsLinkManagement",
-      },
-    ],
-  },
 ];

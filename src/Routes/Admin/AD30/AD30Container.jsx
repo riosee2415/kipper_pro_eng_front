@@ -86,21 +86,16 @@ export default ({ history }) => {
   };
 
   const createSnsHandler = () => {
-    confirm(
-      `CREATE`,
-      `SNS LINK를 추가하시겠습니까 ?`,
-      createSnsHandlerAfter,
-      null
-    );
+    confirm(`CREATE`, `LINK를 추가하시겠습니까 ?`, createSnsHandlerAfter, null);
   };
 
   const createSnsHandlerAfter = async () => {
     if (!emptyCheck(platformInput.value)) {
-      toast.error("SNS 이름은 필수 입력사항 입니다.");
+      toast.error("제품명은 필수 입력사항 입니다.");
       return;
     }
     if (!emptyCheck(urlInput.value)) {
-      toast.error("SNS 링크는 필수 입력사항 입니다.");
+      toast.error("링크는 필수 입력사항 입니다.");
       return;
     }
 
@@ -112,32 +107,27 @@ export default ({ history }) => {
     });
 
     if (data.createSns) {
-      toast.success("SNS LINK가 추가 되었습니다.");
+      toast.success("LINK가 추가 되었습니다.");
       modalHandler();
       snsRefetch();
       platformInput.setValue(``);
       urlInput.setValue(``);
     } else {
-      toast.error("SNS LINK 추가에 실패했습니다.");
+      toast.error("LINK 추가에 실패했습니다.");
     }
   };
 
   const updateSnsHandler = () => {
-    confirm(
-      `UPDATE`,
-      `SNS LINK를 수정하시겠습니까?`,
-      updateSnsHandlerAfter,
-      null
-    );
+    confirm(`UPDATE`, `LINK를 수정하시겠습니까?`, updateSnsHandlerAfter, null);
   };
 
   const updateSnsHandlerAfter = async () => {
     if (!emptyCheck(platformUpset.value)) {
-      toast.error("SNS 이름은 필수 입력사항 입니다.");
+      toast.error("제품명은 필수 입력사항 입니다.");
       return;
     }
     if (!emptyCheck(urlUpset.value)) {
-      toast.error("SNS 링크는 필수 입력사항 입니다.");
+      toast.error("링크는 필수 입력사항 입니다.");
       return;
     }
 
@@ -150,22 +140,17 @@ export default ({ history }) => {
     });
 
     if (data.updateSns) {
-      toast.success("SNS LINK가 수정되었습니다.");
+      toast.success("LINK가 수정되었습니다.");
       modalHandler2();
       snsRefetch();
       return;
     } else {
-      toast.error("SNS LINK 추가에 실패했습니다.");
+      toast.error("LINK 추가에 실패했습니다.");
     }
   };
 
   const deleteSnsHandler = (id) => {
-    confirm(
-      `DELETE`,
-      `SNS LINK를 삭제하시겠습니까?`,
-      deleteSnsHandlerAfter,
-      id
-    );
+    confirm(`DELETE`, `LINK를 삭제하시겠습니까?`, deleteSnsHandlerAfter, id);
   };
 
   const deleteSnsHandlerAfter = async (id) => {
@@ -177,10 +162,10 @@ export default ({ history }) => {
     });
 
     if (data.deleteSns) {
-      toast.success("SNS LINK를 삭제했습니다.");
+      toast.success("LINK를 삭제했습니다.");
       snsRefetch();
     } else {
-      toast.error("SNS LINK 삭제에 실패했습니다.");
+      toast.error("LINK 삭제에 실패했습니다.");
     }
   };
   ////////////// - USE EFFECT- ///////////////

@@ -47,6 +47,26 @@ const A_Side = () => {
               <Link to={menu.link} className={`Atag`}>
                 <SideMenu>{menu.menuName}</SideMenu>
               </Link>
+            ) : idx === 2 ? (
+              <Link to={menu.link} className={`Atag`}>
+                <SideMenu>{menu.menuName}</SideMenu>
+              </Link>
+            ) : idx === 3 ? (
+              <Link to={menu.link} className={`Atag`}>
+                <SideMenu>{menu.menuName}</SideMenu>
+              </Link>
+            ) : idx === 4 ? (
+              <Link to={menu.link} className={`Atag`}>
+                <SideMenu>{menu.menuName}</SideMenu>
+              </Link>
+            ) : idx === 5 ? (
+              <Link to={menu.link} className={`Atag`}>
+                <SideMenu>{menu.menuName}</SideMenu>
+              </Link>
+            ) : idx === 6 ? (
+              <Link to={menu.link} className={`Atag`}>
+                <SideMenu>{menu.menuName}</SideMenu>
+              </Link>
             ) : (
               <>
                 <SideMenu

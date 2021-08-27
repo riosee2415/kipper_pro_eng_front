@@ -27,7 +27,7 @@ import FileProgress from "../../../Components/FileProgress";
 import useTitle from "@4leaf.ysh/use-title";
 import { Modal } from "antd";
 
-const tabs = ["SNS LINK"];
+const tabs = ["주요제품"];
 
 export default ({
   currentTab,
@@ -52,12 +52,12 @@ export default ({
   updateSnsHandler,
   deleteSnsHandler,
 }) => {
-  useTitle("ADMIN | SNS LINK 관리");
+  useTitle("ADMIN | 주요제품 관리");
 
   return (
     <WholeWrapper al={`flex-start`} ju={`flex-start`}>
       <Fade right>
-        <Title text="SNS LINK 관리" />
+        <Title text="주요제품 관리" />
         <Tabs
           tabs={tabs}
           currentTab={currentTab}
@@ -76,8 +76,8 @@ export default ({
         </Wrapper>
         <TableWrapper>
           <TableHeadColumn width={`10%`}>번호</TableHeadColumn>
-          <TableHeadColumn width={`40%`}>SNS 이름</TableHeadColumn>
-          <TableHeadColumn width={`40%`}>SNS LINK</TableHeadColumn>
+          <TableHeadColumn width={`40%`}>제품명</TableHeadColumn>
+          <TableHeadColumn width={`40%`}>LINK</TableHeadColumn>
           <TableHeadColumn width={`5%`}>수정</TableHeadColumn>
           <TableHeadColumn width={`5%`}>삭제</TableHeadColumn>
         </TableWrapper>
@@ -142,7 +142,7 @@ export default ({
       </Fade>
 
       <Modal
-        title="SNS LINK 추가"
+        title="LINK 추가"
         visible={modalFlag}
         onOk={() => {
           createSnsHandler();
@@ -152,17 +152,17 @@ export default ({
         }}
       >
         <Wrapper al={`flex-start`} margin={`0 0 10px`}>
-          SNS 이름
+          제품명
         </Wrapper>
         <TextInput {...platformInput} />
         <Wrapper al={`flex-start`} margin={`10px 0`}>
-          SNS LINK
+          LINK
         </Wrapper>
         <TextInput {...urlInput} />
       </Modal>
 
       <Modal
-        title="SNS LINK 수정"
+        title="LINK 수정"
         visible={modalFlag2}
         onOk={() => {
           updateSnsHandler();
@@ -172,11 +172,11 @@ export default ({
         }}
       >
         <Wrapper al={`flex-start`} margin={`0 0 10px`}>
-          SNS 이름
+          제품명
         </Wrapper>
         <TextInput {...platformUpset} />
         <Wrapper al={`flex-start`} margin={`10px 0`}>
-          SNS LINK
+          LINK
         </Wrapper>
         <TextInput {...urlUpset} />
       </Modal>
