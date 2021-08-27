@@ -1413,7 +1413,7 @@ const MM09Presenter = ({
                   ? `30px 0 15px`
                   : tokenId
                   ? `10px 0 30px`
-                  : `50px 0 30px`
+                  : `50px 0 15px`
               }
               al={`flex-start`}
             >
@@ -1443,26 +1443,26 @@ const MM09Presenter = ({
                 })} */}
             </Wrapper>
 
-            {/* <Wrapper dr={`row`} ju={`flex-start`} margin={`10px 0 30px`}>
+            <Wrapper dr={`row`} ju={`flex-start`} margin={`10px 0 20px`}>
               <Image
                 width={`30px`}
                 margin={`0 10px 0 0`}
                 alt="image"
                 src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM02%2Ficon-01.png?alt=media&token=544f517a-e3da-4688-946d-9efc0d485270`}
-              />*/}
+              />
 
-            {/* 주의 사항 */}
-            {/*  {pData && (
+              {/* 주의 사항 */}
+              {pData && (
                 <EditorViewer
                   lineHeight={`1.36`}
                   letterSpacing={`-0.03em`}
                   value={pData.warningContent}
                   width={`calc(100% - 60px)`}
-                  fontSize={width < 390 ? `10px !important` : `16px`}
+                  fontSize={width < 390 ? `10px !important` : `11px`}
                   color={Theme.greyTheme7_C}
                 />
               )}
-            </Wrapper> */}
+            </Wrapper>
 
             <Wrapper
               dr={`row`}
@@ -1567,7 +1567,6 @@ const MM09Presenter = ({
       >
         <RsWrapper
           height={`100%`}
-          color={Theme.white_C}
           padding={width < 700 ? `0 36px` : `0`}
           ju={`space-between`}
         >
@@ -1670,21 +1669,29 @@ const MM09Presenter = ({
             </Text> */}
             {/* 핵심 특징 입력 필드 1 */}
             <Wrapper dr={`row`} ju={`space-around`} al={`flex-start`}>
-              {pData && pData.pointContent1 && (
-                <Wrapper width={width < 700 ? `100%` : `31%`}>
-                  {pData && (
-                    <EditorViewer
-                      value={pData.pointNumber1}
-                      letterSpacing={`-0.02em`}
-                      lineHeight={`1.47`}
-                      fontSize={width < 700 ? `20px` : `25px`}
-                      fontWeight={`900`}
-                      margin={width < 700 ? `0 0 20px` : `0 0 30px`}
-                      textAlign={`center`}
-                    />
-                  )}
+              {pData &&
+                pData.pointNumber1 &&
+                pData.pointNumber1 !== `-` &&
+                pData.pointNumber1 !== `<p></p>` &&
+                pData.pointNumber1 !== `<p><br></p>` &&
+                pData.pointContent1 &&
+                pData.pointContent1 !== `-` &&
+                pData.pointContent1 !== `<p></p>` &&
+                pData.pointContent1 !== `<p><br></p>` && (
+                  <Wrapper width={width < 700 ? `100%` : `31%`}>
+                    {pData && (
+                      <EditorViewer
+                        value={pData.pointNumber1}
+                        letterSpacing={`-0.02em`}
+                        lineHeight={`1.47`}
+                        fontSize={width < 700 ? `20px` : `25px`}
+                        fontWeight={`900`}
+                        margin={width < 700 ? `0 0 20px` : `0 0 30px`}
+                        textAlign={`center`}
+                      />
+                    )}
 
-                  {/* <Text
+                    {/* <Text
                     letterSpacing={`-0.02em`}
                     lineHeight={`1.47`}
                     fontSize={width < 700 ? `20px` : `34px`}
@@ -1694,18 +1701,18 @@ const MM09Presenter = ({
                     01.
                   </Text> */}
 
-                  {pData && (
-                    <EditorViewer
-                      letterSpacing={`-0.03em`}
-                      lineHeight={`1.5`}
-                      value={pData.pointContent1}
-                      fontSize={width < 700 ? `16px` : `22px`}
-                      fontWeight={`400`}
-                      textAlign={`center`}
-                    />
-                  )}
+                    {pData && (
+                      <EditorViewer
+                        letterSpacing={`-0.03em`}
+                        lineHeight={`1.5`}
+                        value={pData.pointContent1}
+                        fontSize={width < 700 ? `16px` : `22px`}
+                        fontWeight={`400`}
+                        textAlign={`center`}
+                      />
+                    )}
 
-                  {/* {pData.pointContent1.split(`\n`).map((data, idx) => {
+                    {/* {pData.pointContent1.split(`\n`).map((data, idx) => {
                     return (
                       <Text
                         key={idx}
@@ -1717,36 +1724,44 @@ const MM09Presenter = ({
                       </Text>
                     );
                   })} */}
-                </Wrapper>
-              )}
+                  </Wrapper>
+                )}
 
               {/* 핵심 특징 입력 필드 2 */}
-              {pData && pData.pointContent2 && (
-                <Wrapper width={width < 700 ? `100%` : `31%`} margin={`0`}>
-                  {pData && (
-                    <EditorViewer
-                      value={pData.pointNumber2}
-                      letterSpacing={`-0.02em`}
-                      lineHeight={`1.47`}
-                      fontSize={width < 700 ? `20px` : `25px`}
-                      fontWeight={`900`}
-                      margin={width < 700 ? `20px 0 10px` : `0 0 30px`}
-                      textAlign={`center`}
-                    />
-                  )}
+              {pData &&
+                pData.pointNumber2 &&
+                pData.pointNumber2 !== `-` &&
+                pData.pointNumber2 !== `<p></p>` &&
+                pData.pointNumber2 !== `<p><br></p>` &&
+                pData.pointContent2 &&
+                pData.pointContent2 !== `-` &&
+                pData.pointContent2 !== `<p></p>` &&
+                pData.pointContent2 !== `<p><br></p>` && (
+                  <Wrapper width={width < 700 ? `100%` : `31%`} margin={`0`}>
+                    {pData && (
+                      <EditorViewer
+                        value={pData.pointNumber2}
+                        letterSpacing={`-0.02em`}
+                        lineHeight={`1.47`}
+                        fontSize={width < 700 ? `20px` : `25px`}
+                        fontWeight={`900`}
+                        margin={width < 700 ? `20px 0 10px` : `0 0 30px`}
+                        textAlign={`center`}
+                      />
+                    )}
 
-                  {pData && (
-                    <EditorViewer
-                      letterSpacing={`-0.03em`}
-                      lineHeight={`1.5`}
-                      value={pData.pointContent2}
-                      fontSize={width < 700 ? `16px` : `22px`}
-                      fontWeight={`400`}
-                      textAlign={`center`}
-                    />
-                  )}
+                    {pData && (
+                      <EditorViewer
+                        letterSpacing={`-0.03em`}
+                        lineHeight={`1.5`}
+                        value={pData.pointContent2}
+                        fontSize={width < 700 ? `16px` : `22px`}
+                        fontWeight={`400`}
+                        textAlign={`center`}
+                      />
+                    )}
 
-                  {/* {pData.pointContent2.split(`\n`).map((data, idx) => {
+                    {/* {pData.pointContent2.split(`\n`).map((data, idx) => {
                     return (
                       <Text
                         key={idx}
@@ -1758,25 +1773,33 @@ const MM09Presenter = ({
                       </Text>
                     );
                   })} */}
-                </Wrapper>
-              )}
+                  </Wrapper>
+                )}
 
               {/* 핵심 특징 입력 필드 3 */}
-              {pData && pData.pointContent3 && (
-                <Wrapper width={width < 700 ? `100%` : `31%`}>
-                  {pData && (
-                    <EditorViewer
-                      value={pData.pointNumber2}
-                      letterSpacing={`-0.02em`}
-                      lineHeight={`1.47`}
-                      fontSize={width < 700 ? `20px` : `25px`}
-                      fontWeight={`900`}
-                      margin={width < 700 ? `20px 0 10px` : `0 0 30px`}
-                      textAlign={`center`}
-                    />
-                  )}
+              {pData &&
+                pData.pointNumber3 &&
+                pData.pointNumber3 !== `-` &&
+                pData.pointNumber3 !== `<p></p>` &&
+                pData.pointNumber3 !== `<p><br></p>` &&
+                pData.pointContent3 &&
+                pData.pointContent3 !== `-` &&
+                pData.pointContent3 !== `<p></p>` &&
+                pData.pointContent3 !== `<p><br></p>` && (
+                  <Wrapper width={width < 700 ? `100%` : `31%`}>
+                    {pData && (
+                      <EditorViewer
+                        value={pData.pointNumber2}
+                        letterSpacing={`-0.02em`}
+                        lineHeight={`1.47`}
+                        fontSize={width < 700 ? `20px` : `25px`}
+                        fontWeight={`900`}
+                        margin={width < 700 ? `20px 0 10px` : `0 0 30px`}
+                        textAlign={`center`}
+                      />
+                    )}
 
-                  {/* <Text
+                    {/* <Text
                     letterSpacing={`-0.02em`}
                     lineHeight={`1.47`}
                     fontSize={width < 700 ? `20px` : `34px`}
@@ -1786,17 +1809,17 @@ const MM09Presenter = ({
                     03.
                   </Text> */}
 
-                  {pData && (
-                    <EditorViewer
-                      letterSpacing={`-0.03em`}
-                      lineHeight={`1.5`}
-                      value={pData.pointContent3}
-                      fontSize={width < 700 ? `16px` : `22px`}
-                      fontWeight={`400`}
-                      textAlign={`center`}
-                    />
-                  )}
-                  {/* {pData.pointContent3.split(`\n`).map((data, idx) => {
+                    {pData && (
+                      <EditorViewer
+                        letterSpacing={`-0.03em`}
+                        lineHeight={`1.5`}
+                        value={pData.pointContent3}
+                        fontSize={width < 700 ? `16px` : `22px`}
+                        fontWeight={`400`}
+                        textAlign={`center`}
+                      />
+                    )}
+                    {/* {pData.pointContent3.split(`\n`).map((data, idx) => {
                     return (
                       <Text
                         key={idx}
@@ -1808,8 +1831,8 @@ const MM09Presenter = ({
                       </Text>
                     );
                   })} */}
-                </Wrapper>
-              )}
+                  </Wrapper>
+                )}
             </Wrapper>
           </Wrapper>
         </RsWrapper>
@@ -1826,7 +1849,6 @@ const MM09Presenter = ({
         <RsWrapper
           minHeight={width < 700 ? `300px` : `500px`}
           ju={`flex-start`}
-          color={Theme.white_C}
         >
           {pData && (
             <EditorViewer
@@ -1906,7 +1928,6 @@ const MM09Presenter = ({
         <RsWrapper
           minHeight={width < 700 ? `300px` : `500px`}
           ju={`flex-start`}
-          color={Theme.white_C}
         >
           {/* 제품 특징2 서브타이틀 */}
           {pData && (
@@ -1978,13 +1999,10 @@ const MM09Presenter = ({
       </Wrapper>
 
       <Wrapper bgColor={`rgba(36, 36, 36, 0.95)`}>
-        <RsWrapper
-          display={width < 700 ? `none` : `flex`}
-          padding={`120px 0`}
-          color={Theme.white_C}
-        >
+        <RsWrapper display={width < 700 ? `none` : `flex`} padding={`120px 0`}>
           <Wrapper al={`flex-start`}>
             <Text
+              color={Theme.white_C}
               lineHeight={`1.47`}
               fontSize={width < 700 ? `30px` : `34px`}
               fontWeight={`900`}
@@ -2050,8 +2068,15 @@ const MM09Presenter = ({
             {/* 세부 특징 입력 필드 1 */}
             {pData &&
               pData.specDetailTitle1 &&
+              pData.specDetailTitle1 !== `-` &&
+              pData.specDetailTitle1 !== `<p></p>` &&
+              pData.specDetailTitle1 !== `<p><br></p>` &&
               pData.specDetailImage1 &&
-              pData.specDetailContent1 && (
+              pData.specDetailImage1 !== `-` &&
+              pData.specDetailContent1 &&
+              pData.specDetailContent1 !== `-` &&
+              pData.specDetailContent1 !== `<p></p>` &&
+              pData.specDetailContent1 !== `<p><br></p>` && (
                 <Wrapper
                   width={width < 700 ? `100%` : `calc(100% / 3 - 15px)`}
                   // margin={`0 20px 0 0`}
@@ -2104,8 +2129,15 @@ const MM09Presenter = ({
             {/* 세부 특징 입력 필드 2 */}
             {pData &&
               pData.specDetailTitle2 &&
+              pData.specDetailTitle2 !== `-` &&
+              pData.specDetailTitle2 !== `<p></p>` &&
+              pData.specDetailTitle2 !== `<p><br></p>` &&
               pData.specDetailImage2 &&
-              pData.specDetailContent2 && (
+              pData.specDetailImage2 !== `-` &&
+              pData.specDetailContent2 &&
+              pData.specDetailContent2 !== `-` &&
+              pData.specDetailContent2 !== `<p></p>` &&
+              pData.specDetailContent2 !== `<p><br></p>` && (
                 <Wrapper width={width < 700 ? `100%` : `calc(100% / 3 - 15px)`}>
                   <TitleBox>
                     {pData && (
@@ -2155,8 +2187,15 @@ const MM09Presenter = ({
             {/* 세부 특징 입력 필드 3 */}
             {pData &&
               pData.specDetailTitle3 &&
+              pData.specDetailTitle3 !== `-` &&
+              pData.specDetailTitle3 !== `<p></p>` &&
+              pData.specDetailTitle3 !== `<p><br></p>` &&
               pData.specDetailImage3 &&
-              pData.specDetailContent3 && (
+              pData.specDetailImage3 !== `-` &&
+              pData.specDetailContent3 &&
+              pData.specDetailContent3 !== `-` &&
+              pData.specDetailContent3 !== `<p></p>` &&
+              pData.specDetailContent3 !== `<p><br></p>` && (
                 <Wrapper
                   width={width < 700 ? `100%` : `calc(100% / 3 - 15px)`}
                   // margin={`0 20px 0 0`}
@@ -2211,7 +2250,6 @@ const MM09Presenter = ({
 
         <RsWrapper
           display={width < 700 ? `flex` : `none`}
-          color={Theme.white_C}
           padding={`35px 36px`}
         >
           <Wrapper al={`flex-start`}>
@@ -2220,6 +2258,7 @@ const MM09Presenter = ({
               fontWeight={`900`}
               letterSpacing={`-0.03em`}
               lineHeight={`1.47`}
+              color={Theme.white_C}
             >
               Specifications
             </Text>
@@ -2251,13 +2290,13 @@ const MM09Presenter = ({
             height={`250px`}
           />
           <Image
-            src={pData && `${pData.specImage1}`}
+            src={pData && `${pData.specImage2}`}
             attachment={`initial`}
             height={`250px`}
             margin={`10px 0`}
           />
           <Image
-            src={pData && `${pData.specImage1}`}
+            src={pData && `${pData.specImage3}`}
             attachment={`initial`}
             height={`250px`}
           />
@@ -2437,11 +2476,7 @@ const MM09Presenter = ({
         bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM02%2FbgImage.png?alt=media&token=0917fcbf-c46d-4f3c-a371-8b1e69100a61")`}
       >
         {/* 맺음말 타이틀 */}
-        <RsWrapper
-          color={Theme.white_C}
-          al={`flex-start`}
-          padding={width < 700 && `0 36px`}
-        >
+        <RsWrapper al={`flex-start`} padding={width < 700 && `0 36px`}>
           {pData && (
             <EditorViewer
               letterSpacing={`-0.03em`}
@@ -2512,7 +2547,7 @@ const MM09Presenter = ({
                     src={pData.cerIconImage1}
                   />
 
-                  <Text fontWeight={`300`} textAlign={`center`}>
+                  <Text fontWeight={`300`} textAlign={`center`} color={`#fff`}>
                     {pData.cerContent1.split(`\n`).map((title, idx) => {
                       return (
                         <SpanText key={idx}>
@@ -2546,7 +2581,7 @@ const MM09Presenter = ({
                     src={pData.cerIconImage2}
                   />
 
-                  <Text fontWeight={`300`} textAlign={`center`}>
+                  <Text fontWeight={`300`} textAlign={`center`} color={`#fff`}>
                     {pData.cerContent2.split(`\n`).map((title, idx) => {
                       return (
                         <SpanText key={idx}>
@@ -2580,7 +2615,7 @@ const MM09Presenter = ({
                     src={pData.cerIconImage3}
                   />
 
-                  <Text fontWeight={`300`} textAlign={`center`}>
+                  <Text fontWeight={`300`} textAlign={`center`} color={`#fff`}>
                     {pData.cerContent3.split(`\n`).map((title, idx) => {
                       return (
                         <SpanText key={idx}>
@@ -2614,7 +2649,7 @@ const MM09Presenter = ({
                     src={pData.cerIconImage4}
                   />
 
-                  <Text fontWeight={`300`} textAlign={`center`}>
+                  <Text fontWeight={`300`} textAlign={`center`} color={`#fff`}>
                     {pData.cerContent4.split(`\n`).map((title, idx) => {
                       return (
                         <SpanText key={idx}>
@@ -2648,7 +2683,7 @@ const MM09Presenter = ({
                     src={pData.cerIconImage5}
                   />
 
-                  <Text fontWeight={`300`} textAlign={`center`}>
+                  <Text fontWeight={`300`} textAlign={`center`} color={`#fff`}>
                     {pData.cerContent5.split(`\n`).map((title, idx) => {
                       return (
                         <SpanText key={idx}>
@@ -2682,7 +2717,7 @@ const MM09Presenter = ({
                     src={pData.cerIconImage6}
                   />
 
-                  <Text fontWeight={`300`} textAlign={`center`}>
+                  <Text fontWeight={`300`} textAlign={`center`} color={`#fff`}>
                     {pData.cerContent6.split(`\n`).map((title, idx) => {
                       return (
                         <SpanText key={idx}>

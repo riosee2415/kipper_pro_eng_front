@@ -30,12 +30,12 @@ export const menus = [
         subMenuLink: "/p_network",
       },
       {
-        subMenuName: "Computer Physical Security",
-        subMenuLink: "/computer",
-      },
-      {
         subMenuName: "Other Port Physical Security",
         subMenuLink: "/port",
+      },
+      {
+        subMenuName: "Computer Physical Security",
+        subMenuLink: "/computer",
       },
       {
         subMenuName: "Lock Key PRO",
@@ -52,11 +52,11 @@ export const menus = [
         subMenuLink: "/info?type=partnership",
       },
       {
-        subMenuName: "How to Business",
+        subMenuName: "How to become a Partner",
         subMenuLink: "/info?type=business",
       },
       {
-        subMenuName: "Where our Partners",
+        subMenuName: "Our Partner Locations",
         subMenuLink: "/info?type=where",
       },
     ],
@@ -84,19 +84,19 @@ export const menus = [
 export const essmMenus = [
   {
     menuName: "Basic Series",
-    menuLink: "https://schoolhealing7.co.kr/#/basic",
+    menuLink: "http://smartkeeperessential.com/#/basic",
   },
   {
     menuName: "Mini Series",
-    menuLink: "https://schoolhealing7.co.kr/#/mini",
+    menuLink: "http://smartkeeperessential.com/#/mini",
   },
   {
-    menuName: "Keyless Devices",
-    menuLink: "https://schoolhealing7.co.kr/#/product",
+    menuName: "No Key Required",
+    menuLink: "http://smartkeeperessential.com/#/product",
   },
   {
     menuName: "Lock Key ESSENTIAL",
-    menuLink: "https://schoolhealing7.co.kr/#/lock",
+    menuLink: "http://smartkeeperessential.com/#/lock",
   },
 ];
 
@@ -152,12 +152,12 @@ export const footerMenus = [
         subMenuLink: "/p_network",
       },
       {
-        subMenuName: "Computer Physical Security",
-        subMenuLink: "/computer",
-      },
-      {
         subMenuName: "Other Port Physical Security",
         subMenuLink: "/port",
+      },
+      {
+        subMenuName: "Computer Physical Security",
+        subMenuLink: "/computer",
       },
       {
         subMenuName: "Lock Key PRO",
@@ -171,22 +171,22 @@ export const footerMenus = [
     subMenus: [
       {
         subMenuName: "Basic Series",
-        subMenuLink: "https://schoolhealing7.co.kr/#/basic",
+        subMenuLink: "http://smartkeeperessential.com/#/basic",
         isEx: true,
       },
       {
         subMenuName: "Mini Series",
-        subMenuLink: "https://schoolhealing7.co.kr/#/mini",
+        subMenuLink: "http://smartkeeperessential.com/#/mini",
         isEx: true,
       },
       {
         subMenuName: "No Key Required",
-        subMenuLink: "https://schoolhealing7.co.kr/#/product",
+        subMenuLink: "http://smartkeeperessential.com/#/product",
         isEx: true,
       },
       {
         subMenuName: "Lock Key ESSENTIAL",
-        subMenuLink: "https://schoolhealing7.co.kr/#/lock",
+        subMenuLink: "http://smartkeeperessential.com/#/lock",
         isEx: true,
       },
     ],

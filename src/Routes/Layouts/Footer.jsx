@@ -25,31 +25,31 @@ import { animateScroll as scroll } from "react-scroll";
 
 const Footer = ({ width, location }) => {
   const files = [
-    {
-      filePath:
-        "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSmartKeeper%20Product%20Introduction_KR_R1.pdf?alt=media&token=9ca51af4-dd0e-44cc-bec4-5f7cf989f5c5",
-      fileOriginName: "SmartKeeper Product Introduction_KR_R1.PDF",
-    },
+    // {
+    //   filePath:
+    //     "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSmartKeeper%20Product%20Introduction_KR_R1.pdf?alt=media&token=9ca51af4-dd0e-44cc-bec4-5f7cf989f5c5",
+    //   fileOriginName: "SmartKeeper Product Introduction_KR_R1.PDF",
+    // },
     {
       filePath:
         "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSmartKeeper%20Product%20Introduction_EN_R1.pdf?alt=media&token=7ebb6ccd-3579-4803-b32b-b615f7eed8c9",
       fileOriginName: "SmartKeeper Product Introduction_EN_R1.PDF",
     },
-    {
-      filePath:
-        "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSMARTKEEPR_PRO_Catalogue_KR.pdf?alt=media&token=07d0b883-b3e2-4a06-b779-1232a1b7901f",
-      fileOriginName: "SMARTKEEPR_PRO_Catalogue_KR.PDF",
-    },
+    // {
+    //   filePath:
+    //     "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSMARTKEEPR_PRO_Catalogue_KR.pdf?alt=media&token=07d0b883-b3e2-4a06-b779-1232a1b7901f",
+    //   fileOriginName: "SMARTKEEPR_PRO_Catalogue_KR.PDF",
+    // },
     {
       filePath:
         "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSMARTKEEPR_PRO_Catalogue_EN.pdf?alt=media&token=5953edda-b253-4508-978e-d8357fc5de63",
       fileOriginName: "SMARTKEEPR_PRO_Catalogue_EN.PDF",
     },
-    {
-      filePath:
-        "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSMARTKEEPR_ESSENTIAL_Catalogue_KR.pdf?alt=media&token=324426a5-e7a3-4c18-9e72-940f7017b557",
-      fileOriginName: "SMARTKEEPR_ESSENTIAL_Catalogue_KR.PDF",
-    },
+    // {
+    //   filePath:
+    //     "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSMARTKEEPR_ESSENTIAL_Catalogue_KR.pdf?alt=media&token=324426a5-e7a3-4c18-9e72-940f7017b557",
+    //   fileOriginName: "SMARTKEEPR_ESSENTIAL_Catalogue_KR.PDF",
+    // },
     {
       filePath:
         "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSMARTKEEPR_ESSENTIAL_Catalogue_EN.pdf?alt=media&token=0ee4144e-8903-48f9-a2c8-8a8503ce6c5e",
@@ -229,17 +229,17 @@ const Footer = ({ width, location }) => {
                 onChange={(e) => fileDownloadHandler(e.target.value)}
               >
                 <ComboOption value={null}>Choose a Catalogue</ComboOption>
-                <ComboOption value={0}>
+                {/* <ComboOption value={0}>
                   SmartKeeper Product Introduction_KR_R1
-                </ComboOption>
+                </ComboOption> */}
                 <ComboOption value={1}>
                   SmartKeeper Product Introduction_EN_R1
                 </ComboOption>
-                <ComboOption value={2}>SMARTKEEPR_PRO_Catalogue_KR</ComboOption>
+                {/* <ComboOption value={2}>SMARTKEEPR_PRO_Catalogue_KR</ComboOption> */}
                 <ComboOption value={3}>SMARTKEEPR_PRO_Catalogue_EN</ComboOption>
-                <ComboOption value={4}>
+                {/* <ComboOption value={4}>
                   SMARTKEEPR_ESSENTIAL_Catalogue_KR
-                </ComboOption>
+                </ComboOption> */}
                 <ComboOption value={5}>
                   SMARTKEEPR_ESSENTIAL_Catalogue_EN
                 </ComboOption>
@@ -458,17 +458,17 @@ const Footer = ({ width, location }) => {
                 onChange={(e) => fileDownloadHandler(e.target.value)}
               >
                 <ComboOption value={null}>Choose a Catalogue</ComboOption>
-                <ComboOption value={0}>
+                {/* <ComboOption value={0}>
                   SmartKeeper Product Introduction_KR_R1
-                </ComboOption>
+                </ComboOption> */}
                 <ComboOption value={1}>
                   SmartKeeper Product Introduction_EN_R1
                 </ComboOption>
-                <ComboOption value={2}>SMARTKEEPR_PRO_Catalogue_KR</ComboOption>
+                {/* <ComboOption value={2}>SMARTKEEPR_PRO_Catalogue_KR</ComboOption> */}
                 <ComboOption value={3}>SMARTKEEPR_PRO_Catalogue_EN</ComboOption>
-                <ComboOption value={4}>
+                {/* <ComboOption value={4}>
                   SMARTKEEPR_ESSENTIAL_Catalogue_KR
-                </ComboOption>
+                </ComboOption> */}
                 <ComboOption value={5}>
                   SMARTKEEPR_ESSENTIAL_Catalogue_EN
                 </ComboOption>

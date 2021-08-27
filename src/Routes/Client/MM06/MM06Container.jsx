@@ -45,7 +45,6 @@ const MM06Container = ({ history, location }) => {
         productType: "Anti-Theft for Computer",
         productSubType: productSubType.value,
       },
-      skip: productSkip,
     }
   );
 
@@ -54,7 +53,7 @@ const MM06Container = ({ history, location }) => {
   ///////////// - EVENT HANDLER- ////////////
   const searchToggle = () => {
     if (!search) {
-      setSearchValue(null);
+      inputSearchValue.setValue("");
     }
 
     setSearch(!search);
@@ -83,7 +82,7 @@ const MM06Container = ({ history, location }) => {
   };
 
   const searchDataBlurHandler = () => {
-    let url = `/computer?search=${inputSearchValue.value}`;
+    let url = `/computer?`;
     if (query.type) url += `&type=${query.type}`;
 
     history.push(url);
@@ -114,18 +113,14 @@ const MM06Container = ({ history, location }) => {
       productSubType.setValue("");
     }
 
-    if (query.search) {
-      setSearchValue(query.search);
-    } else {
-      setSearchValue(null);
-    }
+    // if (query.search) {
+    //   setSearchValue(query.search);
+    // } else {
+    //   setSearchValue(null);
+    // }
 
     setTimeout(() => {
       pRefetch();
-
-      setTimeout(() => {
-        setProductSkip(false);
-      }, 500);
     }, 100);
   }, [location.search]);
 

@@ -313,7 +313,11 @@ const MM15Presenter = ({
                           >
                             {data.subTitle}
                           </Text>
-                          <Wrapper dr={`row`} ju={`flex-start`}>
+                          <Wrapper
+                            dr={`row`}
+                            ju={`flex-start`}
+                            minHeight={`20px`}
+                          >
                             <Wrapper
                               dr={`row`}
                               width={`auto`}
@@ -338,22 +342,26 @@ const MM15Presenter = ({
                                 User Guide
                               </Text>
                             </Wrapper>
-                            <Wrapper dr={`row`} width={`auto`}>
-                              <Image
-                                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM15%2F%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD%E1%84%89%E1%85%B5%E1%86%AF-icon-2.png?alt=media&token=8feef21a-dafb-45a1-bdc3-70a2acc1f0b1`}
-                                width={width < 700 ? `15px` : `20px`}
-                              />
-                              <Text
-                                color={Theme.white_C}
-                                fontSize={`10px`}
-                                margin={width < 700 ? `0 0 0 3px` : `0 0 0 6px`}
-                                onClick={() => {
-                                  changeLinkHandler(data);
-                                }}
-                              >
-                                Video
-                              </Text>
-                            </Wrapper>
+                            {data.link && data.link !== `-` && (
+                              <Wrapper dr={`row`} width={`auto`}>
+                                <Image
+                                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM15%2F%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD%E1%84%89%E1%85%B5%E1%86%AF-icon-2.png?alt=media&token=8feef21a-dafb-45a1-bdc3-70a2acc1f0b1`}
+                                  width={width < 700 ? `15px` : `20px`}
+                                />
+                                <Text
+                                  color={Theme.white_C}
+                                  fontSize={`10px`}
+                                  margin={
+                                    width < 700 ? `0 0 0 3px` : `0 0 0 6px`
+                                  }
+                                  onClick={() => {
+                                    changeLinkHandler(data);
+                                  }}
+                                >
+                                  Video
+                                </Text>
+                              </Wrapper>
+                            )}
                           </Wrapper>
                         </Wrapper>
                       </Box>
@@ -385,33 +393,35 @@ const MM15Presenter = ({
                         >
                           {data.title}
                         </Text>
-                        <Wrapper width={`auto`} dr={`row`}>
-                          <Image
-                            onClick={() =>
-                              downloadHandler(
-                                data.filePath,
-                                data.fileOriginName
-                              )
-                            }
-                            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM15%2F%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD%E1%84%89%E1%85%B5%E1%86%AF-icon-3.png?alt=media&token=7aa0d881-d244-45d5-8fa1-cde03169d9a2`}
-                            width={`20px`}
-                            margin={`0 10px 0 0`}
-                          />
-                          <Text
-                            fontSize={`14px`}
-                            color={Theme.white_C}
-                            fontWeight={`400`}
-                            display={width < 700 ? `none` : `flex`}
-                            onClick={() =>
-                              downloadHandler(
-                                data.filePath,
-                                data.fileOriginName
-                              )
-                            }
-                          >
-                            Download
-                          </Text>
-                        </Wrapper>
+                        {data.link && data.link !== `-` && (
+                          <Wrapper width={`auto`} dr={`row`}>
+                            <Image
+                              onClick={() =>
+                                downloadHandler(
+                                  data.filePath,
+                                  data.fileOriginName
+                                )
+                              }
+                              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM15%2F%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD%E1%84%89%E1%85%B5%E1%86%AF-icon-3.png?alt=media&token=7aa0d881-d244-45d5-8fa1-cde03169d9a2`}
+                              width={`20px`}
+                              margin={`0 10px 0 0`}
+                            />
+                            <Text
+                              fontSize={`14px`}
+                              color={Theme.white_C}
+                              fontWeight={`400`}
+                              display={width < 700 ? `none` : `flex`}
+                              onClick={() =>
+                                downloadHandler(
+                                  data.filePath,
+                                  data.fileOriginName
+                                )
+                              }
+                            >
+                              Download
+                            </Text>
+                          </Wrapper>
+                        )}
                       </Box2>
                     );
                   })

@@ -296,7 +296,7 @@ const Header = ({ location, width, match }) => {
                 <ToggleBtn>PRO</ToggleBtn>
               </Link>
               <ATag
-                href={`https://schoolhealing2.co.kr/#/`}
+                href={`http://smartkeeperessential.kr/#/`}
                 target="_blank"
                 width={`auto`}
               >
@@ -333,7 +333,7 @@ const Header = ({ location, width, match }) => {
               <ToggleBtn>PRO</ToggleBtn>
             </Link>
             <ATag
-              href={`https://schoolhealing2.co.kr/#/`}
+              href={`http://smartkeeperessential.kr/#/`}
               target="_blank"
               width={`auto`}
             >

@@ -45,7 +45,6 @@ const MM07Container = ({ history, location }) => {
         productType: "Other Port Security",
         productSubType: productSubType.value,
       },
-      skip: productSkip,
     }
   );
 
@@ -54,7 +53,7 @@ const MM07Container = ({ history, location }) => {
   ///////////// - EVENT HANDLER- ////////////
   const searchToggle = () => {
     if (!search) {
-      setSearchValue(null);
+      inputSearchValue.setValue("");
     }
     setSearch(!search);
   };
@@ -82,7 +81,7 @@ const MM07Container = ({ history, location }) => {
   };
 
   const searchDataBlurHandler = () => {
-    let url = `/port?search=${inputSearchValue.value}`;
+    let url = `/port?`;
     if (query.type) url += `&type=${query.type}`;
 
     history.push(url);
@@ -114,18 +113,8 @@ const MM07Container = ({ history, location }) => {
       productSubType.setValue("");
     }
 
-    if (query.search) {
-      setSearchValue(query.search);
-    } else {
-      setSearchValue(null);
-    }
-
     setTimeout(() => {
       pRefetch();
-
-      setTimeout(() => {
-        setProductSkip(false);
-      }, 500);
     }, 100);
   }, [location.search]);
 

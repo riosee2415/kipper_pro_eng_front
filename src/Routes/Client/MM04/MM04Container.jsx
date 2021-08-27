@@ -45,7 +45,6 @@ const MM04Container = ({ history, location }) => {
         productType: "USB Security",
         productSubType: productSubType.value,
       },
-      skip: productSkip,
     }
   );
 
@@ -54,7 +53,7 @@ const MM04Container = ({ history, location }) => {
   ///////////// - EVENT HANDLER- ////////////
   const searchToggle = () => {
     if (!search) {
-      setSearchValue(null);
+      inputSearchValue.setValue("");
     }
 
     setSearch(!search);
@@ -83,7 +82,7 @@ const MM04Container = ({ history, location }) => {
   };
 
   const searchDataBlurHandler = () => {
-    let url = `/usb?search=${inputSearchValue.value}`;
+    let url = `/usb?`;
     if (query.type) url += `&type=${query.type}`;
 
     history.push(url);
@@ -115,18 +114,14 @@ const MM04Container = ({ history, location }) => {
       productSubType.setValue("");
     }
 
-    if (query.search) {
-      setSearchValue(query.search);
-    } else {
-      setSearchValue(null);
-    }
+    // if (query.search) {
+    //   setSearchValue(query.search);
+    // } else {
+    //   setSearchValue(null);
+    // }
 
     setTimeout(() => {
       pRefetch();
-
-      setTimeout(() => {
-        setProductSkip(false);
-      }, 500);
     }, 100);
   }, [location.search]);
 

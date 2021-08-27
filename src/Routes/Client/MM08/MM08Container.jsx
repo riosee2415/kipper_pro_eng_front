@@ -45,7 +45,6 @@ const MM08Container = ({ history, location }) => {
         productType: "Lock Key PRO",
         productSubType: productSubType.value,
       },
-      skip: productSkip,
     }
   );
 
@@ -54,7 +53,7 @@ const MM08Container = ({ history, location }) => {
   ///////////// - EVENT HANDLER- ////////////
   const searchToggle = () => {
     if (!search) {
-      setSearchValue(null);
+      inputSearchValue.setValue("");
     }
     setSearch(!search);
   };
@@ -82,7 +81,7 @@ const MM08Container = ({ history, location }) => {
   };
 
   const searchDataBlurHandler = () => {
-    let url = `/lock?search=${inputSearchValue.value}`;
+    let url = `/lock?`;
     if (query.type) url += `&type=${query.type}`;
 
     history.push(url);
@@ -114,11 +113,11 @@ const MM08Container = ({ history, location }) => {
       productSubType.setValue("");
     }
 
-    if (query.search) {
-      setSearchValue(query.search);
-    } else {
-      setSearchValue(null);
-    }
+    // if (query.search) {
+    //   setSearchValue(query.search);
+    // } else {
+    //   setSearchValue(null);
+    // }
 
     setTimeout(() => {
       pRefetch();

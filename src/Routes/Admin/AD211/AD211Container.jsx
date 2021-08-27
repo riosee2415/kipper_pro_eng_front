@@ -630,9 +630,9 @@ export default ({ history, match }) => {
         price: priceInput.value,
         vipPrice1: vipPrice1Input.value,
         vipPrice2: vipPrice2Input.value,
-        pointNumber1: pointNumber1Input.value,
-        pointNumber2: pointNumber2Input.value,
-        pointNumber3: pointNumber3Input.value,
+        pointNumber1: pointNumber1Input,
+        pointNumber2: pointNumber2Input,
+        pointNumber3: pointNumber3Input,
       },
     });
 
