@@ -7,7 +7,7 @@ import { animateScroll as scroll } from "react-scroll";
 import useInput from "../../../Components/Hooks/useInput";
 import { toast } from "react-toastify";
 
-const MMinitContainer = ({ history }) => {
+const MMinitContainer = ({ history, location }) => {
   ////////////// - VARIABLE- ////////////////
 
   ////////////// - USE REF- ///////////////
@@ -28,6 +28,13 @@ const MMinitContainer = ({ history }) => {
   };
 
   ////////////// - USE EFFECT- //////////////
+  useEffect(() => {
+    const location = window.location.href;
+
+    if ("https://smartkeeperworld.com/essential#/".indexOf(location) !== -1) {
+      window.open(`https://smartkeeperworld.com/#/essential`, "_self");
+    }
+  }, []);
 
   useEffect(() => {
     scroll.scrollTo(0);
