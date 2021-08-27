@@ -226,7 +226,9 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
                 : `calc(100vh - 150px)`
             }
             isRelative={true}
-            onClick={() => moveLinkHandler("https://www.smartkeeper.kr/#/pro")}
+            onClick={() =>
+              moveLinkHandler("http://www.smartkeeperworld.com/#/pro")
+            }
           >
             <Image
               className={`hoverImg`}

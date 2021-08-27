@@ -84,19 +84,19 @@ export const menus = [
 export const essmMenus = [
   {
     menuName: "Basic Series",
-    menuLink: "https://schoolhealing7.co.kr/#/basic",
+    menuLink: "http://smartkeeperessential.com/#/basic",
   },
   {
     menuName: "Mini Series",
-    menuLink: "https://schoolhealing7.co.kr/#/mini",
+    menuLink: "http://smartkeeperessential.com/#/mini",
   },
   {
     menuName: "No Key Required",
-    menuLink: "https://schoolhealing7.co.kr/#/product",
+    menuLink: "http://smartkeeperessential.com/#/product",
   },
   {
     menuName: "Lock Key ESSENTIAL",
-    menuLink: "https://schoolhealing7.co.kr/#/lock",
+    menuLink: "http://smartkeeperessential.com/#/lock",
   },
 ];
 
@@ -171,22 +171,22 @@ export const footerMenus = [
     subMenus: [
       {
         subMenuName: "Basic Series",
-        subMenuLink: "https://schoolhealing7.co.kr/#/basic",
+        subMenuLink: "http://smartkeeperessential.com/#/basic",
         isEx: true,
       },
       {
         subMenuName: "Mini Series",
-        subMenuLink: "https://schoolhealing7.co.kr/#/mini",
+        subMenuLink: "http://smartkeeperessential.com/#/mini",
         isEx: true,
       },
       {
         subMenuName: "No Key Required",
-        subMenuLink: "https://schoolhealing7.co.kr/#/product",
+        subMenuLink: "http://smartkeeperessential.com/#/product",
         isEx: true,
       },
       {
         subMenuName: "Lock Key ESSENTIAL",
-        subMenuLink: "https://schoolhealing7.co.kr/#/lock",
+        subMenuLink: "http://smartkeeperessential.com/#/lock",
         isEx: true,
       },
     ],

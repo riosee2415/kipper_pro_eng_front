@@ -1425,7 +1425,7 @@ const MM01Presenter = ({
                   <Wrapper al={width < 900 ? `flex-start` : `flex-end`}>
                     <ATag
                       width={`auto`}
-                      href={`https://schoolhealing7.co.kr/#/basic`}
+                      href={`http://smartkeeperessential.com/#/basic`}
                     >
                       <Button
                         dr={`row`}

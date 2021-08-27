@@ -300,7 +300,7 @@ const MM19Presenter = ({
                 </Wrapper>
 
                 <ATag
-                  href={`https://schoolhealing7.co.kr/#/basic/611a182a4d003e615dea1960`}
+                  href={`http://smartkeeperessential.com/#/basic/611a182a4d003e615dea1960`}
                   width={`auto`}
                 >
                   <Button dr={`row`} margin={`10px 0 0`}>
@@ -420,7 +420,7 @@ const MM19Presenter = ({
                 SMARTKEEPER.
               </Text>
               <ATag
-                href={`https://schoolhealing7.co.kr/#/basic/611a182a4d003e615dea1966`}
+                href={`http://smartkeeperessential.com/#/basic/611a182a4d003e615dea1966`}
                 width={`auto`}
               >
                 <Button dr={`row`} margin={`20px 0 0`}>
@@ -631,7 +631,7 @@ const MM19Presenter = ({
                     </Text>
 
                     <ATag
-                      href={`https://schoolhealing7.co.kr/#/basic/611a182a4d003e615dea1965`}
+                      href={`http://smartkeeperessential.com/#/basic/611a182a4d003e615dea1965`}
                       width={`auto`}
                     >
                       <Button dr={`row`} margin={`20px 0 0`}>
@@ -787,7 +787,7 @@ const MM19Presenter = ({
                     </Text>
 
                     <ATag
-                      href={`https://schoolhealing7.co.kr/#/lock/611a182a4d003e615dea195f`}
+                      href={`http://smartkeeperessential.com/#/lock/611a182a4d003e615dea195f`}
                       width={`auto`}
                     >
                       <Button
