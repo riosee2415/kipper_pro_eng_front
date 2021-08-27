@@ -449,6 +449,7 @@ const MM16Presenter = ({
                 <ATag
                   width={`auto`}
                   href="https://www.bloomberg.com/news/articles/2011-06-27/human-errors-fuel-hacking-as-test-shows-nothing-prevents-idiocy"
+                  target={`_blank`}
                 >
                   <Text
                     color={Theme.subTheme2_C}
@@ -537,6 +538,7 @@ const MM16Presenter = ({
                 <ATag
                   width={`auto`}
                   href="https://arstechnica.com/information-technology/2013/01/two-us-power-plants-infected-with-malware-spread-via-usb-drive/"
+                  target={`_blank`}
                 >
                   <Wrapper
                     dr={`row`}
@@ -654,6 +656,7 @@ const MM16Presenter = ({
                 <ATag
                   width={`auto`}
                   href="https://thehackernews.com/2015/03/killer-usb-explode-computer.html"
+                  target={`_blank`}
                 >
                   <Wrapper al={`flex-start`} margin={`10px 0 0`}>
                     <Button dr={`row`} hoverBgColor={Theme.subTheme2_C}>
@@ -706,6 +709,7 @@ const MM16Presenter = ({
                 <ATag
                   width={`auto`}
                   href="https://www.theverge.com/2019/4/17/18412427/college-saint-rose-student-guilty-usb-killerdestroyed-computers"
+                  target={`_blank`}
                 >
                   <Wrapper al={`flex-start`} margin={`38px 0 0`}>
                     <Button dr={`row`} hoverBgColor={Theme.subTheme2_C}>
@@ -1438,17 +1442,23 @@ const MM16Presenter = ({
               “killing” the computer.
             </Text>
 
-            <Wrapper
-              margin={`10px 0 8px`}
-              color={Theme.subTheme2_C}
-              dr={`row`}
+            <ATag
               width={`auto`}
+              href="https://thehackernews.com/2015/03/killer-usb-explode-computer.html"
+              target={`_blank`}
             >
-              <Text fontSize={`14px`} fontWeight={`700`}>
-                Read More
-              </Text>
-              <RiArrowRightSLine size={`20`} />
-            </Wrapper>
+              <Wrapper
+                margin={`10px 0 8px`}
+                color={Theme.subTheme2_C}
+                dr={`row`}
+                width={`auto`}
+              >
+                <Text fontSize={`14px`} fontWeight={`700`}>
+                  Read More
+                </Text>
+                <RiArrowRightSLine size={`20`} />
+              </Wrapper>
+            </ATag>
           </Wrapper>
 
           <Image
