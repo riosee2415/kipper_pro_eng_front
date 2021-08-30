@@ -220,7 +220,7 @@ export default ({
           ) : (
             yearData.map((data, idx) => {
               return (
-                <TableWrapper minheight={`26px`} isData={true} key={idx}>
+                <TableWrapper minHeight={`26px`} isData={true} key={idx}>
                   <TableHeadColumn isData={true} width={`5%`}>
                     {idx + 1}
                   </TableHeadColumn>
