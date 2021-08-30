@@ -2516,6 +2516,7 @@ const MM09Presenter = ({
             fontWeight={`900`}
             letterSpacing={`0`}
             lineHeight={`1.47`}
+            color={`#fff`}
           >
             Manufacturing &#38; Certification
           </Text>
