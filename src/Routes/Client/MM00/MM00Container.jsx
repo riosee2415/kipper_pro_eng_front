@@ -72,7 +72,9 @@ const MM00Container = ({ history }) => {
 
   let device;
 
-  if (userAgent.indexOf(`Mobi`) > -1) {
+  if (userAgent.indexOf(`mobi`) > -1) {
+    device = "모바일";
+  } else if (userAgent.indexOf("Mobi") > -1) {
     device = "모바일";
   } else {
     device = "PC";
