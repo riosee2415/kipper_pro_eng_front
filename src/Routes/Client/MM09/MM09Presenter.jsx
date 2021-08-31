@@ -1789,7 +1789,7 @@ const MM09Presenter = ({
                   <Wrapper width={width < 700 ? `100%` : `31%`}>
                     {pData && (
                       <EditorViewer
-                        value={pData.pointNumber2}
+                        value={pData.pointNumber3}
                         letterSpacing={`-0.02em`}
                         lineHeight={`1.47`}
                         fontSize={width < 700 ? `20px` : `25px`}
