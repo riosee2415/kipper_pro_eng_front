@@ -456,6 +456,7 @@ const MM10Presenter = ({
               >
                 <Image
                   margin={width < 700 ? `19px 0 24px` : `9px 0 14px`}
+                  width={`90%`}
                   src={
                     width < 700
                       ? `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM10%2FDifferent%20level%20of%20network%20security_proven%20by%20countless%20customers%202.svg?alt=media&token=17fdc991-d7ba-471f-9ed0-effa42815952`

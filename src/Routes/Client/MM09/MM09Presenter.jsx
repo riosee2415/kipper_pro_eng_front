@@ -2498,8 +2498,9 @@ const MM09Presenter = ({
       </Wrapper>
 
       <Wrapper
-        padding={width < 700 ? `180px 0 30px` : `180px 0`}
+        padding={width < 700 ? `80px 0 30px` : `80px 0`}
         attachment={`initial`}
+        bgPosition={`0 0`}
         bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM02%2FbgImage.png?alt=media&token=0917fcbf-c46d-4f3c-a371-8b1e69100a61")`}
       >
         {/* 맺음말 타이틀 */}
@@ -2518,7 +2519,7 @@ const MM09Presenter = ({
               letterSpacing={`-0.04em`}
               lineHeight={`2.1`}
               value={pData.finalContent}
-              margin={`20px 0 0`}
+              margin={`15px 0 0`}
               fontSize={width < 700 ? `18px` : `20px`}
             />
           )}
@@ -2538,7 +2539,7 @@ const MM09Presenter = ({
           </Text> */}
 
           <Text
-            margin={`100px 0 0`}
+            margin={`30px 0 0`}
             fontSize={`34px`}
             fontWeight={`900`}
             letterSpacing={`0`}
