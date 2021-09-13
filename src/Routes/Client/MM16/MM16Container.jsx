@@ -19,11 +19,22 @@ const MM16Container = ({ history }) => {
   const [graphValue, setGraphValue] = useState(`0%`);
   const [graphValue2, setGraphValue2] = useState(`0%`);
 
+  const [video, setVideo] = useState(false);
+  const [isVideo, setIsVideo] = useState(false);
+
   ////////////// - USE QUERY- ///////////////
 
   ///////////// - USE MUTATION- /////////////
 
   ///////////// - EVENT HANDLER- ////////////
+
+  const changeIsVideoHandler = () => {
+    setIsVideo(!isVideo);
+  };
+
+  const changeVideoHandler = () => {
+    setVideo(!video);
+  };
 
   ////////////// - USE EFFECT- //////////////
 
@@ -35,6 +46,8 @@ const MM16Container = ({ history }) => {
     <MM16Presenter
       graphRef={graphRef}
       documentRef={documentRef}
+      video={video}
+      isVideo={isVideo}
       //
       isCheck={isCheck}
       setIsCheck={setIsCheck}
@@ -42,6 +55,8 @@ const MM16Container = ({ history }) => {
       setGraphValue={setGraphValue}
       graphValue2={graphValue2}
       setGraphValue2={setGraphValue2}
+      changeVideoHandler={changeVideoHandler}
+      changeIsVideoHandler={changeIsVideoHandler}
     />
   );
 };
