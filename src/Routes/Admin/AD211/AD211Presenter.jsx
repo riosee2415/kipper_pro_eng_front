@@ -2087,9 +2087,14 @@ export default ({
               수상
             </ComboOption>
             <ComboOption
-              value={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPERKRPRO%2Fuploads%2Ficon2%2FSelf-Developed%20%E1%84%80%E1%85%AE%E1%86%A8%E1%84%82%E1%85%A2%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%20%E1%84%8C%E1%85%A6%E1%84%8C%E1%85%A9.svg?alt=media&token=efc6dac2-4ddc-448b-91c2-d91fcf784247`}
+              value={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPERKRPRO%2Fuploads%2Ficon%2F%E1%84%80%E1%85%AE%E1%86%A8%E1%84%82%E1%85%A2%E1%84%8C%E1%85%A6%E1%84%8C%E1%85%A9.svg?alt=media&token=6323a58a-8e5c-4423-b4e9-ce0d812bb5af`}
             >
               국내 개발제조
+            </ComboOption>
+            <ComboOption
+              value={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPERKRPRO%2Fuploads%2Ficon%2FCertified02.svg?alt=media&token=4ffae3f0-32f7-4a6f-81f9-8c3a62cbde2a`}
+            >
+              인증
             </ComboOption>
           </Combo>
         </DataWrapper>
@@ -2119,9 +2124,14 @@ export default ({
               수상
             </ComboOption>
             <ComboOption
-              value={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPERKRPRO%2Fuploads%2Ficon2%2FSelf-Developed%20%E1%84%80%E1%85%AE%E1%86%A8%E1%84%82%E1%85%A2%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%20%E1%84%8C%E1%85%A6%E1%84%8C%E1%85%A9.svg?alt=media&token=efc6dac2-4ddc-448b-91c2-d91fcf784247`}
+              value={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPERKRPRO%2Fuploads%2Ficon%2F%E1%84%80%E1%85%AE%E1%86%A8%E1%84%82%E1%85%A2%E1%84%8C%E1%85%A6%E1%84%8C%E1%85%A9.svg?alt=media&token=6323a58a-8e5c-4423-b4e9-ce0d812bb5af`}
             >
               국내 개발제조
+            </ComboOption>
+            <ComboOption
+              value={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPERKRPRO%2Fuploads%2Ficon%2FCertified02.svg?alt=media&token=4ffae3f0-32f7-4a6f-81f9-8c3a62cbde2a`}
+            >
+              인증
             </ComboOption>
           </Combo>
         </DataWrapper>
@@ -2151,9 +2161,14 @@ export default ({
               수상
             </ComboOption>
             <ComboOption
-              value={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPERKRPRO%2Fuploads%2Ficon2%2FSelf-Developed%20%E1%84%80%E1%85%AE%E1%86%A8%E1%84%82%E1%85%A2%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%20%E1%84%8C%E1%85%A6%E1%84%8C%E1%85%A9.svg?alt=media&token=efc6dac2-4ddc-448b-91c2-d91fcf784247`}
+              value={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPERKRPRO%2Fuploads%2Ficon%2F%E1%84%80%E1%85%AE%E1%86%A8%E1%84%82%E1%85%A2%E1%84%8C%E1%85%A6%E1%84%8C%E1%85%A9.svg?alt=media&token=6323a58a-8e5c-4423-b4e9-ce0d812bb5af`}
             >
               국내 개발제조
+            </ComboOption>
+            <ComboOption
+              value={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPERKRPRO%2Fuploads%2Ficon%2FCertified02.svg?alt=media&token=4ffae3f0-32f7-4a6f-81f9-8c3a62cbde2a`}
+            >
+              인증
             </ComboOption>
           </Combo>
         </DataWrapper>
@@ -2183,9 +2198,14 @@ export default ({
               수상
             </ComboOption>
             <ComboOption
-              value={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPERKRPRO%2Fuploads%2Ficon2%2FSelf-Developed%20%E1%84%80%E1%85%AE%E1%86%A8%E1%84%82%E1%85%A2%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%20%E1%84%8C%E1%85%A6%E1%84%8C%E1%85%A9.svg?alt=media&token=efc6dac2-4ddc-448b-91c2-d91fcf784247`}
+              value={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPERKRPRO%2Fuploads%2Ficon%2F%E1%84%80%E1%85%AE%E1%86%A8%E1%84%82%E1%85%A2%E1%84%8C%E1%85%A6%E1%84%8C%E1%85%A9.svg?alt=media&token=6323a58a-8e5c-4423-b4e9-ce0d812bb5af`}
             >
               국내 개발제조
+            </ComboOption>
+            <ComboOption
+              value={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPERKRPRO%2Fuploads%2Ficon%2FCertified02.svg?alt=media&token=4ffae3f0-32f7-4a6f-81f9-8c3a62cbde2a`}
+            >
+              인증
             </ComboOption>
           </Combo>
         </DataWrapper>
@@ -2215,9 +2235,14 @@ export default ({
               수상
             </ComboOption>
             <ComboOption
-              value={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPERKRPRO%2Fuploads%2Ficon2%2FSelf-Developed%20%E1%84%80%E1%85%AE%E1%86%A8%E1%84%82%E1%85%A2%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%20%E1%84%8C%E1%85%A6%E1%84%8C%E1%85%A9.svg?alt=media&token=efc6dac2-4ddc-448b-91c2-d91fcf784247`}
+              value={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPERKRPRO%2Fuploads%2Ficon%2F%E1%84%80%E1%85%AE%E1%86%A8%E1%84%82%E1%85%A2%E1%84%8C%E1%85%A6%E1%84%8C%E1%85%A9.svg?alt=media&token=6323a58a-8e5c-4423-b4e9-ce0d812bb5af`}
             >
               국내 개발제조
+            </ComboOption>
+            <ComboOption
+              value={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPERKRPRO%2Fuploads%2Ficon%2FCertified02.svg?alt=media&token=4ffae3f0-32f7-4a6f-81f9-8c3a62cbde2a`}
+            >
+              인증
             </ComboOption>
           </Combo>
         </DataWrapper>
@@ -2247,9 +2272,14 @@ export default ({
               수상
             </ComboOption>
             <ComboOption
-              value={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPERKRPRO%2Fuploads%2Ficon2%2FSelf-Developed%20%E1%84%80%E1%85%AE%E1%86%A8%E1%84%82%E1%85%A2%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%20%E1%84%8C%E1%85%A6%E1%84%8C%E1%85%A9.svg?alt=media&token=efc6dac2-4ddc-448b-91c2-d91fcf784247`}
+              value={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPERKRPRO%2Fuploads%2Ficon%2F%E1%84%80%E1%85%AE%E1%86%A8%E1%84%82%E1%85%A2%E1%84%8C%E1%85%A6%E1%84%8C%E1%85%A9.svg?alt=media&token=6323a58a-8e5c-4423-b4e9-ce0d812bb5af`}
             >
               국내 개발제조
+            </ComboOption>
+            <ComboOption
+              value={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPERKRPRO%2Fuploads%2Ficon%2FCertified02.svg?alt=media&token=4ffae3f0-32f7-4a6f-81f9-8c3a62cbde2a`}
+            >
+              인증
             </ComboOption>
           </Combo>
         </DataWrapper>

@@ -10,12 +10,26 @@ export const GET_POPUP_ONE = gql`
       createdAt
       deletedAt
       updatedAt
+      link
+      onoff
     }
   }
 `;
 
 export const MODIFY_POPUP = gql`
-  mutation modifyPopup($id: String!, $title: String!, $thumbnail: String!) {
-    modifyPopup(id: $id, title: $title, thumbnail: $thumbnail)
+  mutation modifyPopup(
+    $id: String!
+    $title: String!
+    $thumbnail: String!
+    $link: String!
+    $onoff: String!
+  ) {
+    modifyPopup(
+      id: $id
+      title: $title
+      thumbnail: $thumbnail
+      link: $link
+      onoff: $onoff
+    )
   }
 `;

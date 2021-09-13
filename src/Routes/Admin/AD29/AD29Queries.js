@@ -10,6 +10,7 @@ export const GET_POPUP = gql`
       createdAt
       deletedAt
       updatedAt
+      onoff
     }
   }
 `;

@@ -7,6 +7,8 @@ import {
   Image,
   FileInput,
   FileLabel,
+  Combo,
+  ComboOption,
 } from "../../../Components/AdminCommonComponents";
 import { Title, Tabs } from "../Components";
 import Fade from "react-reveal/Fade";
@@ -57,6 +59,8 @@ export default ({
   currentCreatedAt,
   currentUpdatedAt,
   currentThumbnail,
+  currentLink,
+  currentOnoff,
   fileUploadProgress,
   //
   fileRef,
@@ -85,12 +89,12 @@ export default ({
       </FieldsSet>
 
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper height={`500px`}>이미지</DataGuideWrapper>
-        <DataWrapper height={`500px`}>
+        <DataGuideWrapper height={`600px`}>이미지</DataGuideWrapper>
+        <DataWrapper height={`600px`}>
           <Image
             src={currentThumbnail.value}
-            width={`330px`}
-            height={`450px`}
+            width={`560px`}
+            height={`560px`}
             alt={`bannerImage`}
           />
 
@@ -103,7 +107,7 @@ export default ({
           />
 
           {isLoading ? (
-            <Wrapper width={`330px`} margin={`10px 0px 0px 0px`}>
+            <Wrapper width={`560px`} margin={`10px 0px 0px 0px`}>
               {fileUploadProgress.value && (
                 <FileProgress
                   variant="determinate"
@@ -113,7 +117,7 @@ export default ({
             </Wrapper>
           ) : (
             <FileLabel
-              width={`330px`}
+              width={`560px`}
               htmlFor={`file-js`}
               margin={`10px 0px 0px 0px`}
             >
@@ -127,6 +131,21 @@ export default ({
         <DataGuideWrapper>제목</DataGuideWrapper>
         <DataWrapper>
           <TextInput width={`750px`} height={`25px`} {...currentTitle} />
+        </DataWrapper>
+      </Wrapper>
+      <Wrapper dr={`row`} ju={`flex-start`}>
+        <DataGuideWrapper>링크</DataGuideWrapper>
+        <DataWrapper>
+          <TextInput width={`750px`} height={`25px`} {...currentLink} />
+        </DataWrapper>
+      </Wrapper>
+      <Wrapper dr={`row`} ju={`flex-start`}>
+        <DataGuideWrapper>온/오프</DataGuideWrapper>
+        <DataWrapper>
+          <Combo {...currentOnoff}>
+            <ComboOption value={`ON`}>ON</ComboOption>
+            <ComboOption value={`OFF`}>OFF</ComboOption>
+          </Combo>
         </DataWrapper>
       </Wrapper>
 

@@ -69,6 +69,7 @@ export default ({
   isLoading,
   currentTitle,
   currentThumbnail,
+  currentLink,
   fileUploadProgress,
   //
   fileRef,
@@ -95,12 +96,12 @@ export default ({
       </FieldsSet>
 
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper height={`500px`}>이미지</DataGuideWrapper>
-        <DataWrapper height={`500px`}>
+        <DataGuideWrapper height={`600px`}>이미지</DataGuideWrapper>
+        <DataWrapper height={`600px`}>
           <Image
             src={currentThumbnail.value}
-            width={`330px`}
-            height={`450px`}
+            width={`560px`}
+            height={`560px`}
             alt={`popupImage`}
           />
 
@@ -113,7 +114,7 @@ export default ({
           />
 
           {isLoading ? (
-            <Wrapper width={`330px`} margin={`10px 0px 0px 0px`}>
+            <Wrapper width={`560`} margin={`10px 0px 0px 0px`}>
               {fileUploadProgress.value && (
                 <FileProgress
                   variant="determinate"
@@ -123,7 +124,7 @@ export default ({
             </Wrapper>
           ) : (
             <FileLabel
-              width={`330px`}
+              width={`560`}
               htmlFor={`file-js`}
               margin={`10px 0px 0px 0px`}
             >
@@ -137,6 +138,12 @@ export default ({
         <DataGuideWrapper>제목</DataGuideWrapper>
         <DataWrapper>
           <TextInput width={`750px`} height={`25px`} {...currentTitle} />
+        </DataWrapper>
+      </Wrapper>
+      <Wrapper dr={`row`} ju={`flex-start`}>
+        <DataGuideWrapper>링크</DataGuideWrapper>
+        <DataWrapper>
+          <TextInput width={`750px`} height={`25px`} {...currentLink} />
         </DataWrapper>
       </Wrapper>
 

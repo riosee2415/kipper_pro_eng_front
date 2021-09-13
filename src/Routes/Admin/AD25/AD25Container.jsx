@@ -15,6 +15,7 @@ export default ({ history }) => {
 
   const currentTitle = useInput(``);
   const currentThumbnail = useInput(``);
+  const currentLink = useInput(``);
 
   const fileUploadProgress = useInput(null);
 
@@ -48,7 +49,7 @@ export default ({ history }) => {
       fileUploadProgress.setValue,
       currentThumbnail.setValue,
       true, // isResize
-      420, // if you use resize function, you must be going to write width that this type is only Integer
+      560, // if you use resize function, you must be going to write width that this type is only Integer
       560 // if you use resize function, you should be going to write height that this type is only Integer
     );
 
@@ -68,6 +69,10 @@ export default ({ history }) => {
       toast.error("이미지는 필수 업로드사항 입니다.");
       return;
     }
+    if (!emptyCheck(currentLink.value)) {
+      toast.error("링크는 필수 업로드사항 입니다.");
+      return;
+    }
 
     confirm(
       `팝업 등록`,
@@ -81,6 +86,7 @@ export default ({ history }) => {
       variables: {
         title: currentTitle.value,
         thumbnailPath: currentThumbnail.value,
+        link: currentLink.value,
       },
     });
 
@@ -117,6 +123,7 @@ export default ({ history }) => {
       isLoading={isLoading}
       currentTitle={currentTitle}
       currentThumbnail={currentThumbnail}
+      currentLink={currentLink}
       fileUploadProgress={fileUploadProgress}
       //
       fileRef={fileRef}

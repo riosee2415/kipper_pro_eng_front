@@ -107,8 +107,11 @@ export default ({
           <Fade left>
             <TableWrapper>
               <TableHeadColumn width={`12%`}>번호</TableHeadColumn>
-              <TableHeadColumn width={`60%`} isStart={true}>
+              <TableHeadColumn width={`40%`} isStart={true}>
                 제목
+              </TableHeadColumn>
+              <TableHeadColumn width={`20%`} isStart={true}>
+                상태
               </TableHeadColumn>
               <TableHeadColumn width={`28%`}>등록일</TableHeadColumn>
             </TableWrapper>
@@ -144,12 +147,19 @@ export default ({
                           </TableHeadColumn>
                           <TableHeadColumn
                             isData={true}
-                            width={`60%`}
+                            width={`40%`}
                             isStart={true}
                             isToday={true}
                             onClick={() => dataClickHandler(data)}
                           >
                             {data.title}
+                          </TableHeadColumn>
+                          <TableHeadColumn
+                            isData={true}
+                            width={`20%`}
+                            isStart={true}
+                          >
+                            {data.onoff}
                           </TableHeadColumn>
                           <TableHeadColumn isData={true} width={`28%`}>
                             {data.createdAt}

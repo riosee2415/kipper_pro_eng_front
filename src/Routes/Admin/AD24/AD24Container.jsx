@@ -17,6 +17,8 @@ export default ({ history, match }) => {
   const currentCreatedAt = useInput(``);
   const currentUpdatedAt = useInput(``);
   const currentThumbnail = useInput(``);
+  const currentLink = useInput(``);
+  const currentOnoff = useInput(``);
 
   const fileUploadProgress = useInput(null);
 
@@ -55,7 +57,7 @@ export default ({ history, match }) => {
       fileUploadProgress.setValue,
       currentThumbnail.setValue,
       true, // isResize
-      420, // if you use resize function, you must be going to write width that this type is only Integer
+      560, // if you use resize function, you must be going to write width that this type is only Integer
       560 // if you use resize function, you should be going to write height that this type is only Integer
     );
 
@@ -80,6 +82,8 @@ export default ({ history, match }) => {
         id: nData.getPopupOne._id,
         title: currentTitle.value,
         thumbnail: currentThumbnail.value,
+        link: currentLink.value,
+        onoff: currentOnoff.value,
       },
     });
 
@@ -117,6 +121,8 @@ export default ({ history, match }) => {
       currentCreatedAt.setValue(nData.getPopupOne.createdAt);
       currentUpdatedAt.setValue(nData.getPopupOne.updatedAt);
       currentThumbnail.setValue(nData.getPopupOne.thumbnailPath);
+      currentLink.setValue(nData.getPopupOne.link);
+      currentOnoff.setValue(nData.getPopupOne.onoff);
     }
   }, [nData]);
 
@@ -129,6 +135,8 @@ export default ({ history, match }) => {
       currentCreatedAt={currentCreatedAt}
       currentUpdatedAt={currentUpdatedAt}
       currentThumbnail={currentThumbnail}
+      currentLink={currentLink}
+      currentOnoff={currentOnoff}
       fileUploadProgress={fileUploadProgress}
       //
       fileRef={fileRef}
