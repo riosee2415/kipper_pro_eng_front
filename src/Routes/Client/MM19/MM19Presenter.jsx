@@ -844,11 +844,19 @@ const MM19Presenter = ({
               Reference
             </Wrapper> */}
             <Image
-              margin={width < 700 ? `10px 0 20px` : `15px 0 20px`}
+              margin={width < 700 ? `10px 0 5px` : `15px 0 5px`}
               alt="smart"
               src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM00%2FReference.svg?alt=media&token=116031e6-2af5-46f1-bcf5-6967b79800af`}
               width={width < 700 ? `150px` : `281px`}
             />
+            <Text
+              fontSize={width < 700 ? `20px` : `28px`}
+              color={Theme.essGrey3_C}
+              margin={`0 0 20px`}
+              fontWeight={`bold`}
+            >
+              You can check what products the client uses by industry
+            </Text>
             <Text
               fontSize={width < 700 ? `16px` : `20px`}
               color={Theme.blackTheme_C}
