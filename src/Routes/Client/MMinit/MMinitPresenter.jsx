@@ -279,16 +279,15 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
                 </Text>
                 <Wrapper margin={`100px 0 0`}>
                   <Text fontSize={width < 1280 ? `14px` : `18px`}>
-                    For better security, sold exclusively to verified companies.
+                    Sold exclusively to verified companies for better security.
                     Proven choice of
                   </Text>
                   <Text fontSize={width < 1280 ? `14px` : `18px`}>
                     3,000+ installation sites worldwide from a wide range of
-                    industries
+                    industries including
                   </Text>
                   <Text fontSize={width < 1280 ? `14px` : `18px`}>
-                    including, government, military and public &#38; private
-                    institutions.
+                    government, military and public &#38; private institutions.
                   </Text>
                 </Wrapper>
               </ProText>
@@ -460,10 +459,10 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
           >
             <Text fontSize={`20px`} fontWeight={`300`}>
               “Physical Cybersecurity” may sound foreign, however, like armor
-              and shields,
+              &#38; shields,
             </Text>
             <Text fontSize={`20px`} fontWeight={`300`}>
-              and fences and walls, we have been “physically” protected for a
+              and fences &#38; walls, we have been “physically” protected for a
               long time.
             </Text>
             <Text fontSize={`20px`} fontWeight={`300`}>
@@ -471,8 +470,8 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
               perfect.
             </Text>
             <Text fontSize={`20px`} fontWeight={`300`}>
-              SMARTKEEPER is committed to setting the standard in physical
-              cybersecurity.
+              SMARTKEEPER is committed to setting the standard in physical cyber
+              security.
             </Text>
           </Wrapper>
 
@@ -495,7 +494,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
               letterSpacing={`-0.2px`}
               fontWeight={`300`}
             >
-              foreign, however, like armor and shields,
+              foreign, however, like armor &#38; shields,
             </Text>
             <Text
               fontSize={`17px`}
@@ -503,7 +502,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
               letterSpacing={`-0.2px`}
               fontWeight={`300`}
             >
-              and fences and walls, we have been
+              and fences &#38; walls, we have been
             </Text>
             <Text
               fontSize={`17px`}
@@ -543,7 +542,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
               letterSpacing={`-0.2px`}
               fontWeight={`300`}
             >
-              physical cybersecurity.
+              physical cyber security.
             </Text>
           </Wrapper>
 

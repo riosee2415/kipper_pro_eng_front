@@ -174,7 +174,7 @@ const MM02Presenter = ({
                 fontWeight={`900`}
                 lineHeight={`1.4`}
                 margin={`0`}
-                color={`rgba(255,255,255,0.5)`}
+                color={`rgb(114,114,114)`}
               >
                 Smaller
               </CommonSubTitle>
@@ -185,7 +185,7 @@ const MM02Presenter = ({
                 fontWeight={`900`}
                 lineHeight={`1.4`}
                 margin={`0`}
-                color={`rgba(255,255,255,0.75)`}
+                color={`rgb(156,156,156)`}
               >
                 Easier
               </CommonSubTitle>
@@ -196,9 +196,9 @@ const MM02Presenter = ({
                 fontWeight={`900`}
                 lineHeight={`1.4`}
                 margin={`0`}
-                color={Theme.white_C}
+                color={`rgb(225,225,225)`}
               >
-                Longer
+                Longer Lasting
               </CommonSubTitle>
               <CommonSubTitle
                 fontSize={
@@ -209,7 +209,7 @@ const MM02Presenter = ({
                 margin={`0`}
                 color={Theme.white_C}
               >
-                Lasting Security.
+                Security
               </CommonSubTitle>
               <Text
                 display={width < 900 ? `none` : `inline`}
@@ -763,7 +763,7 @@ const MM02Presenter = ({
                   margin={`10px 0 0`}
                   fontWeight={`300`}
                 >
-                  USB Type-A
+                  USB Type A
                 </Text>
               </Wrapper>
               <Wrapper width={`auto`} margin={`0 50px 0 0`} ju={`flex-start`}>
@@ -781,7 +781,7 @@ const MM02Presenter = ({
                   margin={`10px 0 0`}
                   fontWeight={`300`}
                 >
-                  USB Type-C
+                  USB Type C
                 </Text>
               </Wrapper>
               <Wrapper width={`auto`} margin={`0 50px 0 0`} ju={`flex-start`}>
@@ -817,7 +817,7 @@ const MM02Presenter = ({
                   margin={`10px 0 0`}
                   fontWeight={`300`}
                 >
-                  RJ-45
+                  Ethernet RJ-45
                 </Text>
               </Wrapper>
               <Wrapper width={`auto`} margin={`0 50px 0 0`} ju={`flex-start`}>
@@ -1225,7 +1225,7 @@ const MM02Presenter = ({
                 margin={width < 700 ? `14px 0 0` : `30px 0 0`}
                 fontWeight={`300`}
               >
-                USB Type-A
+                USB Type A
               </Text>
             </Wrapper>
 
@@ -1242,7 +1242,7 @@ const MM02Presenter = ({
                 margin={width < 700 ? `14px 0 0` : `30px 0 0`}
                 fontWeight={`300`}
               >
-                USB Type-C
+                USB Type C
               </Text>
             </Wrapper>
 
@@ -1276,7 +1276,7 @@ const MM02Presenter = ({
                 margin={width < 700 ? `7px 0 0` : `14px 0 0`}
                 fontWeight={`300`}
               >
-                RJ-45
+                Ethernet RJ-45
               </Text>
             </Wrapper>
           </Wrapper>

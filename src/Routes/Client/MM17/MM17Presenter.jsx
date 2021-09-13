@@ -503,7 +503,7 @@ const MM17Presenter = ({
               transform={width < 700 ? `` : `scale(${scale1})`}
               width={width < 700 ? `80%` : `46%`}
               alt="usb"
-              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2Fusb.svg?alt=media&token=659fa47e-d6f3-4683-915f-83e50b33f8e3`}
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2F0.5mm.png?alt=media&token=08dbc3d5-0c4d-491e-8e10-317ab3e00d83`}
             />
             <Wrapper
               display={width < 700 ? `none` : `flex`}
@@ -736,7 +736,7 @@ const MM17Presenter = ({
             <Image
               width={`100%`}
               ait="image"
-              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM17%2Fmm17.png?alt=media&token=23669857-a973-477e-b823-d2189f87e8ef`}
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM17%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206538.png?alt=media&token=09afc156-fe95-465e-b3ad-d2f23ca9d5b3`}
             />
           </Wrapper>
         </RsWrapper>

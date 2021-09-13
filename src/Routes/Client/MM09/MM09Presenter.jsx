@@ -1478,15 +1478,7 @@ const MM09Presenter = ({
               />
               <Wrapper width={`calc(100% - 40px)`} al={`flex-start`}>
                 <Text
-                  fontSize={`11px`}
-                  color={Theme.greyTheme7_C}
-                  letterSpacing={`-0.03em`}
-                  lineHeight={`1.36`}
-                >
-                  <SpanText fontWeight={`700`}>SMARTKEEPER PRO</SpanText> is a
-                  product for B2B business. Please leave your required item/qty/
-                </Text>
-                <Text
+                  display={width < 700 ? `none` : `flex`}
                   fontSize={`11px`}
                   color={Theme.greyTheme7_C}
                   letterSpacing={`-0.03em`}
@@ -1499,7 +1491,9 @@ const MM09Presenter = ({
                   >
                     sales@comxi.com
                   </ATag> */}
-                  contact so that we can get back to you immediately. Click
+                  We sell
+                  <SpanText fontWeight={`700`}>SMARTKEEPER PRO</SpanText> only
+                  to verified B2B clients. Click
                   <SpanText
                     color={`rgb(15, 152, 255)`}
                     cursor={`pointer`}
@@ -1507,6 +1501,39 @@ const MM09Presenter = ({
                   >
                     &nbsp;CONTACT US↗
                   </SpanText>
+                  and
+                </Text>
+
+                <Text
+                  display={width < 700 ? `none` : `flex`}
+                  fontSize={`11px`}
+                  color={Theme.greyTheme7_C}
+                  letterSpacing={`-0.03em`}
+                  lineHeight={`1.36`}
+                >
+                  leave your required item/qty/contact so that we can get back
+                  to you in a day.
+                </Text>
+
+                <Text
+                  display={width < 700 ? `inline` : `none`}
+                  fontSize={`11px`}
+                  color={Theme.greyTheme7_C}
+                  letterSpacing={`-0.03em`}
+                  lineHeight={`1.36`}
+                >
+                  We sell
+                  <SpanText fontWeight={`700`}>SMARTKEEPER PRO</SpanText> only
+                  to verified B2B clients. Click
+                  <SpanText
+                    color={`rgb(15, 152, 255)`}
+                    cursor={`pointer`}
+                    onClick={() => moveLinkHandler(`/contact`)}
+                  >
+                    &nbsp;CONTACT US↗
+                  </SpanText>
+                  and leave your required item/qty/contact so that we can get
+                  back to you in a day.
                 </Text>
               </Wrapper>
             </Wrapper>
