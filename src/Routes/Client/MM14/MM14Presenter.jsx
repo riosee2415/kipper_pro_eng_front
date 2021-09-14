@@ -57,6 +57,7 @@ const MM14Presenter = ({
   width,
   //
   point,
+  map,
   //
   ableIcon,
   setAbleIcon,
@@ -112,7 +113,7 @@ const MM14Presenter = ({
         <Wrapper isRelative={true}>
           <Image
             width={`100%`}
-            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2F%E1%84%8C%E1%85%B5%E1%84%83%E1%85%A9.png?alt=media&token=37261bad-6bd3-4223-9db4-ee54b98cc834`}
+            src={map[ableIcon !== null ? point[ableIcon].map : 0]}
           />
           {point.map((data, idx) => {
             return (
@@ -122,6 +123,7 @@ const MM14Presenter = ({
                 height={`50px`}
                 top={data.top}
                 left={data.left}
+                key={idx}
               >
                 {ableIcon !== idx ? (
                   <Dot
