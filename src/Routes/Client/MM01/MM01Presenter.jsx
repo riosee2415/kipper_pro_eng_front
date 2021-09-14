@@ -27,7 +27,7 @@ const Gotham = styled(SpanText)`
 `;
 
 const Title = styled.h1`
-  font-size: 40px;
+  font-size: ${(props) => props.fontSize || `47px`};
   font-weight: 700;
   color: ${(props) => props.theme.white_C};
   line-height: 1.3;
@@ -272,7 +272,7 @@ const MM01Presenter = ({
 
   return (
     <ParallaxProvider>
-      <WholeWrapper bgColor={Theme.black_C}>
+      <WholeWrapper bgColor={Theme.blackTheme2_C}>
         <RsWrapper isRelative={true}>
           <Wrapper dr={`row`}>
             <Wrapper
@@ -323,120 +323,136 @@ const MM01Presenter = ({
                 al={`flex-start`}
                 ju={width < 900 && `flex-end`}
               >
-                <Title>Security gap,</Title>
-                <Title>your precarious story</Title>
-                <Wrapper
-                  width={`20px`}
-                  height={`2px`}
-                  bgColor={width < 900 ? `transparent` : Theme.white_C}
-                  margin={width < 900 ? `20px 0 0` : `50px 0`}
-                ></Wrapper>
+                <Wrapper al={`flex-start`} height={`615px`} ju={`flex-start`}>
+                  <Title>The gap of security</Title>
+                  <Title>Insecure status of us.</Title>
+                  <Wrapper
+                    width={`20px`}
+                    height={`2px`}
+                    bgColor={width < 900 ? `transparent` : Theme.white_C}
+                    margin={width < 900 ? `20px 0 0` : `50px 0`}
+                  ></Wrapper>
 
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  Malware is like the flu. Even with consistent monitoring
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  and vaccination, it always infiltrates our bodies with
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                  margin={`0 0 40px`}
-                >
-                  new viruses.
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  Malware is like the flu. Even with
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  consistent monitoring and
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  vaccination, it always infiltrates
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                  margin={width < 700 ? `0 0 20px` : `0 0 40px`}
-                >
-                  our bodies with new viruses.
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  The perfect way to protect against viruses is to block the
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  intrusion route directly. Leaving the intrusion route
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  The perfect way to protect against
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  viruses is to block the intrusion
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  route directly. Leaving the
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                >
-                  unattended means that there is a lapse in security.
-                </Text>
+                  <Text
+                    fontSize={`25px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    Malware is like a cold.
+                  </Text>
+                  <Text
+                    fontSize={`25px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    Despite vaccination,
+                  </Text>
+                  <Text
+                    fontSize={`25px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    If there is a tiny gap in the body’s immune
+                  </Text>
+                  <Text
+                    fontSize={`25px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `none` : `flex`}
+                    margin={`0 0 40px`}
+                  >
+                    system, it easily penetrates.
+                  </Text>
+                  <Text
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `flex` : `none`}
+                  >
+                    Malware is like a cold.
+                  </Text>
+                  <Text
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `flex` : `none`}
+                  >
+                    Despite vaccination,
+                  </Text>
+                  <Text
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `flex` : `none`}
+                  >
+                    If there is a tiny gap in the body’s immune
+                  </Text>
+                  <Text
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `flex` : `none`}
+                    margin={width < 700 ? `0 0 20px` : `0 0 40px`}
+                  >
+                    system, it easily penetrates.
+                  </Text>
+                  <Text
+                    fontSize={`25px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    An easy way to protect our body is to first block
+                  </Text>
+                  <Text
+                    fontSize={`25px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    the penetration route of the virus like a mask.
+                  </Text>
+                  <Text
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `flex` : `none`}
+                  >
+                    An easy way to protect our body is
+                  </Text>
+                  <Text
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `flex` : `none`}
+                  >
+                    to first block the penetration
+                  </Text>
+                  <Text
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `flex` : `none`}
+                  >
+                    route of the virus like a mask.
+                  </Text>
+                  {/* <Text
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                  >
+                    unattended means that there is a lapse in security.
+                  </Text> */}
+                </Wrapper>
               </Wrapper>
               {/*  */}
               <Wrapper
@@ -445,155 +461,33 @@ const MM01Presenter = ({
                 ref={tab2Ref}
                 al={`flex-start`}
               >
-                <Title
-                  fontSize={width < 900 && `30px !important`}
-                  ref={check1Ref}
-                >
-                  The best security is
-                </Title>
-                <Title fontSize={width < 900 && `30px !important`}>
-                  physical security.
-                </Title>
-
-                <Wrapper
-                  width={`20px`}
-                  height={`2px`}
-                  bgColor={width < 900 ? `transparent` : Theme.white_C}
-                  margin={width < 900 ? `20px 0 0` : `50px 0`}
-                ></Wrapper>
-
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  We all know what to do when we receive a spam mail
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                  margin={`0 0 40px`}
-                >
-                  with malware. “Do NOT click to open.”
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  We all know what to do when we
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                  margin={width < 700 ? `0 0 20px` : `0 0 40px`}
-                >
-                  receive a spam mail with malware. “Do NOT click to open.”
-                </Text>
-                {/* <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  margin={`0 0 40px`}
-                >
-                  ‘클릭 해서 열어보지 말 것.’
-                </Text> */}
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  Will you continue to allow connecting personal devices
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  that may be infected to industrial equipment full of
-                  confidential
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  data? Will you continue to neglect removable storage devices
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  with important data?
-                </Text>
-                {/* <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  두실건가요?
-                </Text> */}
-
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  Will you continue to allow
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  connecting personal devices
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  that may be infected to industrial
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  equipment full of confidential
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  data? Will you continue to neglect
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  removable storage devices with important data?
-                </Text>
+                <Wrapper al={`flex-start`} height={`615px`} ju={`flex-start`}>
+                  <Text
+                    fontSize={width < 700 ? `20px` : `30px`}
+                    color={Theme.greyTheme7_C}
+                  >
+                    Then,
+                  </Text>
+                  <Text
+                    fontSize={width < 700 ? `20px` : `30px`}
+                    color={Theme.greyTheme7_C}
+                  >
+                    How is our computing environment?
+                  </Text>
+                  <Wrapper
+                    ref={check1Ref}
+                    ju={`flex-start`}
+                    fontSize={`34px`}
+                    color={Theme.white_C}
+                    dr={`row`}
+                  >
+                    Are you
+                    <Text fontWeight={`900`} fontSize={`40px`} margin={`0 5px`}>
+                      securely
+                    </Text>
+                    managing it?
+                  </Wrapper>
+                </Wrapper>
               </Wrapper>
               {/*  */}
               <Wrapper
@@ -602,74 +496,102 @@ const MM01Presenter = ({
                 ref={tab3Ref}
                 al={`flex-start`}
               >
-                <Title
-                  opacity={`0`}
-                  fontSize={width < 900 && `30px`}
-                  ref={check4Ref}
-                >
-                  Arguably
-                </Title>
-                <Title opacity={`0`} fontSize={width < 900 && `30px`}>
-                  the Best Security
-                </Title>
+                <Wrapper al={`flex-start`} height={`615px`} ju={`flex-start`}>
+                  <Title fontSize={width < 900 && `30px`} ref={check4Ref}>
+                    A great security,
+                  </Title>
+                  <Text
+                    fontSize={`30px`}
+                    fontWeight={`900`}
+                    color={Theme.white_C}
+                    lineHeight={`1.3`}
+                    margin={`15px 0 0`}
+                  >
+                    is also physically
+                  </Text>
+                  <Text
+                    fontSize={`30px`}
+                    fontWeight={`900`}
+                    color={Theme.white_C}
+                    lineHeight={`1.3`}
+                    margin={`0 0 20px`}
+                  >
+                    blocking vulnerabilities.
+                  </Text>
 
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                  opacity={`0`}
-                >
-                  The best way to prevent malware infection &#38; data breach is
-                  to
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                  margin={`0 0 40px`}
-                  opacity={`0`}
-                >
-                  physically block open ports.
-                </Text>
-                {/* <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  잠금 장치를 통해 직접적인 통로를 차단하는것.
-                </Text> */}
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                  opacity={`0`}
-                >
-                  The best way to prevent malware
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                  opacity={`0`}
-                >
-                  infection &#38; data breach is
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                  margin={width < 700 ? `0 0 20px` : `0 0 40px`}
-                  opacity={`0`}
-                >
-                  to physically block open ports.
-                </Text>
-                {/* <Text
+                  <Text
+                    fontSize={`22px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    No matter how much spam you block,
+                  </Text>
+                  <Text
+                    fontSize={`22px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    even if the intrusion through the network is blocked
+                  </Text>
+                  <Text
+                    fontSize={`22px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    by security software, sometimes a virus easily break
+                  </Text>
+                  <Text
+                    fontSize={`22px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    into the system.
+                  </Text>
+                  <Text
+                    fontSize={`22px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `none` : `flex`}
+                    margin={`0 0 40px`}
+                  >
+                    Maybe right through your employees.
+                  </Text>
+
+                  <Text
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `flex` : `none`}
+                  >
+                    The best way to prevent malware
+                  </Text>
+                  <Text
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `flex` : `none`}
+                  >
+                    infection &#38; data breach is
+                  </Text>
+                  <Text
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `flex` : `none`}
+                    margin={width < 700 ? `0 0 20px` : `0 0 40px`}
+                  >
+                    to physically block open ports.
+                  </Text>
+                  {/* <Text
                   fontSize={`18px`}
                   fontWeight={`300`}
                   color={Theme.greyTheme7_C}
@@ -677,35 +599,39 @@ const MM01Presenter = ({
                 >
                   즉, 물리적 행동을 못하게 제재하는 것.
                 </Text> */}
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  opacity={`0`}
-                >
-                  The solution is to physically secure your open ports with
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  opacity={`0`}
-                >
-                  SMARTKEEPER.
-                </Text>
-                <Link to="/malware">
-                  <Wrapper
-                    dr={`row`}
-                    ju={`flex-start`}
-                    margin={`15px 0 0`}
-                    color={Theme.white_C}
-                    display={width < 900 ? `none` : `flex`}
+                  <Text
+                    fontSize={`22px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
                   >
-                    <Text fontWeight={`700`} opacity={`0`}>
-                      Learn more about malware infection and data breach cases
-                    </Text>
-                  </Wrapper>
-                </Link>
+                    Even unintentionally,
+                  </Text>
+                  <Text
+                    fontSize={`22px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                  >
+                    the personal devices of infected employees spread
+                  </Text>
+                  <Text
+                    fontSize={`22px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                  >
+                    the virus to and from the company’s ports, infecting
+                  </Text>
+                  <Text
+                    fontSize={`22px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                  >
+                    the entire company.
+                  </Text>
+                </Wrapper>
               </Wrapper>
               {/*  */}
               <Wrapper
@@ -714,107 +640,121 @@ const MM01Presenter = ({
                 ref={tab4Ref}
                 al={`flex-start`}
               >
-                <Title fontSize={width < 900 && `30px`} ref={check2Ref}>
-                  Arguably
-                </Title>
-                <Title fontSize={width < 900 && `30px`}>
-                  the Best Security
-                </Title>
+                <Wrapper al={`flex-start`} height={`615px`} ju={`flex-start`}>
+                  <Title fontSize={width < 900 && `30px`} ref={check2Ref}>
+                    The most effective
+                  </Title>
+                  <Title fontSize={width < 900 && `30px`}>security.</Title>
 
-                <Wrapper
-                  width={`20px`}
-                  height={`2px`}
-                  bgColor={width < 900 ? `transparent` : Theme.white_C}
-                  margin={width < 900 ? `20px 0 0` : `50px 0`}
-                ></Wrapper>
-
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  The best way to prevent malware infection &#38; data breach is
-                  to
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                  margin={`0 0 40px`}
-                >
-                  physically block open ports.
-                </Text>
-                {/* <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  잠금 장치를 통해 직접적인 통로를 차단하는것.
-                </Text> */}
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  The best way to prevent malware
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  infection &#38; data breach is
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                  margin={width < 700 ? `0 0 20px` : `0 0 40px`}
-                >
-                  to physically block open ports.
-                </Text>
-                {/* <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  margin={`0 0 40px`}
-                >
-                  즉, 물리적 행동을 못하게 제재하는 것.
-                </Text> */}
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                >
-                  The solution is to physically secure your open ports with
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                >
-                  SMARTKEEPER.
-                </Text>
-                <Link to="/malware">
                   <Wrapper
-                    dr={`row`}
-                    ju={`flex-start`}
-                    margin={`15px 0 0`}
-                    color={Theme.white_C}
+                    width={`20px`}
+                    height={`2px`}
+                    bgColor={width < 900 ? `transparent` : Theme.white_C}
+                    margin={width < 900 ? `20px 0 0` : `50px 0`}
+                  ></Wrapper>
+
+                  <Text
+                    fontSize={`25px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
                     display={width < 900 ? `none` : `flex`}
                   >
-                    <Text fontWeight={`700`}>
-                      Learn more about malware infection and data breach cases
-                    </Text>
-                    <RiArrowRightSLine size={20} />
-                  </Wrapper>
-                </Link>
+                    Just like blocking the entrance with a double
+                  </Text>
+                  <Text
+                    fontSize={`25px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    or triple security gate, now the route of data is
+                  </Text>
+                  <Text
+                    fontSize={`25px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    necessary to be secured. Security incidents
+                  </Text>
+                  <Text
+                    fontSize={`25px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    proves the necessity, unfortunately.
+                  </Text>
+
+                  <Text
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `flex` : `none`}
+                  >
+                    The best way to prevent malware
+                  </Text>
+                  <Text
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `flex` : `none`}
+                  >
+                    infection &#38; data breach is
+                  </Text>
+                  <Text
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `flex` : `none`}
+                    margin={width < 700 ? `0 0 20px` : `0 0 40px`}
+                  >
+                    to physically block open ports.
+                  </Text>
+                  <Link to="/malware">
+                    <Wrapper
+                      dr={`row`}
+                      ju={`flex-start`}
+                      margin={`20px 0 40px`}
+                      color={Theme.white_C}
+                      display={width < 900 ? `none` : `flex`}
+                    >
+                      <Text fontWeight={`700`} height={`20px`} lineHeight={`1`}>
+                        See examples of malware intrusion and data leakage
+                      </Text>
+                      <RiArrowRightSLine size={20} />
+                    </Wrapper>
+                  </Link>
+
+                  <Text
+                    fontSize={`25px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                  >
+                    SMARTKEEPER completely blocks physical
+                  </Text>
+                  <Text
+                    fontSize={`25px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                  >
+                    routes of all data. Make a physical layer of
+                  </Text>
+                  <Text
+                    fontSize={`25px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                  >
+                    security for your company.
+                  </Text>
+                </Wrapper>
               </Wrapper>
               {/*  */}
               <Wrapper
@@ -823,182 +763,137 @@ const MM01Presenter = ({
                 ref={tab5Ref}
                 al={`flex-start`}
               >
-                <Title fontSize={width < 900 && `23px`} ref={check3Ref}>
-                  Physical Cybersecurity,
-                </Title>
-                <Title fontSize={width < 900 && `23px`}>
-                  Now a must, not a choice.
-                </Title>
+                <Wrapper al={`flex-start`} height={`615px`} ju={`flex-start`}>
+                  <Title fontSize={width < 900 && `23px`} ref={check3Ref}>
+                    PHYSICAL SECURITY,
+                  </Title>
+                  <Title fontSize={width < 900 ? `23px` : `34px`}>
+                    Now is essential, not a choice.
+                  </Title>
 
-                <Wrapper
-                  width={`20px`}
-                  height={`2px`}
-                  bgColor={width < 900 ? `transparent` : Theme.white_C}
-                  margin={width < 900 ? `20px 0 0` : `50px 0`}
-                ></Wrapper>
+                  <Wrapper
+                    width={`20px`}
+                    height={`2px`}
+                    bgColor={width < 900 ? `transparent` : Theme.white_C}
+                    margin={width < 900 ? `20px 0 0` : `50px 0`}
+                  ></Wrapper>
 
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  The 4th Industrial Revolution, the era where intangible data
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  The 4th Industrial Revolution, the
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  era where intangible data
-                </Text>
-                {/* <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  2중, 3중으로 된 보안 시스템과 실시간 감시를 통한
-                </Text> */}
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  is now an asset… Physically block open ports with SMARTKEEPER
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  to protect your valuable assets from industry espionage and
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `none` : `flex`}
-                >
-                  ever-evolving malware.
-                </Text>
+                  <Text
+                    fontSize={`25px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `none` : `flex`}
+                  >
+                    Hyperconnected era.
+                  </Text>
+                  <Text
+                    fontSize={`25px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                  >
+                    Even weak one path can lead to access to
+                  </Text>
+                  <Text
+                    fontSize={`25px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                  >
+                    a network of all information.
+                  </Text>
 
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  is now an asset… Physically block
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  open ports with SMARTKEEPER
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  to protect your valuable assets
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  from industry espionage and
-                </Text>
-                <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  ever-evolving malware.
-                </Text>
-                {/* <Text
-                  fontSize={`18px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  display={width < 900 ? `flex` : `none`}
-                >
-                  것 입니다.
-                </Text> */}
+                  <Text
+                    fontSize={`25px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                  >
+                    Block access to all data as well as USB and
+                  </Text>
+                  <Text
+                    fontSize={`25px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                  >
+                    network to increase the level of security.
+                  </Text>
+                  <Text
+                    fontSize={`25px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                  >
+                    Physical vulnerability, which cannot be
+                  </Text>
+                  <Text
+                    fontSize={`25px`}
+                    lineHeight={`35px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                  >
+                    overlooked.
+                  </Text>
+
+                  <Text
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `flex` : `none`}
+                  >
+                    is now an asset… Physically block
+                  </Text>
+                  <Text
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `flex` : `none`}
+                  >
+                    open ports with SMARTKEEPER
+                  </Text>
+                  <Text
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `flex` : `none`}
+                  >
+                    to protect your valuable assets
+                  </Text>
+                  <Text
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `flex` : `none`}
+                  >
+                    from industry espionage and
+                  </Text>
+                  <Text
+                    fontSize={`18px`}
+                    fontWeight={`300`}
+                    color={Theme.greyTheme7_C}
+                    display={width < 900 ? `flex` : `none`}
+                  >
+                    ever-evolving malware.
+                  </Text>
+
+                  <Link to="/usb">
+                    <Wrapper
+                      dr={`row`}
+                      ju={`flex-start`}
+                      margin={`20px 0 0px`}
+                      color={Theme.white_C}
+                      display={width < 900 ? `none` : `flex`}
+                    >
+                      <Text fontWeight={`700`} height={`20px`} lineHeight={`1`}>
+                        See SMARTKEEPER PRO products
+                      </Text>
+                      <RiArrowRightSLine size={20} />
+                    </Wrapper>
+                  </Link>
+                </Wrapper>
               </Wrapper>
-              {/*  */}
-              {/* <Wrapper height={`100vh`}padding={width < 900 ? `0 36px` : `0 0 0 50px`} ref={tab5Ref}>
-                <Title>보안의 틈,</Title>
-                <Title>당신의 위태로운 이야기.</Title>
-
-                <Wrapper
-                  width={`20px`}
-                  height={`2px`}
-                  bgColor={Theme.white_C}
-                  margin={`35px 0`}display={width < 900 ? `none`:`flex`}
-                ></Wrapper>
-
-                <Text
-                  fontSize={width < 900 ? `18px`:`25px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                >
-                  123123
-                </Text>
-                <Text
-                  fontSize={width < 900 ? `18px`:`25px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                >
-                  실시간 감시와 예방 주사에도 늘 새로운 바이러스로
-                </Text>
-                <Text
-                  fontSize={width < 900 ? `18px`:`25px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                  margin={`0 0 40px`}
-                >
-                  우리몸에 침투하죠.
-                </Text>
-                <Text
-                  fontSize={width < 900 ? `18px`:`25px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                >
-                  바이러스로부터 완벽하게 지키는 방법은 침투경로를
-                </Text>
-                <Text
-                  fontSize={width < 900 ? `18px`:`25px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                >
-                  직접적으로 막는 것 입니다.침투경로를 열어두는 것.
-                </Text>
-                <Text
-                  fontSize={width < 900 ? `18px`:`25px`}
-                  fontWeight={`300`}
-                  color={Theme.greyTheme7_C}
-                >
-                  보안의 틈을 방치해 두었다는 것.
-                </Text>
-              </Wrapper> */}
             </Wrapper>
           </Wrapper>
         </RsWrapper>
