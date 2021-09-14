@@ -1121,7 +1121,7 @@ const MM03Presenter = ({
                         alt="icon"
                         src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FUSB(USB%20Type-A).svg?alt=media&token=67984156-1155-4aac-bf52-8063413d52ce`}
                         width={width < 700 ? `42px` : `62px`}
-                        height={width < 700 ? `20px` : `24px`}
+                        height={width < 700 ? `20px` : `40px`}
                         objectFit={`contain`}
                         margin={width < 700 ? `13px 0 10px` : `0 0 20px`}
                       />
@@ -1176,7 +1176,7 @@ const MM03Presenter = ({
                       alt="icon"
                       src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FDesktop.svg?alt=media&token=805987e8-470c-4835-9c89-3c2094c16978`}
                       width={width < 700 ? `32px` : `auto`}
-                      height={width < 700 ? `auto` : `42px`}
+                      height={width < 700 ? `auto` : `40px`}
                       margin={`0 0 10px`}
                     />
                     <Text
@@ -1425,7 +1425,7 @@ const MM03Presenter = ({
                         alt="icon"
                         src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FUSB(USB%20Type-A).svg?alt=media&token=67984156-1155-4aac-bf52-8063413d52ce`}
                         width={width < 700 ? `42px` : `62px`}
-                        height={width < 700 ? `20px` : `24px`}
+                        height={width < 700 ? `20px` : `40px`}
                         objectFit={`contain`}
                         margin={width < 700 ? `13px 0 10px` : `0 0 20px`}
                       />
@@ -1938,7 +1938,7 @@ const MM03Presenter = ({
                         alt="icon"
                         src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FUSB(USB%20Type-A).svg?alt=media&token=67984156-1155-4aac-bf52-8063413d52ce`}
                         width={width < 700 ? `80%` : `62px`}
-                        height={width < 700 ? `auto` : `24px`}
+                        height={width < 700 ? `auto` : `40px`}
                         objectFit={`contain`}
                         margin={width < 700 ? `0 0 10px` : `0 0 20px`}
                       />
@@ -2193,7 +2193,7 @@ const MM03Presenter = ({
                         alt="icon"
                         src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FUSB(USB%20Type-A).svg?alt=media&token=67984156-1155-4aac-bf52-8063413d52ce`}
                         width={width < 700 ? `52px` : `62px`}
-                        height={width < 700 ? `26px` : `24px`}
+                        height={width < 700 ? `26px` : `40px`}
                         objectFit={`contain`}
                         margin={width < 700 ? `0 0 10px` : `0 0 20px`}
                       />
