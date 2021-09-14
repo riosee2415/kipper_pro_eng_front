@@ -664,7 +664,7 @@ const MM19Presenter = ({
                   src={
                     width < 700
                       ? `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM00%2Fmobile.png?alt=media&token=68aee731-16c1-48b1-b637-0826f2051f33`
-                      : `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM00%2FHOME_bgImg_4.png?alt=media&token=ad3045da-aee8-4d0d-84c2-e7e23095423b`
+                      : `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2FMM00%2FLock%20Key%20Basic_Dark%20Blue%20set.jpg?alt=media&token=bb072406-9015-4149-90b4-fda1a512e6ff`
                   }
                 />
                 <Wrapper

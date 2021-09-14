@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { HashRouter as Router, Route } from "react-router-dom";
-import {
-  WholeWrapper,
-  TextInput,
-  CommonButton,
-} from "../../Components/AdminCommonComponents";
+import { WholeWrapper } from "../../Components/AdminCommonComponents";
 import { Image, Wrapper } from "../../Components/CommonComponents";
 import A_Side from "./A_Side.jsx";
 import Theme from "../../Styles/Theme";
@@ -68,7 +64,6 @@ const Input = styled.input`
   width: 100%;
   height: 50px;
   border: 1px solid ${(props) => props.theme.greyTheme9_C};
-  /* background: ${(props) => props.theme.greyTheme7_C}; */
   background: transparent;
   color: ${(props) => props.theme.white_C};
   font-size: 14px;
@@ -360,8 +355,24 @@ const A_Content = ({ location }) => {
               className="login__btn"
               attachment={`initial`}
               onClick={_loginUserHanlder}
+              cursor={`pointer`}
             >
               관리자 로그인
+            </Wrapper>
+          </Wrapper>
+
+          <Wrapper isAbsolute={true} bottom={`0`} left={`0`}>
+            <Image
+              alt="logo"
+              width={`85px`}
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Flogo%2Fpro-logo.png?alt=media&token=1d7babc2-4c9d-4923-b9e2-b46f8967ca07`}
+            />
+            <Wrapper
+              fontSize={`12px`}
+              color={Theme.greyTheme7_C}
+              margin={`20px 0`}
+            >
+              Copyright 2021 COMXI CO., LTD. All right reserved.
             </Wrapper>
           </Wrapper>
         </WholeWrapper>
