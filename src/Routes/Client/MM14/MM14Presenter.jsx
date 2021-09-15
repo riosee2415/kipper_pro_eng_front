@@ -185,45 +185,61 @@ const MM14Presenter = ({
                           al={`flex-start`}
                           fontSize={`12px`}
                         >
-                          <Wrapper width={`auto`} dr={`row`}>
-                            <Wrapper
-                              al={`flex-start`}
-                              fontWeight={`900`}
-                              margin={`0 10px 0 0`}
-                              width={`12px`}
-                            >
-                              T
+                          {data.mobile && (
+                            <Wrapper width={`auto`} dr={`row`}>
+                              <Wrapper
+                                al={`flex-start`}
+                                fontWeight={`900`}
+                                margin={`0 10px 0 0`}
+                                width={`12px`}
+                              >
+                                T
+                              </Wrapper>
+                              | &nbsp;{data.mobile}
                             </Wrapper>
-                            | &nbsp;{data.mobile}
-                          </Wrapper>
-                          <Wrapper width={`auto`} dr={`row`} margin={`13px 0`}>
+                          )}
+                          {data.email && (
                             <Wrapper
-                              al={`flex-start`}
-                              fontWeight={`900`}
-                              margin={`0 10px 0 0`}
-                              width={`12px`}
+                              width={`auto`}
+                              dr={`row`}
+                              margin={`13px 0`}
                             >
-                              E
+                              <Wrapper
+                                al={`flex-start`}
+                                fontWeight={`900`}
+                                margin={`0 10px 0 0`}
+                                width={`12px`}
+                              >
+                                E
+                              </Wrapper>
+                              | &nbsp;
+                              <ATag
+                                width={`auto`}
+                                href={`mailto:${data.email}`}
+                              >
+                                {data.email}
+                              </ATag>
                             </Wrapper>
-                            | &nbsp;
-                            <ATag width={`auto`} href={`mailto:${data.email}`}>
-                              {data.email}
-                            </ATag>
-                          </Wrapper>
-                          <Wrapper width={`auto`} dr={`row`}>
-                            <Wrapper
-                              al={`flex-start`}
-                              fontWeight={`900`}
-                              margin={`0 10px 0 0`}
-                              width={`12px`}
-                            >
-                              W
+                          )}
+                          {data.web && (
+                            <Wrapper width={`auto`} dr={`row`}>
+                              <Wrapper
+                                al={`flex-start`}
+                                fontWeight={`900`}
+                                margin={`0 10px 0 0`}
+                                width={`12px`}
+                              >
+                                W
+                              </Wrapper>
+                              | &nbsp;
+                              <ATag
+                                width={`auto`}
+                                href={`mailto:${data.email}`}
+                              >
+                                {data.web}
+                              </ATag>
                             </Wrapper>
-                            | &nbsp;
-                            <ATag width={`auto`} href={`mailto:${data.email}`}>
-                              {data.web}
-                            </ATag>
-                          </Wrapper>
+                          )}
                         </Wrapper>
                       </Wrapper>
                     </Wrapper>
