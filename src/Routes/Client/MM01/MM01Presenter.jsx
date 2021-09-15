@@ -128,6 +128,7 @@ const MM01Presenter = ({
   const [fade, setFade] = useState(1);
   const [isEnd, setIsEnd] = useState(true);
   const [height, setHeight] = useState(0);
+  const [isFinish, setIsFinish] = useState(true);
 
   const [isCheck1, setIsCheck1] = useState(false);
   const [isCheck2, setIsCheck2] = useState(false);
@@ -177,68 +178,6 @@ const MM01Presenter = ({
       //   (tempOffset / 5) * 5
       // );
 
-      let scrollingElement = document.scrollingElement || document.body;
-
-      if (!isCheck1 && tempOffset1 < pageYOffset) {
-        $("#app").on("scroll touchmove mousewheel", function (event) {
-          event.preventDefault();
-          event.stopPropagation();
-
-          return false;
-        });
-
-        scrollingElement.scrollTop = check1Top - 200;
-
-        setTimeout(() => {
-          $("#app").off("scroll touchmove mousewheel");
-          setIsCheck1(true);
-        }, 1000);
-      }
-      if (!isCheck2 && tempOffset2 < pageYOffset) {
-        $("#app").on("scroll touchmove mousewheel", function (event) {
-          event.preventDefault();
-          event.stopPropagation();
-
-          return false;
-        });
-
-        scrollingElement.scrollTop = check4Top - 200;
-
-        setTimeout(() => {
-          $("#app").off("scroll touchmove mousewheel");
-          setIsCheck2(true);
-        }, 1000);
-      }
-      if (!isCheck3 && tempOffset3 < pageYOffset) {
-        console.log("?????");
-        $("#app").on("scroll touchmove mousewheel", function (event) {
-          event.preventDefault();
-          event.stopPropagation();
-
-          return false;
-        });
-        scrollingElement.scrollTop = check2Top - 200;
-
-        setTimeout(() => {
-          $("#app").off("scroll touchmove mousewheel");
-          setIsCheck3(true);
-        }, 1000);
-      }
-      if (!isCheck4 && tempOffset4 < pageYOffset) {
-        $("#app").on("scroll touchmove mousewheel", function (event) {
-          event.preventDefault();
-          event.stopPropagation();
-
-          return false;
-        });
-        scrollingElement.scrollTop = check3Top - 200;
-
-        setTimeout(() => {
-          $("#app").off("scroll touchmove mousewheel");
-          setIsCheck4(true);
-        }, 1000);
-      }
-
       let tempFade = (currentOffset - pageYOffset) / (tempOffset / 5);
 
       if (currentOffset - pageYOffset <= 0 && currentImage !== 4) {
@@ -255,14 +194,77 @@ const MM01Presenter = ({
       setFade(tempFade);
     } else {
       setIsEnd(false);
+      setIsFinish(false);
+    }
+  };
+
+  const wheelEvent = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const { pageYOffset } = window;
+
+    let tempOffset = tab1Ref.current.offsetHeight * 5;
+    let tempOffset1 = tab1Ref.current.offsetHeight * 1;
+    let tempOffset2 = tab1Ref.current.offsetHeight * 2;
+    let tempOffset3 = tab1Ref.current.offsetHeight * 3;
+    let tempOffset4 = tab1Ref.current.offsetHeight * 4;
+
+    if (!isCheck1 && tempOffset1 < pageYOffset) {
+      setTimeout(() => {
+        setIsCheck1(true);
+      }, 1000);
+      return;
+    }
+
+    if (!isCheck2 && tempOffset2 < pageYOffset) {
+      setTimeout(() => {
+        $("#app").off("scroll touchmove mousewheel");
+        setIsCheck2(true);
+      }, 1000);
+      return;
+    }
+
+    if (!isCheck3 && tempOffset3 < pageYOffset) {
+      setTimeout(() => {
+        $("#app").off("scroll touchmove mousewheel");
+        setIsCheck3(true);
+      }, 1000);
+      return;
+    }
+
+    if (!isCheck4 && tempOffset4 < pageYOffset) {
+      setTimeout(() => {
+        $("#app").off("scroll touchmove mousewheel");
+        setIsCheck4(true);
+      }, 1000);
+      return;
+    }
+
+    const value = isFinish ? 50 : 50;
+
+    console.log(window.scrollY - value);
+
+    if (e.wheelDeltaY > 0) {
+      window.scrollTo(0, window.scrollY - value);
+    } else {
+      window.scrollTo(0, window.scrollY + value);
     }
   };
 
   useEffect(() => {
     documentRef.current.addEventListener("scroll", handleScroll);
-    return () =>
+    window.addEventListener("wheel", wheelEvent, {
+      passive: false,
+    });
+
+    return () => {
       documentRef.current.removeEventListener("scroll", handleScroll);
-  }, [pageY]);
+      window.removeEventListener("wheel", wheelEvent, {
+        passive: false,
+      });
+    };
+  }, [pageY, isCheck1, isCheck2, isCheck3, isCheck4]);
 
   useEffect(() => {
     scroll.scrollTo(0);

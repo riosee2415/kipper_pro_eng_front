@@ -177,19 +177,10 @@ const MM17Presenter = ({
 
             return value === "13" ? "12" : value;
           });
-        }, [350]);
+        }, [500]);
       }
 
       if (isStart2 && temp8Height < pageYOffset) {
-        let scrollingElement = document.scrollingElement || document.body;
-
-        scrollingElement.scrollTop = temp8Height;
-
-        $("#app").on("scroll touchmove mousewheel", function (event) {
-          event.preventDefault();
-          event.stopPropagation();
-          return false;
-        });
       }
       setIsStart(false);
     }

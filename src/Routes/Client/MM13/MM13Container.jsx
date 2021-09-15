@@ -5,6 +5,7 @@ import withSplitting from "../../../Lib/withSplitting";
 import { GET_FAQ, GET_FAQTYPE, GET_FAQ_TOTALPAGE } from "./MM13Queries";
 import useInput from "../../../Components/Hooks/useInput";
 import { toast } from "react-toastify";
+import { animateScroll as scroll } from "react-scroll";
 const MM13Presenter = withSplitting(() => import("./MM13Presenter"));
 
 const MM13Container = () => {
@@ -59,6 +60,10 @@ const MM13Container = () => {
       idx === id ? !action : false
     );
     const answer = document.getElementById(`faq-answer-${id}`);
+    const faq = document.getElementById(`faq-${id}`);
+
+    scroll.scrollTo(faq.offsetTop - 300);
+
     answer.innerHTML = content;
     setActionFaqView(currentFaqAction);
   };

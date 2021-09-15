@@ -173,7 +173,32 @@ const MM14Presenter = ({
                         transform={width < 900 ? `translateX(-50%)` : ``}
                         left={width < 900 ? `50%` : ``}
                       />
+                      {/* data.mobile 등등 나오면 됨 */}
                     </Wrapper>
+
+                    {data.mobile2 && (
+                      <Wrapper
+                        isAbsolute={true}
+                        width={`370px`}
+                        top={`160px`}
+                        left={`0px`}
+                        dr={`row`}
+                        ju={`space-between`}
+                        al={`flex-start`}
+                        onClick={() => setAbleIcon(null)}
+                      >
+                        <Wrapper width={`50px`} height={`50px`} />
+                        <Image
+                          src={data.info}
+                          width={`300px`}
+                          isFixed={width < 900 ? true : false}
+                          top={width < 900 ? `52%` : ``}
+                          transform={width < 900 ? `translateX(-50%)` : ``}
+                          left={width < 900 ? `50%` : ``}
+                        />
+                        {/* data.mobile2 등등 나오면 됨 */}
+                      </Wrapper>
+                    )}
                   </>
                 )}
               </Wrapper>
