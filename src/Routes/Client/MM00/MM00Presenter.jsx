@@ -1039,7 +1039,9 @@ const MM00Presenter = ({
           </RsWrapper>
         </Wrapper>
       </Wrapper>
-      <Popup />
+      <RsWrapper isAbsolute={true} top={`0`} left={`0`}>
+        <Popup />
+      </RsWrapper>
     </WholeWrapper>
   );
 };
