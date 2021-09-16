@@ -17,6 +17,7 @@ import { IoMdArrowDropleft } from "react-icons/io";
 import queryString from "query-string";
 import { useRef } from "react";
 import { animateScroll as scroll } from "react-scroll";
+import mailgo, { MailgoConfig } from "mailgo";
 
 const LocationWrapper = styled(Wrapper)`
   color: ${Theme.white_C};
@@ -89,6 +90,17 @@ const MM10Presenter = ({
       history.push("/info");
     }
   }, [location.search]);
+
+  useEffect(() => {
+    mailgo({
+      actions: {
+        yahoo: false,
+        skype: false,
+        default: false,
+        custom: false,
+      },
+    });
+  }, []);
 
   return (
     <WholeWrapper
@@ -812,17 +824,14 @@ const MM10Presenter = ({
               fontSize={`20px`}
               fontWeight={`500`}
               cursor={`pointer`}
-              onClick={() => {
-                let link = "";
-                lDatum.map((data) => {
-                  if (data.title === "USA") {
-                    link = data.link;
-                  }
-                });
-                window.open(link);
-              }}
             >
-              USA
+              {lDatum.map((data) => {
+                return (
+                  data.title === "USA" && (
+                    <a href={`mailto:${data.link}`}>USA</a>
+                  )
+                );
+              })}
             </LocationWrapper>
           </Wrapper>
           <Wrapper
@@ -838,17 +847,14 @@ const MM10Presenter = ({
               fontSize={`20px`}
               fontWeight={`500`}
               cursor={`pointer`}
-              onClick={() => {
-                let link = "";
-                lDatum.map((data) => {
-                  if (data.title === "GERMANY") {
-                    link = data.link;
-                  }
-                });
-                window.open(link);
-              }}
             >
-              GERMANY
+              {lDatum.map((data) => {
+                return (
+                  data.title === "GERMANY" && (
+                    <a href={`mailto:${data.link}`}>GERMANY</a>
+                  )
+                );
+              })}
             </LocationWrapper>
 
             <LocationWrapper
@@ -859,17 +865,14 @@ const MM10Presenter = ({
               fontSize={`20px`}
               fontWeight={`500`}
               cursor={`pointer`}
-              onClick={() => {
-                let link = "";
-                lDatum.map((data) => {
-                  if (data.title === "POLAND") {
-                    link = data.link;
-                  }
-                });
-                window.open(link);
-              }}
             >
-              POLAND
+              {lDatum.map((data) => {
+                return (
+                  data.title === "POLAND" && (
+                    <a href={`mailto:${data.link}`}>POLAND</a>
+                  )
+                );
+              })}
             </LocationWrapper>
 
             <LocationWrapper
@@ -880,17 +883,14 @@ const MM10Presenter = ({
               fontSize={`20px`}
               fontWeight={`500`}
               cursor={`pointer`}
-              onClick={() => {
-                let link = "";
-                lDatum.map((data) => {
-                  if (data.title === "CZECH REPUBLIC") {
-                    link = data.link;
-                  }
-                });
-                window.open(link);
-              }}
             >
-              CZECH REPUBLIC
+              {lDatum.map((data) => {
+                return (
+                  data.title === "CZECH REPUBLIC" && (
+                    <a href={`mailto:${data.link}`}>CZECH REPUBLIC</a>
+                  )
+                );
+              })}
             </LocationWrapper>
 
             <LocationWrapper
@@ -901,17 +901,14 @@ const MM10Presenter = ({
               fontSize={`20px`}
               fontWeight={`500`}
               cursor={`pointer`}
-              onClick={() => {
-                let link = "";
-                lDatum.map((data) => {
-                  if (data.title === "SLOVAKIA") {
-                    link = data.link;
-                  }
-                });
-                window.open(link);
-              }}
             >
-              SLOVAKIA
+              {lDatum.map((data) => {
+                return (
+                  data.title === "SLOVAKIA" && (
+                    <a href={`mailto:${data.link}`}>SLOVAKIA</a>
+                  )
+                );
+              })}
             </LocationWrapper>
           </Wrapper>
           <Wrapper dr={`row`} ju={`flex-start`}>
@@ -923,17 +920,14 @@ const MM10Presenter = ({
               fontSize={`20px`}
               fontWeight={`500`}
               cursor={`pointer`}
-              onClick={() => {
-                let link = "";
-                lDatum.map((data) => {
-                  if (data.title === "SWEDEN") {
-                    link = data.link;
-                  }
-                });
-                window.open(link);
-              }}
             >
-              SWEDEN
+              {lDatum.map((data) => {
+                return (
+                  data.title === "SWEDEN" && (
+                    <a href={`mailto:${data.link}`}>SWEDEN</a>
+                  )
+                );
+              })}
             </LocationWrapper>
 
             <LocationWrapper
@@ -944,17 +938,14 @@ const MM10Presenter = ({
               fontSize={`20px`}
               fontWeight={`500`}
               cursor={`pointer`}
-              onClick={() => {
-                let link = "";
-                lDatum.map((data) => {
-                  if (data.title === "HUNGARY") {
-                    link = data.link;
-                  }
-                });
-                window.open(link);
-              }}
             >
-              HUNGARY
+              {lDatum.map((data) => {
+                return (
+                  data.title === "HUNGARY" && (
+                    <a href={`mailto:${data.link}`}>HUNGARY</a>
+                  )
+                );
+              })}
             </LocationWrapper>
 
             <LocationWrapper
@@ -965,17 +956,14 @@ const MM10Presenter = ({
               fontSize={`20px`}
               fontWeight={`500`}
               cursor={`pointer`}
-              onClick={() => {
-                let link = "";
-                lDatum.map((data) => {
-                  if (data.title === "NORWAY") {
-                    link = data.link;
-                  }
-                });
-                window.open(link);
-              }}
             >
-              NORWAY
+              {lDatum.map((data) => {
+                return (
+                  data.title === "NORWAY" && (
+                    <a href={`mailto:${data.link}`}>NORWAY</a>
+                  )
+                );
+              })}
             </LocationWrapper>
           </Wrapper>
           <Wrapper
@@ -991,17 +979,32 @@ const MM10Presenter = ({
               fontSize={`20px`}
               fontWeight={`500`}
               cursor={`pointer`}
-              onClick={() => {
-                let link = "";
-                lDatum.map((data) => {
-                  if (data.title === "CHINA") {
-                    link = data.link;
-                  }
-                });
-                window.open(link);
-              }}
             >
-              CHINA
+              {lDatum.map((data) => {
+                return (
+                  data.title === "CHINA" && (
+                    <a href={`mailto:${data.link}`}>CHINA</a>
+                  )
+                );
+              })}
+            </LocationWrapper>
+
+            <LocationWrapper
+              color={Theme.white_C}
+              width={width < 900 ? `100%` : `250px`}
+              margin={width < 900 && `10px 0`}
+              al={`flex-start`}
+              fontSize={`20px`}
+              fontWeight={`500`}
+              cursor={`pointer`}
+            >
+              {lDatum.map((data) => {
+                return (
+                  data.title === "JAPAN" && (
+                    <a href={`mailto:${data.link}`}>JAPAN</a>
+                  )
+                );
+              })}
             </LocationWrapper>
             <LocationWrapper
               color={Theme.white_C}
@@ -1011,17 +1014,14 @@ const MM10Presenter = ({
               fontSize={`20px`}
               fontWeight={`500`}
               cursor={`pointer`}
-              onClick={() => {
-                let link = "";
-                lDatum.map((data) => {
-                  if (data.title === "JAPAN") {
-                    link = data.link;
-                  }
-                });
-                window.open(link);
-              }}
             >
-              JAPAN
+              {lDatum.map((data) => {
+                return (
+                  data.title === "SINGAPORE" && (
+                    <a href={`mailto:${data.link}`}>SINGAPORE</a>
+                  )
+                );
+              })}
             </LocationWrapper>
             <LocationWrapper
               color={Theme.white_C}
@@ -1031,37 +1031,14 @@ const MM10Presenter = ({
               fontSize={`20px`}
               fontWeight={`500`}
               cursor={`pointer`}
-              onClick={() => {
-                let link = "";
-                lDatum.map((data) => {
-                  if (data.title === "SINGAPORE") {
-                    link = data.link;
-                  }
-                });
-                window.open(link);
-              }}
             >
-              SINGAPORE
-            </LocationWrapper>
-            <LocationWrapper
-              color={Theme.white_C}
-              width={width < 900 ? `100%` : `250px`}
-              margin={width < 900 && `10px 0`}
-              al={`flex-start`}
-              fontSize={`20px`}
-              fontWeight={`500`}
-              cursor={`pointer`}
-              onClick={() => {
-                let link = "";
-                lDatum.map((data) => {
-                  if (data.title === "INDIA") {
-                    link = data.link;
-                  }
-                });
-                window.open(link);
-              }}
-            >
-              INDIA
+              {lDatum.map((data) => {
+                return (
+                  data.title === "INDIA" && (
+                    <a href={`mailto:${data.link}`}>INDIA</a>
+                  )
+                );
+              })}
             </LocationWrapper>
           </Wrapper>
           <Wrapper dr={`row`} ju={`flex-start`}>
@@ -1073,17 +1050,14 @@ const MM10Presenter = ({
               fontSize={`20px`}
               fontWeight={`500`}
               cursor={`pointer`}
-              onClick={() => {
-                let link = "";
-                lDatum.map((data) => {
-                  if (data.title === "VIETNAM") {
-                    link = data.link;
-                  }
-                });
-                window.open(link);
-              }}
             >
-              VIETNAM
+              {lDatum.map((data) => {
+                return (
+                  data.title === "VIETNAM" && (
+                    <a href={`mailto:${data.link}`}>VIETNAM</a>
+                  )
+                );
+              })}
             </LocationWrapper>
             <LocationWrapper
               color={Theme.white_C}
@@ -1093,17 +1067,14 @@ const MM10Presenter = ({
               fontSize={`20px`}
               fontWeight={`500`}
               cursor={`pointer`}
-              onClick={() => {
-                let link = "";
-                lDatum.map((data) => {
-                  if (data.title === "PHILIPPINES") {
-                    link = data.link;
-                  }
-                });
-                window.open(link);
-              }}
             >
-              PHILIPPINES
+              {lDatum.map((data) => {
+                return (
+                  data.title === "PHILIPPINES" && (
+                    <a href={`mailto:${data.link}`}>PHILIPPINES</a>
+                  )
+                );
+              })}
             </LocationWrapper>
             <LocationWrapper
               color={Theme.white_C}
@@ -1113,17 +1084,14 @@ const MM10Presenter = ({
               fontSize={`20px`}
               fontWeight={`500`}
               cursor={`pointer`}
-              onClick={() => {
-                let link = "";
-                lDatum.map((data) => {
-                  if (data.title === "MALAYSIA") {
-                    link = data.link;
-                  }
-                });
-                window.open(link);
-              }}
             >
-              MALAYSIA
+              {lDatum.map((data) => {
+                return (
+                  data.title === "MALAYSIA" && (
+                    <a href={`mailto:${data.link}`}>MALAYSIA</a>
+                  )
+                );
+              })}
             </LocationWrapper>
             <LocationWrapper
               color={Theme.white_C}
@@ -1133,17 +1101,14 @@ const MM10Presenter = ({
               fontSize={`20px`}
               fontWeight={`500`}
               cursor={`pointer`}
-              onClick={() => {
-                let link = "";
-                lDatum.map((data) => {
-                  if (data.title === "THAILAND") {
-                    link = data.link;
-                  }
-                });
-                window.open(link);
-              }}
             >
-              THAILAND
+              {lDatum.map((data) => {
+                return (
+                  data.title === "THAILAND" && (
+                    <a href={`mailto:${data.link}`}>THAILAND</a>
+                  )
+                );
+              })}
             </LocationWrapper>
           </Wrapper>
           {/* <Wrapper dr={`row`} ju={`flex-start`} margin={`50px 0 0`}>

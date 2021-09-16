@@ -215,4 +215,8 @@ export default createGlobalStyle`
     .ant-modal-confirm-body > .anticon + .ant-modal-confirm-title + .ant-modal-confirm-content{
       margin-left:0 !important;
     }
+
+    .m-default, .m-by{
+      display:none;
+    }
 `;
