@@ -32,6 +32,8 @@ const Popup = ({ cookies, width }) => {
         popupDatum.getPopupAll.map((data, idx) => {
           if (cookies.get(`popup-${data._id}`) === "y") return null;
 
+          if (data.onoff === `OFF`) return null;
+
           return (
             <Wrapper
               key={idx}
