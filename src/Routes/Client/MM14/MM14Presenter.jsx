@@ -134,6 +134,7 @@ const MM14Presenter = ({
                     bgColor={`#fff`}
                     delay={idx % 2 === 0 ? `0s` : `0.15s`}
                     onClick={() => setAbleIcon(idx)}
+                    zIndex={`10`}
                   >
                     <Image
                       isAbsolute={true}
@@ -163,6 +164,7 @@ const MM14Presenter = ({
                       dr={`row`}
                       ju={`space-between`}
                       al={`flex-start`}
+                      zIndex={`100`}
                       onClick={() => setAbleIcon(null)}
                     >
                       <Image src={data.src} width={`50px`} height={`50px`} />
@@ -234,7 +236,8 @@ const MM14Presenter = ({
                               | &nbsp;
                               <ATag
                                 width={`auto`}
-                                href={`mailto:${data.email}`}
+                                href={`${data.web}`}
+                                target={`_blank`}
                               >
                                 {data.web}
                               </ATag>
