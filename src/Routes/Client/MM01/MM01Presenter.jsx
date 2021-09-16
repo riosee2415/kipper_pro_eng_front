@@ -278,7 +278,7 @@ const MM01Presenter = ({
         <RsWrapper isRelative={true}>
           <Wrapper dr={`row`}>
             <Wrapper
-              height={width < 700 ? `auto` : `${height}px`}
+              height={width < 700 ? `auto` : `500vh`}
               width={width < 900 ? `100%` : `50%`}
               ju={width < 900 && `flex-start`}
               isRelative={true}
