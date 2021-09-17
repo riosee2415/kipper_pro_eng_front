@@ -2389,7 +2389,14 @@ export default ({
         <DataWrapper>
           <Combo {...currentColor}>
             <ComboOption value={``}>--선택--</ComboOption>
-            <ComboOption value={`Red`}>레드</ComboOption>
+            <ComboOption value={`레드`}>레드</ComboOption>
+            <ComboOption value={`블랙`}>블랙</ComboOption>
+            <ComboOption value={`그레이`}>그레이</ComboOption>
+            <ComboOption value={`옐로우`}>옐로우</ComboOption>
+            <ComboOption value={`블루`}>블루</ComboOption>
+            <ComboOption value={`다크 블루`}>다크 블루</ComboOption>
+            <ComboOption value={`골드`}>골드</ComboOption>
+            <ComboOption value={`화이트`}>화이트</ComboOption>
             <ComboOption value={`없음`}>없음</ComboOption>
           </Combo>
         </DataWrapper>
@@ -2399,7 +2406,14 @@ export default ({
         <DataWrapper>
           <Combo {...currentColorCode}>
             <ComboOption value={``}>--선택--</ComboOption>
-            <ComboOption value={`#C50707`}>#C50707</ComboOption>
+            <ComboOption value={`#B1281D`}>#B1281D</ComboOption>
+            <ComboOption value={`#2D2926`}>#2D2926</ComboOption>
+            <ComboOption value={`#9EA2A2`}>#9EA2A2</ComboOption>
+            <ComboOption value={`#FFD700`}>#FFD700</ComboOption>
+            <ComboOption value={`#55BBE3`}>#55BBE3</ComboOption>
+            <ComboOption value={`#171C8F`}>#171C8F</ComboOption>
+            <ComboOption value={`#DBCDBE`}>#DBCDBE</ComboOption>
+            <ComboOption value={`#FFFFFF`}>#FFFFFF</ComboOption>
             <ComboOption value={`#ffff`}>없음</ComboOption>
           </Combo>
         </DataWrapper>
