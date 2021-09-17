@@ -331,7 +331,7 @@ export default ({
       </Wrapper>
 
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper>제품 카테고리 *</DataGuideWrapper>
+        <DataGuideWrapper>제품군 *</DataGuideWrapper>
         <DataWrapper>
           <Combo {...productTypeInput} width={`200px`}>
             <ComboOption value={``}>--전체--</ComboOption>
@@ -351,7 +351,7 @@ export default ({
       </Wrapper>
 
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper>적용 대상 카테고리 *</DataGuideWrapper>
+        <DataGuideWrapper>적용대상 *</DataGuideWrapper>
         <DataWrapper>
           <Combo {...productSubTypeInput} width={`200px`}>
             <ComboOption value={``}>--전체--</ComboOption>
@@ -376,7 +376,7 @@ export default ({
       </Wrapper>
 
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper>대상 키 타입 *</DataGuideWrapper>
+        <DataGuideWrapper>사용 키 타입 *</DataGuideWrapper>
         <DataWrapper>
           <Combo {...keyTypeInput} width={`200px`}>
             <ComboOption value={``}>--전체--</ComboOption>
@@ -394,7 +394,7 @@ export default ({
       </Wrapper>
 
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper>영문 제품명(타이틀) *</DataGuideWrapper>
+        <DataGuideWrapper>제품명(타이틀) *</DataGuideWrapper>
         <DataWrapper>
           {/* 에디터 */}
 
@@ -416,20 +416,20 @@ export default ({
         </DataWrapper>
       </Wrapper>
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper>규격 *</DataGuideWrapper>
+        <DataGuideWrapper>규격(W H L) *</DataGuideWrapper>
         <DataWrapper>
           <TextInput width={`750px`} height={`25px`} {...sizeInput} />
         </DataWrapper>
       </Wrapper>
 
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper>중량 *</DataGuideWrapper>
+        <DataGuideWrapper>중량(g) *</DataGuideWrapper>
         <DataWrapper>
           <TextInput width={`750px`} height={`25px`} {...weightInput} />
         </DataWrapper>
       </Wrapper>
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper>가격 *</DataGuideWrapper>
+        <DataGuideWrapper>MMP *</DataGuideWrapper>
         <DataWrapper>
           <TextInput width={`750px`} height={`25px`} {...priceInput} />
         </DataWrapper>
@@ -1426,7 +1426,7 @@ export default ({
         </DataWrapper>
       </Wrapper>
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper height={`200px`}>주의 사항 *</DataGuideWrapper>
+        <DataGuideWrapper height={`200px`}>! 주의사항 *</DataGuideWrapper>
         <DataWrapper height={`200px`}>
           <Editor
             value={warningContentInput}
@@ -1474,9 +1474,7 @@ export default ({
         </DataWrapper>
       </Wrapper>
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper height={`200px`}>
-          사용환경, 주의사항 제목 *
-        </DataGuideWrapper>
+        <DataGuideWrapper height={`200px`}>사용환경 제목 *</DataGuideWrapper>
         <DataWrapper height={`200px`}>
           <Editor
             value={settingTitleInput}
@@ -1487,9 +1485,7 @@ export default ({
       </Wrapper>
 
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper height={`200px`}>
-          사용환경, 주의사항 설명 *
-        </DataGuideWrapper>
+        <DataGuideWrapper height={`200px`}>사용환경 설명 *</DataGuideWrapper>
         <DataWrapper height={`200px`}>
           {/* 에디터 */}
 
@@ -1502,7 +1498,9 @@ export default ({
       </Wrapper>
 
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper height={`200px`}>핵심특징 제목 *</DataGuideWrapper>
+        <DataGuideWrapper height={`200px`}>
+          사용환경 하단 특징(2줄) *
+        </DataGuideWrapper>
         <DataWrapper height={`200px`}>
           <Editor
             value={pointTitleInput}
@@ -1513,7 +1511,7 @@ export default ({
       </Wrapper>
 
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper height={`200px`}>핵심특징 01 title</DataGuideWrapper>
+        <DataGuideWrapper height={`200px`}>특징 제목 01</DataGuideWrapper>
         <DataWrapper height={`200px`}>
           {/* 에디터 */}
 
@@ -1526,7 +1524,7 @@ export default ({
       </Wrapper>
 
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper height={`200px`}>핵심특징 설명 01</DataGuideWrapper>
+        <DataGuideWrapper height={`200px`}>특징 설명 01</DataGuideWrapper>
         <DataWrapper height={`200px`}>
           {/* 에디터 */}
 
@@ -1539,7 +1537,7 @@ export default ({
       </Wrapper>
 
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper height={`200px`}>핵심특징 02 title</DataGuideWrapper>
+        <DataGuideWrapper height={`200px`}>특징 제목 02</DataGuideWrapper>
         <DataWrapper height={`200px`}>
           {/* 에디터 */}
 
@@ -1552,7 +1550,7 @@ export default ({
       </Wrapper>
 
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper height={`200px`}>핵심특징 설명 02</DataGuideWrapper>
+        <DataGuideWrapper height={`200px`}>특징 설명 02</DataGuideWrapper>
         <DataWrapper height={`200px`}>
           {/* 에디터 */}
 
@@ -1565,7 +1563,7 @@ export default ({
       </Wrapper>
 
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper height={`200px`}>핵심특징 03 title</DataGuideWrapper>
+        <DataGuideWrapper height={`200px`}>특징 제목 03</DataGuideWrapper>
         <DataWrapper height={`200px`}>
           {/* 에디터 */}
 
@@ -1578,7 +1576,7 @@ export default ({
       </Wrapper>
 
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper height={`200px`}>핵심특징 설명 03</DataGuideWrapper>
+        <DataGuideWrapper height={`200px`}>특징 설명 03</DataGuideWrapper>
         <DataWrapper height={`200px`}>
           {/* 에디터 */}
 
@@ -1592,7 +1590,7 @@ export default ({
 
       <Wrapper dr={`row`} ju={`flex-start`}>
         <DataGuideWrapper height={`400px`}>
-          제품특징 1 이미지 *
+          제품특징 01 이미지 *
         </DataGuideWrapper>
         <DataWrapper height={`400px`}>
           <Image
@@ -1670,7 +1668,7 @@ export default ({
 
       <Wrapper dr={`row`} ju={`flex-start`}>
         <DataGuideWrapper height={`400px`}>
-          제품특징 2 이미지 *
+          제품특징 02 이미지 *
         </DataGuideWrapper>
         <DataWrapper height={`400px`}>
           <Image
@@ -1761,7 +1759,7 @@ export default ({
 
       <Wrapper dr={`row`} ju={`flex-start`}>
         <DataGuideWrapper height={`500px`}>
-          Specification 각도별 디테일 제품 사진 01 *
+          Specification 이미지01 *
         </DataGuideWrapper>
         <DataWrapper height={`500px`}>
           <Image
@@ -1802,7 +1800,7 @@ export default ({
 
       <Wrapper dr={`row`} ju={`flex-start`}>
         <DataGuideWrapper height={`500px`}>
-          Specification 각도별 디테일 제품 사진 02 *
+          Specification 이미지02 *
         </DataGuideWrapper>
         <DataWrapper height={`500px`}>
           <Image
@@ -1843,7 +1841,7 @@ export default ({
 
       <Wrapper dr={`row`} ju={`flex-start`}>
         <DataGuideWrapper height={`500px`}>
-          Specification 각도별 디테일 제품 사진 03 *
+          Specification 이미지03 *
         </DataGuideWrapper>
         <DataWrapper height={`500px`}>
           <Image
@@ -1882,9 +1880,7 @@ export default ({
         </DataWrapper>
       </Wrapper>
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper height={`700px`}>
-          Specification 세부 특징 사진 01
-        </DataGuideWrapper>
+        <DataGuideWrapper height={`700px`}>세부특징 사진 01</DataGuideWrapper>
         <DataWrapper height={`700px`}>
           <Image
             src={specDetailImage1Input.value}
@@ -1918,7 +1914,7 @@ export default ({
             </FileLabel>
           )}
           <Editor
-            placeholder={`세부특징 제목`}
+            placeholder={`타이틀`}
             value={specDetailTitle1Input}
             componentHeight="h-100"
             editorChangeHandler={(html) => setSpecDetailTitle1Input(html)}
@@ -1926,7 +1922,7 @@ export default ({
 
           {/* 에디터 */}
           <Editor
-            placeholder={`세부특징 설명`}
+            placeholder={`내용`}
             value={specDetailContent1Input}
             componentHeight="h-100"
             editorChangeHandler={(html) => setSpecDetailContent1Input(html)}
@@ -1934,9 +1930,7 @@ export default ({
         </DataWrapper>
       </Wrapper>
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper height={`700px`}>
-          Specification 세부 특징 사진 02
-        </DataGuideWrapper>
+        <DataGuideWrapper height={`700px`}>세부특징 사진 02</DataGuideWrapper>
         <DataWrapper height={`700px`}>
           <Image
             src={specDetailImage2Input.value}
@@ -1972,14 +1966,14 @@ export default ({
             </FileLabel>
           )}
           <Editor
-            placeholder={`세부특징 제목`}
+            placeholder={`타이틀`}
             value={specDetailTitle2Input}
             componentHeight="h-100"
             editorChangeHandler={(html) => setSpecDetailTitle2Input(html)}
           />
           {/* 에디터 */}
           <Editor
-            placeholder={`세부특징 설명`}
+            placeholder={`내용`}
             value={specDetailContent2Input}
             componentHeight="h-100"
             editorChangeHandler={(html) => setSpecDetailContent2Input(html)}
@@ -1987,9 +1981,7 @@ export default ({
         </DataWrapper>
       </Wrapper>
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper height={`700px`}>
-          Specification 세부 특징 사진 03
-        </DataGuideWrapper>
+        <DataGuideWrapper height={`700px`}>세부특징 사진 03</DataGuideWrapper>
         <DataWrapper height={`700px`}>
           <Image
             src={specDetailImage3Input.value}
@@ -2025,7 +2017,7 @@ export default ({
             </FileLabel>
           )}
           <Editor
-            placeholder={`세부특징 제목`}
+            placeholder={`타이틀`}
             value={specDetailTitle3Input}
             componentHeight="h-100"
             editorChangeHandler={(html) => setSpecDetailTitle3Input(html)}
@@ -2033,7 +2025,7 @@ export default ({
           {/* 에디터 */}
 
           <Editor
-            placeholder={`세부특징 설명`}
+            placeholder={`내용`}
             value={specDetailContent3Input}
             componentHeight="h-100"
             editorChangeHandler={(html) => setSpecDetailContent3Input(html)}
@@ -2063,7 +2055,7 @@ export default ({
       </Wrapper>
 
       <Wrapper dr={`row`}>
-        <DataGuideWrapper>제조 인증1</DataGuideWrapper>
+        <DataGuideWrapper>제조/인증 1</DataGuideWrapper>
         <DataWrapper dr={`row`} ju={`flex-start`}>
           {/* 에디터 */}
 
@@ -2100,7 +2092,7 @@ export default ({
         </DataWrapper>
       </Wrapper>
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper>제조 인증2</DataGuideWrapper>
+        <DataGuideWrapper>제조/인증 2</DataGuideWrapper>
         <DataWrapper dr={`row`} ju={`flex-start`}>
           {/* 에디터 */}
 
@@ -2137,7 +2129,7 @@ export default ({
         </DataWrapper>
       </Wrapper>
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper>제조 인증3</DataGuideWrapper>
+        <DataGuideWrapper>제조/인증 3</DataGuideWrapper>
         <DataWrapper dr={`row`} ju={`flex-start`}>
           {/* 에디터 */}
 
@@ -2174,7 +2166,7 @@ export default ({
         </DataWrapper>
       </Wrapper>
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper>제조 인증4</DataGuideWrapper>
+        <DataGuideWrapper>제조/인증 4</DataGuideWrapper>
         <DataWrapper dr={`row`} ju={`flex-start`}>
           {/* 에디터 */}
 
@@ -2211,7 +2203,7 @@ export default ({
         </DataWrapper>
       </Wrapper>
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper>제조 인증5</DataGuideWrapper>
+        <DataGuideWrapper>제조/인증 5</DataGuideWrapper>
         <DataWrapper dr={`row`} ju={`flex-start`}>
           {/* 에디터 */}
 
@@ -2248,7 +2240,7 @@ export default ({
         </DataWrapper>
       </Wrapper>
       <Wrapper dr={`row`} ju={`flex-start`}>
-        <DataGuideWrapper>제조 인증6</DataGuideWrapper>
+        <DataGuideWrapper>제조/인증 6</DataGuideWrapper>
         <DataWrapper dr={`row`} ju={`flex-start`}>
           {/* 에디터 */}
 
