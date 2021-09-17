@@ -32,24 +32,27 @@ const Popup = ({ cookies, width }) => {
         popupDatum.getPopupAll.map((data, idx) => {
           if (cookies.get(`popup-${data._id}`) === "y") return null;
 
+          if (data.onoff === `OFF`) return null;
+
           return (
             <Wrapper
               key={idx}
               id={`popup-${data._id}-js`}
               isAbsolute={true}
-              top={width > 900 ? `100px` : `70px`}
-              right={`50%`}
+              top={width > 900 ? `70px` : `80px`}
+              right={width < 700 ? `50%` : `0`}
               zIndex={`${9999 - idx}`}
-              shadow={`0px 5px 10px #ccc`}
+              shadow={`0px 5px 10px rgb(93, 93, 93)`}
               margin={
-                width > 900
-                  ? `${idx * 55}px ${idx * -50}px 0 0`
-                  : `0 -165px 0 0`
+                width > 900 ? `${idx * 30}px ${idx * 30}px 0 0` : `0 -175px 0 0`
               }
-              width={`330px`}
+              width={width < 700 ? `350px` : `560px`}
             >
               <Wrapper>
-                <Image src={data.thumbnailPath} height={`450px`} />
+                <Image
+                  src={data.thumbnailPath}
+                  height={width < 700 ? `350px` : `560px`}
+                />
               </Wrapper>
               <UlWrapper dr={`row`}>
                 <LiWrapper
@@ -63,7 +66,7 @@ const Popup = ({ cookies, width }) => {
                   isRoboto={true}
                   onClick={() => _closeTodayPopupHandler(data)}
                 >
-                  1일 동안 보지 않음
+                  Do not open for a day
                 </LiWrapper>
                 <LiWrapper
                   isAbsolute={true}
@@ -77,7 +80,7 @@ const Popup = ({ cookies, width }) => {
                   isRoboto={true}
                   onClick={() => _closePopupHandler(data)}
                 >
-                  닫기
+                  close
                 </LiWrapper>
               </UlWrapper>
             </Wrapper>

@@ -86,7 +86,7 @@ const Board = ({
           ) : (
             faqDatum.map((data, idx) => {
               return (
-                <Wrapper className="faqBoard" key={data._id}>
+                <Wrapper className="faqBoard" key={data._id} id={`faq-${idx}`}>
                   <Wrapper
                     display={`flex`}
                     padding={width < 900 ? `10px 0 10px 36px` : `15px 0`}

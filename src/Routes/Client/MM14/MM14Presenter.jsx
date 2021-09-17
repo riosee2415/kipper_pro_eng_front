@@ -7,6 +7,7 @@ import {
   Text,
   Image,
   CommonSubTitle,
+  ATag,
 } from "../../../Components/CommonComponents";
 import styled from "styled-components";
 import { withResizeDetector } from "react-resize-detector";
@@ -57,6 +58,7 @@ const MM14Presenter = ({
   width,
   //
   point,
+  map,
   //
   ableIcon,
   setAbleIcon,
@@ -112,7 +114,7 @@ const MM14Presenter = ({
         <Wrapper isRelative={true}>
           <Image
             width={`100%`}
-            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2F%E1%84%8C%E1%85%B5%E1%84%83%E1%85%A9.png?alt=media&token=37261bad-6bd3-4223-9db4-ee54b98cc834`}
+            src={map[ableIcon !== null ? point[ableIcon].map : 0]}
           />
           {point.map((data, idx) => {
             return (
@@ -122,6 +124,7 @@ const MM14Presenter = ({
                 height={`50px`}
                 top={data.top}
                 left={data.left}
+                key={idx}
               >
                 {ableIcon !== idx ? (
                   <Dot
@@ -131,6 +134,7 @@ const MM14Presenter = ({
                     bgColor={`#fff`}
                     delay={idx % 2 === 0 ? `0s` : `0.15s`}
                     onClick={() => setAbleIcon(idx)}
+                    zIndex={`10`}
                   >
                     <Image
                       isAbsolute={true}
@@ -160,18 +164,156 @@ const MM14Presenter = ({
                       dr={`row`}
                       ju={`space-between`}
                       al={`flex-start`}
+                      zIndex={`100`}
                       onClick={() => setAbleIcon(null)}
                     >
                       <Image src={data.src} width={`50px`} height={`50px`} />
-                      <Image
-                        src={data.info}
-                        width={`300px`}
-                        isFixed={width < 900 ? true : false}
-                        top={width < 900 ? `52%` : ``}
-                        transform={width < 900 ? `translateX(-50%)` : ``}
-                        left={width < 900 ? `50%` : ``}
-                      />
+                      <Wrapper isRelative={true} width={`300px`}>
+                        <Image
+                          src={data.info}
+                          width={`300px`}
+                          isFixed={width < 900 ? true : false}
+                          top={width < 900 ? `52%` : ``}
+                          transform={width < 900 ? `translateX(-50%)` : ``}
+                          left={width < 900 ? `50%` : ``}
+                        />
+                        {/* data.mobile 등등 나오면 됨 */}
+                        <Wrapper
+                          isAbsolute={true}
+                          top={`68px`}
+                          left={`0`}
+                          padding={`0 25px`}
+                          color={Theme.darkGrey_C}
+                          al={`flex-start`}
+                          fontSize={`12px`}
+                        >
+                          {data.mobile && (
+                            <Wrapper width={`auto`} dr={`row`}>
+                              <Wrapper
+                                al={`flex-start`}
+                                fontWeight={`900`}
+                                margin={`0 10px 0 0`}
+                                width={`12px`}
+                              >
+                                T
+                              </Wrapper>
+                              | &nbsp;{data.mobile}
+                            </Wrapper>
+                          )}
+                          {data.email && (
+                            <Wrapper
+                              width={`auto`}
+                              dr={`row`}
+                              margin={`13px 0`}
+                            >
+                              <Wrapper
+                                al={`flex-start`}
+                                fontWeight={`900`}
+                                margin={`0 10px 0 0`}
+                                width={`12px`}
+                              >
+                                E
+                              </Wrapper>
+                              | &nbsp;
+                              <ATag
+                                width={`auto`}
+                                href={`mailto:${data.email}`}
+                              >
+                                {data.email}
+                              </ATag>
+                            </Wrapper>
+                          )}
+                          {data.web && (
+                            <Wrapper width={`auto`} dr={`row`}>
+                              <Wrapper
+                                al={`flex-start`}
+                                fontWeight={`900`}
+                                margin={`0 10px 0 0`}
+                                width={`12px`}
+                              >
+                                W
+                              </Wrapper>
+                              | &nbsp;
+                              <ATag
+                                width={`auto`}
+                                href={`${data.web}`}
+                                target={`_blank`}
+                              >
+                                {data.web}
+                              </ATag>
+                            </Wrapper>
+                          )}
+                        </Wrapper>
+                      </Wrapper>
                     </Wrapper>
+
+                    {data.mobile2 && (
+                      <Wrapper
+                        isAbsolute={true}
+                        width={`370px`}
+                        top={`160px`}
+                        left={`0px`}
+                        dr={`row`}
+                        ju={`space-between`}
+                        al={`flex-start`}
+                        onClick={() => setAbleIcon(null)}
+                      >
+                        <Wrapper width={`50px`} height={`50px`} />
+                        <Wrapper isRelative={true} width={`300px`}>
+                          <Image
+                            src={data.info}
+                            width={`300px`}
+                            isFixed={width < 900 ? true : false}
+                            top={width < 900 ? `52%` : ``}
+                            transform={width < 900 ? `translateX(-50%)` : ``}
+                            left={width < 900 ? `50%` : ``}
+                          />
+                          {/* data.mobile2 등등 나오면 됨 */}
+                          <Wrapper
+                            isAbsolute={true}
+                            top={`68px`}
+                            left={`0`}
+                            padding={`0 25px`}
+                            color={Theme.darkGrey_C}
+                            al={`flex-start`}
+                            fontSize={`12px`}
+                          >
+                            <Wrapper width={`auto`} dr={`row`}>
+                              <Wrapper
+                                al={`flex-start`}
+                                fontWeight={`900`}
+                                margin={`0 10px 0 0`}
+                                width={`12px`}
+                              >
+                                T
+                              </Wrapper>
+                              | &nbsp;{data.mobile2}
+                            </Wrapper>
+                            <Wrapper
+                              width={`auto`}
+                              dr={`row`}
+                              margin={`13px 0`}
+                            >
+                              <Wrapper
+                                al={`flex-start`}
+                                fontWeight={`900`}
+                                margin={`0 10px 0 0`}
+                                width={`12px`}
+                              >
+                                E
+                              </Wrapper>
+                              | &nbsp;
+                              <ATag
+                                width={`auto`}
+                                href={`mailto:${data.email2}`}
+                              >
+                                {data.email}
+                              </ATag>
+                            </Wrapper>
+                          </Wrapper>
+                        </Wrapper>
+                      </Wrapper>
+                    )}
                   </>
                 )}
               </Wrapper>

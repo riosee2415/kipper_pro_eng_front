@@ -28,6 +28,7 @@
     "firebase-tools": "^8.1.1",
     "graphql": "^15.3.0",
     "http-proxy-middleware": "^1.0.3",
+    "mailgo": "0.12.2",
     "naver-id-login": "^2.0.0",
     "query-string": "^6.13.1",
     "react": "^16.13.1",

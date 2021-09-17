@@ -158,7 +158,7 @@ const MM00Presenter = ({
             <MoveImage
               zIndex={`-20`}
               bottom={`${top2}px`}
-              left={`42%`}
+              left={`46%`}
               width={width < 700 ? `250px` : `280px`}
               margin={
                 width < 700
@@ -392,7 +392,7 @@ const MM00Presenter = ({
             >
               <Image
                 display={width < 700 ? `none` : `flex`}
-                width={`45%`}
+                width={`35%`}
                 src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM00%2Fpathway.svg?alt=media&token=1ceafd0e-2766-4883-9092-9d2a6fee3705`}
               />
 
@@ -1039,7 +1039,9 @@ const MM00Presenter = ({
           </RsWrapper>
         </Wrapper>
       </Wrapper>
-      <Popup />
+      <RsWrapper isAbsolute={true} top={`0`} left={`0`}>
+        <Popup />
+      </RsWrapper>
     </WholeWrapper>
   );
 };

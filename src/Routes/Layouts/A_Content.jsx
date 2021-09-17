@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { HashRouter as Router, Route } from "react-router-dom";
-import {
-  WholeWrapper,
-  Wrapper,
-  TextInput,
-  CommonButton,
-} from "../../Components/AdminCommonComponents";
+import { WholeWrapper } from "../../Components/AdminCommonComponents";
+import { Image, Wrapper } from "../../Components/CommonComponents";
 import A_Side from "./A_Side.jsx";
 import Theme from "../../Styles/Theme";
 import { useQuery } from "@apollo/client";
@@ -14,6 +10,7 @@ import withSplitting from "../../Lib/withSplitting";
 import { useCookies } from "react-cookie";
 import { checkCookie } from "../../commonUtils";
 import crypto from "crypto";
+import styled from "styled-components";
 
 const AD00 = withSplitting(() => import("../Admin/AD00"));
 const AD01 = withSplitting(() => import("../Admin/AD01"));
@@ -62,6 +59,20 @@ const AD213 = withSplitting(() => import("../Admin/AD213"));
 
 import { GET_USER_LOGIN_RESULT_FOR_ADMIN } from "./A_LayoutQueries";
 import useInput from "../../Components/Hooks/useInput";
+
+const Input = styled.input`
+  width: 100%;
+  height: 50px;
+  border: 1px solid ${(props) => props.theme.greyTheme9_C};
+  background: transparent;
+  color: ${(props) => props.theme.white_C};
+  font-size: 14px;
+  padding: 0 10px;
+
+  &::placeholder {
+    color: ${(props) => props.theme.greyTheme7_C};
+  }
+`;
 
 const A_Content = ({ location }) => {
   const [isLogin, setIsLogin] = useState(false);
@@ -291,58 +302,78 @@ const A_Content = ({ location }) => {
           </Wrapper>
         </>
       ) : (
-        <WholeWrapper
-          height={`100%`}
-          bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/POLLY-TELLY%2Fassets%2Fimages%2Fbackground%2F9176.jpg?alt=media&token=0f9599d2-a2a0-4573-9a3f-1f89f6c17218")`}
-        >
+        <WholeWrapper height={`100%`} bgColor={Theme.black_C}>
+          <Image
+            width={`51px`}
+            margin={`0 0 20px`}
+            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Ficon%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206251.png?alt=media&token=efed7f51-92de-44fc-b01c-73d7190dd908`}
+          />
           <Wrapper
-            width={`500px`}
-            height={`400px`}
-            bgColor={`rgba(0, 0, 0, 0.6)`}
-            color={Theme.white_C}
-            isBorder={true}
-            shadow={`0px 5px 10px ${Theme.grey_C}`}
+            width={`395px`}
+            height={`350px`}
+            bgColor={Theme.black_C}
+            color={Theme.greyTheme3_C}
+            border={`1px solid ${Theme.greyTheme9_C}`}
+            padding={`25px`}
           >
-            <Wrapper
-              fontWeight={`900`}
-              fontSize={`30px`}
-              color={Theme.white_C}
-              margin={`0 0 30px`}
-            >
-              ADMIN LOGIN
+            <Wrapper fontSize={`14px`} color={Theme.greyTheme3_C}>
+              스마트키퍼 프로 글로벌 관리자 페이지
             </Wrapper>
-            <Wrapper dr={`row`} margin={`15px 0`}>
-              <Wrapper width={`100px`} color={Theme.white_C} al={`flex-start`}>
-                아이디
-              </Wrapper>
-              <TextInput
+            <Wrapper
+              fontSize={`18px`}
+              color={Theme.greyTheme3_C}
+              fontWeight={`900`}
+              margin={`5px 0 35px`}
+            >
+              SMARTKEEPER PRO World
+            </Wrapper>
+            <Wrapper dr={`row`} margin={`0 0 15px`}>
+              <Input
                 width={`250px`}
                 className="login__input"
                 type="text"
+                placeholder={`아이디`}
                 {...inputUserId}
                 onKeyDown={(e) => e.keyCode === 13 && _loginUserHanlder()}
               />
             </Wrapper>
             <Wrapper dr={`row`}>
-              <Wrapper width={`100px`} color={Theme.white_C} al={`flex-start`}>
-                비밀번호
-              </Wrapper>
-              <TextInput
+              <Input
                 width={`250px`}
                 className="login__input"
                 type="password"
+                placeholder={`비밀번호`}
                 {...inputUserPassword}
                 onKeyDown={(e) => e.keyCode === 13 && _loginUserHanlder()}
               />
             </Wrapper>
-            <CommonButton
-              width={`300px`}
-              margin={`50px 0px 0px`}
+            <Wrapper
+              height={`50px`}
+              margin={`25px 0px 0px`}
+              fontSize={`14px`}
+              bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Ficon%2Fpro-global-btn.png?alt=media&token=a0c4f682-893e-4eb9-825a-535194c3c505")`}
               className="login__btn"
+              attachment={`initial`}
               onClick={_loginUserHanlder}
+              cursor={`pointer`}
             >
-              로그인
-            </CommonButton>
+              관리자 로그인
+            </Wrapper>
+          </Wrapper>
+
+          <Wrapper isAbsolute={true} bottom={`0`} left={`0`}>
+            <Image
+              alt="logo"
+              width={`85px`}
+              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Flogo%2Fpro-logo.png?alt=media&token=1d7babc2-4c9d-4923-b9e2-b46f8967ca07`}
+            />
+            <Wrapper
+              fontSize={`12px`}
+              color={Theme.greyTheme7_C}
+              margin={`20px 0`}
+            >
+              Copyright 2021 COMXI CO., LTD. All right reserved.
+            </Wrapper>
           </Wrapper>
         </WholeWrapper>
       )}
