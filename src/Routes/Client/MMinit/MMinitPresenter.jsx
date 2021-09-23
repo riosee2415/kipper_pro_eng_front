@@ -526,7 +526,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
               letterSpacing={`-0.2px`}
               fontWeight={`300`}
             >
-              has always been perfect. SMARTKEEPER
+              has always been perfect.
             </Text>
             <Text
               fontSize={`17px`}
@@ -534,7 +534,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
               letterSpacing={`-0.2px`}
               fontWeight={`300`}
             >
-              is committed to setting the standard in
+              SMARTKEEPER is committed to setting
             </Text>
             <Text
               fontSize={`17px`}
@@ -542,7 +542,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
               letterSpacing={`-0.2px`}
               fontWeight={`300`}
             >
-              physical cyber security.
+              the standard in physical cyber security.
             </Text>
           </Wrapper>
 

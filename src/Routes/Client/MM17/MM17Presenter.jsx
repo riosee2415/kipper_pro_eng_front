@@ -552,11 +552,24 @@ const MM17Presenter = ({
               >
                 Exceptionally thin Key Hole.
               </Text>
+            </Wrapper>
 
-              <Text fontSize={width < 700 ? `14px` : `21px`} fontWeight={`200`}>
+            <Wrapper
+              padding={`100px 0 0`}
+              display={width < 700 ? `flex` : `none`}
+            >
+              <Text
+                fontSize={width < 700 ? `14px` : `21px`}
+                color={Theme.black_C}
+                fontWeight={`700`}
+              >
                 Tamper-proof key hole, designed to
               </Text>
-              <Text fontSize={width < 700 ? `14px` : `21px`} fontWeight={`200`}>
+              <Text
+                fontSize={width < 700 ? `14px` : `21px`}
+                color={Theme.black_C}
+                fontWeight={`700`}
+              >
                 prevent removal with foreign objects.
               </Text>
             </Wrapper>
