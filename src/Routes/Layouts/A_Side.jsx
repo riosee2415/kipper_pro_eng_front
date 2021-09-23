@@ -4,8 +4,9 @@ import {
   SideMenu,
   SubMenus,
   SubMenu,
+  Wrapper,
 } from "../../Components/AdminCommonComponents";
-import { Image, Wrapper, Text } from "../../Components/CommonComponents";
+import { Image, Text } from "../../Components/CommonComponents";
 import { allMenus } from "./adminMenus";
 import { MdExpandMore } from "react-icons/md";
 import Flip from "react-reveal/Flip";
