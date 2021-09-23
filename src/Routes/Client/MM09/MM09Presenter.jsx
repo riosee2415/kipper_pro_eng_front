@@ -1725,7 +1725,7 @@ const MM09Presenter = ({
                         lineHeight={`1.47`}
                         fontSize={width < 700 ? `20px` : `25px`}
                         fontWeight={`900`}
-                        margin={width < 700 ? `0 0 20px` : `0 0 30px`}
+                        margin={width < 700 ? `20px 0 15px` : `0 0 30px`}
                         textAlign={`center`}
                       />
                     )}
@@ -1784,7 +1784,7 @@ const MM09Presenter = ({
                         lineHeight={`1.47`}
                         fontSize={width < 700 ? `20px` : `25px`}
                         fontWeight={`900`}
-                        margin={width < 700 ? `20px 0 10px` : `0 0 30px`}
+                        margin={width < 700 ? `20px 0 15px` : `0 0 30px`}
                         textAlign={`center`}
                       />
                     )}
@@ -1833,7 +1833,7 @@ const MM09Presenter = ({
                         lineHeight={`1.47`}
                         fontSize={width < 700 ? `20px` : `25px`}
                         fontWeight={`900`}
-                        margin={width < 700 ? `20px 0 10px` : `0 0 30px`}
+                        margin={width < 700 ? `20px 0 15px` : `0 0 30px`}
                         textAlign={`center`}
                       />
                     )}
