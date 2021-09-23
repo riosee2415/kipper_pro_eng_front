@@ -475,7 +475,7 @@ const MM00Presenter = ({
                 fontSize={`18px`}
                 fontWeight={`700`}
               >
-                for USB-C, Mini &#38; Micro Ports .
+                for USB-C, Mini &#38; Micro Ports.
               </Text>
 
               <Wrapper
@@ -591,10 +591,7 @@ const MM00Presenter = ({
               >
                 Learn more
               </Text>
-              <RiArrowRightSLine
-                fontSize={width < 700 ? `14px` : `25px`}
-                color={Theme.white_C}
-              />
+              <RiArrowRightSLine fontSize={`25px`} color={Theme.white_C} />
             </Button>
           </Wrapper>
         </RsWrapper>
@@ -682,10 +679,7 @@ const MM00Presenter = ({
               >
                 Learn more
               </Text>
-              <RiArrowRightSLine
-                fontSize={width < 700 ? `14px` : `25px`}
-                color={Theme.white_C}
-              />
+              <RiArrowRightSLine fontSize={`25px`} color={Theme.white_C} />
             </Button>
           </Wrapper>
         </RsWrapper>

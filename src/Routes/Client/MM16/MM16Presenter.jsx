@@ -937,7 +937,10 @@ const MM16Presenter = ({
           <RsWrapper margin={`111px 0 0`}>
             <Wrapper margin={`0 0 50px`}>
               <Text fontSize={`16px`} color={Theme.white_C}>
-                valuable assets and data of the company,
+                Malware Intrusion and Loss of
+              </Text>
+              <Text fontSize={`16px`} color={Theme.white_C}>
+                Company Assets &#38; Data
               </Text>
               <CommonSubTitle
                 margin={`10px 0 0`}
@@ -1312,7 +1315,12 @@ const MM16Presenter = ({
               </ATag>
             </Wrapper>
 
-            <Text fontSize={`16px`} color={Theme.white_C} margin={`55px 0 0`}>
+            <Text
+              fontSize={`16px`}
+              color={Theme.white_C}
+              fontWeight={`300`}
+              margin={`55px 0 0`}
+            >
               Malware Intrusion and Data Leak
             </Text>
             <Text fontSize={`20px`} color={Theme.white_C} fontWeight={`700`}>
