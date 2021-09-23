@@ -1289,20 +1289,32 @@ const MM09Presenter = ({
                 }
                 lineHeight={`1.87`}
               >
-                Color -{" "}
-                {currentColor &&
-                  (currentColor.color === "없음" ? "N/A" : currentColor.color)}
+                Color -&nbsp;
+                {currentColor && currentColor.color}
               </Text>
               <Wrapper dr={`row`} ju={`flex-start`} padding={`7px 0`}>
                 {colorList.map((data) => {
-                  return (
-                    <ColorList
-                      key={data._id}
-                      isActive={currentColor && currentColor._id === data._id}
-                      bgColor={data.colorCode}
-                      onClick={() => setCurrentColor(data)}
-                    ></ColorList>
-                  );
+                  if (data.color === "Gold") {
+                    return (
+                      <ColorList
+                        key={data._id}
+                        isActive={currentColor && currentColor._id === data._id}
+                        bgColor={`none`}
+                        bgImg={`url('https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM09%2FColor_Gold.jpg?alt=media&token=9655075f-6ca8-4085-9aa0-c8057879cd63')`}
+                        attachment={`initial`}
+                        onClick={() => setCurrentColor(data)}
+                      ></ColorList>
+                    );
+                  } else {
+                    return (
+                      <ColorList
+                        key={data._id}
+                        isActive={currentColor && currentColor._id === data._id}
+                        bgColor={data.colorCode}
+                        onClick={() => setCurrentColor(data)}
+                      ></ColorList>
+                    );
+                  }
                 })}
               </Wrapper>
               <Text
