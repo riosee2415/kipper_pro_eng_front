@@ -236,7 +236,7 @@ const MM14Presenter = ({
                               | &nbsp;
                               <ATag
                                 width={`auto`}
-                                href={`${data.web}`}
+                                href={`https://${data.web}`}
                                 target={`_blank`}
                               >
                                 {data.web}
