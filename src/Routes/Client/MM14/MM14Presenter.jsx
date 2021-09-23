@@ -126,7 +126,7 @@ const MM14Presenter = ({
                 left={data.left}
                 key={idx}
               >
-                {ableIcon !== idx ? (
+                {ableIcon !== idx && (
                   <Dot
                     width={`15px`}
                     height={`15px`}
@@ -145,120 +145,44 @@ const MM14Presenter = ({
                       letf={`0px`}
                     />
                   </Dot>
-                ) : (
-                  <>
-                    <Wrapper
-                      width={`100%`}
-                      height={`100%`}
-                      isFixed={true}
-                      bgColor={`rgba(0,0,0,0.4)`}
-                      top={`0`}
-                      left={`0`}
-                      onClick={() => setAbleIcon(null)}
-                    ></Wrapper>
-                    <Wrapper
-                      isAbsolute={true}
-                      width={`370px`}
-                      top={`0px`}
-                      left={`0px`}
-                      dr={`row`}
-                      ju={`space-between`}
-                      al={`flex-start`}
-                      zIndex={`100`}
-                      onClick={() => setAbleIcon(null)}
-                    >
-                      <Image src={data.src} width={`50px`} height={`50px`} />
-                      <Wrapper isRelative={true} width={`300px`}>
-                        <Image
-                          src={data.info}
-                          width={`300px`}
-                          isFixed={width < 900 ? true : false}
-                          top={width < 900 ? `52%` : ``}
-                          transform={width < 900 ? `translateX(-50%)` : ``}
-                          left={width < 900 ? `50%` : ``}
-                        />
-                        {/* data.mobile 등등 나오면 됨 */}
-                        <Wrapper
-                          isAbsolute={true}
-                          top={`68px`}
-                          left={`0`}
-                          padding={`0 25px`}
-                          color={Theme.darkGrey_C}
-                          al={`flex-start`}
-                          fontSize={`12px`}
-                        >
-                          {data.mobile && (
-                            <Wrapper width={`auto`} dr={`row`}>
-                              <Wrapper
-                                al={`flex-start`}
-                                fontWeight={`900`}
-                                margin={`0 10px 0 0`}
-                                width={`12px`}
-                              >
-                                T
-                              </Wrapper>
-                              | &nbsp;{data.mobile}
-                            </Wrapper>
-                          )}
-                          {data.email && (
-                            <Wrapper
-                              width={`auto`}
-                              dr={`row`}
-                              margin={`13px 0`}
-                            >
-                              <Wrapper
-                                al={`flex-start`}
-                                fontWeight={`900`}
-                                margin={`0 10px 0 0`}
-                                width={`12px`}
-                              >
-                                E
-                              </Wrapper>
-                              | &nbsp;
-                              <ATag
-                                width={`auto`}
-                                href={`mailto:${data.email}`}
-                              >
-                                {data.email}
-                              </ATag>
-                            </Wrapper>
-                          )}
-                          {data.web && (
-                            <Wrapper width={`auto`} dr={`row`}>
-                              <Wrapper
-                                al={`flex-start`}
-                                fontWeight={`900`}
-                                margin={`0 10px 0 0`}
-                                width={`12px`}
-                              >
-                                W
-                              </Wrapper>
-                              | &nbsp;
-                              <ATag
-                                width={`auto`}
-                                href={`${data.web}`}
-                                target={`_blank`}
-                              >
-                                {data.web}
-                              </ATag>
-                            </Wrapper>
-                          )}
-                        </Wrapper>
-                      </Wrapper>
-                    </Wrapper>
-
-                    {data.mobile2 && (
+                )}
+              </Wrapper>
+            );
+          })}
+          {ableIcon &&
+            point.map((data, idx) => {
+              return (
+                <Wrapper
+                  isAbsolute={true}
+                  width={`50px`}
+                  height={`50px`}
+                  top={data.top}
+                  left={data.left}
+                  key={idx}
+                >
+                  {ableIcon === idx && (
+                    <>
+                      <Wrapper
+                        width={`100%`}
+                        height={`100%`}
+                        isFixed={true}
+                        bgColor={`rgba(0,0,0,0.4)`}
+                        top={`0`}
+                        left={`0`}
+                        onClick={() => setAbleIcon(null)}
+                      ></Wrapper>
                       <Wrapper
                         isAbsolute={true}
                         width={`370px`}
-                        top={`160px`}
+                        top={`0px`}
                         left={`0px`}
                         dr={`row`}
                         ju={`space-between`}
                         al={`flex-start`}
+                        zIndex={`100`}
                         onClick={() => setAbleIcon(null)}
                       >
-                        <Wrapper width={`50px`} height={`50px`} />
+                        <Image src={data.src} width={`50px`} height={`50px`} />
                         <Wrapper isRelative={true} width={`300px`}>
                           <Image
                             src={data.info}
@@ -268,7 +192,7 @@ const MM14Presenter = ({
                             transform={width < 900 ? `translateX(-50%)` : ``}
                             left={width < 900 ? `50%` : ``}
                           />
-                          {/* data.mobile2 등등 나오면 됨 */}
+                          {/* data.mobile 등등 나오면 됨 */}
                           <Wrapper
                             isAbsolute={true}
                             top={`68px`}
@@ -278,47 +202,138 @@ const MM14Presenter = ({
                             al={`flex-start`}
                             fontSize={`12px`}
                           >
-                            <Wrapper width={`auto`} dr={`row`}>
-                              <Wrapper
-                                al={`flex-start`}
-                                fontWeight={`900`}
-                                margin={`0 10px 0 0`}
-                                width={`12px`}
-                              >
-                                T
+                            {data.mobile && (
+                              <Wrapper width={`auto`} dr={`row`}>
+                                <Wrapper
+                                  al={`flex-start`}
+                                  fontWeight={`900`}
+                                  margin={`0 10px 0 0`}
+                                  width={`12px`}
+                                >
+                                  T
+                                </Wrapper>
+                                | &nbsp;{data.mobile}
                               </Wrapper>
-                              | &nbsp;{data.mobile2}
-                            </Wrapper>
-                            <Wrapper
-                              width={`auto`}
-                              dr={`row`}
-                              margin={`13px 0`}
-                            >
+                            )}
+                            {data.email && (
                               <Wrapper
-                                al={`flex-start`}
-                                fontWeight={`900`}
-                                margin={`0 10px 0 0`}
-                                width={`12px`}
-                              >
-                                E
-                              </Wrapper>
-                              | &nbsp;
-                              <ATag
                                 width={`auto`}
-                                href={`mailto:${data.email2}`}
+                                dr={`row`}
+                                margin={`13px 0`}
                               >
-                                {data.email}
-                              </ATag>
-                            </Wrapper>
+                                <Wrapper
+                                  al={`flex-start`}
+                                  fontWeight={`900`}
+                                  margin={`0 10px 0 0`}
+                                  width={`12px`}
+                                >
+                                  E
+                                </Wrapper>
+                                | &nbsp;
+                                <ATag
+                                  width={`auto`}
+                                  href={`mailto:${data.email}`}
+                                >
+                                  {data.email}
+                                </ATag>
+                              </Wrapper>
+                            )}
+                            {data.web && (
+                              <Wrapper width={`auto`} dr={`row`}>
+                                <Wrapper
+                                  al={`flex-start`}
+                                  fontWeight={`900`}
+                                  margin={`0 10px 0 0`}
+                                  width={`12px`}
+                                >
+                                  W
+                                </Wrapper>
+                                | &nbsp;
+                                <ATag
+                                  width={`auto`}
+                                  href={`https://${data.web}`}
+                                  target={`_blank`}
+                                >
+                                  {data.web}
+                                </ATag>
+                              </Wrapper>
+                            )}
                           </Wrapper>
                         </Wrapper>
                       </Wrapper>
-                    )}
-                  </>
-                )}
-              </Wrapper>
-            );
-          })}
+
+                      {data.mobile2 && (
+                        <Wrapper
+                          isAbsolute={true}
+                          width={`370px`}
+                          top={`160px`}
+                          left={`0px`}
+                          dr={`row`}
+                          ju={`space-between`}
+                          al={`flex-start`}
+                          onClick={() => setAbleIcon(null)}
+                        >
+                          <Wrapper width={`50px`} height={`50px`} />
+                          <Wrapper isRelative={true} width={`300px`}>
+                            <Image
+                              src={data.info}
+                              width={`300px`}
+                              isFixed={width < 900 ? true : false}
+                              top={width < 900 ? `52%` : ``}
+                              transform={width < 900 ? `translateX(-50%)` : ``}
+                              left={width < 900 ? `50%` : ``}
+                            />
+                            {/* data.mobile2 등등 나오면 됨 */}
+                            <Wrapper
+                              isAbsolute={true}
+                              top={`68px`}
+                              left={`0`}
+                              padding={`0 25px`}
+                              color={Theme.darkGrey_C}
+                              al={`flex-start`}
+                              fontSize={`12px`}
+                            >
+                              <Wrapper width={`auto`} dr={`row`}>
+                                <Wrapper
+                                  al={`flex-start`}
+                                  fontWeight={`900`}
+                                  margin={`0 10px 0 0`}
+                                  width={`12px`}
+                                >
+                                  T
+                                </Wrapper>
+                                | &nbsp;{data.mobile2}
+                              </Wrapper>
+                              <Wrapper
+                                width={`auto`}
+                                dr={`row`}
+                                margin={`13px 0`}
+                              >
+                                <Wrapper
+                                  al={`flex-start`}
+                                  fontWeight={`900`}
+                                  margin={`0 10px 0 0`}
+                                  width={`12px`}
+                                >
+                                  E
+                                </Wrapper>
+                                | &nbsp;
+                                <ATag
+                                  width={`auto`}
+                                  href={`mailto:${data.email2}`}
+                                >
+                                  {data.email}
+                                </ATag>
+                              </Wrapper>
+                            </Wrapper>
+                          </Wrapper>
+                        </Wrapper>
+                      )}
+                    </>
+                  )}
+                </Wrapper>
+              );
+            })}
         </Wrapper>
       </RsWrapper>
     </WholeWrapper>

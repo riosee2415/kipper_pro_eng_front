@@ -20,7 +20,7 @@ const MM14Container = ({ history }) => {
       map: 3,
       mobile: "+82 2 554 9099",
       email: "global_sales@comxi.com",
-      web: "https://www.smartkeeper.kr",
+      web: "www.smartkeeper.kr",
     },
     {
       name: "vietnam",
@@ -31,7 +31,7 @@ const MM14Container = ({ history }) => {
       map: 3,
       mobile: "+84 977899482",
       email: "selina.hang@acton-tech.com",
-      web: "https://www.acton-tech.com",
+      web: "www.acton-tech.com",
     },
     {
       name: "phlippines",
@@ -63,11 +63,11 @@ const MM14Container = ({ history }) => {
       src: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20circle%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206621.png?alt=media&token=b1a6fc2e-dc2d-4434-9edf-ae7c2b7859a2",
       info: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20click%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206666.png?alt=media&token=452a5d43-02e8-4300-8842-3ea8614d7fc9",
       map: 3,
-      mobile: "+65 63365920",
-      email: "dbrkaren@dbr-sys.com",
+      mobile: "+632 88506182",
+      email: "smartkeeper@gennexcorp.com",
       web: "",
-      mobile2: "+632 88506182",
-      email2: "mike@gennexcorp.com",
+      mobile2: "+65 63365920",
+      email2: "dbrkaren@dbr-sys.com",
       web2: "",
     },
     {
@@ -101,7 +101,7 @@ const MM14Container = ({ history }) => {
       map: 3,
       mobile: "+91 9975567111",
       email: "kishore@tavat.in",
-      web: "https://www.facebook.com/thesmartkeeper",
+      web: "www.facebook.com/thesmartkeeper",
     },
 
     {
@@ -124,7 +124,7 @@ const MM14Container = ({ history }) => {
       map: 1,
       mobile: "+47 55 50 91 50",
       email: "info@direktronik.no",
-      web: "https://www.direktronik.no",
+      web: "www.direktronik.no",
     },
     {
       name: "hungary",
@@ -135,7 +135,7 @@ const MM14Container = ({ history }) => {
       map: 3,
       mobile: "+421 904 244 685",
       email: "smartkeeper@bbi-intl.com",
-      web: "https://www.smartkeeper.sk/hu",
+      web: "www.smartkeeper.sk/hu",
     },
     {
       name: "slovakia",
@@ -146,7 +146,7 @@ const MM14Container = ({ history }) => {
       map: 1,
       mobile: "+421 904 244 685",
       email: "smartkeeper@bbi-intl.com",
-      web: "https://www.smartkeeper.sk",
+      web: "www.smartkeeper.sk",
     },
     {
       name: "poland",
@@ -155,8 +155,9 @@ const MM14Container = ({ history }) => {
       src: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20circle%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206629.png?alt=media&token=6e69a731-3304-4a54-b684-437ddb8125ec",
       info: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20click%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206655.png?alt=media&token=073e7c2b-811b-4e0e-ac0b-59e9e66dc61d",
       map: 1,
-      mobile: "",
-      email: "",
+      mobile: "+48 535 112 606",
+      email: "office@smartkeeper.pl",
+      web: "www.smartkeeper.pl",
     },
     {
       name: "czech",
@@ -165,9 +166,9 @@ const MM14Container = ({ history }) => {
       src: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20circle%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206625.png?alt=media&token=accab8a8-b368-46a5-8f8f-37d52ac5b3ba",
       info: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20click%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206656.png?alt=media&token=45a03b90-4b25-4ccc-9172-79cebf48709e",
       map: 1,
-      mobile: "+48 535 112 606",
-      email: "office@smartkeeper.pl",
-      web: "https://www.smartkeeper.pl",
+      mobile: "+421 904 244 685",
+      email: "smartkeeper@bbi-intl.com",
+      web: "www.smartkeeper.cz",
     },
     {
       name: "germany",
@@ -178,7 +179,7 @@ const MM14Container = ({ history }) => {
       map: 1,
       mobile: "+49 176 636 255 60",
       email: "smartkeeper@smartlightsolutions.de",
-      web: "https://www.smartkeeper.de",
+      web: "www.smartkeeper.de",
     },
     {
       name: "sweden",
@@ -189,7 +190,7 @@ const MM14Container = ({ history }) => {
       map: 1,
       mobile: "+46 8 524 00700",
       email: "info@direktronik.se",
-      web: "https://www.direktronik.se",
+      web: "www.direktronik.se",
     },
     {
       name: "alabama",
@@ -200,7 +201,7 @@ const MM14Container = ({ history }) => {
       map: 2,
       mobile: "+1 888 865 4639",
       email: "info@smartkeeper.us",
-      web: "https://www.smartkeeper.us",
+      web: "www.smartkeeper.us",
     },
     {
       name: "virginia",
@@ -211,7 +212,7 @@ const MM14Container = ({ history }) => {
       map: 2,
       mobile: "+1 804 299 5234",
       email: "info@comxiworld.com",
-      web: "https://smartkeeperworld.com",
+      web: "smartkeeperworld.com",
     },
     {
       name: "mexico",
@@ -222,7 +223,7 @@ const MM14Container = ({ history }) => {
       map: 2,
       mobile: "",
       email: "info@comxiworld.com",
-      web: "https://daoltec.com.mx",
+      web: "daoltec.com.mx",
     },
   ];
 
