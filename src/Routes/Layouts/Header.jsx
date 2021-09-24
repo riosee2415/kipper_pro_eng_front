@@ -143,6 +143,7 @@ const ToggleBtn = styled.button`
   background: rgb(69, 69, 69);
   border-radius: 20px;
   font-size: 14px;
+  line-height: 1 !important;
 
   &:hover {
     background: rgb(20, 131, 199);

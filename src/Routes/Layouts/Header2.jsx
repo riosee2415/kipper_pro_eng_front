@@ -145,6 +145,7 @@ const ToggleBtn = styled.button`
   background: rgb(41, 154, 223);
   border-radius: 20px;
   font-size: 14px;
+  line-height: 1 !important;
 
   &:hover {
     background: ${(props) => props.theme.subTheme_C};

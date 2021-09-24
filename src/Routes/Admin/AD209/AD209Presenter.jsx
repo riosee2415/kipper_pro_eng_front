@@ -2381,15 +2381,15 @@ export default ({
         <DataWrapper>
           <Combo {...currentColor}>
             <ComboOption value={``}>--선택--</ComboOption>
-            <ComboOption value={`레드`}>레드</ComboOption>
-            <ComboOption value={`블랙`}>블랙</ComboOption>
-            <ComboOption value={`그레이`}>그레이</ComboOption>
-            <ComboOption value={`옐로우`}>옐로우</ComboOption>
-            <ComboOption value={`블루`}>블루</ComboOption>
-            <ComboOption value={`다크 블루`}>다크 블루</ComboOption>
-            <ComboOption value={`골드`}>골드</ComboOption>
-            <ComboOption value={`화이트`}>화이트</ComboOption>
-            <ComboOption value={`없음`}>없음</ComboOption>
+            <ComboOption value={`Red`}>Red</ComboOption>
+            <ComboOption value={`Black`}>Black</ComboOption>
+            <ComboOption value={`Gray`}>Gray</ComboOption>
+            <ComboOption value={`Yellow`}>Yellow</ComboOption>
+            <ComboOption value={`Blue`}>Blue</ComboOption>
+            <ComboOption value={`Dark Blue`}>Dark Blue</ComboOption>
+            <ComboOption value={`Gold`}>Gold</ComboOption>
+            <ComboOption value={`White`}>White</ComboOption>
+            <ComboOption value={`N/A`}>N/A</ComboOption>
           </Combo>
         </DataWrapper>
       </Wrapper>
@@ -2398,15 +2398,15 @@ export default ({
         <DataWrapper>
           <Combo {...currentColorCode}>
             <ComboOption value={``}>--선택--</ComboOption>
-            <ComboOption value={`#B1281D`}>#B1281D</ComboOption>
-            <ComboOption value={`#2D2926`}>#2D2926</ComboOption>
-            <ComboOption value={`#9EA2A2`}>#9EA2A2</ComboOption>
-            <ComboOption value={`#FFD700`}>#FFD700</ComboOption>
-            <ComboOption value={`#55BBE3`}>#55BBE3</ComboOption>
-            <ComboOption value={`#171C8F`}>#171C8F</ComboOption>
-            <ComboOption value={`#DBCDBE`}>#DBCDBE</ComboOption>
-            <ComboOption value={`#FFFFFF`}>#FFFFFF</ComboOption>
-            <ComboOption value={`#ffff`}>없음</ComboOption>
+            <ComboOption value={`#B1281D`}>#B1281D(Red)</ComboOption>
+            <ComboOption value={`#2D2926`}>#2D2926(Black)</ComboOption>
+            <ComboOption value={`#9EA2A2`}>#9EA2A2(Gray)</ComboOption>
+            <ComboOption value={`#FFD700`}>#FFD700(Yellow)</ComboOption>
+            <ComboOption value={`#55BBE3`}>#55BBE3(Blue)</ComboOption>
+            <ComboOption value={`#171C8F`}>#171C8F(Dark Blue)</ComboOption>
+            <ComboOption value={`#DBCDBE`}>#DBCDBE(Gold)</ComboOption>
+            <ComboOption value={`#FFFFFF`}>#FFFFFF(White)</ComboOption>
+            <ComboOption value={`#ffff`}>N/A</ComboOption>
           </Combo>
         </DataWrapper>
       </Wrapper>

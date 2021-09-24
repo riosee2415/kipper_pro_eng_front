@@ -191,6 +191,7 @@ const A_Content = ({ location }) => {
             height={`100%`}
             padding={`20px`}
             isScroll={true}
+            overflow={`auto`}
           >
             <Route exact path="/admin" component={AD00} />
             <Route exact path="/admin/statManagement" component={AD01} />

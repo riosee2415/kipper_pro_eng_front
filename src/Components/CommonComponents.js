@@ -1007,7 +1007,7 @@ export const Text = styled.p`
   font-style: ${(props) => props.fontStyle};
   cursor: ${(props) => props.cursor};
   z-index: 1;
-  white-space: pre-wrap;
+  white-space: ${(props) => props.whiteSpace || `pre-wrap`};
   border-bottom: ${(props) => props.borderBottom};
   opacity: ${(props) => props.opacity};
   letter-spacing: ${(props) => props.letterSpacing};

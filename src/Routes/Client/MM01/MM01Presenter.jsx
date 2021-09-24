@@ -997,6 +997,7 @@ const MM01Presenter = ({
                     alt="smartkeeper"
                     src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Fmodify%2FSMARTKEEPER_%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8F%E1%85%B5%E1%84%91%E1%85%A5%E1%84%85%E1%85%A1%E1%86%AB.svg?alt=media&token=e3021d23-3de3-44f5-b34f-f47235f02d5b`}
                     width={width < 800 ? `164px` : `235px`}
+                    height={width < 800 && `15px`}
                     margin={width < 800 ? `0 0 20px` : `0 0 5px`}
                   />
                   <Wrapper
@@ -1373,6 +1374,7 @@ const MM01Presenter = ({
                     alt="ess"
                     src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2FESSENTIAL_%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8F%E1%85%B5%E1%84%91%E1%85%A5%E1%84%85%E1%85%A1%E1%86%AB.svg?alt=media&token=d951addf-29e7-4ac0-9f03-95b82bed8605`}
                     width={`174px`}
+                    height={`22px`}
                   />
                   <Wrapper
                     al={`flex-start`}

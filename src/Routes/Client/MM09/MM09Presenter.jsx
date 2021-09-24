@@ -1289,20 +1289,32 @@ const MM09Presenter = ({
                 }
                 lineHeight={`1.87`}
               >
-                Color -{" "}
-                {currentColor &&
-                  (currentColor.color === "없음" ? "N/A" : currentColor.color)}
+                Color -&nbsp;
+                {currentColor && currentColor.color}
               </Text>
               <Wrapper dr={`row`} ju={`flex-start`} padding={`7px 0`}>
                 {colorList.map((data) => {
-                  return (
-                    <ColorList
-                      key={data._id}
-                      isActive={currentColor && currentColor._id === data._id}
-                      bgColor={data.colorCode}
-                      onClick={() => setCurrentColor(data)}
-                    ></ColorList>
-                  );
+                  if (data.color === "Gold") {
+                    return (
+                      <ColorList
+                        key={data._id}
+                        isActive={currentColor && currentColor._id === data._id}
+                        bgColor={`none`}
+                        bgImg={`url('https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM09%2FColor_Gold.jpg?alt=media&token=9655075f-6ca8-4085-9aa0-c8057879cd63')`}
+                        attachment={`initial`}
+                        onClick={() => setCurrentColor(data)}
+                      ></ColorList>
+                    );
+                  } else {
+                    return (
+                      <ColorList
+                        key={data._id}
+                        isActive={currentColor && currentColor._id === data._id}
+                        bgColor={data.colorCode}
+                        onClick={() => setCurrentColor(data)}
+                      ></ColorList>
+                    );
+                  }
                 })}
               </Wrapper>
               <Text
@@ -1713,7 +1725,7 @@ const MM09Presenter = ({
                         lineHeight={`1.47`}
                         fontSize={width < 700 ? `20px` : `25px`}
                         fontWeight={`900`}
-                        margin={width < 700 ? `0 0 20px` : `0 0 30px`}
+                        margin={width < 700 ? `20px 0 15px` : `0 0 30px`}
                         textAlign={`center`}
                       />
                     )}
@@ -1772,7 +1784,7 @@ const MM09Presenter = ({
                         lineHeight={`1.47`}
                         fontSize={width < 700 ? `20px` : `25px`}
                         fontWeight={`900`}
-                        margin={width < 700 ? `20px 0 10px` : `0 0 30px`}
+                        margin={width < 700 ? `20px 0 15px` : `0 0 30px`}
                         textAlign={`center`}
                       />
                     )}
@@ -1821,7 +1833,7 @@ const MM09Presenter = ({
                         lineHeight={`1.47`}
                         fontSize={width < 700 ? `20px` : `25px`}
                         fontWeight={`900`}
-                        margin={width < 700 ? `20px 0 10px` : `0 0 30px`}
+                        margin={width < 700 ? `20px 0 15px` : `0 0 30px`}
                         textAlign={`center`}
                       />
                     )}
@@ -2576,7 +2588,12 @@ const MM09Presenter = ({
                     src={pData.cerIconImage1}
                   />
 
-                  <Text fontWeight={`300`} textAlign={`center`} color={`#fff`}>
+                  <Text
+                    whiteSpace={width < 700 && `initial`}
+                    fontWeight={`300`}
+                    textAlign={width < 700 ? `start` : `center`}
+                    color={`#fff`}
+                  >
                     {pData.cerContent1.split(`\n`).map((title, idx) => {
                       return (
                         <SpanText key={idx}>
@@ -2610,7 +2627,12 @@ const MM09Presenter = ({
                     src={pData.cerIconImage2}
                   />
 
-                  <Text fontWeight={`300`} textAlign={`center`} color={`#fff`}>
+                  <Text
+                    whiteSpace={width < 700 && `initial`}
+                    fontWeight={`300`}
+                    textAlign={width < 700 ? `start` : `center`}
+                    color={`#fff`}
+                  >
                     {pData.cerContent2.split(`\n`).map((title, idx) => {
                       return (
                         <SpanText key={idx}>
@@ -2644,7 +2666,12 @@ const MM09Presenter = ({
                     src={pData.cerIconImage3}
                   />
 
-                  <Text fontWeight={`300`} textAlign={`center`} color={`#fff`}>
+                  <Text
+                    whiteSpace={width < 700 && `initial`}
+                    fontWeight={`300`}
+                    textAlign={width < 700 ? `start` : `center`}
+                    color={`#fff`}
+                  >
                     {pData.cerContent3.split(`\n`).map((title, idx) => {
                       return (
                         <SpanText key={idx}>
@@ -2678,7 +2705,12 @@ const MM09Presenter = ({
                     src={pData.cerIconImage4}
                   />
 
-                  <Text fontWeight={`300`} textAlign={`center`} color={`#fff`}>
+                  <Text
+                    whiteSpace={width < 700 && `initial`}
+                    fontWeight={`300`}
+                    textAlign={width < 700 ? `start` : `center`}
+                    color={`#fff`}
+                  >
                     {pData.cerContent4.split(`\n`).map((title, idx) => {
                       return (
                         <SpanText key={idx}>
@@ -2712,7 +2744,12 @@ const MM09Presenter = ({
                     src={pData.cerIconImage5}
                   />
 
-                  <Text fontWeight={`300`} textAlign={`center`} color={`#fff`}>
+                  <Text
+                    whiteSpace={width < 700 && `initial`}
+                    fontWeight={`300`}
+                    textAlign={width < 700 ? `start` : `center`}
+                    color={`#fff`}
+                  >
                     {pData.cerContent5.split(`\n`).map((title, idx) => {
                       return (
                         <SpanText key={idx}>
@@ -2746,7 +2783,12 @@ const MM09Presenter = ({
                     src={pData.cerIconImage6}
                   />
 
-                  <Text fontWeight={`300`} textAlign={`center`} color={`#fff`}>
+                  <Text
+                    whiteSpace={width < 700 && `initial`}
+                    fontWeight={`300`}
+                    textAlign={width < 700 ? `start` : `center`}
+                    color={`#fff`}
+                  >
                     {pData.cerContent6.split(`\n`).map((title, idx) => {
                       return (
                         <SpanText key={idx}>

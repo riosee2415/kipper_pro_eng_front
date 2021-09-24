@@ -143,8 +143,8 @@ const MM03Presenter = ({
                   width={width < 700 ? `100%` : `40%`}
                 >
                   <Text
-                    fontSize={width < 700 ? `10px` : `20px`}
-                    margin={width < 700 ? `0 0 10px` : `0 0 20px`}
+                    fontSize={width < 700 ? `12px` : `20px`}
+                    margin={width < 700 ? `0 0 10px 5px` : `0 0 20px`}
                   >
                     USB
                   </Text>
@@ -158,7 +158,6 @@ const MM03Presenter = ({
                   >
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4 )` : `calc(100% / 2)`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/usb?type=USB Type-A`)}
                     >
@@ -180,7 +179,6 @@ const MM03Presenter = ({
                     </Wrapper>
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4 )` : `calc(100% / 2)`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/usb?type=USB Type-C`)}
                     >
@@ -188,7 +186,7 @@ const MM03Presenter = ({
                         alt="icon"
                         src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%202.svg?alt=media&token=7d1527f3-0dda-4d00-991e-d3e8c64f094a`}
                         width={width < 700 ? `44px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
+                        height={width < 700 ? `15px` : `40px`}
                         objectFit={`contain`}
                         margin={width < 700 ? `0 0 10px` : `0 0 20px`}
                       />
@@ -208,8 +206,8 @@ const MM03Presenter = ({
                   width={width < 700 ? `100%` : `60%`}
                 >
                   <Text
-                    fontSize={width < 700 ? `10px` : `20px`}
-                    margin={width < 700 ? `15px 0 10px` : `0 0 20px`}
+                    fontSize={width < 700 ? `12px` : `20px`}
+                    margin={width < 700 ? `15px 0 10px 5px` : `0 0 20px`}
                   >
                     Network
                   </Text>
@@ -220,21 +218,25 @@ const MM03Presenter = ({
                   >
                     <Wrapper
                       width={`calc(100% / 4)`}
-                      al={width < 700 && `flex-start`}
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
                         moveLinkHandler(`/p_network?type=LAN Cable`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FLAN%20Cable(Ethernet%20RJ-45%20Connector).svg?alt=media&token=009d72bc-d4e1-481a-a834-cc99d977072f`}
-                        width={width < 700 ? `100%` : `62px`}
-                        height={width < 700 ? `21px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `5px 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FLAN%20Cable(Ethernet%20RJ-45%20Connector).svg?alt=media&token=009d72bc-d4e1-481a-a834-cc99d977072f`}
+                          width={width < 700 ? `52px` : `62px`}
+                          height={width < 700 ? `17px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Wrapper>
                         <Text
                           fontWeight={`300`}
@@ -258,14 +260,19 @@ const MM03Presenter = ({
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/p_network?type=RJ45`)}
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-1.svg?alt=media&token=0a8d29c2-5035-49b2-95e3-c2350f6d2436`}
-                        width={width < 700 ? `26px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-1.svg?alt=media&token=0a8d29c2-5035-49b2-95e3-c2350f6d2436`}
+                          width={width < 700 ? `26px` : `62px`}
+                          height={width < 700 ? `23px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -289,14 +296,19 @@ const MM03Presenter = ({
                         moveLinkHandler(`/p_network?type=SFP/QSFP`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
-                        width={width < 700 ? `30px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
+                          width={width < 700 ? `30px` : `62px`}
+                          height={width < 700 ? `26px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -320,14 +332,19 @@ const MM03Presenter = ({
                         moveLinkHandler(`/p_network?type=SFP/QSFP`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
-                        width={width < 700 ? `31px` : `62px`}
-                        height={width < 700 ? `23px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
+                          width={width < 700 ? `31px` : `62px`}
+                          height={width < 700 ? `23px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -379,8 +396,8 @@ const MM03Presenter = ({
                   width={width < 700 ? `100%` : `40%`}
                 >
                   <Text
-                    fontSize={width < 700 ? `10px` : `20px`}
-                    margin={width < 700 ? `0 0 10px` : `0 0 20px`}
+                    fontSize={width < 700 ? `12px` : `20px`}
+                    margin={width < 700 ? `0 0 10px 5px` : `0 0 20px`}
                   >
                     USB
                   </Text>
@@ -394,7 +411,6 @@ const MM03Presenter = ({
                   >
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4 )` : `calc(100% / 2)`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/usb?type=USB Type-A`)}
                     >
@@ -416,7 +432,6 @@ const MM03Presenter = ({
                     </Wrapper>
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4 )` : `calc(100% / 2)`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/usb?type=USB Type-C`)}
                     >
@@ -424,7 +439,7 @@ const MM03Presenter = ({
                         alt="icon"
                         src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%202.svg?alt=media&token=7d1527f3-0dda-4d00-991e-d3e8c64f094a`}
                         width={width < 700 ? `44px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
+                        height={width < 700 ? `15px` : `40px`}
                         objectFit={`contain`}
                         margin={width < 700 ? `0 0 10px` : `0 0 20px`}
                       />
@@ -444,8 +459,8 @@ const MM03Presenter = ({
                   width={width < 700 ? `100%` : `60%`}
                 >
                   <Text
-                    fontSize={width < 700 ? `10px` : `20px`}
-                    margin={width < 700 ? `15px 0 10px` : `0 0 20px`}
+                    fontSize={width < 700 ? `12px` : `20px`}
+                    margin={width < 700 ? `15px 0 10px 5px` : `0 0 20px`}
                   >
                     Network
                   </Text>
@@ -457,20 +472,24 @@ const MM03Presenter = ({
                     <Wrapper
                       width={`calc(100% / 4)`}
                       ju={`flex-start`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
                         moveLinkHandler(`/p_network?type=LAN Cable`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FLAN%20Cable(Ethernet%20RJ-45%20Connector).svg?alt=media&token=009d72bc-d4e1-481a-a834-cc99d977072f`}
-                        width={width < 700 ? `100%` : `62px`}
-                        height={width < 700 ? `21px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `5px 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FLAN%20Cable(Ethernet%20RJ-45%20Connector).svg?alt=media&token=009d72bc-d4e1-481a-a834-cc99d977072f`}
+                          width={width < 700 ? `52px` : `62px`}
+                          height={width < 700 ? `17px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Wrapper>
                         <Text
                           fontWeight={`300`}
@@ -494,14 +513,19 @@ const MM03Presenter = ({
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/p_network?type=RJ45`)}
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-1.svg?alt=media&token=0a8d29c2-5035-49b2-95e3-c2350f6d2436`}
-                        width={width < 700 ? `26px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-1.svg?alt=media&token=0a8d29c2-5035-49b2-95e3-c2350f6d2436`}
+                          width={width < 700 ? `26px` : `62px`}
+                          height={width < 700 ? `23px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -525,14 +549,19 @@ const MM03Presenter = ({
                         moveLinkHandler(`/p_network?type=SFP/QSFP`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
-                        width={width < 700 ? `30px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
+                          width={width < 700 ? `30px` : `62px`}
+                          height={width < 700 ? `26px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -556,14 +585,19 @@ const MM03Presenter = ({
                         moveLinkHandler(`/p_network?type=SFP/QSFP`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
-                        width={width < 700 ? `31px` : `62px`}
-                        height={width < 700 ? `23px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
+                          width={width < 700 ? `31px` : `62px`}
+                          height={width < 700 ? `23px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -615,8 +649,8 @@ const MM03Presenter = ({
                   width={width < 700 ? `100%` : `40%`}
                 >
                   <Text
-                    fontSize={width < 700 ? `10px` : `20px`}
-                    margin={width < 700 ? `0 0 10px` : `0 0 20px`}
+                    fontSize={width < 700 ? `12px` : `20px`}
+                    margin={width < 700 ? `0 0 10px 5px` : `0 0 20px`}
                   >
                     USB
                   </Text>
@@ -630,7 +664,6 @@ const MM03Presenter = ({
                   >
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4 )` : `calc(100% / 2)`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/usb?type=USB Type-A`)}
                     >
@@ -652,7 +685,6 @@ const MM03Presenter = ({
                     </Wrapper>
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4 )` : `calc(100% / 2)`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/usb?type=USB Type-C`)}
                     >
@@ -660,7 +692,7 @@ const MM03Presenter = ({
                         alt="icon"
                         src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%202.svg?alt=media&token=7d1527f3-0dda-4d00-991e-d3e8c64f094a`}
                         width={width < 700 ? `44px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
+                        height={width < 700 ? `15px` : `40px`}
                         objectFit={`contain`}
                         margin={width < 700 ? `0 0 10px` : `0 0 20px`}
                       />
@@ -680,8 +712,8 @@ const MM03Presenter = ({
                   width={width < 700 ? `100%` : `60%`}
                 >
                   <Text
-                    fontSize={width < 700 ? `10px` : `20px`}
-                    margin={width < 700 ? `15px 0 10px` : `0 0 20px`}
+                    fontSize={width < 700 ? `12px` : `20px`}
+                    margin={width < 700 ? `15px 0 10px 5px` : `0 0 20px`}
                   >
                     Network
                   </Text>
@@ -693,20 +725,24 @@ const MM03Presenter = ({
                     <Wrapper
                       width={`calc(100% / 4)`}
                       ju={`flex-start`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
                         moveLinkHandler(`/p_network?type=LAN Cable`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FLAN%20Cable(Ethernet%20RJ-45%20Connector).svg?alt=media&token=009d72bc-d4e1-481a-a834-cc99d977072f`}
-                        width={width < 700 ? `100%` : `62px`}
-                        height={width < 700 ? `21px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `5px 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FLAN%20Cable(Ethernet%20RJ-45%20Connector).svg?alt=media&token=009d72bc-d4e1-481a-a834-cc99d977072f`}
+                          width={width < 700 ? `52px` : `62px`}
+                          height={width < 700 ? `17px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Wrapper>
                         <Text
                           fontWeight={`300`}
@@ -730,14 +766,19 @@ const MM03Presenter = ({
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/p_network?type=RJ45`)}
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-1.svg?alt=media&token=0a8d29c2-5035-49b2-95e3-c2350f6d2436`}
-                        width={width < 700 ? `26px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-1.svg?alt=media&token=0a8d29c2-5035-49b2-95e3-c2350f6d2436`}
+                          width={width < 700 ? `26px` : `62px`}
+                          height={width < 700 ? `23px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -761,14 +802,19 @@ const MM03Presenter = ({
                         moveLinkHandler(`/p_network?type=SFP/QSFP`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
-                        width={width < 700 ? `30px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
+                          width={width < 700 ? `30px` : `62px`}
+                          height={width < 700 ? `26px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -792,14 +838,19 @@ const MM03Presenter = ({
                         moveLinkHandler(`/p_network?type=SFP/QSFP`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
-                        width={width < 700 ? `31px` : `62px`}
-                        height={width < 700 ? `23px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
+                          width={width < 700 ? `31px` : `62px`}
+                          height={width < 700 ? `23px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -854,8 +905,8 @@ const MM03Presenter = ({
                   width={width < 700 ? `100%` : `45%`}
                 >
                   <Text
-                    fontSize={width < 700 ? `10px` : `20px`}
-                    margin={width < 700 ? `0 0 10px` : `0 0 20px`}
+                    fontSize={width < 700 ? `12px` : `20px`}
+                    margin={width < 700 ? `0 0 10px 5px` : `0 0 20px`}
                   >
                     USB
                   </Text>
@@ -869,7 +920,6 @@ const MM03Presenter = ({
                   >
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4 )` : `calc(100% / 2)`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/usb?type=USB Type-A`)}
                     >
@@ -891,7 +941,6 @@ const MM03Presenter = ({
                     </Wrapper>
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4 )` : `calc(100% / 2)`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/usb?type=USB Type-C`)}
                     >
@@ -899,7 +948,7 @@ const MM03Presenter = ({
                         alt="icon"
                         src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%202.svg?alt=media&token=7d1527f3-0dda-4d00-991e-d3e8c64f094a`}
                         width={width < 700 ? `44px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
+                        height={width < 700 ? `15px` : `40px`}
                         objectFit={`contain`}
                         margin={width < 700 ? `0 0 10px` : `0 0 20px`}
                       />
@@ -919,8 +968,8 @@ const MM03Presenter = ({
                   width={width < 700 ? `100%` : `55%`}
                 >
                   <Text
-                    fontSize={width < 700 ? `10px` : `20px`}
-                    margin={width < 700 ? `15px 0 10px` : `0 0 20px`}
+                    fontSize={width < 700 ? `12px` : `20px`}
+                    margin={width < 700 ? `15px 0 10px 5px` : `0 0 20px`}
                   >
                     Network
                   </Text>
@@ -932,20 +981,24 @@ const MM03Presenter = ({
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4)` : `calc(100% / 3)`}
                       ju={`flex-start`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
                         moveLinkHandler(`/p_network?type=LAN Cable`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FLAN%20Cable(Ethernet%20RJ-45%20Connector).svg?alt=media&token=009d72bc-d4e1-481a-a834-cc99d977072f`}
-                        width={width < 700 ? `100%` : `62px`}
-                        height={width < 700 ? `21px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `5px 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FLAN%20Cable(Ethernet%20RJ-45%20Connector).svg?alt=media&token=009d72bc-d4e1-481a-a834-cc99d977072f`}
+                          width={width < 700 ? `52px` : `62px`}
+                          height={width < 700 ? `17px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Wrapper>
                         <Text
                           fontWeight={`300`}
@@ -969,14 +1022,19 @@ const MM03Presenter = ({
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/p_network?type=RJ45`)}
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-1.svg?alt=media&token=0a8d29c2-5035-49b2-95e3-c2350f6d2436`}
-                        width={width < 700 ? `26px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-1.svg?alt=media&token=0a8d29c2-5035-49b2-95e3-c2350f6d2436`}
+                          width={width < 700 ? `26px` : `62px`}
+                          height={width < 700 ? `23px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -997,14 +1055,19 @@ const MM03Presenter = ({
                       width={`calc(100% / 4)`}
                       ju={`flex-start`}
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
-                        width={width < 700 ? `30px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
+                          width={width < 700 ? `30px` : `62px`}
+                          height={width < 700 ? `26px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -1028,14 +1091,19 @@ const MM03Presenter = ({
                         moveLinkHandler(`/p_network?type=SFP/QSFP`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
-                        width={width < 700 ? `31px` : `62px`}
-                        height={width < 700 ? `23px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
+                          width={width < 700 ? `31px` : `62px`}
+                          height={width < 700 ? `23px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -1097,8 +1165,8 @@ const MM03Presenter = ({
                   <Text
                     width={`100%`}
                     textAlign={width < 700 ? `left` : `center`}
-                    fontSize={width < 700 ? `10px` : `20px`}
-                    margin={width < 700 ? `0 0 10px` : `0 0 20px`}
+                    fontSize={width < 700 ? `12px` : `20px`}
+                    margin={width < 700 ? `0 0 10px 5px` : `0 0 20px`}
                     padding={width < 700 ? `0` : `0 65px 0 0`}
                   >
                     USB
@@ -1113,18 +1181,22 @@ const MM03Presenter = ({
                   >
                     <Wrapper
                       width={`calc(100% / 2)`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/usb?type=USB Type-A`)}
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FUSB(USB%20Type-A).svg?alt=media&token=67984156-1155-4aac-bf52-8063413d52ce`}
-                        width={width < 700 ? `42px` : `62px`}
-                        height={width < 700 ? `20px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `13px 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `44px`}
+                        height={width < 700 && `30px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FUSB(USB%20Type-A).svg?alt=media&token=67984156-1155-4aac-bf52-8063413d52ce`}
+                          width={width < 700 ? `39px` : `62px`}
+                          height={width < 700 ? `15px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0px 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -1135,18 +1207,22 @@ const MM03Presenter = ({
                     </Wrapper>
                     <Wrapper
                       width={`calc(100% / 2)`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/usb?type=USB Type-C`)}
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%202.svg?alt=media&token=7d1527f3-0dda-4d00-991e-d3e8c64f094a`}
-                        width={width < 700 ? `44px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `13px 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `44px`}
+                        height={width < 700 && `30px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%202.svg?alt=media&token=7d1527f3-0dda-4d00-991e-d3e8c64f094a`}
+                          width={width < 700 ? `44px` : `62px`}
+                          height={width < 700 ? `15px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -1159,33 +1235,41 @@ const MM03Presenter = ({
                 </Wrapper>
                 <Wrapper
                   width={`50%`}
+                  padding={`0 50px 0 0`}
                   display={width < 700 ? `block` : `none`}
                   onClick={() => moveLinkHandler(`/computer?type=Desktop`)}
                   cursor={`pointer`}
                 >
                   <Text
-                    fontSize={width < 700 ? `10px` : `20px`}
+                    fontSize={width < 700 ? `12px` : `20px`}
                     textAlign={`left`}
                     width={`100%`}
-                    margin={`0 0 10px`}
+                    margin={`0 0 10px 10px`}
                   >
                     Anti-Theft
                   </Text>
                   <Wrapper al={`flex-start`}>
-                    <Image
-                      alt="icon"
-                      src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FDesktop.svg?alt=media&token=805987e8-470c-4835-9c89-3c2094c16978`}
-                      width={width < 700 ? `32px` : `auto`}
-                      height={width < 700 ? `auto` : `40px`}
-                      margin={`0 0 10px`}
-                    />
-                    <Text
-                      fontWeight={`300`}
-                      fontSize={width < 700 ? `8px` : `16px`}
-                      lineHeight={width < 700 && `1.3`}
-                    >
-                      Desktop
-                    </Text>
+                    <Wrapper width={`calc(100% / 2)`}>
+                      <Wrapper
+                        width={width < 700 && `44px`}
+                        height={width < 700 && `30px`}
+                      >
+                        <Image
+                          alt="icon"
+                          objectFit={`contain`}
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FDesktop.svg?alt=media&token=805987e8-470c-4835-9c89-3c2094c16978`}
+                          width={width < 700 ? `32px` : `auto`}
+                          height={width < 700 ? `27px` : `42px`}
+                        />
+                      </Wrapper>
+                      <Text
+                        fontWeight={`300`}
+                        fontSize={width < 700 ? `8px` : `16px`}
+                        lineHeight={width < 700 && `1.3`}
+                      >
+                        Desktop
+                      </Text>
+                    </Wrapper>
                   </Wrapper>
                 </Wrapper>
                 <Wrapper
@@ -1194,8 +1278,8 @@ const MM03Presenter = ({
                   padding={width < 700 && `0 50px`}
                 >
                   <Text
-                    fontSize={width < 700 ? `10px` : `20px`}
-                    margin={width < 700 ? `15px 0 10px` : `0 0 20px`}
+                    fontSize={width < 700 ? `12px` : `20px`}
+                    margin={width < 700 ? `15px 0 10px 5px` : `0 0 20px`}
                   >
                     Network
                   </Text>
@@ -1210,20 +1294,24 @@ const MM03Presenter = ({
                     <Wrapper
                       width={`calc(100% / 4)`}
                       ju={`flex-start`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
                         moveLinkHandler(`/p_network?type=LAN Cable`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FLAN%20Cable(Ethernet%20RJ-45%20Connector).svg?alt=media&token=009d72bc-d4e1-481a-a834-cc99d977072f`}
-                        width={width < 700 ? `100%` : `62px`}
-                        height={width < 700 ? `21px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `5px 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FLAN%20Cable(Ethernet%20RJ-45%20Connector).svg?alt=media&token=009d72bc-d4e1-481a-a834-cc99d977072f`}
+                          width={width < 700 ? `52px` : `62px`}
+                          height={width < 700 ? `17px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Wrapper>
                         <Text
                           fontWeight={`300`}
@@ -1247,14 +1335,19 @@ const MM03Presenter = ({
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/p_network?type=RJ45`)}
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-1.svg?alt=media&token=0a8d29c2-5035-49b2-95e3-c2350f6d2436`}
-                        width={width < 700 ? `26px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-1.svg?alt=media&token=0a8d29c2-5035-49b2-95e3-c2350f6d2436`}
+                          width={width < 700 ? `26px` : `62px`}
+                          height={width < 700 ? `23px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -1278,14 +1371,19 @@ const MM03Presenter = ({
                         moveLinkHandler(`/p_network?type=SFP/QSFP`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
-                        width={width < 700 ? `30px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
+                          width={width < 700 ? `30px` : `62px`}
+                          height={width < 700 ? `26px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -1309,14 +1407,19 @@ const MM03Presenter = ({
                         moveLinkHandler(`/p_network?type=SFP/QSFP`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
-                        width={width < 700 ? `31px` : `62px`}
-                        height={width < 700 ? `23px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
+                          width={width < 700 ? `31px` : `62px`}
+                          height={width < 700 ? `23px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -1401,8 +1504,8 @@ const MM03Presenter = ({
                   <Text
                     width={`100%`}
                     textAlign={width < 700 ? `left` : `center`}
-                    fontSize={width < 700 ? `10px` : `20px`}
-                    margin={width < 700 ? `0 0 10px` : `0 0 20px`}
+                    fontSize={width < 700 ? `12px` : `20px`}
+                    margin={width < 700 ? `0 0 10px 5px` : `0 0 20px`}
                     padding={width < 700 ? `0` : `0 65px 0 0`}
                   >
                     USB
@@ -1417,18 +1520,22 @@ const MM03Presenter = ({
                   >
                     <Wrapper
                       width={`calc(100% / 2)`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/usb?type=USB Type-A`)}
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FUSB(USB%20Type-A).svg?alt=media&token=67984156-1155-4aac-bf52-8063413d52ce`}
-                        width={width < 700 ? `42px` : `62px`}
-                        height={width < 700 ? `20px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `13px 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `44px`}
+                        height={width < 700 && `30px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FUSB(USB%20Type-A).svg?alt=media&token=67984156-1155-4aac-bf52-8063413d52ce`}
+                          width={width < 700 ? `39px` : `62px`}
+                          height={width < 700 ? `15px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0px 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -1439,18 +1546,22 @@ const MM03Presenter = ({
                     </Wrapper>
                     <Wrapper
                       width={`calc(100% / 2)`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/usb?type=USB Type-C`)}
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%202.svg?alt=media&token=7d1527f3-0dda-4d00-991e-d3e8c64f094a`}
-                        width={width < 700 ? `44px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `13px 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `44px`}
+                        height={width < 700 && `30px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%202.svg?alt=media&token=7d1527f3-0dda-4d00-991e-d3e8c64f094a`}
+                          width={width < 700 ? `44px` : `62px`}
+                          height={width < 700 ? `15px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -1463,33 +1574,41 @@ const MM03Presenter = ({
                 </Wrapper>
                 <Wrapper
                   width={`50%`}
+                  padding={`0 50px 0 0`}
                   display={width < 700 ? `block` : `none`}
                   onClick={() => moveLinkHandler(`/computer?type=Desktop`)}
                   cursor={`pointer`}
                 >
                   <Text
-                    fontSize={width < 700 ? `10px` : `20px`}
+                    fontSize={width < 700 ? `12px` : `20px`}
                     textAlign={`left`}
                     width={`100%`}
-                    margin={`0 0 10px`}
+                    margin={`0 0 10px 10px`}
                   >
                     Anti-Theft
                   </Text>
                   <Wrapper al={`flex-start`}>
-                    <Image
-                      alt="icon"
-                      src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FDesktop.svg?alt=media&token=805987e8-470c-4835-9c89-3c2094c16978`}
-                      width={width < 700 ? `32px` : `auto`}
-                      height={width < 700 ? `auto` : `42px`}
-                      margin={`0 0 10px`}
-                    />
-                    <Text
-                      fontWeight={`300`}
-                      fontSize={width < 700 ? `8px` : `16px`}
-                      lineHeight={width < 700 && `1.3`}
-                    >
-                      Desktop
-                    </Text>
+                    <Wrapper width={`calc(100% / 2)`}>
+                      <Wrapper
+                        width={width < 700 && `44px`}
+                        height={width < 700 && `30px`}
+                      >
+                        <Image
+                          alt="icon"
+                          objectFit={`contain`}
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FDesktop.svg?alt=media&token=805987e8-470c-4835-9c89-3c2094c16978`}
+                          width={width < 700 ? `32px` : `auto`}
+                          height={width < 700 ? `27px` : `42px`}
+                        />
+                      </Wrapper>
+                      <Text
+                        fontWeight={`300`}
+                        fontSize={width < 700 ? `8px` : `16px`}
+                        lineHeight={width < 700 && `1.3`}
+                      >
+                        Desktop
+                      </Text>
+                    </Wrapper>
                   </Wrapper>
                 </Wrapper>
                 <Wrapper
@@ -1498,8 +1617,8 @@ const MM03Presenter = ({
                   padding={width < 700 && `0 50px`}
                 >
                   <Text
-                    fontSize={width < 700 ? `10px` : `20px`}
-                    margin={width < 700 ? `15px 0 10px` : `0 0 20px`}
+                    fontSize={width < 700 ? `12px` : `20px`}
+                    margin={width < 700 ? `15px 0 10px 5px` : `0 0 20px`}
                   >
                     Network
                   </Text>
@@ -1515,19 +1634,23 @@ const MM03Presenter = ({
                       width={`calc(100% / 4)`}
                       ju={`flex-start`}
                       cursor={`pointer`}
-                      al={width < 700 && `flex-start`}
                       onClick={() =>
                         moveLinkHandler(`/p_network?type=LAN Cable`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FLAN%20Cable(Ethernet%20RJ-45%20Connector).svg?alt=media&token=009d72bc-d4e1-481a-a834-cc99d977072f`}
-                        width={width < 700 ? `100%` : `62px`}
-                        height={width < 700 ? `21px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `5px 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FLAN%20Cable(Ethernet%20RJ-45%20Connector).svg?alt=media&token=009d72bc-d4e1-481a-a834-cc99d977072f`}
+                          width={width < 700 ? `52px` : `62px`}
+                          height={width < 700 ? `17px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Wrapper>
                         <Text
                           fontWeight={`300`}
@@ -1551,14 +1674,19 @@ const MM03Presenter = ({
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/p_network?type=RJ45`)}
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-1.svg?alt=media&token=0a8d29c2-5035-49b2-95e3-c2350f6d2436`}
-                        width={width < 700 ? `26px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-1.svg?alt=media&token=0a8d29c2-5035-49b2-95e3-c2350f6d2436`}
+                          width={width < 700 ? `26px` : `62px`}
+                          height={width < 700 ? `23px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -1582,14 +1710,19 @@ const MM03Presenter = ({
                         moveLinkHandler(`/p_network?type=SFP/QSFP`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
-                        width={width < 700 ? `30px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
+                          width={width < 700 ? `30px` : `62px`}
+                          height={width < 700 ? `26px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -1613,14 +1746,19 @@ const MM03Presenter = ({
                         moveLinkHandler(`/p_network?type=SFP/QSFP`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
-                        width={width < 700 ? `31px` : `62px`}
-                        height={width < 700 ? `23px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
+                          width={width < 700 ? `31px` : `62px`}
+                          height={width < 700 ? `23px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -1699,12 +1837,12 @@ const MM03Presenter = ({
               <Wrapper margin={`15px 0 0`} dr={`row`} al={`flex-start`}>
                 <Wrapper
                   width={width < 700 ? `100%` : `45%`}
-                  padding={width < 700 && `0 90px`}
+                  padding={width < 700 && `0 85px`}
                   al={width < 700 && `flex-start`}
                 >
                   <Text
-                    fontSize={width < 700 ? `10px` : `20px`}
-                    margin={width < 700 ? `0 0 10px` : `0 0 20px`}
+                    fontSize={width < 700 ? `12px` : `20px`}
+                    margin={width < 700 ? `0 0 10px 5px` : `0 0 20px`}
                   >
                     USB
                   </Text>
@@ -1718,7 +1856,6 @@ const MM03Presenter = ({
                   >
                     <Wrapper
                       width={width < 700 ? `calc(100% / 3 )` : `calc(100% / 2)`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/usb?type=USB Type-A`)}
                     >
@@ -1748,7 +1885,7 @@ const MM03Presenter = ({
                         alt="icon"
                         src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%202.svg?alt=media&token=7d1527f3-0dda-4d00-991e-d3e8c64f094a`}
                         width={width < 700 ? `44px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
+                        height={width < 700 ? `15px` : `40px`}
                         objectFit={`contain`}
                         margin={width < 700 ? `0 0 10px` : `0 0 20px`}
                       />
@@ -1764,12 +1901,12 @@ const MM03Presenter = ({
                 </Wrapper>
                 <Wrapper
                   width={width < 700 ? `100%` : `55%`}
-                  padding={width < 700 && `0 90px`}
+                  padding={width < 700 && `0 85px`}
                   al={width < 700 && `flex-start`}
                 >
                   <Text
-                    fontSize={width < 700 ? `10px` : `20px`}
-                    margin={width < 700 ? `15px 0 10px` : `0 0 20px`}
+                    fontSize={width < 700 ? `12px` : `20px`}
+                    margin={width < 700 ? `15px 0 10px 5px` : `0 0 20px`}
                   >
                     Network
                   </Text>
@@ -1781,20 +1918,24 @@ const MM03Presenter = ({
                     <Wrapper
                       width={`calc(100% / 3)`}
                       ju={`flex-start`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
                         moveLinkHandler(`/p_network?type=LAN Cable`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FLAN%20Cable(Ethernet%20RJ-45%20Connector).svg?alt=media&token=009d72bc-d4e1-481a-a834-cc99d977072f`}
-                        width={width < 700 ? `100%` : `62px`}
-                        height={width < 700 ? `21px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `5px 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FLAN%20Cable(Ethernet%20RJ-45%20Connector).svg?alt=media&token=009d72bc-d4e1-481a-a834-cc99d977072f`}
+                          width={width < 700 ? `52px` : `62px`}
+                          height={width < 700 ? `17px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Wrapper>
                         <Text
                           fontWeight={`300`}
@@ -1818,14 +1959,19 @@ const MM03Presenter = ({
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/p_network?type=RJ45`)}
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-1.svg?alt=media&token=0a8d29c2-5035-49b2-95e3-c2350f6d2436`}
-                        width={width < 700 ? `52px` : `62px`}
-                        height={width < 700 ? `26px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FLAN%20Cable(Ethernet%20RJ-45%20Connector).svg?alt=media&token=009d72bc-d4e1-481a-a834-cc99d977072f`}
+                          width={width < 700 ? `52px` : `62px`}
+                          height={width < 700 ? `17px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -1850,14 +1996,19 @@ const MM03Presenter = ({
                         moveLinkHandler(`/p_network?type=SFP/QSFP`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
-                        width={width < 700 ? `52px` : `62px`}
-                        height={width < 700 ? `26px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
+                          width={width < 700 ? `31px` : `62px`}
+                          height={width < 700 ? `23px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -1914,8 +2065,8 @@ const MM03Presenter = ({
                   padding={width < 700 && `0 30px`}
                 >
                   <Text
-                    fontSize={width < 700 ? `10px` : `20px`}
-                    margin={width < 700 ? `0 0 10px` : `0 0 20px`}
+                    fontSize={width < 700 ? `12px` : `20px`}
+                    margin={width < 700 ? `0 0 10px 5px` : `0 0 20px`}
                     padding={`0 65px 0 0`}
                   >
                     USB
@@ -1930,15 +2081,14 @@ const MM03Presenter = ({
                   >
                     <Wrapper
                       width={width < 700 ? `calc(100% / 5 )` : `calc(100% / 2)`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/usb?type=USB Type-A`)}
                     >
                       <Image
                         alt="icon"
                         src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FUSB(USB%20Type-A).svg?alt=media&token=67984156-1155-4aac-bf52-8063413d52ce`}
-                        width={width < 700 ? `80%` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
+                        width={width < 700 ? `39px` : `62px`}
+                        height={width < 700 ? `15px` : `40px`}
                         objectFit={`contain`}
                         margin={width < 700 ? `0 0 10px` : `0 0 20px`}
                       />
@@ -1958,8 +2108,8 @@ const MM03Presenter = ({
                       <Image
                         alt="icon"
                         src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%202.svg?alt=media&token=7d1527f3-0dda-4d00-991e-d3e8c64f094a`}
-                        width={width < 700 ? `80%` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
+                        width={width < 700 ? `44px` : `62px`}
+                        height={width < 700 ? `15px` : `40px`}
                         objectFit={`contain`}
                         margin={width < 700 ? `0 0 10px` : `0 0 20px`}
                       />
@@ -1979,8 +2129,8 @@ const MM03Presenter = ({
                   padding={width < 700 && `0 30px`}
                 >
                   <Text
-                    fontSize={width < 700 ? `10px` : `20px`}
-                    margin={width < 700 ? `15px 0 10px` : `0 0 20px`}
+                    fontSize={width < 700 ? `12px` : `20px`}
+                    margin={width < 700 ? `15px 0 10px 5px` : `0 0 20px`}
                     padding={width < 700 ? `0` : `0 0 0 65px`}
                   >
                     Network
@@ -1992,19 +2142,20 @@ const MM03Presenter = ({
                     cursor={`pointer`}
                     onClick={() => moveLinkHandler(`/p_network?type=LAN Cable`)}
                   >
-                    <Wrapper
-                      width={`calc(100% / 5)`}
-                      ju={`flex-start`}
-                      al={width < 700 && `flex-start`}
-                    >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FLAN%20Cable(Ethernet%20RJ-45%20Connector).svg?alt=media&token=009d72bc-d4e1-481a-a834-cc99d977072f`}
-                        width={width < 700 ? `100%` : `62px`}
-                        height={width < 700 ? `21px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `5px 0 10px` : `0 0 20px`}
-                      />
+                    <Wrapper width={`calc(100% / 5)`} ju={`flex-start`}>
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FLAN%20Cable(Ethernet%20RJ-45%20Connector).svg?alt=media&token=009d72bc-d4e1-481a-a834-cc99d977072f`}
+                          width={width < 700 ? `52px` : `62px`}
+                          height={width < 700 ? `17px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Wrapper>
                         <Text
                           fontWeight={`300`}
@@ -2028,14 +2179,19 @@ const MM03Presenter = ({
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/p_network?type=RJ45`)}
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-1.svg?alt=media&token=0a8d29c2-5035-49b2-95e3-c2350f6d2436`}
-                        width={width < 700 ? `26px` : `62px`}
-                        height={width < 700 ? `26px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-1.svg?alt=media&token=0a8d29c2-5035-49b2-95e3-c2350f6d2436`}
+                          width={width < 700 ? `26px` : `62px`}
+                          height={width < 700 ? `23px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -2052,14 +2208,19 @@ const MM03Presenter = ({
                       </Text>
                     </Wrapper>
                     <Wrapper width={`calc(100% / 5)`} ju={`flex-start`}>
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
-                        width={width < 700 ? `30px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
+                          width={width < 700 ? `30px` : `62px`}
+                          height={width < 700 ? `26px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -2083,14 +2244,19 @@ const MM03Presenter = ({
                         moveLinkHandler(`/p_network?type=SFP/QSFP`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
-                        width={width < 700 ? `31px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
+                          width={width < 700 ? `31px` : `62px`}
+                          height={width < 700 ? `23px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -2100,14 +2266,19 @@ const MM03Presenter = ({
                       </Text>
                     </Wrapper>
                     <Wrapper width={`calc(100% / 5)`} ju={`flex-start`}>
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Fexample%2FRF%20Module%20(N%3AM%20Type).png?alt=media&token=14ee06df-d379-4c24-bd7b-e718c1a55864`}
-                        width={width < 700 ? `27px` : `62px`}
-                        height={width < 700 ? `26px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Fexample%2FRF%20Module%20(N%3AM%20Type).png?alt=media&token=14ee06df-d379-4c24-bd7b-e718c1a55864`}
+                          width={width < 700 ? `35px` : `62px`}
+                          height={width < 700 ? `18px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0 0 10px` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -2170,8 +2341,8 @@ const MM03Presenter = ({
                   width={width < 700 ? `100%` : `40%`}
                 >
                   <Text
-                    fontSize={width < 700 ? `10px` : `20px`}
-                    margin={width < 700 ? `0 0 10px` : `0 0 20px`}
+                    fontSize={width < 700 ? `12px` : `20px`}
+                    margin={width < 700 ? `0 0 10px 5px` : `0 0 20px`}
                   >
                     USB
                   </Text>
@@ -2185,15 +2356,14 @@ const MM03Presenter = ({
                   >
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4 )` : `calc(100% / 2)`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/usb?type=USB Type-A`)}
                     >
                       <Image
                         alt="icon"
                         src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FUSB(USB%20Type-A).svg?alt=media&token=67984156-1155-4aac-bf52-8063413d52ce`}
-                        width={width < 700 ? `52px` : `62px`}
-                        height={width < 700 ? `26px` : `40px`}
+                        width={width < 700 ? `39px` : `62px`}
+                        height={width < 700 ? `15px` : `40px`}
                         objectFit={`contain`}
                         margin={width < 700 ? `0 0 10px` : `0 0 20px`}
                       />
@@ -2207,15 +2377,14 @@ const MM03Presenter = ({
                     </Wrapper>
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4 )` : `calc(100% / 2)`}
-                      al={width < 700 && `flex-start`}
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/usb?type=USB Type-C`)}
                     >
                       <Image
                         alt="icon"
                         src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%202.svg?alt=media&token=7d1527f3-0dda-4d00-991e-d3e8c64f094a`}
-                        width={width < 700 ? `52px` : `62px`}
-                        height={width < 700 ? `26px` : `40px`}
+                        width={width < 700 ? `44px` : `62px`}
+                        height={width < 700 ? `15px` : `40px`}
                         objectFit={`contain`}
                         margin={width < 700 ? `0 0 10px` : `0 0 20px`}
                       />
@@ -2235,8 +2404,8 @@ const MM03Presenter = ({
                   width={width < 700 ? `100%` : `60%`}
                 >
                   <Text
-                    fontSize={width < 700 ? `10px` : `20px`}
-                    margin={width < 700 ? `15px 0 10px` : `0 0 20px`}
+                    fontSize={width < 700 ? `12px` : `20px`}
+                    margin={width < 700 ? `15px 0 10px 5px` : `0 0 20px`}
                   >
                     Network
                   </Text>
@@ -2249,19 +2418,23 @@ const MM03Presenter = ({
                       width={`calc(100% / 4)`}
                       ju={`flex-start`}
                       cursor={`pointer`}
-                      al={width < 700 && `flex-start`}
                       onClick={() =>
                         moveLinkHandler(`/p_network?type=LAN Cable`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FLAN%20Cable(Ethernet%20RJ-45%20Connector).svg?alt=media&token=009d72bc-d4e1-481a-a834-cc99d977072f`}
-                        width={width < 700 ? `100%` : `62px`}
-                        height={width < 700 ? `21px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `5px 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FLAN%20Cable(Ethernet%20RJ-45%20Connector).svg?alt=media&token=009d72bc-d4e1-481a-a834-cc99d977072f`}
+                          width={width < 700 ? `52px` : `62px`}
+                          height={width < 700 ? `17px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Wrapper>
                         <Text
                           fontWeight={`300`}
@@ -2285,14 +2458,19 @@ const MM03Presenter = ({
                       cursor={`pointer`}
                       onClick={() => moveLinkHandler(`/p_network?type=RJ45`)}
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-1.svg?alt=media&token=0a8d29c2-5035-49b2-95e3-c2350f6d2436`}
-                        width={width < 700 ? `26px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-1.svg?alt=media&token=0a8d29c2-5035-49b2-95e3-c2350f6d2436`}
+                          width={width < 700 ? `26px` : `62px`}
+                          height={width < 700 ? `23px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -2316,14 +2494,19 @@ const MM03Presenter = ({
                         moveLinkHandler(`/p_network?type=SFP/QSFP`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
-                        width={width < 700 ? `30px` : `62px`}
-                        height={width < 700 ? `auto` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2F%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%20-2.svg?alt=media&token=0be31c59-b013-46bd-8910-bf3c31af0cc7`}
+                          width={width < 700 ? `30px` : `62px`}
+                          height={width < 700 ? `26px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
@@ -2347,14 +2530,19 @@ const MM03Presenter = ({
                         moveLinkHandler(`/p_network?type=SFP/QSFP`)
                       }
                     >
-                      <Image
-                        alt="icon"
-                        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
-                        width={width < 700 ? `31px` : `62px`}
-                        height={width < 700 ? `23px` : `40px`}
-                        objectFit={`contain`}
-                        margin={width < 700 ? `0 0 10px` : `0 0 20px`}
-                      />
+                      <Wrapper
+                        width={width < 700 && `52px`}
+                        height={width < 700 && `26px`}
+                      >
+                        <Image
+                          alt="icon"
+                          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon-w%2FSFP.svg?alt=media&token=c9ea29ae-75f1-4d1c-9f03-647a9e6a0f8e`}
+                          width={width < 700 ? `31px` : `62px`}
+                          height={width < 700 ? `23px` : `40px`}
+                          objectFit={`contain`}
+                          margin={width < 700 ? `0` : `0 0 20px`}
+                        />
+                      </Wrapper>
                       <Text
                         fontWeight={`300`}
                         fontSize={width < 700 ? `8px` : `16px`}
