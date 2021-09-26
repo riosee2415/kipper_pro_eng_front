@@ -149,7 +149,7 @@ const MM14Presenter = ({
               </Wrapper>
             );
           })}
-          {ableIcon &&
+          {ableIcon !== null &&
             point.map((data, idx) => {
               return (
                 <Wrapper
