@@ -26,6 +26,12 @@ const Popup = ({ cookies, width }) => {
     popup.style.display = "none";
   };
 
+  const moveURLHandler = (url) => {
+    if (!url) return;
+
+    window.open(url, "_blank");
+  };
+
   return (
     <Wrapper>
       {popupDatum &&
@@ -47,6 +53,8 @@ const Popup = ({ cookies, width }) => {
                 width > 900 ? `${idx * 30}px ${idx * 30}px 0 0` : `0 -175px 0 0`
               }
               width={width < 700 ? `350px` : `560px`}
+              cursor={`pointer`}
+              onClick={() => moveURLHandler(data.link)}
             >
               <Wrapper>
                 <Image

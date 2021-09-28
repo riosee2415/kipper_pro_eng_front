@@ -235,6 +235,7 @@ const MM14Container = ({ history }) => {
   ];
 
   ////////////// - USE REF- ///////////////
+  const wholeRef = useRef();
 
   ////////////// - USE STATE- ///////////////
 
@@ -252,12 +253,58 @@ const MM14Container = ({ history }) => {
     scroll.scrollTo(0);
   }, []);
 
+  useEffect(() => {
+    setTimeout(() => {
+      if (wholeRef.current) {
+        let html = "";
+
+        let s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "//wcs.naver.net/wcslog.js";
+
+        wholeRef.current.appendChild(s);
+
+        s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+
+        html = `
+          var _nasa={};
+          if(window.wcs) _nasa["cnv"] = wcs.cnv("1","10"); 
+        `;
+        s.innerHTML = html;
+
+        wholeRef.current.appendChild(s);
+
+        s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "//wsa.mig-log.com/wsalog.js";
+
+        wholeRef.current.appendChild(s);
+
+        s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+
+        html = `
+           wsa.cnv('1',1000,'UwUMMFC');
+        `;
+        s.innerHTML = html;
+
+        wholeRef.current.appendChild(s);
+      }
+    }, 3000);
+  }, [wholeRef.current]);
+
   return (
     <MM14Presenter
       point={point}
       map={map}
       //
-
+      wholeRef={wholeRef}
+      //
       ableIcon={ableIcon}
       setAbleIcon={setAbleIcon}
       //

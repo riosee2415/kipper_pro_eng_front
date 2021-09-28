@@ -60,6 +60,8 @@ const MM14Presenter = ({
   point,
   map,
   //
+  wholeRef,
+  //
   ableIcon,
   setAbleIcon,
 }) => {
@@ -67,6 +69,7 @@ const MM14Presenter = ({
 
   return (
     <WholeWrapper
+      ref={wholeRef}
       bgColor={Theme.black_C}
       color={Theme.white_C}
       padding={`0 0 200px`}

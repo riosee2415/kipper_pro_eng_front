@@ -7,6 +7,7 @@ export const GET_POPUP_ALL = gql`
       title
       thumbnailPath
       onoff
+      link
     }
   }
 `;
