@@ -210,6 +210,8 @@ const MM01Presenter = ({
     let tempOffset3 = tab1Ref.current.offsetHeight * 3;
     let tempOffset4 = tab1Ref.current.offsetHeight * 4;
 
+    console.log(tab3Ref.current.offsetTop, tempOffset2);
+
     if (!isCheck1 && tempOffset1 < pageYOffset) {
       setTimeout(() => {
         setIsCheck1(true);
@@ -241,9 +243,7 @@ const MM01Presenter = ({
       return;
     }
 
-    const value = isFinish ? 50 : 50;
-
-    console.log(window.scrollY - value);
+    const value = isFinish ? 5 : 25;
 
     if (e.wheelDeltaY > 0) {
       window.scrollTo(0, window.scrollY - value);
