@@ -1503,9 +1503,9 @@ const MM09Presenter = ({
                   >
                     sales@comxi.com
                   </ATag> */}
-                  We sell
-                  <SpanText fontWeight={`700`}>SMARTKEEPER PRO</SpanText> only
-                  to verified B2B clients. Click
+                  We sell&nbsp;
+                  <SpanText fontWeight={`700`}>SMARTKEEPER PRO</SpanText>
+                  &nbsp;only to verified B2B clients. Click
                   <SpanText
                     color={`rgb(15, 152, 255)`}
                     cursor={`pointer`}
@@ -1534,9 +1534,9 @@ const MM09Presenter = ({
                   letterSpacing={`-0.03em`}
                   lineHeight={`1.36`}
                 >
-                  We sell
-                  <SpanText fontWeight={`700`}>SMARTKEEPER PRO</SpanText> only
-                  to verified B2B clients. Click
+                  We sell&nbsp;
+                  <SpanText fontWeight={`700`}>SMARTKEEPER PRO</SpanText>
+                  &nbsp;only to verified B2B clients. Click
                   <SpanText
                     color={`rgb(15, 152, 255)`}
                     cursor={`pointer`}

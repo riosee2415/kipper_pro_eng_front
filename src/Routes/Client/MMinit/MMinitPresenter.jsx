@@ -470,8 +470,8 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
               perfect.
             </Text>
             <Text fontSize={`20px`} fontWeight={`300`}>
-              SMARTKEEPER is committed to setting the standard in physical cyber
-              security.
+              SMARTKEEPER is committed to setting the standard in physical
+              cybersecurity.
             </Text>
           </Wrapper>
 
@@ -542,7 +542,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
               letterSpacing={`-0.2px`}
               fontWeight={`300`}
             >
-              the standard in physical cyber security.
+              the standard in physical cybersecurity.
             </Text>
           </Wrapper>
 
