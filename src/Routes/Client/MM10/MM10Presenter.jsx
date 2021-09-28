@@ -8,6 +8,7 @@ import {
   Image,
   EmptyList,
   SpanText,
+  ATag,
 } from "../../../Components/CommonComponents";
 import styled from "styled-components";
 import { withResizeDetector } from "react-resize-detector";
@@ -714,7 +715,11 @@ const MM10Presenter = ({
             color={Theme.white_C}
             display={width < 900 ? `none` : `flex`}
           >
-            Please contact us at global_sales@comxi.com.
+            Please contact us at&nbsp;
+            <ATag width={`auto`} href={`mailto:global_sales@comxi.com`}>
+              global_sales@comxi.com
+            </ATag>
+            .
           </Text>
           <Text
             fontSize={`20px`}
