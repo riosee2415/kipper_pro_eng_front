@@ -62,10 +62,12 @@ const MM13Container = () => {
     const answer = document.getElementById(`faq-answer-${id}`);
     const faq = document.getElementById(`faq-${id}`);
 
-    scroll.scrollTo(faq.offsetTop - 300);
-
     answer.innerHTML = content;
     setActionFaqView(currentFaqAction);
+
+    setTimeout(() => {
+      scroll.scrollTo(faq.offsetTop - 300);
+    }, 100);
   };
 
   const changeFaqTypeHandler = (type) => {
