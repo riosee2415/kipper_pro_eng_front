@@ -23,7 +23,7 @@ const Dot = styled(Wrapper)`
     display: none;
   }
 
-  :hover img {
+  &:hover img {
     display: flex;
   }
 
