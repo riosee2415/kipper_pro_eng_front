@@ -59,6 +59,8 @@ const MM14Presenter = ({
   //
   point,
   map,
+  overMap,
+  setOverMap,
   //
   wholeRef,
   //
@@ -117,7 +119,15 @@ const MM14Presenter = ({
         <Wrapper isRelative={true}>
           <Image
             width={`100%`}
-            src={map[ableIcon !== null ? point[ableIcon].map : 0]}
+            src={
+              map[
+                overMap !== 0
+                  ? overMap
+                  : ableIcon !== null
+                  ? point[ableIcon].map
+                  : 0
+              ]
+            }
           />
           {point.map((data, idx) => {
             return (
@@ -137,6 +147,8 @@ const MM14Presenter = ({
                     bgColor={`#fff`}
                     delay={idx % 2 === 0 ? `0s` : `0.15s`}
                     onClick={() => setAbleIcon(idx)}
+                    onMouseOver={() => setOverMap(data.map)}
+                    onMouseOut={() => setOverMap(0)}
                     zIndex={`10`}
                   >
                     <Image

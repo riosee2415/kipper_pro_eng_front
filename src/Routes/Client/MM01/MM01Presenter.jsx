@@ -134,6 +134,7 @@ const MM01Presenter = ({
   const [isCheck2, setIsCheck2] = useState(false);
   const [isCheck3, setIsCheck3] = useState(false);
   const [isCheck4, setIsCheck4] = useState(false);
+  const [isCheck5, setIsCheck5] = useState(false);
 
   const handleScroll = () => {
     const { pageYOffset } = window;
@@ -192,9 +193,6 @@ const MM01Presenter = ({
 
       setPageY(pageYOffset);
       setFade(tempFade);
-    } else {
-      setIsEnd(false);
-      setIsFinish(false);
     }
   };
 
@@ -243,6 +241,16 @@ const MM01Presenter = ({
       return;
     }
 
+    if (!isCheck5 && tempOffset < pageYOffset) {
+      setTimeout(() => {
+        $("#app").off("scroll touchmove mousewheel");
+        setIsCheck5(true);
+        setIsEnd(false);
+        setIsFinish(false);
+      }, 1000);
+      return;
+    }
+
     const value = isFinish ? 5 : 25;
 
     if (e.wheelDeltaY > 0) {
@@ -264,7 +272,7 @@ const MM01Presenter = ({
         passive: false,
       });
     };
-  }, [pageY, isCheck1, isCheck2, isCheck3, isCheck4]);
+  }, [pageY, isCheck1, isCheck2, isCheck3, isCheck4, isCheck5]);
 
   useEffect(() => {
     scroll.scrollTo(0);

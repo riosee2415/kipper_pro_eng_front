@@ -240,7 +240,7 @@ const MM14Container = ({ history }) => {
   ////////////// - USE STATE- ///////////////
 
   const [ableIcon, setAbleIcon] = useState(null);
-
+  const [overMap, setOverMap] = useState(0);
   ////////////// - USE QUERY- ///////////////
 
   ///////////// - USE MUTATION- /////////////
@@ -302,6 +302,8 @@ const MM14Container = ({ history }) => {
     <MM14Presenter
       point={point}
       map={map}
+      overMap={overMap}
+      setOverMap={setOverMap}
       //
       wholeRef={wholeRef}
       //
