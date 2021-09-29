@@ -139,7 +139,7 @@ const MM01Presenter = ({
   const handleScroll = () => {
     const { pageYOffset } = window;
 
-    if (tab1Ref.current.offsetHeight * 4 >= pageYOffset) {
+    if (tab1Ref.current.offsetHeight * 4 + 50 >= pageYOffset) {
       setIsEnd(true);
 
       let currentOffset;
@@ -193,6 +193,9 @@ const MM01Presenter = ({
 
       setPageY(pageYOffset);
       setFade(tempFade);
+    } else {
+      setIsEnd(false);
+      setIsFinish(false);
     }
   };
 
@@ -245,13 +248,11 @@ const MM01Presenter = ({
       setTimeout(() => {
         $("#app").off("scroll touchmove mousewheel");
         setIsCheck5(true);
-        setIsEnd(false);
-        setIsFinish(false);
       }, 1000);
       return;
     }
 
-    const value = isFinish ? 5 : 25;
+    const value = isFinish ? 15 : 25;
 
     if (e.wheelDeltaY > 0) {
       window.scrollTo(0, window.scrollY - value);
@@ -279,6 +280,8 @@ const MM01Presenter = ({
 
     setHeight(heightRef.current.offsetHeight);
   }, []);
+
+  console.log(isEnd);
 
   return (
     <ParallaxProvider>
