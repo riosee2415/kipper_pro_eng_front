@@ -32,7 +32,7 @@ const Button5 = styled(Wrapper)`
   margin: 20px 0;
 
   &:after {
-    content: "게시판관리";
+    content: "주요제품 관리";
     position: absolute;
     background-color: ${Theme.basicTheme_C};
     color: ${Theme.white_C};
@@ -49,7 +49,7 @@ const Button5 = styled(Wrapper)`
   }
 
   &:before {
-    content: "게시판관리";
+    content: "주요제품 관리";
     position: absolute;
     border: 2px solid ${Theme.basicTheme_C};
     color: ${Theme.basicTheme_C};
@@ -84,7 +84,7 @@ const Button4 = styled(Wrapper)`
   margin: 20px 0;
 
   &:after {
-    content: "회원관리";
+    content: "토큰 회원관리";
     position: absolute;
     background-color: ${Theme.basicTheme_C};
     color: ${Theme.white_C};
@@ -101,7 +101,7 @@ const Button4 = styled(Wrapper)`
   }
 
   &:before {
-    content: "회원관리";
+    content: "토큰 회원관리";
     position: absolute;
     border: 2px solid ${Theme.basicTheme_C};
     color: ${Theme.basicTheme_C};
@@ -188,7 +188,7 @@ const Button2 = styled(Wrapper)`
   margin: 20px 0;
 
   &:after {
-    content: "메인베너관리";
+    content: "제품 관리";
     position: absolute;
     background-color: ${Theme.basicTheme_C};
     color: ${Theme.white_C};
@@ -205,7 +205,7 @@ const Button2 = styled(Wrapper)`
   }
 
   &:before {
-    content: "메인베너관리";
+    content: "제품 관리";
     position: absolute;
     border: 2px solid ${Theme.basicTheme_C};
     color: ${Theme.basicTheme_C};
@@ -385,7 +385,7 @@ export default () => {
         <Wrapper width={`70%`}>
           <Wrapper dr={`row`} ju={`space-around`}>
             <Wrapper width={`auto`}>
-              <Link to="/admin/mainBannerManagement">
+              <Link to="/admin/productManagement">
                 <Button2></Button2>
               </Link>
               <Wrapper
@@ -394,8 +394,8 @@ export default () => {
                 shadow={Theme.boxShadow}
                 padding={`50px 20px`}
               >
-                <Text fontWeight={`700`}>메인 페이지에 들어가는</Text>
-                <Text fontWeight={`700`}>슬라이드 이미지 관리</Text>
+                <Text fontWeight={`700`}>제품 등록,수정,삭제를 관리하는</Text>
+                <Text fontWeight={`700`}>제품 관리</Text>
               </Wrapper>
             </Wrapper>
             {/* ///////////팝업관리/////////// */}
@@ -420,7 +420,7 @@ export default () => {
           {/* /////////회원관리///////////// */}
           <Wrapper dr={`row`} ju={`space-around`}>
             <Wrapper width={`auto`}>
-              <Link to="/admin/userManagement">
+              <Link to="/admin/tokenManagement">
                 <Button4></Button4>
               </Link>
 
@@ -430,13 +430,15 @@ export default () => {
                 shadow={Theme.boxShadow}
                 padding={`50px 20px`}
               >
-                <Text fontWeight={`700`}>웹사이트를 이용중인</Text>
-                <Text fontWeight={`700`}>회원들의 정보관리</Text>
+                <Text fontWeight={`700`}>
+                  웹사이트를 이용할 유저를 생성시키는
+                </Text>
+                <Text fontWeight={`700`}>회원 토큰 관리</Text>
               </Wrapper>
             </Wrapper>
             {/* /////////게시판관리///////// */}
             <Wrapper width={`auto`}>
-              <Link to="/admin/noticeManagement">
+              <Link to="/admin/snsLinkManagement">
                 <Button5></Button5>
               </Link>
 
@@ -446,10 +448,8 @@ export default () => {
                 shadow={Theme.boxShadow}
                 padding={`50px 20px`}
               >
-                <Text fontWeight={`700`}>
-                  공지사항, 이벤트게시판, 자주 묻는 질문의
-                </Text>
-                <Text fontWeight={`700`}>게시글 삭제 또는 카테고리 관리</Text>
+                <Text fontWeight={`700`}>하단 푸터에 실시간으로 반영되는</Text>
+                <Text fontWeight={`700`}>주요제품 링크</Text>
               </Wrapper>
             </Wrapper>
           </Wrapper>
