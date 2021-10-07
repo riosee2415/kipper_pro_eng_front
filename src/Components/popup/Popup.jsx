@@ -60,9 +60,8 @@ const Popup = ({ cookies, width, mainWidth }) => {
               }
               width={width < 700 ? `350px` : `560px`}
               cursor={`pointer`}
-              onClick={() => moveURLHandler(data.link)}
             >
-              <Wrapper>
+              <Wrapper onClick={() => moveURLHandler(data.link)}>
                 <Image
                   src={data.thumbnailPath}
                   height={width < 700 ? `350px` : `560px`}
