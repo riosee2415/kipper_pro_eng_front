@@ -60,7 +60,7 @@ export default ({
               리스트는 최신 팝업를 기준으로 정렬됩니다.
             </GuideContent>
             <GuideContent padding={`5px`}>
-              팝업의 이미지는 330px X 450px로 지정되어 있습니다. 이미지 비율이
+              팝업의 이미지는 560px X 560px로 지정되어 있습니다. 이미지 비율이
               다르면 화면에 다르게보일 수 있습니다.
             </GuideContent>
             <GuideContent padding={`5px 5px 0px 5px`}>
