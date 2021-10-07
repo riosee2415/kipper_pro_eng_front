@@ -23,7 +23,7 @@ const Dot = styled(Wrapper)`
     display: none;
   }
 
-  :hover img {
+  &:hover img {
     display: flex;
   }
 
@@ -59,6 +59,8 @@ const MM14Presenter = ({
   //
   point,
   map,
+  overMap,
+  setOverMap,
   //
   wholeRef,
   //
@@ -91,33 +93,43 @@ const MM14Presenter = ({
           color={Theme.greyTheme7_C}
           display={width < 900 ? `none` : `flex`}
         >
-          Find a SMARTKEEPER distributor near your region
+          If there’s no partner in your region yet, please contact to&nbsp;
+          <a href={`mailto:global_sales@comxi.com`}>global_sales@comxi.com</a>.
         </Text>
         <Text
-          fontSize={`18px`}
+          fontSize={`15px`}
           color={Theme.greyTheme7_C}
           display={width < 900 ? `flex` : `none`}
           width={`100%`}
           textAlign={`left`}
-          padding={width < 900 && `0 36px`}
+          padding={width < 900 && `0 0 0 36px`}
         >
-          Find a SMARTKEEPER distributor
+          If there’s no partner in your region yet,
         </Text>
         <Text
           width={`100%`}
           textAlign={`left`}
-          padding={width < 900 && `0 36px 80px`}
-          fontSize={`18px`}
+          padding={width < 900 && `0 0px 80px 36px`}
+          fontSize={`15px`}
           color={Theme.greyTheme7_C}
           display={width < 900 ? `flex` : `none`}
         >
-          near your region
+          please contact to&nbsp;
+          <a href={`mailto:global_sales@comxi.com`}>global_sales@comxi.com</a>.
         </Text>
 
         <Wrapper isRelative={true}>
           <Image
             width={`100%`}
-            src={map[ableIcon !== null ? point[ableIcon].map : 0]}
+            src={
+              map[
+                overMap !== 0
+                  ? overMap
+                  : ableIcon !== null
+                  ? point[ableIcon].map
+                  : 0
+              ]
+            }
           />
           {point.map((data, idx) => {
             return (
@@ -137,6 +149,8 @@ const MM14Presenter = ({
                     bgColor={`#fff`}
                     delay={idx % 2 === 0 ? `0s` : `0.15s`}
                     onClick={() => setAbleIcon(idx)}
+                    onMouseOver={() => setOverMap(data.map)}
+                    onMouseOut={() => setOverMap(0)}
                     zIndex={`10`}
                   >
                     <Image
@@ -198,8 +212,10 @@ const MM14Presenter = ({
                           {/* data.mobile 등등 나오면 됨 */}
                           <Wrapper
                             isAbsolute={true}
-                            top={`68px`}
-                            left={`0`}
+                            isFixed={width < 900 ? true : false}
+                            transform={width < 900 ? `translateX(-50%)` : ``}
+                            top={width < 900 ? `60%` : `68px`}
+                            left={width < 900 ? `60%` : `0`}
                             padding={`0 25px`}
                             color={Theme.darkGrey_C}
                             al={`flex-start`}
@@ -325,7 +341,7 @@ const MM14Presenter = ({
                                   width={`auto`}
                                   href={`mailto:${data.email2}`}
                                 >
-                                  {data.email}
+                                  {data.email2}
                                 </ATag>
                               </Wrapper>
                             </Wrapper>

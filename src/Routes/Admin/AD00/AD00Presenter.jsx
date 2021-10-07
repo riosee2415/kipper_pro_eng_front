@@ -14,7 +14,7 @@ import Theme from "../../../Styles/Theme";
 const Box = styled(Wrapper)`
   width: 300px;
   height: 300px;
-  box-shadow: ${Theme.boxShadow};
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   justify-content: flex-end;
   padding: 10px;
 `;
@@ -24,7 +24,7 @@ const Title = styled(Text)`
 `;
 
 const Button5 = styled(Wrapper)`
-  width: ${(props) => props.width || `100px`};
+  width: ${(props) => props.width || `120px`};
   height: ${(props) => props.height || `40px`};
   border: 2px solid transparent;
   position: relative;
@@ -32,9 +32,9 @@ const Button5 = styled(Wrapper)`
   margin: 20px 0;
 
   &:after {
-    content: "게시판관리";
+    content: "주요제품관리";
     position: absolute;
-    background-color: ${Theme.basicTheme_C};
+    background-color: ${Theme.subTheme3_C};
     color: ${Theme.white_C};
     top: 0;
     left: 0;
@@ -49,10 +49,10 @@ const Button5 = styled(Wrapper)`
   }
 
   &:before {
-    content: "게시판관리";
+    content: "주요제품관리";
     position: absolute;
-    border: 2px solid ${Theme.basicTheme_C};
-    color: ${Theme.basicTheme_C};
+    border: 2px solid ${Theme.subTheme3_C};
+    color: ${Theme.subTheme3_C};
     top: 0;
     left: 0;
     width: 100%;
@@ -84,9 +84,9 @@ const Button4 = styled(Wrapper)`
   margin: 20px 0;
 
   &:after {
-    content: "회원관리";
+    content: "회원 관리";
     position: absolute;
-    background-color: ${Theme.basicTheme_C};
+    background-color: ${Theme.subTheme3_C};
     color: ${Theme.white_C};
     top: 0;
     left: 0;
@@ -101,10 +101,10 @@ const Button4 = styled(Wrapper)`
   }
 
   &:before {
-    content: "회원관리";
+    content: "회원 관리";
     position: absolute;
-    border: 2px solid ${Theme.basicTheme_C};
-    color: ${Theme.basicTheme_C};
+    border: 2px solid ${Theme.subTheme3_C};
+    color: ${Theme.subTheme3_C};
     top: 0;
     left: 0;
     width: 100%;
@@ -128,7 +128,7 @@ const Button4 = styled(Wrapper)`
 `;
 
 const Button3 = styled(Wrapper)`
-  width: ${(props) => props.width || `100px`};
+  width: ${(props) => props.width || `130px`};
   height: ${(props) => props.height || `40px`};
   border: 2px solid transparent;
   position: relative;
@@ -136,9 +136,9 @@ const Button3 = styled(Wrapper)`
   margin: 20px 0;
 
   &:after {
-    content: "팝업관리";
+    content: "팝업 배너 관리";
     position: absolute;
-    background-color: ${Theme.basicTheme_C};
+    background-color: ${Theme.subTheme3_C};
     color: ${Theme.white_C};
     top: 0;
     left: 0;
@@ -153,10 +153,10 @@ const Button3 = styled(Wrapper)`
   }
 
   &:before {
-    content: "팝업관리";
+    content: "팝업 배너 관리";
     position: absolute;
-    border: 2px solid ${Theme.basicTheme_C};
-    color: ${Theme.basicTheme_C};
+    border: 2px solid ${Theme.subTheme3_C};
+    color: ${Theme.subTheme3_C};
     top: 0;
     left: 0;
     width: 100%;
@@ -188,9 +188,9 @@ const Button2 = styled(Wrapper)`
   margin: 20px 0;
 
   &:after {
-    content: "메인베너관리";
+    content: "제품 관리";
     position: absolute;
-    background-color: ${Theme.basicTheme_C};
+    background-color: ${Theme.subTheme3_C};
     color: ${Theme.white_C};
     top: 0;
     left: 0;
@@ -205,10 +205,10 @@ const Button2 = styled(Wrapper)`
   }
 
   &:before {
-    content: "메인베너관리";
+    content: "제품 관리";
     position: absolute;
-    border: 2px solid ${Theme.basicTheme_C};
-    color: ${Theme.basicTheme_C};
+    border: 2px solid ${Theme.subTheme3_C};
+    color: ${Theme.subTheme3_C};
     top: 0;
     left: 0;
     width: 100%;
@@ -242,7 +242,7 @@ const Button = styled(Wrapper)`
   &:after {
     content: "접속자통계";
     position: absolute;
-    background-color: ${Theme.basicTheme_C};
+    background-color: ${Theme.subTheme3_C};
     color: ${Theme.white_C};
     top: 0;
     left: 0;
@@ -259,8 +259,8 @@ const Button = styled(Wrapper)`
   &:before {
     content: "접속자통계";
     position: absolute;
-    border: 2px solid ${Theme.basicTheme_C};
-    color: ${Theme.basicTheme_C};
+    border: 2px solid ${Theme.subTheme3_C};
+    color: ${Theme.subTheme3_C};
     top: 0;
     left: 0;
     width: 100%;
@@ -292,22 +292,23 @@ const StatusText = styled.div`
 
 export default () => {
   return (
-    <WholeWrapper minWidth={`1000px`} radius={`30px`}>
+    <WholeWrapper minWidth={`1000px`} radius={`30px`} isRelative={true}>
       <Image
-        width={`200px`}
+        width={`410px`}
+        margin={`20px 0`}
         alt="로고"
-        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Flogo%2Fpro-logo-b.png?alt=media&token=446d0daf-0039-4044-a88b-6915e3c93b38`}
+        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FAdmin%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%87%E1%85%A5%E1%86%AF%E1%84%92%E1%85%A6%E1%84%83%E1%85%A5.svg?alt=media&token=bc59da53-b9cc-4a7b-9b3d-8df8fde26e86`}
       />
       <Wrapper dr={`row`} height={`100vh`}>
         {/* ////////접속자통계///////// */}
-        <Wrapper width={`30%`} padding={`0 0 0 50px`}>
+        <Wrapper width={`calc(100% / 3)`} padding={`0 0 0 50px`}>
           <Link to="/admin/statManagement">
             <Button></Button>
           </Link>
           <Box
             width={`300px`}
             height={`200px`}
-            shadow={Theme.boxShadow}
+            shadow={`0px 3px 6px rgba(0, 0, 0, 0.16)`}
             ju={`flex-end`}
             padding={`10px`}
           >
@@ -316,7 +317,6 @@ export default () => {
                 width={`20px`}
                 height={`140px`}
                 bgColor={Theme.subTheme_C}
-                shadow={`5px 5px 5px ${Theme.grey_C}`}
               ></Wrapper>
               <Title margin={`10px 0 0`}>
                 <SpanText>1</SpanText>월
@@ -328,7 +328,6 @@ export default () => {
                 width={`20px`}
                 height={`100px`}
                 bgColor={Theme.subTheme_C}
-                shadow={`5px 5px 5px ${Theme.grey_C}`}
               ></Wrapper>
               <Title margin={`10px 0 0`}>
                 <SpanText>2</SpanText>월
@@ -340,7 +339,6 @@ export default () => {
                 width={`20px`}
                 height={`140px`}
                 bgColor={Theme.subTheme_C}
-                shadow={`5px 5px 5px ${Theme.grey_C}`}
               ></Wrapper>
               <Title margin={`10px 0 0`}>
                 <SpanText>3</SpanText>월
@@ -352,7 +350,6 @@ export default () => {
                 width={`20px`}
                 height={`140px`}
                 bgColor={Theme.subTheme_C}
-                shadow={`5px 5px 5px ${Theme.grey_C}`}
               ></Wrapper>
               <Title margin={`10px 0 0`}>
                 <SpanText>4</SpanText>월
@@ -364,7 +361,6 @@ export default () => {
                 width={`20px`}
                 height={`120px`}
                 bgColor={Theme.subTheme_C}
-                shadow={`5px 5px 5px ${Theme.grey_C}`}
               ></Wrapper>
               <Title margin={`10px 0 0`}>
                 <SpanText>5</SpanText>월
@@ -382,32 +378,33 @@ export default () => {
           </Wrapper>
         </Wrapper>
         {/* //////////메인베너관리///////// */}
-        <Wrapper width={`70%`}>
-          <Wrapper dr={`row`} ju={`space-around`}>
+        <Wrapper width={`calc(100% / 3)`}>
+          <Wrapper>
             <Wrapper width={`auto`}>
-              <Link to="/admin/mainBannerManagement">
+              <Link to="/admin/productManagement">
                 <Button2></Button2>
               </Link>
               <Wrapper
                 fontSize={`14px`}
                 width={`300px`}
-                shadow={Theme.boxShadow}
+                height={`150px`}
+                shadow={`0px 3px 6px rgba(0, 0, 0, 0.16)`}
                 padding={`50px 20px`}
               >
-                <Text fontWeight={`700`}>메인 페이지에 들어가는</Text>
-                <Text fontWeight={`700`}>슬라이드 이미지 관리</Text>
+                <Text fontWeight={`700`}>스마트키퍼 프로 제품 관리</Text>
               </Wrapper>
             </Wrapper>
-            {/* ///////////팝업관리/////////// */}
-            <Wrapper width={`auto`}>
+            {/* ///////////팝업 배너 관리/////////// */}
+            <Wrapper width={`auto`} margin={`20px 0 0`}>
               <Link to="/admin/popUpManagement">
                 <Button3></Button3>
               </Link>
 
               <Wrapper
                 width={`300px`}
+                height={`150px`}
                 fontSize={`14px`}
-                shadow={Theme.boxShadow}
+                shadow={`0px 3px 6px rgba(0, 0, 0, 0.16)`}
                 padding={`50px 20px`}
               >
                 <Text fontWeight={`700`}>웹사이트 접속시 효율적인</Text>
@@ -417,43 +414,55 @@ export default () => {
               </Wrapper>
             </Wrapper>
           </Wrapper>
+        </Wrapper>
+        <Wrapper width={`calc(100% / 3)`}>
           {/* /////////회원관리///////////// */}
-          <Wrapper dr={`row`} ju={`space-around`}>
+          <Wrapper>
             <Wrapper width={`auto`}>
-              <Link to="/admin/userManagement">
+              <Link to="/admin/tokenManagement">
                 <Button4></Button4>
               </Link>
 
               <Wrapper
                 width={`300px`}
+                height={`150px`}
                 fontSize={`14px`}
-                shadow={Theme.boxShadow}
+                shadow={`0px 3px 6px rgba(0, 0, 0, 0.16)`}
                 padding={`50px 20px`}
               >
-                <Text fontWeight={`700`}>웹사이트를 이용중인</Text>
-                <Text fontWeight={`700`}>회원들의 정보관리</Text>
+                <Text fontWeight={`700`}>레벨 3, 4 파트너</Text>
+                <Text fontWeight={`700`}>회원 관리</Text>
               </Wrapper>
             </Wrapper>
             {/* /////////게시판관리///////// */}
-            <Wrapper width={`auto`}>
-              <Link to="/admin/noticeManagement">
+            <Wrapper width={`auto`} margin={`20px 0 0`}>
+              <Link to="/admin/snsLinkManagement">
                 <Button5></Button5>
               </Link>
 
               <Wrapper
                 width={`300px`}
+                height={`150px`}
                 fontSize={`14px`}
-                shadow={Theme.boxShadow}
+                shadow={`0px 3px 6px rgba(0, 0, 0, 0.16)`}
                 padding={`50px 20px`}
               >
-                <Text fontWeight={`700`}>
-                  공지사항, 이벤트게시판, 자주 묻는 질문의
-                </Text>
-                <Text fontWeight={`700`}>게시글 삭제 또는 카테고리 관리</Text>
+                <Text fontWeight={`700`}>웹사이트 하단에 표기되는</Text>
+                <Text fontWeight={`700`}>주요제품 링크 관리</Text>
               </Wrapper>
             </Wrapper>
           </Wrapper>
         </Wrapper>
+      </Wrapper>
+
+      <Wrapper isAbsolute={true} bottom={`5px`} left={`0`} fontSize={`12px`}>
+        <Image
+          alt="logo"
+          src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FAdmin%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%92%E1%85%A1%E1%84%83%E1%85%A1%E1%86%AB%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9.svg?alt=media&token=96ac24e3-4073-472c-9ddd-4de62236d5d5`}
+          width={`70px`}
+          margin={`0 0 10px`}
+        />
+        Copyright 2021 COMXI CO., LTD. All right reserved.
       </Wrapper>
     </WholeWrapper>
   );

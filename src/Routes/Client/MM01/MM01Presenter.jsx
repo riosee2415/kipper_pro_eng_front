@@ -134,11 +134,12 @@ const MM01Presenter = ({
   const [isCheck2, setIsCheck2] = useState(false);
   const [isCheck3, setIsCheck3] = useState(false);
   const [isCheck4, setIsCheck4] = useState(false);
+  const [isCheck5, setIsCheck5] = useState(false);
 
   const handleScroll = () => {
     const { pageYOffset } = window;
 
-    if (tab1Ref.current.offsetHeight * 4 >= pageYOffset) {
+    if (tab1Ref.current.offsetHeight * 4 + 50 >= pageYOffset) {
       setIsEnd(true);
 
       let currentOffset;
@@ -243,7 +244,15 @@ const MM01Presenter = ({
       return;
     }
 
-    const value = isFinish ? 5 : 25;
+    if (!isCheck5 && tempOffset < pageYOffset) {
+      setTimeout(() => {
+        $("#app").off("scroll touchmove mousewheel");
+        setIsCheck5(true);
+      }, 1000);
+      return;
+    }
+
+    const value = isFinish ? 15 : 25;
 
     if (e.wheelDeltaY > 0) {
       window.scrollTo(0, window.scrollY - value);
@@ -264,13 +273,15 @@ const MM01Presenter = ({
         passive: false,
       });
     };
-  }, [pageY, isCheck1, isCheck2, isCheck3, isCheck4]);
+  }, [pageY, isCheck1, isCheck2, isCheck3, isCheck4, isCheck5]);
 
   useEffect(() => {
     scroll.scrollTo(0);
 
     setHeight(heightRef.current.offsetHeight);
   }, []);
+
+  console.log(isEnd);
 
   return (
     <ParallaxProvider>

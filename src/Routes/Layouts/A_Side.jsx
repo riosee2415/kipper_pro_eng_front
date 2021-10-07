@@ -23,8 +23,8 @@ const A_Side = () => {
     <WholeWrapper padding={`20px 0`}>
       <Image
         alt="logo"
-        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Flogo%2Fpro-logo.png?alt=media&token=1d7babc2-4c9d-4923-b9e2-b46f8967ca07`}
-        width={`80px`}
+        src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FAdmin%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%87%E1%85%A5%E1%86%AFLNB_%E1%84%85%E1%85%A9.svg?alt=media&token=2ae2c62f-e747-4adf-b79e-3a1f8373cace`}
+        width={`96px`}
         margin={`0 0 20px`}
       />
       {allMenus.map((menu, idx) => {
