@@ -276,24 +276,6 @@ const MM14Container = ({ history }) => {
         s.innerHTML = html;
 
         wholeRef.current.appendChild(s);
-
-        s = document.createElement("script");
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "//wsa.mig-log.com/wsalog.js";
-
-        wholeRef.current.appendChild(s);
-
-        s = document.createElement("script");
-        s.type = "text/javascript";
-        s.async = true;
-
-        html = `
-           wsa.cnv('1',1000,'UwUMMFC');
-        `;
-        s.innerHTML = html;
-
-        wholeRef.current.appendChild(s);
       }
     }, 3000);
   }, [wholeRef.current]);
