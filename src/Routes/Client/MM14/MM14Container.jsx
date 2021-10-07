@@ -132,7 +132,7 @@ const MM14Container = ({ history }) => {
       left: "11%",
       src: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20circle%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206627.png?alt=media&token=c3350ab3-1df8-4213-982b-1eaa2b019064",
       info: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20click%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206658.png?alt=media&token=eb78715c-a174-40d9-af40-6ae54aa066f3",
-      map: 3,
+      map: 1,
       mobile: "+421 904 244 685",
       email: "smartkeeper@bbi-intl.com",
       web: "www.smartkeeper.sk/hu",
@@ -272,24 +272,6 @@ const MM14Container = ({ history }) => {
         html = `
           var _nasa={};
           if(window.wcs) _nasa["cnv"] = wcs.cnv("1","10"); 
-        `;
-        s.innerHTML = html;
-
-        wholeRef.current.appendChild(s);
-
-        s = document.createElement("script");
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "//wsa.mig-log.com/wsalog.js";
-
-        wholeRef.current.appendChild(s);
-
-        s = document.createElement("script");
-        s.type = "text/javascript";
-        s.async = true;
-
-        html = `
-           wsa.cnv('1',1000,'UwUMMFC');
         `;
         s.innerHTML = html;
 
