@@ -5,7 +5,7 @@ import { useQuery } from "@apollo/client";
 import { withCookies } from "react-cookie";
 import { withResizeDetector } from "react-resize-detector";
 
-const Popup = ({ cookies, width }) => {
+const Popup = ({ cookies, width, mainWidth }) => {
   ////////////// - USE QUERY- ///////////////
   const { data: popupDatum } = useQuery(GET_POPUP_ALL);
 
@@ -46,7 +46,13 @@ const Popup = ({ cookies, width }) => {
               id={`popup-${data._id}-js`}
               isAbsolute={true}
               top={width > 900 ? `70px` : `80px`}
-              right={width < 700 ? `50%` : `0`}
+              right={
+                width < 900
+                  ? `50%`
+                  : `calc((${
+                      mainWidth - 1230 < 0 ? 10 : mainWidth - 1230
+                    }px) / 2)`
+              }
               zIndex={`${9999 - idx}`}
               shadow={`0px 5px 10px rgb(93, 93, 93)`}
               margin={
