@@ -250,7 +250,7 @@ const MM01Presenter = ({
       return;
     }
 
-    const value = isFinish ? 24 : 25;
+    const value = isFinish ? 40 : 100;
 
     if (e.wheelDeltaY > 0) {
       window.scrollTo(0, window.scrollY - value);
@@ -271,7 +271,7 @@ const MM01Presenter = ({
         passive: false,
       });
     };
-  }, [pageY, isCheck1, isCheck2, isCheck3, isCheck4, isCheck5]);
+  }, [pageY, isCheck1, isCheck2, isCheck3, isCheck4, isCheck5, isFinish]);
 
   useEffect(() => {
     scroll.scrollTo(0);
