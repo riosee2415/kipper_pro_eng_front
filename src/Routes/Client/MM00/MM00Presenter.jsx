@@ -229,6 +229,15 @@ const MM00Presenter = ({
                 fontSize={`18px`}
                 fontWeight={`700`}
               >
+                A cyber security system that can be used safely on numerous
+                devices
+              </Text>
+              <Text
+                color={Theme.greyTheme6_C}
+                display={width < 700 ? `none` : `flex`}
+                fontSize={`18px`}
+                fontWeight={`700`}
+              >
                 with confidential key patterns. SMARTKEEPER is the physical
                 cybersecurity
               </Text>
