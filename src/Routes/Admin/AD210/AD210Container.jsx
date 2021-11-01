@@ -157,7 +157,7 @@ export default ({ history }) => {
   };
 
   const moveProductPage = () => {
-    history.push(`/usb/${selectData._id}`);
+    history.push(`/usb-physicalsecurity/${selectData._id}`);
   };
 
   const sortUpdateHandler = async (e, id) => {

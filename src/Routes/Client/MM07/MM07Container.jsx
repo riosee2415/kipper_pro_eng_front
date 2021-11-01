@@ -67,7 +67,7 @@ const MM07Container = ({ history, location }) => {
   };
 
   const changeSubTypeHandler = (type) => {
-    history.push(`/port?type=${type}`);
+    history.push(`/data-port-physicalsecurity?type=${type}`);
   };
 
   const searchDataHandler = (e) => {
@@ -81,7 +81,7 @@ const MM07Container = ({ history, location }) => {
   };
 
   const searchDataBlurHandler = () => {
-    let url = `/port?`;
+    let url = `/data-port-physicalsecurity?`;
     if (query.type) url += `&type=${query.type}`;
 
     history.push(url);

@@ -1493,7 +1493,7 @@ const MM02Presenter = ({
                 <SubTitle>Starting point of Port Security,</SubTitle>
                 <SubTitle>End it with Physical Security.</SubTitle>
               </Wrapper>
-              <Link to="/security">
+              <Link to="/network-security">
                 <Button
                   dr={`row`}
                   margin={width < 700 ? `10px 0 0` : `20px 0 0`}
@@ -1530,7 +1530,7 @@ const MM02Presenter = ({
                 <SubTitle>Network &#38; Intranet :</SubTitle>
                 <SubTitle>Pathway to all assets within</SubTitle>
               </Wrapper>
-              <Link to="/network">
+              <Link to="/network-security">
                 <Button
                   dr={`row`}
                   margin={width < 700 ? `10px 0 0` : `20px 0 0`}
@@ -1603,7 +1603,7 @@ const MM02Presenter = ({
             <Text
               fontSize={width < 700 ? `14px !important` : `30px`}
               fontWeight={`700`}
-              onClick={() => moveLinkHandler(`/usb`)}
+              onClick={() => moveLinkHandler(`/usb-physicalsecurity`)}
             >
               Learn more
             </Text>
@@ -1657,7 +1657,7 @@ const MM02Presenter = ({
             <Text
               fontSize={width < 700 ? `14px !important` : `30px`}
               fontWeight={`700`}
-              onClick={() => moveLinkHandler(`/network`)}
+              onClick={() => moveLinkHandler(`/network-security`)}
             >
               Learn more
             </Text>

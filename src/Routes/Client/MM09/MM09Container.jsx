@@ -130,8 +130,8 @@ const MM09Container = ({ history, location, match }) => {
 
   useEffect(() => {
     if (
-      location.pathname.includes("/computer") ||
-      location.pathname.includes("/lock")
+      location.pathname.includes("/computer-physicalsecurity") ||
+      location.pathname.includes("/key")
     ) {
       setArrow(true);
     }

@@ -159,7 +159,9 @@ const MM03Presenter = ({
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4 )` : `calc(100% / 2)`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/usb?type=USB Type-A`)}
+                      onClick={() =>
+                        moveLinkHandler(`/usb-physicalsecurity?type=USB Type-A`)
+                      }
                     >
                       <Image
                         alt="icon"
@@ -180,7 +182,9 @@ const MM03Presenter = ({
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4 )` : `calc(100% / 2)`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/usb?type=USB Type-C`)}
+                      onClick={() =>
+                        moveLinkHandler(`/usb-physicalsecurity?type=USB Type-C`)
+                      }
                     >
                       <Image
                         alt="icon"
@@ -221,7 +225,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=LAN Cable`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=LAN Cable`
+                        )
                       }
                     >
                       <Wrapper
@@ -258,7 +264,9 @@ const MM03Presenter = ({
                       width={`calc(100% / 4)`}
                       ju={`flex-start`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/p_network?type=RJ45`)}
+                      onClick={() =>
+                        moveLinkHandler(`/network-physicalsecurity?type=RJ45`)
+                      }
                     >
                       <Wrapper
                         width={width < 700 && `52px`}
@@ -293,7 +301,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=SFP/QSFP`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=SFP/QSFP`
+                        )
                       }
                     >
                       <Wrapper
@@ -329,7 +339,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=SFP/QSFP`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=SFP/QSFP`
+                        )
                       }
                     >
                       <Wrapper
@@ -412,7 +424,9 @@ const MM03Presenter = ({
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4 )` : `calc(100% / 2)`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/usb?type=USB Type-A`)}
+                      onClick={() =>
+                        moveLinkHandler(`/usb-physicalsecurity?type=USB Type-A`)
+                      }
                     >
                       <Image
                         alt="icon"
@@ -433,7 +447,9 @@ const MM03Presenter = ({
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4 )` : `calc(100% / 2)`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/usb?type=USB Type-C`)}
+                      onClick={() =>
+                        moveLinkHandler(`/usb-physicalsecurity?type=USB Type-C`)
+                      }
                     >
                       <Image
                         alt="icon"
@@ -474,7 +490,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=LAN Cable`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=LAN Cable`
+                        )
                       }
                     >
                       <Wrapper
@@ -511,7 +529,9 @@ const MM03Presenter = ({
                       width={`calc(100% / 4)`}
                       ju={`flex-start`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/p_network?type=RJ45`)}
+                      onClick={() =>
+                        moveLinkHandler(`/network-physicalsecurity?type=RJ45`)
+                      }
                     >
                       <Wrapper
                         width={width < 700 && `52px`}
@@ -546,7 +566,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=SFP/QSFP`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=SFP/QSFP`
+                        )
                       }
                     >
                       <Wrapper
@@ -582,7 +604,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=SFP/QSFP`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=SFP/QSFP`
+                        )
                       }
                     >
                       <Wrapper
@@ -665,7 +689,9 @@ const MM03Presenter = ({
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4 )` : `calc(100% / 2)`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/usb?type=USB Type-A`)}
+                      onClick={() =>
+                        moveLinkHandler(`/usb-physicalsecurity?type=USB Type-A`)
+                      }
                     >
                       <Image
                         alt="icon"
@@ -686,7 +712,9 @@ const MM03Presenter = ({
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4 )` : `calc(100% / 2)`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/usb?type=USB Type-C`)}
+                      onClick={() =>
+                        moveLinkHandler(`/usb-physicalsecurity?type=USB Type-C`)
+                      }
                     >
                       <Image
                         alt="icon"
@@ -727,7 +755,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=LAN Cable`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=LAN Cable`
+                        )
                       }
                     >
                       <Wrapper
@@ -764,7 +794,9 @@ const MM03Presenter = ({
                       width={`calc(100% / 4)`}
                       ju={`flex-start`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/p_network?type=RJ45`)}
+                      onClick={() =>
+                        moveLinkHandler(`/network-physicalsecurity?type=RJ45`)
+                      }
                     >
                       <Wrapper
                         width={width < 700 && `52px`}
@@ -799,7 +831,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=SFP/QSFP`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=SFP/QSFP`
+                        )
                       }
                     >
                       <Wrapper
@@ -835,7 +869,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=SFP/QSFP`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=SFP/QSFP`
+                        )
                       }
                     >
                       <Wrapper
@@ -921,7 +957,9 @@ const MM03Presenter = ({
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4 )` : `calc(100% / 2)`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/usb?type=USB Type-A`)}
+                      onClick={() =>
+                        moveLinkHandler(`/usb-physicalsecurity?type=USB Type-A`)
+                      }
                     >
                       <Image
                         alt="icon"
@@ -942,7 +980,9 @@ const MM03Presenter = ({
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4 )` : `calc(100% / 2)`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/usb?type=USB Type-C`)}
+                      onClick={() =>
+                        moveLinkHandler(`/usb-physicalsecurity?type=USB Type-C`)
+                      }
                     >
                       <Image
                         alt="icon"
@@ -983,7 +1023,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=LAN Cable`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=LAN Cable`
+                        )
                       }
                     >
                       <Wrapper
@@ -1020,7 +1062,9 @@ const MM03Presenter = ({
                       width={width < 700 ? `calc(100% / 4)` : `calc(100% / 3)`}
                       ju={`flex-start`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/p_network?type=RJ45`)}
+                      onClick={() =>
+                        moveLinkHandler(`/network-physicalsecurity?type=RJ45`)
+                      }
                     >
                       <Wrapper
                         width={width < 700 && `52px`}
@@ -1088,7 +1132,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=SFP/QSFP`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=SFP/QSFP`
+                        )
                       }
                     >
                       <Wrapper
@@ -1182,7 +1228,9 @@ const MM03Presenter = ({
                     <Wrapper
                       width={`calc(100% / 2)`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/usb?type=USB Type-A`)}
+                      onClick={() =>
+                        moveLinkHandler(`/usb-physicalsecurity?type=USB Type-A`)
+                      }
                     >
                       <Wrapper
                         width={width < 700 && `44px`}
@@ -1208,7 +1256,9 @@ const MM03Presenter = ({
                     <Wrapper
                       width={`calc(100% / 2)`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/usb?type=USB Type-C`)}
+                      onClick={() =>
+                        moveLinkHandler(`/usb-physicalsecurity?type=USB Type-C`)
+                      }
                     >
                       <Wrapper
                         width={width < 700 && `44px`}
@@ -1237,7 +1287,9 @@ const MM03Presenter = ({
                   width={`50%`}
                   padding={`0 50px 0 0`}
                   display={width < 700 ? `block` : `none`}
-                  onClick={() => moveLinkHandler(`/computer?type=Desktop`)}
+                  onClick={() =>
+                    moveLinkHandler(`/computer-physicalsecurity?type=Desktop`)
+                  }
                   cursor={`pointer`}
                 >
                   <Text
@@ -1296,7 +1348,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=LAN Cable`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=LAN Cable`
+                        )
                       }
                     >
                       <Wrapper
@@ -1333,7 +1387,9 @@ const MM03Presenter = ({
                       width={`calc(100% / 4)`}
                       ju={`flex-start`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/p_network?type=RJ45`)}
+                      onClick={() =>
+                        moveLinkHandler(`/network-physicalsecurity?type=RJ45`)
+                      }
                     >
                       <Wrapper
                         width={width < 700 && `52px`}
@@ -1368,7 +1424,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=SFP/QSFP`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=SFP/QSFP`
+                        )
                       }
                     >
                       <Wrapper
@@ -1404,7 +1462,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=SFP/QSFP`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=SFP/QSFP`
+                        )
                       }
                     >
                       <Wrapper
@@ -1433,7 +1493,9 @@ const MM03Presenter = ({
                 <Wrapper
                   width={`20%`}
                   display={width < 700 ? `none` : `flex`}
-                  onClick={() => moveLinkHandler(`/computer?type=Desktop`)}
+                  onClick={() =>
+                    moveLinkHandler(`/computer-physicalsecurity?type=Desktop`)
+                  }
                   cursor={`pointer`}
                 >
                   <Text
@@ -1521,7 +1583,9 @@ const MM03Presenter = ({
                     <Wrapper
                       width={`calc(100% / 2)`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/usb?type=USB Type-A`)}
+                      onClick={() =>
+                        moveLinkHandler(`/usb-physicalsecurity?type=USB Type-A`)
+                      }
                     >
                       <Wrapper
                         width={width < 700 && `44px`}
@@ -1547,7 +1611,9 @@ const MM03Presenter = ({
                     <Wrapper
                       width={`calc(100% / 2)`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/usb?type=USB Type-C`)}
+                      onClick={() =>
+                        moveLinkHandler(`/usb-physicalsecurity?type=USB Type-C`)
+                      }
                     >
                       <Wrapper
                         width={width < 700 && `44px`}
@@ -1576,7 +1642,9 @@ const MM03Presenter = ({
                   width={`50%`}
                   padding={`0 50px 0 0`}
                   display={width < 700 ? `block` : `none`}
-                  onClick={() => moveLinkHandler(`/computer?type=Desktop`)}
+                  onClick={() =>
+                    moveLinkHandler(`/computer-physicalsecurity?type=Desktop`)
+                  }
                   cursor={`pointer`}
                 >
                   <Text
@@ -1635,7 +1703,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=LAN Cable`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=LAN Cable`
+                        )
                       }
                     >
                       <Wrapper
@@ -1672,7 +1742,9 @@ const MM03Presenter = ({
                       width={`calc(100% / 4)`}
                       ju={`flex-start`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/p_network?type=RJ45`)}
+                      onClick={() =>
+                        moveLinkHandler(`/network-physicalsecurity?type=RJ45`)
+                      }
                     >
                       <Wrapper
                         width={width < 700 && `52px`}
@@ -1707,7 +1779,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=SFP/QSFP`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=SFP/QSFP`
+                        )
                       }
                     >
                       <Wrapper
@@ -1743,7 +1817,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=SFP/QSFP`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=SFP/QSFP`
+                        )
                       }
                     >
                       <Wrapper
@@ -1772,7 +1848,9 @@ const MM03Presenter = ({
                 <Wrapper
                   width={`20%`}
                   display={width < 700 ? `none` : `flex`}
-                  onClick={() => moveLinkHandler(`/computer?type=Desktop`)}
+                  onClick={() =>
+                    moveLinkHandler(`/computer-physicalsecurity?type=Desktop`)
+                  }
                   cursor={`pointer`}
                 >
                   <Text
@@ -1857,7 +1935,9 @@ const MM03Presenter = ({
                     <Wrapper
                       width={width < 700 ? `calc(100% / 3 )` : `calc(100% / 2)`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/usb?type=USB Type-A`)}
+                      onClick={() =>
+                        moveLinkHandler(`/usb-physicalsecurity?type=USB Type-A`)
+                      }
                     >
                       <Image
                         alt="icon"
@@ -1879,7 +1959,9 @@ const MM03Presenter = ({
                       width={width < 700 ? `calc(100% / 3 )` : `calc(100% / 2)`}
                       al={width < 700 && `flex-start`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/usb?type=USB Type-C`)}
+                      onClick={() =>
+                        moveLinkHandler(`/usb-physicalsecurity?type=USB Type-C`)
+                      }
                     >
                       <Image
                         alt="icon"
@@ -1920,7 +2002,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=LAN Cable`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=LAN Cable`
+                        )
                       }
                     >
                       <Wrapper
@@ -1957,7 +2041,9 @@ const MM03Presenter = ({
                       width={`calc(100% / 3)`}
                       ju={`flex-start`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/p_network?type=RJ45`)}
+                      onClick={() =>
+                        moveLinkHandler(`/network-physicalsecurity?type=RJ45`)
+                      }
                     >
                       <Wrapper
                         width={width < 700 && `52px`}
@@ -1993,7 +2079,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=SFP/QSFP`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=SFP/QSFP`
+                        )
                       }
                     >
                       <Wrapper
@@ -2082,7 +2170,9 @@ const MM03Presenter = ({
                     <Wrapper
                       width={width < 700 ? `calc(100% / 5 )` : `calc(100% / 2)`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/usb?type=USB Type-A`)}
+                      onClick={() =>
+                        moveLinkHandler(`/usb-physicalsecurity?type=USB Type-A`)
+                      }
                     >
                       <Image
                         alt="icon"
@@ -2103,7 +2193,9 @@ const MM03Presenter = ({
                     <Wrapper
                       width={width < 700 ? `calc(100% / 5 )` : `calc(100% / 2)`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/usb?type=USB Type-C`)}
+                      onClick={() =>
+                        moveLinkHandler(`/usb-physicalsecurity?type=USB Type-C`)
+                      }
                     >
                       <Image
                         alt="icon"
@@ -2140,7 +2232,11 @@ const MM03Presenter = ({
                     padding={width < 700 ? `0` : `0 0 0 65px`}
                     al={`flex-start`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler(`/p_network?type=LAN Cable`)}
+                    onClick={() =>
+                      moveLinkHandler(
+                        `/network-physicalsecurity?type=LAN Cable`
+                      )
+                    }
                   >
                     <Wrapper width={`calc(100% / 5)`} ju={`flex-start`}>
                       <Wrapper
@@ -2177,7 +2273,9 @@ const MM03Presenter = ({
                       width={`calc(100% / 5)`}
                       ju={`flex-start`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/p_network?type=RJ45`)}
+                      onClick={() =>
+                        moveLinkHandler(`/network-physicalsecurity?type=RJ45`)
+                      }
                     >
                       <Wrapper
                         width={width < 700 && `52px`}
@@ -2241,7 +2339,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=SFP/QSFP`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=SFP/QSFP`
+                        )
                       }
                     >
                       <Wrapper
@@ -2357,7 +2457,9 @@ const MM03Presenter = ({
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4 )` : `calc(100% / 2)`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/usb?type=USB Type-A`)}
+                      onClick={() =>
+                        moveLinkHandler(`/usb-physicalsecurity?type=USB Type-A`)
+                      }
                     >
                       <Image
                         alt="icon"
@@ -2378,7 +2480,9 @@ const MM03Presenter = ({
                     <Wrapper
                       width={width < 700 ? `calc(100% / 4 )` : `calc(100% / 2)`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/usb?type=USB Type-C`)}
+                      onClick={() =>
+                        moveLinkHandler(`/usb-physicalsecurity?type=USB Type-C`)
+                      }
                     >
                       <Image
                         alt="icon"
@@ -2419,7 +2523,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=LAN Cable`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=LAN Cable`
+                        )
                       }
                     >
                       <Wrapper
@@ -2456,7 +2562,9 @@ const MM03Presenter = ({
                       width={`calc(100% / 4)`}
                       ju={`flex-start`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler(`/p_network?type=RJ45`)}
+                      onClick={() =>
+                        moveLinkHandler(`/network-physicalsecurity?type=RJ45`)
+                      }
                     >
                       <Wrapper
                         width={width < 700 && `52px`}
@@ -2491,7 +2599,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=SFP/QSFP`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=SFP/QSFP`
+                        )
                       }
                     >
                       <Wrapper
@@ -2527,7 +2637,9 @@ const MM03Presenter = ({
                       ju={`flex-start`}
                       cursor={`pointer`}
                       onClick={() =>
-                        moveLinkHandler(`/p_network?type=SFP/QSFP`)
+                        moveLinkHandler(
+                          `/network-physicalsecurity?type=SFP/QSFP`
+                        )
                       }
                     >
                       <Wrapper

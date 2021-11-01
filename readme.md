@@ -8,30 +8,30 @@
 
 ## MAIN SCREEN
 
-| 번호 | 화면명(영어) | 화면설명(한글)              | 화면코드 | 연결URL      |
-| :--- | :----------- | :-------------------------- | :------- | :----------- |
-| 1    | MAIN         | 메인                        | MM00     | "/"          |
-| 2    | ABOUT        | 스마트키퍼란                | MM01     | "/about"     |
-| 3    | PRO          | 스마트키퍼 프로             | MM02     | "/pro"       |
-| 4    | EXAMPLE      | 적용 사례                   | MM03     | "/example"   |
-| 5    | USB          | USB 물리보안                | MM04     | "/usb"       |
-| 6    | NETWORK      | 네트워크 보안의 이상적 조합 | MM05     | "/network"   |
-| 7    | COMPUTER     | 컴퓨터 물리보안             | MM06     | "/computer"  |
-| 8    | PORT         | 기타포트 물리보안           | MM07     | "/port"      |
-| 9    | LOCK         | 락키 PRO                    | MM08     | "/lock"      |
-| 10   | PRODUCT      | 상풍 상세(공통)             | MM09     | "/product~"  |
-| 11   | INFO         | 회사 소개                   | MM10     | "/info"      |
-| 12   | SITEMAP      | 사이트맵                    | MM11     | "/sitemap"   |
-| 13   | AGREEMENT    | 이용약관                    | MM12     | "/agreement" |
-| 14   | FAQ          | FAQ                         | MM13     | "/faq"       |
-| 15   | CONTACT      | 문의하기                    | MM14     | "/contact"   |
-| 16   | REFERENCE    | 자료실                      | MM15     | "/reference" |
-| 17   | MALWARE      | 악성코드                    | MM16     | "/malware"   |
-| 18   | SECURITY     | USB 보안의 완성             | MM17     | "/security"  |
-| 19   | MAIN         | 랜딩페이지                  | MMinit   | "/main"      |
-| 20   | NETWORK      | 네트워크 물리보안           | MM18     | "/p_network" |
-| 21   | ESSENTIAL    | 에센셜                      | MM19     | "/essential" |
-| 22   | LOGIN        | 로그인                      | MM90     | "/login"     |
+| 번호 | 화면명(영어) | 화면설명(한글)              | 화면코드 | 연결URL                       |
+| :--- | :----------- | :-------------------------- | :------- | :---------------------------- |
+| 1    | MAIN         | 메인                        | MM00     | "/"                           |
+| 2    | ABOUT        | 스마트키퍼란                | MM01     | "/smartkeeper"                |
+| 3    | PRO          | 스마트키퍼 프로             | MM02     | "/smartkeeperpro"             |
+| 4    | EXAMPLE      | 적용 사례                   | MM03     | "/example"                    |
+| 5    | USB          | USB 물리보안                | MM04     | "/usb-physicalsecurity"       |
+| 6    | NETWORK      | 네트워크 보안의 이상적 조합 | MM05     | "/network-security"           |
+| 7    | COMPUTER     | 컴퓨터 물리보안             | MM06     | "/computer-physicalsecurity"  |
+| 8    | PORT         | 기타포트 물리보안           | MM07     | "/data-port-physicalsecurity" |
+| 9    | LOCK         | 락키 PRO                    | MM08     | "/key"                        |
+| 10   | PRODUCT      | 상풍 상세(공통)             | MM09     | "/product~"                   |
+| 11   | INFO         | 회사 소개                   | MM10     | "/info"                       |
+| 12   | SITEMAP      | 사이트맵                    | MM11     | "/sitemap"                    |
+| 13   | AGREEMENT    | 이용약관                    | MM12     | "/agreement"                  |
+| 14   | FAQ          | FAQ                         | MM13     | "/faq"                        |
+| 15   | CONTACT      | 문의하기                    | MM14     | "/inquiry"                    |
+| 16   | REFERENCE    | 자료실                      | MM15     | "/download"                   |
+| 17   | MALWARE      | 악성코드                    | MM16     | "/malware"                    |
+| 18   | SECURITY     | USB 보안의 완성             | MM17     | "/usb-security"               |
+| 19   | MAIN         | 랜딩페이지                  | MMinit   | "/main"                       |
+| 20   | NETWORK      | 네트워크 물리보안           | MM18     | "/network-physicalsecurity"   |
+| 21   | ESSENTIAL    | 에센셜                      | MM19     | "/essential"                  |
+| 22   | LOGIN        | 로그인                      | MM90     | "/login"                      |
 
 ## ADMIN SCREEN
 

@@ -787,7 +787,7 @@ const MM19Presenter = ({
                     </Text>
 
                     <ATag
-                      href={`http://smartkeeperessential.com/#/lock/611a182a4d003e615dea195f`}
+                      href={`http://smartkeeperessential.com/#/key/611a182a4d003e615dea195f`}
                       width={`auto`}
                     >
                       <Button

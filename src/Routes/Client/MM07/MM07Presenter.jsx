@@ -125,7 +125,7 @@ const MM07Presenter = ({
             width={`auto`}
             margin={width < 1000 ? `0 30px` : `0 55px`}
             cursor={`pointer`}
-            onClick={() => moveLinkHandler(`/usb`)}
+            onClick={() => moveLinkHandler(`/usb-physicalsecurity`)}
           >
             <Wrapper width={`80px`}>
               <Image
@@ -143,7 +143,7 @@ const MM07Presenter = ({
             width={`auto`}
             margin={width < 1000 ? `0 30px` : `0 55px`}
             cursor={`pointer`}
-            onClick={() => moveLinkHandler(`/p_network`)}
+            onClick={() => moveLinkHandler(`/network-physicalsecurity`)}
           >
             <Wrapper width={`80px`}>
               <Image
@@ -161,7 +161,7 @@ const MM07Presenter = ({
             width={`auto`}
             margin={width < 1000 ? `0 30px` : `0 55px`}
             cursor={`pointer`}
-            onClick={() => moveLinkHandler(`/port`)}
+            onClick={() => moveLinkHandler(`/data-port-physicalsecurity`)}
           >
             <Wrapper width={`80px`}>
               <Image
@@ -181,7 +181,7 @@ const MM07Presenter = ({
             width={`auto`}
             margin={width < 1000 ? `0 30px` : `0 55px`}
             cursor={`pointer`}
-            onClick={() => moveLinkHandler(`/computer`)}
+            onClick={() => moveLinkHandler(`/computer-physicalsecurity`)}
           >
             <Wrapper width={`80px`}>
               <Image
@@ -199,7 +199,7 @@ const MM07Presenter = ({
             width={`auto`}
             margin={width < 1000 ? `0 30px` : `0 55px`}
             cursor={`pointer`}
-            onClick={() => moveLinkHandler(`/lock`)}
+            onClick={() => moveLinkHandler(`/key`)}
           >
             <Wrapper width={`80px`}>
               <Image
@@ -232,7 +232,7 @@ const MM07Presenter = ({
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 2)`}
                 cursor={`pointer`}
-                onClick={() => moveLinkHandler(`/computer`)}
+                onClick={() => moveLinkHandler(`/computer-physicalsecurity`)}
               >
                 <Wrapper width={`80px`}>
                   <Image
@@ -249,7 +249,7 @@ const MM07Presenter = ({
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 2)`}
                 cursor={`pointer`}
-                onClick={() => moveLinkHandler(`/lock`)}
+                onClick={() => moveLinkHandler(`/key`)}
               >
                 <Wrapper width={`80px`}>
                   <Image
@@ -269,7 +269,7 @@ const MM07Presenter = ({
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 3)`}
                 cursor={`pointer`}
-                onClick={() => moveLinkHandler(`/usb`)}
+                onClick={() => moveLinkHandler(`/usb-physicalsecurity`)}
               >
                 <Wrapper width={`80px`}>
                   <Image
@@ -286,7 +286,7 @@ const MM07Presenter = ({
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 3)`}
                 cursor={`pointer`}
-                onClick={() => moveLinkHandler(`/p_network`)}
+                onClick={() => moveLinkHandler(`/network-physicalsecurity`)}
               >
                 <Wrapper width={`80px`}>
                   <Image
@@ -303,7 +303,7 @@ const MM07Presenter = ({
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 3)`}
                 cursor={`pointer`}
-                onClick={() => moveLinkHandler(`/port`)}
+                onClick={() => moveLinkHandler(`/data-port-physicalsecurity`)}
               >
                 <Wrapper width={`80px`}>
                   <Image
@@ -414,7 +414,7 @@ const MM07Presenter = ({
                     display={width < 900 ? `none` : `flex`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("/p_network")}
+                    onClick={() => moveLinkHandler("/network-physicalsecurity")}
                   >
                     <IoIosArrowBack fontSize={22} />
                   </Wrapper>
@@ -425,7 +425,7 @@ const MM07Presenter = ({
                     left={`15px`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("/p_network")}
+                    onClick={() => moveLinkHandler("/network-physicalsecurity")}
                   >
                     <IoIosArrowBack fontSize={22} />
                   </Wrapper>
@@ -557,7 +557,9 @@ const MM07Presenter = ({
                     display={width < 900 ? `none` : `flex`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("/computer")}
+                    onClick={() =>
+                      moveLinkHandler("/computer-physicalsecurity")
+                    }
                   >
                     <IoIosArrowForward fontSize={22} />
                   </Wrapper>
@@ -565,7 +567,9 @@ const MM07Presenter = ({
                     display={width < 900 ? `flex` : `none`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("/computer")}
+                    onClick={() =>
+                      moveLinkHandler("/computer-physicalsecurity")
+                    }
                   >
                     <IoIosArrowForward fontSize={22} />
                   </Wrapper>
@@ -604,7 +608,9 @@ const MM07Presenter = ({
                     key={data._id}
                     bgImg={`url("${data.thumbnailPath}")`}
                     bgImg2={`url("${data.thumbnailPath2}")`}
-                    onClick={() => moveLinkHandler(`/port/${data._id}`)}
+                    onClick={() =>
+                      moveLinkHandler(`/data-port-physicalsecurity/${data._id}`)
+                    }
                   >
                     <Text
                       fontSize={width < 700 ? `10px` : `19px`}

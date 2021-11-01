@@ -68,7 +68,7 @@ const MM18Container = ({ history, location }) => {
   };
 
   const changeSubTypeHandler = (type) => {
-    history.push(`/p_network?type=${type}`);
+    history.push(`/network-physicalsecurity?type=${type}`);
   };
 
   const searchDataHandler = (e) => {
@@ -82,7 +82,7 @@ const MM18Container = ({ history, location }) => {
   };
 
   const searchDataBlurHandler = () => {
-    let url = `/p_network?`;
+    let url = `/network-physicalsecurity?`;
     if (query.type) url += `&type=${query.type}`;
 
     history.push(url);

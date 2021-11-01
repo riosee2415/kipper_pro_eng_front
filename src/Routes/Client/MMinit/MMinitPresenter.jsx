@@ -546,7 +546,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
             </Text>
           </Wrapper>
 
-          <Link to="/about">
+          <Link to="/smartkeeper">
             <ArrowIcon>
               Learn more
               <FaChevronRight />
@@ -641,7 +641,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
             </Text>
           </Wrapper>
           <ArrowIcon>
-            <Link to="/contact">
+            <Link to="/inquiry">
               Learn more
               <FaChevronRight />
             </Link>

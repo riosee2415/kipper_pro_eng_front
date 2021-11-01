@@ -48,29 +48,29 @@ const AppRouter = ({ width }) => {
       {/* <ScrollToTop> */}
       {/* HEADER */}
       <Route exact path="/pro" component={Header} />
-      <Route exact path="/about" component={Header} />
-      <Route exact path="/insightpro" component={Header} />
+      <Route exact path="/smartkeeper" component={Header} />
+      <Route exact path="/smartkeeperpro" component={Header} />
       <Route exact path="/example" component={Header} />
-      <Route exact path="/usb" component={Header} />
-      <Route exact path="/usb/:key" component={Header} />
-      <Route exact path="/network" component={Header} />
-      <Route exact path="/network/:key" component={Header} />
-      <Route exact path="/computer" component={Header} />
-      <Route exact path="/computer/:key" component={Header} />
-      <Route exact path="/port" component={Header} />
-      <Route exact path="/port/:key" component={Header} />
-      <Route exact path="/lock" component={Header} />
-      <Route exact path="/lock/:key" component={Header} />
+      <Route exact path="/usb-physicalsecurity" component={Header} />
+      <Route exact path="/usb-physicalsecurity/:key" component={Header} />
+      <Route exact path="/network-security" component={Header} />
+      <Route exact path="/network-physicalsecurity/:key" component={Header} />
+      <Route exact path="/computer-physicalsecurity" component={Header} />
+      <Route exact path="/computer-physicalsecurity/:key" component={Header} />
+      <Route exact path="/data-port-physicalsecurity" component={Header} />
+      <Route exact path="/data-port-physicalsecurity/:key" component={Header} />
+      <Route exact path="/key" component={Header} />
+      <Route exact path="/key/:key" component={Header} />
       <Route exact path="/info" component={Header} />
       <Route exact path="/sitemap" component={Header} />
       <Route exact path="/agreement" component={Header} />
       <Route exact path="/faq" component={Header} />
-      <Route exact path="/contact" component={Header} />
-      <Route exact path="/reference" component={Header} />
+      <Route exact path="/inquiry" component={Header} />
+      <Route exact path="/download" component={Header} />
       <Route exact path="/malware" component={Header} />
-      <Route exact path="/security" component={Header} />
-      <Route exact path="/p_network" component={Header} />
-      <Route exact path="/p_network/:key" component={Header} />
+      <Route exact path="/usb-security" component={Header} />
+      <Route exact path="/network-physicalsecurity" component={Header} />
+      <Route exact path="/network-physicalsecurity/:key" component={Header} />
       <Route exact path="/login" component={Header} />
 
       <Route exact path="/essential" component={Header2} />
@@ -86,59 +86,79 @@ const AppRouter = ({ width }) => {
 
       {/* ScrollTopBtn */}
       <Route exact path="/" component={ScrollTopBtn} />
-      <Route exact path="/about" component={ScrollTopBtn} />
-      <Route exact path="/insightpro" component={ScrollTopBtn} />
+      <Route exact path="/smartkeeper" component={ScrollTopBtn} />
+      <Route exact path="/smartkeeperpro" component={ScrollTopBtn} />
       <Route exact path="/example" component={ScrollTopBtn} />
-      <Route exact path="/usb" component={ScrollTopBtn} />
-      <Route exact path="/usb/:key" component={ScrollTopBtn} />
-      <Route exact path="/network" component={ScrollTopBtn} />
-      <Route exact path="/network/:key" component={ScrollTopBtn} />
-      <Route exact path="/computer" component={ScrollTopBtn} />
-      <Route exact path="/computer/:key" component={ScrollTopBtn} />
-      <Route exact path="/port" component={ScrollTopBtn} />
-      <Route exact path="/port/:key" component={ScrollTopBtn} />
-      <Route exact path="/lock" component={ScrollTopBtn} />
-      <Route exact path="/lock/:key" component={ScrollTopBtn} />
+      <Route exact path="/usb-physicalsecurity" component={ScrollTopBtn} />
+      <Route exact path="/usb-physicalsecurity/:key" component={ScrollTopBtn} />
+      <Route exact path="/network-security" component={ScrollTopBtn} />
+      <Route
+        exact
+        path="/network-physicalsecurity/:key"
+        component={ScrollTopBtn}
+      />
+      <Route exact path="/computer-physicalsecurity" component={ScrollTopBtn} />
+      <Route
+        exact
+        path="/computer-physicalsecurity/:key"
+        component={ScrollTopBtn}
+      />
+      <Route
+        exact
+        path="/data-port-physicalsecurity"
+        component={ScrollTopBtn}
+      />
+      <Route
+        exact
+        path="/data-port-physicalsecurity/:key"
+        component={ScrollTopBtn}
+      />
+      <Route exact path="/key" component={ScrollTopBtn} />
+      <Route exact path="/key/:key" component={ScrollTopBtn} />
       <Route exact path="/info" component={ScrollTopBtn} />
       <Route exact path="/sitemap" component={ScrollTopBtn} />
       <Route exact path="/agreement" component={ScrollTopBtn} />
       <Route exact path="/faq" component={ScrollTopBtn} />
-      <Route exact path="/contact" component={ScrollTopBtn} />
-      <Route exact path="/reference" component={ScrollTopBtn} />
+      <Route exact path="/inquiry" component={ScrollTopBtn} />
+      <Route exact path="/download" component={ScrollTopBtn} />
       <Route exact path="/malware" component={ScrollTopBtn} />
-      <Route exact path="/security" component={ScrollTopBtn} />
+      <Route exact path="/usb-security" component={ScrollTopBtn} />
       <Route exact path="/pro" component={ScrollTopBtn} />
-      <Route exact path="/p_network" component={ScrollTopBtn} />
-      <Route exact path="/p_network/:key" component={ScrollTopBtn} />
+      <Route exact path="/network-physicalsecurity" component={ScrollTopBtn} />
+      <Route
+        exact
+        path="/network-physicalsecurity/:key"
+        component={ScrollTopBtn}
+      />
       <Route exact path="/essential" component={ScrollTopBtn} />
       <Route exact path="/login" component={ScrollTopBtn} />
 
       {/* CONTENT */}
       <Route exact path="/" component={MMinit} />
-      <Route exact path="/about" component={MM01} />
-      <Route exact path="/insightpro" component={MM02} />
+      <Route exact path="/smartkeeper" component={MM01} />
+      <Route exact path="/smartkeeperpro" component={MM02} />
       <Route exact path="/example" component={MM03} />
-      <Route exact path="/usb" component={MM04} />
-      <Route exact path="/usb/:key" component={MM09} />
-      <Route exact path="/network" component={MM05} />
-      <Route exact path="/network/:key" component={MM09} />
-      <Route exact path="/computer" component={MM06} />
-      <Route exact path="/computer/:key" component={MM09} />
-      <Route exact path="/port" component={MM07} />
-      <Route exact path="/port/:key" component={MM09} />
-      <Route exact path="/lock" component={MM08} />
-      <Route exact path="/lock/:key" component={MM09} />
+      <Route exact path="/usb-physicalsecurity" component={MM04} />
+      <Route exact path="/usb-physicalsecurity/:key" component={MM09} />
+      <Route exact path="/network-security" component={MM05} />
+      <Route exact path="/network-physicalsecurity/:key" component={MM09} />
+      <Route exact path="/computer-physicalsecurity" component={MM06} />
+      <Route exact path="/computer-physicalsecurity/:key" component={MM09} />
+      <Route exact path="/data-port-physicalsecurity" component={MM07} />
+      <Route exact path="/data-port-physicalsecurity/:key" component={MM09} />
+      <Route exact path="/key" component={MM08} />
+      <Route exact path="/key/:key" component={MM09} />
       <Route exact path="/info" component={MM10} />
       <Route exact path="/sitemap" component={MM11} />
       <Route exact path="/agreement" component={MM12} />
       <Route exact path="/faq" component={MM13} />
-      <Route exact path="/contact" component={MM14} />
-      <Route exact path="/reference" component={MM15} />
+      <Route exact path="/inquiry" component={MM14} />
+      <Route exact path="/download" component={MM15} />
       <Route exact path="/malware" component={MM16} />
-      <Route exact path="/security" component={MM17} />
+      <Route exact path="/usb-security" component={MM17} />
       <Route exact path="/pro" component={MM00} />
-      <Route exact path="/p_network" component={MM18} />
-      <Route exact path="/p_network/:key" component={MM09} />
+      <Route exact path="/network-physicalsecurity" component={MM18} />
+      <Route exact path="/network-physicalsecurity/:key" component={MM09} />
       <Route exact path="/essential" component={MM19} />
       <Route exact path="/login" component={MM90} />
 
@@ -149,30 +169,30 @@ const AppRouter = ({ width }) => {
 
       {/* FOOTER */}
       <Route exact path="/" component={Footer} />
-      <Route exact path="/about" component={Footer} />
-      <Route exact path="/insightpro" component={Footer} />
+      <Route exact path="/smartkeeper" component={Footer} />
+      <Route exact path="/smartkeeperpro" component={Footer} />
       <Route exact path="/example" component={Footer} />
-      <Route exact path="/usb" component={Footer} />
-      <Route exact path="/usb/:key" component={Footer} />
-      <Route exact path="/network" component={Footer} />
-      <Route exact path="/network/:key" component={Footer} />
-      <Route exact path="/computer" component={Footer} />
-      <Route exact path="/computer/:key" component={Footer} />
-      <Route exact path="/port" component={Footer} />
-      <Route exact path="/port/:key" component={Footer} />
-      <Route exact path="/lock" component={Footer} />
-      <Route exact path="/lock/:key" component={Footer} />
+      <Route exact path="/usb-physicalsecurity" component={Footer} />
+      <Route exact path="/usb-physicalsecurity/:key" component={Footer} />
+      <Route exact path="/network-security" component={Footer} />
+      <Route exact path="/network-physicalsecurity/:key" component={Footer} />
+      <Route exact path="/computer-physicalsecurity" component={Footer} />
+      <Route exact path="/computer-physicalsecurity/:key" component={Footer} />
+      <Route exact path="/data-port-physicalsecurity" component={Footer} />
+      <Route exact path="/data-port-physicalsecurity/:key" component={Footer} />
+      <Route exact path="/key" component={Footer} />
+      <Route exact path="/key/:key" component={Footer} />
       <Route exact path="/info" component={Footer} />
       <Route exact path="/sitemap" component={Footer} />
       <Route exact path="/agreement" component={Footer} />
       <Route exact path="/faq" component={Footer} />
-      <Route exact path="/contact" component={Footer} />
-      <Route exact path="/reference" component={Footer} />
+      <Route exact path="/inquiry" component={Footer} />
+      <Route exact path="/download" component={Footer} />
       <Route exact path="/malware" component={Footer} />
-      <Route exact path="/security" component={Footer} />
+      <Route exact path="/usb-security" component={Footer} />
       <Route exact path="/pro" component={Footer} />
-      <Route exact path="/p_network" component={Footer} />
-      <Route exact path="/p_network/:key" component={Footer} />
+      <Route exact path="/network-physicalsecurity" component={Footer} />
+      <Route exact path="/network-physicalsecurity/:key" component={Footer} />
       <Route exact path="/login" component={Footer} />
 
       <Route exact path="/essential" component={Footer2} />

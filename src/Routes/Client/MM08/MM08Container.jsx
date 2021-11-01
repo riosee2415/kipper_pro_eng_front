@@ -67,7 +67,7 @@ const MM08Container = ({ history, location }) => {
   };
 
   const changeSubTypeHandler = (type) => {
-    history.push(`/lock?type=${type}`);
+    history.push(`/key?type=${type}`);
   };
 
   const searchDataHandler = (e) => {
@@ -81,7 +81,7 @@ const MM08Container = ({ history, location }) => {
   };
 
   const searchDataBlurHandler = () => {
-    let url = `/lock?`;
+    let url = `/key?`;
     if (query.type) url += `&type=${query.type}`;
 
     history.push(url);

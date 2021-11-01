@@ -949,7 +949,7 @@ const MM01Presenter = ({
                     ever-evolving malware.
                   </Text> */}
 
-                  <Link to="/usb">
+                  <Link to="/usb-physicalsecurity">
                     <Wrapper
                       dr={`row`}
                       ju={`flex-start`}
@@ -1283,7 +1283,7 @@ const MM01Presenter = ({
                     <SubTitle>Starting point of Port Security,</SubTitle>
                     <SubTitle>End it with Physical Security.</SubTitle>
                   </Wrapper>
-                  <Link to="/security">
+                  <Link to="/network-security">
                     <Button
                       dr={`row`}
                       margin={width < 700 ? `10px 0 0` : `20px 0 0`}
@@ -1332,7 +1332,7 @@ const MM01Presenter = ({
                     <SubTitle>Network &#38; Intranet :</SubTitle>
                     <SubTitle>Pathway to all assets within</SubTitle>
                   </Wrapper>
-                  <Link to="/network">
+                  <Link to="/network-security">
                     <Button
                       dr={`row`}
                       margin={width < 700 ? `10px 0 0` : `20px 0 0`}
@@ -1460,7 +1460,7 @@ const MM01Presenter = ({
                     For Corporate Use
                   </Wrapper>
                   <Wrapper al={width < 900 ? `flex-start` : `flex-end`}>
-                    <Link to="/usb">
+                    <Link to="/usb-physicalsecurity">
                       <Button
                         dr={`row`}
                         margin={width < 700 ? `10px 0 0` : `0`}

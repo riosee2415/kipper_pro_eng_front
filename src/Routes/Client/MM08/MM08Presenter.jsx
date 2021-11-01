@@ -124,7 +124,7 @@ const MM08Presenter = ({
             width={`auto`}
             margin={width < 1000 ? `0 30px` : `0 55px`}
             cursor={`pointer`}
-            onClick={() => moveLinkHandler(`/usb`)}
+            onClick={() => moveLinkHandler(`/usb-physicalsecurity`)}
           >
             <Wrapper width={`80px`}>
               <Image
@@ -142,7 +142,7 @@ const MM08Presenter = ({
             width={`auto`}
             margin={width < 1000 ? `0 30px` : `0 55px`}
             cursor={`pointer`}
-            onClick={() => moveLinkHandler(`/p_network`)}
+            onClick={() => moveLinkHandler(`/network-physicalsecurity`)}
           >
             <Wrapper width={`80px`}>
               <Image
@@ -160,7 +160,7 @@ const MM08Presenter = ({
             width={`auto`}
             margin={width < 1000 ? `0 30px` : `0 55px`}
             cursor={`pointer`}
-            onClick={() => moveLinkHandler(`/port`)}
+            onClick={() => moveLinkHandler(`/data-port-physicalsecurity`)}
           >
             <Wrapper width={`80px`}>
               <Image
@@ -178,7 +178,7 @@ const MM08Presenter = ({
             width={`auto`}
             margin={width < 1000 ? `0 30px` : `0 55px`}
             cursor={`pointer`}
-            onClick={() => moveLinkHandler(`/computer`)}
+            onClick={() => moveLinkHandler(`/computer-physicalsecurity`)}
           >
             <Wrapper width={`80px`}>
               <Image
@@ -196,7 +196,7 @@ const MM08Presenter = ({
             width={`auto`}
             margin={width < 1000 ? `0 30px` : `0 55px`}
             cursor={`pointer`}
-            onClick={() => moveLinkHandler(`/lock`)}
+            onClick={() => moveLinkHandler(`/key`)}
           >
             <Wrapper width={`80px`}>
               <Image
@@ -231,7 +231,7 @@ const MM08Presenter = ({
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 3)`}
                 cursor={`pointer`}
-                onClick={() => moveLinkHandler(`/usb`)}
+                onClick={() => moveLinkHandler(`/usb-physicalsecurity`)}
               >
                 <Wrapper width={`80px`}>
                   <Image
@@ -248,7 +248,7 @@ const MM08Presenter = ({
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 3)`}
                 cursor={`pointer`}
-                onClick={() => moveLinkHandler(`/p_network`)}
+                onClick={() => moveLinkHandler(`/network-physicalsecurity`)}
               >
                 <Wrapper width={`80px`}>
                   <Image
@@ -265,7 +265,7 @@ const MM08Presenter = ({
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 3)`}
                 cursor={`pointer`}
-                onClick={() => moveLinkHandler(`/port`)}
+                onClick={() => moveLinkHandler(`/data-port-physicalsecurity`)}
               >
                 <Wrapper width={`80px`}>
                   <Image
@@ -285,7 +285,7 @@ const MM08Presenter = ({
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 2)`}
                 cursor={`pointer`}
-                onClick={() => moveLinkHandler(`/computer`)}
+                onClick={() => moveLinkHandler(`/computer-physicalsecurity`)}
               >
                 <Wrapper width={`80px`}>
                   <Image
@@ -302,7 +302,7 @@ const MM08Presenter = ({
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 2)`}
                 cursor={`pointer`}
-                onClick={() => moveLinkHandler(`/lock`)}
+                onClick={() => moveLinkHandler(`/key`)}
               >
                 <Wrapper width={`80px`}>
                   <Image
@@ -413,7 +413,9 @@ const MM08Presenter = ({
                     display={width < 900 ? `none` : `flex`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("/computer")}
+                    onClick={() =>
+                      moveLinkHandler("/computer-physicalsecurity")
+                    }
                   >
                     <IoIosArrowBack fontSize={22} />
                   </Wrapper>
@@ -424,7 +426,9 @@ const MM08Presenter = ({
                     left={`15px`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("/computer")}
+                    onClick={() =>
+                      moveLinkHandler("/computer-physicalsecurity")
+                    }
                   >
                     <IoIosArrowBack fontSize={22} />
                   </Wrapper>
@@ -496,7 +500,7 @@ const MM08Presenter = ({
                     display={width < 900 ? `none` : `flex`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("/usb")}
+                    onClick={() => moveLinkHandler("/usb-physicalsecurity")}
                   >
                     <IoIosArrowForward fontSize={22} />
                   </Wrapper>
@@ -507,7 +511,7 @@ const MM08Presenter = ({
                     right={`42px`}
                     width={`auto`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler("/usb")}
+                    onClick={() => moveLinkHandler("/usb-physicalsecurity")}
                   >
                     <IoIosArrowForward fontSize={22} />
                   </Wrapper>
@@ -546,7 +550,7 @@ const MM08Presenter = ({
                     key={data._id}
                     bgImg={`url("${data.thumbnailPath}")`}
                     bgImg2={`url("${data.thumbnailPath2}")`}
-                    onClick={() => moveLinkHandler(`/lock/${data._id}`)}
+                    onClick={() => moveLinkHandler(`/key/${data._id}`)}
                   >
                     <Text
                       fontSize={width < 700 ? `10px` : `19px`}

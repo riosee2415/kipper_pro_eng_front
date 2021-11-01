@@ -68,7 +68,7 @@ const MM06Container = ({ history, location }) => {
   };
 
   const changeSubTypeHandler = (type) => {
-    history.push(`/computer?type=${type}`);
+    history.push(`/computer-physicalsecurity?type=${type}`);
   };
 
   const searchDataHandler = (e) => {
@@ -82,7 +82,7 @@ const MM06Container = ({ history, location }) => {
   };
 
   const searchDataBlurHandler = () => {
-    let url = `/computer?`;
+    let url = `/computer-physicalsecurity?`;
     if (query.type) url += `&type=${query.type}`;
 
     history.push(url);

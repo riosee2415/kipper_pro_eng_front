@@ -142,13 +142,13 @@ const MM09Presenter = ({
             width={`auto`}
             margin={width < 1000 ? `0 30px` : `0 55px`}
             cursor={`pointer`}
-            onClick={() => moveLinkHandler(`/usb`)}
+            onClick={() => moveLinkHandler(`/usb-physicalsecurity`)}
           >
             <Wrapper width={`80px`}>
               <Image
                 alt="icon"
                 src={
-                  location.pathname.includes("/usb")
+                  location.pathname.includes("/usb-physicalsecurity")
                     ? `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%85%E1%85%A1%E1%86%A8%E1%84%8F%E1%85%B5-03.svg?alt=media&token=1712d757-4fd7-4041-97cb-07c59340ed0e`
                     : `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2Fproduct-icon-03.png?alt=media&token=adae713b-c659-4475-beac-a7c1cd85abab`
                 }
@@ -160,8 +160,13 @@ const MM09Presenter = ({
             </Wrapper>
             <Text
               fontSize={`12px`}
-              fontWeight={location.pathname.includes("/usb") && `700`}
-              color={location.pathname.includes("/usb") && `rgb(209, 0, 0)`}
+              fontWeight={
+                location.pathname.includes("/usb-physicalsecurity") && `700`
+              }
+              color={
+                location.pathname.includes("/usb-physicalsecurity") &&
+                `rgb(209, 0, 0)`
+              }
             >
               USB Security
             </Text>
@@ -170,13 +175,13 @@ const MM09Presenter = ({
             width={`auto`}
             margin={width < 1000 ? `0 30px` : `0 55px`}
             cursor={`pointer`}
-            onClick={() => moveLinkHandler(`/p_network`)}
+            onClick={() => moveLinkHandler(`/network-physicalsecurity`)}
           >
             <Wrapper width={`80px`}>
               <Image
                 alt="icon"
                 src={
-                  location.pathname.includes("/p_network")
+                  location.pathname.includes("/network-physicalsecurity")
                     ? `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%85%E1%85%A1%E1%86%A8%E1%84%8F%E1%85%B5-06.svg?alt=media&token=cc91ed66-8aa0-470c-a79e-fd5c97651926`
                     : `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2Fproduct-icon-04.png?alt=media&token=adae713b-c659-4475-beac-a7c1cd85abab`
                 }
@@ -188,9 +193,12 @@ const MM09Presenter = ({
             </Wrapper>
             <Text
               fontSize={`12px`}
-              fontWeight={location.pathname.includes("/p_network") && `700`}
+              fontWeight={
+                location.pathname.includes("/network-physicalsecurity") && `700`
+              }
               color={
-                location.pathname.includes("/p_network") && `rgb(209, 0, 0)`
+                location.pathname.includes("/network-physicalsecurity") &&
+                `rgb(209, 0, 0)`
               }
             >
               Network Security
@@ -200,13 +208,13 @@ const MM09Presenter = ({
             width={`auto`}
             margin={width < 1000 ? `0 30px` : `0 55px`}
             cursor={`pointer`}
-            onClick={() => moveLinkHandler(`/port`)}
+            onClick={() => moveLinkHandler(`/data-port-physicalsecurity`)}
           >
             <Wrapper width={`80px`}>
               <Image
                 alt="icon"
                 src={
-                  location.pathname.includes("/port")
+                  location.pathname.includes("/data-port-physicalsecurity")
                     ? `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%85%E1%85%A1%E1%86%A8%E1%84%8F%E1%85%B5-04.svg?alt=media&token=9f031275-3abf-4d2a-ae2b-f5d7688b860f`
                     : `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2Fproduct-icon-05.png?alt=media&token=adae713b-c659-4475-beac-a7c1cd85abab`
                 }
@@ -218,8 +226,14 @@ const MM09Presenter = ({
             </Wrapper>
             <Text
               fontSize={`12px`}
-              fontWeight={location.pathname.includes("/port") && `700`}
-              color={location.pathname.includes("/port") && `rgb(209, 0, 0)`}
+              fontWeight={
+                location.pathname.includes("/data-port-physicalsecurity") &&
+                `700`
+              }
+              color={
+                location.pathname.includes("/data-port-physicalsecurity") &&
+                `rgb(209, 0, 0)`
+              }
             >
               Other Port Security
             </Text>
@@ -228,13 +242,13 @@ const MM09Presenter = ({
             width={`auto`}
             margin={width < 1000 ? `0 30px` : `0 55px`}
             cursor={`pointer`}
-            onClick={() => moveLinkHandler(`/computer`)}
+            onClick={() => moveLinkHandler(`/computer-physicalsecurity`)}
           >
             <Wrapper width={`80px`}>
               <Image
                 alt="icon"
                 src={
-                  location.pathname.includes("/computer")
+                  location.pathname.includes("/computer-physicalsecurity")
                     ? `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%85%E1%85%A1%E1%86%A8%E1%84%8F%E1%85%B5-05.svg?alt=media&token=2ee09f47-3c0a-4922-8bc3-50873a5028a8`
                     : `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2Fproduct-icon-06.png?alt=media&token=adae713b-c659-4475-beac-a7c1cd85abab`
                 }
@@ -246,9 +260,13 @@ const MM09Presenter = ({
             </Wrapper>
             <Text
               fontSize={`12px`}
-              fontWeight={location.pathname.includes("/computer") && `700`}
+              fontWeight={
+                location.pathname.includes("/computer-physicalsecurity") &&
+                `700`
+              }
               color={
-                location.pathname.includes("/computer") && `rgb(209, 0, 0)`
+                location.pathname.includes("/computer-physicalsecurity") &&
+                `rgb(209, 0, 0)`
               }
             >
               Anti-Theft for Computer
@@ -258,13 +276,13 @@ const MM09Presenter = ({
             width={`auto`}
             margin={width < 1000 ? `0 30px` : `0 55px`}
             cursor={`pointer`}
-            onClick={() => moveLinkHandler(`/lock`)}
+            onClick={() => moveLinkHandler(`/key`)}
           >
             <Wrapper width={`80px`}>
               <Image
                 alt="icon"
                 src={
-                  location.pathname.includes("/lock")
+                  location.pathname.includes("/key")
                     ? `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%85%E1%85%A1%E1%86%A8%E1%84%8F%E1%85%B5-07.svg?alt=media&token=d15e62ca-8c1d-4f50-b494-d1e20466cf78`
                     : `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2Fproduct-icon-07.png?alt=media&token=adae713b-c659-4475-beac-a7c1cd85abab`
                 }
@@ -276,8 +294,8 @@ const MM09Presenter = ({
             </Wrapper>
             <Text
               fontSize={`12px`}
-              fontWeight={location.pathname.includes("/lock") && `700`}
-              color={location.pathname.includes("/lock") && `rgb(209, 0, 0)`}
+              fontWeight={location.pathname.includes("/key") && `700`}
+              color={location.pathname.includes("/key") && `rgb(209, 0, 0)`}
             >
               Lock Key PRO
             </Text>
@@ -301,13 +319,13 @@ const MM09Presenter = ({
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 2)`}
                 cursor={`pointer`}
-                onClick={() => moveLinkHandler(`/computer`)}
+                onClick={() => moveLinkHandler(`/computer-physicalsecurity`)}
               >
                 <Wrapper width={`80px`}>
                   <Image
                     alt="icon"
                     src={
-                      location.pathname.includes("/computer")
+                      location.pathname.includes("/computer-physicalsecurity")
                         ? `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%85%E1%85%A1%E1%86%A8%E1%84%8F%E1%85%B5-05.svg?alt=media&token=2ee09f47-3c0a-4922-8bc3-50873a5028a8`
                         : `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2Fproduct-icon-06.png?alt=media&token=adae713b-c659-4475-beac-a7c1cd85abab`
                     }
@@ -319,9 +337,13 @@ const MM09Presenter = ({
                 </Wrapper>
                 <Text
                   fontSize={`10px`}
-                  fontWeight={location.pathname.includes("/computer") && `700`}
+                  fontWeight={
+                    location.pathname.includes("/computer-physicalsecurity") &&
+                    `700`
+                  }
                   color={
-                    location.pathname.includes("/computer") && `rgb(209, 0, 0)`
+                    location.pathname.includes("/computer-physicalsecurity") &&
+                    `rgb(209, 0, 0)`
                   }
                 >
                   Anti-Theft for Computer
@@ -330,13 +352,13 @@ const MM09Presenter = ({
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 2)`}
                 cursor={`pointer`}
-                onClick={() => moveLinkHandler(`/lock`)}
+                onClick={() => moveLinkHandler(`/key`)}
               >
                 <Wrapper width={`80px`}>
                   <Image
                     alt="icon"
                     src={
-                      location.pathname.includes("/lock")
+                      location.pathname.includes("/key")
                         ? `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%85%E1%85%A1%E1%86%A8%E1%84%8F%E1%85%B5-07.svg?alt=media&token=d15e62ca-8c1d-4f50-b494-d1e20466cf78`
                         : `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2Fproduct-icon-07.png?alt=media&token=adae713b-c659-4475-beac-a7c1cd85abab`
                     }
@@ -348,10 +370,8 @@ const MM09Presenter = ({
                 </Wrapper>
                 <Text
                   fontSize={`10px`}
-                  fontWeight={location.pathname.includes("/lock") && `700`}
-                  color={
-                    location.pathname.includes("/lock") && `rgb(209, 0, 0)`
-                  }
+                  fontWeight={location.pathname.includes("/key") && `700`}
+                  color={location.pathname.includes("/key") && `rgb(209, 0, 0)`}
                 >
                   Lock Key PRO
                 </Text>
@@ -362,13 +382,13 @@ const MM09Presenter = ({
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 3)`}
                 cursor={`pointer`}
-                onClick={() => moveLinkHandler(`/usb`)}
+                onClick={() => moveLinkHandler(`/usb-physicalsecurity`)}
               >
                 <Wrapper width={`80px`}>
                   <Image
                     alt="icon"
                     src={
-                      location.pathname.includes("/usb")
+                      location.pathname.includes("/usb-physicalsecurity")
                         ? `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%85%E1%85%A1%E1%86%A8%E1%84%8F%E1%85%B5-03.svg?alt=media&token=1712d757-4fd7-4041-97cb-07c59340ed0e`
                         : `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2Fproduct-icon-03.png?alt=media&token=adae713b-c659-4475-beac-a7c1cd85abab`
                     }
@@ -380,8 +400,13 @@ const MM09Presenter = ({
                 </Wrapper>
                 <Text
                   fontSize={`10px`}
-                  fontWeight={location.pathname.includes("/usb") && `700`}
-                  color={location.pathname.includes("/usb") && `rgb(209, 0, 0)`}
+                  fontWeight={
+                    location.pathname.includes("/usb-physicalsecurity") && `700`
+                  }
+                  color={
+                    location.pathname.includes("/usb-physicalsecurity") &&
+                    `rgb(209, 0, 0)`
+                  }
                 >
                   USB Security
                 </Text>
@@ -389,13 +414,13 @@ const MM09Presenter = ({
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 3)`}
                 cursor={`pointer`}
-                onClick={() => moveLinkHandler(`/p_network`)}
+                onClick={() => moveLinkHandler(`/network-physicalsecurity`)}
               >
                 <Wrapper width={`80px`}>
                   <Image
                     alt="icon"
                     src={
-                      location.pathname.includes("/p_network")
+                      location.pathname.includes("/network-physicalsecurity")
                         ? `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%85%E1%85%A1%E1%86%A8%E1%84%8F%E1%85%B5-06.svg?alt=media&token=cc91ed66-8aa0-470c-a79e-fd5c97651926`
                         : `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2Fproduct-icon-04.png?alt=media&token=adae713b-c659-4475-beac-a7c1cd85abab`
                     }
@@ -407,9 +432,13 @@ const MM09Presenter = ({
                 </Wrapper>
                 <Text
                   fontSize={`10px`}
-                  fontWeight={location.pathname.includes("/p_network") && `700`}
+                  fontWeight={
+                    location.pathname.includes("/network-physicalsecurity") &&
+                    `700`
+                  }
                   color={
-                    location.pathname.includes("/p_network") && `rgb(209, 0, 0)`
+                    location.pathname.includes("/network-physicalsecurity") &&
+                    `rgb(209, 0, 0)`
                   }
                 >
                   Network Security
@@ -418,13 +447,13 @@ const MM09Presenter = ({
               <Wrapper
                 width={`calc((100% - 36px - 36px) / 3)`}
                 cursor={`pointer`}
-                onClick={() => moveLinkHandler(`/port`)}
+                onClick={() => moveLinkHandler(`/data-port-physicalsecurity`)}
               >
                 <Wrapper width={`80px`}>
                   <Image
                     alt="icon"
                     src={
-                      location.pathname.includes("/port")
+                      location.pathname.includes("/data-port-physicalsecurity")
                         ? `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2F%E1%84%85%E1%85%A1%E1%86%A8%E1%84%8F%E1%85%B5-04.svg?alt=media&token=9f031275-3abf-4d2a-ae2b-f5d7688b860f`
                         : `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Ficon%2Fproduct-icon-05.png?alt=media&token=adae713b-c659-4475-beac-a7c1cd85abab`
                     }
@@ -436,9 +465,13 @@ const MM09Presenter = ({
                 </Wrapper>
                 <Text
                   fontSize={`10px`}
-                  fontWeight={location.pathname.includes("/port") && `700`}
+                  fontWeight={
+                    location.pathname.includes("/data-port-physicalsecurity") &&
+                    `700`
+                  }
                   color={
-                    location.pathname.includes("/port") && `rgb(209, 0, 0)`
+                    location.pathname.includes("/data-port-physicalsecurity") &&
+                    `rgb(209, 0, 0)`
                   }
                 >
                   Other Port Security
@@ -537,7 +570,7 @@ const MM09Presenter = ({
                       display={width < 900 ? `none` : `flex`}
                       width={`auto`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler("/lock")}
+                      onClick={() => moveLinkHandler("/key")}
                     >
                       <IoIosArrowBack fontSize={22} />
                     </Wrapper>
@@ -548,7 +581,7 @@ const MM09Presenter = ({
                       left={`15px`}
                       width={`auto`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler("/lock")}
+                      onClick={() => moveLinkHandler("/key")}
                     >
                       <IoIosArrowBack fontSize={22} />
                     </Wrapper>
@@ -626,7 +659,9 @@ const MM09Presenter = ({
                       display={width < 900 ? `none` : `flex`}
                       width={`auto`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler("/p_network")}
+                      onClick={() =>
+                        moveLinkHandler("/network-physicalsecurity")
+                      }
                     >
                       <IoIosArrowForward fontSize={22} />
                     </Wrapper>
@@ -637,7 +672,9 @@ const MM09Presenter = ({
                       right={`42px`}
                       width={`auto`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler("/p_network")}
+                      onClick={() =>
+                        moveLinkHandler("/network-physicalsecurity")
+                      }
                     >
                       <IoIosArrowForward fontSize={22} />
                     </Wrapper>
@@ -657,7 +694,9 @@ const MM09Presenter = ({
                       display={width < 900 ? `none` : `flex`}
                       width={`auto`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler("/port")}
+                      onClick={() =>
+                        moveLinkHandler("/data-port-physicalsecurity")
+                      }
                     >
                       <IoIosArrowBack fontSize={22} />
                     </Wrapper>
@@ -668,7 +707,9 @@ const MM09Presenter = ({
                       left={`15px`}
                       width={`auto`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler("/port")}
+                      onClick={() =>
+                        moveLinkHandler("/data-port-physicalsecurity")
+                      }
                     >
                       <IoIosArrowBack fontSize={22} />
                     </Wrapper>
@@ -735,7 +776,7 @@ const MM09Presenter = ({
                       display={width < 900 ? `none` : `flex`}
                       width={`auto`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler("/lock")}
+                      onClick={() => moveLinkHandler("/key")}
                     >
                       <IoIosArrowForward fontSize={22} />
                     </Wrapper>
@@ -746,7 +787,7 @@ const MM09Presenter = ({
                       right={`42px`}
                       width={`auto`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler("/lock")}
+                      onClick={() => moveLinkHandler("/key")}
                     >
                       <IoIosArrowForward fontSize={22} />
                     </Wrapper>
@@ -766,7 +807,9 @@ const MM09Presenter = ({
                       display={width < 900 ? `none` : `flex`}
                       width={`auto`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler("/p_network")}
+                      onClick={() =>
+                        moveLinkHandler("/network-physicalsecurity")
+                      }
                     >
                       <IoIosArrowBack fontSize={22} />
                     </Wrapper>
@@ -777,7 +820,9 @@ const MM09Presenter = ({
                       left={`15px`}
                       width={`auto`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler("/p_network")}
+                      onClick={() =>
+                        moveLinkHandler("/network-physicalsecurity")
+                      }
                     >
                       <IoIosArrowBack fontSize={22} />
                     </Wrapper>
@@ -866,7 +911,9 @@ const MM09Presenter = ({
                       display={width < 900 ? `none` : `flex`}
                       width={`auto`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler("/computer")}
+                      onClick={() =>
+                        moveLinkHandler("/computer-physicalsecurity")
+                      }
                     >
                       <IoIosArrowForward fontSize={22} />
                     </Wrapper>
@@ -877,7 +924,9 @@ const MM09Presenter = ({
                       right={`42px`}
                       width={`auto`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler("/computer")}
+                      onClick={() =>
+                        moveLinkHandler("/computer-physicalsecurity")
+                      }
                     >
                       <IoIosArrowForward fontSize={22} />
                     </Wrapper>
@@ -897,7 +946,9 @@ const MM09Presenter = ({
                       display={width < 900 ? `none` : `flex`}
                       width={`auto`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler("/computer")}
+                      onClick={() =>
+                        moveLinkHandler("/computer-physicalsecurity")
+                      }
                     >
                       <IoIosArrowBack fontSize={22} />
                     </Wrapper>
@@ -908,7 +959,9 @@ const MM09Presenter = ({
                       left={`15px`}
                       width={`auto`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler("/computer")}
+                      onClick={() =>
+                        moveLinkHandler("/computer-physicalsecurity")
+                      }
                     >
                       <IoIosArrowBack fontSize={22} />
                     </Wrapper>
@@ -956,7 +1009,7 @@ const MM09Presenter = ({
                       display={width < 900 ? `none` : `flex`}
                       width={`auto`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler("/lock")}
+                      onClick={() => moveLinkHandler("/key")}
                     >
                       <IoIosArrowForward fontSize={22} />
                     </Wrapper>
@@ -967,7 +1020,7 @@ const MM09Presenter = ({
                       right={`42px`}
                       width={`auto`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler("/lock")}
+                      onClick={() => moveLinkHandler("/key")}
                     >
                       <IoIosArrowForward fontSize={22} />
                     </Wrapper>
@@ -987,7 +1040,7 @@ const MM09Presenter = ({
                       display={width < 900 ? `none` : `flex`}
                       width={`auto`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler("/usb")}
+                      onClick={() => moveLinkHandler("/usb-physicalsecurity")}
                     >
                       <IoIosArrowBack fontSize={22} />
                     </Wrapper>
@@ -998,7 +1051,7 @@ const MM09Presenter = ({
                       left={`15px`}
                       width={`auto`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler("/usb")}
+                      onClick={() => moveLinkHandler("/usb-physicalsecurity")}
                     >
                       <IoIosArrowBack fontSize={22} />
                     </Wrapper>
@@ -1065,7 +1118,9 @@ const MM09Presenter = ({
                       display={width < 900 ? `none` : `flex`}
                       width={`auto`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler("/port")}
+                      onClick={() =>
+                        moveLinkHandler("/data-port-physicalsecurity")
+                      }
                     >
                       <IoIosArrowForward fontSize={22} />
                     </Wrapper>
@@ -1076,7 +1131,9 @@ const MM09Presenter = ({
                       right={`42px`}
                       width={`auto`}
                       cursor={`pointer`}
-                      onClick={() => moveLinkHandler("/port")}
+                      onClick={() =>
+                        moveLinkHandler("/data-port-physicalsecurity")
+                      }
                     >
                       <IoIosArrowForward fontSize={22} />
                     </Wrapper>
@@ -1509,7 +1566,7 @@ const MM09Presenter = ({
                   <SpanText
                     color={`rgb(15, 152, 255)`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler(`/contact`)}
+                    onClick={() => moveLinkHandler(`/inquiry`)}
                   >
                     &nbsp;CONTACT US↗
                   </SpanText>
@@ -1523,7 +1580,7 @@ const MM09Presenter = ({
                   letterSpacing={`-0.03em`}
                   lineHeight={`1.36`}
                 >
-                  leave your required item/qty/contact so that we can get back
+                  leave your required item/qty/inquiry so that we can get back
                   to you in a day.
                 </Text>
 
@@ -1540,11 +1597,11 @@ const MM09Presenter = ({
                   <SpanText
                     color={`rgb(15, 152, 255)`}
                     cursor={`pointer`}
-                    onClick={() => moveLinkHandler(`/contact`)}
+                    onClick={() => moveLinkHandler(`/inquiry`)}
                   >
                     &nbsp;CONTACT US↗
                   </SpanText>
-                  and leave your required item/qty/contact so that we can get
+                  and leave your required item/qty/inquiry so that we can get
                   back to you in a day.
                 </Text>
               </Wrapper>
@@ -1554,7 +1611,7 @@ const MM09Presenter = ({
           <Wrapper display={width < 900 ? `flex` : `none`}>
             <BuyButton
               color={Theme.white_C}
-              onClick={() => moveLinkHandler(`/contact`)}
+              onClick={() => moveLinkHandler(`/inquiry`)}
             >
               Buy Now
             </BuyButton>
@@ -1590,7 +1647,7 @@ const MM09Presenter = ({
             </Wrapper>
             <BuyButton
               color={Theme.white_C}
-              onClick={() => moveLinkHandler(`/contact`)}
+              onClick={() => moveLinkHandler(`/inquiry`)}
             >
               Buy Now
             </BuyButton>

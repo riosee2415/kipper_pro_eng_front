@@ -832,7 +832,7 @@ const MM16Presenter = ({
                   </Text>
                 </Wrapper>
                 <Wrapper al={`flex-start`}>
-                  <Link to="/security">
+                  <Link to="/usb-security">
                     <Button dr={`row`}>
                       Learn more
                       <Wrapper width={`auto`} margin={`5px 0 0`}>
@@ -865,7 +865,7 @@ const MM16Presenter = ({
                     <SubTitle>Starting point of Port Security,</SubTitle>
                     <SubTitle>End it with Physical Security.</SubTitle>
                   </Wrapper>
-                  <Link to="/security">
+                  <Link to="/usb-security">
                     <Button
                       dr={`row`}
                       margin={width < 700 ? `10px 0 0` : `20px 0 0`}
@@ -907,7 +907,7 @@ const MM16Presenter = ({
                     <SubTitle>Network &#38; Intranet :</SubTitle>
                     <SubTitle>Pathway to all assets within</SubTitle>
                   </Wrapper>
-                  <Link to="/network">
+                  <Link to="/network-security">
                     <Button
                       dr={`row`}
                       margin={width < 700 ? `10px 0 0` : `20px 0 0`}
@@ -1496,7 +1496,7 @@ const MM16Presenter = ({
               fontWeight={`700`}
               margin={`0 0 26px`}
             >
-              closer{" "}
+              closer
               <SpanText color={Theme.subTheme3_C}>attack methods</SpanText>
             </Text>
 
@@ -1616,7 +1616,7 @@ const MM16Presenter = ({
               <Text fontSize={`21px`} fontWeight={`700`} color={Theme.white_C}>
                 Now a must, not a choice.
               </Text>
-              <Link to="/about">
+              <Link to="/smartkeeper">
                 <Wrapper
                   margin={`10px 0 0`}
                   color={Theme.subTheme2_C}
@@ -1670,7 +1670,7 @@ const MM16Presenter = ({
                 End it with Physical Security.
               </Text>
 
-              <Link to="/security">
+              <Link to="/usb-security">
                 <Wrapper
                   margin={`10px 0 0`}
                   color={Theme.white_C}
@@ -1722,7 +1722,7 @@ const MM16Presenter = ({
               >
                 Pathway to all assets within
               </Text>
-              <Link to="/network">
+              <Link to="/network-security">
                 <Wrapper
                   margin={`10px 0 0`}
                   color={Theme.white_C}

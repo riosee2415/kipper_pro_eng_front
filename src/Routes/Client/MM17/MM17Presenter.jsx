@@ -293,7 +293,7 @@ const MM17Presenter = ({
                   >
                     (CSK-UL10)
                   </Text>
-                  <Link to="/usb/611eb54dc3605319d4babda5">
+                  <Link to="/usb-physicalsecurity/611eb54dc3605319d4babda5">
                     <ArrowIcon>
                       Learn more
                       <FaChevronRight />
@@ -361,7 +361,7 @@ const MM17Presenter = ({
                   >
                     (CSK-LK11)
                   </Text>
-                  <Link to="/usb/611eb54dc3605319d4babda8">
+                  <Link to="/usb-physicalsecurity/611eb54dc3605319d4babda8">
                     <ArrowIcon>
                       Learn more
                       <FaChevronRight />
@@ -789,7 +789,7 @@ const MM17Presenter = ({
             electricity.
           </Text>
 
-          {/* <Link to="/usb/611eb54dc3605319d4babda5">
+          {/* <Link to="/usb-physicalsecurity/611eb54dc3605319d4babda5">
             <ArrowIcon fontWeight={`700`} margin={`10px 0 0`}>
               Learn more about USB Port Lock
               <FaChevronRight />
@@ -1005,7 +1005,7 @@ const MM17Presenter = ({
               </Text>
               <Text fontSize={`20px`}>to enhance physical</Text>
               <Text fontSize={`20px`}>cybersecurity. </Text>
-              <Link to="/usb/611eb54dc3605319d4babda5">
+              <Link to="/usb-physicalsecurity/611eb54dc3605319d4babda5">
                 <ArrowIcon margin={`22px 0 0`}>
                   Learn more bout USB Port Lock
                   <FaChevronRight />
@@ -1066,7 +1066,7 @@ const MM17Presenter = ({
           Link and Lock it down!
         </Text>
 
-        <Link to="/usb/611eb54dc3605319d4babda8">
+        <Link to="/usb-physicalsecurity/611eb54dc3605319d4babda8">
           <ArrowIcon>
             Learn more about Link Lock
             <FaChevronRight />
@@ -1097,7 +1097,7 @@ const MM17Presenter = ({
             <Text fontSize={`16px`} lineHeight={`1.4`} fontWeight={`400`}>
               cybersecurity.
             </Text>
-            <Link to="/usb/611eb54dc3605319d4babda5">
+            <Link to="/usb-physicalsecurity/611eb54dc3605319d4babda5">
               <ArrowIcon
                 fontSize={width < 700 && `12px`}
                 color={Theme.greyTheme4_C}
@@ -1153,7 +1153,7 @@ const MM17Presenter = ({
               with products of matching pattern.
             </Text>
 
-            <Link to="/lock/611eb54dc3605319d4babda2">
+            <Link to="/key/611eb54dc3605319d4babda2">
               <ArrowIcon fontWeight={`700`}>
                 Learn more about Universal Lock Key
                 <FaChevronRight />
@@ -1197,7 +1197,7 @@ const MM17Presenter = ({
             <Text fontWeight={`400`} margin={`0 0 30px`}>
               products of matching pattern.
             </Text>
-            <Link to="/lock/611eb54dc3605319d4babda2">
+            <Link to="/key/611eb54dc3605319d4babda2">
               <ArrowIcon fontWeight={`700`}>
                 Learn more about Universal Lock Key
                 <FaChevronRight />

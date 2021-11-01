@@ -68,7 +68,7 @@ const MM04Container = ({ history, location }) => {
   };
 
   const changeSubTypeHandler = (type) => {
-    history.push(`/usb?type=${type}`);
+    history.push(`/usb-physicalsecurity?type=${type}`);
   };
 
   const searchDataHandler = (e) => {
@@ -82,7 +82,7 @@ const MM04Container = ({ history, location }) => {
   };
 
   const searchDataBlurHandler = () => {
-    let url = `/usb?`;
+    let url = `/usb-physicalsecurity?`;
     if (query.type) url += `&type=${query.type}`;
 
     history.push(url);

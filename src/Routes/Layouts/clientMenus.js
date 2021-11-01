@@ -1,15 +1,15 @@
 export const menus = [
   {
     menuName: "SMARTKEEPER",
-    menuLink: "/about",
+    menuLink: "/smartkeeper",
     subMenus: [
       {
         subMenuName: "SMARTKEEPER?",
-        subMenuLink: "/about",
+        subMenuLink: "/smartkeeper",
       },
       {
         subMenuName: "SMARTKEEPER PRO",
-        subMenuLink: "/insightpro",
+        subMenuLink: "/smartkeeperpro",
       },
       {
         subMenuName: "REFERENCE",
@@ -19,27 +19,27 @@ export const menus = [
   },
   {
     menuName: "PRODUCT",
-    menuLink: "/usb",
+    menuLink: "/usb-physicalsecurity",
     subMenus: [
       {
         subMenuName: "USB Physical Security",
-        subMenuLink: "/usb",
+        subMenuLink: "/usb-physicalsecurity",
       },
       {
         subMenuName: "Network Physical Security",
-        subMenuLink: "/p_network",
+        subMenuLink: "/network-physicalsecurity",
       },
       {
         subMenuName: "Other Port Physical Security",
-        subMenuLink: "/port",
+        subMenuLink: "/data-port-physicalsecurity",
       },
       {
         subMenuName: "Computer Physical Security",
-        subMenuLink: "/computer",
+        subMenuLink: "/computer-physicalsecurity",
       },
       {
         subMenuName: "Lock Key PRO",
-        subMenuLink: "/lock",
+        subMenuLink: "/key",
       },
     ],
   },
@@ -71,11 +71,11 @@ export const menus = [
       },
       {
         subMenuName: "Contact us",
-        subMenuLink: "/contact",
+        subMenuLink: "/inquiry",
       },
       {
         subMenuName: "Download",
-        subMenuLink: "/reference",
+        subMenuLink: "/download",
       },
     ],
   },
@@ -92,22 +92,22 @@ export const essmMenus = [
   },
   {
     menuName: "No Key Required",
-    menuLink: "http://smartkeeperessential.com/#/product",
+    menuLink: "http://smartkeeperessential.com/#/keyless",
   },
   {
     menuName: "Lock Key ESSENTIAL",
-    menuLink: "http://smartkeeperessential.com/#/lock",
+    menuLink: "http://smartkeeperessential.com/#/key",
   },
 ];
 
 export const footerMenus = [
   {
     menuName: "SMARTKEEPER",
-    menuLink: "/about",
+    menuLink: "/smartkeeper",
     subMenus: [
       {
         subMenuName: "SMARTKEEPER?",
-        subMenuLink: "/about",
+        subMenuLink: "/smartkeeper",
       },
       {
         subMenuName: "VIRUS INTRUSION",
@@ -115,7 +115,7 @@ export const footerMenus = [
       },
       {
         subMenuName: "SMARTKEEPER PRO",
-        subMenuLink: "/insightpro",
+        subMenuLink: "/smartkeeperpro",
       },
       {
         subMenuName: "SMARTKEEPER ESSENTIAL",
@@ -131,11 +131,11 @@ export const footerMenus = [
       },
       {
         subMenuName: "Completion of USB Security",
-        subMenuLink: "/security",
+        subMenuLink: "/usb-security",
       },
       {
         subMenuName: "Combination of Network Security",
-        subMenuLink: "/network",
+        subMenuLink: "/network-security",
       },
     ],
   },
@@ -145,23 +145,23 @@ export const footerMenus = [
     subMenus: [
       {
         subMenuName: "USB Physical Security",
-        subMenuLink: "/usb",
+        subMenuLink: "/usb-physicalsecurity",
       },
       {
         subMenuName: "Network Physical Security",
-        subMenuLink: "/p_network",
+        subMenuLink: "/network-physicalsecurity",
       },
       {
         subMenuName: "Other Port Physical Security",
-        subMenuLink: "/port",
+        subMenuLink: "/data-port-physicalsecurity",
       },
       {
         subMenuName: "Computer Physical Security",
-        subMenuLink: "/computer",
+        subMenuLink: "/computer-physicalsecurity",
       },
       {
         subMenuName: "Lock Key PRO",
-        subMenuLink: "/lock",
+        subMenuLink: "/key",
       },
     ],
   },
@@ -181,12 +181,12 @@ export const footerMenus = [
       },
       {
         subMenuName: "No Key Required",
-        subMenuLink: "http://smartkeeperessential.com/#/product",
+        subMenuLink: "http://smartkeeperessential.com/#/keyless",
         isEx: true,
       },
       {
         subMenuName: "Lock Key ESSENTIAL",
-        subMenuLink: "http://smartkeeperessential.com/#/lock",
+        subMenuLink: "http://smartkeeperessential.com/#/key",
         isEx: true,
       },
     ],
@@ -219,11 +219,11 @@ export const footerMenus = [
       },
       {
         subMenuName: "Contact us",
-        subMenuLink: "/contact",
+        subMenuLink: "/inquiry",
       },
       {
         subMenuName: "Download",
-        subMenuLink: "/reference",
+        subMenuLink: "/download",
       },
     ],
   },

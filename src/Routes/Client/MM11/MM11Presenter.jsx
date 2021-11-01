@@ -144,7 +144,7 @@ const MM11Presenter = ({
                   <Wrapper dr={`row`} ju={`flex-start`}>
                     <Box
                       onClick={() => {
-                        moveLinkHandler("/about");
+                        moveLinkHandler("/smartkeeper");
                       }}
                     >
                       <Text fontSize={`11px`}>SMARTKEEPER?</Text>
@@ -196,7 +196,7 @@ const MM11Presenter = ({
                     </Box>
                     <Box
                       onClick={() => {
-                        moveLinkHandler("/security");
+                        moveLinkHandler("/network-security");
                       }}
                       width={`205px`}
                     >
@@ -205,7 +205,7 @@ const MM11Presenter = ({
                     </Box>
                     <Box
                       onClick={() => {
-                        moveLinkHandler("/network");
+                        moveLinkHandler("/network-security");
                       }}
                       width={`225px`}
                     >
@@ -236,7 +236,7 @@ const MM11Presenter = ({
                   <Wrapper dr={`row`} ju={`flex-start`}>
                     <Box
                       onClick={() => {
-                        moveLinkHandler("/usb");
+                        moveLinkHandler("/usb-physicalsecurity");
                       }}
                     >
                       <Text fontSize={`12px`}>USB Physical Security</Text>
@@ -244,7 +244,7 @@ const MM11Presenter = ({
                     </Box>
                     <Box
                       onClick={() => {
-                        moveLinkHandler("/p_network");
+                        moveLinkHandler("/network-physicalsecurity");
                       }}
                     >
                       <Text fontSize={`11px`}>Network Physical Security</Text>
@@ -252,7 +252,7 @@ const MM11Presenter = ({
                     </Box>
                     <Box
                       onClick={() => {
-                        moveLinkHandler("/computer");
+                        moveLinkHandler("/computer-physicalsecurity");
                       }}
                       width={`210px`}
                     >
@@ -261,7 +261,7 @@ const MM11Presenter = ({
                     </Box>
                     <Box
                       onClick={() => {
-                        moveLinkHandler("/port");
+                        moveLinkHandler("/data-port-physicalsecurity");
                       }}
                       width={`210px`}
                     >
@@ -275,7 +275,7 @@ const MM11Presenter = ({
                   <Wrapper dr={`row`} margin={`20px 0 0`} ju={`flex-start`}>
                     <Box
                       onClick={() => {
-                        moveLinkHandler("/lock");
+                        moveLinkHandler("/key");
                       }}
                     >
                       <Text fontSize={`12px`}>Lock Key PRO</Text>
@@ -411,7 +411,7 @@ const MM11Presenter = ({
                     </Box>
                     <Box
                       onClick={() => {
-                        moveLinkHandler("/contact");
+                        moveLinkHandler("/inquiry");
                       }}
                     >
                       <Text fontSize={`11px`}>Contact us</Text>
@@ -476,7 +476,7 @@ const MM11Presenter = ({
               <Box
                 margin={`20px 0 0 26px`}
                 onClick={() => {
-                  moveLinkHandler("/about");
+                  moveLinkHandler("/smartkeeper");
                 }}
               >
                 <Text fontSize={`12px`}>SMARTKEEPER?</Text>
@@ -524,7 +524,7 @@ const MM11Presenter = ({
               </Box>
               <Box
                 onClick={() => {
-                  moveLinkHandler("/security");
+                  moveLinkHandler("/network-security");
                 }}
               >
                 <Text fontSize={`12px`}>Completion of USB Security</Text>
@@ -532,7 +532,7 @@ const MM11Presenter = ({
               </Box>
               <Box
                 onClick={() => {
-                  moveLinkHandler("/network");
+                  moveLinkHandler("/network-security");
                 }}
               >
                 <Text fontSize={`12px`}>Combination of Network Security</Text>
@@ -541,7 +541,7 @@ const MM11Presenter = ({
               <Title margin={`35px 0 0 26px`}>PRO</Title>
               <Box
                 onClick={() => {
-                  moveLinkHandler("/usb");
+                  moveLinkHandler("/usb-physicalsecurity");
                 }}
               >
                 <Text fontSize={`12px`}>USB Physical Security</Text>
@@ -549,7 +549,7 @@ const MM11Presenter = ({
               </Box>
               <Box
                 onClick={() => {
-                  moveLinkHandler("/p_network");
+                  moveLinkHandler("/network-physicalsecurity");
                 }}
               >
                 <Text fontSize={`11px`}>Network Physical Security</Text>
@@ -557,7 +557,7 @@ const MM11Presenter = ({
               </Box>
               <Box
                 onClick={() => {
-                  moveLinkHandler("/computer");
+                  moveLinkHandler("/computer-physicalsecurity");
                 }}
               >
                 <Text fontSize={`12px`}>Computer Physical Security</Text>
@@ -565,7 +565,7 @@ const MM11Presenter = ({
               </Box>
               <Box
                 onClick={() => {
-                  moveLinkHandler("/port");
+                  moveLinkHandler("/data-port-physicalsecurity");
                 }}
               >
                 <Text fontSize={`12px`}>Other Port Physical Security</Text>
@@ -573,7 +573,7 @@ const MM11Presenter = ({
               </Box>
               <Box
                 onClick={() => {
-                  moveLinkHandler("/lock");
+                  moveLinkHandler("/key");
                 }}
               >
                 <Text fontSize={`12px`}>Lock Key PRO</Text>
@@ -648,7 +648,7 @@ const MM11Presenter = ({
               </Box>
               <Box
                 onClick={() => {
-                  moveLinkHandler("/contact");
+                  moveLinkHandler("/inquiry");
                 }}
               >
                 <Text fontSize={`11px`}>Contact us</Text>
