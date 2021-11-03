@@ -775,7 +775,7 @@ const MM00Presenter = ({
                 fontSize={`16px`}
                 fontWeight={`700`}
                 color={Theme.white_C}
-                onClick={() => moveLinkHandler(`/example`)}
+                onClick={() => moveLinkHandler(`/reference`)}
               >
                 Learn more
               </Text>

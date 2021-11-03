@@ -13,7 +13,7 @@ export const menus = [
       },
       {
         subMenuName: "REFERENCE",
-        subMenuLink: "/example",
+        subMenuLink: "/reference",
       },
     ],
   },
@@ -123,7 +123,7 @@ export const footerMenus = [
       },
       {
         subMenuName: "REFERENCE(PRO)",
-        subMenuLink: "/example",
+        subMenuLink: "/reference",
       },
       {
         subMenuName: "REFERENCE(ESSENTIAL)",

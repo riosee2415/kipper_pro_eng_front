@@ -180,7 +180,7 @@ const MM11Presenter = ({
                   <Wrapper dr={`row`} margin={`20px 0 0`} ju={`flex-start`}>
                     <Box
                       onClick={() => {
-                        moveLinkHandler("/example");
+                        moveLinkHandler("/reference");
                       }}
                     >
                       <Text fontSize={`11px`}>REFERENCE(PRO)</Text>
@@ -508,7 +508,7 @@ const MM11Presenter = ({
               </Box>
               <Box
                 onClick={() => {
-                  moveLinkHandler("/example");
+                  moveLinkHandler("/reference");
                 }}
               >
                 <Text fontSize={`12px`}>REFERENCE(PRO)</Text>

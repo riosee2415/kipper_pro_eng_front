@@ -50,7 +50,7 @@ const AppRouter = ({ width }) => {
       <Route exact path="/pro" component={Header} />
       <Route exact path="/smartkeeper" component={Header} />
       <Route exact path="/smartkeeperpro" component={Header} />
-      <Route exact path="/example" component={Header} />
+      <Route exact path="/reference" component={Header} />
       <Route exact path="/usb-physicalsecurity" component={Header} />
       <Route exact path="/usb-physicalsecurity/:key" component={Header} />
       <Route exact path="/network-security" component={Header} />
@@ -88,7 +88,7 @@ const AppRouter = ({ width }) => {
       <Route exact path="/" component={ScrollTopBtn} />
       <Route exact path="/smartkeeper" component={ScrollTopBtn} />
       <Route exact path="/smartkeeperpro" component={ScrollTopBtn} />
-      <Route exact path="/example" component={ScrollTopBtn} />
+      <Route exact path="/reference" component={ScrollTopBtn} />
       <Route exact path="/usb-physicalsecurity" component={ScrollTopBtn} />
       <Route exact path="/usb-physicalsecurity/:key" component={ScrollTopBtn} />
       <Route exact path="/network-security" component={ScrollTopBtn} />
@@ -137,7 +137,7 @@ const AppRouter = ({ width }) => {
       <Route exact path="/" component={MMinit} />
       <Route exact path="/smartkeeper" component={MM01} />
       <Route exact path="/smartkeeperpro" component={MM02} />
-      <Route exact path="/example" component={MM03} />
+      <Route exact path="/reference" component={MM03} />
       <Route exact path="/usb-physicalsecurity" component={MM04} />
       <Route exact path="/usb-physicalsecurity/:key" component={MM09} />
       <Route exact path="/network-security" component={MM05} />
@@ -171,7 +171,7 @@ const AppRouter = ({ width }) => {
       <Route exact path="/" component={Footer} />
       <Route exact path="/smartkeeper" component={Footer} />
       <Route exact path="/smartkeeperpro" component={Footer} />
-      <Route exact path="/example" component={Footer} />
+      <Route exact path="/reference" component={Footer} />
       <Route exact path="/usb-physicalsecurity" component={Footer} />
       <Route exact path="/usb-physicalsecurity/:key" component={Footer} />
       <Route exact path="/network-security" component={Footer} />

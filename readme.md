@@ -13,7 +13,7 @@
 | 1    | MAIN         | 메인                        | MM00     | "/"                           |
 | 2    | ABOUT        | 스마트키퍼란                | MM01     | "/smartkeeper"                |
 | 3    | PRO          | 스마트키퍼 프로             | MM02     | "/smartkeeperpro"             |
-| 4    | EXAMPLE      | 적용 사례                   | MM03     | "/example"                    |
+| 4    | EXAMPLE      | 적용 사례                   | MM03     | "/reference"                  |
 | 5    | USB          | USB 물리보안                | MM04     | "/usb-physicalsecurity"       |
 | 6    | NETWORK      | 네트워크 보안의 이상적 조합 | MM05     | "/network-security"           |
 | 7    | COMPUTER     | 컴퓨터 물리보안             | MM06     | "/computer-physicalsecurity"  |
