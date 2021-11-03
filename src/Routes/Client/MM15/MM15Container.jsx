@@ -126,12 +126,12 @@ const MM15Container = ({ history, location }) => {
     }
 
     history.push(
-      `/reference?page=${page + 1}&search=${searchValue}&type=${currentTab}`
+      `/download?page=${page + 1}&search=${searchValue}&type=${currentTab}`
     );
   };
   const changePageHandler = (page) => {
     history.push(
-      `/reference?page=${page + 1}&search=${searchValue}&type=${currentTab}`
+      `/download?page=${page + 1}&search=${searchValue}&type=${currentTab}`
     );
   };
 
@@ -146,12 +146,12 @@ const MM15Container = ({ history, location }) => {
 
   const searchBlurHandler = (e) => {
     history.push(
-      `/reference?page=1&search=${inputSearch.value}&type=${currentTab}`
+      `/download?page=1&search=${inputSearch.value}&type=${currentTab}`
     );
   };
 
   const changeTabHandler = (currentTab) => {
-    history.push(`/reference?page=1&type=${currentTab}`);
+    history.push(`/download?page=1&type=${currentTab}`);
   };
 
   ////////////// - USE EFFECT- //////////////
@@ -181,8 +181,6 @@ const MM15Container = ({ history, location }) => {
       setCurrentTab(parseInt(query.type));
     }
   }, [location.search]);
-
-  console.log(currentTab);
 
   useEffect(() => {
     if (currentTab === 0 && pData) {

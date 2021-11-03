@@ -279,8 +279,6 @@ const MM01Presenter = ({
     setHeight(heightRef.current.offsetHeight);
   }, []);
 
-  console.log(isEnd);
-
   return (
     <ParallaxProvider>
       <WholeWrapper bgColor={Theme.blackTheme2_C}>
