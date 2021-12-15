@@ -22,7 +22,7 @@ const ProText = styled.div`
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  bottom: -65%;
+  top: 56%;
   left: 0;
   width: 100%;
   transition: 0.6s;
@@ -66,7 +66,7 @@ const EssText = styled.div`
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  bottom: -70%;
+  top: 56%;
   left: 0;
   width: 100%;
   transition: 0.6s;
@@ -222,7 +222,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
                   ? width < 700
                     ? `360px`
                     : `400px`
-                  : `calc(100vh - 450px)`
+                  : `calc(100vh - 250px)`
                 : `calc(100vh - 150px)`
             }
             isRelative={true}
@@ -238,7 +238,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
                     ? width < 700
                       ? `360px`
                       : `400px`
-                    : `calc(100vh - 450px)`
+                    : `calc(100vh - 250px)`
                   : `calc(100vh - 150px)`
               }
               alt="image"
@@ -249,8 +249,10 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
               isAbsolute={true}
               top={`0`}
               left={`0`}
-              padding={`30px 0 0`}
+              padding={`30px 0`}
               zIndex={`999`}
+              ju={`space-between`}
+              height={`100%`}
             >
               <Image
                 width={width < 700 ? `100px` : `196px`}
@@ -259,9 +261,15 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
               />
               <Image
                 width={width < 700 ? `100px` : `156px`}
-                margin={width < 900 ? `120px 0 0` : `300px 0 0`}
+                // margin={width < 900 ? `120px 0 0` : `300px 0 0`}
                 alt="pro"
                 src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMMinit%2FPRO_Landing.svg?alt=media&token=c474bdd7-002f-4708-9e44-509f2e57cf15`}
+              />
+              <Image
+                opacity={`0`}
+                width={width < 700 ? `100px` : `196px`}
+                alt="smartkeeper"
+                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMMinit%2FSMARTKEEPER_Landing.svg?alt=media&token=a9b47d47-6562-49ec-9a19-c71746a8f488`}
               />
               <ProText>
                 <Wrapper
@@ -302,7 +310,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
                   ? width < 700
                     ? `360px`
                     : `400px`
-                  : `calc(100vh - 450px)`
+                  : `calc(100vh - 250px)`
                 : `calc(100vh - 150px)`
             }
             isRelative={true}
@@ -315,7 +323,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
                     ? width < 700
                       ? `360px`
                       : `400px`
-                    : `calc(100vh - 450px)`
+                    : `calc(100vh - 250px)`
                   : `calc(100vh - 150px)`
               }
               alt="image"
@@ -329,7 +337,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
                     ? width < 700
                       ? `360px`
                       : `400px`
-                    : `calc(100vh - 450px)`
+                    : `calc(100vh - 250px)`
                   : `calc(100vh - 150px)`
               }
               alt="image"
@@ -341,8 +349,10 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
               isAbsolute={true}
               top={`0`}
               left={`0`}
-              padding={`30px 0 0`}
+              padding={`30px 0`}
               zIndex={`999`}
+              ju={`space-between`}
+              height={`100%`}
             >
               <Image
                 className={`noHoverSmart`}
@@ -361,7 +371,7 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
               <Image
                 className={`noHoverEss`}
                 width={width < 700 ? `258px` : `400px`}
-                margin={width < 900 ? `120px 0 0` : `300px 0 0`}
+                // margin={width < 900 ? `120px 0 0` : `300px 0 0`}
                 alt="essential"
                 src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMMinit%2FESSENTIAL_br_landing.svg?alt=media&token=951ad808-3c13-41ba-b3a5-b8e633029e9f`}
               />
@@ -369,9 +379,25 @@ const MMinitPresenter = ({ width, moveLinkHandler, moveLinkHandler2 }) => {
                 className={`hoverEss`}
                 display={`none`}
                 width={width < 700 ? `258px` : `400px`}
-                margin={width < 900 ? `120px 0 0` : `300px 0 0`}
+                // margin={width < 900 ? `120px 0 0` : `300px 0 0`}
                 alt="essential"
                 src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMMinit%2FESSENTIAL_Landing.svg?alt=media&token=8df4d101-93b6-41d8-b351-4758ff75fcad`}
+              />
+
+              <Image
+                opacity={`0`}
+                className={`noHoverSmart`}
+                width={width < 700 ? `100px` : `196px`}
+                alt="smartkeeper"
+                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMMinit%2FSMARTKEEPER_br_landing.svg?alt=media&token=7f698310-9665-4bc2-a7b6-f582ae1fff2a`}
+              />
+              <Image
+                opacity={`0`}
+                className={`hoverSmart`}
+                display={`none`}
+                width={width < 700 ? `100px` : `196px`}
+                alt="smartkeeper"
+                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMMinit%2FSMARTKEEPER_Landing.svg?alt=media&token=a9b47d47-6562-49ec-9a19-c71746a8f488`}
               />
               <EssText>
                 <Wrapper

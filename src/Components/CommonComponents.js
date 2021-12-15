@@ -1152,6 +1152,7 @@ export const Image = styled.img`
   height: ${(props) => props.height || `auto`};
   cursor: ${(props) => props.cursor};
   margin: ${(props) => props.margin};
+  opacity: ${(props) => props.opacity};
   transform: ${(props) => props.transform};
   object-fit: ${(props) => props.objectFit || `cover`};
   position: ${(props) => (props.isAbsolute ? `absolute` : ``)};
