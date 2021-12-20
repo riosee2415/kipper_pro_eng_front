@@ -70,7 +70,6 @@ const AppRouter = ({ width }) => {
       <Route exact path="/malware" component={Header} />
       <Route exact path="/usb-security" component={Header} />
       <Route exact path="/network-physicalsecurity" component={Header} />
-      <Route exact path="/network-physicalsecurity/:key" component={Header} />
       <Route exact path="/login" component={Header} />
 
       <Route exact path="/essential" component={Header2} />
@@ -125,11 +124,6 @@ const AppRouter = ({ width }) => {
       <Route exact path="/usb-security" component={ScrollTopBtn} />
       <Route exact path="/pro" component={ScrollTopBtn} />
       <Route exact path="/network-physicalsecurity" component={ScrollTopBtn} />
-      <Route
-        exact
-        path="/network-physicalsecurity/:key"
-        component={ScrollTopBtn}
-      />
       <Route exact path="/essential" component={ScrollTopBtn} />
       <Route exact path="/login" component={ScrollTopBtn} />
 
@@ -139,14 +133,14 @@ const AppRouter = ({ width }) => {
       <Route exact path="/smartkeeperpro" component={MM02} />
       <Route exact path="/reference" component={MM03} />
       <Route exact path="/usb-physicalsecurity" component={MM04} />
-      <Route exact path="/usb-physicalsecurity/:key" component={MM09} />
       <Route exact path="/network-security" component={MM05} />
-      <Route exact path="/network-physicalsecurity/:key" component={MM09} />
       <Route exact path="/computer-physicalsecurity" component={MM06} />
-      <Route exact path="/computer-physicalsecurity/:key" component={MM09} />
       <Route exact path="/data-port-physicalsecurity" component={MM07} />
-      <Route exact path="/data-port-physicalsecurity/:key" component={MM09} />
       <Route exact path="/key" component={MM08} />
+      <Route exact path="/usb-physicalsecurity/:key" component={MM09} />
+      <Route exact path="/network-physicalsecurity/:key" component={MM09} />
+      <Route exact path="/computer-physicalsecurity/:key" component={MM09} />
+      <Route exact path="/data-port-physicalsecurity/:key" component={MM09} />
       <Route exact path="/key/:key" component={MM09} />
       <Route exact path="/info" component={MM10} />
       <Route exact path="/sitemap" component={MM11} />
@@ -158,7 +152,6 @@ const AppRouter = ({ width }) => {
       <Route exact path="/usb-security" component={MM17} />
       <Route exact path="/pro" component={MM00} />
       <Route exact path="/network-physicalsecurity" component={MM18} />
-      <Route exact path="/network-physicalsecurity/:key" component={MM09} />
       <Route exact path="/essential" component={MM19} />
       <Route exact path="/login" component={MM90} />
 
@@ -192,7 +185,6 @@ const AppRouter = ({ width }) => {
       <Route exact path="/usb-security" component={Footer} />
       <Route exact path="/pro" component={Footer} />
       <Route exact path="/network-physicalsecurity" component={Footer} />
-      <Route exact path="/network-physicalsecurity/:key" component={Footer} />
       <Route exact path="/login" component={Footer} />
 
       <Route exact path="/essential" component={Footer2} />
