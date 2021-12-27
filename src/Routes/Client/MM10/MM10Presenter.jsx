@@ -1109,8 +1109,8 @@ const MM10Presenter = ({
             >
               {lDatum.map((data) => {
                 return (
-                  data.title === "THAILAND" && (
-                    <a href={`mailto:${data.link}`}>THAILAND</a>
+                  data.title === "UAE" && (
+                    <a href={`mailto:${data.link}`}>UAE</a>
                   )
                 );
               })}
