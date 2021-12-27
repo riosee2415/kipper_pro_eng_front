@@ -97,11 +97,22 @@ const MM14Container = ({ history }) => {
       top: "51%",
       left: "24%",
       src: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20circle%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206618.png?alt=media&token=8d9126cb-cbe4-4d84-a8a9-bdd921ea2949",
-      info: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20click%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206663.png?alt=media&token=5ef441e9-989e-4e22-bee0-ea89c2eb69cf",
+      info: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fclick%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%205822.png?alt=media&token=ffcb5bd8-52bb-413a-ae7a-d13b1b9969c2",
       map: 3,
       mobile: "+91 9975567111",
       email: "kishore@tavat.in",
       web: "www.facebook.com/thesmartkeeper",
+    },
+    {
+      name: "uae",
+      top: "51%",
+      left: "15%",
+      src: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fcircle%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%205864.png?alt=media&token=aa8d24ec-09d2-46d5-93d9-5d33857d2281",
+      info: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20click%2FUAE.png?alt=media&token=9339a040-5406-46e8-b105-3274c698c14f",
+      map: 3,
+      mobile: "+971 0 556024252",
+      email: "info@alhutaib.com",
+      web: "www.smartkeeper.ae",
     },
 
     {
