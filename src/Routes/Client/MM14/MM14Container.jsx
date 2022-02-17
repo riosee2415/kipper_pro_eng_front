@@ -138,6 +138,17 @@ const MM14Container = ({ history }) => {
       web: "www.direktronik.no",
     },
     {
+      name: "Netherlands",
+      top: "33%",
+      left: "3%",
+      src: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20circle%2Fnether-circle.png?alt=media&token=af8c51ee-667b-4c0a-a721-045e2417095d",
+      info: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20click%2Fnetherlands.png?alt=media&token=c33ce422-6545-4889-b53a-3061b23653fc",
+      map: 1,
+      mobile: "+31850068750",
+      email: "raymond@hart4technology.nl",
+      web: "www.hart4technology.nl",
+    },
+    {
       name: "hungary",
       top: "41%",
       left: "11%",
@@ -183,7 +194,7 @@ const MM14Container = ({ history }) => {
     },
     {
       name: "germany",
-      top: "32%",
+      top: "30%",
       left: "5%",
       src: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20circle%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206624.png?alt=media&token=b6498775-4edb-4fcf-a140-c321ba4fcb26",
       info: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20click%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206654.png?alt=media&token=bd0fc09f-6212-4d10-b4d1-0a9d38ed06b4",
