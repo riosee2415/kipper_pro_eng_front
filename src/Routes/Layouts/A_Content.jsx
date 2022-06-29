@@ -373,7 +373,7 @@ const A_Content = ({ location }) => {
               color={Theme.greyTheme7_C}
               margin={`20px 0`}
             >
-              Copyright 2021 COMXI CO., LTD. All right reserved.
+              Copyright 2022 COMXI CO., LTD. All right reserved.
             </Wrapper>
           </Wrapper>
         </WholeWrapper>

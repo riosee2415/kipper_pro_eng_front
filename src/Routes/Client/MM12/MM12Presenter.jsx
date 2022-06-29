@@ -484,7 +484,7 @@ const MM12Presenter = ({ width }) => {
           ※ 부 칙 (시행일) 본 약관은 2021년 7월 1일부터 시행합니다.
         </Text>
         <Text color={Theme.greyTheme7_C} fontWeight={`300`} fontSize={`12px`}>
-          Copyright 2021 COMXI CO., LTD. All right reserved.
+          Copyright 2022 COMXI CO., LTD. All right reserved.
         </Text>
       </RsWrapper>
     </WholeWrapper>

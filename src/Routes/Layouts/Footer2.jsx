@@ -675,7 +675,7 @@ const Footer = ({ width, location }) => {
           fontWeight={`300`}
           al={`flex-start`}
         >
-          Copyright 2021 COMXI CO., LTD. All right reserved.
+          Copyright 2022 COMXI CO., LTD. All right reserved.
         </Wrapper>
         <Wrapper
           display={width < 900 ? `none` : `flex`}

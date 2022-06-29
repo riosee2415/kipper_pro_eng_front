@@ -462,7 +462,7 @@ export default () => {
           width={`70px`}
           margin={`0 0 10px`}
         />
-        Copyright 2021 COMXI CO., LTD. All right reserved.
+        Copyright 2022 COMXI CO., LTD. All right reserved.
       </Wrapper>
     </WholeWrapper>
   );
