@@ -476,40 +476,6 @@ const MM10Presenter = ({
                       : `https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM10%2FDifferent%20level%20of%20network%20security%20proven%20by%20countless%20customers_%E3%85%88web.svg?alt=media&token=65ce07f0-d18a-4633-8705-37310656ea94`
                   }
                 />
-                {/* <Gotham
-                  color={Theme.greyTheme7_C}
-                  fontSize={`50px`}
-                  fontWeight={`700`}
-                  margin={`9px 0 0`}
-                  lineHeight={width < 900 ? `36px` : `1.0`}
-                >
-                  Different level of
-                </Gotham>
-                <Gotham
-                  color={Theme.greyTheme7_C}
-                  fontSize={`50px`}
-                  fontWeight={`700`}
-                  lineHeight={width < 900 ? `36px` : `1.0`}
-                >
-                  network security,
-                </Gotham>
-                <Gotham
-                  margin={width < 900 ? `15px 0 0` : `20px 0 0`}
-                  fontSize={`50px`}
-                  color={Theme.white_C}
-                  lineHeight={width < 900 ? `36px` : `1.0`}
-                  fontWeight={`400`}
-                >
-                  proven by countless
-                </Gotham>
-                <Gotham
-                  fontSize={`50px`}
-                  color={Theme.white_C}
-                  lineHeight={width < 900 ? `36px` : `1.0`}
-                  fontWeight={`400`}
-                >
-                  customers :
-                </Gotham> */}
 
                 <Wrapper
                   display={width < 900 ? `flex` : `none`}
@@ -668,23 +634,6 @@ const MM10Presenter = ({
         margin={`128px 0 0`}
         padding={width < 900 && `0 35px`}
       >
-        {/* <Wrapper
-          isAbsolute={true}
-          dr={`row`}
-          top={`0`}
-          right={`41px`}
-          width={`auto`}
-        >
-          <IoMdArrowDropleft color={Theme.subTheme4_C} size={`20`} />
-          <Image
-            width={`15px`}
-            margin={`0 5px 0 0`}
-            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM10%2F%E1%84%87%E1%85%B5%E1%84%8C%E1%85%B3%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-4.png?alt=media&token=dbcdd954-9697-4d1f-9d6e-22e535ced4a3`}
-          />
-          <Text fontSize={`13px`} fontWeight={`700`} color={Theme.subTheme4_C}>
-            How to Business
-          </Text>
-        </Wrapper> */}
         <RsWrapper al={`flex-start`} width={`1126px`}>
           <Text
             fontSize={width < 900 ? `28px` : `45px`}
@@ -794,23 +743,6 @@ const MM10Presenter = ({
         margin={width < 900 ? `130px 0 80px` : `132px 0 200px`}
         padding={width < 900 && `0 35px`}
       >
-        {/* <Wrapper
-          isAbsolute={true}
-          dr={`row`}
-          top={`0`}
-          right={`22px`}
-          width={`auto`}
-        >
-          <IoMdArrowDropleft color={Theme.subTheme4_C} size={`20`} />
-          <Image
-            width={`15px`}
-            margin={`0 5px 0 0`}
-            src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM10%2F%E1%84%87%E1%85%B5%E1%84%8C%E1%85%B3%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5-4.png?alt=media&token=dbcdd954-9697-4d1f-9d6e-22e535ced4a3`}
-          />
-          <Text fontSize={`13px`} fontWeight={`700`} color={Theme.subTheme4_C}>
-            Where our Partners
-          </Text>
-        </Wrapper> */}
         <RsWrapper width={`1126px`} al={`flex-start`}>
           <Text
             fontSize={width < 900 ? `28px` : `45px`}
@@ -830,13 +762,18 @@ const MM10Presenter = ({
               fontWeight={`500`}
               cursor={`pointer`}
             >
-              {lDatum.map((data) => {
+              {/* {lDatum.map((data) => {
                 return (
                   data.title === "USA" && (
                     <a href={`mailto:${data.link}`}>USA</a>
                   )
                 );
               })}
+
+              {lDatum && lDatum[0].title === "USA" && (
+                <a href={`mailto:${lDatum[0].link}`}>USA</a>
+              )} */}
+              USA
             </LocationWrapper>
           </Wrapper>
           <Wrapper
@@ -853,13 +790,14 @@ const MM10Presenter = ({
               fontWeight={`500`}
               cursor={`pointer`}
             >
-              {lDatum.map((data) => {
+              {/* {lDatum.map((data) => {
                 return (
                   data.title === "GERMANY" && (
                     <a href={`mailto:${data.link}`}>GERMANY</a>
                   )
                 );
-              })}
+              })} */}
+              GERMANY
             </LocationWrapper>
 
             <LocationWrapper
@@ -871,13 +809,14 @@ const MM10Presenter = ({
               fontWeight={`500`}
               cursor={`pointer`}
             >
-              {lDatum.map((data) => {
+              {/* {lDatum.map((data) => {
                 return (
                   data.title === "POLAND" && (
                     <a href={`mailto:${data.link}`}>POLAND</a>
                   )
                 );
-              })}
+              })} */}
+              POLAND
             </LocationWrapper>
 
             <LocationWrapper
@@ -889,13 +828,14 @@ const MM10Presenter = ({
               fontWeight={`500`}
               cursor={`pointer`}
             >
-              {lDatum.map((data) => {
+              {/* {lDatum.map((data) => {
                 return (
                   data.title === "CZECH REPUBLIC" && (
                     <a href={`mailto:${data.link}`}>CZECH REPUBLIC</a>
                   )
                 );
-              })}
+              })} */}
+              CZECH REPUBLIC
             </LocationWrapper>
 
             <LocationWrapper
@@ -907,13 +847,14 @@ const MM10Presenter = ({
               fontWeight={`500`}
               cursor={`pointer`}
             >
-              {lDatum.map((data) => {
+              {/* {lDatum.map((data) => {
                 return (
                   data.title === "SLOVAKIA" && (
                     <a href={`mailto:${data.link}`}>SLOVAKIA</a>
                   )
                 );
-              })}
+              })} */}
+              SLOVAKIA
             </LocationWrapper>
           </Wrapper>
           <Wrapper dr={`row`} ju={`flex-start`}>
@@ -926,13 +867,14 @@ const MM10Presenter = ({
               fontWeight={`500`}
               cursor={`pointer`}
             >
-              {lDatum.map((data) => {
+              {/* {lDatum.map((data) => {
                 return (
                   data.title === "SWEDEN" && (
                     <a href={`mailto:${data.link}`}>SWEDEN</a>
                   )
                 );
-              })}
+              })} */}
+              SWEDEN
             </LocationWrapper>
 
             <LocationWrapper
@@ -944,13 +886,14 @@ const MM10Presenter = ({
               fontWeight={`500`}
               cursor={`pointer`}
             >
-              {lDatum.map((data) => {
+              {/* {lDatum.map((data) => {
                 return (
                   data.title === "HUNGARY" && (
                     <a href={`mailto:${data.link}`}>HUNGARY</a>
                   )
                 );
-              })}
+              })} */}
+              HUNGARY
             </LocationWrapper>
 
             <LocationWrapper
@@ -962,13 +905,14 @@ const MM10Presenter = ({
               fontWeight={`500`}
               cursor={`pointer`}
             >
-              {lDatum.map((data) => {
+              {/* {lDatum.map((data) => {
                 return (
                   data.title === "NORWAY" && (
                     <a href={`mailto:${data.link}`}>NORWAY</a>
                   )
                 );
-              })}
+              })} */}
+              NORWAY
             </LocationWrapper>
           </Wrapper>
           <Wrapper
@@ -985,13 +929,14 @@ const MM10Presenter = ({
               fontWeight={`500`}
               cursor={`pointer`}
             >
-              {lDatum.map((data) => {
+              {/* {lDatum.map((data) => {
                 return (
                   data.title === "CHINA" && (
                     <a href={`mailto:${data.link}`}>CHINA</a>
                   )
                 );
-              })}
+              })} */}
+              CHINA
             </LocationWrapper>
 
             <LocationWrapper
@@ -1003,13 +948,14 @@ const MM10Presenter = ({
               fontWeight={`500`}
               cursor={`pointer`}
             >
-              {lDatum.map((data) => {
+              {/* {lDatum.map((data) => {
                 return (
                   data.title === "JAPAN" && (
                     <a href={`mailto:${data.link}`}>JAPAN</a>
                   )
                 );
-              })}
+              })} */}
+              JAPAN
             </LocationWrapper>
             <LocationWrapper
               color={Theme.white_C}
@@ -1020,13 +966,14 @@ const MM10Presenter = ({
               fontWeight={`500`}
               cursor={`pointer`}
             >
-              {lDatum.map((data) => {
+              {/* {lDatum.map((data) => {
                 return (
                   data.title === "SINGAPORE" && (
                     <a href={`mailto:${data.link}`}>SINGAPORE</a>
                   )
                 );
-              })}
+              })} */}
+              SINGAPORE
             </LocationWrapper>
             <LocationWrapper
               color={Theme.white_C}
@@ -1037,13 +984,14 @@ const MM10Presenter = ({
               fontWeight={`500`}
               cursor={`pointer`}
             >
-              {lDatum.map((data) => {
+              {/* {lDatum.map((data) => {
                 return (
                   data.title === "INDIA" && (
                     <a href={`mailto:${data.link}`}>INDIA</a>
                   )
                 );
-              })}
+              })} */}
+              INDIA
             </LocationWrapper>
           </Wrapper>
           <Wrapper dr={`row`} ju={`flex-start`}>
@@ -1056,13 +1004,14 @@ const MM10Presenter = ({
               fontWeight={`500`}
               cursor={`pointer`}
             >
-              {lDatum.map((data) => {
+              {/* {lDatum.map((data) => {
                 return (
                   data.title === "VIETNAM" && (
                     <a href={`mailto:${data.link}`}>VIETNAM</a>
                   )
                 );
-              })}
+              })} */}
+              VIETNAM
             </LocationWrapper>
             <LocationWrapper
               color={Theme.white_C}
@@ -1073,13 +1022,14 @@ const MM10Presenter = ({
               fontWeight={`500`}
               cursor={`pointer`}
             >
-              {lDatum.map((data) => {
+              {/* {lDatum.map((data) => {
                 return (
                   data.title === "PHILIPPINES" && (
                     <a href={`mailto:${data.link}`}>PHILIPPINES</a>
                   )
                 );
-              })}
+              })} */}
+              PHILIPPINES
             </LocationWrapper>
             <LocationWrapper
               color={Theme.white_C}
@@ -1090,13 +1040,14 @@ const MM10Presenter = ({
               fontWeight={`500`}
               cursor={`pointer`}
             >
-              {lDatum.map((data) => {
+              {/* {lDatum.map((data) => {
                 return (
                   data.title === "MALAYSIA" && (
                     <a href={`mailto:${data.link}`}>MALAYSIA</a>
                   )
                 );
-              })}
+              })} */}
+              MALAYSIA
             </LocationWrapper>
             <LocationWrapper
               color={Theme.white_C}
@@ -1107,47 +1058,16 @@ const MM10Presenter = ({
               fontWeight={`500`}
               cursor={`pointer`}
             >
-              {lDatum.map((data) => {
+              {/* {lDatum.map((data) => {
                 return (
                   data.title === "UAE" && (
                     <a href={`mailto:${data.link}`}>UAE</a>
                   )
                 );
-              })}
+              })} */}
+              UAE
             </LocationWrapper>
           </Wrapper>
-          {/* <Wrapper dr={`row`} ju={`flex-start`} margin={`50px 0 0`}>
-            <Wrapper
-              color={Theme.white_C}
-              width={width < 900 ? `100%`:`250px`}
-              margin={width < 900 && `10px 0`}
-              al={`flex-start`}
-              fontSize={`20px`}
-              fontWeight={`700`}
-            >
-              PHILIPPINES
-            </Wrapper>
-            <Wrapper
-              color={Theme.white_C}
-              width={width < 900 ? `100%`:`250px`}
-              margin={width < 900 && `10px 0`}
-              al={`flex-start`}
-              fontSize={`20px`}
-              fontWeight={`700`}
-            >
-              MALAYSIA
-            </Wrapper>
-            <Wrapper
-              color={Theme.white_C}
-              width={width < 900 ? `100%`:`250px`}
-              margin={width < 900 && `10px 0`}
-              al={`flex-start`}
-              fontSize={`20px`}
-              fontWeight={`700`}
-            >
-              BRUNEI
-            </Wrapper>
-          </Wrapper> */}
         </RsWrapper>
       </Wrapper>
     </WholeWrapper>
