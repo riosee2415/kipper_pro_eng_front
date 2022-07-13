@@ -768,12 +768,11 @@ const MM10Presenter = ({
                     <a href={`mailto:${data.link}`}>USA</a>
                   )
                 );
-              })}
+              })}*/}
 
               {lDatum && lDatum[0].title === "USA" && (
                 <a href={`mailto:${lDatum[0].link}`}>USA</a>
-              )} */}
-              USA
+              )}
             </LocationWrapper>
           </Wrapper>
           <Wrapper
@@ -797,7 +796,10 @@ const MM10Presenter = ({
                   )
                 );
               })} */}
-              GERMANY
+
+              {lDatum && lDatum[1].title === "GERMANY" && (
+                <a href={`mailto:${lDatum[1].link}`}>GERMANY</a>
+              )}
             </LocationWrapper>
 
             <LocationWrapper
@@ -816,7 +818,9 @@ const MM10Presenter = ({
                   )
                 );
               })} */}
-              POLAND
+              {lDatum && lDatum[2].title === "POLAND" && (
+                <a href={`mailto:${lDatum[2].link}`}>POLAND</a>
+              )}
             </LocationWrapper>
 
             <LocationWrapper
@@ -835,7 +839,9 @@ const MM10Presenter = ({
                   )
                 );
               })} */}
-              CZECH REPUBLIC
+              {lDatum && lDatum[3].title === "CZECH REPUBLIC" && (
+                <a href={`mailto:${lDatum[3].link}`}>CZECH REPUBLIC</a>
+              )}
             </LocationWrapper>
 
             <LocationWrapper
@@ -854,7 +860,9 @@ const MM10Presenter = ({
                   )
                 );
               })} */}
-              SLOVAKIA
+              {lDatum && lDatum[4].title === "SLOVAKIA" && (
+                <a href={`mailto:${lDatum[4].link}`}>SLOVAKIA</a>
+              )}
             </LocationWrapper>
           </Wrapper>
           <Wrapper dr={`row`} ju={`flex-start`}>
@@ -874,7 +882,9 @@ const MM10Presenter = ({
                   )
                 );
               })} */}
-              SWEDEN
+              {lDatum && lDatum[5].title === "SWEDEN" && (
+                <a href={`mailto:${lDatum[5].link}`}>SWEDEN</a>
+              )}
             </LocationWrapper>
 
             <LocationWrapper
@@ -893,7 +903,9 @@ const MM10Presenter = ({
                   )
                 );
               })} */}
-              HUNGARY
+              {lDatum && lDatum[6].title === "HUNGARY" && (
+                <a href={`mailto:${lDatum[6].link}`}>HUNGARY</a>
+              )}
             </LocationWrapper>
 
             <LocationWrapper
@@ -912,7 +924,9 @@ const MM10Presenter = ({
                   )
                 );
               })} */}
-              NORWAY
+              {lDatum && lDatum[7].title === "NORWAY" && (
+                <a href={`mailto:${lDatum[7].link}`}>NORWAY</a>
+              )}
             </LocationWrapper>
           </Wrapper>
           <Wrapper
@@ -936,7 +950,9 @@ const MM10Presenter = ({
                   )
                 );
               })} */}
-              CHINA
+              {lDatum && lDatum[8].title === "CHINA" && (
+                <a href={`mailto:${lDatum[8].link}`}>CHINA</a>
+              )}
             </LocationWrapper>
 
             <LocationWrapper
@@ -955,7 +971,9 @@ const MM10Presenter = ({
                   )
                 );
               })} */}
-              JAPAN
+              {lDatum && lDatum[9].title === "JAPAN" && (
+                <a href={`mailto:${lDatum[9].link}`}>JAPAN</a>
+              )}
             </LocationWrapper>
             <LocationWrapper
               color={Theme.white_C}
@@ -973,7 +991,9 @@ const MM10Presenter = ({
                   )
                 );
               })} */}
-              SINGAPORE
+              {lDatum && lDatum[10].title === "SINGAPORE" && (
+                <a href={`mailto:${lDatum[10].link}`}>SINGAPORE</a>
+              )}
             </LocationWrapper>
             <LocationWrapper
               color={Theme.white_C}
@@ -991,7 +1011,9 @@ const MM10Presenter = ({
                   )
                 );
               })} */}
-              INDIA
+              {lDatum && lDatum[11].title === "INDIA" && (
+                <a href={`mailto:${lDatum[11].link}`}>INDIA</a>
+              )}
             </LocationWrapper>
           </Wrapper>
           <Wrapper dr={`row`} ju={`flex-start`}>
@@ -1011,7 +1033,9 @@ const MM10Presenter = ({
                   )
                 );
               })} */}
-              VIETNAM
+              {lDatum && lDatum[12].title === "VIETNAM" && (
+                <a href={`mailto:${lDatum[12].link}`}>VIETNAM</a>
+              )}
             </LocationWrapper>
             <LocationWrapper
               color={Theme.white_C}
@@ -1029,7 +1053,9 @@ const MM10Presenter = ({
                   )
                 );
               })} */}
-              PHILIPPINES
+              {lDatum && lDatum[13].title === "PHILIPPINES" && (
+                <a href={`mailto:${lDatum[13].link}`}>PHILIPPINES</a>
+              )}
             </LocationWrapper>
             <LocationWrapper
               color={Theme.white_C}
@@ -1047,7 +1073,9 @@ const MM10Presenter = ({
                   )
                 );
               })} */}
-              MALAYSIA
+              {lDatum && lDatum[14].title === "MALAYSIA" && (
+                <a href={`mailto:${lDatum[14].link}`}>MALAYSIA</a>
+              )}
             </LocationWrapper>
             <LocationWrapper
               color={Theme.white_C}
@@ -1065,7 +1093,9 @@ const MM10Presenter = ({
                   )
                 );
               })} */}
-              UAE
+              {lDatum && lDatum[15].title === "UAE" && (
+                <a href={`mailto:${lDatum[15].link}`}>UAE</a>
+              )}
             </LocationWrapper>
           </Wrapper>
         </RsWrapper>
