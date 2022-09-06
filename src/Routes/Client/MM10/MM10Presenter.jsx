@@ -928,6 +928,19 @@ const MM10Presenter = ({
                 <a href={`mailto:${lDatum[7].link}`}>NORWAY</a>
               )}
             </LocationWrapper>
+            <LocationWrapper
+              color={Theme.white_C}
+              width={width < 900 ? `100%` : `250px`}
+              margin={width < 900 && `10px 0`}
+              al={`flex-start`}
+              fontSize={`20px`}
+              fontWeight={`500`}
+              cursor={`pointer`}
+            >
+              {lDatum && lDatum[16].title === "BENELUX" && (
+                <a href={`mailto:${lDatum[16].link}`}>BENELUX</a>
+              )}
+            </LocationWrapper>
           </Wrapper>
           <Wrapper
             dr={`row`}

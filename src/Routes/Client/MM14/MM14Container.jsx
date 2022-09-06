@@ -29,9 +29,9 @@ const MM14Container = ({ history }) => {
       src: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20circle%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206623.png?alt=media&token=a614106a-8e0b-491b-8140-1f8f0d5d7b43",
       info: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20click%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206669.png?alt=media&token=fac6f29e-a54c-44d4-a013-1a93875cc8f8",
       map: 3,
-      mobile: "+84 977899482",
-      email: "selina.hang@acton-tech.com",
-      web: "www.acton-tech.com",
+      mobile: "+65 66842013",
+      email: "smartkeeper@gennexcorp.com",
+      web: "",
     },
     {
       name: "phlippines",
