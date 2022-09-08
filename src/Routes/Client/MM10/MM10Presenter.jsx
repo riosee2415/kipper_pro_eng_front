@@ -1017,6 +1017,21 @@ const MM10Presenter = ({
               fontWeight={`500`}
               cursor={`pointer`}
             >
+              {lDatum && lDatum[17].title === "SINGAPORE" && (
+                <a href={`mailto:${lDatum[17].link}`}>SINGAPORE</a>
+              )}
+            </LocationWrapper>
+          </Wrapper>
+          <Wrapper dr={`row`} ju={`flex-start`}>
+            <LocationWrapper
+              color={Theme.white_C}
+              width={width < 900 ? `100%` : `250px`}
+              margin={width < 900 && `10px 0`}
+              al={`flex-start`}
+              fontSize={`20px`}
+              fontWeight={`500`}
+              cursor={`pointer`}
+            >
               {/* {lDatum.map((data) => {
                 return (
                   data.title === "INDIA" && (
@@ -1028,8 +1043,6 @@ const MM10Presenter = ({
                 <a href={`mailto:${lDatum[11].link}`}>INDIA</a>
               )}
             </LocationWrapper>
-          </Wrapper>
-          <Wrapper dr={`row`} ju={`flex-start`}>
             <LocationWrapper
               color={Theme.white_C}
               width={width < 900 ? `100%` : `250px`}
@@ -1090,6 +1103,13 @@ const MM10Presenter = ({
                 <a href={`mailto:${lDatum[14].link}`}>MALAYSIA</a>
               )}
             </LocationWrapper>
+          </Wrapper>
+
+          <Wrapper
+            dr={`row`}
+            ju={`flex-start`}
+            margin={width < 900 ? `0` : `50px 0 0`}
+          >
             <LocationWrapper
               color={Theme.white_C}
               width={width < 900 ? `100%` : `250px`}
