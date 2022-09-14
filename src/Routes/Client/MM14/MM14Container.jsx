@@ -67,7 +67,7 @@ const MM14Container = ({ history }) => {
       email: "smartkeeper@gennexcorp.com",
       web: "",
       mobile2: "+65 63365920",
-      email2: "dbrkaren@dbr-sys.com",
+      email2: "dbrsales@dbr-sys.com",
       web2: "",
     },
     // {
