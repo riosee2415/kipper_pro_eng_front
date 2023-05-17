@@ -58,8 +58,8 @@ const MM14Container = ({ history }) => {
 
     {
       name: "singapore",
-      top: "65%",
-      left: "33%",
+      top: "61%",
+      left: "31%",
       src: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20circle%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206621.png?alt=media&token=b1a6fc2e-dc2d-4434-9edf-ae7c2b7859a2",
       info: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20click%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206666.png?alt=media&token=452a5d43-02e8-4300-8842-3ea8614d7fc9",
       map: 3,
@@ -69,6 +69,17 @@ const MM14Container = ({ history }) => {
       mobile2: "+65 63365920",
       email2: "dbrsales@dbr-sys.com",
       web2: "",
+    },
+    {
+      name: "indonesia",
+      top: "65%",
+      left: "33%",
+      src: "https://4leaf-s3.s3.ap-northeast-2.amazonaws.com/kipper/assets/images/contactus/circle-indo.png",
+      info: "https://4leaf-s3.s3.ap-northeast-2.amazonaws.com/kipper/assets/images/contactus/box-indo.png",
+      map: 3,
+      mobile: "+62 21 7591 3446 ",
+      email: "info@leebro.co.id",
+      web: "www.smartkeeper.id",
     },
     {
       name: "thailand",
@@ -83,8 +94,8 @@ const MM14Container = ({ history }) => {
     },
     {
       name: "malaysia",
-      top: "60%",
-      left: "31%",
+      top: "57%",
+      left: "29%",
       src: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20circle%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206620.png?alt=media&token=849bacec-e32a-4132-b42f-9979660e4dcd",
       info: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20click%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206665.png?alt=media&token=b0ed16d4-4a54-4187-b8cd-626edbc6c465",
       map: 3,

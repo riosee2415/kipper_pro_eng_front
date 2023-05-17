@@ -140,7 +140,7 @@ export default ({
           )}
         </Wrapper>
       </Fade>
-      {/* 
+
       <Modal
         title="Location LINK 추가"
         visible={modalFlag}
@@ -159,7 +159,7 @@ export default ({
           Location LINK
         </Wrapper>
         <TextInput {...linkInput} />
-      </Modal> */}
+      </Modal>
 
       <Modal
         title="Location LINK 수정"
