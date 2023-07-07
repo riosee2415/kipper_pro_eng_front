@@ -212,7 +212,7 @@ const MM14Container = ({ history }) => {
       map: 1,
       mobile: "+421 904 244 685",
       email: "smartkeeper@bbi-intl.com",
-      web: "www.smartkeeper.cz",
+      web: "www.smartkeeper.sk/cs",
     },
     {
       name: "germany",
