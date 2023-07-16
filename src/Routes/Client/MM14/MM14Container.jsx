@@ -177,8 +177,8 @@ const MM14Container = ({ history }) => {
       src: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20circle%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206627.png?alt=media&token=c3350ab3-1df8-4213-982b-1eaa2b019064",
       info: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20click%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206658.png?alt=media&token=eb78715c-a174-40d9-af40-6ae54aa066f3",
       map: 1,
-      mobile: "+421 904 244 685",
-      email: "smartkeeper@bbi-intl.com",
+      mobile: "+421 903 178 629",
+      email: "info@smartkeeper.sk",
       web: "www.smartkeeper.sk/hu",
     },
     {
@@ -188,8 +188,8 @@ const MM14Container = ({ history }) => {
       src: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20circle%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206626.png?alt=media&token=ad68c053-a71a-4996-85a6-a33a98d20ae9",
       info: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20click%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206657.png?alt=media&token=f5f7c952-d588-462b-a3d9-14df34799ad4",
       map: 1,
-      mobile: "+421 904 244 685",
-      email: "smartkeeper@bbi-intl.com",
+      mobile: "+421 903 178 629",
+      email: "info@smartkeeper.sk",
       web: "www.smartkeeper.sk",
     },
     {
@@ -210,8 +210,8 @@ const MM14Container = ({ history }) => {
       src: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20circle%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206625.png?alt=media&token=accab8a8-b368-46a5-8f8f-37d52ac5b3ba",
       info: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20click%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206656.png?alt=media&token=45a03b90-4b25-4ccc-9172-79cebf48709e",
       map: 1,
-      mobile: "+421 904 244 685",
-      email: "smartkeeper@bbi-intl.com",
+      mobile: "+421 903 178 629",
+      email: "info@smartkeeper.sk",
       web: "www.smartkeeper.sk/cs",
     },
     {
