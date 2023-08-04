@@ -32,10 +32,10 @@ const Dot = styled(Wrapper)`
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-top: -25.5px;
-    margin-left: -25.5px;
-    width: 51px;
-    height: 51px;
+    margin-top: -23px;
+    margin-left: -23px;
+    width: 46px;
+    height: 46px;
     background: rgba(255, 255, 255, 0.5);
     animation: ${dotAni} 1.5s ${(props) => props.delay} infinite;
     border-radius: 100%;
@@ -135,8 +135,8 @@ const MM14Presenter = ({
             return (
               <Wrapper
                 isAbsolute={true}
-                width={`50px`}
-                height={`50px`}
+                width={`45px`}
+                height={`45px`}
                 top={data.top}
                 left={data.left}
                 key={idx}
@@ -156,8 +156,8 @@ const MM14Presenter = ({
                     <Image
                       isAbsolute={true}
                       src={data.src}
-                      width={`50px`}
-                      height={`50px`}
+                      width={`45px`}
+                      height={`45px`}
                       top={`-16px`}
                       letf={`0px`}
                     />
@@ -171,8 +171,8 @@ const MM14Presenter = ({
               return (
                 <Wrapper
                   isAbsolute={true}
-                  width={`50px`}
-                  height={`50px`}
+                  width={`45px`}
+                  height={`45px`}
                   top={data.top}
                   left={data.left}
                   key={idx}
@@ -199,7 +199,7 @@ const MM14Presenter = ({
                         zIndex={`100`}
                         onClick={() => setAbleIcon(null)}
                       >
-                        <Image src={data.src} width={`50px`} height={`50px`} />
+                        <Image src={data.src} width={`45px`} height={`45px`} />
                         <Wrapper isRelative={true} width={`300px`}>
                           <Image
                             src={data.info}
@@ -292,7 +292,7 @@ const MM14Presenter = ({
                           al={`flex-start`}
                           onClick={() => setAbleIcon(null)}
                         >
-                          <Wrapper width={`50px`} height={`50px`} />
+                          <Wrapper width={`45px`} height={`45px`} />
                           <Wrapper isRelative={true} width={`300px`}>
                             <Image
                               src={data.info}
