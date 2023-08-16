@@ -74,7 +74,7 @@ const MM14Container = ({ history }) => {
       src: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20circle%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206621.png?alt=media&token=b1a6fc2e-dc2d-4434-9edf-ae7c2b7859a2",
       info: "https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2Fcontact%2Fnew%20click%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%206666.png?alt=media&token=452a5d43-02e8-4300-8842-3ea8614d7fc9",
       map: 3,
-      mobile: "+632 88506182",
+      mobile: "+65)6684-2013",
       email: "smartkeeper@gennexcorp.com",
       web: "",
       mobile2: "+65 63365920",
