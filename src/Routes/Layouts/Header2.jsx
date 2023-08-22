@@ -118,7 +118,7 @@ const H_Wrapper = styled.div`
 `;
 
 const Logo = styled.div`
-  width: ${(props) => props.width || `90px`};
+  width: ${(props) => props.width || `180px`};
   text-align: left;
 
   & a {
@@ -131,10 +131,10 @@ const Logo = styled.div`
 `;
 
 const LogoImg = styled.img`
-  width: 47px;
+  width: 200px;
 
   @media (max-width: 800px) {
-    width: 38px;
+    width: 150px;
   }
 `;
 
@@ -256,7 +256,7 @@ const Header = ({ location, width, match }) => {
             <Logo>
               <Link to="/essential">
                 <LogoImg
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Flogo%2Flogo.svg?alt=media&token=1956886f-e038-4305-a4c6-8447afd8ee2a`}
+                  src={`https://4leaf-s3.s3.ap-northeast-2.amazonaws.com/kipper/assets/images/logo-es-en-w.svg`}
                   alt="LOGO"
                 />
               </Link>
@@ -270,7 +270,7 @@ const Header = ({ location, width, match }) => {
                       <Wrapper
                         width={`auto`}
                         fontSize={`14px`}
-                        margin={width < 1200 ? `0 30px` : `0 60px`}
+                        margin={width < 1200 ? `0 30px` : `0 40px`}
                         header={true}
                         color={Theme.white_C}
                       >
@@ -324,8 +324,8 @@ const Header = ({ location, width, match }) => {
           <Logo>
             <Link to="/essential">
               <LogoImg
-                alt="logo"
-                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Flogo%2Flogo.svg?alt=media&token=1956886f-e038-4305-a4c6-8447afd8ee2a`}
+                src={`https://4leaf-s3.s3.ap-northeast-2.amazonaws.com/kipper/assets/images/logo-es-en-w.svg`}
+                alt="LOGO"
               />
             </Link>
           </Logo>
@@ -361,7 +361,7 @@ const Header = ({ location, width, match }) => {
               <Link to="/essential">
                 <LogoImg
                   alt="logo"
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Flogo%2Flogo.svg?alt=media&token=1956886f-e038-4305-a4c6-8447afd8ee2a`}
+                  src={`https://4leaf-s3.s3.ap-northeast-2.amazonaws.com/kipper/assets/images/logo-es-en-w.svg`}
                 />
               </Link>
               <Wrapper width={`14px`}></Wrapper>
