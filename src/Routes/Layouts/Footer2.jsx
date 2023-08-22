@@ -244,21 +244,19 @@ const Footer = ({ width, location }) => {
                 href={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSmartKeeper%20Product%20Introduction_EN_R1.pdf?alt=media&token=7ebb6ccd-3579-4803-b32b-b615f7eed8c9`}
                 download
               >
-                <FooterText>
-                  SmartKeeper Product Introduction_EN_R1.PDF
-                </FooterText>
+                <FooterText>SmartKeeper Product Introduction_EN</FooterText>
               </a>
               <a
                 href={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSMARTKEEPR_PRO_Catalogue_EN.pdf?alt=media&token=5953edda-b253-4508-978e-d8357fc5de63`}
                 download
               >
-                <FooterText>SMARTKEEPR_PRO_Catalogue_EN.PDF</FooterText>
+                <FooterText>SMARTKEEPR_PRO_Catalogue_EN</FooterText>
               </a>
               <a
                 href={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSMARTKEEPR_ESSENTIAL_Catalogue_EN.pdf?alt=media&token=0ee4144e-8903-48f9-a2c8-8a8503ce6c5e`}
                 download
               >
-                <FooterText>SMARTKEEPR_ESSENTIAL_Catalogue_EN.PDF</FooterText>
+                <FooterText>SMARTKEEPR_ESSENTIAL_Catalogue_ENF</FooterText>
               </a>
             </Wrapper>
 
@@ -409,21 +407,19 @@ const Footer = ({ width, location }) => {
                 href={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSmartKeeper%20Product%20Introduction_EN_R1.pdf?alt=media&token=7ebb6ccd-3579-4803-b32b-b615f7eed8c9`}
                 download
               >
-                <FooterText>
-                  SmartKeeper Product Introduction_EN_R1.PDF
-                </FooterText>
+                <FooterText>SmartKeeper Product Introduction_EN</FooterText>
               </a>
               <a
                 href={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSMARTKEEPR_PRO_Catalogue_EN.pdf?alt=media&token=5953edda-b253-4508-978e-d8357fc5de63`}
                 download
               >
-                <FooterText>SMARTKEEPR_PRO_Catalogue_EN.PDF</FooterText>
+                <FooterText>SMARTKEEPR_PRO_Catalogue_EN</FooterText>
               </a>
               <a
                 href={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSMARTKEEPR_ESSENTIAL_Catalogue_EN.pdf?alt=media&token=0ee4144e-8903-48f9-a2c8-8a8503ce6c5e`}
                 download
               >
-                <FooterText>SMARTKEEPR_ESSENTIAL_Catalogue_EN.PDF</FooterText>
+                <FooterText>SMARTKEEPR_ESSENTIAL_Catalogue_EN</FooterText>
               </a>
             </Wrapper>
           )}
