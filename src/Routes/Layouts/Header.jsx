@@ -2,27 +2,23 @@ import React, { useState, useEffect, Fragment } from "react";
 import {
   Wrapper,
   RsWrapper,
-  SpanText,
-  Text,
   Image,
   ATag,
 } from "../../Components/CommonComponents";
 import { Link, withRouter, NavLink } from "react-router-dom";
-import styled, { ThemeContext } from "styled-components";
-import { header, header2 } from "../../Components/AnimationCommon";
+import styled from "styled-components";
+import { header } from "../../Components/AnimationCommon";
 import {
   AiOutlineClose,
   AiOutlineMenu,
   AiOutlinePlus,
   AiOutlineMinus,
 } from "react-icons/ai";
-import { IoIosArrowDown } from "react-icons/io";
 import { withResizeDetector } from "react-resize-detector";
 import Drawer from "@material-ui/core/Drawer";
 import Bounce from "react-reveal/Bounce";
 import { menus } from "./clientMenus";
 import Theme from "../../Styles/Theme";
-import { toast } from "react-toastify";
 
 const OnlyHeadAbsoluteWrapper = styled.div`
   display: none;
@@ -116,7 +112,7 @@ const H_Wrapper = styled.div`
 `;
 
 const Logo = styled.div`
-  width: ${(props) => props.width || `120px`};
+  width: ${(props) => props.width || `180px`};
   text-align: left;
 
   & a {
@@ -129,10 +125,10 @@ const Logo = styled.div`
 `;
 
 const LogoImg = styled.img`
-  width: 52px;
+  width: 180px;
 
   @media (max-width: 800px) {
-    width: 38px;
+    width: 100px;
   }
 `;
 
@@ -281,7 +277,7 @@ const Header = ({ history, width, match }) => {
             <Logo>
               <Link to="/pro">
                 <LogoImg
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Flogo%2Fpro-logo.png?alt=media&token=1d7babc2-4c9d-4923-b9e2-b46f8967ca07`}
+                  src={`https://4leaf-s3.s3.ap-northeast-2.amazonaws.com/kipper/assets/images/logo_pro_w.svg`}
                   alt="LOGO"
                 />
               </Link>
@@ -307,7 +303,7 @@ const Header = ({ history, width, match }) => {
                           }
                           to={`${menu.menuLink}`}
                         >
-                          <Wrapper width={`155px`} al={`flex-start`}>
+                          <Wrapper width={`145px`} al={`flex-start`}>
                             {menu.menuName}
                           </Wrapper>
                         </Link>
@@ -322,7 +318,7 @@ const Header = ({ history, width, match }) => {
                             ju={`space-between`}
                             wrap={`inherit`}
                           >
-                            <Wrapper width={`90px`}></Wrapper>
+                            <Wrapper width={`180px`}></Wrapper>
 
                             <Wrapper
                               width={`auto`}
@@ -350,7 +346,7 @@ const Header = ({ history, width, match }) => {
                                             to={`${sub.subMenuLink}`}
                                           >
                                             <Wrapper
-                                              width={`155px`}
+                                              width={`145px`}
                                               al={`flex-start`}
                                             >
                                               <MenuItem>
@@ -364,7 +360,7 @@ const Header = ({ history, width, match }) => {
                                   );
                                 })}
                             </Wrapper>
-                            <Wrapper width={`90px`}></Wrapper>
+                            <Wrapper width={`120px`}></Wrapper>
                           </RsWrapper>
                         </OnlyHeadAbsoluteWrapper>
                       </Wrapper>
@@ -429,8 +425,8 @@ const Header = ({ history, width, match }) => {
           <Logo>
             <Link to="/pro">
               <LogoImg
-                alt="logo"
-                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Flogo%2Fpro-logo.png?alt=media&token=1d7babc2-4c9d-4923-b9e2-b46f8967ca07`}
+                src={`https://4leaf-s3.s3.ap-northeast-2.amazonaws.com/kipper/assets/images/logo_pro_w.svg`}
+                alt="LOGO"
               />
             </Link>
           </Logo>
@@ -485,7 +481,7 @@ const Header = ({ history, width, match }) => {
               <Link to="/main">
                 <LogoImg
                   alt="logo"
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Flogo%2Fpro-logo.png?alt=media&token=1d7babc2-4c9d-4923-b9e2-b46f8967ca07`}
+                  src={`https://4leaf-s3.s3.ap-northeast-2.amazonaws.com/kipper/assets/images/logo_pro_w.svg`}
                 />
               </Link>
               <Wrapper width={`14px`}></Wrapper>

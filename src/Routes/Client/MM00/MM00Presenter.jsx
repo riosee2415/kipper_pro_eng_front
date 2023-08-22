@@ -131,7 +131,7 @@ const MM00Presenter = ({
     <WholeWrapper bgColor={Theme.greyTheme3_C}>
       <Wrapper
         width={`100%`}
-        height={`1200px`}
+        height={width < 700 ? `1100px` : `950px`}
         bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM00%2FMAIN_BACKGROUND_1.png?alt=media&token=68067aff-5329-467d-8f68-baddc84c0d8a")`}
         overflow={`hidden`}
       >
@@ -146,14 +146,14 @@ const MM00Presenter = ({
           </Wrapper> */}
           <Wrapper>
             <MoveImage
-              width={width < 700 ? `450px` : `600px`}
+              width={width < 700 ? `250px` : `360px`}
               top={`${top1}px`}
               margin={
                 width < 700
                   ? `${lockpinMargin}px 0 -300px 0`
-                  : `${lockpinMargin}px 0 -300px 0px`
+                  : `${lockpinMargin}px 0 -300px -100px`
               }
-              src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM00%2FMAIN_IMAGE_1.png?alt=media&token=9bcfe0b7-65d5-4890-a94a-8849f14d5424`}
+              src={`https://4leaf-s3.s3.ap-northeast-2.amazonaws.com/kipper/assets/images/main.png`}
             />
             <MoveImage
               zIndex={`-20`}
@@ -177,38 +177,19 @@ const MM00Presenter = ({
             ju={`flex-start`}
             padding={width < 700 ? `50px 35px 0` : `0`}
           >
-            {/* <Text
-              display={width < 700 ? `flex` : `none`}
-              fontWeight={`700`}
-              color={`rgba(255,255,255,0.04)`}
-              fontSize={`30px`}
-              isGotham={true}
-            >
-              SMARTKEEPER PRO
-            </Text> */}
-
             <Wrapper al={`flex-start`}>
-              {/* <CommonSubTitle
-                display={width < 700 ? `none` : `flex`}
-                lineHeight={`1.0`}
-                fontWeight={`400`}
-                fontSize={`60px`}
-                margin={`0 0 5px`}
-                isGotham={true}
-              >
-                Pro's Choice
-              </CommonSubTitle> */}
               <Image
                 width={`380px`}
                 display={width < 700 ? `none` : `flex`}
-                margin={`0 0 5px`}
-                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM00%2FPro%20s%20Choice_PRO%20HOME.svg?alt=media&token=b4b80b86-dab4-4215-a918-721c7d930abd`}
+                margin={`0 0 10px`}
+                src={`https://4leaf-s3.s3.ap-northeast-2.amazonaws.com/kipper/assets/images/logo_full_w.svg`}
               />
+
               <Image
-                width={`186px`}
-                margin={`0 0 15px`}
+                width={`230px`}
+                margin={`0 0 10px`}
                 display={width < 700 ? `flex` : `none`}
-                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM00%2FPro%20s%20Choice_M_PRO%20HOME.svg?alt=media&token=781adf05-3723-4d3b-a12d-1f4cab8d50c4`}
+                src={`https://4leaf-s3.s3.ap-northeast-2.amazonaws.com/kipper/assets/images/logo_full_w.svg`}
               />
               {/* web */}
               <Text
@@ -793,8 +774,8 @@ const MM00Presenter = ({
           attachment={`initial`}
           bgImg={
             width < 700
-              ? `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM00%2FMM00-bgImg-M.jpeg?alt=media&token=6acffea7-9ca1-4521-a024-2fdbf83cf10c")`
-              : `url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM16_modify%2FGLOBAL_SMARTKEEPER-POR-ALL-set_Large.jpg?alt=media&token=474cf650-f4cb-4fc4-9b01-71f0885bea80")`
+              ? `url("https://4leaf-s3.s3.ap-northeast-2.amazonaws.com/kipper/assets/images/02_Image_m.jpg")`
+              : `url("https://4leaf-s3.s3.ap-northeast-2.amazonaws.com/kipper/assets/images/02_Image.jpg")`
           }
           bgSize={width < 700 && `100%`}
           bgPosition={width < 700 ? `0 100px` : `bottom`}

@@ -1224,8 +1224,6 @@ const MM09Presenter = ({
             </Text>
             <Gotham
               fontSize={width < 900 ? (width < 700 ? `26px` : `50px`) : `50px`}
-              lineHeight={`1`}
-              // letterSpacing={`-0.025em`}
               lineHeight={`1.18`}
             >
               {/* 메인 타이틀 */}
@@ -1963,7 +1961,6 @@ const MM09Presenter = ({
           {pData && (
             <EditorViewer
               letterSpacing={`-0.03em`}
-              lineHeight={`1.47`}
               value={pData.featureTitle1}
               fontSize={width < 700 ? `30px` : `48px`}
               fontWeight={`700`}
@@ -2043,7 +2040,6 @@ const MM09Presenter = ({
           {pData && (
             <EditorViewer
               letterSpacing={`-0.03em`}
-              lineHeight={`1.47`}
               value={pData.featureTitle2}
               fontSize={width < 700 ? `30px` : `48px`}
               fontWeight={`700`}

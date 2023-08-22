@@ -23,6 +23,23 @@ import { Modal } from "4leaf-antd";
 import { GiSandsOfTime } from "react-icons/gi";
 import { animateScroll as scroll } from "react-scroll";
 
+const FooterText = styled(Text)`
+  font-size: 11px;
+  color: ${Theme.greyTheme1_C};
+  margin: 0 0 15px;
+  font-weight: 300;
+  line-height: 1;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 11px;
+    margin: 0 0 20px;
+  }
+`;
+
 const Footer = ({ width, location }) => {
   const files = [
     // {
@@ -222,38 +239,28 @@ const Footer = ({ width, location }) => {
               Download
             </Wrapper>
 
-            <Wrapper dr={`row`} ju={`flex-start`}>
-              <Combo
-                margin={`0 5px 0 0`}
-                width={`100%`}
-                onChange={(e) => fileDownloadHandler(e.target.value)}
+            <Wrapper al={`flex-start`}>
+              <a
+                href={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSmartKeeper%20Product%20Introduction_EN_R1.pdf?alt=media&token=7ebb6ccd-3579-4803-b32b-b615f7eed8c9`}
+                download
               >
-                <ComboOption value={null}>Choose a Catalogue</ComboOption>
-                {/* <ComboOption value={0}>
-                  SmartKeeper Product Introduction_KR_R1
-                </ComboOption> */}
-                <ComboOption value={1}>
-                  SmartKeeper Product Introduction_EN_R1
-                </ComboOption>
-                {/* <ComboOption value={2}>SMARTKEEPR_PRO_Catalogue_KR</ComboOption> */}
-                <ComboOption value={3}>SMARTKEEPR_PRO_Catalogue_EN</ComboOption>
-                {/* <ComboOption value={4}>
-                  SMARTKEEPR_ESSENTIAL_Catalogue_KR
-                </ComboOption> */}
-                <ComboOption value={5}>
-                  SMARTKEEPR_ESSENTIAL_Catalogue_EN
-                </ComboOption>
-              </Combo>
-              {/* <Wrapper width={`18px`} height={`18px`} bgColor={Theme.white_C}>
-                <Image
-                  alt="icon"
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Ficon%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20147.png?alt=media&token=a4115382-eef7-4ad2-8c15-d8e0744ef988`}
-                  width={`auto`}
-                />
-              </Wrapper> */}
+                <FooterText>SMARTKEEPER Product Introduction(EN)</FooterText>
+              </a>
+              <a
+                href={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSMARTKEEPR_PRO_Catalogue_EN.pdf?alt=media&token=5953edda-b253-4508-978e-d8357fc5de63`}
+                download
+              >
+                <FooterText>SMARTKEEPER PRO Catalogue(EN)</FooterText>
+              </a>
+              <a
+                href={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSMARTKEEPR_ESSENTIAL_Catalogue_EN.pdf?alt=media&token=0ee4144e-8903-48f9-a2c8-8a8503ce6c5e`}
+                download
+              >
+                <FooterText>SMARTKEEPER ESSENTIAL Catalogue(EN)</FooterText>
+              </a>
             </Wrapper>
 
-            <Wrapper
+            {/* <Wrapper
               width={`auto`}
               fontSize={width < 900 ? `8px` : `12px`}
               fontWeight={`600`}
@@ -313,7 +320,7 @@ const Footer = ({ width, location }) => {
               >
                 {sDatum && sDatum.getAllSns[3].platform}
               </Wrapper>
-            </ATag>
+            </ATag> */}
 
             <Wrapper
               borderTop={`1px solid ${Theme.greyTheme9_C}`}
@@ -437,57 +444,48 @@ const Footer = ({ width, location }) => {
                 </Fragment>
               );
             })}
-          <Wrapper
-            dr={`row`}
-            ju={`space-between`}
-            borderBottom={`1px solid rgb(112, 112, 112)`}
-            padding={`15px 0`}
-          >
+          <Wrapper dr={`row`} ju={`space-between`}>
             <Wrapper
-              width={`auto`}
+              dr={`row`}
+              ju={`space-between`}
+              borderBottom={`1px solid rgb(112, 112, 112)`}
+              padding={`15px 0`}
               fontSize={`12px !important`}
-              fontWeight={`500`}
+              onClick={mobileSubMenuToggle}
             >
               Download
-            </Wrapper>
-
-            <Wrapper width={`auto`} dr={`row`} ju={`flex-start`}>
-              <Combo
-                margin={`0 5px 0 0`}
-                width={`100%`}
-                onChange={(e) => fileDownloadHandler(e.target.value)}
-              >
-                <ComboOption value={null}>Choose a Catalogue</ComboOption>
-                {/* <ComboOption value={0}>
-                  SmartKeeper Product Introduction_KR_R1
-                </ComboOption> */}
-                <ComboOption value={1}>
-                  SmartKeeper Product Introduction_EN_R1
-                </ComboOption>
-                {/* <ComboOption value={2}>SMARTKEEPR_PRO_Catalogue_KR</ComboOption> */}
-                <ComboOption value={3}>SMARTKEEPR_PRO_Catalogue_EN</ComboOption>
-                {/* <ComboOption value={4}>
-                  SMARTKEEPR_ESSENTIAL_Catalogue_KR
-                </ComboOption> */}
-                <ComboOption value={5}>
-                  SMARTKEEPR_ESSENTIAL_Catalogue_EN
-                </ComboOption>
-              </Combo>
-              {/* <Wrapper
-                width={width < 900 ? `16px` : `18px`}
-                height={width < 900 ? `16px` : `18px`}
-                bgColor={Theme.white_C}
-              >
-                <Image
-                  alt="icon"
-                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Ficon%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8%20147.png?alt=media&token=a4115382-eef7-4ad2-8c15-d8e0744ef988`}
-                  width={`auto`}
-                />
-              </Wrapper> */}
+              {mobileSubMenuOpen ? (
+                <RiArrowUpSLine size={18} />
+              ) : (
+                <RiArrowDownSLine size={18} />
+              )}
             </Wrapper>
           </Wrapper>
 
-          <Wrapper
+          {mobileSubMenuOpen && (
+            <Wrapper al={`flex-start`} padding={`15px 0 0`}>
+              <a
+                href={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSmartKeeper%20Product%20Introduction_EN_R1.pdf?alt=media&token=7ebb6ccd-3579-4803-b32b-b615f7eed8c9`}
+                download
+              >
+                <FooterText>SMARTKEEPER Product Introduction(EN)</FooterText>
+              </a>
+              <a
+                href={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSMARTKEEPR_PRO_Catalogue_EN.pdf?alt=media&token=5953edda-b253-4508-978e-d8357fc5de63`}
+                download
+              >
+                <FooterText>SMARTKEEPER PRO Catalogue(EN)</FooterText>
+              </a>
+              <a
+                href={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FFooter%2FSMARTKEEPR_ESSENTIAL_Catalogue_EN.pdf?alt=media&token=0ee4144e-8903-48f9-a2c8-8a8503ce6c5e`}
+                download
+              >
+                <FooterText>SMARTKEEPER ESSENTIAL Catalogue(EN)</FooterText>
+              </a>
+            </Wrapper>
+          )}
+
+          {/* <Wrapper
             dr={`row`}
             ju={`space-between`}
             borderBottom={`1px solid rgb(112, 112, 112)`}
@@ -646,7 +644,7 @@ const Footer = ({ width, location }) => {
                 </ATag>
               )}
             </Wrapper>
-          )}
+          )} */}
 
           <Wrapper
             borderBottom={`1px solid ${Theme.greyTheme9_C}`}

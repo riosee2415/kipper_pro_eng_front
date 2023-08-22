@@ -134,7 +134,6 @@ const MM05Presenter = ({
     <WholeWrapper>
       <Wrapper
         isRelative={true}
-        borderBottom={width < 700 && `10px solid ${Theme.white_C}`}
         padding={width < 700 && `260px 0 0`}
         bgColor={width < 700 && `rgb(9, 11, 12)`}
         borderBottom={`10px solid rgb(114, 114, 114)`}
