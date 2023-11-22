@@ -277,7 +277,7 @@ const Header = ({ history, width, match }) => {
             <Logo>
               <Link to="/pro">
                 <LogoImg
-                  src={`https://4leaf-s3.s3.ap-northeast-2.amazonaws.com/kipper/assets/images/logo_pro_w.svg`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Flogo%2Flogo-w.png?alt=media&token=6d258a18-54b6-4b54-807b-9b5edc7c920f`}
                   alt="LOGO"
                 />
               </Link>
@@ -425,7 +425,7 @@ const Header = ({ history, width, match }) => {
           <Logo>
             <Link to="/pro">
               <LogoImg
-                src={`https://4leaf-s3.s3.ap-northeast-2.amazonaws.com/kipper/assets/images/logo_pro_w.svg`}
+                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Flogo%2Flogo-w.png?alt=media&token=6d258a18-54b6-4b54-807b-9b5edc7c920f`}
                 alt="LOGO"
               />
             </Link>
@@ -481,7 +481,7 @@ const Header = ({ history, width, match }) => {
               <Link to="/main">
                 <LogoImg
                   alt="logo"
-                  src={`https://4leaf-s3.s3.ap-northeast-2.amazonaws.com/kipper/assets/images/logo_pro_w.svg`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2Flogo%2Flogo-w.png?alt=media&token=6d258a18-54b6-4b54-807b-9b5edc7c920f`}
                 />
               </Link>
               <Wrapper width={`14px`}></Wrapper>

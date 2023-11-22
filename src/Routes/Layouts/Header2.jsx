@@ -256,7 +256,7 @@ const Header = ({ location, width, match }) => {
             <Logo>
               <Link to="/essential">
                 <LogoImg
-                  src={`https://4leaf-s3.s3.ap-northeast-2.amazonaws.com/kipper/assets/images/logo-es-en-w.svg`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Flogo%2Fess-logo.png?alt=media&token=545d2b5b-4b9e-4d84-8291-cb14595a2b5b`}
                   alt="LOGO"
                 />
               </Link>
@@ -324,7 +324,7 @@ const Header = ({ location, width, match }) => {
           <Logo>
             <Link to="/essential">
               <LogoImg
-                src={`https://4leaf-s3.s3.ap-northeast-2.amazonaws.com/kipper/assets/images/logo-es-en-w.svg`}
+                src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Flogo%2Fess-logo.png?alt=media&token=545d2b5b-4b9e-4d84-8291-cb14595a2b5b`}
                 alt="LOGO"
               />
             </Link>
@@ -361,7 +361,7 @@ const Header = ({ location, width, match }) => {
               <Link to="/essential">
                 <LogoImg
                   alt="logo"
-                  src={`https://4leaf-s3.s3.ap-northeast-2.amazonaws.com/kipper/assets/images/logo-es-en-w.svg`}
+                  src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/Keeper-ES%2Fassets%2Fimages%2Flogo%2Fess-logo.png?alt=media&token=545d2b5b-4b9e-4d84-8291-cb14595a2b5b`}
                 />
               </Link>
               <Wrapper width={`14px`}></Wrapper>

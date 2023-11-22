@@ -1424,7 +1424,7 @@ const MM01Presenter = ({
                 margin={`0 0 10px`}
                 isRelative={true}
                 attachment={`initial`}
-                bgImg={`url("https://4leaf-s3.s3.ap-northeast-2.amazonaws.com/kipper/assets/images/03_Image.jpg")`}
+                bgImg={`url("https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM01%2F03_Image.jpg?alt=media&token=deda6c89-956f-4648-9964-4901377ef3f5")`}
               >
                 {/* <Wrapper
                   bgColor={`rgba(16, 16, 16, 0.45)`}
