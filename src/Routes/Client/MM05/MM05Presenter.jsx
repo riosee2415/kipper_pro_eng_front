@@ -789,7 +789,7 @@ const MM05Presenter = ({
           isAbsolute={true}
           top={`27%`}
           left={`12%`}
-          width={`80%`}
+          width={`65%`}
           alt="image"
           transform={`scale(${scale2})`}
           src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER_PRO%2Fassats%2Fimages%2FMM05%2FUniversallockkey3_Light.png?alt=media&token=fe68de13-b904-4822-a583-e8e1a955c524`}
