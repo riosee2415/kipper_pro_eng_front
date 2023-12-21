@@ -156,7 +156,6 @@ const MM00Presenter = ({
               src={`https://firebasestorage.googleapis.com/v0/b/storage-4leaf.appspot.com/o/KEEPER-PRO-ENG%2Fassets%2Fimages%2FMM00%2F01_Image.png?alt=media&token=a1118797-6e18-4d92-a097-5813332fb161`}
             />
             <MoveImage
-              zIndex={`-20`}
               bottom={`${top2}px`}
               left={`46%`}
               width={width < 700 ? `250px` : `280px`}
