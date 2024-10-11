@@ -257,6 +257,25 @@ const MM14Presenter = ({
                                 </ATag>
                               </Wrapper>
                             )}
+                            {data.email2 && (
+                              <Wrapper width={`auto`} dr={`row`}>
+                                <Wrapper
+                                  al={`flex-start`}
+                                  fontWeight={`900`}
+                                  margin={`0 10px 0 0`}
+                                  width={`12px`}
+                                >
+                                  E
+                                </Wrapper>
+                                | &nbsp;
+                                <ATag
+                                  width={`auto`}
+                                  href={`mailto:${data.email}`}
+                                >
+                                  {data.email2}
+                                </ATag>
+                              </Wrapper>
+                            )}
                             {data.web && (
                               <Wrapper width={`auto`} dr={`row`}>
                                 <Wrapper

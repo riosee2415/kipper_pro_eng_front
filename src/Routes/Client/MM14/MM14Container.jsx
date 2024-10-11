@@ -31,6 +31,7 @@ const MM14Container = ({ history }) => {
       map: 3,
       mobile: "+65 66842013",
       email: "smartkeeper@gennexcorp.com",
+      email2: "protect@acton-tech.com",
       web: "",
     },
     {
@@ -112,6 +113,7 @@ const MM14Container = ({ history }) => {
       map: 3,
       mobile: "+6012 475 1475",
       email: "kedy.teoh@gennexcorp.com",
+      email2: "protect@acton-tech.com",
       web: "",
     },
     {
